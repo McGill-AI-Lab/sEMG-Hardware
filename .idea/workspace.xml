@@ -1,147 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3ceff1ca-2ff1-4ca3-baff-66ea612983a7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-08_233112.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/V1-backups/V1-2025-10-08_233112.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-12_145415.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/V1-backups/V1-2025-10-12_145415.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-12_171058.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/V1-backups/V1-2025-10-12_171058.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-14_000056.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/V1-backups/V1-2025-10-14_000056.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/dry_electrode.bak" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/dry_electrode.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/dry_electrode.kicad_sym" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/dry_electrode.kicad_sym" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/ref_electrode.bak" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/ref_electrode.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/ref_electrode.kicad_sym" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/ref_electrode.kicad_sym" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-17_192021.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-17_192021.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_144818.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_144818.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_163438.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_163438.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_175251.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_175251.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_115412.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_115412.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_143328.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_143328.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_144101.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_144101.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_194423.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_194423.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_203725.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_203725.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-26_165216.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-26_165216.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_145656.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_145656.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_155701.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_155701.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_232749.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_232749.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_001520.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_001520.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_003151.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_003151.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_prl" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand.kicad_prl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_pro" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand.kicad_pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_sch" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand.kicad_sch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand_circuit_schematic.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand_circuit_schematic.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sym-lib-table" beforeDir="false" afterPath="$PROJECT_DIR$/sEMGxRoboticHand/sym-lib-table" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/CODEBASE_OVERVIEW.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/criterion/finetune_criterion.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/criterion/pretrain_criterion.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/data_module/finetune_data_module.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/data_module/multiloader_data_module.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/data_module/pretrain_data_module.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/data_module/subject_independent_data_module.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/defaults.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/experiment/LUNA_finetune.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/experiment/LUNA_pretrain.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/model/LUNA_base.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/model/LUNA_huge.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/model/LUNA_large.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/scheduler/cosine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/scheduler/multi_step_lr.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/task/finetune_task.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/task/finetune_task_LUNA.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/task/pretrain_task.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/config/task/pretrain_task_LUNA.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/criterion/pretrain_criterion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/criterion/query_specialization_criterion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/data_module/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/data_module/finetune_data_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/data_module/multiloader_data_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/data_module/pretrain_data_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/data_module/semg_data_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/data_module/subject_independent_data_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/datasets/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/datasets/hdf5_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/datasets/seed_v_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/datasets/semg/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/datasets/semg/ninapro_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/datasets/semg/semg_hdf5_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/make_datasets/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/make_datasets/make_hdf5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/make_datasets/make_tueg_bipolar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/make_datasets/process_ninapro.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/make_datasets/process_raw_eeg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/models/LUNA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/models/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/models/modules/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/models/modules/channel_embeddings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/models/modules/channel_location_embedder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/models/modules/frequency_embedder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/models/modules/rope_transformer_encoder_block.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/run_train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/schedulers/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/schedulers/cosine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/schedulers/multi_step_lr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/BioPatRec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/CSL-HDEMG.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/CapgMyo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/FORS-EMG.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/GRABMyo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/HD-FW-KIN.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/HD-sEMG.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/MoveR.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/MyoKi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/Ninapro.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/SEEDS.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/UCI-EMG.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/Zenodo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/emg2pose.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/emg2qwerty.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/multi-day.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/muscle-fatigue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/putEMG.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_data/typing-dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/download_datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/preprocess_data/preprocess_emg2pose.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/scripts/preprocess_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/tasks/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/tasks/finetune_task.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/tasks/finetune_task_LUNA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/tasks/pretrain_task.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/tasks/pretrain_task_LUNA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUNA/util/train_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/MANO_RIGHT.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/joint_angles.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test1_mesh.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test1_skeleton.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test2_mesh.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test2_skeleton.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test3_mesh.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test3_skeleton.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test4_mesh.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/output/test4_skeleton.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/test_images/test1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/test_images/test2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/test_images/test3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Per_image_demo/test_images/test4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Video_demo/video_demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand-joint-labeling/Video_demo/video_demo_joint_angles.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_script.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/emg2pose_band_mi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semg_preprocess/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semg_preprocess/emg2pose_prep.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semg_preprocess/signals.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semg_preprocess/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semg_preprocess/windowing.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wearable sEMG Report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/V1-backups/V1-2025-10-08_233112.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-08_233112.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/V1-backups/V1-2025-10-12_145415.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-12_145415.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/V1-backups/V1-2025-10-12_171058.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-12_171058.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/V1-backups/V1-2025-10-14_000056.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-14_000056.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/dry_electrode.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/dry_electrode.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/dry_electrode.kicad_sym" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/dry_electrode.kicad_sym" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/ref_electrode.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/ref_electrode.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/ref_electrode.kicad_sym" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/ref_electrode.kicad_sym" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-17_192021.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-17_192021.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_144818.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_144818.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_163438.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_163438.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_175251.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_175251.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_115412.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_115412.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_143328.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_143328.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_144101.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_144101.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_194423.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_194423.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_203725.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_203725.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-26_165216.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-26_165216.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_145656.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_145656.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_155701.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_155701.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_232749.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_232749.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_001520.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_001520.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_003151.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_003151.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand.kicad_prl" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_prl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand.kicad_pro" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand.kicad_sch" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_sch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sEMGxRoboticHand_circuit_schematic.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand_circuit_schematic.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sEMGxRoboticHand/sym-lib-table" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sym-lib-table" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +61,8 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\PycharmProjects\AI-Projects\sEMG-Hardware" />
+      <recent name="C:\Users\Admin\PycharmProjects\AI-Projects\sEMG-Hardware\Hardware" />
+      <recent name="C:\Users\Admin\PycharmProjects\AI-Projects\sEMG-Hardware\sEMGxRoboticHand" />
     </key>
   </component>
   <component name="SharedIndexes">

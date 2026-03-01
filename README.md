@@ -6,12 +6,8 @@
 
 Recent advances in **surface electromyography (sEMG) decoding**, such as **[Meta’s EMG2Pose](https://arxiv.org/abs/2412.02725)**, **[EMG2QWERTY datasets](https://arxiv.org/abs/2410.20081)**, and their associated pretrained models, have demonstrated high-accuracy hand-pose and typing reconstruction. However, these breakthroughs rely on **Meta’s proprietary acquisition hardware (sEMG-RD)**, limiting reproducibility and broader utility for independent research and open development. This repo aims to make the hardware, data, model pipeline **transparent, modifiable, and benchmarkable**.
 
-1) **Custom acquisition hardware** (open-sEMG-16): a 16-channel, high-fidelity, wrist-wearable sEMG platform built from commercially available components, with design files + firmware to enable **end-to-end reproducibility**.
-2) **A device-/domain-robust encoder model** that maps multi-channel muscular activity to **hand pose** (joint angles / kinematic representation), with an explicit focus on **out-of-domain generalization** across:
-- unseen users (anatomical variation),
-- electrode shifts / rotations / contact changes,
-- session-to-session drift,
-- dataset / protocol mismatch.
+open-sEMG-16 will be a 16-channel, high-fidelity, wrist-wearable sEMG platform built from commercially available components, with design files + firmware to enable **end-to-end reproducibility**.
+
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/de04b735-f96d-437d-bec9-f8423d788860" width="85%">
@@ -22,10 +18,10 @@ Recent advances in **surface electromyography (sEMG) decoding**, such as **[Meta
 High-level modules (see top-level folders):
 
 - `Hardware/` — **open-sEMG-16** hardware stack (schematics/PCB, electrode layout, enclosure notes, firmware hooks, bring-up docs).
-- `src/` — acquisition + preprocessing utilities (streaming, windowing, filtering, normalization, dataset I/O, evaluation harness).
-- `data/` — dataset organization, conversion scripts, and format docs (raw → aligned → windowed → model-ready).
-- `hand-joint-labeling/` — tooling for pose labeling / alignment (e.g., joint definitions, coordinate frames, annotation utilities).
-- `LUNA/` — encoder model code (feature encoder + pose head) and training/eval entrypoints.
+- (*future*)_`acquisition/` — acquisition + preprocessing utilities (streaming, windowing, filtering, normalization, dataset I/O, evaluation harness).
+- (*future*)`data/` — dataset organization, conversion scripts, and format docs (raw → aligned → windowed → model-ready).
+- (*future*)`hand-joint-labeling/` — tooling for pose labeling / alignment (e.g., joint definitions, coordinate frames, annotation utilities).
+- `Weareable sEMG Report.pdf` — a PDF report summarizing the design and development of the wearable sEMG platform, including a review of hardware design choices, justification of our component choices, and introduction to the data collection pipeline. 
 
 > **Status:** still in active development; APIs and folder contents may shift. We aim to keep experiments **config-driven** and results **reproducible** as the codebase stabilizes.
 
