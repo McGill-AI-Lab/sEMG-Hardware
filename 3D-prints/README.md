@@ -1,0 +1,2 @@
+- 'Osman/': original files from Osman's Master's Thesis that we utilize for our prototyping including bias band, sleeve sensor module that intakes an electrode channel, armband to put the sensors in
+- 'Modified/': modified files from Osman to fit our electrodes. This folder includes casing for 2 different electrodes that we have obtained from Mill Max

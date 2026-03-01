@@ -5,34 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ceff1ca-2ff1-4ca3-baff-66ea612983a7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-08_233112.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/V1-backups/V1-2025-10-08_233112.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-12_145415.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/V1-backups/V1-2025-10-12_145415.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-12_171058.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/V1-backups/V1-2025-10-12_171058.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/V1-backups/V1-2025-10-14_000056.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/V1-backups/V1-2025-10-14_000056.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/dry_electrode.bak" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/dry_electrode.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/dry_electrode.kicad_sym" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/dry_electrode.kicad_sym" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/ref_electrode.bak" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/ref_electrode.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/ref_electrode.kicad_sym" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/ref_electrode.kicad_sym" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-17_192021.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-17_192021.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_144818.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_144818.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_163438.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_163438.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-19_175251.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_175251.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_115412.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-23_115412.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-23_143328.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-23_143328.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_144101.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_144101.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_194423.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_194423.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-24_203725.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_203725.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2025-11-26_165216.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-26_165216.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_145656.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_145656.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_155701.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_155701.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-05_232749.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_232749.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_001520.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-06_001520.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand-backups/sEMGxRoboticHand-2026-01-06_003151.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-06_003151.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_prl" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/sEMGxRoboticHand.kicad_prl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_pro" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/sEMGxRoboticHand.kicad_pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand.kicad_sch" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/sEMGxRoboticHand.kicad_sch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sEMGxRoboticHand_circuit_schematic.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/sEMGxRoboticHand_circuit_schematic.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/sEMGxRoboticHand/sym-lib-table" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-hardware/sym-lib-table" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3D-prints/Imperial-Osman/Bias Band Fusion File.f3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3D-prints/Imperial-Osman/Bias Band.3mf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3D-prints/Imperial-Osman/Sensor Module.3mf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3D-prints/Imperial-Osman/Sleeve Sensor Module Fusion File.f3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3D-prints/Imperial-Osman/Sleeve TPU Velcro Fusion File.f3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3D-prints/Imperial-Osman/TPU Armband.3mf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3D-prints/Imperial-Osman/temp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3D-prints/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/V1-backups/V1-2025-10-08_233112.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/V1-backups/V1-2025-10-08_233112.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/V1-backups/V1-2025-10-12_145415.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/V1-backups/V1-2025-10-12_145415.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/V1-backups/V1-2025-10-12_171058.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/V1-backups/V1-2025-10-12_171058.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/V1-backups/V1-2025-10-14_000056.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/V1-backups/V1-2025-10-14_000056.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/dry_electrode.bak" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/dry_electrode.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/dry_electrode.kicad_sym" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/dry_electrode.kicad_sym" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-17_192021.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-17_192021.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_144818.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_144818.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_163438.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_163438.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_175251.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-19_175251.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-23_115412.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-23_115412.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-23_143328.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-23_143328.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_144101.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_144101.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_194423.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_194423.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_203725.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-24_203725.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-26_165216.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2025-11-26_165216.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_145656.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_145656.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_155701.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_155701.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_232749.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-05_232749.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-06_001520.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-06_001520.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-06_003151.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-01-06_003151.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-03-01_154529.zip" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/open-semg-16-hardware-backups/sEMGxRoboticHand-2026-03-01_154529.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/ref_electrode.bak" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/ref_electrode.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/ref_electrode.kicad_sym" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/ref_electrode.kicad_sym" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/sEMGxRoboticHand.kicad_prl" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/sEMGxRoboticHand.kicad_prl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/sEMGxRoboticHand.kicad_pro" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/sEMGxRoboticHand.kicad_pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/sEMGxRoboticHand.kicad_sch" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/sEMGxRoboticHand.kicad_sch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/sEMGxRoboticHand_circuit_schematic.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/sEMGxRoboticHand_circuit_schematic.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-hardware/sym-lib-table" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-electronics/sym-lib-table" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\AI-Projects\sEMG-Hardware\3D-prints\Imperial-Osman" />
       <recent name="C:\Users\Admin\PycharmProjects\AI-Projects\sEMG-Hardware" />
       <recent name="C:\Users\Admin\PycharmProjects\AI-Projects\sEMG-Hardware\Hardware" />
       <recent name="C:\Users\Admin\PycharmProjects\AI-Projects\sEMG-Hardware\sEMGxRoboticHand" />

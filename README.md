@@ -49,20 +49,11 @@ This repo is organized around a reproducible pipeline:
 - alignment utilities for pose timestamps vs EMG timestamps
 - split generation for cross-user / cross-session / cross-placement evaluation
 
-### 4) Encoder + Pose Head
-We focus on an encoder that learns a **shift-tolerant representation** of sEMG:
 
-**Input:** `X ∈ R^{C×T}` (C channels, T samples)  
-**Encoder:** temporal feature extractor + cross-channel mixing  
-**Head:** regression to pose representation (joint angles / keypoints / low-dim hand state)
-
----
 
 ## Contributors
 
-* Katherine Lambert
 * Emir Sahin
-* Lia Brahami
 * Karen Chen Lai
 
 ---
@@ -80,3 +71,6 @@ We focus on an encoder that learns a **shift-tolerant representation** of sEMG:
 
 * **Meta blog: Advancing Neuromotor Interfaces by Open Sourcing sEMG Datasets** (2024)
   [https://ai.meta.com/blog/open-sourcing-surface-electromyography-datasets-neurips-2024/](https://ai.meta.com/blog/open-sourcing-surface-electromyography-datasets-neurips-2024/)
+
+
+will include list of components and their associated datasheets
