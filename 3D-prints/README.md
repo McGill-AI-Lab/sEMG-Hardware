@@ -1,2 +1,3 @@
 - 'Osman/': original files from Osman's Master's Thesis that we utilize for our prototyping including bias band, sleeve sensor module that intakes an electrode channel, armband to put the sensors in
-- 'Modified/': modified files from Osman to fit our electrodes. This folder includes casing for 2 different electrodes that we have obtained from Mill Max
+- '3.2mm Diam Sleeve Sensor Module Fusion" is the .f3d file for the gold-plated nickel electrode with product code: 0859-0-15-20-82-14-11-0 from Mill-Max Manufacturing, who has gratiously agreed to sponsor us for this project. 
+- '4.8mm Diam Sleeve Sensor Module Fusion" is the .f3d file for the gold-plated nickel electrode with product code: 0871-0-57-20-82-14-11-0 from Mill-Max Manufacturing.
