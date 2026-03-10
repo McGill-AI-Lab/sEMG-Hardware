@@ -54,12 +54,12 @@
     "zone_display_mode": 0
   },
   "git": {
-    "repo_type": "",
+    "repo_type": "https",
     "repo_username": "",
     "ssh_key": ""
   },
   "meta": {
-    "filename": "sEMGxRoboticHand.kicad_prl",
+    "filename": "open-semg-16.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
