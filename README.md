@@ -55,6 +55,7 @@ This repo is organized around a reproducible pipeline:
 
 * Emir Sahin
 * Karen Chen Lai
+* Yasser Noori
 
 ---
 
