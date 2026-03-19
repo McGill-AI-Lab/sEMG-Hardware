@@ -1,4 +1,4 @@
-# Device-Agnostic sEMG (open-sEMG-16 + Domain-General Pose Encoder)
+# open-semg-16: Open-Source 16-Channel High Accuracy EMG
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6cdbc603-053d-4552-9c33-e2e7e87b085e" width="75%">
@@ -22,7 +22,7 @@ High-level modules (see top-level folders):
 - (*future*)`data/` — dataset organization, conversion scripts, and format docs (raw → aligned → windowed → model-ready).
 - (*future*)`hand-joint-labeling/` — tooling for pose labeling / alignment (e.g., joint definitions, coordinate frames, annotation utilities).
 - `Weareable sEMG Report.pdf` — a PDF report summarizing the design and development of the wearable sEMG platform, including a review of hardware design choices, justification of our component choices, and introduction to the data collection pipeline. 
-
+- `Documents`/ — remaining design docs, physiology summaries, meeting notes, and other internal documentation.
 > **Status:** still in active development; APIs and folder contents may shift. We aim to keep experiments **config-driven** and results **reproducible** as the codebase stabilizes.
 
 ---
@@ -56,6 +56,10 @@ This repo is organized around a reproducible pipeline:
 * Emir Sahin
 * Karen Chen Lai
 * Yasser Noori
+* Oscar
+* Jazia
+* Clarissa
+
 
 ---
 
