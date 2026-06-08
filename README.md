@@ -26,39 +26,20 @@ High-level modules (see top-level folders):
 > **Status:** still in active development; APIs and folder contents may shift. We aim to keep experiments **config-driven** and results **reproducible** as the codebase stabilizes.
 
 ---
-
-## Acquisition to Dataset to Model: End-to-End Pipeline
-
-This repo is organized around a reproducible pipeline:
-
-### 1) Acquisition & Streaming
-- synchronized multi-channel sampling
-- timestamping + packetization
-- stream integrity checks (drop detection, reordering, CRC if available)
-- host-side capture and persistent storage
-
-### 2) Signal Processing
-- band-pass filtering (and optional notch)
-- per-channel normalization (robust stats recommended)
-- windowing (fixed-length frames with overlap)
-- optional time–frequency transforms (e.g., STFT / filterbanks) for encoder variants
-- augmentation hooks to simulate electrode shift / noise / drift
-
-### 3) Label Alignment (pose supervision)
-- consistent hand model definition (joint ordering, DoFs, coordinate frame)
-- alignment utilities for pose timestamps vs EMG timestamps
-- split generation for cross-user / cross-session / cross-placement evaluation
+Prototype picture is shown below, the final device will be a wireless wearable.
+<img width="2160" height="2880" alt="karen-semg" src="https://github.com/user-attachments/assets/314c58b5-e3a1-42e9-87e9-9a9da2935625" />
 
 
 
 ## Contributors
 
-* Emir Sahin
-* Karen Chen Lai
-* Yasser Noori
+* Emir
+* Karen 
 * Oscar
 * Jazia
 * Clarissa
+* Emiliano
+
 
 
 ---
