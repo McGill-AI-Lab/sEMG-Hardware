@@ -29,7 +29,7 @@ High-level modules (see top-level folders):
 Prototype picture is shown below, the final device will be a wireless wearable.
 <img width="2160" height="2880" alt="karen-semg" src="https://github.com/user-attachments/assets/314c58b5-e3a1-42e9-87e9-9a9da2935625" />
 
-Signal Visualization:
+Signal Visualization for 5-seconds closed 5-seconds open hand test. You can see the signals (voltages picked up from each channel) moving up and down accordingly:
 <img width="1332" height="615" alt="WhatsApp Image 2026-08-24 at 21 48 25" src="https://github.com/user-attachments/assets/4d7f43fd-ffba-456b-90ef-e3a101d88d70" />
 
 
