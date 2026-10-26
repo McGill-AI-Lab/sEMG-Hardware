@@ -1,0 +1,18 @@
+site_name: ADS1298 testing
+site_url: https://www.oscartesniere.com/
+
+nav:
+  - Home: index.md
+  - Electrical :
+      - Overview: electrical/index.md
+  - Sowftare :
+      - Overview: software/index.md
+
+theme:
+  name: readthedocs
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
