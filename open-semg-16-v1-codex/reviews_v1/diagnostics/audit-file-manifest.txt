@@ -1,0 +1,49 @@
+Audit file manifest — 2026-10-27
+
+Pre-existing files modified: NONE.
+Pre-existing files deleted or renamed: NONE.
+All additions below are inside the authorized development workspace.
+Reference-input files are unchanged diagnostic copies, not edited originals.
+
+Created files (41):
+reviews/analog-notes.md
+reviews/diagnostics/audit-checks.json
+reviews/diagnostics/audit-checks.py
+reviews/diagnostics/audit-file-manifest.txt
+reviews/diagnostics/baseline-hashes.json
+reviews/diagnostics/current-connectivity.json
+reviews/diagnostics/current-connectivity.txt
+reviews/diagnostics/current-erc.json
+reviews/diagnostics/current-netlist.xml
+reviews/diagnostics/current-schematic-inventory.json
+reviews/diagnostics/design-integrity-verification.json
+reviews/diagnostics/digital-devkit-v1.1-lfs-pointer.txt
+reviews/diagnostics/extract-pdf.m
+reviews/diagnostics/independent-review-checkpoint.md
+reviews/diagnostics/pdf-text/ADS1298-EVM.txt
+reviews/diagnostics/pdf-text/ADS1298.txt
+reviews/diagnostics/pdf-text/ESP32-S3-WROOM-1.txt
+reviews/diagnostics/pdf-text/LP2985.txt
+reviews/diagnostics/pdf-text/SBAA160.txt
+reviews/diagnostics/pdf-text/SBAA185.txt
+reviews/diagnostics/pdf-text/SBAA188.txt
+reviews/diagnostics/pdf-text/SBAA196.txt
+reviews/diagnostics/pdf-text/SBAA230.txt
+reviews/diagnostics/pdf-text/SLAA412.txt
+reviews/diagnostics/pdf-text/SLAA414.txt
+reviews/diagnostics/pdf-text/SLYY192.txt
+reviews/diagnostics/pdf-text/TLV755P.txt
+reviews/diagnostics/reference-connectivity.json
+reviews/diagnostics/reference-erc.json
+reviews/diagnostics/reference-hashes.json
+reviews/diagnostics/reference-input/dry_electrode.kicad_sym
+reviews/diagnostics/reference-input/open-semg-16-v1.kicad_prl
+reviews/diagnostics/reference-input/open-semg-16-v1.kicad_pro
+reviews/diagnostics/reference-input/open-semg-16-v1.kicad_sch
+reviews/diagnostics/reference-input/ref_electrode.kicad_sym
+reviews/diagnostics/reference-input/sym-lib-table
+reviews/diagnostics/reference-netlist.xml
+reviews/diagnostics/schematic-svg/open-semg-16-v1.svg
+reviews/digital-notes.md
+reviews/hardware-audit.md
+reviews/power-notes.md

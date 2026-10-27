@@ -1,0 +1,125 @@
+{
+  "meaning": "Static facts reproduced; this is not an electrical design pass.",
+  "components": 111,
+  "nets_including_unconnected_pins": 134,
+  "all_16_mappings": [
+    {
+      "channel": 1,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 2,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 3,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 4,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 5,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 6,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 7,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 8,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 9,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 10,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 11,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 12,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 13,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 14,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 15,
+      "mapping_and_nominal_filter_confirmed": true
+    },
+    {
+      "channel": 16,
+      "mapping_and_nominal_filter_confirmed": true
+    }
+  ],
+  "confirmed_supply_faults": {
+    "U1": {
+      "analog_supply_span_V": 0,
+      "digital_supply_net": "DGND",
+      "physical_digital_ground_net": "AGND",
+      "aux_analog_pins_on_3V3": [
+        17,
+        18,
+        62
+      ]
+    },
+    "U2": {
+      "analog_supply_span_V": 0,
+      "digital_supply_net": "DGND",
+      "physical_digital_ground_net": "AGND",
+      "aux_analog_pins_on_3V3": [
+        17,
+        18,
+        62
+      ]
+    }
+  },
+  "parallel_LDO_outputs_confirmed": true,
+  "undriven_LDO_EN_confirmed": true,
+  "missing_shared_clock_confirmed": true,
+  "all_57_caps_have_two_netlisted_pins": true,
+  "reference_connectivity_identical": true,
+  "ERC_severity_counts": {
+    "error": 38,
+    "warning": 27
+  },
+  "conditional_calculations": {
+    "R_ohm_per_leg": 2000,
+    "C_F_per_leg": 6.2e-10,
+    "temperature_K_assumed": 300,
+    "RC_pole_Hz": 128350.7605579801,
+    "pair_resistor_noise_V_per_sqrtHz": 8.140709551384326e-09,
+    "rectangular_20_to_850_Hz_resistor_noise_Vrms": 2.345315675127764e-07,
+    "Cout_direct_AGND_uF_nominal": 222.4,
+    "Cout_after_ground_correction_uF_nominal_excluding_DevKit": 242.6,
+    "VCAP3_V_assumed_3V3_supply": 5.199999999999999,
+    "2000_SPS": {
+      "sinc3_850Hz_gain_dB_large_N_approx": -8.2624372181913,
+      "frame_bits_pair": 432,
+      "ideal_SPI_bits_per_second": 864000,
+      "payload_time_at_4MHz_s": 0.000108
+    },
+    "4000_SPS": {
+      "sinc3_850Hz_gain_dB_large_N_approx": -1.9651348564029694,
+      "frame_bits_pair": 432,
+      "ideal_SPI_bits_per_second": 1728000,
+      "payload_time_at_4MHz_s": 0.000108
+    }
+  }
+}

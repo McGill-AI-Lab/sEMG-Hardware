@@ -1,0 +1,2763 @@
+
+
+===== PDF PAGE 1 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+LP2985 150mA, Low-Noise, Low-Dropout Regulator With Shutdown
+1 Features
+• VIN range (new chip): 2.5V to 16V
+• VOUT range (new chip):
+– 1.2V to 5.0V (fixed, 100mV steps)
+• VOUT accuracy:
+– ±1% for A-grade (legacy chip)
+– ±1.5% for standard-grade (legacy chip)
+– ±0.5% (new chip)
+• ±1% output accuracy over load and temperature
+(new chip)
+• Output current: Up to 150mA
+• Low IQ (new chip): 71μA at ILOAD = 0mA
+• Low IQ (new chip): 750μA at ILOAD = 150mA
+• Shutdown current:
+– 0.01μA (typ, legacy chip)
+– 1.12μA (typ, new chip)
+• Low noise: 30μVRMS with 10nF bypass capacitor
+• Output current limiting and thermal protection
+• Stable with 2.2µF ceramic capacitors (new chip)
+• High PSRR: 70dB at 1kHz, 40dB at 1MHz (new
+chip)
+• Operating junction temperature: –40°C to +125°C
+• Package: 5-pin SOT-23 (DBV)
+2 Applications
+• Washer and dryer
+• Land mobile radio
+• Active antenna system mMIMO
+• Cordless power tool
+• Motor drives and control boards
+3 Description
+The LP2985 is a fixed-output, wide-input, low-noise,
+low-dropout voltage regulator supporting an input
+voltage range from 2.5V to 16V (for new chip) and
+up to 150mA of load current. The LP2985 supports an
+output range of 1.2V to 5.0V (for new chip).
+Additionally, the LP2985 (new chip) has a ±1% output
+accuracy across load, and temperature that can meet
+the needs of low-voltage microcontrollers (MCUs) and
+processors.
+Low output noise of 30µVRMS (with 10nF bypass
+capacitors) and wide bandwidth PSRR performance
+of greater than 70dB at 1kHz and 40dB at 1MHz
+help attenuate the switching frequency of an upstream
+DC/DC converter and minimize post regulator filtering.
+The new chip provides internal soft-start mechanism
+to reduce inrush current during start up, thus
+minimizing input capacitance. Standard protection
+features, such as overcurrent and overtemperature
+protection, are also included.
+The LP2985 is available in a 5-pin 2.9mm × 2.8mm
+SOT-23 (DBV) package.
+Package Information
+PART
+NUMBER PACKAGE(1) PACKAGING SIZE(2)
+LP2985 DBV (SOT-23, 5) 2.9mm × 2.8mm
+(1) (2) For more information, see the Mechanical, Packaging, and
+Orderable Information.
+The package size (length × width) is a nominal value and
+includes pins, where applicable.
+Iout
+1mA
+10mA
+50mA
+150mA
+Dropout (mV)
+450
+400
+350
+300
+250
+200
+150
+100
+50
+0
+-75 -50 -25 0 25 50 75 100 125 150
+Temperature (°C)
+Dropout Voltage vs Temperature (New Chip)
+VIN VOUT
+IN OUT
+LP2985
+ON/
+OFF BYPASS
+GND
+CIN
+GND
+COUT
+10 nF
+GND
+GND
+Typical Application Circuit
+GND
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+===== PDF PAGE 2 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Pin Configuration and Functions...................................3
+5 Specifications.................................................................. 4
+5.1 Absolute Maximum Ratings........................................ 4
+5.2 ESD Ratings............................................................... 4
+5.3 Recommended Operating Conditions.........................4
+5.4 Thermal Information....................................................5
+5.5 Electrical Characteristics.............................................5
+5.6 Typical Characteristics................................................8
+6 Detailed Description......................................................15
+6.1 Overview...................................................................15
+6.2 Functional Block Diagrams....................................... 15
+6.3 Feature Description...................................................16
+6.4 Device Functional Modes..........................................18
+7 Application and Implementation..................................20
+7.1 Application Information............................................. 20
+7.2 Typical Application.................................................... 24
+7.3 Power Supply Recommendations.............................29
+7.4 Layout....................................................................... 29
+8 Device and Documentation Support............................30
+8.1 Device Support......................................................... 30
+8.2 Receiving Notification of Documentation Updates....30
+8.3 Support Resources................................................... 30
+8.4 Trademarks...............................................................30
+8.5 Electrostatic Discharge Caution................................30
+8.6 Glossary....................................................................30
+9 Revision History............................................................ 31
+10 Mechanical, Packaging, and Orderable
+Information.................................................................... 31
+2 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 3 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+4 Pin Configuration and Functions
+VIN
+1
+5
+VOUT
+GND
+2
+ON/OFF
+3 4
+BYPASS
+Figure 4-1. DBV Package, 5-Pin SOT-23 (Top View)
+Table 4-1. Pin Functions
+PIN
+TYPE DESCRIPTION
+NAME NO.
+BYPASS 4 I/O
+BYPASS pin to achieve low noise performance. Connecting an external capacitor between
+BYPASS pin and ground reduces reference voltage noise. See the Recommended
+Operating Conditions section for more information.
+GND 2 — Ground
+ON/OFF 3 I
+Enable pin for the LDO. Driving the ON/OFF pin high enables the device. Driving this pin low
+disables the device. High and low thresholds are listed in the Electrical Characteristics table.
+Tie this pin to VIN if unused.
+VIN 1 I Input supply pin. Use a capacitor with a value of 1 µF or larger from this pin to ground. See
+the Input and Output Capacitor Requirements section for more information.
+VOUT 5 O Output of the regulator. Use a capacitor with a value of 2.2 µF or larger from this pin to
+ground.(1) See the Input and Output Capacitor Requirements section for more information.
+(1) The nominal output capacitance must be greater than 1 μF. Throughout this document, the nominal derating on these capacitors is
+50%. Make sure that the effective capacitance at the pin is greater than 1 μF.
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 3
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 4 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+5 Specifications
+5.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted)(1) (2)
+MIN MAX UNIT
+Continuous input voltage range (for legacy chip) –0.3 16
+VIN
+Continuous input voltage range (for new chip) –0.3 18
+Output voltage range (for legacy chip) –0.3 9
+VOUT
+Output voltage range (for new chip) –0.3 VIN + 0.3 or 9 (whichever
+is smaller)
+V
+VBYPASS BYPASS pin voltage range (for new chip) –0.3 3
+ON/OFF pin voltage range (for legacy chip) –0.3 16
+VON/OFF
+ON/OFF pin voltage range (for new chip) –0.3 18
+Current Maximum output Internally limited A
+Temperature Operating junction, TJ Storage, Tstg –55 150
+–65 150
+°C
+(1) (2) Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress
+ratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under
+Recommended Operating Conditions. Exposure to absolute-maximum-rated conditions for extended periods may affect device
+reliability.
+All voltages with respect to GND.
+5.2 ESD Ratings
+VALUE
+(Legacy
+Chip)
+VALUE
+(New
+Chip)
+UNIT
+V(ESD) Electrostatic discharge Human body model (HBM), per ANSI/ESDA/JEDEC JS-001(1) Charged device model (CDM), per JEDEC specification JESD22-C101(2) ±2000 ±500 ±3000
+±1000
+V
+(1) (2) JEDEC document JEP155 states that 2-kV HBM allows safe manufacturing with a standard ESD control process.
+JEDEC document JEP157 states that 500-V CDM allows safe manufacturing with a standard ESD control process.
+5.3 Recommended Operating Conditions
+MIN NOM MAX UNIT
+Supply input voltage (for legacy chip) 2.2 16
+VIN
+V
+Supply input voltage (for new chip) 2.5 16
+Output voltage (for legacy chip) 1.2 10.0
+VOUT
+V
+Output voltage (for new chip) 1.2 5.0
+VBYPASS Bypass voltage 1.2 V
+VON/OFF
+Enable voltage (for legacy chip) Enable voltage (for new chip) 0 VIN V
+0 16
+IOUT Output current 0 150 mA
+CIN (1) Input capacitor 1 μF
+Output capacitance (for legacy chip) 2.2 4.7
+COUT
+μF
+Output capacitance (for new chip) (1) 1 2.2 200
+COUT ESR(3) Output capacitor ESR (for new chip)(2) 0 1 Ω
+TJ Operating junction temperature –40 125 °C
+(1) (2) (3) All capacitor values are assumed to derate to 50% of the nominal capacitor value. Maintain an effective output capacitance of 1 μF
+minimum for stability.
+Details related to supported ESR range for the legacy chip are available in Recommended Capacitors for the Legacy Chip
+Maximum supported ESR range for new chip is 1Ω. For output capacitor with higher ESR values, place a low ESR MLCC capacitor
+with value of 100nF, close to the output pin of the LDO.
+4 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 5 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+5.4 Thermal Information
+Legacy Chip New Chip
+THERMAL METRIC (2) (1)
+DBV (SOT23-5) DBV (SOT23-5)
+UNIT
+5 PINS 5 PINS
+RθJA Junction-to-ambient thermal resistance 205.4 178.6 °C/W
+RθJC(top) Junction-to-case (top) thermal resistance 78.8 77.9 °C/W
+RθJB Junction-to-board thermal resistance 46.7 47.2 °C/W
+ψJT Junction-to-top characterization parameter 8.3 15.9 °C/W
+ψJB Junction-to-board characterization parameter 46.3 46.9 °C/W
+(1) For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+(2) note.
+Thermal performance results are based on the JEDEC standard of 2s2p PCB configuration. These thermal metric parameters can be
+further improved by 35-55% based on thermally optimized PCB layout designs. See the analysis of the Impact of board layout on LDO
+thermal performance application note.
+5.5 Electrical Characteristics
+specified at TJ = 25°C, VIN = VOUT(nom) + 1.0 V or VIN = 2.5 V (whichever is greater), IOUT = 1 mA, VON/OFF = 2 V, CIN = 1.0 µF,
+and COUT = 2.2 µF (unless otherwise noted)
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+Legacy chip
+(standard
+grade)
+–1.5 1.5
+IL = 1 mA
+Legacy chip
+(A grade) –1.0 1.0
+New chip –0.5 0.5
+Legacy chip
+(standard
+grade)
+–2.5 2.5
+1 mA ≤ IL ≤ 50 mA
+Legacy chip
+(A grade) –1.5 1.5
+New chip –0.5 0.5
+Legacy chip
+(standard
+grade)
+–3.0 3.0
+∆VOUT Output voltage tolerance
+1 mA ≤ IL ≤ 150 mA
+%
+Legacy chip
+(A grade) –2.5 2.5
+New chip –0.5 0.5
+Legacy chip
+(standard
+grade)
+–3.5 3.5
+1 mA ≤ IL ≤ 50 mA, –40°C ≤ TJ ≤ 125°C
+Legacy chip
+(A grade) –2.5 2.5
+New chip –1 1
+Legacy chip
+(standard
+grade)
+–4.0 4.0
+1 mA ≤ IL ≤ 150 mA, –40°C ≤ TJ ≤ 125°C
+Legacy chip
+(A grade) –3.5 3.5
+New chip –1 1
+VO(NOM) + 1 V ≤ VIN ≤ 16 V Legacy chip New chip 0.007 0.014
+0.002 0.014
+ΔVOUT(ΔVIN) Line regulation
+%/V
+VO(NOM) + 1 V ≤ VIN ≤ 16 V, –40°C ≤ TJ ≤ 125°C Legacy chip New chip 0.007 0.032
+0.002 0.032
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 5
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 6 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+5.5 Electrical Characteristics (continued)
+specified at TJ = 25°C, VIN = VOUT(nom) + 1.0 V or VIN = 2.5 V (whichever is greater), IOUT = 1 mA, VON/OFF = 2 V, CIN = 1.0 µF,
+and COUT = 2.2 µF (unless otherwise noted)
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+IOUT = 0 mA Legacy chip New chip 1 3
+1 2.75
+IOUT = 0 mA, –40°C ≤ TJ ≤ 125°C Legacy chip 5
+New chip 3
+IOUT = 1 mA Legacy chip New chip 7 10
+11.5 14
+IOUT = 1 mA, –40°C ≤ TJ ≤ 125°C Legacy chip New chip 15
+17
+IOUT = 10 mA Legacy chip New chip 40 60
+98 115
+VIN - VOUT Dropout voltage(1)
+mV
+IOUT = 10 mA, –40°C ≤ TJ ≤ 125°C Legacy chip New chip 90
+148
+IOUT = 50 mA Legacy chip New chip 120 150
+120 145
+IOUT = 50 mA, –40°C ≤ TJ ≤ 125°C Legacy chip New chip 225
+184
+IOUT = 150 mA Legacy chip New chip 280 350
+180 198
+IOUT = 150 mA, –40°C ≤ TJ ≤ 125°C Legacy chip New chip 575
+254
+IOUT = 0 mA Legacy chip New chip 65 95
+69 95
+IOUT = 0 mA, –40°C ≤ TJ ≤ 125°C Legacy chip New chip 125
+123
+IGND GND pin current
+µA
+IOUT = 1 mA Legacy chip New chip 75 110
+78 110
+IOUT = 1 mA, –40°C ≤ TJ ≤ 125°C Legacy chip New chip 170
+140
+IOUT = 10 mA Legacy chip New chip 120 220
+175 210
+IGND GND pin current
+µA
+IOUT = 10 mA, –40°C ≤ TJ ≤ 125°C Legacy chip New chip 400
+250
+IGND GND pin current IOUT = 50 mA Legacy chip New chip 350 600
+380 440
+µA
+IGND GND pin current IOUT = 50 mA, –40°C ≤ TJ ≤ 125°C Legacy chip 900 µA
+IGND GND pin current IOUT = 50 mA, –40°C ≤ TJ ≤ 125°C New chip 650 µA
+IGND GND pin current IOUT = 150 mA Legacy chip 850 1200 µA
+IGND GND pin current IOUT = 150 mA New chip 765 890 µA
+IGND GND pin current IOUT = 150 mA, –40°C ≤ TJ ≤ 125°C Legacy chip 2000 µA
+IGND GND pin current IOUT = 150 mA, –40°C ≤ TJ ≤ 125°C New chip 1060 µA
+IGND GND pin current VON/OFF < 0.3 V, VIN = 16 V Legacy chip 0.01 0.08 µA
+IGND GND pin current VON/OFF < 0.3 V, VIN = 16 V New chip 1.25 1.75 µA
+IGND GND pin current VON/OFF < 0.15 V, VIN = 16 V, –40°C ≤ TJ ≤ 85°C Legacy chip 0 1 µA
+6 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 7 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+5.5 Electrical Characteristics (continued)
+specified at TJ = 25°C, VIN = VOUT(nom) + 1.0 V or VIN = 2.5 V (whichever is greater), IOUT = 1 mA, VON/OFF = 2 V, CIN = 1.0 µF,
+and COUT = 2.2 µF (unless otherwise noted)
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+IGND GND pin current VON/OFF < 0.15 V, VIN = 16 V, –40°C ≤ TJ ≤ 85°C New chip 1.12 2.25 µA
+IGND GND pin current VON/OFF < 0.15 V, VIN = 16 V, –40°C ≤ TJ ≤ 125°C Legacy chip 0.01 2 µA
+IGND GND pin current VON/OFF < 0.15 V, VIN = 16 V, –40°C ≤ TJ ≤ 125°C New chip 1.12 2.75 µA
+VUVLO+ Rising bias supply UVLO VIN rising, –40°C ≤ TJ ≤ 125°C
+2.2 2.4 V
+VUVLO- Falling bias supply UVLO VIN falling, –40°C ≤ TJ ≤ 125°C New chip
+1.9 V
+VUVLO(HYST) UVLO hysteresis –40°C ≤ TJ ≤ 125°C 0.130 V
+Low = Output OFF Legacy chip New chip 0.55
+0.72
+Low = Output OFF, VOUT + 1 ≤ VIN ≤ 16 V, –40°C ≤ TJ
+≤ 125°C
+Legacy chip 0.15
+New chip 0.15
+VON/OFF ON/OFF input voltage
+V
+High = Output ON Legacy chip New chip 1.4
+0.85
+High = Output ON, VOUT + 1 ≤ VIN ≤ 16 V, –40°C ≤ TJ ≤
+125°C
+Legacy chip 1.6
+New chip 1.6
+ION/OFF ON/OFF input current VON/OFF = 0 V Legacy chip New chip 0.01
+0.42
+µA
+VON/OFF = 0 V, VOUT + 1 ≤ VIN ≤ 16 V, –40°C ≤ TJ ≤
+125°C
+Legacy chip -1 µA
+New chip -0.9 µA
+ION/OFF ON/OFF input current
+VON/OFF = 5 V Legacy chip New chip 5 µA
+0.011 µA
+VON/OFF = 5 V, VOUT + 1 ≤ VIN ≤ 16 V, –40°C ≤ TJ ≤
+125°C
+Legacy chip 15 µA
+New chip 2.20 µA
+IO(PK) Peak output current VOUT ≥ VO(NOM) –5% (steady state) Legacy chip New chip 300 350
+300 350
+mA
+IO(SC) Short output current RL = 0 Ω (steady state) Legacy chip New chip 400
+375
+ΔVO/ΔVIN Ripple rejection f = 1 kHz, CBYPASS = 10 nF, COUT = 10 µF Legacy chip New chip 45
+78
+dB
+Bandwidth = 300 Hz to 50 kHz, CBYPASS = 10 nF, COUT
+= 2.2 µF, VOUT = 3.3 V, ILOAD = 150 mA Legacy chip 30
+Vn Output noise voltage
+µVRM
+S
+Bandwidth = 300 Hz to 50 kHz, CBYPASS = 10 nF, COUT
+= 2.2 µF, VOUT = 3.3 V, ILOAD = 150 mA New chip 30
+Tsd+ Thermal shutdown
+threshold
+Tsd- Shutdown, temperature increasing Reset, temperature decreasing New chip
+170
+°C
+150
+(1) Dropout voltage (VDO) is defined as the input-to-output differential at which the output voltage drops 100 mV below the value measured
+with a 1 V differential. VDO is measured with VIN = VOUT(nom) – 100 mV for fixed output devices.
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 7
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 8 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+5.6 Typical Characteristics
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+Output Voltage – V
+10.20
+10.15
+10.10
+10.05
+10.00
+9.95
+9.90
+9.85
+VI = 11 V
+VO = 10 V
+CI = 1 µF
+CO = 4.7 µF
+IO = 1 mA
+Output Voltage − (V)
+3.345
+3.335
+3.325
+3.315
+3.305
+3.295
+VI = 4.3 V
+VO = 3.3 V
+Ci = 1 mF
+Co = 4.7 mF
+IO = 1 mA
+-50 -25 0 25 50 75 100 125 150
+Temperature – °C
+Figure 5-1. Output Voltage vs Temperature for Legacy Chip
+−50 −25 0 25 50 75 100 125 150
+Temperature − ( C)°
+Figure 5-2. Output Voltage vs Temperature for Legacy Chip
+VI = 4.3 V
+VO = 3.3 V
+Iout = 1mA
+CO = 4.7uF
+Output Voltage (V)
+3.315
+3.31
+3.305
+3.3
+3.295
+3.29
+3.285
+3.28
+-75 -50 -25 0 25 50 75 100 125 150
+Temp C
+VIN = 4.3 V, VOUT = 3.3 V (for new chip)
+Figure 5-3. Output Voltage vs Temperature for New Chip Figure 5-4. Dropout Voltage vs Temperature for Legacy Chip
+Dropout (mV)
+450
+400
+350
+300
+250
+200
+150
+100
+50
+0
+Iout
+1mA
+10mA
+50mA
+150mA
+Dropout (mV)
+250
+225
+200
+175
+150
+125
+100
+75
+50
+25
+0
+VO = 3.3 V
+CO = 4.7uF
+Temperature
+-55 °C
+-40 °C
+25 °C
+85 °C
+150 °C
+0 °C
+125 °C
+-75 -50 -25 0 25 50 75 100 125 150
+Temperature (°C)
+Figure 5-5. Dropout Voltage vs Temperature for New Chip
+0 20 40 60 80 100 120 140 160
+IOUT (mA)
+Figure 5-6. Dropout Voltage vs Load Current for New Chip
+8 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 9 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+Load Regulation (mV)
+1
+0.8
+0.6
+0.4
+0.2
+0
+-0.2
+-0.4
+-0.6
+-0.8
+VI = 4.3 V
+VO = 3.3 V
+CO = 4.7uF
+-55 °C
+-40 °C
+0 °C
+Temperature
+25 °C
+85 °C
+125 °C
+150 °C
+VO = 3.3 V
+Iout= 1mA
+CO = 4.7uF
+Temperature
+-55C
+85C
+-40C
+0C
+25C
+125C
+150C
+0 20 40 60 80 100 120 140 160
+IOUT (mA)
+Figure 5-7. Output Regulation vs Load Current for New Chip
+Line Regulation (mV)
+1.5
+1
+0.5
+0
+-0.5
+-1
+-1.5
+-2
+4 6 8 10 12 14 16
+VIN (V)
+Figure 5-8. Output Regulation vs Input Voltage for New Chip
+VI = 6 V
+VO = 3.3 V
+Ci = 1 mF
+Cbyp = 0.01 mF
+0.5
+0.45
+0.4
+Short-Circuit Current − (A)
+0.35
+0.3
+0.25
+0.2
+0.15
+0.1
+0.05
+0
+−500 0 500 1000 1500 2000
+Time − (ms)
+Figure 5-9. Short-Circuit Current vs Time for Legacy Chip
+5 6000
+VO
+4 5400
+I SC
+3 4800
+2 4200
+1 3600
+0 3000
+Output Voltage - (V)
+-1 2400
+VIN = 6 V
+-2 1800
+Cbyp = 10 nF
+VO = 3.3 V
+-3 1200
+Output Current - (mA)
+-4 600
+-5 0
+-6 -600
+0 200 400 600 800 1000
+200s/div
+VIN = 6 V
+Figure 5-10. Short-Circuit Current vs Time for New Chip
+Short-Circuit Current − (A)
+0.5
+0.45
+0.4
+0.35
+0.3
+0.25
+0.2
+0.15
+0.1
+0.05
+0
+VI = 16 V
+VO = 3.3 V
+Ci = 1 mF
+Cbyp = 0.01 mF
+5 6000
+VO
+4 5400
+I SC
+3 4800
+2 4200
+1 3600
+0 3000
+Output Voltage - (V)
+-1 2400
+VIN = 16 V
+-2 1800
+Cbyp = 10 nF
+VO = 3.3 V
+-3 1200
+Output Current - (mA)
+-4 600
+-5 0
+-6 -600
+0 200 400 600 800 1000
+200s/div
+−100 100 300 500 700
+Time − (ms)
+Figure 5-11. Short-Circuit Current vs Time for Legacy Chip
+Figure 5-12. Short-Circuit Current vs Time for New Chip
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 9
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 10 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+VO = 3.3 V
+320
+300
+280
+ISC − (mA)
+260
+240
+220
+200
+0 0.5 1 1.5 2 2.5 3 3.5
+Output Voltage − (V)
+Figure 5-13. Short-Circuit Current vs Output Voltage for Legacy
+Chip
+VI = 4.3 V
+Current Limit (mA)
+380
+360
+340
+320
+300
+280
+260
+240
+220
+200
+0 0.5 1 1.5 2 2.5 3 3.5
+VOUT (V)
+Figure 5-14. Short-Circuit Current vs Output Voltage for New
+Chip
+-55 °C
+-40 °C
+0 °C
+Temperature
+25 °C
+85 °C
+125 °C
+150 °C
+VI = 4.3 V
+CO = 4.7uF
+Current Limit (mA)
+352
+351
+350
+349
+348
+-55 -25 5 35 65 95 125 150
+Temperature (C)
+Figure 5-15. Short-Circuit Current vs Temperature for New Chip
+VO = 3.3 V
+Cbyp = 10 nF
+1200
+1100
+1000
+Ground Pin Current − mA
+900
+800
+700
+600
+500
+400
+300
+200
+100
+0
+0 20 40 60 80 100 120 140
+160
+Load Current − mA
+Figure 5-16. Ground Pin Current vs Load Current for Legacy
+Chip
+VI = 4.3 V
+VO = 3.3 V
+CO = 4.7uF
+1200
+1100
+1000
+900
+800
+IGND (A)
+700
+600
+500
+400
+300
+200
+100
+0
+0 20 40 60 80 100 120 140 160
+IOUT
+Figure 5-17. Ground Pin Current vs Load Current for New Chip
+VI = 5 V
+VO = 3.3 V
+Co = 10 mF
+Cbyp = 0 nF
+50 mA
+1 mA
+150 mA
+Temperature
+-55 °C
+-40 °C
+0 °C
+85 °C
+125 °C
+150 °C
+25 °C
+100
+Ripple Rejection − (dB)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+10 100 1k 10k 100k 1M
+Frequency − (Hz)
+Figure 5-18. Ripple Rejection vs Frequency for Legacy Chip
+10 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 11 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+1 mA
+150 mA
+50 mA
+VIN = 5 V
+V0 = 3.3 V
+C0 = 10 uF
+Cbyp = 0 nF
+120
+110
+100
+Ripple Rejection - (dB)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+101 102 103 104 105 106 107
+Frequency - (Hz)
+VIN = 5 V, VOUT = 3.3 V, COUT = 10 μF, CBYP = 0 nF
+Figure 5-19. Ripple Rejection vs Frequency for New Chip
+VI = 3.7 V
+VO = 3.3 V
+Co = 10 mF
+Cbyp = 0 nF
+1 mA
+50 mA
+100
+Ripple Rejection − (dB)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+10 100 1k 10k 100k 1M
+Frequency − (Hz)
+Figure 5-20. Ripple Rejection vs Frequency for Legacy Chip
+150 mA
+1 mA
+VI = 5 V
+150 mA
+50 mA
+120
+110
+100
+Riple Rejection - (dB)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+1x101 1x102 1x103 1x104 1x105 1x106 1x107
+Frequency - (Hz)
+VIN = 3.7 V, VOUT = 3.3 V, COUT = 10 μF, CBYP = 0 nF
+Figure 5-21. Ripple Rejection vs Frequency for New Chip
+VO = 3.3 V
+Co = 4.7 mF
+Cbyp = 10 nF
+1 mA
+50 mA
+100
+Ripple Rejection − (dB)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+10 100 1k 10k 100k 1M
+Frequency − (Hz)
+Figure 5-22. Ripple Rejection vs Frequency for Legacy Chip
+150 mA
+1 mA
+150 mA
+50 mA
+VIN = 5 V
+V0 = 3.3 V
+C0 = 4.7 uF
+Cbyp = 10 nF
+120
+110
+100
+Ripple Rejection - (dB)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+1x101 1x102 1x103 1x104 1x105 1x106 1x107
+Frequency - (Hz)
+Figure 5-23. Ripple Rejection vs Frequency for New Chip
+VI = 5 V
+VO = 3.3 V
+Co = 4.7 mF
+Cbyp = 10 nF
+1 mA
+10 mA
+100 mA
+100
+Ripple Rejection − (dB)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+10 100 1k 10k 100k 1M
+Frequency − (Hz)
+Figure 5-24. Ripple Rejection vs Frequency for Legacy Chip
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 11
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 12 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+1 mA
+10 mA
+100 mA
+120
+110
+100
+Ripple Rejection - (dB)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+1x101 1x102 1x103 1x104 1x105 1x106 1x107
+Frequency - (Hz)
+Figure 5-25. Ripple Rejection vs Frequency for New Chip
+Ci = 1 mF
+Co = 10 mF
+VO = 3.3 V
+1 mA
+10 mA
+100 mA
+VIN = 5 V
+V0 = 3.3 V
+C0 = 4.7 uF
+Cbyp = 10 nF
+10
+Output Impedance − W ( )
+1
+0.1
+0.01
+0.001
+10 100 1k 10k 100k 1M
+Frequency − (Hz)
+Figure 5-26. Output Impedance vs Frequency for Legacy Chip
+Ci = 1 mF
+Co = 4.7 mF
+VO = 3.3 V
+1 mA
+10 mA
+100 mA
+Output Impedance − W ( )
+10
+1
+0.1
+0.01
+0.001
+10 100 1k 10k 100k 1M
+Frequency − (Hz)
+Figure 5-27. Output Impedance vs Frequency for Legacy Chip
+ILOAD = 150 mA
+Cbyp = 100 pF
+Cbyp = 1 nF
+Cbyp = 10 nF
+10
+Hz)
+Noise Density − m ( V/
+1
+0.1
+0.01
+100 1k 10k 100k
+Frequency − (Hz)
+Figure 5-28. Output Noise Density vs Frequency for Legacy
+Chip
+CBYP
+100 pF
+1 nF
+10 nF
+10
+5
+2
+Noise Density - (V / Hz)
+1
+0.5
+0.2
+0.1
+0.05
+0.02
+0.01
+0.005
+0.002
+0.001
+1x101 1x102 1x103 1x104 1x105 1x106 1x107
+Frequency - (Hz)
+Figure 5-29. Output Noise Density vs Frequency for New Chip
+ILOAD = 1 mA
+Cbyp = 100 pF
+Cbyp = 1 nF
+Cbyp = 10 nF
+10
+Hz)
+Noise Density − ( V/ m
+1
+0.1
+0.01
+100 1k 10k 100k
+Frequency − (Hz)
+Figure 5-30. Output Noise Density vs Frequency for Legacy
+Chip
+12 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 13 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+ILOAD = 1mA
+CBYP
+100pF
+1nF
+10nF
+10
+5
+2
+Noise Density - (V/ Hz)
+1
+0.5
+0.2
+0.1
+0.05
+0.02
+0.01
+0.005
+0.002
+0.001
+1x101 1x102 1x103 1x104 1x105 1x106 1x107
+Frequency - (Hz)
+Figure 5-31. Output Noise Density vs Frequency for New Chip
+VO = 3.3 V
+Cbyp = 10 nF
+RL = 3.3 k
+RL = Open
+Input Current − (mA)
+1.8
+1.6
+1.4
+1.2
+1
+0.8
+0.6
+0.4
+0.2
+0
+0 1 2 3 4 5 6
+Input Voltage − (V)
+Figure 5-32. Input Current vs Input Voltage for Legacy Chip
+-55 °C
+-40 °C
+0 °C
+Temperature
+25 °C
+85 °C
+125 °C
+150 °C
+IGND (A)
+VO = 3.3 V
+CO = 4.7uF
+1000
+800
+600
+400
+200
+0
+-200
+0 2 4 6 8 10 12 14 16
+VIN
+Figure 5-33. Input Current vs Input Voltage for New Chip
+VO = 3.3 V
+Cbyp = 10 nF
+150 mA
+1 mA
+Ground Current − (C)
+1400
+1200
+1000
+800
+600
+400
+200
+0
+−50 −25 0 25 50 75 100 125 150
+Temperature − (°C)
+Figure 5-34. Ground-Pin Current vs Temperature for Legacy
+Chip
+50 mA
+0 mA
+10 mA
+Load Current
+0
+50mA
+VI = 4.3 V
+VO = 3.3 V
+1mA
+10mA
+150mA
+IGND (A)
+1400
+1200
+1000
+800
+600
+400
+200
+0
+-75 -50 -25 0 25 50 75 100 125 150
+Temperature C
+Figure 5-35. Ground-Pin Current vs Temperature for New Chip Figure 5-36. 2.2-μF Stable ESR Range for Output Voltage ≤ 2.3 V
+for Legacy Chip
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 13
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 14 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+Figure 5-37. 4.7-μF Stable ESR Range for Output Voltage ≤ 2.3 V
+for Legacy Chip
+Figure 5-38. 2.2-μF, 3.3-μF Stable ESR Range for Output Voltage
+≥ 2.5 V for Legacy Chip
+14 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 15 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+6 Detailed Description
+6.1 Overview
+The LP2985 is a fixed-output, low-noise, high PSRR, low-dropout regulator that offers exceptional, cost-effective
+performance for both portable and nonportable applications. The LP2985 has an output tolerance of ±1% across
+load, and temperature variation (for the new chip) and is capable of delivering 150mA of continuous load current.
+This device features integrated overcurrent protection, thermal shutdown, and output enable. The new chip
+version also features internal output pulldown and has a built-in soft-start mechanism for controlled inrush
+current. This device delivers excellent line and load transient performance. The operating ambient temperature
+range of the device is –40°C to +125°C.
+6.2 Functional Block Diagrams
+Figure 6-1. Functional Block Diagram (Legacy Chip)
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 15
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 16 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+VIN VOUT
+Current
+Limit
+R1
+UVLO
+R2
+–
++
+GND
+BYPASS
+RF
+ON/OFF
+Internal
+Controller
+Bandgap
+Reference
+Output
+Pull-down
+VREF = 1.2 V
+GND
+Thermal
+Shutdown
+GND
+GND
+Figure 6-2. Functional Block Diagram (New Chip)
+6.3 Feature Description
+6.3.1 Output Enable
+The ON/OFF pin for the device is an active-high pin. The output voltage is enabled when the voltage of the
+ON/OFF pin is greater than the high-level input voltage of the ON/OFF pin and disabled with the ON/OFF pin
+voltage is less than the low-level input voltage of the ON/OFF pin. If independent control of the output voltage is
+not needed, connect the ON/OFF pin to the input of the device.
+In the legacy chip, for proper operation of the ON/OFF functionality, apply a signal with a slew rate of ≥40mV/µs.
+No slew rate consideration is required for the new chip.
+The new chip has an internal pulldown circuit that activates when the device is disabled. Pull the ON/OFF pin
+voltage lower than the low-level input voltage of the ON/OFF pin, to actively discharge the output voltage.
+6.3.2 Dropout Voltage
+Dropout voltage (VDO) is defined as the input voltage minus the output voltage (VIN – VOUT) at the rated output
+current (IRATED), where the pass transistor is fully on. IRATED is the maximum IOUT listed in the Recommended
+Operating Conditions table. The pass transistor is in the ohmic or triode region of operation, and acts as a
+switch. The dropout voltage indirectly specifies a minimum input voltage greater than the nominal programmed
+output voltage at which the output voltage is expected to stay in regulation. If the input voltage falls to less than
+the nominal output regulation, then the output voltage falls as well.
+16 Submit Document Feedback Product Folder Links: LP2985 LP2985A
+Copyright © 2025 Texas Instruments Incorporated
+
+===== PDF PAGE 17 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+For a CMOS regulator, the dropout voltage is determined by the drain-source on-state resistance (RDS(ON)) of the
+pass transistor. Therefore, if the linear regulator operates at less than the rated current, the dropout voltage for
+that current scales accordingly. The following equation calculates the RDS(ON) of the device.
+VDO
+R = DS(ON)
+IRATED (1)
+6.3.3 Current Limit
+The device has an internal current limit circuit that protects the regulator during transient high-load current faults
+or shorting events. The current limit is a brick-wall scheme. In a high-load current fault, the brick-wall scheme
+limits the output current to the current limit (ICL). ICL is listed in the Electrical Characteristics table.
+The output voltage is not regulated when the device is in current limit. When a current limit event occurs, the
+device begins to heat up because of the increase in power dissipation. When the device is in brick-wall current
+limit, the pass transistor dissipates power [(VIN – VOUT) × ICL]. If thermal shutdown is triggered, the device
+turns off. After the device cools down, the internal thermal shutdown circuit turns the device back on. If the
+output current fault condition continues, the device cycles between current limit and thermal shutdown. For more
+information on current limits, see the Know Your Limits application note.
+Figure 6-3 shows a diagram of the current limit.
+VOUT
+Brickwall
+VOUT(NOM)
+0 V
+IOUT
+0 mA
+IRATED
+Figure 6-3. Current Limit
+ICL
+6.3.4 Undervoltage Lockout (UVLO)
+The new chip has an independent undervoltage lockout (UVLO) circuit that monitors the input voltage, allowing a
+controlled and consistent turn on and off of the output voltage. To prevent the device from turning off if the input
+drops during turn on, the UVLO has hysteresis as specified in the Electrical Characteristics table.
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 17
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 18 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+6.3.5 Output Pulldown
+The new chip has an output pulldown circuit. The output pulldown activates in the following conditions:
+• When the device is disabled (VON/OFF < VON/OFF(LOW))
+• If 1.0 V < VIN < VUVLO
+Do not rely on the output pulldown circuit for discharging a large amount of output capacitance after the input
+supply has collapsed because reverse current can flow from the output to the input. This reverse current flow
+can cause damage to the device. See the Reverse Current section for more details.
+6.3.6 Thermal Shutdown
+The device contains a thermal shutdown protection circuit to disable the device when the junction temperature
+(TJ) of the pass transistor rises to TSD(shutdown) (typical). Thermal shutdown hysteresis assures that the device
+resets (turns on) when the temperature falls to TSD(reset) (typical).
+The thermal time-constant of the semiconductor die is fairly short, thus the device can cycle on and off
+when thermal shutdown is reached until power dissipation is reduced. Power dissipation during start up can
+be high from large VIN – VOUT voltage drops across the device or from high inrush currents charging large
+output capacitors. Under some conditions, the thermal shutdown protection disables the device before start up
+completes.
+For reliable operation, limit the junction temperature to the maximum listed in the Recommended Operating
+Conditions table. Operation above this maximum temperature causes the device to exceed operational
+specifications. Although the internal protection circuitry of the device is designed to protect against thermal
+overall conditions, this circuitry is not intended to replace proper heat sinking. Continuously running the device
+into thermal shutdown or above the maximum recommended junction temperature reduces long-term reliability.
+6.4 Device Functional Modes
+6.4.1 Device Functional Mode Comparison
+Table 6-1 shows the conditions that lead to the different modes of operation. See the Electrical Characteristics
+table for parameter values.
+Table 6-1. Device Functional Mode Comparison
+PARAMETER
+OPERATING MODE
+VIN VON/OFF IOUT TJ
+Normal operation VIN > VOUT(nom) + VDO and VIN > VIN(min) VON/OFF > VON/OFF(HI) IOUT < IOUT(max) TJ < TSD(shutdown)
+Dropout operation VIN(min) < VIN < VOUT(nom) + VDO VON/OFF > VON/OFF(HI) IOUT < IOUT(max) TJ < TSD(shutdown)
+Disabled
+(any true condition
+disables the device)
+VON/OFF < VON/
+VIN < VUVLO
+Not applicable TJ > TSD(shutdown)
+OFF(LOW)
+6.4.2 Normal Operation
+The device regulates to the nominal output voltage when the following conditions are met:
+• The input voltage is greater than the nominal output voltage plus the dropout voltage (VOUT(nom) + VDO)
+• The output current is less than the current limit (IOUT < ICL)
+• The device junction temperature is less than the thermal shutdown temperature (TJ < TSD)
+• The ON/OFF voltage has previously exceeded the ON/OFF rising threshold voltage and has not yet
+decreased to less than the enable falling threshold
+18 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 19 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+6.4.3 Dropout Operation
+If the input voltage is lower than the nominal output voltage plus the specified dropout voltage, but all other
+conditions are met for normal operation, the device operates in dropout mode. In this mode, the output voltage
+tracks the input voltage. During this mode, the transient performance of the device becomes significantly
+degraded because the pass transistor is in the ohmic or triode region, and acts as a switch. Line or load
+transients in dropout can result in large output-voltage deviations.
+When the device is in a steady dropout state (defined as when the device is in dropout, VIN < VOUT(NOM) + VDO,
+directly after being in a normal regulation state, but not during start up), the pass transistor is driven into the
+ohmic or triode region. When the input voltage returns to a value greater than or equal to the nominal output
+voltage plus the dropout voltage (VOUT(NOM) + VDO), the output voltage can overshoot for a short period of time
+while the device pulls the pass transistor back into the linear region.
+6.4.4 Disabled
+The output of the device can be shutdown by forcing the voltage of the ON/OFF pin to less than the maximum
+ON/OFF pin low-level input voltage (see the Electrical Characteristics table). When disabled, the pass transistor
+is turned off, internal circuits are shutdown, and the output voltage is actively discharged to ground by an internal
+discharge circuit from the output to ground.
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 19
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 20 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+7 Application and Implementation
+Note
+Information in the following applications sections is not part of the TI component specification,
+and TI does not warrant its accuracy or completeness. TI’s customers are responsible for
+determining suitability of components for their purposes, as well as validating and testing their design
+implementation to confirm system functionality.
+7.1 Application Information
+7.1.1 Recommended Capacitor Types
+7.1.1.1 Recommended Capacitors (Legacy Chip)
+Preferably, use ceramic capacitors on the output of the LP2985 for several reasons. For capacitances ranging
+from 2.2μF to 4.7μF, ceramic capacitors have the lowest cost and lowest ESR, making these components choice
+candidates for filtering high-frequency noise. For instance, a typical 2.2μF ceramic capacitor has an ESR ranging
+from 10mΩ to 20mΩ, which satisfies the minimum ESR requirements of the regulator. Ceramic capacitors have
+one major disadvantage to be taken into account: a poor temperature coefficient, where the capacitance varies
+significantly with temperature. For instance, a large-value ceramic capacitor (≥ 2.2μF) potentially loses more
+than half of the capacitance as the temperature rises from 25°C to 85°C. Thus, a 2.2μF capacitor at 25°C drops
+well below the minimum COUT required for stability, as ambient temperature rises. For this reason, select an
+output capacitor that maintains the minimum 2.2μF required for stability over the entire operating temperature
+range. There are some ceramic capacitors that maintain a ±15% capacitance tolerance over temperature.
+Tantalum capacitors are able to be used at the output of the LP2985, but there are significant disadvantages
+prohibiting this usage:
+• In the 1μF to 4.7μF range, tantalum capacitors are more expensive than ceramics of the equivalent
+capacitance and voltage ratings.
+• Tantalum capacitors have higher ESR values than equivalent-sized ceramic counterparts. Thus, to meet the
+ESR requirements, a higher-capacitance tantalum is required, at the expense of larger size and higher cost.
+• The ESR of a tantalum capacitor increases as temperature drops, as much as double from +25°C to –40°C.
+Thus, maintain ESR margins over the temperature range to prevent regulator instability.
+7.1.1.2 Recommended Capacitors (New Chip)
+The new chip is designed to be stable using low equivalent series resistance (ESR) ceramic capacitors at
+the input and output. Multilayer ceramic capacitors have become the industry standard for these types of
+applications and are recommended, but use good judgment. Ceramic capacitors that employ X7R-, X5R-, and
+C0G-rated dielectric materials provide relatively good capacitive stability across temperature. Using Y5V-rated
+capacitors is discouraged because of large variations in capacitance.
+Maximum supported ESR range across complete temperature (−40°C to +125°C) and load current range
+(0mA−150mA) is less than 1Ω. For existing implementations, where different capacitor types with higher ESR
+values are used, use a low ESR, 100nF MLCC capacitor. Place this capacitor as close as possible to the device
+output (VOUT) pin.
+Regardless of the ceramic capacitor type selected, the effective capacitance varies with operating voltage
+and temperature. Generally, expect the effective capacitance to decrease by as much as 50%. The input and
+output capacitors listed in the Recommended Operating Conditions table account for an effective capacitance of
+approximately 50% of the nominal value.
+7.1.2 Input and Output Capacitor Requirements
+7.1.2.1 Input Capacitor Requirements
+For the legacy chip, a minimum value of 1μF (over the entire operating temperature range) is required at
+the input of the LP2985. In addition, place this input capacitor within 1cm of the input pin, connected to a
+20 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 21 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+clean analog ground. There are no equivalent series resistance (ESR) requirements for this capacitor; increase
+capacitance without limit.
+For the new chip, although an input capacitor is not required for stability, good analog design practice is to
+connect a capacitor from IN to GND. This capacitor counteracts reactive input sources and improves transient
+response, input ripple, and PSRR. Use an input capacitor if the source impedance is more than 0.5Ω. Use a
+higher value capacitor if large, fast rise-time load or line transients are anticipated. Use this capacitor if the
+device is located several inches from the input power source.
+7.1.2.2 Output Capacitor Requirements
+For the legacy chip, the LP2985 permits using low ESR capacitors at the output, including ceramic capacitors
+that have an ESR as low as 5mΩ. Tantalum and film capacitors are also available if size and cost are not
+issues. Place the output capacitor within 1cm of the output pin. Make sure this capacitor returns to a clean
+analog ground. As with other PNP LDOs, stability conditions require the output capacitor to have a minimum
+capacitance and an ESR that falls within a certain range.
+• Minimum COUT: 2.2μF (increase this capacitance without limit to improve transient response stability margin)
+• ESR range: see Figure 5-36 through Figure 5-38
+Both the minimum capacitance and ESR requirement are critical to be met over the entire operating temperature
+range. Depending on the type of capacitors used, both these parameters potentially vary significantly with
+temperature (see the Recommended Capacitors (Legacy Chip) section).
+For the new chip, dynamic performance of the device is improved with the use of an output capacitor. Use an
+output capacitor within the range specified in the Recommended Operating Conditions table for stability. Review
+the Recommended Capacitors (New Chip) section for further information on supported output capacitors.
+7.1.3 Noise Bypass Capacitor (CBYPASS)
+The LP2985 allows for low-noise performance with the use of a bypass capacitor that is connected to the internal
+band-gap reference with the BYPASS pin. This high-impedance band-gap circuitry is biased in the microampere
+range and, thus, cannot be loaded significantly, otherwise, the output (and, correspondingly, the output of the
+regulator) changes. Thus, for best output accuracy, dc leakage current through CBYPASS must be minimized as
+much as possible and must never exceed 100 nA. The CBYPASS capacitor also impacts the start-up behavior of
+the regulator. Inrush current and start-up time increase with larger bypass capacitor values.
+Use a 10-nF capacitor for CBYPASS. Ceramic and film capacitors are good choices for this purpose.
+7.1.4 Reverse Current
+Excessive reverse current can damage this device. Reverse current flows through the intrinsic body diode of the
+pass transistor instead of the normal conducting channel. At high magnitudes, this current flow degrades the
+long-term reliability of the device.
+Conditions where reverse current can occur are outlined in this section, all of which can exceed the absolute
+maximum rating of VOUT ≤ VIN + 0.3 V.
+• If the device has a large COUT and the input supply collapses with little or no load current
+• The output is biased when the input supply is not established
+• The output is biased above the input supply
+If reverse current flow is expected in the application, use external protection to protect the device. Reverse
+current is not limited in the device, so external limiting is required if extended reverse voltage operation is
+anticipated.
+Figure 7-1 shows one approach for protecting the device.
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 21
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 22 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+Schottky Diode
+Internal Body Diode
+IN OUT
+CIN
+COUT
+GND
+GND
+GND
+GND
+Figure 7-1. Example Circuit for Reverse Current Protection Using a Schottky Diode
+7.1.5 Power Dissipation (PD)
+Circuit reliability requires consideration of the device power dissipation, location of the circuit on the printed
+circuit board (PCB), and correct sizing of the thermal plane. The PCB area around the regulator must have few
+or no other heat-generating devices that cause added thermal stress.
+To first-order approximation, power dissipation in the regulator depends on the input-to-output voltage difference
+and load conditions. The following equation calculates power dissipation (PD).
+PD = (VIN – VOUT) × IOUT (2)
+Note
+Power dissipation can be minimized, and therefore greater efficiency can be achieved, by correct
+selection of the system voltage rails. For the lowest power dissipation use the minimum input voltage
+required for correct output regulation.
+For devices with a thermal pad, the primary heat conduction path for the device package is through the thermal
+pad to the PCB. Solder the thermal pad to a copper pad area under the device. This pad area must contain an
+array of plated vias that conduct heat to additional copper planes for increased heat dissipation.
+The maximum power dissipation determines the maximum allowable ambient temperature (TA) for the device.
+According to the following equation, power dissipation and junction temperature are most often related by the
+junction-to-ambient thermal resistance (RθJA) of the combined PCB and device package and the temperature of
+the ambient air (TA).
+TJ = TA + (RθJA × PD) (3)
+Thermal resistance (RθJA) is highly dependent on the heat-spreading capability built into the particular PCB
+design, and therefore varies according to the total copper area, copper weight, and location of the planes.
+The junction-to-ambient thermal resistance listed in the Thermal Information table is determined by the JEDEC
+standard PCB and copper-spreading area, and is used as a relative measure of package thermal performance.
+7.1.6 Estimating Junction Temperature
+The JEDEC standard now recommends the use of psi (Ψ) thermal metrics to estimate the junction temperatures
+of the linear regulator when in-circuit on a typical PCB board application. These metrics are not thermal
+resistance parameters and instead offer a practical and relative way to estimate junction temperature. These
+psi metrics are determined to be significantly independent of the copper area available for heat-spreading.
+The Thermal Information table lists the primary thermal metrics, which are the junction-to-top characterization
+parameter (ψJT) and junction-to-board characterization parameter (ψJB). These parameters provide two methods
+for calculating the junction temperature (TJ), as described in the following equations. Use the junction-to-top
+characterization parameter (ψJT) with the temperature at the center-top of device package (TT) to calculate
+22 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 23 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+the junction temperature. Use the junction-to-board characterization parameter (ψJB) with the PCB surface
+temperature 1 mm from the device package (TB) to calculate the junction temperature.
+TJ = TT + ψJT × PD (4)
+where:
+• PD is the dissipated power
+• TT is the temperature at the center-top of the device package
+TJ = TB + ψJB × PD (5)
+where:
+• TB is the PCB surface temperature measured 1 mm from the device package and centered on the package
+edge
+For detailed information on the thermal metrics and how to use them, see the Semiconductor and IC Package
+Thermal Metrics application note.
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 23
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 24 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+7.2 Typical Application
+Figure 7-2 shows the standard usage of the LP2985 as a low-dropout regulator.
+LP2985
+VIN 1
+1 µF
+5
+VOUT
+2.2 µF
+GND
+2
+ON/OFF
+3
+4 BYPASS
+10 nF
+Figure 7-2. LP2985 Typical Application
+7.2.1 Design Requirements
+Minimum COUT value for stability (can be increased without limit for improved stability and transient response)
+ON/OFF must be actively terminated. Connect to VIN if shutdown feature is not used.
+Optional BYPASS capacitor for low-noise operation.
+7.2.2 Detailed Design Procedure
+7.2.2.1 ON/OFF Operation
+The LP2985 allows for a shutdown mode via the ON/OFF pin. Driving the pin LOW (≤ 0.4 V) turns the device
+OFF; conversely, a HIGH (≥ 1.2 V) turns the device ON. If the shutdown feature is not used, connect ON/OFF to
+the input to ensure that the regulator is on at all times. For proper operation, do not leave ON/OFF unconnected.
+24 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 25 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+7.2.3 Application Curves
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+Output Voltage − (V)
+IL
+VO = 3.3 V
+Cbyp = 10 nF
+DIL = 100 mA
+VO
+Load Current − (mA)
+3.4
+3.38
+3.36
+3.34
+3.32
+3.3
+3.28
+3.26
+3.24
+3.22
+200
+150
+100
+50
+0
+−50
+−100
+−150
+−200
+−250
+20 ms/div
+Figure 7-3. Load Transient Response for Legacy Chip
+Output Voltage -(V)
+3.82 300
+VO
+3.76 250
+IL
+3.7 200
+3.64 150
+3.58 100
+V0 = 3.3V
+3.52 50
+Cbyp = 10nF
+3.46 0
+IL=100mA
+3.4 -50
+3.34 -100
+3.28 -150
+3.22 -200
+3.16 -250
+3.1 -300
+0 20 40 60 80 100 120 140 150
+20s/div
+dI/dt = 1 A/μ
+Figure 7-4. Load Transient Response for New Chip
+Load Current - (mA)
+Output Voltage − (V)
+IL
+VO = 3.3 V
+Cbyp = 10 nF
+DIL = 150 mA
+VO
+Load Current − (mA)
+3.4
+3.38
+3.36
+3.34
+3.32
+3.3
+3.28
+3.26
+3.24
+3.22
+200
+150
+100
+50
+0
+−50
+−100
+−150
+−200
+−250
+20 ms/div
+Figure 7-5. Load Transient Response for Legacy Chip
+Output Voltage - (V)
+3.82 300
+VO
+3.76 250
+IL
+3.7 200
+3.64 150
+3.58 100
+VO = 3.3V
+3.52 50
+Cbyp =10 nF
+IL=150mA
+3.46 0
+3.4 -50
+3.34 -100
+3.28 -150
+3.22 -200
+3.16 -250
+3.1 -300
+0 20 40 60 80 100 120 140 150
+20s/div
+dI/dt = 1 A/μ
+Figure 7-6. Load Transient for New Chip
+Load Current - (mA)
+Output Voltage − (V)
+IL
+VO = 3.3 V
+Cbyp = 0 nF
+DIL = 150 mA
+VO
+Load Current − (mA)
+3.4
+3.38
+3.36
+3.34
+3.32
+3.3
+3.28
+3.26
+3.24
+3.22
+200
+150
+100
+50
+0
+−50
+−100
+−150
+−200
+−250
+20 ms/div
+Figure 7-7. Load Transient Response for Legacy Chip
+Output Voltage - (V)
+3.82 300
+VO
+3.76 250
+IL
+3.7 200
+3.64 150
+3.58 100
+V0 = 3.3V
+3.52 50
+Cbyp = 0 nF
+IL = 150 mA
+3.46 0
+3.4 -50
+3.34 -100
+3.28 -150
+3.22 -200
+3.16 -250
+3.1 -300
+0 20 40 60 80 100 120 140 150
+20s/div
+dI/dt = 1 A/μ
+Figure 7-8. Load Transient Response for New Chip
+Load Current - (mA)
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 25
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 26 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+7.2.3 Application Curves (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+Output Voltage − (V)
+3.41
+3.39
+3.37
+3.35
+3.33
+3.31
+3.29
+3.27
+VI
+VO = 3.3 V
+Cbyp = 0 nF
+IO = 150 mA
+VO
+5.5
+5
+4.5
+4
+3.5
+3
+2.5
+2
+3.41 6.5
+VO
+VIN
+3.39 6
+Input Voltage − (V)
+Output Voltage - (V)
+20 ms/div
+Figure 7-9. Line Transient Response for Legacy Chip
+3.37 5.5
+3.35 5
+3.33 4.5
+3.31 4
+3.29 3.5
+3.27 3
+0 40 80 120 160 200 240 280
+20 s/div
+Input Voltage - (V)
+VOUT = 3.3 V, CBYP = 0 nF, ΔVIN = 1 V, IOUT = 150 mA, dV/dt =
+1 V/μ
+Figure 7-10. Line Transient Response for New Chip
+3.312 7
+VO
+3.31 6.5
+VIN
+VI
+Output Voltage − (V)
+VO = 3.3 V
+Cbyp = 10 nF
+IO = 150 mA
+Input Voltage − (V)
+3.41
+3.39
+3.37
+3.35
+3.33
+3.31
+3.29
+3.27
+5.5
+5
+4.5
+4
+3.5
+3
+2.5
+2
+20 ms/div
+Figure 7-11. Line Transient Response for Legacy Chip
+Output Voltage - (V)
+VO
+3.308 6
+3.306 5.5
+3.304 5
+3.302 4.5
+Input Voltage - (V)
+3.3 4
+3.298 3.5
+3.296 3
+0 20 40 60 80 100 120 140 160 180 200
+20 s/div
+VOUT = 3.3 V, CBYP = 10 nF, ΔVIN = 1 V, IOUT = 150 mA, dV/dt
+= 1 V/μ
+Figure 7-12. Line Transient Response for New Chip
+VI
+VO = 3.3 V
+Cbyp = 0 nF
+IO = 1 mA
+5.5
+5
+4.5
+4
+3.5
+3
+2.5
+2
+Input Voltage − (V)
+Output Voltage − (V)
+3.41
+3.39
+3.37
+3.35
+3.33
+3.31
+3.29
+3.27
+20 ms/div
+Figure 7-13. Line Transient Response for Legacy Chip
+3.41 6.5
+VO
+VIN
+3.39 6
+Output Voltage - (V)
+VO
+3.37 5.5
+3.35 5
+3.33 4.5
+3.31 4
+3.29 3.5
+3.27 3
+0 40 80 120 160 200 240 280
+20 s/div
+Input Voltage - (V)
+VOUT = 3.3 V, CBYP = 0 nF, ΔVIN = 1 V, IOUT = 1 mA, dV/dt = 1
+V/μ
+Figure 7-14. Line Transient Response for New Chip
+26 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 27 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+7.2.3 Application Curves (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+Output Voltage − (V)
+3.41
+3.39
+3.37
+3.35
+3.33
+3.31
+3.29
+3.27
+VIN
+VO = 3.3 V
+Cbyp = 10 nF
+IO = 1 mA
+VO
+5.5
+5
+4.5
+4
+3.5
+3
+2.5
+2
+Input Voltage − (V)
+Output Voltage - (V)
+Input Voltage - (V)
+100 ms/div
+Figure 7-15. Line Transient Response for Legacy Chip
+3.312 7
+3.311 6.75
+VO
+3.31 6.5
+VIN
+3.309 6.25
+3.308 6
+3.307 5.75
+3.306 5.5
+3.305 5.25
+3.304 5
+3.303 4.75
+3.302 4.5
+3.301 4.25
+3.3 4
+3.299 3.75
+3.298 3.5
+3.297 3.25
+3.296 3
+0 20 40 60 80 100 120 140 160170
+20 s/div
+VOUT = 3.3 V, CBYP = 10 nF, ΔVIN = 1 V, IOUT = 1 mA, dV/dt =
+1 V/μ
+Figure 7-16. Line Transient Response for New Chip
+Output Voltage − (V)
+4
+3
+2
+1
+0
+−1
+−2
+−3
+−4
+VO
+VO = 3.3 V
+Cbyp = 0
+IO = 150 mA
+VON/OFF
+10
+8
+6
+4
+2
+0
+VON/OFF − (V)
+Output Voltage - (V)
+100 ms/div
+Figure 7-17. Turn-On Time for Legacy Chip
+4 16
+VO
+3 14
+VON
+V0 = 3.3 V
+Cbyp =0
+2 12
+ILOAD = 150 mA
+1 10
+0 8
+-1 6
+-2 4
+-3 2
+-4 0
+0 100 200 300 400 500 600 700
+100s/div
+Figure 7-18. Turn-On Time for New Chip
+VON- (V)
+VO
+VO = 3.3 V
+Cbyp = 100 pF
+ILOAD = 150 mA
+10
+8
+6
+4
+2
+0
+VON/OFF − (V)
+4
+3
+2
+Output Voltage − (V)
+1
+0
+−1
+−2
+−3
+−4
+200 ms/div
+Figure 7-19. Turn-On Time for Legacy Chip
+4 16
+VO
+3 14
+V0N
+Output Voltage - (V)
+2 12
+1 10
+0 8
+Von- (V)
+V0 = 3.3 V
+-1 6
+Cbyp = 100 pF
+ILOAD = 150 mA
+-2 4
+VON/OFF
+-3 2
+-4 0
+0 200 400 600 800 1000 1200
+200s/div
+Figure 7-20. Turn-On Time for New Chip
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 27
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 28 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+7.2.3 Application Curves (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 1.0 V or 2.5 V (whichever is greater), IOUT = 1 mA, ON/OFF pin tied to
+VIN, CIN = 1.0 µF, and COUT = 4.7 µF (unless otherwise noted)
+Output Voltage − (V)
+4
+3
+2
+1
+0
+−1
+−2
+−3
+−4
+VO
+VO = 3.3 V
+Cbyp = 1 nF
+ILOAD = 150 mA
+VON/OFF
+10
+8
+6
+4
+2
+0
+4 16
+Vo
+3 14
+VON
+VON/OFF − (V)
+Output Voltage - (V)
+2 ms/div
+COUT = 4.7 μF
+Figure 7-21. Turn-On Time for Legacy Chip
+2 12
+1 10
+0 8
+V0= 3.3 V
+Cbyp = 1nF
+-1 6
+ILOAD = 150mA
+-2 4
+-3 2
+-4 0
+0 2 4 6 8 10 12
+2 ms/div
+COUT = 4.7 μF
+Figure 7-22. Turn-On Time for New Chip
+VON- (V)
+Output Voltage − (V)
+4
+3
+2
+1
+0
+−1
+−2
+−3
+−4
+Input
+VO = 3.3 V
+Cbyp = 10 nF
+ILOAD = 150 mA
+Output
+10
+8
+6
+4
+2
+0
+4 16
+3 14
+VOUT
+VON
+2 12
+VON/OFF − (V)
+Output Voltage - (V)
+20 ms/div
+COUT = 4.7 μF
+Figure 7-23. Turn-On Time
+1 10
+0 8
+V0 = 3.3 V
+Cbyp = 10 nF
+-1 6
+ILOAD = 150 mA
+-2 4
+-3 2
+-4 0
+0 20 40 60 80 100 120
+20ms/div
+COUT = 4.7 μF
+Figure 7-24. Turn-On Time for New Chip
+VON- (V)
+28 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 29 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+7.3 Power Supply Recommendations
+A power supply can be used at the input voltage within the ranges given in the Recommended Operating
+Conditions table. Use bypass capacitors as described in the Layout Guidelines section.
+7.4 Layout
+7.4.1 Layout Guidelines
+• Bypass the input pin to ground with a bypass capacitor.
+• The optimum placement of the bypass capacitor is closest to the VIN of the device and GND of the system.
+Care must be taken to minimize the loop area formed by the bypass capacitor connection, the VIN pin, and
+the GND pin of the system.
+• For operation at full-rated load, use wide trace lengths to eliminate IR drop and heat dissipation.
+7.4.2 Layout Example
+VIN
+VOUT
+COUT
+CIN
+GND
+PLANE
+CBYPASS
+ON/OFF
+BYPASS
+Figure 7-25. Layout Diagram
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 29
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 30 =====
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025 www.ti.com
+8 Device and Documentation Support
+8.1 Device Support
+8.1.1 Device Nomenclature
+Table 8-1. Available Options
+PRODUCT(1) DESCRIPTION
+LP2985c-xxyyyzM3
+c is the accuracy specification for the legacy chip (A or blank). See the Electrical
+Characteristics table for more information. This character is insignificant for the new chip.
+xx is the nominal output voltage (for example, 33 = 3.3V; 50 = 5.0V). yyy is the package
+designator (DBV = SOT-23). z is the reel designator size. See the Package Addendum
+for more information on package quantity. This device ships with the legacy chip (CSO:
+DLN or GF8) or the new chip (CSO: RFB), which uses the latest manufacturing flow. The
+reel packaging label provides CSO information to distinguish which chip is used. Device
+performance for new and legacy chips is denoted throughout the document. M3 is a
+suffix designator only significant for the new chip with CSO:RFB, which uses the latest
+manufacturing flow.
+(1) For the most current package and ordering information, see the Package Option Addendum at the end of this document, or visit the
+device product folder at www.ti.com.
+8.2 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on
+Notifications to register and receive a weekly digest of any product information that has changed. For change
+details, review the revision history included in any revised document.
+8.3 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+not necessarily reflect TI's views; see TI's Terms of Use.
+8.4 Trademarks
+TI E2E™ is a trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+8.5 Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled
+with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may
+be more susceptible to damage because very small parametric changes could cause the device not to meet its published
+specifications.
+8.6 Glossary
+TI Glossary This glossary lists and explains terms, acronyms, and definitions.
+30 Submit Document Feedback Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 31 =====
+www.ti.com
+LP2985, LP2985A
+SLVS522S – JULY 2004 – REVISED MAY 2025
+9 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision R (July 2023) to Revision S (May 2025) Page
+• Added nomenclature distinguishing between new chip and legacy chip information throughout document......1
+• Changed Overview section: changed 1% to ±1%, deleted line variation, and clarified new chip features.......15
+• Added Functional Block Diagram (Legacy Chip) figure....................................................................................15
+• Changed Output Enable section to identify differences between new and legacy chip functionality............... 16
+• Changed Recommended Capacitor Types section and added subsections.................................................... 20
+• Changed Input and Output Capacitor Requirements section...........................................................................20
+• Changed Device Nomenclature section........................................................................................................... 30
+10 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+Copyright © 2025 Texas Instruments Incorporated Submit Document Feedback 31
+Product Folder Links: LP2985 LP2985A
+
+===== PDF PAGE 32 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 5-Mar-2026
+PACKAGING INFORMATION
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+LP2985-10DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LRCG
+LP2985-10DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LRCG
+LP2985-10DBVT Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LRCG
+LP2985-10DBVT.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LRCG
+LP2985-18DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPHG, LPHL)
+LP2985-18DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPHG, LPHL)
+LP2985-18DBVRE4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPHG
+LP2985-18DBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPHG
+LP2985-18DBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPHG
+LP2985-18DBVRM3 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 LPHG
+LP2985-18DBVRM3.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 LPHG
+LP2985-18DBVT Obsolete Production SOT-23 (DBV) | 5 - - Call TI Call TI -40 to 125 (LPHG, LPHL)
+LP2985-18DBVTG4 Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPHG
+LP2985-18DBVTG4.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPHG
+LP2985-25DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LPLG, LPLL)
+LP2985-25DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPLG, LPLL)
+LP2985-25DBVT Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPLG, LPLL)
+LP2985-25DBVT.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPLG, LPLL)
+LP2985-28DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPGG, LPGL)
+LP2985-28DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPGG, LPGL)
+LP2985-28DBVTG4 Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPGG
+LP2985-28DBVTG4.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPGG
+LP2985-29DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPMG
+LP2985-29DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPMG
+LP2985-30DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LPNG, LPNL)
+LP2985-30DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPNG, LPNL)
+LP2985-30DBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPNG, LPNL)
+LP2985-30DBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPNG, LPNL)
+LP2985-30DBVT Obsolete Production SOT-23 (DBV) | 5 - - Call TI Call TI -40 to 125 (LPNG, LPNL)
+Addendum-Page 1
+
+===== PDF PAGE 33 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 5-Mar-2026
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+LP2985-33DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPFG, LPFL)
+LP2985-33DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPFG, LPFL)
+LP2985-33DBVRE4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPFG
+LP2985-33DBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPFG
+LP2985-33DBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPFG
+LP2985-33DBVRM3 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 LPFG
+LP2985-33DBVRM3.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 LPFG
+LP2985-33DBVT Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPFG, LPFL)
+LP2985-33DBVT.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPFG, LPFL)
+LP2985-33DBVTG4 Obsolete Production SOT-23 (DBV) | 5 - - Call TI Call TI -40 to 125 LPFG
+LP2985-33DBVTM3 Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 LPFG
+LP2985-33DBVTM3.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 LPFG
+LP2985-50DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LPSG, LPSL)
+LP2985-50DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPSG, LPSL)
+LP2985-50DBVT Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LPSG, LPSL)
+LP2985-50DBVT.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPSG, LPSL)
+LP2985-50DBVTG4 Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPSG, LPSL)
+LP2985-50DBVTG4.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPSG, LPSL)
+LP2985-50DBVTM3 Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 LPSG
+LP2985-50DBVTM3.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 LPSG
+LP2985A-10DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LRDG
+LP2985A-10DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LRDG
+LP2985A-10DBVT Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LRDG
+LP2985A-10DBVT.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LRDG
+LP2985A-18DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPTG, LPTL)
+LP2985A-18DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPTG, LPTL)
+LP2985A-18DBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPTG
+LP2985A-18DBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPTG
+LP2985A-18DBVT Obsolete Production SOT-23 (DBV) | 5 - - Call TI Call TI -40 to 125 (LPTG, LPTL)
+LP2985A-25DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LPUG, LPUL)
+LP2985A-25DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPUG, LPUL)
+Addendum-Page 2
+
+===== PDF PAGE 34 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 5-Mar-2026
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+LP2985A-25DBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPUG, LPUL)
+LP2985A-25DBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPUG, LPUL)
+LP2985A-25DBVRM3 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -45 to 125 (LP7G, LPUG)
+LP2985A-25DBVRM3.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -45 to 125 (LP7G, LPUG)
+LP2985A-25DBVT Obsolete Production SOT-23 (DBV) | 5 - - Call TI Call TI -40 to 125 (LPUG, LPUL)
+LP2985A-28DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LPJG, LPJL)
+LP2985A-28DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPJG, LPJL)
+LP2985A-29DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPZG, LPZL)
+LP2985A-29DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPZG, LPZL)
+LP2985A-30DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LRAG, LRAL)
+LP2985A-30DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LRAG, LRAL)
+LP2985A-30DBVT Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LRAG, LRAL)
+LP2985A-30DBVT.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LRAG, LRAL)
+LP2985A-33DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LPKG, LPKL)
+LP2985A-33DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LPKG, LPKL)
+LP2985A-33DBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPKG
+LP2985A-33DBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPKG
+LP2985A-33DBVRM3 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 LPKG
+LP2985A-33DBVRM3.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPKG
+LP2985A-33DBVT Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPFG, LPKG, LPKL)
+LP2985A-33DBVT.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPFG, LPKG, LPKL)
+LP2985A-33DBVTE4 Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPKG
+LP2985A-33DBVTG4 Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPKG
+LP2985A-33DBVTG4.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 LPKG
+LP2985A-50DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LR1G, LR1L)
+LP2985A-50DBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LR1G, LR1L)
+LP2985A-50DBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LR1G, LR1L)
+LP2985A-50DBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 (LR1G, LR1L)
+LP2985A-50DBVRM3 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 LR1G
+Addendum-Page 3
+
+===== PDF PAGE 35 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 5-Mar-2026
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+LP2985A-50DBVRM3.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 LR1G
+LP2985A-50DBVT Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 (LPSG, LR1G, LR1L)
+LP2985A-50DBVT.A Active Production SOT-23 (DBV) | 5 250 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 (LPSG, LR1G, LR1L)
+(1) Status: For more details on status, see our product life cycle.
+(2) Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+(3) RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+(4) Lead finish/Ball material: column width.
+Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+(5) MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+(6) Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+Addendum-Page 4
+
+===== PDF PAGE 36 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 29-Aug-2026
+TAPE AND REEL INFORMATION
+REEL DIMENSIONS
+TAPE DIMENSIONS
+K0 P1
+B0 W
+Reel
+Diameter
+Cavity
+A0
+A0
+Dimension designed to accommodate the component width
+B0
+Dimension designed to accommodate the component length
+K0
+Dimension designed to accommodate the component thickness
+W
+Overall width of the carrier tape
+P1
+Pitch between successive cavity centers
+Reel Width (W1)
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Sprocket Holes
+Q4 User Direction of Feed
+Q1 Q2 Q1
+Q2
+Q3 Q4 Q3
+Pocket Quadrants
+*All dimensions are nominal
+Device Package
+Type
+Package
+Drawing
+Pins SPQ Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+LP2985-10DBVR SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985-10DBVT SOT-23 DBV 5 250 178.0 9.0 3.3 3.2 1.4 4.0 8.0 Q3
+LP2985-18DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-18DBVRG4 SOT-23 DBV 5 3000 178.0 9.0 3.3 3.2 1.4 4.0 8.0 Q3
+LP2985-18DBVRM3 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-18DBVTG4 SOT-23 DBV 5 250 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985-25DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-28DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-28DBVTG4 SOT-23 DBV 5 250 178.0 9.0 3.3 3.2 1.4 4.0 8.0 Q3
+LP2985-29DBVR SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985-30DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-30DBVRG4 SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985-30DBVRG4 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-33DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-33DBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-33DBVRG4 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+Pack Materials-Page 1
+
+===== PDF PAGE 37 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 29-Aug-2026
+Device Package
+Type
+Package
+Drawing
+Pins SPQ Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+LP2985-33DBVRM3 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-33DBVT SOT-23 DBV 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-33DBVTM3 SOT-23 DBV 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-50DBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-50DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-50DBVT SOT-23 DBV 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-50DBVTG4 SOT-23 DBV 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985-50DBVTM3 SOT-23 DBV 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-10DBVR SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985A-10DBVT SOT-23 DBV 5 250 178.0 9.0 3.3 3.2 1.4 4.0 8.0 Q3
+LP2985A-18DBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-18DBVRG4 SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985A-25DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-25DBVRG4 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-25DBVRG4 SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985A-25DBVRM3 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-25DBVRM3 SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-28DBVR SOT-23 DBV 5 3000 180.0 9.2 3.17 3.23 1.37 4.0 8.0 Q3
+LP2985A-28DBVR SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985A-29DBVR SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3
+LP2985A-30DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-33DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-33DBVRG4 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-33DBVRM3 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-33DBVRM3 SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-33DBVRM3 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-33DBVT SOT-23 DBV 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-33DBVTG4 SOT-23 DBV 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-50DBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-50DBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-50DBVRG4 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-50DBVRM3 SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-50DBVRM3 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+LP2985A-50DBVT SOT-23 DBV 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+Pack Materials-Page 2
+
+===== PDF PAGE 38 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 29-Aug-2026
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+H
+W
+L
+*All dimensions are nominal
+Device Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)
+LP2985-10DBVR SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985-10DBVT SOT-23 DBV 5 250 180.0 180.0 18.0
+LP2985-18DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985-18DBVRG4 SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985-18DBVRM3 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985-18DBVTG4 SOT-23 DBV 5 250 180.0 180.0 18.0
+LP2985-25DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985-28DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985-28DBVTG4 SOT-23 DBV 5 250 180.0 180.0 18.0
+LP2985-29DBVR SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985-30DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985-30DBVRG4 SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985-30DBVRG4 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985-33DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985-33DBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985-33DBVRG4 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985-33DBVRM3 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985-33DBVT SOT-23 DBV 5 250 210.0 185.0 35.0
+Pack Materials-Page 3
+
+===== PDF PAGE 39 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 29-Aug-2026
+Device Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)
+LP2985-33DBVTM3 SOT-23 DBV 5 250 210.0 185.0 35.0
+LP2985-50DBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985-50DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985-50DBVT SOT-23 DBV 5 250 210.0 185.0 35.0
+LP2985-50DBVTG4 SOT-23 DBV 5 250 210.0 185.0 35.0
+LP2985-50DBVTM3 SOT-23 DBV 5 250 210.0 185.0 35.0
+LP2985A-10DBVR SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985A-10DBVT SOT-23 DBV 5 250 180.0 180.0 18.0
+LP2985A-18DBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-18DBVRG4 SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985A-25DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985A-25DBVRG4 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-25DBVRG4 SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985A-25DBVRM3 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-25DBVRM3 SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985A-28DBVR SOT-23 DBV 5 3000 205.0 200.0 33.0
+LP2985A-28DBVR SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985A-29DBVR SOT-23 DBV 5 3000 180.0 180.0 18.0
+LP2985A-30DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985A-33DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985A-33DBVRG4 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-33DBVRM3 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-33DBVRM3 SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985A-33DBVRM3 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-33DBVT SOT-23 DBV 5 250 210.0 185.0 35.0
+LP2985A-33DBVTG4 SOT-23 DBV 5 250 210.0 185.0 35.0
+LP2985A-50DBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985A-50DBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-50DBVRG4 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-50DBVRM3 SOT-23 DBV 5 3000 208.0 191.0 35.0
+LP2985A-50DBVRM3 SOT-23 DBV 5 3000 210.0 185.0 35.0
+LP2985A-50DBVT SOT-23 DBV 5 250 210.0 185.0 35.0
+Pack Materials-Page 4
+
+===== PDF PAGE 40 =====
+DBV0005A
+PACKAGE OUTLINE
+SOT-23 - 1.45 mm max height
+SCALE 4.000
+SMALL OUTLINE TRANSISTOR
+3.0
+2.6
+1.75
+1.45
+C
+0.1 C
+B
+A
+PIN 1
+INDEX AREA
+2X 0.95
+1.9
+1
+2
+5
+(0.1)
+(0.15)
+4
+3.05
+2.75
+1.9
+3
+5X 0.5
+0.3
+0.2 C A B
+NOTE 5
+4X 0 -15
+(1.1)
+1.45
+0.90
+0.15
+0.00 TYP
+4X 4 -15
+0.25
+GAGE PLANE
+8
+0 TYP
+0.22
+0.08 TYP
+0.6
+0.3 TYP
+SEATING PLANE
+4214839/K 08/2024
+NOTES:
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. Refernce JEDEC MO-178.
+4. Body dimensions do not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+exceed 0.25 mm per side.
+5. Support pin may differ or may not be present.
+www.ti.com
+
+===== PDF PAGE 41 =====
+DBV0005A
+EXAMPLE BOARD LAYOUT
+SOT-23 - 1.45 mm max height
+SMALL OUTLINE TRANSISTOR
+PKG
+5X (1.1)
+1
+5
+5X (0.6)
+SYMM
+(1.9)
+2
+2X (0.95)
+(R0.05) TYP
+3 4
+(2.6)
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE:15X
+SOLDER MASK
+OPENING
+METAL
+EXPOSED METAL
+METAL UNDER
+SOLDER MASK
+EXPOSED METAL
+SOLDER MASK
+OPENING
+0.07 MAX
+ARROUND
+NON SOLDER MASK
+DEFINED
+(PREFERRED)
+0.07 MIN
+ARROUND
+SOLDER MASK
+DEFINED
+SOLDER MASK DETAILS
+4214839/K 08/2024
+NOTES: (continued)
+6. Publication IPC-7351 may have alternate designs.
+7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+www.ti.com
+
+===== PDF PAGE 42 =====
+DBV0005A
+EXAMPLE STENCIL DESIGN
+SOT-23 - 1.45 mm max height
+SMALL OUTLINE TRANSISTOR
+PKG
+5X (1.1)
+1
+5
+5X (0.6)
+SYMM
+2
+(1.9)
+2X(0.95)
+3 4
+(R0.05) TYP
+(2.6)
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+SCALE:15X
+4214839/K 08/2024
+NOTES: (continued)
+8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+design recommendations.
+9. Board assembly site may have different recommendations for stencil design.
+www.ti.com
+
+===== PDF PAGE 43 =====
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025

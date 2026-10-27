@@ -1,0 +1,2566 @@
+
+
+===== PDF PAGE 1 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+TLV755P 500mA, Low-IQ, Small-Size, Low-Dropout Regulator
+1 Features
+• SOT-23-5 package with 60.3°C/W RθJA available
+• Input voltage range: 1.45V to 5.5V
+• Low IQ: 25μA (typical)
+• Low dropout:
+– 238mV (maximum) at 500mA (3.3VOUT)
+• Output accuracy: 1% (maximum at 85°C)
+• Built-in soft-start with monotonic VOUT rise
+• Foldback current limit
+• Active output discharge
+• High PSRR: 46dB at 100kHz
+• Stable with a 1µF ceramic output capacitor
+• Packages:
+– 2.9mm × 2.8mm SOT-23-5 (DBV)
+– 2.9mm × 2.8mm SOT-23-5 (DYD) with thermal
+pad
+– 1mm × 1mm X2SON-4 (DQN)
+– 2mm × 2mm WSON-6 (DRV)
+2 Applications
+• Set-top boxes, TV, and gaming consoles
+• Portable and battery-powered equipment
+• Desktops, notebooks, and ultrabooks
+• Tablets and remote controls
+• White goods and appliances
+• Grid infrastructure and protection relays
+• Camera modules and image sensors
+CIN
+IN
+EN
+TLV755P
+OUT
+GND
+COUT
+ON
+OFF
+3 Description
+The TLV755P is an ultra-small, low quiescent current,
+low-dropout regulator (LDO) that sources 500mA
+with good line and load transient performance.
+The TLV755P is optimized for a wide variety of
+applications by supporting an input voltage range
+from 1.45V to 5.5V. To minimize cost and solution
+size, the device is offered in fixed output voltages
+ranging from 0.6V to 5V to support the lower
+core voltages of modern microcontrollers (MCUs).
+Additionally, the TLV755P has a low IQ with enable
+functionality to minimize standby power. This device
+features an internal soft-start to lower inrush current,
+thus providing a controlled voltage to the load and
+minimizing the input voltage drop during start up.
+When shutdown, the device actively pulls down the
+output to quickly discharge the outputs and provide a
+known start-up state.
+The TLV755P is stable with small ceramic output
+capacitors allowing for a small overall solution size.
+A precision band-gap and error amplifier provides
+a typical accuracy of 1%. All device versions
+have integrated thermal shutdown, current limit, and
+undervoltage lockout (UVLO). The TLV755P has an
+internal foldback current limit that helps reduce the
+thermal dissipation during short-circuit events.
+The TLV755 is available in the popular WSON,
+X2SON, and SOT23-5 (DRV, DQN, and DBV)
+packages. This device is also available in a
+thermally enhanced SOT23-5 (DYD) package with
+a thermal pad that provides significantly reduced
+thermal resistance compared to a standard SOT23-5
+package.
+Package Information
+Typical Application
+PART NUMBER PACKAGE(1) PACKAGE SIZE(2)
+DQN (X2SON, 4) 1mm × 1mm
+7 175
+VOUT VIN VEN IOUT
+DBV (SOT-23, 5) 2.9mm × 2.8mm
+TLV755P
+Voltage (V)
+6 150
+5 125
+4 100
+3 75
+2 50
+1 25
+0 0
+0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2
+Time (ms)
+DYD (SOT-23, 5) 2.9mm × 2.8mm
+Output Current (mA)
+DRV (WSON, 6) 2mm × 2mm
+(1) (2) For more information, see the Mechanical, Packaging, and
+Orderable Information.
+The package size (length × width) is a nominal value and
+includes pins, where applicable.
+Start-Up Waveform
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+===== PDF PAGE 2 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Pin Configuration and Functions...................................3
+5 Specifications.................................................................. 4
+5.1 Absolute Maximum Ratings........................................ 4
+5.2 ESD Ratings............................................................... 4
+5.3 Recommended Operating Conditions.........................4
+5.4 Thermal Information ...................................................5
+5.5 Electrical Characteristics.............................................5
+5.6 Typical Characteristics................................................7
+6 Detailed Description......................................................12
+6.1 Overview...................................................................12
+6.2 Functional Block Diagram.........................................12
+6.3 Feature Description...................................................12
+6.4 Device Functional Modes..........................................14
+7 Application and Implementation..................................15
+7.1 Application Information............................................. 15
+7.2 Typical Application.................................................... 19
+7.3 Power Supply Recommendations.............................20
+7.4 Layout....................................................................... 21
+8 Device and Documentation Support............................23
+8.1 Device Support......................................................... 23
+8.2 Receiving Notification of Documentation Updates....23
+8.3 Support Resources................................................... 23
+8.4 Trademarks...............................................................23
+8.5 Electrostatic Discharge Caution................................23
+8.6 Glossary....................................................................23
+9 Revision History............................................................ 24
+10 Mechanical, Packaging, and Orderable
+Information.................................................................... 24
+2 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 3 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+5
+4 Pin Configuration and Functions
+OUT
+1
+4 IN
+GND
+2
+3 EN
+Not to scale
+Figure 4-1. DQN Package, 4-Pin X2SON (Top View)
+IN 1
+OUT
+GND
+EN
+NC
+Not to scale
+Figure 4-3. DYD Package, 5-Pin SOT-23 With
+Exposed Thermal Pad (Top View)
+IN
+1
+5 OUT
+GND
+2
+EN 4 NC
+3
+Not to scale
+Figure 4-2. DBV Package, 5-Pin SOT-23 (Top View)
+5
+2
+Thermal
+Pad
+3 4
+1
+OUT 6 IN
+2
+Thermal
+NC 5 NC
+Pad
+GND 4 EN
+3
+Not to scale
+NC = no internal connection.
+Figure 4-4. DRV Package, 6-Pin WSON With
+Exposed Thermal Pad (Top View)
+Table 4-1. Pin Functions
+PIN
+TYPE(2) DESCRIPTION
+NAME DQN DBV DYD DRV
+EN 3 3 3 4 I
+Enable pin. Drive EN greater than VHI to turn on the regulator.
+Drive EN less than VLO to place the low-dropout regulator (LDO)
+into shutdown mode.
+GND 2 2 2 3 — Ground pin.
+IN 4 1 1 6 I
+Input pin. A capacitor with a value of 1µF or larger is required from
+this pin to ground.(1) See the Input and Output Capacitor Selection
+section for more information.
+NC — 4 4 2, 5 — No internal connection.
+OUT 1 5 5 1 O
+Regulated output voltage pin. A capacitor with a value of 1µF or
+larger is required from this pin to ground.(1) See the Input and
+Output Capacitor Selection section for more information.
+Thermal pad Pad — Pad Pad —
+Connect the thermal pad to a large-area ground plane.
+The thermal pad is internally connected to GND.
+(1) (2) Make sure the nominal input and output capacitance is greater than 0.47µF. Throughout this document the nominal derating on these
+capacitors is 50%. Make sure the effective capacitance at the pin is greater than 0.47µF.
+I = Input; O = Output
+Copyright © 2024 Texas Instruments Incorporated Product Folder Links: TLV755P
+Submit Document Feedback 3
+
+===== PDF PAGE 4 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+5 Specifications
+5.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted)(1)
+MIN MAX UNIT
+Supply voltage, VIN −0.3 6.0 V
+Enable voltage, VEN −0.3 6.0 V
+Output voltage, VOUT −0.3 VIN + 0.3(2) V
+Operating junction temperature TJ −40 150 °C
+Storage temperature, Tstg −65 150 °C
+(1) (2) Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply
+functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions.
+If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully
+functional, and this may affect device reliability, functionality, performance, and shorten the device lifetime.
+The absolute maximum rating is VIN + 0.3 V or 6.0 V, whichever is smaller.
+5.2 ESD Ratings
+VALUE UNIT
+V(ESD) Electrostatic discharge Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001(1) Charged-device model (CDM), per JEDEC specification JESD22-C101(2) ±1000
+±500
+V
+(1) (2) JEDEC document JEP155 states that 500V HBM allows safe manufacturing with a standard ESD control process. Manufacturing with
+less than 500V HBM is possible with the necessary precautions.
+JEDEC document JEP157 states that 250V CDM allows safe manufacturing with a standard ESD control process. Manufacturing with
+less than 250V CDM is possible with the necessary precautions.
+5.3 Recommended Operating Conditions
+over operating free-air temperature range (unless otherwise noted)
+MIN NOM MAX UNIT
+VIN Input voltage 1.45 5.5 V
+VOUT Output voltage 0.6 5.0 V
+VEN Enable voltage 0 5.5 V
+IOUT Output current 0 500 mA
+CIN Input capacitor 1 μF
+COUT Output capacitor 1 200 μF
+fEN Enable toggle frequency 10 kHz
+TJ Junction temperature –40 125 °C
+4 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 5 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+5.4 Thermal Information
+TLV755
+PCB THERMAL METRIC(1) (2)
+DYD
+(SOT-23-5)
+DQN
+(X2SON)
+DBV
+(SOT-23-5)
+DRV
+(WSON)
+UNIT
+5 PINS 4 PINS 5 PINS 6 PINS
+RθJA Junction-to-ambient thermal resistance 60.3 N/A 100.8 N/A
+EVM
+ψJT Junction-to-top characterization parameter 14.2 N/A 23.3 N/A
+°C/W
+ψJB Junction-to-board characterization parameter 35.9 N/A 67.8 N/A
+RθJA Junction-to-ambient thermal resistance 92.5 168.4 231.1 100.2
+RθJC(top) Junction-to-case (top) thermal resistance 119.8 139.1 118.4 108.5
+RθJB Junction-to-board thermal resistance 45.8 101.4 64.4 64.3
+JEDEC
+°C/W
+ψJT Junction-to-top characterization parameter 16.7 5.6 28.4 10.4
+ψJB Junction-to-board characterization parameter 44.9 101.7 63.8 64.8
+RθJC(bot) Junction-to-case (bottom) thermal resistance 34.3 88.4 N/A 34.7
+(1) For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+(2) note.
+JEDEC thermal metrics apply to JEDEC standard PCB (2s2p, no vias to internal plane and bottom layer). EVM metrics apply to the
+LP087A EVM with an exposed pad SOT-23-5 (DYD) layout.
+5.5 Electrical Characteristics
+at operating temperature range (TJ =–40°C to 125°C), VIN=VOUT(NOM) + 0.5V or 2.0V (whichever is greater), IOUT = 1mA, VEN
+= VIN, and CIN = COUT = 1μF (unless otherwise noted); all typical values at TJ = 25°C
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+VIN Input voltage 1.45 5.5 V
+VOUT Output voltage 0.6 5.0 V
+−40°C ≤ TJ ≤ +85°C, DBV and DRV package −1 1 %
+VOUT ≥ 1.0V, DQN package −1.2 1.2 %
+Output accuracy
+−40°C ≤ TJ ≤ +85°C; 0.6V ≤ VOUT < 1.0V −10 10 mV
+VOUT ≥ 1V −1.5 1.5 %
+0.6V ≤ VOUT < 1V -15 15 mV
+(ΔVOUT)ΔVIN Line regulation VOUT + 0.5V ≤ VIN ≤ 5.5V, VOUT > 1.5V 2 mV
+DQN package 0.036
+ΔVOUT/ΔIOUT Load regulation 0.1mA ≤ IOUT
+≤ 500mA
+DBV and DYD packages 0.060
+V/A
+DRV package 0.044
+TJ = 25°C, IOUT = 0mA 14 25 31
+IGND Ground current
+−40°C ≤ TJ ≤ +85°C, IOUT = 0mA 33
+µA
+−40°C ≤ TJ ≤ +125°C, IOUT = 0mA 40
+ISHDN Shutdown current VEN ≤ 0.4V, 1.4V ≤ VIN ≤ 5.5V, −40°C ≤ TJ ≤ +125°C 0.1 1 µA
+ICL Output current limit
+VIN = VOUT+
+VDO(MAX) +
+0.25V
+VOUT = VOUT - 0.2V, VOUT ≤ 1.5V 560 720 865
+mA
+VOUT = 0.9 x VOUT, 1.5V < VOUT ≤ 4.5V 560 720 865
+ISC Short-circuit current limit VOUT = 0V 355 mA
+Copyright © 2024 Texas Instruments Incorporated Product Folder Links: TLV755P
+Submit Document Feedback 5
+
+===== PDF PAGE 6 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+5.5 Electrical Characteristics (continued)
+at operating temperature range (TJ =–40°C to 125°C), VIN=VOUT(NOM) + 0.5V or 2.0V (whichever is greater), IOUT = 1mA, VEN
+= VIN, and CIN = COUT = 1μF (unless otherwise noted); all typical values at TJ = 25°C
+PARAMETER TEST CONDITIONS MIN TYP MAX UNIT
+0.6V ≤ VOUT < 0.8V 675 1080
+0.8 V ≤ VOUT < 1.0V 600 930
+0.8 V ≤ VOUT < 1.0V, DYD package 600 950
+1.0V ≤ VOUT < 1.2V 550 780
+1.0V ≤ VOUT < 1.2V, DYD package 550 800
+1.2V ≤ VOUT < 1.5V 500 630
+IOUT =
+500mA,
+−40°C ≤ TJ ≤
++85°C
+1.2V ≤ VOUT < 1.5V, DYD package 500 650
+1.5V ≤ VOUT < 1.8V 350 400
+1.5V ≤ VOUT < 1.8V, DYD package 350 420
+1.8V ≤ VOUT < 2.5V 325 380
+1.8V ≤ VOUT < 2.5V, DYD package 325 400
+2.5V ≤ VOUT < 3.3V 250 300
+2.5V ≤ VOUT < 3.3V, DYD package 250 320
+3.3V ≤ VOUT < 5.0V 150 215
+3.3V ≤ VOUT < 5.0V, DYD package 150 238
+VDO Dropout voltage
+mV
+0.6V ≤ VOUT < 0.8V 1140
+0.8V ≤ VOUT < 1.0V 985
+0.8V ≤ VOUT < 1.0V, DYD package 1005
+1.0V ≤ VOUT < 1.2V 825
+1.0V ≤ VOUT < 1.2V, DYD package 845
+1.2V ≤ VOUT < 1.5V 665
+IOUT =
+500mA,
+−40°C ≤ TJ ≤
++125°C
+1.2V ≤ VOUT < 1.5V, DYD package 685
+1.5V ≤ VOUT < 1.8V 425
+1.5V ≤ VOUT < 1.8V, DYD package 445
+1.8V ≤ VOUT < 2.5V 400
+1.8V ≤ VOUT < 2.5V, DYD package 420
+2.5V ≤ VOUT < 3.3V 325
+2.5V ≤ VOUT < 3.3V, DYD package 345
+3.3V ≤ VOUT < 5.0V 238
+3.3V ≤ VOUT < 5.0V, DYD package 258
+f = 1kHz, VIN = VOUT + 1V, IOUT = 50mA 52
+PSRR Power-supply rejection ratio
+f = 100kHz, VIN = VOUT + 1V, IOUT = 50mA 46
+dB
+f = 1MHz, VIN = VOUT + 1 V, IOUT = 50mA 52
+VN Output noise voltage BW = 10Hz to 100kHz; VOUT = 1.2V, IOUT = 50 mA 71.5 µVRMS
+VUVLO Undervoltage lockout VIN rising 1.21 1.3 1.44 V
+VUVLO,HYST Undervoltage lockout hysteresis VIN falling 40 mV
+tSTR Startup time 550 µs
+VHI EN pin high voltage (enabled) 1 V
+VLO EN pin low voltage (enabled) 0.3 V
+IEN Enable pin current EN = 5.5V 10 nA
+TSD Thermal shutdown Shutdown, temperature increasing Reset, temperature decreasing 165
+155
+°C
+RPULLDOWN Pulldown resistance VIN = 5.5V 120 Ω
+6 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 7 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+5.6 Typical Characteristics
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 0.5V or 1.45V (whichever is greater), IOUT = 1mA, VEN = VIN, and CIN
+= COUT = 1µF (unless otherwise noted)
+Power Supply Rejection Ratio (dB)
+100
+80
+60
+40
+20
+0
+IOUT = 10 mA
+IOUT = 50 mA
+IOUT = 100 mA
+IOUT = 500 mA
+Power Supply Rejection Ratio (dB)
+100
+80
+60
+40
+20
+0
+VIN
+3.8 V
+4 V
+4.3 V
+4.5 V
+5 V
+10 100 1k 10k 100k 1M 10M
+Frequency (Hz)
+10 100 1k 10k 100k 1M 10M
+Frequency (Hz)
+VIN = 4.3V, VOUT = 3.3V, COUT = 1µF
+Figure 5-1. PSRR vs Frequency and IOUT
+VOUT = 3.3V, COUT = 1µF, IOUT = 500mA
+Figure 5-2. PSRR vs Frequency and VIN
+Power Supply Rejection Ratio (dB)
+100
+80
+60
+40
+20
+0
+Noise (PV/óHz)
+COUT = 1 PF
+COUT = 10 PF
+COUT = 22 PF
+COUT = 100 PF
+10
+5
+2
+1
+0.5
+0.2
+0.1
+0.05
+0.02
+0.01
+0.005
+0.002
+0.001
+COUT
+1 PF, 143 PVRMS
+10 PF, 150 PVRMS
+22 PF, 149 PVRMS
+100 PF, 146 PVRMS
+10 100 1k 10k 100k 1M 10M
+Frequency (Hz)
+10 100 1k 10k 100k 1M 10M
+Frequency (Hz)
+VIN = 4.3V, VOUT = 3.3V, IOUT = 500mA
+Figure 5-3. PSRR vs Frequency and COUT
+VOUT = 3.3V, VRMS BW = 10Hz to 100kHz
+Figure 5-4. Output Spectral Noise Density vs Frequency and
+COUT
+Noise (PV/óHz)
+10
+5
+2
+1
+0.5
+0.2
+0.1
+0.05
+0.02
+0.01
+0.005
+0.002
+0.001
+IOUT
+10 mA, 140 PVRMS
+50 mA, 142 PVRMS
+100 mA, 142 PVRMS
+500 mA, 143 PVRMS
+Output Noise Voltage (PVRMS)
+220
+200
+180
+160
+140
+120
+100
+80
+60
+40
+10 100 1k 10k 100k 1M 10M
+Frequency (Hz)
+0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
+Output Voltage (V)
+VOUT = 3.3V, IOUT = 500mA, COUT = 1µF, VRMS BW = 10Hz to
+100kHz
+Figure 5-5. Output Spectral Noise Density vs Frequency and
+IOUT
+IOUT = 500mA, COUT = 1µF, VRMS BW = 10Hz to 100kHz
+Figure 5-6. Output Noise Voltage vs VOUT
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 7
+Product Folder Links: TLV755P
+
+===== PDF PAGE 8 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 0.5V or 1.45V (whichever is greater), IOUT = 1mA, VEN = VIN, and CIN
+= COUT = 1µF (unless otherwise noted)
+Input Voltage (V)
+6 3.328
+VIN
+VOUT
+5 3.32
+4 3.312
+3 3.304
+2 3.296
+1 3.288
+0 3.28
+0 20 40 50
+Time (ms)
+3.4 640
+VOUT
+3.375 560
+IOUT
+Output Voltage (V)
+Output Voltage (V)
+3.35 480
+3.325 400
+3.3 320
+3.275 240
+3.25 160
+3.225 80
+3.2 0
+0 40 80 120 160 200 240 280 320 360 400 440 480
+Time (µs)
+Output Current (A)
+VOUT = 3.3V, COUT = 1µF, VIN slew rate = 1V/µs
+Figure 5-7. Line Transient
+VIN = 5V, VOUT = 3.3V, COUT = 1µF, IOUT slew rate = 1A/µs
+Figure 5-8. 3.3V, 1mA to 500mA Load Transient
+Voltage (V)
+6
+5
+4
+3
+2
+1
+0
+VIN
+VOUT
+Voltage (V)
+6
+5
+4
+3
+2
+1
+0
+VIN
+VOUT
+0 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
+Time (ms)
+0 1 2 3 4 5 6 7 8 9 10
+Time (ms)
+Figure 5-9. VIN = VEN Power-Up
+Figure 5-10. VIN = VEN Shutdown
+7 175
+VOUT VIN VEN IOUT
+Voltage (V)
+6 150
+5 125
+4 100
+3 75
+2 50
+1 25
+0 0
+0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2
+Time (ms)
+Output Current (mA)
+Change in Output Voltage (mV)
+10
+5
+0
+-5
+-10
+-15
+-20
+-25
+-30
+-40°C
+0°C
+25°C
+85°C
+125°C
+0 50 100 150 200 250 300 350 400 450 500
+Output Current (mA)
+VIN = 5V, IOUT = 100mA, VEN slew rate = 1V/µs,
+VOUT = 3.3V
+Figure 5-11. EN Start-Up
+Figure 5-12. Load Regulation vs IOUT
+8 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 9 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 0.5V or 1.45V (whichever is greater), IOUT = 1mA, VEN = VIN, and CIN
+= COUT = 1µF (unless otherwise noted)
+Dropout Voltage (mV)
+200
+175
+150
+125
+100
+75
+50
+25
+0
+-40qC
+0qC
+25qC
+85qC
+125qC
+Dropout Voltage (mV)
+200
+160
+120
+80
+40
+0
+-40qC
+0qC
+25qC
+85qC
+125qC
+0 50 100 150 200 250 300 350 400 450 500
+Output Current (mA)
+0 50 100 150 200 250 300 350 400 450 500
+Output Current (mA)
+Figure 5-13. 3.3V Dropout Voltage vs IOUT
+Figure 5-14. 5.0V Dropout Voltage vs IOUT
+Accuracy (%)
+1
+0.75
+0.5
+0.25
+0
+-0.25
+-0.5
+-0.75
+-1
+-40qC
+0qC
+25qC
+85qC
+125qC
+Accuracy (%)
+1
+0.75
+0.5
+0.25
+0
+-0.25
+-0.5
+-0.75
+-1
+-40qC
+0qC
+25qC
+85qC
+125qC
+3.5 3.75 4 4.25 4.5 4.75 5 5.25 5.5
+Input Voltage (V)
+5 5.1 5.2 5.3 5.4 5.5
+Input Voltage (V)
+VOUT = 3.3V, IOUT = 1mA
+Figure 5-15. 3.3V Regulation vs VIN (Line Regulation)
+IOUT = 1mA, VOUT = 5V
+Figure 5-16. 5.0V Accuracy vs VIN (Line Regulation)
+GND Pin Current (ɥA)
+800
+700
+600
+500
+400
+300
+200
+100
+0
+GND Pin Current (PA)
+-40°C
+0°C
+25°C
+85°C
+125°C
+650
+600
+550
+500
+450
+400
+350
+300
+250
+200
+150
+100
+50
+0
+-40qC
+0qC
+25qC
+85qC
+125qC
+0 50 100 150 200 250 300 350 400 450 500
+Output Current (mA)
+Figure 5-17. IGND vs IOUT
+0 1 2 3 4 5 6
+Input Voltage (V)
+VOUT = 3.3V, IOUT = 1mA
+Figure 5-18. IGND vs VIN
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 9
+Product Folder Links: TLV755P
+
+===== PDF PAGE 10 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 0.5V or 1.45V (whichever is greater), IOUT = 1mA, VEN = VIN, and CIN
+= COUT = 1µF (unless otherwise noted)
+Quiescent Current (PA)
+300
+250
+200
+150
+100
+50
+0
+-40qC
+0qC
+25qC
+85qC
+125qC
+Shutdown Current (nA)
+350
+300
+250
+200
+150
+100
+50
+0
+-40qC
+0qC
+25qC
+85qC
+125qC
+0 1 2 3 4 5 6
+Input Voltage (V)
+0 1 2 3 4 5 6
+Input Voltage (V)
+VOUT = 3.3V, IOUT = 0mA
+Figure 5-19. IQ vs VIN
+VEN = 0V
+Figure 5-20. ISHDN vs VIN
+Shutdown Current (nA)
+180
+160
+140
+120
+100
+80
+60
+40
+20
+0
+Enable Threshold (mV)
+-40 -20 0 20 40 60 80 100 120 140
+Temperature (qC)
+800
+750
+700
+650
+600
+550
+500
+-50 -25 0 25 50 75 100 125
+Temperature (qC)
+EN Negative EN Positive
+VEN = 0V
+Figure 5-21. ISHDN vs Temperature
+Figure 5-22. Enable Threshold vs Temperature
+Enable Current (PA)
+250
+200
+150
+100
+50
+0
+-40qC
+0qC
+25qC
+85qC
+125qC
+UVLO Threshold (V)
+1.4
+1.36
+1.32
+1.28
+1.24
+1.2
+UVLO Negative UVLO Positive
+0 1 2 3 4 5 6
+Input Voltage (V)
+VEN = 5.5V
+Figure 5-23. IEN vs VIN
+-50 -25 0 25 50 75 100 125
+Temperature (qC)
+Figure 5-24. UVLO Threshold vs Temperature
+10 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 11 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+5.6 Typical Characteristics (continued)
+at operating temperature TJ = 25°C, VIN = VOUT(NOM) + 0.5V or 1.45V (whichever is greater), IOUT = 1mA, VEN = VIN, and CIN
+= COUT = 1µF (unless otherwise noted)
+Output Voltage (mV)
+600
+550
+500
+450
+400
+350
+300
+250
+200
+150
+100
+50
+0
+3.5
+-40qC
+85qC
+0qC
+25qC
+125qC
+3
+Output Voltage (mV)
+2.5
+2
+1.5
+1
+-40°C
+0°C
+25°C
+0.5
+85°C
+125°C
+0
+0 1 2 3 4 5
+Output Current (mA)
+0 100 200 300 400 500 600 700 800
+Output Current (mA)
+Figure 5-25. VOUT vs IOUT Pulldown Resistor
+Figure 5-26. 3.3V Foldback Current Limit, VOUT vs IOUT
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 11
+Product Folder Links: TLV755P
+
+===== PDF PAGE 12 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+6 Detailed Description
+6.1 Overview
+The TLV755P low-dropout regulator (LDO) consumes low quiescent current and delivers excellent line and
+load transient performance. The TLV755P is optimized for a wide variety of applications by supporting an input
+voltage range from 1.45V to 5.5V. To minimize cost and solution size, the device is offered in fixed output
+voltages ranging from 0.6V to 5V to support the lower core voltages of modern microcontrollers (MCUs).
+This regulator offers foldback current limit, shutdown, and thermal protection. The operating junction temperature
+is –40°C to +125°C.
+6.2 Functional Block Diagram
+IN
+OUT
+Current
+Limit
+R1
+Thermal
+Shutdown
++±
+UVLO
+120 ü
+R2
+EN GND
+Bandgap
+Logic
+R2 = 550kΩ, R1 = adjustable.
+6.3 Feature Description
+6.3.1 Undervoltage Lockout (UVLO)
+An undervoltage lockout (UVLO) circuit disables the output until the input voltage is greater than the rising UVLO
+voltage (VUVLO). This circuit makes sure the device does not exhibit unpredictable behavior when the supply
+voltage is lower than the operational range of the internal circuitry. When VIN is less than VUVLO, the output is
+connected to ground with a 120Ω pulldown resistor.
+6.3.2 Enable (EN)
+The enable pin (EN) is active high. Enable the device by forcing the EN pin to exceed VHI. Turn off the device by
+forcing the EN pin below VLO. If shutdown capability is not required, connect EN to IN.
+The device has an internal pulldown that connects a 120Ω resistor to ground when the device is disabled. The
+discharge time after disabling depends on the output capacitance (COUT) and the load resistance (RL) in parallel
+with the 120Ω pulldown resistor. Equation 1 calculates the time constant τ:
+120·RL
+t =
+·COUT
+120+RL
+(1)
+12 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 13 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+The EN pin is independent of the input pin (IN), but if the EN pin is driven to a higher voltage than VIN, the
+current into the EN pin increases. This effect is illustrated in Figure 5-23. When the EN voltage is higher than
+the input voltage there is an increased current flow into the EN pin. If this increased flow causes problems in
+the application, sequence the EN pin after VIN is high, or to tie EN to VIN to prevent this flow increase from
+happening. If EN is driven to a higher voltage than VIN, limit the frequency on EN to below 10kHz.
+6.3.3 Internal Foldback Current Limit
+The TLV755P has an internal current limit that protects the regulator during fault conditions. The current limit
+is a hybrid scheme with brick wall until the output voltage is less than 0.4V × VOUT(NOM). When the voltage
+drops below 0.4V × VOUT(NOM), a foldback current limit is implemented that scales back the current as the output
+voltage approaches GND. When the output shorts, the LDO supplies a typical current of ISC. The output voltage
+is not regulated when the device is in current limit. In this condition, the output voltage is the product of the
+regulated current and the load resistance. When the device output shorts, the PMOS pass transistor dissipates
+power [(VIN – VOUT) × ISC] until thermal shutdown is triggered and the device turns off. After the device cools
+down, the internal thermal shutdown circuit turns the device back on. If the fault condition continues, the device
+cycles between current limit and thermal shutdown.
+The foldback current-limit circuit limits the current that is allowed through the device to current levels lower than
+the minimum current limit at nominal VOUT current limit (ICL) during start-up. See Figure 5-26 for typical current
+limit values. If the output is loaded by a constant-current load during start-up, or if the output voltage is negative
+when the device is enabled, then the load current demanded by the load potentially exceeds the foldback current
+limit and the device does not rise to the full output voltage. For constant-current loads, disable the output load
+until the output rises to the nominal voltage.
+Excess inductance causes the current limit to oscillate. Minimize the inductance to keep the current limit from
+oscillating during a fault condition.
+6.3.4 Thermal Shutdown
+Thermal shutdown protection disables the output when the junction temperature rises to approximately 165°C.
+Disabling the device eliminates the power dissipated by the device, allowing the device to cool. When the
+junction temperature cools to approximately 155°C, the output circuitry is enabled again. Depending on power
+dissipation, thermal resistance, and ambient temperature, the thermal protection circuit cycles on and off. This
+cycling limits regulator dissipation that protects the circuit from damage as a result of overheating.
+Activating the thermal shutdown feature typically indicates excessive power dissipation as a result of the product
+of the (VIN – VOUT) voltage and the load current. For reliable operation, limit junction temperature to a maximum
+of 125°C. To estimate the margin of safety in a complete design, increase the ambient temperature until the
+thermal protection is triggered; use worst-case loads and signal conditions.
+The internal protection circuitry protects against overload conditions but is not intended to be activated in normal
+operation. Continuously running the device into thermal shutdown degrades device reliability.
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 13
+Product Folder Links: TLV755P
+
+===== PDF PAGE 14 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+6.4 Device Functional Modes
+Table 6-1 lists a comparison between the normal, dropout, and disabled modes of operation.
+Table 6-1. Device Functional Modes Comparison
+PARAMETER
+OPERATING MODE
+VIN EN IOUT TJ
+Normal(1) VIN > VOUT(NOM) + VDO VEN > VHI IOUT < ICL TJ < TSD
+Dropout(1) VIN < VOUT(NOM) + VDO VEN > VHI— TJ < TSD
+Disabled(2) VIN < VUVLO VEN < VLO— TJ > TSD
+(1) (2) Make sure all table conditions are met.
+The device is disabled when any condition is met.
+6.4.1 Normal Operation
+The device regulates to the nominal output voltage when all of the following conditions are met.
+• The input voltage is greater than the nominal output voltage plus the dropout voltage (VOUT(NOM) + VDO)
+• The enable voltage has previously exceeded the enable rising threshold voltage and has not decreased
+below the enable falling threshold
+• The output current is less than the current limit (IOUT < ICL)
+• The device junction temperature is less than the thermal shutdown temperature (TJ < TSD)
+6.4.2 Dropout Operation
+If the input voltage is lower than the nominal output voltage plus the specified dropout voltage, but all other
+conditions are met for normal operation, the device operates in dropout. In this mode, the output voltage
+tracks the input voltage. During this mode, the transient performance of the device degrades because the pass
+transistor is in a triode state and no longer controls the output voltage of the LDO. Line or load transients in
+dropout result in large output voltage deviations.
+When the device is in a steady dropout state (defined as when the device is in dropout, VIN < VOUT(NOM) +
+VDO, right after being in a normal regulation state, but not during start-up), the pass transistor is driven as hard
+as possible when the control loop is out of balance. During the normal time required for the device to regain
+regulation, VIN ≥ VOUT(NOM) + VDO, VOUT overshoots VOUT(NOM) during fast transients.
+6.4.3 Disabled
+The output is shut down by forcing the enable pin below VLO. When disabled, the pass transistor is turned off,
+internal circuits are shut down, and the output voltage is actively discharged to ground by an internal switch from
+the output to ground. The active pulldown is on when sufficient input voltage is provided.
+14 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 15 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+7 Application and Implementation
+Note
+Information in the following applications sections is not part of the TI component specification,
+and TI does not warrant its accuracy or completeness. TI’s customers are responsible for
+determining suitability of components for their purposes, as well as validating and testing their design
+implementation to confirm system functionality.
+7.1 Application Information
+7.1.1 Input and Output Capacitor Selection
+The TLV755P requires an output capacitance of 0.47µF or larger for stability. Use X5R- and X7R-type
+ceramic capacitors because these capacitors have minimal variation in capacitance value and equivalent series
+resistance (ESR) over temperature. When selecting a capacitor for a specific application, consider the DC bias
+characteristics for the capacitor. Higher output voltages cause a significant derating of the capacitor. Generally,
+derate ceramic capacitors by 50%. For best performance, use a maximum output capacitance value of 200µF.
+Place a 1µF or greater capacitor on the input pin of the LDO. Some input supplies have a high impedance.
+Placing a capacitor on the input supply reduces the input impedance. The input capacitor counteracts reactive
+input sources and improves transient response and PSRR. If the input supply has a high impedance over a large
+range of frequencies, several input capacitors are used in parallel to lower the impedance over frequency. Use
+a higher-value capacitor if large, fast, rise-time load transients are expected, or if the device is located several
+inches from the input power source.
+7.1.2 Dropout Voltage
+The TLV755P uses a PMOS pass transistor to achieve low dropout. When (VIN – VOUT) is less than the dropout
+voltage (VDO), the PMOS pass transistor is in the linear region of operation and the input-to-output resistance
+is the RDS(ON) of the PMOS pass transistor. VDO scales linearly with the output current because the PMOS
+transistor functions like a resistor in dropout mode. As with any linear regulator, PSRR and transient response
+degrade as (VIN – VOUT) approaches dropout operation. See Figure 5-13 and Figure 5-14 for typical dropout
+values.
+7.1.3 Exiting Dropout
+Some applications have transients that place the LDO into dropout, such as slower ramps on VIN during start-up.
+As with other LDOs, the output overshoots on recovery from these conditions. A ramping input supply causes an
+LDO to overshoot on start-up when the slew rate and voltage levels are in the correct range; see Figure 7-1. Use
+an enable signal to avoid this condition.
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 15
+Product Folder Links: TLV755P
+
+===== PDF PAGE 16 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+Input Voltage
+Response time for
+LDO to get back into
+regulation. Load current discharges
+output voltage.
+VIN = VOUT(nom) + VDO
+Output Voltage
+Voltage
+Dropout
+VOUT = VIN - VDO
+Output Voltage in
+normal regulation.
+Time
+Figure 7-1. Start-Up Into Dropout
+Line transients out of dropout can also cause overshoot on the output of the regulator. These overshoots are
+caused by the error amplifier having to drive the gate capacitance of the pass transistor and bring the gate
+back to the correct voltage for proper regulation. Figure 7-2 illustrates what is happening internally with the gate
+voltage and how overshoot is caused during operation. When the LDO is placed in dropout, the gate voltage
+(VGS) is pulled all the way down to ground to give the pass transistor the lowest on-resistance as possible.
+However, if a line transient occurs when the device is in dropout, the loop is not in regulation and causes the
+output to overshoot until the loop responds and the output current pulls the output voltage back down into
+regulation. If these transients are not acceptable, then continue to add input capacitance in the system until the
+transient is slow enough to reduce the overshoot.
+16 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 17 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+Transient response
+time of the LDO
+Input Voltage
+Load current
+discharges
+output
+voltage
+Output Voltage
+VDO
+Voltage
+Output Voltage in
+normal regulation
+Dropout
+VOUT = VIN - VDO
+VGS voltage
+(pass device
+fully off)
+Input Voltage
+VGS voltage for
+normal operation
+VGS voltage for
+normal operation
+Gate Voltage
+VGS voltage in
+dropout (pass device
+fully on)
+Time
+Figure 7-2. Line Transients From Dropout
+7.1.4 Reverse Current
+As with most LDOs, excessive reverse current potentially damages this device.
+Reverse current flows through the body diode on the pass transistor instead of the normal conducting channel.
+At high magnitudes, this current flow degrades the long-term reliability of the device, as a result of one of the
+following conditions:
+• Degradation caused by electromigration
+• Excessive heat dissipation
+• Potential for a latch-up condition
+Conditions where reverse current occur are outlined in this section, all of which exceed the absolute maximum
+rating of VOUT > VIN + 0.3V:
+• If the device has a large COUT and the input supply collapses with little or no load current
+• The output is biased when the input supply is not established
+• The output is biased above the input supply
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 17
+Product Folder Links: TLV755P
+
+===== PDF PAGE 18 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+If reverse current flow is expected in the application, use external protection to protect the device. Figure 7-3
+shows one approach of protecting the device.
+Schottky Diode
+Internal Body Diode
+IN OUT
+Device
+CIN
+COUT
+GND
+Figure 7-3. Example Circuit for Reverse Current Protection Using a Schottky Diode
+7.1.5 Power Dissipation (PD)
+Circuit reliability demands that proper consideration be given to device power dissipation, location of the circuit
+on the printed circuit board (PCB), and correct sizing of the thermal plane. Make sure the PCB area around the
+regulator is as free of other heat-generating devices as possible that cause added thermal stresses.
+As a first-order approximation, power dissipation in the regulator depends on the input-to-output voltage
+difference and load conditions. Use Equation 2 to approximate PD:
+PD = (VIN – VOUT) × IOUT (2)
+Minimize power dissipation to achieve greater efficiency. This minimizing process is achieved by selecting the
+correct system voltage rails. Proper selection helps obtain the minimum input-to-output voltage differential. The
+low dropout of the device allows for maximum efficiency across a wide range of output voltages.
+The main heat-conduction path for the device is through the thermal pad on the package. As such, solder the
+thermal pad to a copper pad area under the device. This pad area contains an array of plated vias that conduct
+heat to inner plane areas or to a bottom-side copper plane.
+The maximum allowable junction temperature (TJ) determines the maximum power dissipation for the device.
+According to Equation 3, power dissipation and junction temperature are most often related by the junction-to-
+ambient thermal resistance (RθJA) of the combined PCB, device package, and the temperature of the ambient air
+(TA).
+TJ = TA + RθJA × PD (3)
+Unfortunately, this thermal resistance (RθJA) is dependent on the heat-spreading capability built into the
+particular PCB design, and therefore varies according to the total copper area, copper weight, and location of
+the planes. The RθJA value is only used as a relative measure of package thermal performance. RθJA is the sum
+of the package junction-to-case (bottom) thermal resistance (RθJCbot) plus the thermal resistance contribution by
+the PCB copper.
+18 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 19 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+7.1.5.1 Estimating Junction Temperature
+The JEDEC standard recommends the use of psi (Ψ) thermal metrics to estimate the junction temperatures
+of the LDO when in-circuit on a typical PCB board application. These metrics are not thermal resistances, but
+offer practical and relative means of estimating junction temperatures. These psi metrics are independent of the
+copper-spreading area. The key thermal metrics (ΨJT and ΨJB) are used in accordance with Equation 4 and are
+described in the Thermal Information table.
+JT J T JT D : T = T + P
+JB J B JB D : T = T + P (4)
+where:
+• PD is the power dissipated as shown in Equation 2
+• TT is the temperature at the center-top of the device package
+• TB is the PCB surface temperature measured 1mm from the device package and centered on the package
+edge
+7.2 Typical Application
+IN
+DC/DC
+1 ÖF
+Converter TLV755P
+EN
+OUT
+1 ÖF
+Load
+GND
+ON
+OFF
+Figure 7-4. TLV755P Typical Application
+7.2.1 Design Requirements
+Table 7-1 lists the design requirements for this application.
+Table 7-1. Design Parameters
+PARAMETER DESIGN REQUIREMENT
+Input voltage 4.3V
+Output voltage 3.3V
+Input current 500mA (maximum)
+Output load 250mA DC
+Maximum ambient temperature 70°C
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 19
+Product Folder Links: TLV755P
+
+===== PDF PAGE 20 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+7.2.2 Detailed Design Procedure
+7.2.2.1 Input Current
+During normal operation, the input current to the LDO is approximately equal to the output current of the LDO.
+During start-up, the input current is higher as a result of the inrush current charging the output capacitor. Use
+Equation 5 to calculate the current through the input.
+COUT OUT dV (t)
+I = OUT(t)
+dt
++
+VOUT(t)
+RLOAD
+(5)
+where:
+• VOUT(t) is the instantaneous output voltage of the turn-on ramp
+• dVOUT(t) / dt is the slope of the VOUT ramp
+• RLOAD is the resistive load impedance
+7.2.2.2 Thermal Dissipation
+Junction temperature is determined using the junction-to-ambient thermal resistance (RθJA) and the total power
+dissipation (PD). Use Equation 6 to calculate the power dissipation. Multiply PD by RθJA as Equation 7 shows and
+add the ambient temperature (TA) to calculate the junction temperature (TJ).
+PD = (IGND+ IOUT) × (VIN – VOUT) (6)
+TJ = RθJA × PD + TA (7)
+Calculate the maximum ambient temperature as Equation 8 shows if the (TJ(MAX)) value does not exceed 125°C.
+Equation 9 calculates the maximum ambient temperature with a value of 99.95°C.
+TA(MAX) = TJ(MAX) – RθJA × PD (8)
+TA(MAX) = 125°C – 100.2°C/W × (4.3V – 3.3V) × (0.25A) = 99.95°C (9)
+7.2.3 Application Curve
+Power Supply Rejection Ratio (dB)
+100
+80
+60
+40
+20
+0
+IOUT = 10 mA
+IOUT = 50 mA
+IOUT = 100 mA
+IOUT = 500 mA
+10 100 1k 10k 100k 1M 10M
+Frequency (Hz)
+VIN = 4.3V, VOUT = 3.3V
+Figure 7-5. PSRR vs Frequency (4.3V to 3.3V)
+7.3 Power Supply Recommendations
+Connect a low output impedance power supply directly to the IN pin of the TLV755P. If the input source is
+reactive, consider using multiple input capacitors in parallel with the 1µF input capacitor to lower the input supply
+impedance over frequency.
+20 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 21 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+7.4 Layout
+7.4.1 Layout Guidelines
+• Place input and output capacitors as close as possible to the device.
+• Use copper planes for device connections to optimize thermal performance.
+• Place thermal vias around the device to distribute the heat.
+• For packages with thermal pads, solder the thermal pad to copper to achieve best thermal resistance.
+Thermal resistance increases significantly when the thermal pad is not soldered.
+7.4.2 Layout Examples
+OUT IN
+1
+4
+COUT
+CIN
+EN
+2 3
+GND PLANE
+Represents via used for application
+specific connections
+Figure 7-6. Layout Example for the DQN Package
+VIN
+VOUT
+CIN
+1
+5
+2
+COUT
+3 4
+EN
+GND PLANE
+Represents via used for
+application specific connections
+Figure 7-7. Layout Example for the DBV Package
+VOUT
+VIN
+1
+6
+COUT
+2
+5
+CIN
+3 4
+EN
+GND PLANE
+Represents via used for
+application specific connections
+Figure 7-8. Layout Example for the DRV Package
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 21
+Product Folder Links: TLV755P
+
+===== PDF PAGE 22 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+VIN
+VOUT
+1
+6
+Thermal
+CIN COUT
+Pad
+2
+VEN
+3
+5
+GND PLANE
+Represents via used for
+application specific connections
+Figure 7-9. Layout Example for the DYD Package
+22 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 23 =====
+www.ti.com
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024
+8 Device and Documentation Support
+8.1 Device Support
+8.1.1 Device Nomenclature
+Table 8-1. Device Nomenclature
+PRODUCT(1) (2) DESCRIPTION
+TLV755xx(x)Pyyyz(M3)
+xx(x) is the nominal output voltage. For output voltages with a resolution of 100mV, two digits are used
+in the ordering number; otherwise, three digits are used (for example, 28 = 2.8V; 125 = 1.25V).
+P indicates an active output discharge feature. All members of the TLV755P family actively discharge
+the output when the device is disabled.
+yyy is the package designator.
+z is the package quantity. R is for reel (3000 pieces), T is for tape (250 pieces).
+M3 is a suffix designator for devices that only use the latest manufacturing flow.
+(1) For the most current package and ordering information see the Package Option Addendum at the end of this document, or visit the
+device product folder on www.ti.com.
+(2) Output voltages from 0.6V to 5V in 50mV increments are available. Contact the factory for details and availability.
+8.2 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on
+Notifications to register and receive a weekly digest of any product information that has changed. For change
+details, review the revision history included in any revised document.
+8.3 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+not necessarily reflect TI's views; see TI's Terms of Use.
+8.4 Trademarks
+TI E2E™ is a trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+8.5 Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled
+with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may
+be more susceptible to damage because very small parametric changes could cause the device not to meet its published
+specifications.
+8.6 Glossary
+TI Glossary This glossary lists and explains terms, acronyms, and definitions.
+Copyright © 2024 Texas Instruments Incorporated Submit Document Feedback 23
+Product Folder Links: TLV755P
+
+===== PDF PAGE 24 =====
+TLV755P
+SBVS320D – NOVEMBER 2017 – REVISED SEPTEMBER 2024 www.ti.com
+9 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision C (March 2024) to Revision D (September 2024) Page
+• Updated the numbering format for tables, figures, and cross-references throughout the document................. 1
+• Changed 3.3V, 1mA to 500mA Load Transient and Load Regulation vs IOUT curves........................................ 7
+• Added M3 information to Device Nomenclature table...................................................................................... 23
+Changes from Revision B (November 2023) to Revision C (March 2024) Page
+• Changed SOT-23 (DYD) from Advance Information to Production Data ...........................................................1
+• Added SOT-23 (DYD) Features package bullet................................................................................................. 1
+• Added last bullet item to Layout Guidelines .................................................................................................... 21
+• Added Layout Example for the DYD Package figure........................................................................................21
+10 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+24 Submit Document Feedback Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TLV755P
+
+===== PDF PAGE 25 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 22-Oct-2026
+PACKAGING INFORMATION
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+TLV755075PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 105 DJ
+TLV755075PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 DJ
+TLV75507PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KD
+TLV75507PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KD
+TLV75507PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KD
+TLV75507PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KD
+TLV75509PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1HAF
+TLV75509PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1HAF
+TLV75509PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AX
+TLV75509PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AX
+TLV75509PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AX
+TLV75509PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AX
+TLV75509PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1HDH
+TLV75509PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1HDH
+TLV75509PDYDR Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DPH
+TLV75509PDYDR.A Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DPH
+TLV75510PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1FPF
+TLV75510PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FPF
+TLV75510PDBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FPF
+TLV75510PDBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FPF
+TLV75510PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KE
+TLV75510PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAUAG Level-1-260C-UNLIM -40 to 125 KE
+TLV75510PDQNRM3 Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KE
+TLV75510PDQNRM3.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KE
+TLV75510PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KE
+TLV75510PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAUAG Level-1-260C-UNLIM -40 to 125 KE
+TLV75510PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GUH
+TLV75510PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GUH
+TLV75510PDRVRG4 Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GUH
+Addendum-Page 1
+
+===== PDF PAGE 26 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 22-Oct-2026
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+TLV75510PDRVRG4.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GUH
+TLV75511PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 E8
+TLV75511PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 E8
+TLV75512PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1FQF
+TLV75512PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FQF
+TLV75512PDBVRG4 Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FQF
+TLV75512PDBVRG4.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FQF
+TLV75512PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AG
+TLV75512PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAUAG Level-1-260C-UNLIM -40 to 125 AG
+TLV75512PDQNRM3 Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AG
+TLV75512PDQNRM3.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AG
+TLV75512PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AG
+TLV75512PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAUAG Level-1-260C-UNLIM -40 to 125 AG
+TLV75512PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GVH
+TLV75512PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GVH
+TLV75512PDYDR Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DQH
+TLV75512PDYDR.A Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DQH
+TLV75515PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1FRF
+TLV75515PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FRF
+TLV75515PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KF
+TLV75515PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KF
+TLV75515PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KF
+TLV75515PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KF
+TLV75515PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GWH
+TLV75515PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GWH
+TLV755185PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 EZ
+TLV755185PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 EZ
+TLV755185PDQNRM3 Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 EZ
+TLV755185PDQNRM3.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 EZ
+TLV75518PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1FSF
+TLV75518PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FSF
+Addendum-Page 2
+
+===== PDF PAGE 27 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 22-Oct-2026
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+TLV75518PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AI
+TLV75518PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AI
+TLV75518PDQNRG4 Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AI
+TLV75518PDQNRG4.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AI
+TLV75518PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AI
+TLV75518PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AI
+TLV75518PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GXH
+TLV75518PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GXH
+TLV75518PDYDR Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DRH
+TLV75518PDYDR.A Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DRH
+TLV75519PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1HBF
+TLV75519PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1HBF
+TLV75519PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 B5
+TLV75519PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 B5
+TLV75519PDQNRG4 Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 B5
+TLV75519PDQNRG4.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 B5
+TLV75519PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 B5
+TLV75519PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 B5
+TLV75519PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1HEH
+TLV75519PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1HEH
+TLV75525PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1FTF
+TLV75525PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FTF
+TLV75525PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AJ
+TLV75525PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AJ
+TLV75525PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AJ
+TLV75525PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AJ
+TLV75525PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GZH
+TLV75525PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GZH
+TLV75525PDRVRG4 Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GZH
+TLV75525PDRVRG4.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1GZH
+TLV75525PDYDR Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DSH
+Addendum-Page 3
+
+===== PDF PAGE 28 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 22-Oct-2026
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+TLV75525PDYDR.A Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DSH
+TLV75528PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1FUF
+TLV75528PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FUF
+TLV75528PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KG
+TLV75528PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KG
+TLV75528PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KG
+TLV75528PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KG
+TLV75528PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1H1H
+TLV75528PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1H1H
+TLV75528PDYDR Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DTH
+TLV75528PDYDR.A Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DTH
+TLV75529PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 1HCF
+TLV75529PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 1HCF
+TLV75529PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1HFH
+TLV75529PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 1HFH
+TLV75530PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 1FVF
+TLV75530PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1FVF
+TLV75530PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KI
+TLV75530PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KI
+TLV75530PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 KI
+TLV75530PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KI
+TLV75530PDQNTG4 Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KI
+TLV75530PDQNTG4.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 KI
+TLV75530PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1H2H
+TLV75530PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1H2H
+TLV75532PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 TD
+TLV75533PDBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 1FWF
+TLV75533PDBVR.A Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 1FWF
+TLV75533PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AN
+TLV75533PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAUAG Level-1-260C-UNLIM -40 to 125 AN
+TLV75533PDQNRG4 Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AN
+Addendum-Page 4
+
+===== PDF PAGE 29 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 22-Oct-2026
+Orderable part number Status
+(1)
+Material type
+(2)
+Package | Pins Package qty | Carrier RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C) Part marking
+(6)
+TLV75533PDQNRG4.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AN
+TLV75533PDQNRM3 Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AN
+TLV75533PDQNRM3.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 AN
+TLV75533PDQNT Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAU | NIPDAUAG Level-1-260C-UNLIM -40 to 125 AN
+TLV75533PDQNT.A Active Production X2SON (DQN) | 4 250 | SMALL T&R Yes NIPDAUAG Level-1-260C-UNLIM -40 to 125 AN
+TLV75533PDRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1H3H
+TLV75533PDRVR.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1H3H
+TLV75533PDRVRG4 Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1H3H
+TLV75533PDRVRG4.A Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 1H3H
+TLV75533PDYDR Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DUH
+TLV75533PDYDR.A Active Production SOT-23 (DYD) | 5 3000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 3DUH
+TLV755345PDQNR Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 DK
+TLV755345PDQNR.A Active Production X2SON (DQN) | 4 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 DK
+(1) Status: For more details on status, see our product life cycle.
+(2) Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+(3) RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+(4) Lead finish/Ball material: column width.
+Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+(5) MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+(6) Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+Addendum-Page 5
+
+===== PDF PAGE 30 =====
+PACKAGE OPTION ADDENDUM
+www.ti.com 22-Oct-2026
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+Addendum-Page 6
+
+===== PDF PAGE 31 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 9-Sep-2026
+TAPE AND REEL INFORMATION
+REEL DIMENSIONS
+TAPE DIMENSIONS
+K0 P1
+B0 W
+Reel
+Diameter
+Cavity
+A0
+A0
+Dimension designed to accommodate the component width
+B0
+Dimension designed to accommodate the component length
+K0
+Dimension designed to accommodate the component thickness
+W
+Overall width of the carrier tape
+P1
+Pitch between successive cavity centers
+Reel Width (W1)
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Sprocket Holes
+Q4 User Direction of Feed
+Q1 Q2 Q1
+Q2
+Q3 Q4 Q3
+Pocket Quadrants
+*All dimensions are nominal
+Device Package
+Type
+Package
+Drawing
+Pins SPQ Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+TLV755075PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75507PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75507PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75509PDBVR SOT-23 DBV 5 3000 178.0 9.0 3.3 3.2 1.4 4.0 8.0 Q3
+TLV75509PDBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75509PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75509PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75509PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75509PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75509PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75509PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75509PDRVR WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75509PDYDR SOT-23 DYD 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75510PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75510PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75510PDBVRG4 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+Pack Materials-Page 1
+
+===== PDF PAGE 32 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 9-Sep-2026
+Device Package
+Type
+Package
+Drawing
+Pins SPQ Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+TLV75510PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75510PDQNR X2SON DQN 4 3000 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75510PDQNRM3 X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75510PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75510PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75510PDRVR WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75510PDRVRG4 WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75511PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75512PDBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75512PDBVRG4 SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75512PDQNR X2SON DQN 4 3000 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75512PDQNRM3 X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75512PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75512PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75512PDRVR WSON DRV 6 3000 178.0 8.4 2.25 2.25 1.0 4.0 8.0 Q2
+TLV75512PDRVR WSON DRV 6 3000 178.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75512PDYDR SOT-23 DYD 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75515PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75515PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75515PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75515PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75515PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75515PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75515PDRVR WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV755185PDQNR X2SON DQN 4 3000 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV755185PDQNRM3 X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75518PDBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75518PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75518PDQNR X2SON DQN 4 3000 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75518PDQNRG4 X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75518PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75518PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75518PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75518PDRVR WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75518PDYDR SOT-23 DYD 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75519PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75519PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75519PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75519PDQNRG4 X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75519PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75519PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+Pack Materials-Page 2
+
+===== PDF PAGE 33 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 9-Sep-2026
+Device Package
+Type
+Package
+Drawing
+Pins SPQ Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+TLV75519PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75519PDRVR WSON DRV 6 3000 178.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75525PDBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75525PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75525PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75525PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75525PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75525PDRVR WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75525PDRVR WSON DRV 6 3000 178.0 8.4 2.25 2.25 1.0 4.0 8.0 Q2
+TLV75525PDRVRG4 WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75525PDYDR SOT-23 DYD 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75528PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75528PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75528PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75528PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75528PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75528PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75528PDRVR WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75528PDYDR SOT-23 DYD 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75529PDBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75529PDRVR WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75530PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75530PDBVR SOT-23 DBV 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75530PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75530PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75530PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75530PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75530PDQNTG4 X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75530PDRVR WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75532PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75533PDBVR SOT-23 DBV 5 3000 178.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV75533PDQNR X2SON DQN 4 3000 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75533PDQNRG4 X2SON DQN 4 3000 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75533PDQNRM3 X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75533PDQNT X2SON DQN 4 250 180.0 8.4 1.16 1.16 0.63 4.0 8.0 Q2
+TLV75533PDQNT X2SON DQN 4 250 180.0 9.5 1.16 1.16 0.5 4.0 8.0 Q2
+TLV75533PDRVR WSON DRV 6 3000 178.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75533PDRVRG4 WSON DRV 6 3000 180.0 8.4 2.3 2.3 1.15 4.0 8.0 Q2
+TLV75533PDYDR SOT-23 DYD 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3
+TLV755345PDQNR X2SON DQN 4 3000 180.0 8.4 1.16 1.16 0.5 4.0 8.0 Q2
+Pack Materials-Page 3
+
+===== PDF PAGE 34 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 9-Sep-2026
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+H
+W
+L
+*All dimensions are nominal
+Device Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)
+TLV755075PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75507PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75507PDQNT X2SON DQN 4 250 210.0 185.0 35.0
+TLV75509PDBVR SOT-23 DBV 5 3000 180.0 180.0 18.0
+TLV75509PDBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+TLV75509PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75509PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75509PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75509PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75509PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75509PDQNT X2SON DQN 4 250 210.0 185.0 35.0
+TLV75509PDRVR WSON DRV 6 3000 210.0 185.0 35.0
+TLV75509PDYDR SOT-23 DYD 5 3000 210.0 185.0 35.0
+TLV75510PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75510PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75510PDBVRG4 SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75510PDQNR X2SON DQN 4 3000 183.0 183.0 20.0
+TLV75510PDQNR X2SON DQN 4 3000 184.0 184.0 19.0
+Pack Materials-Page 4
+
+===== PDF PAGE 35 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 9-Sep-2026
+Device Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)
+TLV75510PDQNRM3 X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75510PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75510PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75510PDRVR WSON DRV 6 3000 210.0 185.0 35.0
+TLV75510PDRVRG4 WSON DRV 6 3000 210.0 185.0 35.0
+TLV75511PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75512PDBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+TLV75512PDBVRG4 SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75512PDQNR X2SON DQN 4 3000 184.0 184.0 19.0
+TLV75512PDQNRM3 X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75512PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75512PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75512PDRVR WSON DRV 6 3000 205.0 200.0 33.0
+TLV75512PDRVR WSON DRV 6 3000 208.0 191.0 35.0
+TLV75512PDYDR SOT-23 DYD 5 3000 210.0 185.0 35.0
+TLV75515PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75515PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75515PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75515PDQNT X2SON DQN 4 250 210.0 185.0 35.0
+TLV75515PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75515PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75515PDRVR WSON DRV 6 3000 210.0 185.0 35.0
+TLV755185PDQNR X2SON DQN 4 3000 184.0 184.0 19.0
+TLV755185PDQNRM3 X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75518PDBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+TLV75518PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75518PDQNR X2SON DQN 4 3000 184.0 184.0 19.0
+TLV75518PDQNRG4 X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75518PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75518PDQNT X2SON DQN 4 250 210.0 185.0 35.0
+TLV75518PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75518PDRVR WSON DRV 6 3000 210.0 185.0 35.0
+TLV75518PDYDR SOT-23 DYD 5 3000 210.0 185.0 35.0
+TLV75519PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75519PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75519PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75519PDQNRG4 X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75519PDQNT X2SON DQN 4 250 210.0 185.0 35.0
+TLV75519PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75519PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75519PDRVR WSON DRV 6 3000 208.0 191.0 35.0
+TLV75525PDBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+TLV75525PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+Pack Materials-Page 5
+
+===== PDF PAGE 36 =====
+PACKAGE MATERIALS INFORMATION
+www.ti.com 9-Sep-2026
+Device Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)
+TLV75525PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75525PDQNT X2SON DQN 4 250 210.0 185.0 35.0
+TLV75525PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75525PDRVR WSON DRV 6 3000 210.0 185.0 35.0
+TLV75525PDRVR WSON DRV 6 3000 205.0 200.0 33.0
+TLV75525PDRVRG4 WSON DRV 6 3000 210.0 185.0 35.0
+TLV75525PDYDR SOT-23 DYD 5 3000 210.0 185.0 35.0
+TLV75528PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75528PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75528PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75528PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75528PDQNT X2SON DQN 4 250 210.0 185.0 35.0
+TLV75528PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75528PDRVR WSON DRV 6 3000 210.0 185.0 35.0
+TLV75528PDYDR SOT-23 DYD 5 3000 210.0 185.0 35.0
+TLV75529PDBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+TLV75529PDRVR WSON DRV 6 3000 210.0 185.0 35.0
+TLV75530PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75530PDBVR SOT-23 DBV 5 3000 210.0 185.0 35.0
+TLV75530PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75530PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75530PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75530PDQNT X2SON DQN 4 250 210.0 185.0 35.0
+TLV75530PDQNTG4 X2SON DQN 4 250 210.0 185.0 35.0
+TLV75530PDRVR WSON DRV 6 3000 210.0 185.0 35.0
+TLV75532PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75533PDBVR SOT-23 DBV 5 3000 208.0 191.0 35.0
+TLV75533PDQNR X2SON DQN 4 3000 184.0 184.0 19.0
+TLV75533PDQNRG4 X2SON DQN 4 3000 184.0 184.0 19.0
+TLV75533PDQNRM3 X2SON DQN 4 3000 210.0 185.0 35.0
+TLV75533PDQNT X2SON DQN 4 250 183.0 183.0 20.0
+TLV75533PDQNT X2SON DQN 4 250 184.0 184.0 19.0
+TLV75533PDRVR WSON DRV 6 3000 208.0 191.0 35.0
+TLV75533PDRVRG4 WSON DRV 6 3000 210.0 185.0 35.0
+TLV75533PDYDR SOT-23 DYD 5 3000 210.0 185.0 35.0
+TLV755345PDQNR X2SON DQN 4 3000 210.0 185.0 35.0
+Pack Materials-Page 6
+
+===== PDF PAGE 37 =====
+DBV0005A
+PACKAGE OUTLINE
+SOT-23 - 1.45 mm max height
+SCALE 4.000
+SMALL OUTLINE TRANSISTOR
+3.0
+2.6
+1.75
+1.45
+C
+0.1 C
+B
+A
+PIN 1
+INDEX AREA
+2X 0.95
+1.9
+1
+2
+5
+(0.1)
+(0.15)
+4
+3.05
+2.75
+1.9
+3
+5X 0.5
+0.3
+0.2 C A B
+NOTE 5
+4X 0 -15
+(1.1)
+1.45
+0.90
+0.15
+0.00 TYP
+4X 4 -15
+0.25
+GAGE PLANE
+8
+0 TYP
+0.22
+0.08 TYP
+0.6
+0.3 TYP
+SEATING PLANE
+4214839/K 08/2024
+NOTES:
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. Refernce JEDEC MO-178.
+4. Body dimensions do not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+exceed 0.25 mm per side.
+5. Support pin may differ or may not be present.
+www.ti.com
+
+===== PDF PAGE 38 =====
+DBV0005A
+EXAMPLE BOARD LAYOUT
+SOT-23 - 1.45 mm max height
+SMALL OUTLINE TRANSISTOR
+PKG
+5X (1.1)
+1
+5
+5X (0.6)
+SYMM
+(1.9)
+2
+2X (0.95)
+(R0.05) TYP
+3 4
+(2.6)
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE:15X
+SOLDER MASK
+OPENING
+METAL
+EXPOSED METAL
+METAL UNDER
+SOLDER MASK
+EXPOSED METAL
+SOLDER MASK
+OPENING
+0.07 MAX
+ARROUND
+NON SOLDER MASK
+DEFINED
+(PREFERRED)
+0.07 MIN
+ARROUND
+SOLDER MASK
+DEFINED
+SOLDER MASK DETAILS
+4214839/K 08/2024
+NOTES: (continued)
+6. Publication IPC-7351 may have alternate designs.
+7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+www.ti.com
+
+===== PDF PAGE 39 =====
+DBV0005A
+EXAMPLE STENCIL DESIGN
+SOT-23 - 1.45 mm max height
+SMALL OUTLINE TRANSISTOR
+PKG
+5X (1.1)
+1
+5
+5X (0.6)
+SYMM
+2
+(1.9)
+2X(0.95)
+3 4
+(R0.05) TYP
+(2.6)
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+SCALE:15X
+4214839/K 08/2024
+NOTES: (continued)
+8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+design recommendations.
+9. Board assembly site may have different recommendations for stencil design.
+www.ti.com
+
+===== PDF PAGE 40 =====
+DRV 6 GENERIC PACKAGE VIEW
+WSON - 0.8 mm max height
+PLASTIC SMALL OUTLINE - NO LEAD
+Images above are just a representation of the package family, actual package may vary.
+Refer to the product data sheet for package details.
+4206925/F
+
+===== PDF PAGE 41 =====
+DRV0006A
+PACKAGE OUTLINE
+WSON - 0.8 mm max height
+SCALE 5.500
+PLASTIC SMALL OUTLINE - NO LEAD
+B 2.1
+1.9
+A
+PIN 1 INDEX AREA
+2.1
+1.9 0.1 MIN
+0.08 MAX
+OPTIONAL: SIDE WALL PIN DETAIL
+NOTE 4
+0.8
+0.7
+C
+SEATING PLANE
+0.08 C
+(0.2) TYP
+1 0.1
+EXPOSED
+THERMAL PAD
+0.05
+0.00
+2X
+1.3
+4X 0.65
+3
+1
+PIN 1 ID
+(OPTIONAL)
+4
+7
+6
+1.6 0.1
+6X 0.35
+0.25
+6X 0.3
+0.2
+0.1 C A B
+0.05 C
+4222173/C 11/2025
+NOTES:
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.
+4. Minimum 0.1 mm solder wetting on pin side wall. Available for wettable flank version only.
+www.ti.com
+
+===== PDF PAGE 42 =====
+DRV0006A
+EXAMPLE BOARD LAYOUT
+WSON - 0.8 mm max height
+PLASTIC SMALL OUTLINE - NO LEAD
+6X (0.45)
+(1)
+1
+7
+6X (0.3)
+6
+SYMM
+(1.6)
+(1.1)
+4X (0.65)
+3 4
+(R0.05) TYP
+( 0.2) VIA
+TYP
+SYMM
+(1.95)
+LAND PATTERN EXAMPLE
+SCALE:25X
+0.07 MAX
+ALL AROUND
+0.07 MIN
+ALL AROUND
+SOLDER MASK
+OPENING
+METAL
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+OPENING
+NON SOLDER MASK
+DEFINED
+(PREFERRED)
+SOLDER MASK
+DEFINED
+SOLDER MASK DETAILS
+4222173/C 11/2025
+NOTES: (continued)
+5. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+number SLUA271 (www.ti.com/lit/slua271).
+6. Vias are optional depending on application, refer to device data sheet. If some or all are implemented, recommended via locations
+are shown.
+www.ti.com
+
+===== PDF PAGE 43 =====
+DRV0006A
+EXAMPLE STENCIL DESIGN
+WSON - 0.8 mm max height
+PLASTIC SMALL OUTLINE - NO LEAD
+SYMM
+6X (0.45)
+METAL
+1
+7
+6X (0.3)
+6
+(0.45)
+SYMM
+4X (0.65)
+(0.7)
+3 4
+(R0.05) TYP
+(1)
+(1.95)
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+EXPOSED PAD #7
+88% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE
+SCALE:30X
+4222173/C 11/2025
+NOTES: (continued)
+7. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+design recommendations.
+www.ti.com
+
+===== PDF PAGE 44 =====
+(null)
+
+===== PDF PAGE 45 =====
+DQN0004A PACKAGE OUTLINE
+X2SON - 0.4 mm max height
+PLASTIC SMALL OUTLINE - NO LEAD
+1.05
+B A
+0.95
+1
+1.05
+0.95
+PIN 1
+INDEX AREA
+C
+0.4 MAX
+0.08
+NOTE 6
+(0.05) TYP
+SEATING PLANE
+0.05
+0.00
+2 3
+5
+2X 0.65
+1
+PIN 1 ID
+(OPTIONAL)
+NOTE 4
+0.3
+0.2
+0.48+0.12
+-0.1
+EXPOSED
+THERMAL PAD
+(0.07) TYP
+NOTE 5
+4X 0.28
+0.15
+0.1 C A B
+0.05 C
+NOTE 6
+4
+3X 0.30
+0.15
+NOTES:
+1. 2. 3. 4. 5. 6. (0.11)
+4215302/E 12/2016
+All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+per ASME Y14.5M.
+This drawing is subject to change without notice.
+The package thermal pad must be soldered to the printed circuit board for optimal thermal and mechanical performance.
+Features may not exist. Recommend use of pin 1 marking on top of package for orientation purposes.
+Shape of exposed side leads may differ.
+Number and location of exposed tie bars may vary.
+www.ti.com
+
+===== PDF PAGE 46 =====
+DQN0004A EXAMPLE BOARD LAYOUT
+X2SON - 0.4 mm max height
+PLASTIC SMALL OUTLINE - NO LEAD
+(0.86)
+SYMM
+4X (0.36)
+4X
+(0.03)
+SEE DETAIL
+4
+4X (0.21)
+1
+SYMM
+5
+(0.65)
+4X (0.18)
+2
+( 0.48)
+3
+(0.22) TYP
+EXPOSED METAL
+CLEARANCE
+LAND PATTERN EXAMPLE
+SCALE: 40X
+0.05 MIN
+ALL AROUND
+EXPOSED METAL
+SOLDER MASK
+OPENING
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+DEFINED
+SOLDER MASK DETAIL
+4215302/E 12/2016
+NOTES: (continued)
+7. 8. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+number SLUA271 (www.ti.com/lit/slua271).
+If any vias are implemented, it is recommended that vias under paste be filled, plugged or tented.
+www.ti.com
+
+===== PDF PAGE 47 =====
+DQN0004A EXAMPLE STENCIL DESIGN
+X2SON - 0.4 mm max height
+PLASTIC SMALL OUTLINE - NO LEAD
+(0.9)
+SYMM
+4X (0.4)
+4X (0.03)
+4
+1
+4X (0.21)
+5
+SYMM
+(0.65)
+SOLDER MASK
+EDGE
+4X (0.22)
+2
+3
+( 0.45)
+4X (0.235)
+SOLDER PASTE EXAMPLE
+BASED ON 0.075 - 0.1mm THICK STENCIL
+EXPOSED PAD
+88% PRINTED SOLDER COVERAGE BY AREA
+SCALE: 60X
+4215302/E 12/2016
+NOTES: (continued)
+9. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+design recommendations.
+www.ti.com
+
+===== PDF PAGE 48 =====
+DYD0005A
+PACKAGE OUTLINE
+SOT-23 - 1.25 mm max height
+SCALE 4.000
+SMALL OUTLINE TRANSISTOR
+2.95
+2.75
+1.75
+1.45
+B
+A
+1.25
+0.90
+PIN 1
+INDEX AREA
+1.9
+2X 5X 0.5
+0.3
+0.95
+1
+2
+5
+3.05
+2.75
+1.9
+4
+3
+0.2 C A B
+4X 4 -15
+0.13
+0.00 TYP
+0.1 C
+0.25
+GAGE PLANE
+8
+0 TYP
+4X (0.08)
+NOTE 5
+0.22
+0.08 TYP
+SEATING PLANE
+C
+0.56
+0.30 TYP
+(0.207)
+4X (0.15)
+NOTE 5
+1.034
+0.834
+2X (0.286)
+2X (0.575)
+PKG
+0.65
+0.45
+1.8
+1.6
+0.748
+0.550
+NOTES:
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. Reference JEDEC MO-178.
+4. Body dimensions do not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+exceed 0.25 mm per side.
+5. Features may differ or may not be present.
+4228946/C 06/2026
+www.ti.com
+
+===== PDF PAGE 49 =====
+DYD0005A
+EXAMPLE BOARD LAYOUT
+SOT-23 - 1.25 mm max height
+SMALL OUTLINE TRANSISTOR
+PKG
+5X (0.865)
+(0.207)
+1
+( 0.2) TYP
+5
+5X (0.6)
+SYMM
+2X (0.575)
+(1.7)
+2X (0.95)
+2
+3
+(1.9)
+(1.1)
+(R0.05) TYP 4
+SOLDER MASK
+OPENING
+EXPOSED METAL
+2X
+(0.286)
+(0.934)
+(1.5)
+(2.565)
+LAND PATTERN EXAMPLE
+EXPOSED METAL SHOWN
+SCALE:20X
+METAL
+METAL UNDER
+SOLDER MASK
+EXPOSED METAL
+SOLDER MASK
+OPENING
+0.07 MAX
+ARROUND
+NON SOLDER MASK
+DEFINED
+(PREFERRED)
+0.07 MIN
+ARROUND
+SOLDER MASK
+DEFINED
+SOLDER MASK DETAILS
+4228946/C 06/2026
+NOTES: (continued)
+6. Publication IPC-7351 may have alternate designs.
+7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+www.ti.com
+
+===== PDF PAGE 50 =====
+DYD0005A
+EXAMPLE STENCIL DESIGN
+SOT-23 - 1.25 mm max height
+SMALL OUTLINE TRANSISTOR
+PKG
+5X (0.865)
+(0.207)
+1
+5
+5X (0.6)
+2X (0.575)
+SYMM
+(1.7)
+2
+(1.9)
+2X(0.95)
+3 4
+(R0.05) TYP
+2X
+(0.286)
+(0.934)
+(2.565)
+SOLDER PASTE EXAMPLE
+BASED ON 0.125 mm THICK STENCIL
+SCALE:20X
+STENCIL
+THICKNESS
+SOLDER STENCIL
+OPENING
+0.100 1.044 X 1.901
+0.125 0.934 X 1.700 (SHOWN)
+0.150 0.853 X 1.552
+0.175 0.789 X 1.437
+4228946/C 06/2026
+NOTES: (continued)
+8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+design recommendations.
+9. Board assembly site may have different recommendations for stencil design.
+www.ti.com
+
+===== PDF PAGE 51 =====
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025

@@ -1,0 +1,164 @@
+[
+  {
+    "before": "(text \"V2 PARTIAL CORRECTIONS - NOT READY FOR POWER-UP OR WEARER USE\\nF04/F05: parallel LDO outputs and floating EN remain; power architecture requires approval.\\nF06/F18: restore U1 CLK_EN after RESET; allow U2 clock/POR; configure both before shared START.\\nF09: START/RESET/PWDN default low; CS defaults and full sequencing remain unresolved.\\nEnable/settle 2.4V reference; verify gain/rate; keep PACE/RLD/WCT and RLD rerouting off.\\nF07/F08: protected body bias and wearer protection remain unimplemented.\" (at 266.7 269.24 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid \"9955ee5c-33dd-4040-9300-2eabd5a7b23f\"))",
+    "after": "(text \"V2 PARTIAL CORRECTIONS - NOT READY FOR POWER-UP OR WEARER USE\\nF04/F05: parallel LDO outputs and floating EN remain; power architecture requires approval.\\nF06/F18: restore U1 CLK_EN after RESET; allow U2 clock/POR; configure both before shared START.\\nF09: START/RESET/PWDN biased low while MCU is high-Z; CS defaults and full sequencing remain unresolved.\\nEnable/settle 2.4V reference; verify gain/rate; keep PACE/RLD/WCT and RLD rerouting off.\\nF07/F08: protected body bias and wearer protection remain unimplemented.\" (at 266.7 269.24 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid \"9955ee5c-33dd-4040-9300-2eabd5a7b23f\"))"
+  },
+  {
+    "before": "(text \"F09: 10k defaults hold START, RESET and PWDN low.\\nCS defaults / complete power sequencing remain unresolved.\" (at 171.45 288.29 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid \"c7b0d1a4-9ffb-4eb1-a904-4a9e902df882\"))",
+    "after": "(text \"F09: 10k pulldowns bias START, RESET and PWDN low while MCU is high-Z.\\nCS defaults / complete power sequencing remain unresolved.\" (at 171.45 288.29 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid \"c7b0d1a4-9ffb-4eb1-a904-4a9e902df882\"))"
+  },
+  {
+    "before": "(property \"Value\" \"AGND\" (at 233.68 274.32 0) (effects (font (size 1.27 1.27)) (justify left)))",
+    "after": "(property \"Value\" \"AGND\" (at 231.14 280.67 0) (effects (font (size 1.27 1.27)) ))"
+  },
+  {
+    "before": "(property \"Reference\" \"#PWR083\" (at 233.68 271.78 0) (effects (font (size 1.27 1.27)) (justify left)))",
+    "after": "(property \"Reference\" \"#PWR083\" (at 233.68 271.78 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))"
+  },
+  {
+    "before": "(property \"Value\" \"AGND\" (at 208.28 274.32 0) (effects (font (size 1.27 1.27)) (justify left)))",
+    "after": "(property \"Value\" \"AGND\" (at 205.74 280.67 0) (effects (font (size 1.27 1.27)) ))"
+  },
+  {
+    "before": "(property \"Reference\" \"#PWR082\" (at 208.28 271.78 0) (effects (font (size 1.27 1.27)) (justify left)))",
+    "after": "(property \"Reference\" \"#PWR082\" (at 208.28 271.78 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))"
+  },
+  {
+    "before": "(property \"Value\" \"AGND\" (at 182.88 274.32 0) (effects (font (size 1.27 1.27)) (justify left)))",
+    "after": "(property \"Value\" \"AGND\" (at 180.34 280.67 0) (effects (font (size 1.27 1.27)) ))"
+  },
+  {
+    "before": "(property \"Reference\" \"#PWR081\" (at 182.88 271.78 0) (effects (font (size 1.27 1.27)) (justify left)))",
+    "after": "(property \"Reference\" \"#PWR081\" (at 182.88 271.78 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))"
+  },
+  {
+    "reason": "F06: compact local annotation; complete RESET contract retained in notes",
+    "before": "(text \"U1 CLK_EN=1 required; shared RESET clears clock output\"\n\t\t(exclude_from_sim no)\n\t\t(at 442.722 154.178 0)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t)\n\t\t(uuid \"82eea591-fe9e-4fa0-b382-ac293c8de9e2\")\n\t)",
+    "after": "(text \"U1 CLK_EN=1 required\"\n\t\t(exclude_from_sim no)\n\t\t(at 442.722 154.178 0)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t)\n\t\t(uuid \"82eea591-fe9e-4fa0-b382-ac293c8de9e2\")\n\t)"
+  },
+  {
+    "reason": "F06: compact local annotation; complete RESET contract retained in notes",
+    "before": "(text \"U1 CLK_EN=1 required; shared RESET clears clock output\"\n\t\t(exclude_from_sim no)\n\t\t(at 216.408 155.194 0)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t)\n\t\t(uuid \"9c552305-b528-48ce-810c-7aff744749f0\")\n\t)",
+    "after": "(text \"U1 CLK_EN=1 required\"\n\t\t(exclude_from_sim no)\n\t\t(at 216.408 155.194 0)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t)\n\t\t(uuid \"9c552305-b528-48ce-810c-7aff744749f0\")\n\t)"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP1_ADC1\" (at 95.25 199.39 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"4e17d1a8-2660-4a56-a347-e47976553475\"))",
+    "after": "(label \"VCAP1_ADC1\" (at 148.59 167.64 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"4e17d1a8-2660-4a56-a347-e47976553475\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP2_ADC1\" (at 107.95 201.93 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"124c3ead-19ad-463f-b6a6-6e047cc61e21\"))",
+    "after": "(label \"VCAP2_ADC1\" (at 148.59 170.18 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"124c3ead-19ad-463f-b6a6-6e047cc61e21\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP3_ADC1\" (at 118.11 204.47 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"d2411ce5-bf97-46d0-817d-d6d2b69e766e\"))",
+    "after": "(label \"VCAP3_ADC1\" (at 148.59 172.72 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"d2411ce5-bf97-46d0-817d-d6d2b69e766e\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP4_ADC1\" (at 128.27 207.01 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"66b27d11-0fc8-44b5-88ae-28986c7c4a42\"))",
+    "after": "(label \"VCAP4_ADC1\" (at 148.59 175.26 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"66b27d11-0fc8-44b5-88ae-28986c7c4a42\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP1_ADC2\" (at 322.58 198.12 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"1e9f999b-ecc2-4bb4-bed8-4aaa319c9807\"))",
+    "after": "(label \"VCAP1_ADC2\" (at 375.92 166.37 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"1e9f999b-ecc2-4bb4-bed8-4aaa319c9807\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP2_ADC2\" (at 335.28 200.66 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"253a339f-3942-4447-a75a-3e26ff0a0d42\"))",
+    "after": "(label \"VCAP2_ADC2\" (at 375.92 168.91 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"253a339f-3942-4447-a75a-3e26ff0a0d42\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP3_ADC2\" (at 345.44 203.2 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"600409b6-c57b-4b31-a61d-9250c7b255a6\"))",
+    "after": "(label \"VCAP3_ADC2\" (at 375.92 171.45 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"600409b6-c57b-4b31-a61d-9250c7b255a6\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP4_ADC2\" (at 355.6 205.74 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"d4931437-f5b1-44ce-8fcb-26b27fa74b0a\"))",
+    "after": "(label \"VCAP4_ADC2\" (at 375.92 173.99 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid \"d4931437-f5b1-44ce-8fcb-26b27fa74b0a\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP1_ADC1\" (at 565.15 210.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"598f4d76-5b5e-4b20-bf82-d6f40128c9ea\"))",
+    "after": "(label \"VCAP1_ADC1\" (at 148.59 167.64 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"598f4d76-5b5e-4b20-bf82-d6f40128c9ea\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP2_ADC1\" (at 477.52 233.68 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"cf047230-2d7b-4cb6-a300-b588d4709659\"))",
+    "after": "(label \"VCAP2_ADC1\" (at 148.59 170.18 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"cf047230-2d7b-4cb6-a300-b588d4709659\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP3_ADC1\" (at 506.73 233.68 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"85db4ce1-4d65-4977-beeb-9cd1b5842a3e\"))",
+    "after": "(label \"VCAP3_ADC1\" (at 148.59 172.72 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"85db4ce1-4d65-4977-beeb-9cd1b5842a3e\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP4_ADC1\" (at 535.94 233.68 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"79a09c6f-03c6-48b0-9ccf-7b9215c1d1e6\"))",
+    "after": "(label \"VCAP4_ADC1\" (at 148.59 175.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"79a09c6f-03c6-48b0-9ccf-7b9215c1d1e6\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP1_ADC2\" (at 477.52 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"da2ec4cd-10a7-4a65-9c99-e3914886ede5\"))",
+    "after": "(label \"VCAP1_ADC2\" (at 375.92 166.37 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"da2ec4cd-10a7-4a65-9c99-e3914886ede5\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP2_ADC2\" (at 506.73 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"8afad776-ae38-4107-a786-804a9315bda9\"))",
+    "after": "(label \"VCAP2_ADC2\" (at 375.92 168.91 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"8afad776-ae38-4107-a786-804a9315bda9\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP3_ADC2\" (at 535.94 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"d7025774-4ef4-457b-9028-649fc49c61e0\"))",
+    "after": "(label \"VCAP3_ADC2\" (at 375.92 171.45 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"d7025774-4ef4-457b-9028-649fc49c61e0\"))"
+  },
+  {
+    "reason": "F21: put node labels on horizontal wires away from capacitor values",
+    "before": "(label \"VCAP4_ADC2\" (at 565.15 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"cb4aff1d-d22e-4ead-b359-86ae974e13f2\"))",
+    "after": "(label \"VCAP4_ADC2\" (at 375.92 173.99 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"cb4aff1d-d22e-4ead-b359-86ae974e13f2\"))"
+  },
+  {
+    "reason": "F21: restore probe-side labels after targeted check caught overbroad presentation selection",
+    "before": "(label \"VCAP1_ADC1\" (at 148.59 167.64 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"598f4d76-5b5e-4b20-bf82-d6f40128c9ea\"))",
+    "after": "(label \"VCAP1_ADC1\" (at 565.15 210.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"598f4d76-5b5e-4b20-bf82-d6f40128c9ea\"))"
+  },
+  {
+    "reason": "F21: restore probe-side labels after targeted check caught overbroad presentation selection",
+    "before": "(label \"VCAP2_ADC1\" (at 148.59 170.18 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"cf047230-2d7b-4cb6-a300-b588d4709659\"))",
+    "after": "(label \"VCAP2_ADC1\" (at 477.52 233.68 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"cf047230-2d7b-4cb6-a300-b588d4709659\"))"
+  },
+  {
+    "reason": "F21: restore probe-side labels after targeted check caught overbroad presentation selection",
+    "before": "(label \"VCAP3_ADC1\" (at 148.59 172.72 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"85db4ce1-4d65-4977-beeb-9cd1b5842a3e\"))",
+    "after": "(label \"VCAP3_ADC1\" (at 506.73 233.68 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"85db4ce1-4d65-4977-beeb-9cd1b5842a3e\"))"
+  },
+  {
+    "reason": "F21: restore probe-side labels after targeted check caught overbroad presentation selection",
+    "before": "(label \"VCAP4_ADC1\" (at 148.59 175.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"79a09c6f-03c6-48b0-9ccf-7b9215c1d1e6\"))",
+    "after": "(label \"VCAP4_ADC1\" (at 535.94 233.68 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"79a09c6f-03c6-48b0-9ccf-7b9215c1d1e6\"))"
+  },
+  {
+    "reason": "F21: restore probe-side labels after targeted check caught overbroad presentation selection",
+    "before": "(label \"VCAP1_ADC2\" (at 375.92 166.37 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"da2ec4cd-10a7-4a65-9c99-e3914886ede5\"))",
+    "after": "(label \"VCAP1_ADC2\" (at 477.52 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"da2ec4cd-10a7-4a65-9c99-e3914886ede5\"))"
+  },
+  {
+    "reason": "F21: restore probe-side labels after targeted check caught overbroad presentation selection",
+    "before": "(label \"VCAP2_ADC2\" (at 375.92 168.91 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"8afad776-ae38-4107-a786-804a9315bda9\"))",
+    "after": "(label \"VCAP2_ADC2\" (at 506.73 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"8afad776-ae38-4107-a786-804a9315bda9\"))"
+  },
+  {
+    "reason": "F21: restore probe-side labels after targeted check caught overbroad presentation selection",
+    "before": "(label \"VCAP3_ADC2\" (at 375.92 171.45 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"d7025774-4ef4-457b-9028-649fc49c61e0\"))",
+    "after": "(label \"VCAP3_ADC2\" (at 535.94 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"d7025774-4ef4-457b-9028-649fc49c61e0\"))"
+  },
+  {
+    "reason": "F21: restore probe-side labels after targeted check caught overbroad presentation selection",
+    "before": "(label \"VCAP4_ADC2\" (at 375.92 173.99 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"cb4aff1d-d22e-4ead-b359-86ae974e13f2\"))",
+    "after": "(label \"VCAP4_ADC2\" (at 565.15 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid \"cb4aff1d-d22e-4ead-b359-86ae974e13f2\"))"
+  }
+]

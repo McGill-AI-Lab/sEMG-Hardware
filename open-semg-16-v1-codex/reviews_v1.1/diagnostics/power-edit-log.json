@@ -1,0 +1,137 @@
+[
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 166.37 93.98) (xy 172.72 93.98)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"64076abb-3399-42d7-abd6-4b7c8c3191bb\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 166.37 86.36) (xy 172.72 86.36)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"64076abb-3399-42d7-abd6-4b7c8c3191bb\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 172.72 93.98) (xy 177.8 93.98)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"96d4cc60-7c84-40b2-aa6c-4ba4b5750fe3\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 172.72 86.36) (xy 177.8 86.36)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"96d4cc60-7c84-40b2-aa6c-4ba4b5750fe3\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 172.72 93.98) (xy 172.72 101.6)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"6ff3e950-c176-4d61-ae8c-c7d6cb72a03f\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 172.72 86.36) (xy 172.72 101.6)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"6ff3e950-c176-4d61-ae8c-c7d6cb72a03f\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 177.8 101.6) (xy 177.8 93.98)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"62ab974f-1234-4a8e-bb5b-84bb6d301a58\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 177.8 101.6) (xy 177.8 86.36)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"62ab974f-1234-4a8e-bb5b-84bb6d301a58\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 182.88 93.98) (xy 190.5 93.98)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"679ee649-6d5b-46f0-970a-4018cd683845\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 182.88 86.36) (xy 190.5 86.36)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"679ee649-6d5b-46f0-970a-4018cd683845\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 182.88 93.98) (xy 182.88 101.6)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"7b376858-97fd-40f0-8026-40f59436834a\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 182.88 86.36) (xy 182.88 101.6)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"7b376858-97fd-40f0-8026-40f59436834a\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: relocate junction with repaired supply branch",
+    "before": "(junction\n\t\t(at 166.37 93.98)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"f7ad7b7c-9acc-4b4e-878e-7f5482b1420c\")\n\t)",
+    "after": "(junction\n\t\t(at 166.37 86.36)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"f7ad7b7c-9acc-4b4e-878e-7f5482b1420c\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: relocate junction with repaired supply branch",
+    "before": "(junction\n\t\t(at 172.72 93.98)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"4fd88eea-0d8c-47ab-ac99-9071b105bdbf\")\n\t)",
+    "after": "(junction\n\t\t(at 172.72 86.36)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"4fd88eea-0d8c-47ab-ac99-9071b105bdbf\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: relocate junction with repaired supply branch",
+    "before": "(junction\n\t\t(at 190.5 93.98)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"5d085b4a-510f-4460-8ebb-4c75c5b3c3b7\")\n\t)",
+    "after": "(junction\n\t\t(at 190.5 86.36)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"5d085b4a-510f-4460-8ebb-4c75c5b3c3b7\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 393.7 92.71) (xy 400.05 92.71)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"40cc0e66-371a-468f-8a35-c8a196e03794\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 393.7 85.09) (xy 400.05 85.09)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"40cc0e66-371a-468f-8a35-c8a196e03794\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 400.05 92.71) (xy 405.13 92.71)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"b2a5091d-2c0a-496c-acb7-02604423c151\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 400.05 85.09) (xy 405.13 85.09)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"b2a5091d-2c0a-496c-acb7-02604423c151\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 400.05 92.71) (xy 400.05 100.33)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"148cf472-41f2-4e83-9012-370071ef04d2\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 400.05 85.09) (xy 400.05 100.33)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"148cf472-41f2-4e83-9012-370071ef04d2\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 405.13 100.33) (xy 405.13 92.71)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"ed0bd06e-111d-4d20-a49f-a770e3280413\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 405.13 100.33) (xy 405.13 85.09)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"ed0bd06e-111d-4d20-a49f-a770e3280413\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 410.21 92.71) (xy 417.83 92.71)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"e4997d1b-8b3c-4046-a80f-1c249db47ce8\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 410.21 85.09) (xy 417.83 85.09)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"e4997d1b-8b3c-4046-a80f-1c249db47ce8\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: move actual supply branch from capacitor return bus to supply bus",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 410.21 92.71) (xy 410.21 100.33)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"bf8d5744-564c-4477-a760-67ea5112cf17\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 410.21 85.09) (xy 410.21 100.33)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"bf8d5744-564c-4477-a760-67ea5112cf17\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: relocate junction with repaired supply branch",
+    "before": "(junction\n\t\t(at 393.7 92.71)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"2dd567a8-e0d4-42fd-be14-25593f2d47b3\")\n\t)",
+    "after": "(junction\n\t\t(at 393.7 85.09)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"2dd567a8-e0d4-42fd-be14-25593f2d47b3\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: relocate junction with repaired supply branch",
+    "before": "(junction\n\t\t(at 400.05 92.71)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"326dee82-3097-41d0-b307-88dbe65200f3\")\n\t)",
+    "after": "(junction\n\t\t(at 400.05 85.09)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"326dee82-3097-41d0-b307-88dbe65200f3\")\n\t)"
+  },
+  {
+    "reason": "F01/F02: relocate junction with repaired supply branch",
+    "before": "(junction\n\t\t(at 417.83 92.71)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"50b58630-9384-4070-80ca-6e1d4a4f0099\")\n\t)",
+    "after": "(junction\n\t\t(at 417.83 85.09)\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n\t\t(uuid \"50b58630-9384-4070-80ca-6e1d4a4f0099\")\n\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR045",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 432.816 135.636 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 432.816 135.636 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR016",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 224.282 145.796 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 224.282 145.796 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR047",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 460.502 144.526 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 460.502 144.526 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR040",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 427.228 97.028 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 427.228 97.028 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left)\n\t\t\t)\n\t\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR014",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 205.486 136.906 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 205.486 136.906 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR020",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 203.2 181.864 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 203.2 181.864 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR09",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 199.898 98.298 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 199.898 98.298 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left)\n\t\t\t)\n\t\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR051",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 430.53 180.594 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 430.53 180.594 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)"
+  },
+  {
+    "reason": "F02: explicit common DC return; power symbol #PWR065",
+    "before": "(property \"Value\" \"DGND\"\n\t\t\t(at 544.83 141.224 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)",
+    "after": "(property \"Value\" \"AGND\"\n\t\t\t(at 544.83 141.224 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t)"
+  }
+]

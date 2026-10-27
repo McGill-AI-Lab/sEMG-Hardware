@@ -36,7 +36,7 @@ Evidence files:
 - [Current native netlist](diagnostics/current-netlist.xml), [derived pin/net map](diagnostics/current-connectivity.json), [readable pin/net map](diagnostics/current-connectivity.txt).
 - [Current ERC](diagnostics/current-erc.json), [reference netlist](diagnostics/reference-netlist.xml), [reference ERC](diagnostics/reference-erc.json).
 - [Schematic inventory](diagnostics/current-schematic-inventory.json), [schematic SVG](diagnostics/schematic-svg/open-semg-16-v1.svg), and [independent-review checkpoint](diagnostics/independent-review-checkpoint.md).
-- Source file hashes and comparison results are in `diagnostics/`; final verification checks original design files against their pre-audit hashes.
+- [Source integrity verification](diagnostics/design-integrity-verification.json) checks 11 pre-existing development files and 10 reference files: all unchanged. Both schematic SHA-256 hashes are `82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7`; both project-setting hashes are `dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7`. **No pre-existing file was modified.** All created audit files are listed in the [exact file manifest](diagnostics/audit-file-manifest.txt). The [reproducible static checks](diagnostics/audit-checks.py) and [results](diagnostics/audit-checks.json) independently recheck all 16 mappings, capacitor terminals, key fault nets, reference identity and ERC counts from the exported data; they are not an electrical design pass.
 
 Netlist connectivity takes precedence over visible label text. Embedded power-symbol values include `GND`, `AGND`, `DGND`, and several voltage names; sharing a graphical ground symbol shape does not join differently named nets. Conversely `GND` and `AGND` are actually joined in this schematic. Some supply pins have passive rather than power-input types, reducing ERC's ability to detect a bad supply connection. Hidden/stacked DevKit power pins are included in the exported netlist.
 
@@ -60,17 +60,17 @@ All R1–R32, C1–C57, BT1 and E1–E16 lack footprints: **106 of 111 non-power
 | `+3.7V` | BT1.1; U4 VIN1 and U5 IN1; C53/C56, each 1 µF to AGND | Battery label only; actual range and droop unknown. |
 | `AGND` / merged `GND` | BT1.2, U4/U5 GND2, analog filter/ref/VCAP returns; **all ADC AVDD, AVSS and physical DGND pins** | Defined battery-negative net, but ADC supply pins are incorrectly on it. |
 | `DGND` | U3 GND22/23/24/44; **ADC DVDD48/50**; RESV1, DAISY_IN, ADC GPIOs; U2 CLKSEL52; C8/C9/C34/C35 returns | Separate DC island without battery return. Its name is not proof it is the ADC's physical ground. |
-| `+3.3V` | U4 VOUT5 **and** U5 OUT5; U3 3V3 pins1/2; ADC aux17/18/62, U1 CLKSEL52; rail capacitors | Two direct LDO sources; startup undefined because EN floats. No actual ADC AVDD/DVDD supply pin is connected to this rail. |
+| `+3.3V` | U4 VOUT5 **and** U5 OUT5; U3 3V3 pins 1/2; ADC aux 17/18/62, U1 CLKSEL52; rail capacitors | Two direct LDO sources; startup undefined because EN floats. No actual ADC AVDD/DVDD supply pin is connected to this rail. |
 | `/EN` | U4 ON/OFF3 and U5 EN3 only | Undriven. No GPIO, resistor, switch or power source. |
-| `+5V` | U3 header pin21 only | No carrier source. Not required if an intact DevKit is intentionally powered via 3V3; external USB/5V states require separate power review. |
+| `+5V` | U3 header pin 21 only | No carrier source. Not required if an intact DevKit is intentionally powered via 3V3; external USB/5V states require separate power review. |
 | VREFP, separately per ADC | U1.24 → C19 0.1 µF || C20 10 µF → AGND; U2.24 → C45/C46 equivalents | No external reference. Internal reference must be enabled by firmware after valid power. VREFN25 is AGND. |
-| VCAP1–4, separately per ADC | U1 pins28/30/55/26 → C23 22 µF/C24 1 µF/C25 1 µF/C26 1 µF to AGND; U2 C49–C52 | Nominal pin-table values/returns correct. Ratings and physical implementation unknown. |
+| VCAP1–4, separately per ADC | U1 pins 28/30/55/26 → C23 22 µF/C24 1 µF/C25 1 µF/C26 1 µF to AGND; U2 C49–C52 | Nominal pin-table values/returns correct. Ratings and physical implementation unknown. |
 
-Regulator pins are verified directly against D2/D3 p.3: both pin1 input, pin2 ground, pin3 enable, pin5 output; U4 pin4 BP has C55 10 nF to its ground, whereas U5 pin4 is intentionally NC. C53/C56 are 1 µF input bypass; C54 is 2.2 µF and C57 is **200 µF**, not 200 nF. No voltage setting was inferred from family names.
+Regulator pins are verified directly against D2/D3 p.3: both pin 1 input, pin 2 ground, pin 3 enable, pin 5 output; U4 pin 4 BP has C55 10 nF to its ground, whereas U5 pin 4 is intentionally NC. C53/C56 are 1 µF input bypass; C54 is 2.2 µF and C57 is **200 µF**, not 200 nF. No voltage setting was inferred from family names.
 
 ### All 16 differential paths
 
-Electrode terminal1 consistently feeds P through the odd resistor; terminal2 feeds N through the even resistor. Each resistor is 2 kΩ. Every listed capacitor is 620 pF from the ADC-side node to AGND. There are no cross-channel shorts or P/N swaps in these 32 input nets.
+Electrode terminal 1 consistently feeds P through the odd resistor; terminal 2 feeds N through the even resistor. Each resistor is 2 kΩ. Every listed capacitor is 620 pF from the ADC-side node to AGND. There are no cross-channel shorts or P/N swaps in these 32 input nets.
 
 | System channel | Contact | ADC/channel | P / N pins | P / N resistors | P / N shunt capacitors |
 |---|---|---|---|---|---|
@@ -95,7 +95,7 @@ No analog high-pass, differential bridge capacitor, external input clamp, or inp
 
 ### RLD/bias path
 
-U1/U2 RLDREF60, RLDINV61, RLDOUT63, and WCT64 have explicit no-connect markers. RLDIN62 is tied to `+3.3V`. There is no RLD feedback R/C, series drive resistor, passive midpoint bias, or bias-electrode connector. Thus there are no connected dual RLD drivers and no implemented feedback loop whose capacitive loading or phase margin could be assessed. Optional WCT output disconnection is reasonable for differential sEMG. Both RLD amplifiers must remain off in this topology. [D1, pp.41–42,69]
+U1/U2 RLDREF60, RLDINV61, RLDOUT63, and WCT64 have explicit no-connect markers. RLDIN62 is tied to `+3.3V`. There is no RLD feedback R/C, series drive resistor, passive midpoint bias, or bias-electrode connector. Thus there are no connected dual RLD drivers and no implemented feedback loop whose capacitive loading or phase margin could be assessed. Optional WCT output disconnection is reasonable for differential sEMG. Both RLD amplifiers must remain off in this topology. [D1, pp.41–42, 69]
 
 ### Digital control and actual SPI topology
 
@@ -113,7 +113,7 @@ U1/U2 RLDREF60, RLDINV61, RLDOUT63, and WCT64 have explicit no-connect markers. 
 | U2 DRDY | U2.47 explicitly NC | None |
 | Master clock | U1.37 unconnected; U2.37 singleton `ADC_CLK` | None |
 
-U1 CLKSEL52 is `+3.3V`, U2 CLKSEL52 is `DGND`. Both DAISY_IN41 and RESV1 31 connect to `DGND`; ADC GPIO42/44/45/46 do too. **This is TI cascade mode**: shared DIN/SCLK/DOUT with independent CS, not a serial DOUT→DAISY_IN chain. DOUT is high impedance when deselected. It is valid only when the devices are properly powered and CS signals never overlap. [D1, §9.4.2.1 p.57, §9.5.1.4 p.60]
+U1 CLKSEL52 is `+3.3V`, U2 CLKSEL52 is `DGND`. Both DAISY_IN41 and RESV1 31 connect to `DGND`; ADC GPIO42/44/45/46 do too. These are intended low-level ties, but the net is not currently connected to the ADC's physical DGND. **This is TI cascade mode**: shared DIN/SCLK/DOUT with independent CS, not a serial DOUT→DAISY_IN chain. DOUT is high impedance when deselected. It is valid only when the devices are properly powered and CS signals never overlap. [D1, §9.4.2.1 p.57, §9.5.1.4 p.60]
 
 ### ERC results and interpretation
 
@@ -130,7 +130,7 @@ Configured all-severity ERC: **65 violations = 38 errors + 27 warnings**, identi
 | `multiple_net_names` | 0 | 2 | `+3.3V`/`AVDD` and `AGND`/`GND` aliases. Naming a signal AVDD does not connect the chip's actual AVDD pins to it. |
 | `lib_symbol_mismatch` | 0 | 1 | BT1 differs from installed Device library. No reversed battery polarity is supported by the exported pins; procurement/library reconciliation remains necessary. |
 
-There are nine explicit NC markers: four optional RLD/WCT terminals per ADC and U2 DRDY. ADS pins27/29 and U5 pin4 are intrinsically NC pins; their intentional disconnection does not require a missing-input diagnosis. U1 CLK has no NC marker and is required by the intended clock arrangement. An ERC pass after cosmetic fixes would not establish electrical performance.
+There are nine explicit NC markers: four optional RLD/WCT terminals per ADC and U2 DRDY. ADS pins 27/29 and U5 pin 4 are intrinsically NC pins; their intentional disconnection does not require a missing-input diagnosis. U1 CLK has no NC marker and is required by the intended clock arrangement. An ERC pass after cosmetic fixes would not establish electrical performance.
 
 ### Manufacturer sources
 
@@ -162,89 +162,89 @@ Severity describes consequence; **Unverified** explicitly means a plausible issu
 
 | ID | Severity | Subsystem | Finding | Component / net | Evidence | Recommended correction |
 |---|---|---|---|---|---|---|
-| F01 | Critical | ADC power | Analog supply span is 0 V | U1/U2 AVDD19/21/22/56/59, AVDD1 54, AVSS/AVSS1 → AGND | Native netlist; D1 p.12 operating min2.7 V | Reconnect actual supply/return pins deliberately; verify pin spans and netlist before energizing. |
+| F01 | Critical | ADC power | Analog supply span is 0 V | U1/U2 AVDD19/21/22/56/59, AVDD1 54, AVSS/AVSS1 → AGND | Native netlist; D1 p.12 operating min 2.7 V | Reconnect actual supply/return pins deliberately; verify pin spans and netlist before energizing. |
 | F02 | Critical | Supply/grounds | Invalid ADC digital supply and no MCU battery return | U1/U2 DVDD48/50→DGND; actual DGND33/49/51→AGND; U3 GND→DGND | Separate native nets; no DC bond | Correct DVDD and all grounds, with a deliberate common return; decouple the actual supply pins. |
-| F03 | Critical | Analog stress | Rail-tied aux pins exceed analog absolute bounds if +3.3V starts | U1/U2 pins17/18/62 | Actual AVDD=AGND; D1 §7.1 | Make unused ties follow actual AVDD; disable optional output/rerouting modes. |
+| F03 | Critical | Analog stress | Rail-tied aux pins exceed analog absolute bounds if +3.3V starts | U1/U2 pins 17/18/62 | Actual AVDD=AGND; D1 §7.1 | Make unused ties follow actual AVDD; disable optional output/rerouting modes. |
 | F04 | High | Regulation | Two LDO outputs directly paralleled | U4.5/U5.5→+3.3V | ERC and netlist; D2/D3 reverse-current sections | Select one adequately rated source or separate rails with appropriate isolation. |
 | F05 | High | Startup | Both LDO enables float | U4.3/U5.3 `/EN` | Net contains only enable inputs; D2 p.16, D3 §6.3.2 | Provide a defined hardware control/default, compatible with battery startup. |
-| F06 | High | Synchronization | Slave clock has no source | U1.37 NC; U2.37 `ADC_CLK`; U2.52 external select | ERC dangling clock; D1 Table11 p.50 | Route one common valid clock; implement and verify master-clock startup and shared START. |
+| F06 | High | Synchronization | Slave clock has no source | U1.37 NC; U2.37 `ADC_CLK`; U2.52 external select | ERC dangling clock; D1 Table 11 p.50 | Route one common valid clock; implement and verify master-clock startup and shared START. |
 | F07 | High | Body bias | No deliberate DC body-bias/RLD path | All RLD60/61/63 NC; no bias contact | Netlist; D1 §10.1.2; D7 p.2 | Add a protected bias strategy, or one compensated RLD driver, with a dedicated contact. |
-| F08 | Unverified | Wearer safety | Wearer current limits, ESD, charging/isolation and single faults are not established | E1–E16, R1–R32, BT1, U3 USB path | Only2 kΩ input series elements; unspecified cell/protection; no safety evidence | Complete protection and single-fault review before human testing; simulator tests first. |
+| F08 | Unverified | Wearer safety | Wearer current limits, ESD, charging/isolation and single faults are not established | E1–E16, R1–R32, BT1, U3 USB path | Only 2 kΩ input series elements; unspecified cell/protection; no safety evidence | Complete protection and single-fault review before human testing; simulator tests first. |
 | F09 | High | Digital startup | CS/RESET/PWDN/START lack defined external reset states | U1/U2 CS39/RESET36/PWDN35/START38; U3 GPIO6/7/8/10/14 | MCU-to-input-only nets; no bias resistors | Define hardware defaults; initialize outputs safely and guarantee non-overlap CS. |
 | F10 | Medium | Input headroom | DC offsets and common mode are not bounded by a gain policy | R1–R32; CHnSET/reference firmware absent | No analog HP; D1 p.32 Eq.2/3 | Budget offsets/artifacts and CM together; select gain/attachment handling from measured extremes. |
-| F11 | Medium | Bandwidth | 2 kSPS does not preserve a flat band to850 Hz | ADC sinc³ filter | D1 p.22/49: −8.26dB at850 Hz | Specify passband tolerance; evaluate4 kSPS HR or another justified rate/processing policy. |
-| F12 | Unverified | CMRR/loading | 620 pF shunts interact with dry-electrode impedance and mismatch | All32 RC legs | Impedance model in Part F; D5 p.3 | Specify matching/dielectric; model and measure contacts/CMRR; reassess shunt capacitance and bias. |
-| F13 | Unverified | LDO capacitors | Nominal aggregate output capacitance exceeds documented200 µF range; ESR/effective C unknown | C57/C54/C6/C7/C32/C33 plus digital bank |222.4 µF direct,242.6 µF after ground correction; D2/D3 | Select full capacitor network and LDO silicon; qualify limits, startup, ESR and transients. |
+| F11 | Medium | Bandwidth | 2 kSPS does not preserve a flat band to 850 Hz | ADC sinc³ filter | D1 p.22/49: −8.26dB at 850 Hz | Specify passband tolerance; evaluate 4 kSPS HR or another justified rate/processing policy. |
+| F12 | Unverified | CMRR/loading | 620 pF shunts interact with dry-electrode impedance and mismatch | All 32 RC legs | Impedance model in Part F; D5 p.3 | Specify matching/dielectric; model and measure contacts/CMRR; reassess shunt capacitance and bias. |
+| F13 | Unverified | LDO capacitors | Nominal aggregate output capacitance exceeds documented 200 µF range; ESR/effective C unknown | C57/C54/C6/C7/C32/C33 plus digital bank |222.4 µF direct, 242.6 µF after ground correction; D2/D3 | Select full capacitor network and LDO silicon; qualify limits, startup, ESR and transients. |
 | F14 | Unverified | Component stress | Capacitor voltage/derating and resistor ratings cannot be signed off | All R/C; notably VCAP3 C25/C51 | No ratings/parts; VCAP3≈5.2 V after power correction | Complete BOM with voltage, dielectric, tolerance, leakage, effective C and power ratings. |
 | F15 | Medium | Battery supply | 3.3 V LDO operation has insufficient full-discharge headroom without a cutoff policy | BT1/U4/U5 | Conditional dropout calculations in Part F | Specify cell and usable voltage window; budget dropout/droop or choose a suitable architecture. |
 | F16 | Unverified | Current/thermal | DBV LDO thermal and RF-load transients may govern usable current | U5 TLV75533PDBV, U3 | D3 DBV231.1°C/W; D4 RF currents; no PCB/duty data | Budget sustained/burst currents; assess real copper/enclosure, thermal and brownout measurements. |
-| F17 | Medium | Power interfaces | External DevKit USB/5V can introduce another3.3 V source and backfeed | U3 3V3/header21, U4/U5 | D14 exclusive supply options, D15 onboard LDO | Define and enforce supply modes; provide source/reverse-current isolation where needed. |
-| F18 | Medium | Firmware | Reference, gain, optional outputs, grounded GPIOs and lead-off require deliberate setup | CONFIG1/3, CHnSET, PACE, GPIO, LOFF | D1 register defaults; no firmware | Enable/settle2.4 V ref, choose rate/gain, keep unused modes off; read back configuration. |
+| F17 | Medium | Power interfaces | External DevKit USB/5V can introduce another 3.3 V source and backfeed | U3 3V3/header 21, U4/U5 | D14 exclusive supply options, D15 onboard LDO | Define and enforce supply modes; provide source/reverse-current isolation where needed. |
+| F18 | Medium | Firmware | Reference, gain, optional outputs, grounded GPIOs and lead-off require deliberate setup | CONFIG1/3, CHnSET, PACE, GPIO, LOFF | D1 register defaults; no firmware | Enable/settle 2.4 V ref, choose rate/gain, keep unused modes off; read back configuration. |
 | F19 | Medium | Manufacturing | Most footprints and procurement identities are absent |106 components; U4 full MPN; U3 SKU | Schematic fields and absent PCB | Complete physical/BOM definitions and library portability before layout/fabrication release. |
 | F20 | Unverified | Layout/system | Return paths, decoupling proximity, antenna keepout, SPI ringing and RF coupling unreviewed | Entire future PCB/assembly | No PCB or hardware data | Review routed PCB and actual DevKit antenna geometry; measure with radios/clocks active. |
 | F21 | Low | Debugging | Slave DRDY and useful rail/reference nodes lack dedicated test access | U2.47 NC; no TP symbols | Netlist | Provide diagnostic access to both DRDYs/CLK, supplies, reference/VCAP and grounds. |
 
 ### F01–F03: supply faults and absolute maximum exposure
 
-For each ADC, AVDD pins19/21/22/56/59 and AVDD1 54, AVSS20/23/32/57/58 and AVSS1 53, VREFN25 and actual DGND33/49/51 are all on `AGND`. This directly proves AVDD−AVSS=0 V. The required digital supply is measured from DVDD to the IC's **physical** DGND, so it is `V(net DGND)−V(net AGND)`, which is undefined with the current separated nets. Do not describe it as a measured 0 V. If only the ground islands were bonded, DVDD would then be 0 V; that partial change would still fail.
+For each ADC, AVDD pins 19/21/22/56/59 and AVDD1 54, AVSS20/23/32/57/58 and AVSS1 53, VREFN25 and actual DGND33/49/51 are all on `AGND`. This directly proves AVDD−AVSS=0 V. The required digital supply is measured from DVDD to the IC's **physical** DGND, so it is `V(net DGND)−V(net AGND)`, which is undefined with the current separated nets. Do not describe it as a measured 0 V. If only the ground islands were bonded, DVDD would then be 0 V; that partial change would still fail.
 
-D1 §7.3 allows analog2.7–5.25 V and digital1.65–3.6 V. Its stress ratings are different: analog span−0.3…5.5 V, digital span−0.3…3.9 V, AVSS relative DGND−3…+0.2 V. The 0 V analog span is an operating violation; the auxiliary-pin connection additionally creates a conditional **absolute maximum** violation. If `+3.3V` turns on, aux17/18/62 are3.3 V above AVDD, versus the permitted+0.3 V. There is no external current-limiting resistor on these ties.
+D1 §7.3 allows analog 2.7–5.25 V and digital 1.65–3.6 V. Its stress ratings are different: analog span−0.3…5.5 V, digital span−0.3…3.9 V, AVSS relative DGND−3…+0.2 V. The 0 V analog span is an operating violation; the auxiliary-pin connection additionally creates a conditional **absolute maximum** violation. If `+3.3V` turns on, aux 17/18/62 are 3.3 V above AVDD, versus the permitted+0.3 V. There is no external current-limiting resistor on these ties.
 
-The manufacturer explicitly permits tying unused17/18/62 to AVDD (D1 p.10 footnote). A connection to a rail merely labeled AVDD elsewhere does not satisfy this when the actual supply pins are grounded. Pin18 is named TESTN_PACE_OUT2 by TI; the library's TESTP spelling on pin18 is a naming discrepancy, not a pin-number reassignment.
+The manufacturer explicitly permits tying unused 17/18/62 to AVDD (D1 p.10 footnote). A connection to a rail merely labeled AVDD elsewhere does not satisfy this when the actual supply pins are grounded. Pin 18 is named TESTN_PACE_OUT2 by TI; the library's TESTP spelling on pin 18 is a naming discrepancy, not a pin-number reassignment.
 
-C6/C7 and C32/C33 are across+3.3V–AGND, while C8/C9 and C34/C35 are across+3.3V–DGND. None is correctly across an ADS supply pin pair as presently connected. The digital-bank return also has no battery DC return. Required verification: corrected native netlist, unpowered continuity/resistance at every actual IC supply/return pin, then current-limited dummy-load startup and direct pin-voltage measurements. No person should be connected during bring-up.
+C6/C7 and C32/C33 are across +3.3V–AGND, while C8/C9 and C34/C35 are across +3.3V–DGND. None is correctly across an ADS supply pin pair as presently connected. The digital-bank return also has no battery DC return. Required verification: corrected native netlist, unpowered continuity/resistance at every actual IC supply/return pin, then current-limited dummy-load startup and direct pin-voltage measurements. No person should be connected during bring-up.
 
 ### F04–F05, F13, F15–F17: regulation, startup, and power-source interactions
 
-U4 and U5 have independent control loops. Equal nominal3.3 V settings do not ensure equal actual voltages or load sharing. The higher setpoint can supply nearly the whole load, exposing U4's150 mA limit to MCU demand. U5 has a typical120 Ω **output discharge** when disabled; this is not an EN-input pulldown. One source on while U5 is off can therefore add roughly27.5 mA discharge load, and output bias/reverse current must be assessed. Simultaneous shared EN does not guarantee identical thresholds, ramps, UVLO or thermal states. Actual damage is not established by static inspection. [D2 §7.1.4; D3 §§6.3.2,7.1.4]
+U4 and U5 have independent control loops. Equal nominal 3.3 V settings do not ensure equal actual voltages or load sharing. The higher setpoint can supply nearly the whole load, exposing U4's 150 mA limit to MCU demand. U5 has a typical 120 Ω **output discharge** when disabled; this is not an EN-input pulldown. One source on while U5 is off can therefore add roughly 27.5 mA discharge load, and output bias/reverse current must be assessed. Simultaneous shared EN does not guarantee identical thresholds, ramps, UVLO or thermal states. Actual damage is not established by static inspection. [D2 §7.1.4; D3 §§6.3.2, 7.1.4]
 
-The `/EN` label has no connection to U3 or a source. D2 requires active termination and recommends ON/OFF→VIN if unused; D3 likewise recommends EN→IN when shutdown is unused. No guaranteed EN pulldown is specified for U5. The present state is **undefined**, not demonstrably latched off. Legacy LP2985 additionally specifies an ON/OFF slew condition; identify silicon before choosing a slow RC enable ramp.
+The `/EN` label has no connection to U3 or a source. D2 requires active termination and recommends ON/OFF→VIN if unused; D3 likewise recommends EN→IN when shutdown is unused. LP2985 full-temperature enable thresholds are ON ≥ 1.6 V and OFF ≤ 0.15 V; TLV755P thresholds are ON ≥ 1.0 V and OFF ≤ 0.3 V. Legacy LP2985 requires an enable slew of at least 40 mV/µs. [D2 pp.7, 16; D3 p.6] No guaranteed EN pulldown is specified for U5. The present state is **undefined**, not demonstrably latched off. Legacy LP2985 additionally specifies an ON/OFF slew condition; identify silicon before choosing a slow RC enable ramp.
 
-The LP2985 value does not establish legacy versus new silicon. D2 p.30 Table8-1 distinguishes legacy CSO DLN/GF8 from new RFB, with M3 relevant to new orderables. The variants differ in dropout, capacitance/ESR, noise and reverse-current limits. Legacy parts can use ceramic output capacitors within the documented effective-C/ESR region; a blanket “ceramic-only is unstable” diagnosis is unsupported. C57's technology is not even specified. Select actual parts and assess the parallel network's impedance, not only C54 in isolation.
+The LP2985 value does not establish legacy versus new silicon. D2 p.30 Table 8-1 distinguishes legacy CSO DLN/GF8 from new RFB, with M3 relevant to new orderables. The variants differ in dropout, capacitance/ESR, noise and reverse-current limits. Legacy parts can use ceramic output capacitors within the documented effective-C/ESR region; a blanket “ceramic-only is unstable” diagnosis is unsupported. C57's technology is not even specified. Select actual parts and assess the parallel network's impedance, not only C54 in isolation.
 
-D14's supported USB,5 V-header and3V3-header supply choices are mutually exclusive. D15's v1.1 DevKit includes an SGM2212-3.3 regulator and reset/programming circuits. Accordingly, a complete DevKit can introduce another regulator via USB/5 V even though only two LDOs appear as carrier symbols. The actual fitted board revision is unknown. A source-free carrier+5V pin is acceptable for a deliberately direct3V3-powered DevKit; USB plus battery requires a documented isolation/sequencing solution. Large output capacitance can retain voltage as battery VIN collapses, creating a second reverse-current scenario. Neither backfeed current nor rail overshoot has been measured.
+D14's supported USB, 5 V-header and 3V3-header supply choices are mutually exclusive. D15's v1.1 DevKit includes an SGM2212-3.3 regulator and reset/programming circuits. Accordingly, a complete DevKit can introduce another regulator via USB/5 V even though only two LDOs appear as carrier symbols. The actual fitted board revision is unknown. A source-free carrier+5V pin is acceptable for a deliberately direct 3V3-powered DevKit; USB plus battery requires a documented isolation/sequencing solution. Large output capacitance can retain voltage as battery VIN collapses, creating a second reverse-current scenario. Neither backfeed current nor rail overshoot has been measured.
 
 Corrective decision to make before implementation: choose whether the product uses a complete DevKit or a bare module, define valid power sources and return nets, then assign adequately rated separate or single regulated rails. Demonstrate startup/shutdown/hot-plug and full battery-window behavior. Headroom/thermal/transient screens are in Part F.
 
 ### F06, F09, F18: timing, reset, and firmware contracts
 
-D1 Table11 p.50 specifies external CLK when CLKSEL=0; with CLKSEL=1 the internal oscillator reaches CLK only if CONFIG1.CLK_EN=1. CLK_EN resets0. The visible `ADC_CLK` near U1 is dangling, so enabling firmware alone cannot repair the missing electrical route. U2 requires the clock before clock-dependent POR/reset/configuration can complete. A valid correction could distribute U1's enabled clock or a shared external oscillator, followed by matched data-rate settings and a shared START edge. Shared RESET alone is not a synchronization clock.
+D1 Table 11 p.50 specifies external CLK when CLKSEL=0; with CLKSEL=1 the internal oscillator reaches CLK only if CONFIG1.CLK_EN=1. CLK_EN resets to 0. The visible `ADC_CLK` near U1 is dangling, so enabling firmware alone cannot repair the missing electrical route. U2 requires the clock before clock-dependent POR/reset/configuration can complete. A valid correction could distribute U1's enabled clock or a shared external oscillator, followed by matched data-rate settings and a shared START edge. Shared RESET alone is not a synchronization clock.
 
-U2 DRDY is intentionally NC. This can be acceptable after common-clock synchronization is demonstrated; as wired it conceals a nonconverting slave. During bring-up observe both DRDY signals and prove sample alignment. The clock's actual frequency also sets the actual sample rate; nominal2.048 MHz internal-clock operation is not an absolute timebase guarantee.
+U2 DRDY is intentionally NC. This can be acceptable after common-clock synchronization is demonstrated; as wired it conceals a nonconverting slave. During bring-up observe both DRDY signals and prove sample alignment. The clock's actual frequency also sets the actual sample rate; nominal 2.048 MHz internal-clock operation is not an absolute timebase guarantee.
 
-ADC CS, RESET, PWDN and START connect directly to ESP GPIOs without external bias. Thus no deterministic state is established while the controller is reset/high impedance or unpowered. A low pair of chip selects permits both DOUTs to drive different data. Add inactive CS defaults and a deliberate startup/reset policy, and guarantee signal state before enabling MCU outputs. The grounded ADC GPIOs must remain inputs or output-low; output-high would contend directly with ground. Keep PACE/RLD/WCT output modes and RLD rerouting disabled for unused hard-tied terminals.
+ADC CS, RESET, PWDN and START connect directly to ESP GPIOs without external bias. Thus no deterministic state is established while the controller is reset/high impedance or unpowered. A low pair of chip selects permits both DOUTs to drive different data. Add inactive CS defaults and a deliberate startup/reset policy, and guarantee signal state before enabling MCU outputs. After correcting the power/return network, the unused ADC GPIOs tied to digital ground must remain inputs or output-low; output-high would contend directly with ground. Keep PACE/RLD/WCT output modes and RLD rerouting disabled for unused hard-tied terminals.
 
-The current MCU assignments GPIO6–14 avoid straps0/3/45/46, input-only GPIO46, USB19/20, and module-specific flash/PSRAM constraints on35–37. U3 CHIP_PU's external disconnection is not proof of a floating bare-chip enable: D15 supplies onboard reset/boot circuitry on an intact DevKit. That benefit is conditional on the actual assembly and revision. [D4 §§3.2,4; D14/D15]
+The current MCU assignments GPIO6–14 avoid straps 0/3/45/46, input-only GPIO46, USB19/20, and module-specific flash/PSRAM constraints on 35–37. U3 CHIP_PU's external disconnection is not proof of a floating bare-chip enable: D15 supplies onboard reset/boot circuitry on an intact DevKit. That benefit is conditional on the actual assembly and revision. [D4 §§3.2, 4; D14/D15]
 
 Firmware requirements after correcting hardware include: bounded supply/clock startup, SDATAC before configuration, individual ID/register verification, internal reference enable and settling, matched rate/gain settings, valid clock-output setup, shared START, exclusive CS, proper SPI mode/timing and update keepout, frame length/status parsing, overflow/drop detection, and valid lead-off state labeling. No supplied firmware establishes these guarantees. Holding RESET or PWDN low does not make an ADC input tolerant of an absent supply; D1 §11.1 requires controlled signals during power-up.
 
 ### F07–F08: DC body bias and wearable operation
 
-Without a body-bias contact or deliberate input DC-return network, input bias/leakage currents and accumulated charge can move the body's potential until another uncontrolled leakage/clamp path limits it. The620 pF capacitors provide AC coupling to AGND but are open at DC. A disconnected bias electrode would have the same absence of deliberate DC control; it would not be equivalent to a grounded body. D7 p.2 and D1 §10.1.2 p.86 explain the need for establishing common mode.
+Without a body-bias contact or deliberate input DC-return network, input bias/leakage currents and accumulated charge can move the body's potential until another uncontrolled leakage/clamp path limits it. The 620 pF capacitors provide AC coupling to AGND but are open at DC. A disconnected bias electrode would have the same absence of deliberate DC control; it would not be equivalent to a grounded body. D7 p.2 and D1 §10.1.2 p.86 explain the need for establishing common mode.
 
 Choose either a protected passive bias or **one** compensated RLD loop with an appropriate bias contact and sensing configuration. Keep the other RLD amplifier off. A future RLD design must include output current limiting, adequate output swing, expected electrode/body/cable capacitance, lead disconnection, loop gain/phase margin and recovery. There is currently no pair of active RLD outputs tied together and no implemented RLD loop to call unstable. Its absence cannot establish the stability of a proposed replacement.
 
-The only explicit acquisition input series elements are2 kΩ. There are no specified external low-leakage clamps, ESD protection network, isolated external-power interface, or protected-cell/charging design. This does not prove a particular regulatory leakage limit is exceeded; it does mean the design lacks evidence for safe human use. An internal pin-to-rail fault, a shorted shunt capacitor, multiple simultaneous contact paths, charging equipment and USB/debug connections need explicit analysis. ADS ±2 kV HBM/±500 V CDM component ratings and10 mA continuous input-current stress rating are **not wearer-safety or system-level ESD certifications**. [D1 §7.1/7.2; D5 pp.4–6]
+The only explicit acquisition input series elements are 2 kΩ. There are no specified external low-leakage clamps, ESD protection network, isolated external-power interface, or protected-cell/charging design. This does not prove a particular regulatory leakage limit is exceeded; it does mean the design lacks evidence for safe human use. An internal pin-to-rail fault, a shorted shunt capacitor, multiple simultaneous contact paths, charging equipment and USB/debug connections need explicit analysis. ADS ±2 kV HBM/±500 V CDM component ratings and 10 mA continuous input-current stress rating are **not wearer-safety or system-level ESD certifications**. [D1 §7.1/7.2; D5 pp.4–6]
 
 Before human connection, use a simulator to validate fault-current limiting and normal acquisition, and obtain a safety review appropriate to the intended research use and external connections. Battery-only operation with USB/charging/debug disconnected must be an enforced test condition until those interfaces are separately qualified.
 
 ### F10–F12, F18: DC offsets, bandwidth, CMRR, and lead-off
 
-No analog HP means electrode offsets and motion artifacts reach the PGA. That preserves DC and avoids another mismatched high-pass network, but does not prevent clipping. With a2.4 V reference and gain6, the nominal differential endpoints are±400 mV. An illustrative300 mV electrode offset leaves100 mV toward the nearer endpoint; gain12 would already clip. Common-mode headroom must be checked simultaneously using D1 Eq.2. Digital offset removal cannot recover clipped analog data.
+No analog HP means electrode offsets and motion artifacts reach the PGA. That preserves DC and avoids another mismatched high-pass network, but does not prevent clipping. With a 2.4 V reference and gain 6, the nominal differential endpoints are±400 mV. An illustrative 300 mV electrode offset leaves 100 mV toward the nearer endpoint; gain 12 would already clip. Common-mode headroom must be checked simultaneously using D1 Eq.2. Digital offset removal cannot recover clipped analog data.
 
-Internal reference buffering resets **off**, while CHnSET resets to **gain6**. Each VREFP has only capacitors and requires firmware to enable the internal2.4 V reference and allow settling. The4 V reference is specified for a5 V analog supply and is unsuitable for the intended corrected3.3 V supply. This is a firmware contract, not proof that an external reference chip is missing. [D1 pp.33,69,71]
+Internal reference buffering resets **off**, while CHnSET resets to **gain 6**. Each VREFP has only capacitors and requires firmware to enable the internal 2.4 V reference and allow settling. The 4 V reference is specified for a 5 V analog supply and is unsuitable for the intended corrected 3.3 V supply. This is a firmware contract, not proof that an external reference chip is missing. [D1 pp.33, 69, 71]
 
-The input RC filters are nearly transparent at850 Hz for zero source impedance. Their128 kHz pole is not a specification for a flat850 Hz system. At2 kSPS the actual sinc³ filter has524 Hz−3dB bandwidth and−8.26 dB gain at850 Hz;4 kSPS improves this to1048 Hz and−1.97 dB. Neither gives an ideally flat passband. Equalization trades extra noise for amplitude correction and cannot remove aliases. ADS1298 is a continuous delta-sigma/PGA architecture, so a generic SAR “acquisition capacitor must settle in one aperture” diagnosis is inappropriate. Input loading, modulator-frequency aliases and RF rectification still matter. [D1 pp.26,32,49; D8/D11]
+The input RC filters are nearly transparent at 850 Hz for zero source impedance. Their 128 kHz pole is not a specification for a flat 850 Hz system. At 2 kSPS the actual sinc³ filter has 524 Hz−3dB bandwidth and −8.26 dB gain at 850 Hz; 4 kSPS improves this to 1048 Hz and −1.97 dB. Neither gives an ideally flat passband. Equalization trades extra noise for amplitude correction and cannot remove aliases. ADS1298 is a continuous delta-sigma/PGA architecture, so a generic SAR “acquisition capacitor must settle in one aperture” diagnosis is inappropriate. Input loading, modulator-frequency aliases and RF rectification still matter. [D1 pp.26, 32, 49; D8/D11]
 
-CMRR is especially sensitive to electrode impedance interacting with the shunt capacitors. An illustrative100 kΩ real impedance imbalance can convert about2.34% of a60 Hz common-mode voltage into differential voltage in the simple model, only about32.6 dB rejection before considering the ADC. These are not measured dry-electrode impedances or an actual system CMRR result. The model shows why the IC's115 dB typical intrinsic CMRR cannot be assigned to this assembly. Matching components alone does not eliminate electrode mismatch.
+CMRR is especially sensitive to electrode impedance interacting with the shunt capacitors. An illustrative 100 kΩ real impedance imbalance can convert about 2.34% of a 60 Hz common-mode voltage into differential voltage in the simple model, only about 32.6 dB rejection before considering the ADC. These are not measured dry-electrode impedances or an actual system CMRR result. The model shows why the IC's 115 dB typical intrinsic CMRR cannot be assigned to this assembly. Matching components alone does not eliminate electrode mismatch.
 
-Internal lead-off detection exists but resets disabled per channel. DC excitation changes loading, offset and noise; it needs a return path. AC excitation is fDR/4: **500 Hz at2 kSPS is inside the requested EMG band**. At4 kSPS it is1 kHz, outside850 Hz but still requires rejection/leakage assessment. Choose diagnostic timing/excitation and invalid-sample labeling deliberately. A disconnected electrode can drift, rail or collect plausible-looking interference. Status bits are meaningful only after configuring the corresponding detection function. [D1 pp.39–40,74–75; D7]
+Internal lead-off detection exists but resets disabled per channel. DC excitation changes loading, offset and noise; it needs a return path. AC excitation is fDR/4: **500 Hz at 2 kSPS is inside the requested EMG band**. At 4 kSPS it is 1 kHz, outside 850 Hz but still requires rejection/leakage assessment. Choose diagnostic timing/excitation and invalid-sample labeling deliberately. A disconnected electrode can drift, rail or collect plausible-looking interference. Status bits are meaningful only after configuring the corresponding detection function. [D1 pp.39–40, 74–75; D7]
 
 ### F14, F19–F21: component and physical limits
 
-The VCAP3 pin is internally generated at AVDD+1.9 V relative AVSS; at corrected3.3 V operation C25/C51 therefore see about5.2 V. A4 V capacitor would be overstressed; a6.3 V MLCC might satisfy voltage rating yet lose substantial effective capacitance. Neither type is specified, so no actual capacitor rating failure can be asserted. Select a documented part with margin and effective1 µF at operating bias, for example an appropriately evaluated10 V or higher option. Similar specification work is required for every input, reference, supply and regulator capacitor.
+VCAP3 − AVSS is approximately (AVDD − AVSS) + 1.9 V; at corrected 3.3 V operation C25/C51 therefore see about 5.2 V. A 4 V capacitor would be overstressed; a 6.3 V MLCC might satisfy voltage rating yet lose substantial effective capacitance. Neither type is specified, so no actual capacitor rating failure can be asserted. Select a documented part with margin and effective 1 µF at operating bias, for example an appropriately evaluated 10 V or higher option. Similar specification work is required for every input, reference, supply and regulator capacitor.
 
-The assigned U3 library footprint was available:44 pads in two22-position rows,2.54 mm pitch and22.86 mm row spacing. Pins1–22 map J1.1–22; pins23–44 map J3.22–1. Power pins1/2 and ground pins22/23/24/44 are intentionally stacked in the symbol. No connector-count mismatch was found. The local symbol-library table contains an unrelated absolute download path, however; portable library provisioning needs cleanup after review. No edits were made. The PAG and SOT23 footprint families agree with their specified IC packages, but no placed PCB is available to verify pad geometry/orientation or physical fit.
+The assigned U3 library footprint was available: 44 pads in two 22-position rows, 2.54 mm pitch and 22.86 mm row spacing. Pins 1–22 map J1.1–22; pins 23–44 map J3.22–1. Power pins 1/2 and ground pins 22/23/24/44 are intentionally stacked in the symbol. No connector-count mismatch was found. The local symbol-library table contains an unrelated absolute download path, however; portable library provisioning needs cleanup after review. No edits were made. The PAG and SOT23 footprint families agree with their specified IC packages, but no placed PCB is available to verify pad geometry/orientation or physical fit.
 
 No layout claim is possible for ground returns, decoupling proximity, electrode routing, guard/leakage control, antenna clearance, SPI impedance/ringing, RF rectification, or enclosure/thermal behavior. Reference D1 §12.1 and D14 antenna requirements when reviewing a routed PCB. Wi-Fi/BLE burst currents, clock harmonics and digital-ground motion may contaminate low-amplitude EMG through supply, capacitive or radiated coupling; their actual size is unverified. No dedicated TP symbols exist. DevKit USB/UART/programming access is internal to a fitted assembly, not evidence that a future bare-module implementation is complete.
 
@@ -254,19 +254,18 @@ These positives are limited to the named connections and do not override the blo
 
 | Inspected feature | Confirmed evidence / qualification |
 |---|---|
-| Sixteen independent differential mappings | E1–E8→U1 channels1–8, E9–E16→U2 channels1–8; terminal1→P and2→N throughout, through the listed separate2 kΩ resistors. D1 pp.10–11 pin map. |
-| Symmetric nominal input topology | Both legs of every pair have2 kΩ and620 pF to the same AGND; no accidental cross-channel/differential short found. Tolerance and physical matching remain unknown. |
-| Reference bypass networks | U1 VREFP24→C19(.1 µF)||C20(10 µF)→VREFN25/AVSS; U2 C45/C46 equivalent. Independent references are not shorted together. D1 p.33 Fig31, p.96 Fig106. |
-| VCAP values and returns |22 µF atVCAP1,1 µF atVCAP2/3/4 for both devices, all to actual AVSS net. These match D1 pp.10–11. Voltage/derating/placement need specification. |
-| Regulator pin mappings and setpoints | U4 LP2985-3.3 and U5 TLV75533PDBV both3.3 V, correct five-pin SOT23 maps; U5NC4 intentionally disconnected. D2/D3 p.3. Their shared output remains a defect. |
+| Sixteen independent differential mappings | E1–E8→U1 channels 1–8, E9–E16→U2 channels 1–8; terminal 1→P and 2→N throughout, through the listed separate 2 kΩ resistors. D1 pp.10–11 pin map. |
+| Symmetric nominal input topology | Both legs of every pair have 2 kΩ and 620 pF to the same AGND; no accidental cross-channel/differential short found. Tolerance and physical matching remain unknown. |
+| Reference bypass networks | U1 VREFP24→C19(.1 µF)||C20(10 µF)→VREFN25/AVSS; U2 C45/C46 equivalent. Independent references are not shorted together. D1 p.33 Fig 31, p.96 Fig 106. |
+| VCAP values and returns |22 µF at VCAP1, 1 µF at VCAP2/3/4 for both devices, all to actual AVSS net. These match D1 pp.10–11. Voltage/derating/placement need specification. |
+| Regulator pin mappings and setpoints | U4 LP2985-3.3 and U5 TLV75533PDBV both 3.3 V, correct five-pin SOT23 maps; U5 NC4 intentionally disconnected. D2/D3 p.3. Their shared output remains a defect. |
 | U4 noise bypass | BP4→C55 10 nF→actual GND2 net, consistent with D2 §7.1.3. Leakage/technology unknown. |
 | Nominal input bypass exists | C53/C56 1 µF from each LDO input to its actual ground. Effective C/physical placement unverified. |
 | Cascade SPI arrangement | Shared DIN/SCLK/DOUT plus distinct CS is explicitly supported by D1 §9.4.2.1. It is not invalid merely because ERC sees two outputs. Supplies, clock and nonoverlap CS must be corrected/guaranteed. |
 | Suitable intended synchronization routes | Shared START38 and RESET36 reach both ADCs. This supports synchronization only with a valid common CLK and matched configuration. |
-| Unused digital-pin treatment | RESV1,DAISY_IN and GPIOs are tied to intended digital-low net, as recommended in D1 pp.10,48. The entire power/ground topology must first be corrected; grounded GPIOs must not be programmed output-high. |
 | DevKit carrier interface | U3 44-pad symbol/available footprint agrees with official header numbering; used GPIO6–14 avoid strapping/input-only/USB/flash constraints. D4/D14/D15. Actual fitted SKU and layout fit remain unverified. |
 | No shared RLD-output contention | RLDOUT63 is explicitly NC on each ADC; no two active drivers are tied. No RLD function is provided. |
-| Capacitor terminal connectivity | All57 caps have both pins represented in nets. There is no literally unconnected capacitor terminal; digital return-island and wrong-supply decoupling faults remain. |
+| Capacitor terminal connectivity | All 57 caps have both pins represented in nets. There is no literally unconnected capacitor terminal; digital return-island and wrong-supply decoupling faults remain. |
 
 ## Part E — Amberflow issue tracking
 
@@ -335,7 +334,7 @@ All operational examples in this part assume **corrected valid supplies and comm
 
 ### F.1 Supply margins, LDO dropout, current and temperature
 
-For a3.3 V fixed LDO, available nominal headroom is `H = Vcell − 3.3 V`:
+For a 3.3 V fixed LDO, available nominal headroom is `H = Vcell − 3.3 V`:
 
 | Assumed Vcell | H |
 |---:|---:|
@@ -343,54 +342,54 @@ For a3.3 V fixed LDO, available nominal headroom is `H = Vcell − 3.3 V`:
 |3.7 V nominal label|0.4 V|
 |3.3 V low-cell example|0 V|
 
-The exact cell minimum/maximum, temperature, ESR, protection cutoff and wiring loss require its datasheet. At4.2 V the input is1.3 V below U5's5.5 V recommended maximum and1.8 V below its6 V absolute maximum. LP2985 recommended input maximum is16 V. These are different from output regulation requirements. [D2/D3 §§5.1,5.3]
+The exact cell minimum/maximum, temperature, ESR, protection cutoff and wiring loss require its datasheet. At 4.2 V the input is 1.3 V below U5's 5.5 V recommended maximum and 1.8 V below its 6 V absolute maximum. LP2985 recommended input maximum is 16 V. The operating input ranges are LP2985 legacy 2.2–16 V, new 2.5–16 V, and TLV755P 1.45–5.5 V. LP input absolute maxima are 16 V legacy and 18 V new; TLV input absolute maximum is 6 V. These limits are different from dropout and output regulation requirements. [D2/D3 §§5.1, 5.3]
 
-| Part / load | Datasheet maximum dropout used | Approximate3.3 V + dropout screen | Margin at3.7 V |
+| Part / load | Datasheet maximum dropout used | Approximate 3.3 V + dropout screen | Margin at 3.7 V |
 |---|---:|---:|---:|
-| U5 **DBV**,500 mA,≤85°C |215 mV|3.515 V|185 mV|
-| U5 **DBV**,500 mA,≤125°C |238 mV|3.538 V|162 mV|
-| U4 legacy,150 mA,full temperature |575 mV|3.875 V|−175 mV|
-| U4 new,150 mA,full temperature |254 mV|3.554 V|146 mV|
-| U4 legacy,50 mA,full temperature |225 mV|3.525 V|175 mV|
-| U4 new,50 mA,full temperature |184 mV|3.484 V|216 mV|
+| U5 **DBV**, 500 mA,≤85°C |215 mV|3.515 V|185 mV|
+| U5 **DBV**, 500 mA,≤125°C |238 mV|3.538 V|162 mV|
+| U4 legacy, 150 mA,full temperature |575 mV|3.875 V|−175 mV|
+| U4 new, 150 mA,full temperature |254 mV|3.554 V|146 mV|
+| U4 legacy, 50 mA,full temperature |225 mV|3.525 V|175 mV|
+| U4 new, 50 mA,full temperature |184 mV|3.484 V|216 mV|
 
-Sources: D2 pp.6–7 and D3 p.6 electrical tables. LP2985 dropout is defined at100 mV output loss; these additions are headroom screens, not guaranteed nominal-output accuracy at that boundary. Include output tolerance, load/cell droop and PSRR degradation near dropout. Do not substitute the TLV DYD dropout or thermal row for the selectedDBV package. A3.3 V LDO cannot maintain regulated3.3 V through a cell falling to3.3 V or below; usable battery window or supply architecture must reflect this.
+Sources: D2 pp.6–7 and D3 p.6 electrical tables. LP2985 dropout is defined at 100 mV output loss; these additions are headroom screens, not guaranteed nominal-output accuracy at that boundary. Include output tolerance, load/cell droop and PSRR degradation near dropout. Do not substitute the TLV DYD dropout or thermal row for the selected DBV package. A 3.3 V LDO cannot maintain regulated 3.3 V through a cell falling to 3.3 V or below; usable battery window or supply architecture must reflect this.
 
-D1 p.16, RLD/WCT/PACE off, gives typical per-device HR analog2.75 mA at3 V plus digital0.5 mA at3 V, about3.25 mA/device or6.5 mA for two. LP is about2.3 mA/device. These are reference-condition estimates, not guaranteed3.3 V/4 kSPS currents. D4 p.27 requires a module source capable of at least0.5 A; p.28 lists Wi-Fi TX peak355 mA for802.11b1 Mbps20.5 dBm, BLE344 mA at20 dBm/187 mA at0 dBm and Wi-Fi RX95–97 mA. DevKit overhead and actual duty are additional. A150 mA LP2985 is insufficient as the sole assumed RF-module source; two unsanctioned parallel regulators do not solve it.
+D1 p.16, RLD/WCT/PACE off, gives typical per-device HR analog 2.75 mA at 3 V plus digital 0.5 mA at 3 V, about 3.25 mA/device or 6.5 mA for two. LP is about 2.3 mA/device. These are reference-condition estimates, not guaranteed 3.3 V/4 kSPS currents. D4 p.27 requires a module source capable of at least 0.5 A; p.28 lists Wi-Fi TX peak 355 mA for 802.11b at 1 Mbps and 20.5 dBm, BLE 344 mA at 20 dBm/187 mA at 0 dBm and Wi-Fi RX 95–97 mA. DevKit overhead and actual duty are additional. A 150 mA LP2985 is insufficient as the sole assumed RF-module source; two unsanctioned parallel regulators do not solve it.
 
 Illustrative sustained load `I = 355 + 6.5 = 361.5 mA`, excluding DevKit overhead:
 
 `P_LDO ≈ (VIN − VOUT) I = (4.2 − 3.3) × 0.3615 = 0.325 W`.
 
-For U5 DBV, D3 p.5 gives JEDEC `RθJA = 231.1°C/W`, so `ΔTJ ≈ 75.2°C`. This gives about100°C at25°C ambient or125°C at50°C ambient. At500 mA:0.45 W and104°C rise, about129°C at25°C. At3.7 V/361.5 mA:0.145 W and33.4°C rise. These are conditional steady-state screens using reference-board thermal impedance; RF bursts, copper and enclosure can change results substantially. The headline60.3°C/W refers to another package/EVM condition and does not qualifyDBV. No actual overheating is established.
+For U5 DBV, D3 p.5 gives JEDEC `RθJA = 231.1°C/W`, so `ΔTJ ≈ 75.2°C`. This gives about 100°C at 25°C ambient or 125°C at 50°C ambient. At 500 mA: 0.45 W and 104°C rise, about 129°C at 25°C. At 3.7 V/361.5 mA: 0.145 W and 33.4°C rise. These are conditional steady-state screens using reference-board thermal impedance; RF bursts, copper and enclosure can change results substantially. The headline 60.3°C/W refers to another package/EVM condition and does not qualify DBV. No actual overheating is established.
 
-If an independent U4 supplied only6.5 mA of AFE load at4.2 V, its pass loss would be about5.85 mW plus quiescent loss, a modest current/thermal load. The present wiring does not provide that separation.
+If an independent U4 supplied only 6.5 mA of AFE load at 4.2 V, its pass loss would be about 5.85 mW plus quiescent loss, a modest current/thermal load. The present wiring does not provide that separation.
 
-Ideal LDO efficiency ignoring quiescent current is approximately `VOUT/VIN`:89.2% at3.7 V,78.6% at4.2 V. Battery current approximately equals regulated load current plus quiescent/assembly overhead. Runtime is `usable Ah / average A`; at the illustrative continuous0.3615 A it is2.77 h per usableAh before overhead and cutoff. No actual battery capacity/runtime or discharge capability can be inferred.
+Ideal LDO efficiency ignoring quiescent current is approximately `VOUT/VIN`: 89.2% at 3.7 V, 78.6% at 4.2 V. Battery current approximately equals regulated load current plus quiescent/assembly overhead. Runtime is `usable Ah / average A`; at the illustrative continuous 0.3615 A it is 2.77 h per usable Ah before overhead and cutoff. No actual battery capacity/runtime or discharge capability can be inferred.
 
 ### F.2 Output capacitance, transients, startup and reverse current
 
-Direct+3.3V–AGND nominal capacitance:
+Direct +3.3V–AGND nominal capacitance:
 
 `C6 + C7 + C32 + C33 + C54 + C57 = 0.1 + 10 + 0.1 + 10 + 2.2 + 200 = 222.4 µF`.
 
-The+3.3V–DGND bank adds `C8+C9+C34+C35=20.2 µF` after valid ground bonding, giving242.6 µF before DevKit capacitors. D3 §5.3 and §7.1.1 specify up to200 µF; D2 new-chip recommended range also ends at200 µF. Nominal totals exceed that range, but actual effective capacitance depends on tolerance/bias/technology. Distributed parasitics also affect stability. A proven oscillation or exact effective-C violation cannot be asserted without parts and measurements.
+The +3.3V–DGND bank adds `C8+C9+C34+C35=20.2 µF` after valid ground bonding, giving 242.6 µF before DevKit capacitors. D3 §5.3 and §7.1.1 specify up to 200 µF; D2 new-chip recommended range also ends at 200 µF. Nominal totals exceed that range, but actual effective capacitance depends on tolerance/bias/technology. Distributed parasitics also affect stability. A proven oscillation or exact effective-C violation cannot be asserted without parts and measurements.
 
-Legacy LP2985 needs effective output≥2.2 µF and permitted ESR; new silicon permits≥1 µF with its specified ESR range. U5 permits suitable1 µF ceramics. [D2 §§7.1.1–7.1.3, Figs5-36–38; D3 §7.1.1] There is no basis to reject ceramic-only output solely from the family name.
+Legacy LP2985 needs effective output capacitance ≥ 2.2 µF and the load-dependent ESR region in Figs 5-36–38; new silicon permits ≥ 1 µF with 0–1 Ω ESR and up to 200 µF. The legacy guidance does not impose that new-chip 200 µF maximum. U5 permits suitable 1 µF ceramics. [D2 §§7.1.1–7.1.3, Figs 5-36–38; D3 §7.1.1] There is no basis to reject ceramic-only output solely from the family name.
 
 Capacitor-only step screen:
 
 `ΔV ≈ ΔI Δt / Ceff + ΔI·ESR`.
 
-AtCeff200 µF andΔI0.3 A, a5%3.3 V allowance=165 mV gives unsupported time `CΔV/ΔI ≈110 µs`, before ESR and regulator response. At100 µF it is55 µs. This is neither a prediction nor a measurement of a>5% dip.
+At Ceff = 200 µF and ΔI = 0.3 A, a 5% allowance on 3.3 V=165 mV gives unsupported time `CΔV/ΔI ≈110 µs`, before ESR and regulator response. At 100 µF it is 55 µs. This is neither a prediction nor a measurement of a >5% dip.
 
-For200 µF at3.3 V: `Q=CV=660 µC`; `E=CV²/2=1.089 mJ`. Charging in550 µs would require1.2 A average before load. U5's typical startup measured with a small capacitor cannot be transferred unchanged to this bank; current limit and soft start alter timing. Scope actual startup.
+For 200 µF at 3.3 V: `Q=CV=660 µC`; `E=CV²/2=1.089 mJ`. Charging in 550 µs would require 1.2 A average before load. U5's typical startup measured with a small capacitor cannot be transferred unchanged to this bank; current limit and soft start alter timing. Scope actual startup.
 
-U5's typical output discharge gives `I≈3.3/120=27.5 mA` if externally held high while disabled, conditional on that resistance remaining applicable. D3's absolute OUT limit is `min(VIN+0.3 V,6 V)`; the LP new-chip output limit and reverse-current guidance differ. Battery removal with a charged output bank or USB-fed DevKit must therefore be assessed for output-above-input stress; no reverse-current waveform is available. [D2 §7.1.4; D3 §§5.1,7.1.4]
+U5's typical output discharge gives `I≈3.3/120=27.5 mA` if externally held high while disabled, conditional on that resistance remaining applicable. D3's absolute OUT limit is `min(VIN+0.3 V,6 V)`; the LP new-chip output limit and reverse-current guidance differ. Battery removal with a charged output bank or USB-fed DevKit must therefore be assessed for output-above-input stress; no reverse-current waveform is available. [D2 §7.1.4; D3 §§5.1, 7.1.4]
 
 ### F.3 ADC differential range, offset and common-mode headroom
 
-Using correctedAVDD3.3 V,AVSS0 V and enabledVREF2.4 V:
+Using corrected AVDD = 3.3 V, AVSS = 0 V and enabled VREF = 2.4 V:
 
 `VD,FS = ±VREF/G`; total span=`2VREF/G`. [D1 p.32 Eq.3]
 
@@ -408,17 +407,17 @@ Each input must also remain within its individual voltage limits and satisfy PGA
 
 `AVSS + 0.2 V + G|VD,max|/2 < VCM < AVDD − 0.2 V − G|VD,max|/2`.
 
-Atgain6:
+At gain 6:
 
-| Maximum differential magnitude | Allowed VCM for3.3 V supply |
+| Maximum differential magnitude | Allowed VCM for 3.3 V supply |
 |---:|---:|
 |300 mV|1.10–2.20 V|
 |350 mV|1.25–2.05 V|
 |400 mV|1.40–1.90 V|
 
-Endpoints in this table are strict headroom boundaries, not recommended operation exactly at the edges. A300 mV DC offset atgain6 leaves100 mV toward the nearer ADC endpoint; actual EMG, motion and gain/reference tolerance must fit. Gain12 fails for that example. A digital high-pass or DC subtraction cannot restore data clipped in the PGA/modulator.
+Endpoints in this table are strict headroom boundaries, not recommended operation exactly at the edges. A 300 mV DC offset atgain 6 leaves 100 mV toward the nearer ADC endpoint; actual EMG, motion and gain/reference tolerance must fit. Gain 12 fails for that example. A digital high-pass or DC subtraction cannot restore data clipped in the PGA/modulator.
 
-Atgain6,24-bit code weight=`(2×2.4/6)/2²⁴=47.68 nV`. This does not mean47.68 nV effective sensitivity or24 noise-free bits. D1 Table1's typical7.3 µVpp at2 kSPS/gain6 corresponds to about`log2(0.8 V/7.3 µV)=16.74` noise-free bits under that test convention, before electrodes or interference. It is a benchmark at the table's3 V/shorted-input conditions.
+At gain 6, 24-bit code weight=`(2×2.4/6)/2²⁴=47.68 nV`. This does not mean 47.68 nV effective sensitivity or 24 noise-free bits. D1 Table 1's typical 7.3 µVpp at 2 kSPS/gain 6 corresponds to about`log2(0.8 V/7.3 µV)=16.74` noise-free bits under that test convention, before electrodes or interference. It is a benchmark at the table's 3 V/shorted-input conditions.
 
 ### F.4 External filtering, input loading, and CMRR
 
@@ -426,17 +425,17 @@ For negligible source impedance and high ADC impedance, each branch is:
 
 `H(s)=1/(1+sRC)`, `τ=2000Ω×620pF=1.24 µs`, `fc=1/(2πRC)=128.35 kHz`.
 
-With equal components the differential transfer is the sameH, notH². Odd-mode equivalent2R andC/2 also givesRC. No differential capacitor bridgesP/N.
+With equal components the differential transfer is the same H, not H². Odd-mode equivalent 2R and C/2 also gives RC. No differential capacitor bridges P/N.
 
 | Frequency | Ideal external RC gain |
 |---:|---:|
 |850 Hz|−0.000190 dB|
-|256 kHz (LP fMOD)|about−6.97 dB|
-|512 kHz (HR fMOD)|about−12.28 dB|
+|256 kHz (LP fMOD)|about −6.97 dB|
+|512 kHz (HR fMOD)|about −12.28 dB|
 
-D1 p.32 givesfMOD=fCLK/8 LP orfCLK/4 HR, with nominalfCLK2.048 MHz. D1 p.49 states digital passbands repeat at multiples offMOD; the modest external suppression there requires an interference/alias budget. Do not extrapolate an ideal lumpedRC to claim2.4 GHz attenuation; parasitics and rectification dominate at RF.
+D1 p.32 gives fMOD=fCLK/8 LP or fCLK/4 HR, with nominal fCLK = 2.048 MHz. D1 p.49 states digital passbands repeat at multiples of fMOD; the modest external suppression there requires an interference/alias budget. Do not extrapolate an ideal lumped RC to claim 2.4 GHz attenuation; parasitics and rectification dominate at RF.
 
-Per620 pF shunt, `|ZC|=1/(2πfC)` gives5.13 MΩ at50 Hz,4.28 MΩ at60 Hz,302 kΩ at850 Hz. D1's20 pF typical input capacitance and1 GΩ DC input impedance do not remove this external AC loading. With an illustrative100 kΩ real electrode source, `(R+Ze)C` lowersfc to2.52 kHz and gives about−0.47 dB at850 Hz;1 MΩ gives approximately256 Hz and−10.8 dB. Real electrodes are complex, frequency dependent, and unmeasured.
+Per 620 pF shunt, `|ZC|=1/(2πfC)` gives 5.13 MΩ at 50 Hz, 4.28 MΩ at 60 Hz, 302 kΩ at 850 Hz. D1's 20 pF typical input capacitance and 1 GΩ DC input impedance do not remove this external AC loading. With an illustrative 100 kΩ real electrode source, `(R+Ze)C` lowers fc to 2.52 kHz and gives about −0.47 dB at 850 Hz; 1 MΩ gives approximately 256 Hz and −10.8 dB. Real electrodes are complex, frequency dependent, and unmeasured.
 
 For a simple independent-branch model:
 
@@ -444,9 +443,9 @@ For a simple independent-branch model:
 
 `Ad=(HP+HN)/2`, common-to-differential gain=`HP−HN`; hence `CMRRext=20log10(|Ad|/|HP−HN|)`.
 
-Atlowfrequency with matchedC, imbalance dominated by realΔZ gives approximately `CMRRext≈−20log10(2πfC|ΔZ|)`. At60 Hz:ΔZ10 kΩ→52.6 dB;100 kΩ→32.6 dB. For the latter case,1 V common mode produces about23.4 mV differential in this illustrative model. Body/electrode capacitance and shared-channel interactions are omitted; this is a sensitivity calculation, not actual wristCMRR.
+At low frequency with matched C, imbalance dominated by real ΔZ gives approximately `CMRRext≈−20log10(2πfC|ΔZ|)`. At 60 Hz: ΔZ = 10 kΩ→52.6 dB; 100 kΩ→32.6 dB. For the latter case, 1 V common mode produces about 23.4 mV differential in this illustrative model. Body/electrode capacitance and shared-channel interactions are omitted; this is a sensitivity calculation, not actual wrist CMRR.
 
-Component-only example with ideal electrodes: a2% leg-to-leg time-constant mismatch gives about100.6 dB at60 Hz;4% gives94.6 dB;12% gives85.0 dB. ±1% resistors on opposing extremes create2%R mismatch; ±5% capacitors create10%C mismatch, potentially about12% total. **Those tolerances are examples; none are specified.** D5 p.3 supports this common-to-differential mechanism. Intrinsic ADC typical115 dB CMRR (D1 p.14, specified test conditions) cannot cancel a differential voltage already generated by external mismatch.
+Component-only example with ideal electrodes: a 2% leg-to-leg time-constant mismatch gives about 100.6 dB at 60 Hz; 4% gives 94.6 dB; 12% gives 85.0 dB. ±1% resistors on opposing extremes create 2% R mismatch; ±5% capacitors create 10% C mismatch, potentially about 12% total. **Those tolerances are examples; none are specified.** D5 p.3 supports this common-to-differential mechanism. Intrinsic ADC typical 115 dB CMRR (D1 p.14, specified test conditions) cannot cancel a differential voltage already generated by external mismatch.
 
 ### F.5 Actual sample-rate bandwidth and noise
 
@@ -454,64 +453,64 @@ D1 p.49 Eq.5:
 
 `|HADC(f)| = |sin(Nπf/fMOD) / [N sin(πf/fMOD)]|³`, `N=fMOD/fDR`.
 
-For largeN this approaches`|sin(πf/fDR)/(πf/fDR)|³`. The approximate gains below differ negligibly from the exactHR expression at nominal2.048 MHz.
+For large N this approaches `|sin(πf/fDR)/(πf/fDR)|³`. The approximate gains below differ negligibly from the exact HR expression at nominal 2.048 MHz.
 
-| Per-channel fDR | D1−3 dB bandwidth | At100 Hz | At500 Hz | At850 Hz |
+| Per-channel fDR | D1−3 dB bandwidth | At 100 Hz | At 500 Hz | At 850 Hz |
 |---:|---:|---:|---:|---:|
 |2 kSPS|524 Hz|−0.107 dB|−2.736 dB|−8.262 dB|
 |4 kSPS|1048 Hz|−0.0268 dB|−0.673 dB|−1.965 dB|
 
-Nyquist alone is insufficient to define useful EMG bandwidth. The sinc³ also does not provide a50/60 Hz notch at either rate; those frequencies are in the passband. Digital filtering may reduce residual interference but cannot repair PGA saturation or recreate aliased signal.
+Nyquist alone is insufficient to define useful EMG bandwidth. The sinc³ also does not provide a 50/60 Hz notch at either rate; those frequencies are in the passband. Digital filtering may reduce residual interference but cannot repair PGA saturation or recreate aliased signal.
 
-For two uncorrelated2 kΩ resistors at300 K:
+For two uncorrelated 2 kΩ resistors at 300 K:
 
 `en = √[4kT(RP+RN)] = √[4×1.380649e−23×300×4000] = 8.14 nV/√Hz`.
 
-Integrated over an ideal rectangular20–850 Hz band: `vn=en√830=0.235 µVrms`. This is a density-to-band integral, not8.14 nV RMS. Including the sinc³ weighting within20–850 Hz gives approximately0.183 µVrms at2 kSPS or0.218 µVrms at4 kSPS, by numerical integration of`en²|HRC|²|HADC|²`. It excludes noise that aliases from other bands and does not model electrode noise. D6 p.3 gives the resistor-noise relation; the actual digital filter fromD1 is used rather than a single-poleπ/2 ENBW shortcut.
+Integrated over an ideal rectangular 20–850 Hz band: `vn=en√830=0.235 µVrms`. This is a density-to-band integral, not 8.14 nV RMS. Including the sinc³ weighting within 20–850 Hz gives approximately 0.183 µVrms at 2 kSPS or 0.218 µVrms at 4 kSPS, by numerical integration of `en²|HRC|²|HADC|²`. It excludes noise that aliases from other bands and does not model electrode noise. D6 p.3 gives the resistor-noise relation; the actual digital filter from D1 is used rather than a single-pole π/2 ENBW shortcut.
 
-If both electrode real impedances were100 kΩ throughout the same rectangular band, their pair's thermal noise would be about1.66 µVrms **before frequency-dependent loading/filter weighting**. This is an illustrative resistive model; contact/excess noise and complex impedances are unknown. A200 pA input bias through100 kΩ develops20 µV DC; actual differential bias error depends on both currents and impedances. D1 p.13 lists±200 pA at25°C, up to±1.2 nA over industrial temperature under its specified conditions. DC lead-off adds further offset/noise.
+If both electrode real impedances were 100 kΩ throughout the same rectangular band, their pair's thermal noise would be about 1.66 µVrms **before frequency-dependent loading/filter weighting**. This is an illustrative resistive model; contact/excess noise and complex impedances are unknown. A 200 pA input bias through 100 kΩ develops 20 µV DC; actual differential bias error depends on both currents and impedances. D1 p.13 lists ±200 pA at 25°C, up to ±1.2 nA over industrial temperature under its specified conditions. DC lead-off adds further offset/noise.
 
-D1 p.22 typical shorted-input noise,3 V analog/2.4 V reference:
+D1 p.22 typical shorted-input noise, 3 V analog/2.4 V reference:
 
-| Gain | HR2 kSPS | HR4 kSPS |
+| Gain | HR 2 kSPS | HR 4 kSPS |
 |---:|---:|---:|
 |1|4.1 µVrms|6.1 µVrms|
 |4|1.3 µVrms|1.9 µVrms|
 |6|1.1 µVrms|1.5 µVrms|
 |12|0.9 µVrms|1.2 µVrms|
 
-LP/gain6 is1.4 µVrms at2 kSPS and2.4 µVrms at4 kSPS. These are integrated converter-output-band values, not densities or identically post-filtered20–850 Hz values. They must not simply be RSS-added to the830 Hz resistor calculation as a “system noise” result. A valid budget needs all sources under the same transfer function and alias assumptions. LDO output noise is not automatically input-referred ADC noise: use frequency-dependentPSRR/reference coupling and actual rail measurements. [D9/D10]
+LP/gain 6 is 1.4 µVrms at 2 kSPS and 2.4 µVrms at 4 kSPS. These are integrated converter-output-band values, not densities or identically post-filtered 20–850 Hz values. They must not simply be RSS-added to the 830 Hz resistor calculation as a “system noise” result. A valid budget needs all sources under the same transfer function and alias assumptions. LDO output noise is not automatically input-referred ADC noise: use frequency-dependent PSRR/reference coupling and actual rail measurements. [D9/D10]
 
 ### F.6 SPI throughput, timing, synchronization and logic levels
 
-At2/4 kSPS each ADC frame is `24 status + 8×24 channel =216 bits=27 bytes`; two devices require432 bits/54 bytes per sample interval. Powered-down channels still occupy their slots. [D1 §9.4.1.3.2 p.53]
+At 2/4 kSPS each ADC frame is `24 status + 8×24 channel =216 bits=27 bytes`; two devices require 432 bits/54 bytes per sample interval. Powered-down channels still occupy their slots. [D1 §9.4.1.3.2 p.53]
 
 | Rate | Period |16-channel payload |Two complete frames | Bare SCLK lower bound |
 |---:|---:|---:|---:|---:|
 |2 kSPS|500 µs|768 kbit/s=96 kB/s|864 kbit/s=108 kB/s|>0.864 MHz|
 |4 kSPS|250 µs|1.536 Mbit/s=192 kB/s|1.728 Mbit/s=216 kB/s|>1.728 MHz|
 
-`tpair=432/fSCLK`:1 MHz→432 µs;2 MHz→216 µs;4 MHz→108 µs;8 MHz→54 µs. These omit GPIO/CS gaps, MCU latency and ADC update requirements. Atnominal2.048 MHz,4tCLK=1.953 µs. Illustratively adding one update interval and two final-CS hold intervals to a4 MHz payload gives at least113.86 µs before other software/setup gaps, leaving about136 µs of the250 µs4 kSPS period. This is a schedule budget, not proof of firmware operation. RDATA mode adds8 command clocks per device:448 clocks/pair and bare1.792 MHz at4 kSPS. Wireless packets, metadata and retransmissions add traffic beyond the table.
+`tpair=432/fSCLK`: 1 MHz→432 µs; 2 MHz→216 µs; 4 MHz→108 µs; 8 MHz→54 µs. These omit GPIO/CS gaps, MCU latency and ADC update requirements. At nominal 2.048 MHz, 4tCLK=1.953 µs. Illustratively adding one update interval and two final-CS hold intervals to a 4 MHz payload gives at least 113.86 µs before other software/setup gaps, leaving about 136 µs of the 250 µs 4 kSPS period. This is a schedule budget, not proof of firmware operation. RDATA mode adds 8 command clocks per device: 448 clocks/pair and bare 1.792 MHz at 4 kSPS. Wireless packets, metadata and retransmissions add traffic beyond the table.
 
-D1 p.17, atDVDD2.7–3.6 V: minimumSCLK period50 ns (20 MHz by period), high/low≥15 ns, DINsetup/hold10 ns, CSsetup6 ns, CS-high≥2tCLK, finalbyte fallingedge-to-CS-high≥4tCLK, and CS-high-to-DOUT-high-Z≤10 ns under the specified test load. UseCPOL0/CPHA1 and non-overlap selects. At faster command rates, honor4tCLK command-decode spacing; at4 MHz a byte is2 µs, only marginally above nominal1.953 µs and slightly shorter than4tCLK at a−2.5% industrial internal-clock extreme. Add deliberate command spacing/slow command speed rather than assuming the nominal example covers all clocks. Conversion frame speed is a separate timing question. [D1 §§9.5.1,9.5.2.9]
+D1 p.17, at DVDD = 2.7–3.6 V: minimum SCLK period 50 ns (20 MHz by period), high/low≥15 ns, DIN setup/hold 10 ns, CS setup 6 ns, CS-high≥2tCLK, final-byte falling-edge-to-CS-high≥4tCLK, and CS-high-to-DOUT-high-Z≤10 ns under the specified test load. Use CPOL0/CPHA1 and non-overlap selects. At faster command rates, honor 4tCLK command-decode spacing; at 4 MHz a byte is 2 µs, only marginally above nominal 1.953 µs and slightly shorter than 4tCLK at a −2.5% industrial internal-clock extreme. Add deliberate command spacing/slow command speed rather than assuming the nominal example covers all clocks. Conversion frame speed is a separate timing question. [D1 §§9.5.1, 9.5.2.9]
 
-SharedSCLK can clear either device'sDRDY irrespective ofCS (D1 pp.52–53); it is not a wired-OR status bus. With valid synchronization oneDRDY may pace paired reads; while diagnosing or using other SPI traffic, account for TI's clock-gating/event guidance. Do not leave free-runningSCLK on the bus.
+Shared SCLK can clear either device's DRDY irrespective of CS (D1 pp.52–53); it is not a wired-OR status bus. With valid synchronization one DRDY may pace paired reads; while diagnosing or using other SPI traffic, account for TI's clock-gating/event guidance. Do not leave free-running SCLK on the bus.
 
-Nominal configuration options atfCLK2.048 MHz: HR DR100→2 kSPS; HR DR011→4 kSPS; LP DR011→2 kSPS; LP DR010→4 kSPS. [D1 p.67] Match both chips. POR wait is at least2¹⁸/fCLK≈128 ms nominal and untilVCAP1 passes1.1 V per D1 §11.1; RESET low≥2tCLK≈0.977 µs, then18tCLK≈8.79 µs. The slave's clock must be valid for its clock-dependent initialization. HR first settled output is4616tCLK≈2.254 ms at2 kSPS or2312tCLK≈1.129 ms at4 kSPS. After an input step, settled data are available on the fourthDRDY. [D1 pp.48,51–52,96]
+Nominal configuration options at fCLK = 2.048 MHz: HR DR100→2 kSPS; HR DR011→4 kSPS; LP DR011→2 kSPS; LP DR010→4 kSPS. [D1 p.67] Match both chips. POR wait is at least 2¹⁸/fCLK≈128 ms nominal and until VCAP1 passes 1.1 V per D1 §11.1; RESET low ≥ 2tCLK≈0.977 µs, then 18tCLK≈8.79 µs. The slave's clock must be valid for its clock-dependent initialization. HR first settled output is 4616tCLK≈2.254 ms at 2 kSPS or 2312tCLK≈1.129 ms at 4 kSPS. After an input step, settled data are available on the fourth DRDY. [D1 pp.48, 51–52, 96]
 
-Conditional logic budget with **corrected common3.3 V rails/grounds**:
+Conditional logic budget with **corrected common 3.3 V rails/grounds**:
 
-- ADSVIH≥0.8DVDD=2.64 V; VIL≤0.66 V; VOH≥2.9 V andVOL≤0.4 V at500 µA. [D1 p.16]
-- ESPVIH≥0.75VDD=2.475 V; VIL≤0.825 V; VOH≥0.8VDD=2.64 V andVOL≤0.33 V under the table's high-impedance condition. [D4 p.27]
-- ADS→ESP high/low margins each0.425 V. ESP→ADS guaranteed table-bound high margin is **0 V**, low margin0.33 V. Same-voltage operation does not inherently require level translation, but these tables alone do not prove robust positive worst-case high noise margin in that direction. Check actual lightly loadedVOH/edges and rail tolerances. ESP40 mA/28 mA figures are typical drive characterization, not blanket safe per-pin current limits.
+- ADS VIH≥0.8DVDD=2.64 V; VIL≤0.66 V; VOH≥2.9 V and VOL≤0.4 V at 500 µA. [D1 p.16]
+- ESP VIH≥0.75VDD=2.475 V; VIL≤0.825 V; VOH≥0.8VDD=2.64 V and VOL≤0.33 V under the table's high-impedance condition. [D4 p.27]
+- ADS→ESP high/low margins each 0.425 V. ESP→ADS guaranteed table-bound high margin is **0 V**, low margin 0.33 V. Same-voltage operation does not inherently require level translation, but these tables alone do not prove robust positive worst-case high noise margin in that direction. Check actual lightly loaded VOH/edges and rail tolerances. ESP 40 mA/28 mA figures are typical drive characterization, not blanket safe per-pin current limits.
 
-These are not margins for the presently invalid supply network. D1 digital absolute input range is physicalDGND−0.3…DVDD+0.3 V; recommended operation is tighter. Powered MCU signals into an unsupplied ADC can inject current regardless ofRESET/PWDN state.
+These are not margins for the presently invalid supply network. D1 digital absolute input range is physical DGND−0.3…DVDD+0.3 V; recommended operation is tighter. Powered MCU signals into an unsupplied ADC can inject current regardless of RESET/PWDN state.
 
 ### F.7 Resistor stress and wearer-fault screens
 
-For a2 kΩ resistor with an assumed3.3 V entirely across it: `I=V/R=1.65 mA`, `P=V²/R=5.45 mW`. At4.2 V:2.10 mA and8.82 mW; at5 V:2.50 mA and12.5 mW. These are illustrative single-path electrical screens. The actual component power/pulse rating is absent; normal input bias currents imply much lower dissipation, but no rating signoff follows.
+For a 2 kΩ resistor with an assumed 3.3 V entirely across it: `I=V/R=1.65 mA`, `P=V²/R=5.45 mW`. At 4.2 V: 2.10 mA and 8.82 mW; at 5 V: 2.50 mA and 12.5 mW. These are illustrative single-path electrical screens. The actual component power/pulse rating is absent; normal input bias currents imply much lower dissipation, but no rating signoff follows.
 
-They also do not prove a specific single fault creates that wearer current or that it is acceptable. Patient/body impedance, number of parallel contacts, capacitor/resistor faults, clamps and external-power return paths must be included. D5 p.5 discusses a protection-resistor example for a stated fault-current target; it cannot replace classification and formal evaluation of this product's complete normal/single-fault paths. Increasing protection resistance also changes thermal noise, input loading andCMRR, so protection and signal quality must be engineered together.
+They also do not prove a specific single fault creates that wearer current or that it is acceptable. Patient/body impedance, number of parallel contacts, capacitor/resistor faults, clamps and external-power return paths must be included. D5 p.5 discusses a protection-resistor example for a stated fault-current target; it cannot replace classification and formal evaluation of this product's complete normal/single-fault paths. Increasing protection resistance also changes thermal noise, input loading and CMRR, so protection and signal quality must be engineered together.
 
 ## Part G — Recommended next actions
 

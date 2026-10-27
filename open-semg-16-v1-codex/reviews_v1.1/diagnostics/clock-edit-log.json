@@ -1,0 +1,17 @@
+[
+  {
+    "reason": "F06: connect existing CLK37 wire to existing ADC_CLK global label",
+    "before": "(wire\n\t\t(pts\n\t\t\t(xy 195.58 157.48) (xy 210.82 157.48)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"533df57d-c904-4f56-83a9-8aa8b1ee9e94\")\n\t)",
+    "after": "(wire\n\t\t(pts\n\t\t\t(xy 195.58 157.48) (xy 220.98 157.48)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n\t\t(uuid \"533df57d-c904-4f56-83a9-8aa8b1ee9e94\")\n\t)"
+  },
+  {
+    "reason": "F06/F18: document clock-output firmware requirement",
+    "before": "(text \"ADC1 provides the clock for ADC2 \"\n\t\t(exclude_from_sim no)\n\t\t(at 442.722 154.178 0)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t)\n\t\t(uuid \"82eea591-fe9e-4fa0-b382-ac293c8de9e2\")\n\t)",
+    "after": "(text \"U1 CLK_EN=1 required; shared RESET clears clock output\"\n\t\t(exclude_from_sim no)\n\t\t(at 442.722 154.178 0)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t)\n\t\t(uuid \"82eea591-fe9e-4fa0-b382-ac293c8de9e2\")\n\t)"
+  },
+  {
+    "reason": "F06/F18: document clock-output firmware requirement",
+    "before": "(text \"ADC1 provides the clock for ADC2\"\n\t\t(exclude_from_sim no)\n\t\t(at 216.408 155.194 0)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t)\n\t\t(uuid \"9c552305-b528-48ce-810c-7aff744749f0\")\n\t)",
+    "after": "(text \"U1 CLK_EN=1 required; shared RESET clears clock output\"\n\t\t(exclude_from_sim no)\n\t\t(at 216.408 155.194 0)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t)\n\t\t(uuid \"9c552305-b528-48ce-810c-7aff744749f0\")\n\t)"
+  }
+]

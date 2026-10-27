@@ -4,14 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ceff1ca-2ff1-4ca3-baff-66ea612983a7" name="Changes" comment="" />
+    <list default="true" id="3ceff1ca-2ff1-4ca3-baff-66ea612983a7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/.codex/config.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/open-semg-16-v1.kicad_prl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/open-semg-16-v1.kicad_pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/open-semg-16-v1.kicad_sch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/analog-notes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/baseline-hashes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-connectivity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-connectivity.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-erc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-netlist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-schematic-inventory.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/design-integrity-verification.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/digital-devkit-v1.1-lfs-pointer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/extract-pdf.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/independent-review-checkpoint.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/ADS1298-EVM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/ADS1298.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/ESP32-S3-WROOM-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/LP2985.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA160.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA185.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA188.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA196.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA230.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SLAA412.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SLAA414.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SLYY192.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/TLV755P.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-connectivity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-erc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-hashes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/dry_electrode.kicad_sym" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/open-semg-16-v1.kicad_prl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/open-semg-16-v1.kicad_pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/open-semg-16-v1.kicad_sch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/ref_electrode.kicad_sym" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/sym-lib-table" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-netlist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/schematic-svg/open-semg-16-v1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/digital-notes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/hardware-audit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/power-notes.md" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="384" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -23,8 +74,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Admin/Downloads/CS_Games_Poker_2026"
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Admin/Downloads/CS_Games_Poker_2026",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -38,9 +102,23 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-559ba0cadc45-1e0160e1c7f0-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-241.15989.62" />
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ceff1ca-2ff1-4ca3-baff-66ea612983a7" name="Changes" comment="" />
+      <created>1793138251747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793138251747</updated>
+      <workItem from="1793138341151" duration="4517000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>

@@ -1,0 +1,38 @@
+Modified pre-existing file:
+open-semg-16-v2.kicad_sch
+
+Created files retained (32):
+reviews_v2/diagnostics/after-clock-erc.json
+reviews_v2/diagnostics/after-clock-netlist.xml
+reviews_v2/diagnostics/after-power-erc.json
+reviews_v2/diagnostics/after-power-netlist.xml
+reviews_v2/diagnostics/annotation-edit-log.json
+reviews_v2/diagnostics/clock-edit-log.json
+reviews_v2/diagnostics/controls-view.png
+reviews_v2/diagnostics/controls_probes-edit-log.json
+reviews_v2/diagnostics/created-file-manifest.txt
+reviews_v2/diagnostics/extract-pdf.m
+reviews_v2/diagnostics/final-connectivity.json
+reviews_v2/diagnostics/final-erc.json
+reviews_v2/diagnostics/final-netlist.xml
+reviews_v2/diagnostics/final-schematic.pdf
+reviews_v2/diagnostics/implement_v2.py
+reviews_v2/diagnostics/initial-erc.json
+reviews_v2/diagnostics/initial-geometry.json
+reviews_v2/diagnostics/initial-netlist.xml
+reviews_v2/diagnostics/initial-v2.kicad_sch
+reviews_v2/diagnostics/pdf-text/ADS1298.txt
+reviews_v2/diagnostics/pdf-text/LP2985.txt
+reviews_v2/diagnostics/pdf-text/TLV755P.txt
+reviews_v2/diagnostics/power-edit-log.json
+reviews_v2/diagnostics/power-view.png
+reviews_v2/diagnostics/pre-edit-hashes.json
+reviews_v2/diagnostics/probes-view.png
+reviews_v2/diagnostics/reference-view.png
+reviews_v2/diagnostics/render-pdf.m
+reviews_v2/diagnostics/schematic_tools.py
+reviews_v2/diagnostics/validation-results.json
+reviews_v2/diagnostics/verify_v2.py
+reviews_v2/updates_from_v1.md
+
+V2 project and all V1 design/review files unchanged.

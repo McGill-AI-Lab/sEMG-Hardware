@@ -1,0 +1,40 @@
+# sEMG Hardware Development Agent
+
+## Write permissions
+
+The current directory, open-semg-16-v1-codex, is the
+only authorized write workspace.
+
+Never create, modify, rename, or delete files in the
+parent directory or any sibling directory.
+
+All files under ../ are reference material only.
+
+## Reference material
+
+Read documentation from ../docs.
+Read the original design from ../open-semg-16-v1.
+Other sibling folders may be inspected but never modified.
+
+## KiCad MCP
+
+Use the `kicad` MCP server for edits to the current
+development project only.
+
+Use `kicad_reference` to inspect the original design.
+
+Never redirect an MCP server to a project outside its
+configured directory for write operations.
+
+Never perform exports, backups, or generated-file operations
+that write outside the current directory.
+
+## Engineering requirements
+
+Before modifying hardware:
+- Inspect the existing schematic and its connectivity.
+- Consult the relevant manufacturer datasheets.
+- Distinguish verified specifications from assumptions.
+- Explain proposed changes before implementing them.
+- Run ERC or relevant validation after changes.
+- Report exactly which files were modified.
