@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "defaults": {
+    "originals": "docs/datasheets/originals",
+    "processed": "docs/datasheets/processed",
+    "metadata": "docs/datasheets/metadata",
+    "index": "docs/datasheets/INDEX.md",
+    "report": "docs/datasheets/latest_run.json",
+    "converters": ["pymupdf4llm"]
+  },
+  "documents": [
+    {"id": "ADS1298", "title": "ADS1298 / ADS129x datasheet", "folder": "components", "url": "https://www.ti.com/lit/ds/symlink/ads1298.pdf", "converters": ["pymupdf4llm"]},
+    {"id": "LP2985", "title": "LP2985 LDO datasheet", "folder": "components", "url": "https://www.ti.com/lit/ds/symlink/lp2985.pdf", "converters": ["pymupdf4llm"]},
+    {"id": "TLV755P", "title": "TLV755P LDO datasheet", "folder": "components", "url": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf", "converters": ["pymupdf4llm"]},
+    {"id": "ESP32-S3-WROOM-1", "title": "ESP32-S3-WROOM-1 datasheet", "folder": "components", "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf", "converters": ["pymupdf4llm"]},
+    {"id": "SBAA188", "title": "Improving common-mode rejection using RLD", "folder": "ti-app-notes", "url": "https://www.ti.com/lit/pdf/SBAA188", "converters": ["pymupdf4llm"]},
+    {"id": "SBAA185", "title": "Thermal noise analysis in ECG applications", "folder": "ti-app-notes", "url": "https://www.ti.com/lit/pdf/SBAA185", "converters": ["pymupdf4llm"]},
+    {"id": "SBAA196", "title": "Understanding lead-off detection in ECG", "folder": "ti-app-notes", "url": "https://www.ti.com/lit/pdf/SBAA196", "converters": ["pymupdf4llm"]},
+    {"id": "SBAA160", "title": "Analog front-end design for ECG with delta-sigma ADCs", "folder": "ti-app-notes", "url": "https://www.ti.com/lit/pdf/SBAA160", "converters": ["pymupdf4llm"]},
+    {"id": "SBAA230", "title": "Digital filter types in delta-sigma ADCs", "folder": "ti-app-notes", "url": "https://www.ti.com/lit/pdf/SBAA230", "converters": ["pymupdf4llm"]},
+    {"id": "SLYY192", "title": "Fundamentals of precision ADC noise analysis", "folder": "ti-app-notes", "url": "https://www.ti.com/lit/eb/slyy192a/slyy192a.pdf", "converters": ["pymupdf4llm"]},
+    {"id": "SLAA412", "title": "LDO noise demystified", "folder": "ti-app-notes", "url": "https://www.ti.com/lit/an/slaa412b/slaa412b.pdf", "converters": ["pymupdf4llm"]},
+    {"id": "SLAA414", "title": "LDO PSRR measurement simplified", "folder": "ti-app-notes", "url": "https://www.ti.com/lit/an/slaa414a/slaa414a.pdf", "converters": ["pymupdf4llm"]},
+    {"id": "ADS1298-EVM", "title": "ADS1298 ECG FE PDK user guide", "folder": "reference-designs", "url": "https://www.ti.com/lit/ug/sbau171d/sbau171d.pdf", "converters": ["pymupdf4llm"]}
+  ]
+}

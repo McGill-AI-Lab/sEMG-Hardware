@@ -1,0 +1,28 @@
+sandbox_mode = "workspace-write"
+approval_policy = "never"
+
+[sandbox_workspace_write]
+writable_roots = []
+network_access = false
+
+[mcp_servers.kicad]
+command = "uvx"
+args = ["kicad-mcp-pro"]
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+
+[mcp_servers.kicad.env]
+KICAD_MCP_PROJECT_DIR = "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex"
+KICAD_MCP_PROFILE = "build"
+KICAD_MCP_OPERATING_MODE = "write"
+
+[mcp_servers.kicad_reference]
+command = "uvx"
+args = ["kicad-mcp-pro"]
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+
+[mcp_servers.kicad_reference.env]
+KICAD_MCP_PROJECT_DIR = "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/../open-semg-16-v1"
+KICAD_MCP_PROFILE = "review"
+KICAD_MCP_OPERATING_MODE = "readonly"
