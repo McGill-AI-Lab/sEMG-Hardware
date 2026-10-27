@@ -1,0 +1,280 @@
+
+
+===== PDF PAGE 1 =====
+Application Report
+SLAA414A–July 2009–Revised August 2017
+LDO PSRR Measurement Simplified
+Sanjay Pithadia, Scot Lester, and Ankur Verma................................................ PMP - LP Linear Regulators
+ABSTRACT
+This application report explains different methods of measuring the Power Supply Rejection Ratio (PSRR)
+of a Low-Dropout (LDO) regulator and includes the pros and cons of these measuring methods.
+Contents
+1 What is PSRR?.............................................................................................................. 1
+2 Measuring PSRR of LDO................................................................................................... 2
+3 Measuring PSRR Using Oscilloscope..................................................................................... 4
+4 Implications of the LDO Noise............................................................................................. 5
+List of Figures
+1 PSRR Graph of TPS717xx LDOs......................................................................................... 2
+2 Basic Method of Measuring PSRR of LDO............................................................................... 2
+3 Recommended Method of Measuring PSRR of LDO................................................................... 3
+4 PSRR Measured With Recommended Method.......................................................................... 4
+5 Input and Output Waveforms for Measuring PSRR Using Oscilloscope............................................. 5
+List of Tables
+Trademarks
+All trademarks are the property of their respective owners.
+1 What is PSRR?
+Power Supply Rejection Ratio or Power Supply Ripple Rejection (PSRR) is a measure of a circuit’s power
+supply’s rejection expressed as a log ratio of output noise to input noise. PSRR provides a measure of
+how well a circuit rejects ripple, of various frequencies, injected at its input. The ripple can be either from
+the input supply such as a 50Hz/60Hz supply ripple, switching ripple from a DC/DC converter, or ripple
+due to the sharing of an input supply between different circuit blocks on the board. In the case of LDOs,
+PSRR is a measure of the regulated output voltage ripple compared to the input voltage ripple over a wide
+frequency range (10Hz to 1MHz is common) and is expressed in decibels (dB). The PSRR is very critical
+parameter in many audio and RF applications.
+The basic equation for PSRR is:
+Ripple
+Input
+PSRR = 20 log Ripple
+Output
+(1)
+Historically LDOs have poor high frequency PSRR performance, but currently TI has LDOs with PSRR >
+40dB at 5MHz. One important point regarding the PSRR graphs in TI LDO datasheet is that the PSRR
+axis is inverted (See Figure 1). The PSRR is calculated as rejection so it should be a negative number;
+however, the graph shows it as positive number so that a higher number denotes higher noise rejection.
+SLAA414A–July 2009–Revised August 2017
+Submit Documentation Feedback
+LDO PSRR Measurement Simplified
+1
+Copyright © 2009–2017, Texas Instruments Incorporated
+
+===== PDF PAGE 2 =====
+Measuring PSRR of LDO www.ti.com
+PSRR-dB
+80
+70
+60
+50
+40
+30
+20
+10
+0
+150mA
+10mA
+75mA
+C =1 F,
+OUT
+m
+C =10nF
+NR
+10 100 1k 10k 100k 1M 10M
+f-Frequency-Hz
+Figure 1. PSRR Graph of TPS717xx LDOs
+2 Measuring PSRR of LDO
+The following sections explain different methods of measuring the PSRR of an LDO.
+1. Measuring PSRR using LC summing node method:
+The basic method of measuring PSRR is shown in Figure 2. In this method, DC voltage and AC
+voltages are summed together and applied at the input of the LDO. VDC is the operating point bias
+voltage and VAC is the noise source used in the test. Capacitor C prevents VAC from shoring VDC
+and inductor L prevents VDC from shorting VAC. So L and C are used for isolating both the sources,
+VDC and VAC, from each other.
+The L and C will create a high pass filter for VAC which will limit how low in frequency we can measure
+the PSRR. The 3dB point of this filter is determined by Equation 2. Frequencies below the 3dB point
+will start to be attenuated which will make measurements more difficult. The highest frequency that can
+be measured is determined by the self resonant frequencies of the L and C components.
+Fmin
+= 1/ 2Π √LC (2)
+A drawback to this method is that it works well only for mid-range frequencies (approximately 1 kHz to
+500 kHz).
+VIN VOUT
+LDO
+VIN VOUT
+GND
++
+L C
++
+CIN
+COUT
+LOAD
+VDC
+VAC
+2. Figure 2. Basic Method of Measuring PSRR of LDO
+Measuring PSRR using summing amplifier
+To improve the measurement of PSRR, a recommended method is described using a high-bandwidth
+amplifier as summing node to inject the signals and provides the isolation between VAC and VDC. This
+method is tested and verified using TPS72715 LDO and THS3120 high-speed amplifier from Texas
+2 SLAA414A–July 2009–Revised August 2017
+LDO PSRR Measurement Simplified
+Submit Documentation Feedback
+Copyright © 2009–2017, Texas Instruments Incorporated
+
+===== PDF PAGE 3 =====
+www.ti.com Measuring PSRR of LDO
+Instruments. The basic set-up is shown in Figure 3. The PSRR is measured with a no-load condition
+and the resulting measured PSRR graph corresponds with the datasheet graph of PSRR.
+Keep in mind the following while measuring the PSRR using this method:
+a. The input capacitor of LDO should be removed before the measurement because this capacitor
+could cause the high-speed amplifier to go unstable.
+b. Vin and Vout should be measured with high-impedance probes (either scope or network analyzer)
+immediately at the Vin or Vout pins to minimize the set-up inductance effects.
+c. There test set-up should not have any long wires since this will add inductance and impact the
+results.
+d. While selecting the values of AC and DC inputs, the following conditions should be considered:
+VAC (max) + VDC < VABS (max) of LDO
+VDC – VAC > VUVLO of LDO
+Also, the best results will be obtained if:
+VDC–VAC>Vout + Vdo + 0.5 where Vout is the output voltage of the LDO and Vdo is the
+specified drop out voltage at the operating point.
+e. At very high frequencies, the response of the amplifier will start to attenuate the VAC signal that is
+applied to the LDO. At some point, the attenuated VAC will be too small to measure on the output
+of the LDO.
+f. As load current increases, the open-loop output impedance of LDO decreases (Since a MOSFET
+output impedance is inversely proportional to the drain current), thus lowering the gain. Increasing
+the load current also pushes the output pole to higher frequencies, which increases the feedback
+loop bandwidth. The net effect of increasing the load is therefore reduced PSRR at lower
+frequencies (because of reduced gain) along with increased PSRR at higher frequencies.
+HighImpedance Adapters(Model#41802A from Agilent)
+CH2
+CH1
+1kW
+100 F m 1kW
+RFout
+DCout
+Network
+Analyzer
+(Model#
+4395A from
+Agilent)
+100 W -
++
++10V
+THS3120
+-10V
+FB*
+DUT
+COUT
+BuiltonTHS3120EVM
+FB* FerriteBeadhavingimpedanceof
+10 W @100MHz
+Figure 3. Recommended Method of Measuring PSRR of LDO
+Figure 4 shows the PSRR graph measured with this method.
+SLAA414A–July 2009–Revised August 2017
+Submit Documentation Feedback
+LDO PSRR Measurement Simplified
+Copyright © 2009–2017, Texas Instruments Incorporated
+3
+
+===== PDF PAGE 4 =====
+Measuring PSRR Using Oscilloscope www.ti.com
+Figure 4. PSRR Measured With Recommended Method
+The THS3120 is suitable for measuring PSRR up to VDC = 5V, Frequency = 10MHz and Iload = 400mA.
+3 Measuring PSRR Using Oscilloscope
+If the user does not have a network analyzer then there is a simpler but more cumbersome method which
+uses a signal generator, DC source and oscilloscope to measure the PSRR. An AC signal from signal
+generator is applied along with DC signal at the input of the LDO, as shown in either of the afore
+mentioned methods, and the output of the LDO is measured on an oscilloscope at different VAC
+frequencies. The PSRR is calculated using the Equation 1 where Ripple(input) is the amplitude of the input
+AC signal and Ripple(output) is the amplitude of output signal. This is then repeated at different frequencies
+of VAC to generate a piecemeal graph of PSRR.
+This method can be used along with the set-ups described in the previous section. But this method is only
+good for LDOs with lower PSRR values due to resolution and sensitivity of oscilloscopes. Since most
+oscilloscopes can measure down to the millivolt range, the maximum range of PSRR that could
+realistically be measured using an oscilloscope is about 40dB–50dB.
+Using the TPS78101EVM from Texas Instruments, the PSRR is measured using signal generator and
+oscilloscope. The input and output waveforms are as shown in Figure 5:
+Test conditions are:
+a. Vout = 3V
+b. Iload = 150mA
+c. VAC = 1V (p-p) at 1kHz
+d. VDC = 4.3V dc
+4 SLAA414A–July 2009–Revised August 2017
+LDO PSRR Measurement Simplified
+Submit Documentation Feedback
+Copyright © 2009–2017, Texas Instruments Incorporated
+
+===== PDF PAGE 5 =====
+www.ti.com Implications of the LDO Noise
+Figure 5. Input and Output Waveforms for Measuring PSRR Using Oscilloscope
+And the PSRR is calculated from waveforms in Figure 5 is:
+Ripple(input) = 984 mV
+Ripple(output) = 194 mV
+PSRR = 20 log10(Ripple(input)/ Ripple(output)) = 20 log10(0.984/0.194) = 14.10dB which closely matches the
+PSRR specified in the datasheet of TPS78101.
+This application report shows various methods to measure the PSRR of an LDO and also explains
+different aspects which need to be considered while measuring PSRR.
+4 Implications of the LDO Noise
+Let us take an example of a DC-DC Converter with integrated LDOs (such as TPS57140-Q1).
+The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high
+frequency components. One of the example where its bad affect can be seen is when a a fast-falling input
+transient is applied at the input of the DC/DC converter. During the fast input falling edge, if the slew rate
+of the input is higher than a particular value, the internal LDO regulator of the device resets because of the
+power-supply rejection-ratio (PSRR) limitation. The fast transition corresponds to higher frequencies. The
+bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high
+frequency components. For example, using the TPS57140- Q1 design simulation and bench test
+measurement, the resulting slew-rate value measured is 1.2 V/μs. If the slew rate is higher than this value,
+the device gets disabled and regenerates a soft start. Higher ESR of the input capacitor negatively affects
+the slew rate of the input voltage and the duration of this rate because of high current transient across the
+ESR according to ESR × C × dV/dt. Therefore, the use of a low-ESR ceramic capacitor is recommended.
+Refer to Design Considerations for DC-DC Converters in Fast-Input Slew Rate Applications (SLVA693) for
+more information
+SLAA414A–July 2009–Revised August 2017
+Submit Documentation Feedback
+LDO PSRR Measurement Simplified
+5
+Copyright © 2009–2017, Texas Instruments Incorporated
+
+===== PDF PAGE 6 =====
+Revision History www.ti.com
+Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Original (July 2009) to A Revision........................................................................................................... Page
+• Added Implications of the LDO Noise section......................................................................................... 5
+6 SLAA414A–July 2009–Revised August 2017
+Revision History
+Submit Documentation Feedback
+Copyright © 2009–2017, Texas Instruments Incorporated
+
+===== PDF PAGE 7 =====
+IMPORTANT NOTICE FOR TI DESIGN INFORMATION AND RESOURCES
+Texas Instruments Incorporated (‘TI”) technical, application or other design advice, services or information, including, but not limited to,
+reference designs and materials relating to evaluation modules, (collectively, “TI Resources”) are intended to assist designers who are
+developing applications that incorporate TI products; by downloading, accessing or using any particular TI Resource in any way, you
+(individually or, if you are acting on behalf of a company, your company) agree to use it solely for this purpose and subject to the terms of
+this Notice.
+TI’s provision of TI Resources does not expand or otherwise alter TI’s applicable published warranties or warranty disclaimers for TI
+products, and no additional obligations or liabilities arise from TI providing such TI Resources. TI reserves the right to make corrections,
+enhancements, improvements and other changes to its TI Resources.
+You understand and agree that you remain responsible for using your independent analysis, evaluation and judgment in designing your
+applications and that you have full and exclusive responsibility to assure the safety of your applications and compliance of your applications
+(and of all TI products used in or for your applications) with all applicable regulations, laws and other applicable requirements. You
+represent that, with respect to your applications, you have all the necessary expertise to create and implement safeguards that (1)
+anticipate dangerous consequences of failures, (2) monitor failures and their consequences, and (3) lessen the likelihood of failures that
+might cause harm and take appropriate actions. You agree that prior to using or distributing any applications that include TI products, you
+will thoroughly test such applications and the functionality of such TI products as used in such applications. TI has not conducted any
+testing other than that specifically described in the published documentation for a particular TI Resource.
+You are authorized to use, copy and modify any individual TI Resource only in connection with the development of applications that include
+the TI product(s) identified in such TI Resource. NO OTHER LICENSE, EXPRESS OR IMPLIED, BY ESTOPPEL OR OTHERWISE TO
+ANY OTHER TI INTELLECTUAL PROPERTY RIGHT, AND NO LICENSE TO ANY TECHNOLOGY OR INTELLECTUAL PROPERTY
+RIGHT OF TI OR ANY THIRD PARTY IS GRANTED HEREIN, including but not limited to any patent right, copyright, mask work right, or
+other intellectual property right relating to any combination, machine, or process in which TI products or services are used. Information
+regarding or referencing third-party products or services does not constitute a license to use such products or services, or a warranty or
+endorsement thereof. Use of TI Resources may require a license from a third party under the patents or other intellectual property of the
+third party, or a license from TI under the patents or other intellectual property of TI.
+TI RESOURCES ARE PROVIDED “AS IS” AND WITH ALL FAULTS. TI DISCLAIMS ALL OTHER WARRANTIES OR
+REPRESENTATIONS, EXPRESS OR IMPLIED, REGARDING TI RESOURCES OR USE THEREOF, INCLUDING BUT NOT LIMITED TO
+ACCURACY OR COMPLETENESS, TITLE, ANY EPIDEMIC FAILURE WARRANTY AND ANY IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF ANY THIRD PARTY INTELLECTUAL
+PROPERTY RIGHTS.
+TI SHALL NOT BE LIABLE FOR AND SHALL NOT DEFEND OR INDEMNIFY YOU AGAINST ANY CLAIM, INCLUDING BUT NOT
+LIMITED TO ANY INFRINGEMENT CLAIM THAT RELATES TO OR IS BASED ON ANY COMBINATION OF PRODUCTS EVEN IF
+DESCRIBED IN TI RESOURCES OR OTHERWISE. IN NO EVENT SHALL TI BE LIABLE FOR ANY ACTUAL, DIRECT, SPECIAL,
+COLLATERAL, INDIRECT, PUNITIVE, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES IN CONNECTION WITH OR
+ARISING OUT OF TI RESOURCES OR USE THEREOF, AND REGARDLESS OF WHETHER TI HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+You agree to fully indemnify TI and its representatives against any damages, costs, losses, and/or liabilities arising out of your non-
+compliance with the terms and provisions of this Notice.
+This Notice applies to TI Resources. Additional terms apply to the use and purchase of certain types of materials, TI products and services.
+These include; without limitation, TI’s standard terms for semiconductor products http://www.ti.com/sc/docs/stdterms.htm), evaluation
+modules, and samples (http://www.ti.com/sc/docs/sampterms.htm).
+Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265
+Copyright © 2018, Texas Instruments Incorporated

@@ -1,0 +1,357 @@
+
+
+===== PDF PAGE 1 =====
+www.ti.com Table of Contents
+Application Note
+Digital Filter Types in Delta-Sigma ADCs
+Brian Pisani
+ABSTRACT
+This application report discusses digital filters which are a ubiquitous feature in delta-sigma analog to digital
+converters (ADCs). Digital low-pass filters are essential to the functionality of a delta-sigma ADC, which relies
+on oversampling and noise shaping to push quantization noise out of band. There are variations between the
+types of digital filters used in delta-sigma ADCs that provide various benefits and drawbacks that orient them to
+different applications. The types of filters and the tradeoffs between them are discussed in this report.
+Table of Contents
+1 Introduction.............................................................................................................................................................................2
+2 Digital Filters in Delta-Sigma ADCs...................................................................................................................................... 2
+3 Sinc Filter.................................................................................................................................................................................4
+4 Wideband Filters.....................................................................................................................................................................6
+5 References.............................................................................................................................................................................. 8
+6 Revision History......................................................................................................................................................................8
+List of Figures
+Figure 2-1. Spectrum of Delta-Sigma Quantization Noise and a Sinc Low-Pass Filter............................................................... 2
+Figure 2-2. Wideband Filter Frequency Response...................................................................................................................... 3
+Figure 2-3. Sinc3 Frequency Response.......................................................................................................................................3
+Figure 3-1. Frequency Response of Sinc1, Sinc3, and Sinc5 Digital Filters.................................................................................4
+Figure 3-2. Step Response for Sinc1, Sinc3, and Sinc5 Digital Filters......................................................................................... 5
+Figure 3-3. Magnitude Response of the ADS124S08 Digital Filter, fDR = 20 SPS.......................................................................5
+Figure 4-1. Magnitude Response for the ADS127L01 Wideband Filter up to fDR .......................................................................6
+Figure 4-2. Response of the ADS127L01 Wideband Filter to a Unit-Step Input..........................................................................7
+Trademarks
+All trademarks are the property of their respective owners.
+SBAA230A – MAY 2017 – REVISED MARCH 2023
+Submit Document Feedback
+Digital Filter Types in Delta-Sigma ADCs 1
+Copyright © 2023 Texas Instruments Incorporated
+
+===== PDF PAGE 2 =====
+Introduction www.ti.com
+1 Introduction
+Delta-sigma analog-to-digital converters (ADCs) are different from other types of data converters in that they
+typically integrate digital filters. The digital filter is crucial to how delta-sigma ADCs are able to obtain fine
+resolution across a variety of bandwidths. This application report discusses the motivation for including a digital
+filter in delta-sigma ADCs, the different types of digital filters, and the tradeoffs that exist between the various
+types of digital filters as they relate to different applications.
+2 Digital Filters in Delta-Sigma ADCs
+To understand why the digital filter is an important aspect in delta-sigma analog-to-digital conversion, it is critical
+to have a basic understanding of a delta-sigma modulator. The modulator takes its input from a sample-and-hold
+circuit which will sample the ADC input at a rate (fMOD) many times faster than the ADC output data rate (fDR).
+The modulator consists of at least one integrator and a low-resolution ADC which quantizes the integrator output
+voltage into just a few bits. The modulator converts the result of the low-resolution ADC back to analog and
+feeds it back to the modulator input where it is subtracted from the input voltage as a means of error correction.
+The result is a discrete-time feedback system which allows sampled input signals to pass at unity gain, but will
+shape quantization noise density to be lower at low frequency and higher at high frequency.
+In order to reduce higher-frequency quantization noise, the modulator output is fed to the digital low-pass
+filter. Subsequently, the signal of interest passes through to the output of the digital filter, while much of the
+higher-frequency quantization noise is filtered out.
+Figure 2-1 shows quantization noise plotted with the response of a common type of low-pass digital filter found in
+delta-sigma ADCs called a sinc filter (its name stems from its sin(x) / x frequency response).
+Magnitude (dB)
+0
+-20
+-40
+-60
+-80
+-100
+-120
+-140
+-160
+Digital filter response
+Modulator quantization noise
+0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5
+Frequency (fMOD)
+quan
+Figure 2-1. Spectrum of Delta-Sigma Quantization Noise and a Sinc Low-Pass Filter
+Sinc filters, while extremely common, are not the only types of digital low-pass filters associated with delta-sigma
+ADCs. For example, some ADCs, like the ADS124S08, add an extra 50 Hz and 60 Hz notch filter designed
+for applications with a lot of power-line interference. On the other hand, the ADS127L01 has a wide-bandwidth
+flat-passband digital filter designed for higher-frequency applications.
+The digital filters in delta-sigma ADCs serve another function – decimation. These filters decimate data which is
+output from the modulator at fMOD by a factor known as the oversampling ratio (OSR). The relationship between
+fDR and fMOD is fDR = fMOD / OSR. The OSR and filter type combined determine the output bandwidth of the
+digital filter and overall frequency response of the ADC. Large OSRs produce small filter bandwidths, which
+translates to very good noise performance, simplified anti-aliasing circuitry, and reduced digital interface speeds
+for the host controllers.
+2 Digital Filter Types in Delta-Sigma ADCs SBAA230A – MAY 2017 – REVISED MARCH 2023
+Submit Document Feedback
+Copyright © 2023 Texas Instruments Incorporated
+
+===== PDF PAGE 3 =====
+www.ti.com Digital Filters in Delta-Sigma ADCs
+Most digital filters in delta-sigma ADCs have a finite impulse response (FIR). These filters are inherently stable
+and easy to design with linear phase responses. Figure 2-2 and Figure 2-3 plot the responses of two types of
+FIR filters in delta-sigma ADCs side by side. Figure 2-2 shows the wideband filter in the ADS127L01. Figure 2-3
+is a classic third-order sinc response filter, or sinc3 like that found in the ADS124S08.
+Magnitude (dB)
+20
+0
+-20
+-40
+-60
+-80
+-100
+-120
+-140
+0
+-20
+-40
+Magnitude (dB)
+-60
+-80
+-100
+-120
+-140
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1
+Frequency (fDR)
+wide
+0 1 2 3 4 5 6 7 8
+Frequency (fDR)
+sinc
+Figure 2-2. Wideband Filter Frequency Response
+Figure 2-3. Sinc3 Frequency Response
+The benefit of using a wideband filter for AC measurement applications is clear from its magnitude response.
+Its nearly 0-dB gain until right before the Nyquist bandwidth of the data rate (fDR / 2) ensures no signal power
+loss for frequencies in the passband. The steep transition band limits aliasing. The sinc3 filter, on the other hand,
+attenuates signals to –3 dB at 0.262 x fDR and transitions slowly even after fDR / 2, which would enable more
+out-of-band noise to fold into the bandwidth of interest. Seemingly, the wideband FIR filter would be ideal for any
+application; however, this excellent frequency-domain performance comes at a price.
+The trade-off between the wideband filter and the sinc filter is in the time domain. The wideband filter is a
+very high-order filter, meaning it takes a long time to settle to a final value upon receiving a step input. In the
+wideband filter of the ADS127L01, it will take 84 conversions to receive a settled output. A sinc3 filter settles in
+three conversions after a step at the input, enabling quick cycling through multiple input channels. This trade-off
+between frequency response and latency exists for all FIR filters.
+SBAA230A – MAY 2017 – REVISED MARCH 2023
+Submit Document Feedback
+Digital Filter Types in Delta-Sigma ADCs 3
+Copyright © 2023 Texas Instruments Incorporated
+
+===== PDF PAGE 4 =====
+Sinc Filter www.ti.com
+3 Sinc Filter
+The name “sinc” comes from its frequency response, which takes the form of the sin(x) / x function. The reason
+the filter has this response is actually tied closely with why it is so often used in delta-sigma ADCs.
+The digital filter creates a digital output code by summing the modulator output over a certain number of
+modulator clock periods. The ratio of the modulator rate (fMOD) of the delta-sigma ADC to its output data rate
+(fDR) is the OSR. This is equivalent to taking a moving average of those samples over the sampling period.
+Taking the moving average in the time domain translates to a first-order sinc response in the frequency domain.
+The sinc response is equal to zero at integer multiples of the data rate, which appear as notches in the
+magnitude response plot of the filter.
+The amount of averaging increases when cascading multiple sinc filters in series, thus increasing the filter order.
+In the spectrum, this corresponds to a lower cutoff frequency and a higher stopband attenuation, which in turn
+reduces noise. Figure 3-1 shows the difference in the frequency responses of a first-order sinc filter (sinc1), three
+sinc filters in series (a third-order sinc, sinc3) and five sinc filters in series (sinc5).
+0
+Sinc1
+Sinc3
+Sinc5
+-20
+-40
+Magnitude (dB)
+-60
+-80
+-100
+-120
+-140
+0 1 2 3 4 5 6 7 8
+Frequency (fDR)
+sinc
+Figure 3-1. Frequency Response of Sinc1, Sinc3, and Sinc5 Digital Filters
+Looking at these responses, there does not seem to be very much bandwidth in the digital-filter output, limiting
+the measurable signal content. This is not a drawback in certain low-bandwidth applications. Some precision
+sensor applications, like temperature and pressure sensors, do not require much bandwidth for measurement,
+but need a good low-pass filter to reject out-of-band noise. The sinc filter fits well into these applications.
+Given the application, it may be desirable to multiplex between multiple sensor inputs relatively quickly. To do
+this, the digital filter needs to respond to an input change and settle quickly. The sinc filter is ideal for this,
+too. Sinc filters offer much faster settling times relative to other digital filters with more finely tuned frequency
+responses. In many cases, these filters can be built to settle to a step input in a single conversion cycle.
+Nevertheless, trade-offs exist even between the types of sinc filters. The higher order a sinc filter is, the longer it
+will take to settle – but with the bonus of better stop-band attenuation. Figure 3-2 shows how the sinc1, sinc3 and
+sinc5 filters respond to a unit step input. Note that the order of the sinc filter matches the number of samples it
+takes to settle to the input.
+4 Digital Filter Types in Delta-Sigma ADCs SBAA230A – MAY 2017 – REVISED MARCH 2023
+Submit Document Feedback
+Copyright © 2023 Texas Instruments Incorporated
+
+===== PDF PAGE 5 =====
+www.ti.com Sinc Filter
+Normalized Amplitude
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+Input
+Sinc1
+Sinc3
+Sinc5
+0 5 10 15 20 25 30
+Sample
+sinc
+Figure 3-2. Step Response for Sinc1, Sinc3, and Sinc5 Digital Filters
+Some data converters have slightly modified sinc filters. In some industrial applications, power utility interference
+pollutes the environment of the equipment at 50 Hz or 60 Hz. A digital filter that has notches in its frequency
+response at 50 Hz or 60 Hz helps reject the utility frequency and maintain high system power-supply rejection
+(PSR).
+In many cases, these filters can be built to settle to a step input in a single conversion cycle. However, a filter
+that settles within a single cycle will not have as much out-of-band rejection as an unmodified higher-order sinc
+filter. Figure 3-3 shows the magnitude response of the digital filter on the ADS124S08 when the data rate is set
+to 20 SPS using the low-latency filter. Note that this filter simultaneously rejects both 50 Hz and 60 Hz. A normal
+sinc filter would require a data rate at some integer divisor of 10 SPS to achieve this, since filter notches would
+occur at multiples of 10 Hz.
+0
+-20
+-40
+Magnitude (dB)
+-60
+-80
+-100
+-120
+-140
+0 20 40 60 80 100 120 140 160 180 200
+Frequency (Hz)
+ADS1
+Figure 3-3. Magnitude Response of the ADS124S08 Digital Filter, fDR = 20 SPS
+In summary, the sinc filter is used as a basic low-pass filter in delta-sigma ADCs. Their reasonable stopband
+attenuation combined with their quick step response make them ideal for dc measurement applications,
+especially when multiplexing between several input signals.
+SBAA230A – MAY 2017 – REVISED MARCH 2023
+Submit Document Feedback
+Digital Filter Types in Delta-Sigma ADCs 5
+Copyright © 2023 Texas Instruments Incorporated
+
+===== PDF PAGE 6 =====
+Wideband Filters www.ti.com
+4 Wideband Filters
+Even though delta-sigma ADCs with sinc filters are a great fit for low-bandwidth applications, the delta-sigma
+architecture can also be used with great success in higher bandwidth applications as well. For example,
+precisely measuring audio or vibration signals can be done using delta-sigma ADCs. Test and measurement
+equipment that requires high bandwidth is another application well-suited for delta-sigma ADCs. For these
+applications, a wideband filter can be used as the integrated digital filter on a delta-sigma ADC.
+AC applications require a wide passband with little attenuation or ripple, but still require the precision that comes
+standard with the oversampling topology of a delta-sigma ADC. That is why some ADCs are designed with a
+wide passband filter that has a steep transition band. The ADS127L01, a 24-bit delta-sigma ADC optimized for
+wide-bandwidth applications, has such a filter. Figure 4-1 shows the magnitude response of the filter up to the
+output data rate, fDR, of the ADC, which is 512 kHz. Note how steep the transition band of the filter is around
+fDR / 2 – the frequency where signals begin to alias into the passband. This serves to drastically limit unwanted
+signals or noise from folding over. The stopband magnitude never exceeds –116 dB until the response of the
+filter repeats around the modulator frequency, fMOD, of the ADC.
+Magnitude (dB)
+20
+0
+-20
+-40
+-60
+-80
+-100
+-120
+-140
+0 64 128 192 256 320 384 448 512
+Frequency (kHz)
+wide
+Figure 4-1. Magnitude Response for the ADS127L01 Wideband Filter up to fDR
+For higher-bandwidth applications, the sinc filter is less adequate for a few reasons. First, the frequency
+response rolls off early and droops at relatively low frequencies. This limits the usable signal bandwidth. On
+the other hand, the wideband filter remains almost perfectly flat until around fDR / 2, maximizing the usable signal
+bandwidth for any given data rate.
+Second, aliasing is more of a concern for AC applications. The sinc filter is not ideal because it does not
+attenuate sufficiently at half the output data rate, fDR / 2, of the ADC. Alternatively, the wideband filter features
+exceptional stopband attenuation, which minimizes aliasing.
+For ADCs without integrated digital filters, options are limited for achieving such a steep anti-aliasing response.
+High-order analog anti-aliasing filters with steep roll-offs are notoriously difficult to design and are subject to
+component tolerances and temperature. Alternatively, it is possible to oversample the converter and digitally
+filter in the processor, but this comes at the cost of instruction cycles, which may be scarce in high-speed
+applications. A wideband filter in a delta-sigma ADC truly solves this problem with its built-in “oversample,
+low-pass filter, then decimate” topology.
+There is a trade-off with all digital filters where superb frequency-domain performance is achieved in exchange
+for longer settling times. After applying a step function to the input, the digital filter of the ADS127L01 requires 84
+output sample periods to settle to the final output. For this reason, wideband filters are not ideal for applications
+that cycle between multiple-signal source inputs.
+6 Digital Filter Types in Delta-Sigma ADCs SBAA230A – MAY 2017 – REVISED MARCH 2023
+Submit Document Feedback
+Copyright © 2023 Texas Instruments Incorporated
+
+===== PDF PAGE 7 =====
+www.ti.com Wideband Filters
+Figure 4-2 shows the step response of the wideband filter of the ADS127L01.
+1.1
+1
+Normalized Amplitude
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+-0.1
+Input
+Output
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150
+Sample
+wide
+Figure 4-2. Response of the ADS127L01 Wideband Filter to a Unit-Step Input
+The filter has a linear phase response, which means that its group delay (the delay due to phase shifting) will be
+constant across frequencies. For this filter, the group delay is 42 output data samples.
+The wideband digital filter in delta-sigma ADCs provides an ideal functional block for wide-bandwidth, precision-
+measurement signal chains where no multiplexing between different signal sources is required. The flat
+passband with low ripple ensures that no in-band signal content is lost, and the steep transition and excellent
+stopband attenuation provide flexibility in environments where anti-aliasing is critical. In addition, the precision
+expected from a delta-sigma ADC can still be enjoyed.
+SBAA230A – MAY 2017 – REVISED MARCH 2023
+Submit Document Feedback
+Digital Filter Types in Delta-Sigma ADCs 7
+Copyright © 2023 Texas Instruments Incorporated
+
+===== PDF PAGE 8 =====
+References www.ti.com
+5 References
+• ADS124S08 data sheet (SBAS660)
+• ADS127L01 data sheet (SBAS607)
+6 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision * (May 2017) to Revision A (March 2023) Page
+• Updated the numbering format for tables, figures, and cross-references throughout the document................. 1
+8 Digital Filter Types in Delta-Sigma ADCs SBAA230A – MAY 2017 – REVISED MARCH 2023
+Submit Document Feedback
+Copyright © 2023 Texas Instruments Incorporated
+
+===== PDF PAGE 9 =====
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you
+will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these
+resources.
+TI’s products are provided subject to TI’s Terms of Sale or other applicable terms available either on ti.com or provided in conjunction with
+such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable warranties or warranty disclaimers for
+TI products.
+TI objects to and rejects any additional or different terms you may have proposed. IMPORTANT NOTICE
+Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265
+Copyright © 2023, Texas Instruments Incorporated

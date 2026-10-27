@@ -1,0 +1,505 @@
+BT1 Battery None
+  1 +_1: +3.7V [passive]
+  2 -_2: AGND [passive]
+C1 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN1P) [passive]
+C2 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN1N) [passive]
+C3 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN2P) [passive]
+C4 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN2N) [passive]
+C5 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN3P) [passive]
+C6 0.1uF None
+  1 None: +3.3V [passive]
+  2 None: AGND [passive]
+C7 10uF None
+  1 None: +3.3V [passive]
+  2 None: AGND [passive]
+C8 0.1uF None
+  1 None: +3.3V [passive]
+  2 None: DGND [passive]
+C9 10uF None
+  1 None: +3.3V [passive]
+  2 None: DGND [passive]
+C10 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN3N) [passive]
+C11 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN4P) [passive]
+C12 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN4N) [passive]
+C13 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN5P) [passive]
+C14 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN5N) [passive]
+C15 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN6P) [passive]
+C16 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN6N) [passive]
+C17 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN7P) [passive]
+C18 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN7N) [passive]
+C19 0.1uF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-VREFP) [passive]
+C20 10uF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-VREFP) [passive]
+C21 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN8P) [passive]
+C22 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-IN8N) [passive]
+C23 22uF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-VCAP1) [passive]
+C24 1uF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-VCAP2) [passive]
+C25 1uF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-VCAP3) [passive]
+C26 1uF None
+  2 None: AGND [passive]
+  1 None: Net-(U1-VCAP4) [passive]
+C27 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN1P) [passive]
+C28 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN1N) [passive]
+C29 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN2P) [passive]
+C30 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN2N) [passive]
+C31 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN3P) [passive]
+C32 0.1uF None
+  1 None: +3.3V [passive]
+  2 None: AGND [passive]
+C33 10uF None
+  1 None: +3.3V [passive]
+  2 None: AGND [passive]
+C34 0.1uF None
+  1 None: +3.3V [passive]
+  2 None: DGND [passive]
+C35 10uF None
+  1 None: +3.3V [passive]
+  2 None: DGND [passive]
+C36 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN3N) [passive]
+C37 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN4P) [passive]
+C38 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN4N) [passive]
+C39 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN5P) [passive]
+C40 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN5N) [passive]
+C41 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN6P) [passive]
+C42 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN6N) [passive]
+C43 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN7P) [passive]
+C44 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN7N) [passive]
+C45 0.1uF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-VREFP) [passive]
+C46 10uF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-VREFP) [passive]
+C47 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN8P) [passive]
+C48 620pF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-IN8N) [passive]
+C49 22uF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-VCAP1) [passive]
+C50 1uF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-VCAP2) [passive]
+C51 1uF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-VCAP3) [passive]
+C52 1uF None
+  2 None: AGND [passive]
+  1 None: Net-(U2-VCAP4) [passive]
+C53 1uF None
+  1 None: +3.7V [passive]
+  2 None: AGND [passive]
+C54 2.2uF None
+  1 None: +3.3V [passive]
+  2 None: AGND [passive]
+C55 10nF None
+  2 None: AGND [passive]
+  1 None: Net-(U4-BP) [passive]
+C56 1uF None
+  1 None: +3.7V [passive]
+  2 None: AGND [passive]
+C57 200uF None
+  1 None: +3.3V [passive]
+  2 None: AGND [passive]
+E1 Electrodes None
+  1 Pin_1_1: Net-(E1-Pin_1) [passive]
+  2 Pin_2_2: Net-(E1-Pin_2) [passive]
+E2 Electrodes None
+  1 Pin_1_1: Net-(E2-Pin_1) [passive]
+  2 Pin_2_2: Net-(E2-Pin_2) [passive]
+E3 Electrodes None
+  1 Pin_1_1: Net-(E3-Pin_1) [passive]
+  2 Pin_2_2: Net-(E3-Pin_2) [passive]
+E4 Electrodes None
+  1 Pin_1_1: Net-(E4-Pin_1) [passive]
+  2 Pin_2_2: Net-(E4-Pin_2) [passive]
+E5 Electrodes None
+  1 Pin_1_1: Net-(E5-Pin_1) [passive]
+  2 Pin_2_2: Net-(E5-Pin_2) [passive]
+E6 Electrodes None
+  1 Pin_1_1: Net-(E6-Pin_1) [passive]
+  2 Pin_2_2: Net-(E6-Pin_2) [passive]
+E7 Electrodes None
+  1 Pin_1_1: Net-(E7-Pin_1) [passive]
+  2 Pin_2_2: Net-(E7-Pin_2) [passive]
+E8 Electrodes None
+  1 Pin_1_1: Net-(E8-Pin_1) [passive]
+  2 Pin_2_2: Net-(E8-Pin_2) [passive]
+E9 Electrodes None
+  1 Pin_1_1: Net-(E9-Pin_1) [passive]
+  2 Pin_2_2: Net-(E9-Pin_2) [passive]
+E10 Electrodes None
+  1 Pin_1_1: Net-(E10-Pin_1) [passive]
+  2 Pin_2_2: Net-(E10-Pin_2) [passive]
+E11 Electrodes None
+  1 Pin_1_1: Net-(E11-Pin_1) [passive]
+  2 Pin_2_2: Net-(E11-Pin_2) [passive]
+E12 Electrodes None
+  1 Pin_1_1: Net-(E12-Pin_1) [passive]
+  2 Pin_2_2: Net-(E12-Pin_2) [passive]
+E13 Electrodes None
+  1 Pin_1_1: Net-(E13-Pin_1) [passive]
+  2 Pin_2_2: Net-(E13-Pin_2) [passive]
+E14 Electrodes None
+  1 Pin_1_1: Net-(E14-Pin_1) [passive]
+  2 Pin_2_2: Net-(E14-Pin_2) [passive]
+E15 Electrodes None
+  1 Pin_1_1: Net-(E15-Pin_1) [passive]
+  2 Pin_2_2: Net-(E15-Pin_2) [passive]
+E16 Electrodes None
+  1 Pin_1_1: Net-(E16-Pin_1) [passive]
+  2 Pin_2_2: Net-(E16-Pin_2) [passive]
+R1 2KΩ None
+  1 None: Net-(E1-Pin_1) [passive]
+  2 None: Net-(U1-IN1P) [passive]
+R2 2KΩ None
+  1 None: Net-(E1-Pin_2) [passive]
+  2 None: Net-(U1-IN1N) [passive]
+R3 2KΩ None
+  1 None: Net-(E2-Pin_1) [passive]
+  2 None: Net-(U1-IN2P) [passive]
+R4 2KΩ None
+  1 None: Net-(E2-Pin_2) [passive]
+  2 None: Net-(U1-IN2N) [passive]
+R5 2KΩ None
+  1 None: Net-(E3-Pin_1) [passive]
+  2 None: Net-(U1-IN3P) [passive]
+R6 2KΩ None
+  1 None: Net-(E3-Pin_2) [passive]
+  2 None: Net-(U1-IN3N) [passive]
+R7 2KΩ None
+  1 None: Net-(E4-Pin_1) [passive]
+  2 None: Net-(U1-IN4P) [passive]
+R8 2KΩ None
+  1 None: Net-(E4-Pin_2) [passive]
+  2 None: Net-(U1-IN4N) [passive]
+R9 2KΩ None
+  1 None: Net-(E5-Pin_1) [passive]
+  2 None: Net-(U1-IN5P) [passive]
+R10 2KΩ None
+  1 None: Net-(E5-Pin_2) [passive]
+  2 None: Net-(U1-IN5N) [passive]
+R11 2KΩ None
+  1 None: Net-(E6-Pin_1) [passive]
+  2 None: Net-(U1-IN6P) [passive]
+R12 2KΩ None
+  1 None: Net-(E6-Pin_2) [passive]
+  2 None: Net-(U1-IN6N) [passive]
+R13 2KΩ None
+  1 None: Net-(E7-Pin_1) [passive]
+  2 None: Net-(U1-IN7P) [passive]
+R14 2KΩ None
+  1 None: Net-(E7-Pin_2) [passive]
+  2 None: Net-(U1-IN7N) [passive]
+R15 2KΩ None
+  1 None: Net-(E8-Pin_1) [passive]
+  2 None: Net-(U1-IN8P) [passive]
+R16 2KΩ None
+  1 None: Net-(E8-Pin_2) [passive]
+  2 None: Net-(U1-IN8N) [passive]
+R17 2KΩ None
+  1 None: Net-(E9-Pin_1) [passive]
+  2 None: Net-(U2-IN1P) [passive]
+R18 2KΩ None
+  1 None: Net-(E9-Pin_2) [passive]
+  2 None: Net-(U2-IN1N) [passive]
+R19 2KΩ None
+  1 None: Net-(E10-Pin_1) [passive]
+  2 None: Net-(U2-IN2P) [passive]
+R20 2KΩ None
+  1 None: Net-(E10-Pin_2) [passive]
+  2 None: Net-(U2-IN2N) [passive]
+R21 2KΩ None
+  1 None: Net-(E11-Pin_1) [passive]
+  2 None: Net-(U2-IN3P) [passive]
+R22 2KΩ None
+  1 None: Net-(E11-Pin_2) [passive]
+  2 None: Net-(U2-IN3N) [passive]
+R23 2KΩ None
+  1 None: Net-(E12-Pin_1) [passive]
+  2 None: Net-(U2-IN4P) [passive]
+R24 2KΩ None
+  1 None: Net-(E12-Pin_2) [passive]
+  2 None: Net-(U2-IN4N) [passive]
+R25 2KΩ None
+  1 None: Net-(E13-Pin_1) [passive]
+  2 None: Net-(U2-IN5P) [passive]
+R26 2KΩ None
+  1 None: Net-(E13-Pin_2) [passive]
+  2 None: Net-(U2-IN5N) [passive]
+R27 2KΩ None
+  1 None: Net-(E14-Pin_1) [passive]
+  2 None: Net-(U2-IN6P) [passive]
+R28 2KΩ None
+  1 None: Net-(E14-Pin_2) [passive]
+  2 None: Net-(U2-IN6N) [passive]
+R29 2KΩ None
+  1 None: Net-(E15-Pin_1) [passive]
+  2 None: Net-(U2-IN7P) [passive]
+R30 2KΩ None
+  1 None: Net-(E15-Pin_2) [passive]
+  2 None: Net-(U2-IN7N) [passive]
+R31 2KΩ None
+  1 None: Net-(E16-Pin_1) [passive]
+  2 None: Net-(U2-IN8P) [passive]
+R32 2KΩ None
+  1 None: Net-(E16-Pin_2) [passive]
+  2 None: Net-(U2-IN8N) [passive]
+U1 ADS1298xPAG Package_QFP:TQFP-64_10x10mm_P0.5mm
+  17 TESTP_PACE_OUT1_17: +3.3V [bidirectional]
+  18 TESTP_PACE_OUT2_18: +3.3V [bidirectional]
+  52 CLKSEL_52: +3.3V [input]
+  62 RLDIN_62: +3.3V [input]
+  39 ~{CS}_39: /CS_ADC1 [input]
+  47 ~{DRDY}_47: /DRDY_ADC1 [output]
+  43 DOUT_43: /MISO [output]
+  34 DIN_34: /MOSI [input]
+  35 ~{PWDN}_35: /PWDN [input]
+  36 ~{RESET}_36: /RESET [input]
+  40 SCLK_40: /SCLK [input]
+  38 START_38: /START [input]
+  19 AVDD_19: AGND [power_in]
+  20 AVSS_20: AGND [power_in]
+  21 AVDD_21: AGND [passive]
+  22 AVDD_22: AGND [passive]
+  23 AVSS_23: AGND [passive]
+  25 VREFN_25: AGND [passive]
+  32 AVSS_32: AGND [passive]
+  33 DGND_33: AGND [power_in]
+  49 DGND_49: AGND [passive]
+  51 DGND_51: AGND [passive]
+  53 AVSS1_53: AGND [power_in]
+  54 AVDD1_54: AGND [power_in]
+  56 AVDD_56: AGND [passive]
+  57 AVSS_57: AGND [passive]
+  58 AVSS_58: AGND [passive]
+  59 AVDD_59: AGND [passive]
+  31 RESV1_31: DGND [input]
+  41 DAISY_IN_41: DGND [input]
+  42 GPIO1_42: DGND [bidirectional]
+  44 GPIO2_44: DGND [bidirectional]
+  45 GPIO3_45: DGND [bidirectional]
+  46 GPIO4_46: DGND [bidirectional]
+  48 DVDD_48: DGND [power_in]
+  50 DVDD_50: DGND [passive]
+  15 IN1N_15: Net-(U1-IN1N) [input]
+  16 IN1P_16: Net-(U1-IN1P) [input]
+  13 IN2N_13: Net-(U1-IN2N) [input]
+  14 IN2P_14: Net-(U1-IN2P) [input]
+  11 IN3N_11: Net-(U1-IN3N) [input]
+  12 IN3P_12: Net-(U1-IN3P) [input]
+  9 IN4N_9: Net-(U1-IN4N) [input]
+  10 IN4P_10: Net-(U1-IN4P) [input]
+  7 IN5N_7: Net-(U1-IN5N) [input]
+  8 IN5P_8: Net-(U1-IN5P) [input]
+  5 IN6N_5: Net-(U1-IN6N) [input]
+  6 IN6P_6: Net-(U1-IN6P) [input]
+  3 IN7N_3: Net-(U1-IN7N) [input]
+  4 IN7P_4: Net-(U1-IN7P) [input]
+  1 IN8N_1: Net-(U1-IN8N) [input]
+  2 IN8P_2: Net-(U1-IN8P) [input]
+  28 VCAP1_28: Net-(U1-VCAP1) [passive]
+  30 VCAP2_30: Net-(U1-VCAP2) [passive]
+  55 VCAP3_55: Net-(U1-VCAP3) [passive]
+  26 VCAP4_26: Net-(U1-VCAP4) [passive]
+  24 VREFP_24: Net-(U1-VREFP) [passive]
+  37 CLK_37: unconnected-(U1-CLK-Pad37) [bidirectional]
+  27 NC_27: unconnected-(U1-NC-Pad27) [no_connect]
+  29 NC_29: unconnected-(U1-NC-Pad29) [no_connect]
+  61 RLDINV_61: unconnected-(U1-RLDINV-Pad61) [input+no_connect]
+  63 RLDOUT_63: unconnected-(U1-RLDOUT-Pad63) [output+no_connect]
+  60 RLDREF_60: unconnected-(U1-RLDREF-Pad60) [input+no_connect]
+  64 WCT_64: unconnected-(U1-WCT-Pad64) [output+no_connect]
+U2 ADS1298xPAG Package_QFP:TQFP-64_10x10mm_P0.5mm
+  17 TESTP_PACE_OUT1_17: +3.3V [bidirectional]
+  18 TESTP_PACE_OUT2_18: +3.3V [bidirectional]
+  62 RLDIN_62: +3.3V [input]
+  39 ~{CS}_39: /CS_ADC2 [input]
+  43 DOUT_43: /MISO [output]
+  34 DIN_34: /MOSI [input]
+  35 ~{PWDN}_35: /PWDN [input]
+  36 ~{RESET}_36: /RESET [input]
+  40 SCLK_40: /SCLK [input]
+  38 START_38: /START [input]
+  37 CLK_37: ADC_CLK [bidirectional]
+  19 AVDD_19: AGND [power_in]
+  20 AVSS_20: AGND [power_in]
+  21 AVDD_21: AGND [passive]
+  22 AVDD_22: AGND [passive]
+  23 AVSS_23: AGND [passive]
+  25 VREFN_25: AGND [passive]
+  32 AVSS_32: AGND [passive]
+  33 DGND_33: AGND [power_in]
+  49 DGND_49: AGND [passive]
+  51 DGND_51: AGND [passive]
+  53 AVSS1_53: AGND [power_in]
+  54 AVDD1_54: AGND [power_in]
+  56 AVDD_56: AGND [passive]
+  57 AVSS_57: AGND [passive]
+  58 AVSS_58: AGND [passive]
+  59 AVDD_59: AGND [passive]
+  31 RESV1_31: DGND [input]
+  41 DAISY_IN_41: DGND [input]
+  42 GPIO1_42: DGND [bidirectional]
+  44 GPIO2_44: DGND [bidirectional]
+  45 GPIO3_45: DGND [bidirectional]
+  46 GPIO4_46: DGND [bidirectional]
+  48 DVDD_48: DGND [power_in]
+  50 DVDD_50: DGND [passive]
+  52 CLKSEL_52: DGND [input]
+  15 IN1N_15: Net-(U2-IN1N) [input]
+  16 IN1P_16: Net-(U2-IN1P) [input]
+  13 IN2N_13: Net-(U2-IN2N) [input]
+  14 IN2P_14: Net-(U2-IN2P) [input]
+  11 IN3N_11: Net-(U2-IN3N) [input]
+  12 IN3P_12: Net-(U2-IN3P) [input]
+  9 IN4N_9: Net-(U2-IN4N) [input]
+  10 IN4P_10: Net-(U2-IN4P) [input]
+  7 IN5N_7: Net-(U2-IN5N) [input]
+  8 IN5P_8: Net-(U2-IN5P) [input]
+  5 IN6N_5: Net-(U2-IN6N) [input]
+  6 IN6P_6: Net-(U2-IN6P) [input]
+  3 IN7N_3: Net-(U2-IN7N) [input]
+  4 IN7P_4: Net-(U2-IN7P) [input]
+  1 IN8N_1: Net-(U2-IN8N) [input]
+  2 IN8P_2: Net-(U2-IN8P) [input]
+  28 VCAP1_28: Net-(U2-VCAP1) [passive]
+  30 VCAP2_30: Net-(U2-VCAP2) [passive]
+  55 VCAP3_55: Net-(U2-VCAP3) [passive]
+  26 VCAP4_26: Net-(U2-VCAP4) [passive]
+  24 VREFP_24: Net-(U2-VREFP) [passive]
+  27 NC_27: unconnected-(U2-NC-Pad27) [no_connect]
+  29 NC_29: unconnected-(U2-NC-Pad29) [no_connect]
+  61 RLDINV_61: unconnected-(U2-RLDINV-Pad61) [input+no_connect]
+  63 RLDOUT_63: unconnected-(U2-RLDOUT-Pad63) [output+no_connect]
+  60 RLDREF_60: unconnected-(U2-RLDREF-Pad60) [input+no_connect]
+  64 WCT_64: unconnected-(U2-WCT-Pad64) [output+no_connect]
+  47 ~{DRDY}_47: unconnected-(U2-~{DRDY}-Pad47) [output+no_connect]
+U3 ESP32-S3-DevKitC PCM_Espressif:ESP32-S3-DevKitC
+  1 3V3_1: +3.3V [passive]
+  2 3V3_2: +3.3V [power_in]
+  21 5V_21: +5V [power_in]
+  16 GPIO10/ADC1_CH9_16: /CS_ADC1 [bidirectional]
+  20 GPIO14/ADC2_CH3_20: /CS_ADC2 [bidirectional]
+  15 GPIO9/ADC1_CH8_15: /DRDY_ADC1 [bidirectional]
+  19 GPIO13/ADC2_CH2_19: /MISO [bidirectional]
+  17 GPIO11/ADC2_CH0_17: /MOSI [bidirectional]
+  7 GPIO7/ADC1_CH6_7: /PWDN [bidirectional]
+  6 GPIO6/ADC1_CH5_6: /RESET [bidirectional]
+  18 GPIO12/ADC2_CH1_18: /SCLK [bidirectional]
+  12 GPIO8/ADC1_CH7_12: /START [bidirectional]
+  22 GND_22: DGND [passive]
+  23 GND_23: DGND [passive]
+  24 GND_24: DGND [passive]
+  44 GND_44: DGND [power_in]
+  3 CHIP_PU_3: unconnected-(U3-CHIP_PU-Pad3) [input]
+  31 GPIO0_31: unconnected-(U3-GPIO0-Pad31) [bidirectional]
+  41 GPIO1/ADC1_CH0_41: unconnected-(U3-GPIO1/ADC1_CH0-Pad41) [bidirectional]
+  40 GPIO2/ADC1_CH1_40: unconnected-(U3-GPIO2/ADC1_CH1-Pad40) [bidirectional]
+  13 GPIO3/ADC1_CH2_13: unconnected-(U3-GPIO3/ADC1_CH2-Pad13) [bidirectional]
+  4 GPIO4/ADC1_CH3_4: unconnected-(U3-GPIO4/ADC1_CH3-Pad4) [bidirectional]
+  5 GPIO5/ADC1_CH4_5: unconnected-(U3-GPIO5/ADC1_CH4-Pad5) [bidirectional]
+  8 GPIO15/ADC2_CH4/32K_P_8: unconnected-(U3-GPIO15/ADC2_CH4/32K_P-Pad8) [bidirectional]
+  9 GPIO16/ADC2_CH5/32K_N_9: unconnected-(U3-GPIO16/ADC2_CH5/32K_N-Pad9) [bidirectional]
+  10 GPIO17/ADC2_CH6_10: unconnected-(U3-GPIO17/ADC2_CH6-Pad10) [bidirectional]
+  11 GPIO18/ADC2_CH7_11: unconnected-(U3-GPIO18/ADC2_CH7-Pad11) [bidirectional]
+  25 GPIO19/USB_D-_25: unconnected-(U3-GPIO19/USB_D--Pad25) [bidirectional]
+  26 GPIO20/USB_D+_26: unconnected-(U3-GPIO20/USB_D+-Pad26) [bidirectional]
+  27 GPIO21_27: unconnected-(U3-GPIO21-Pad27) [bidirectional]
+  32 GPIO35_32: unconnected-(U3-GPIO35-Pad32) [bidirectional]
+  33 GPIO36_33: unconnected-(U3-GPIO36-Pad33) [bidirectional]
+  34 GPIO37_34: unconnected-(U3-GPIO37-Pad34) [bidirectional]
+  35 GPIO38_35: unconnected-(U3-GPIO38-Pad35) [bidirectional]
+  36 GPIO39/MTCK_36: unconnected-(U3-GPIO39/MTCK-Pad36) [bidirectional]
+  37 GPIO40/MTDO_37: unconnected-(U3-GPIO40/MTDO-Pad37) [bidirectional]
+  38 GPIO41/MTDI_38: unconnected-(U3-GPIO41/MTDI-Pad38) [bidirectional]
+  39 GPIO42/MTMS_39: unconnected-(U3-GPIO42/MTMS-Pad39) [bidirectional]
+  43 GPIO43/U0TXD_43: unconnected-(U3-GPIO43/U0TXD-Pad43) [bidirectional]
+  42 GPIO44/U0RXD_42: unconnected-(U3-GPIO44/U0RXD-Pad42) [bidirectional]
+  30 GPIO45_30: unconnected-(U3-GPIO45-Pad30) [bidirectional]
+  14 GPIO46_14: unconnected-(U3-GPIO46-Pad14) [bidirectional]
+  28 GPIO47_28: unconnected-(U3-GPIO47-Pad28) [bidirectional]
+  29 GPIO48_29: unconnected-(U3-GPIO48-Pad29) [bidirectional]
+U4 LP2985-3.3 Package_TO_SOT_SMD:SOT-23-5
+  5 VOUT_5: +3.3V [power_out]
+  1 VIN_1: +3.7V [power_in]
+  3 ON/~{OFF}_3: /EN [input]
+  2 GND_2: AGND [power_in]
+  4 BP_4: Net-(U4-BP) [input]
+U5 TLV75533PDBV Package_TO_SOT_SMD:SOT-23-5
+  5 OUT_5: +3.3V [power_out]
+  1 IN_1: +3.7V [power_in]
+  3 EN_3: /EN [input]
+  2 GND_2: AGND [power_in]
+  4 NC_4: unconnected-(U5-NC-Pad4) [no_connect]

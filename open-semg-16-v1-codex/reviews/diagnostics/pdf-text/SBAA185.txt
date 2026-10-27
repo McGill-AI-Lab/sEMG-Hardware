@@ -1,0 +1,289 @@
+
+
+===== PDF PAGE 1 =====
+Application Report
+SBAA185– May 2011
+Thermal Noise Analysis in ECG Applications
+Jack Li........................................................................................................ High-Performance Analog
+ABSTRACT
+This article discusses the thermal noise source of electrocardiogram (ECG) applications based on the
+ADS1298 and ADS1298R family of multichannel, simultaneous sampling, 24-bit, delta-sigma (ΔΣ)
+analog-to-digital converters (ADCs). This report offers several observations on identifying the major
+sources of thermal noise in an ECG system, and recommends a method to improve thermal noise
+performance.
+Contents
+1 Introduction.................................................................................................................. 1
+2 Noise in ECG Signal Path................................................................................................. 2
+3 Summary..................................................................................................................... 5
+4 References................................................................................................................... 5
+1 Introduction
+The Association for the Advancement of Medical Instrumentation (AAMI) specifications allow 30-μVPP
+noise at 150-Hz bandwidth during a 10-second recording. The primary sources of thermal noise in an
+ECG system are generally caused by either resistors or amplifiers. This stochastic noise is specified as
+root-mean-square (RMS) noise, and is proportional to the square root of the noise bandwidth.
+Considering that the bulk of the system noise is Gaussian in nature, computed as RMS but specified by
+AAMI as peak-to-peak, we must develop a scale factor that gives us a confidence level that the
+peak-to-peak noise will not exceed 30 μV in any 10-second recording (5000 samples at 500 Hz). That
+level of confidence (1 part in 5000) equates to approximately 8σ. RMS is, by definition, 1σ, so we must
+have an RMS noise level approximately 1/8 the AAMI peak-to-peak specification, or 3.75-μVRMS.
+All trademarks are the property of their respective owners.
+SBAA185– May 2011 Submit Documentation Feedback
+Thermal Noise Analysis in ECG Applications
+1
+Copyright © 2011, Texas Instruments Incorporated
+
+===== PDF PAGE 2 =====
+Noise in ECG Signal Path www.ti.com
+2 Noise in ECG Signal Path
+There are three components of the system noise. Each source is analyzed a bit differently. Figure 1
+illustrates the ECG signal path based on the ADS1298/98R.
+ECG Leads
+Protection Circuit ADS1298/ADS1298R
+Analog Front-End
+MCU
+with Display
+2.1 Figure 1. ECG Signal Path Based on ADS1298/98R
+The primary noise sources are the 10-kΩ defibrillation protection resistors embedded in the patient block.
+AAMI Signal Source (51 kΩ||47 nF)
+The AAMI specification calls for a source impedance of 51 kΩ in parallel with 47 nF. For more information,
+refer to the skin electrode contact model in Figure 1 as well as Figure 59 in the ADS1298/98R product
+data sheet. Figure 2 shows the block diagram of the ADS1298/98R analog front-end circuit.
+ADS129x
+Patient
+Skin,
+Electrode Contact
+Model
+47nF
+51k
+51k
+47nF
+47nF
+51k Patient
+Protection
+Resistor
+100k
+100k
+EMI
+Filter
+VINP
+VINN
+PGA
+LOFF_STATP
+To ADC
+LOFF_STATN
+4-Bit
+DAC
+COMP_TH[2:0]
+100k
+RLD OUT
+Figure 2. Analog Front-End Input Circuit
+2 Thermal Noise Analysis in ECG Applications SBAA185– May 2011
+Submit Documentation Feedback
+Copyright © 2011, Texas Instruments Incorporated
+
+===== PDF PAGE 3 =====
+www.ti.com Noise in ECG Signal Path
+Thermal noise is produced by a random motion of charges. The RMS open-circuit voltage (e) across a
+resistor (R) is given by Equation 1.
+e2 = 4kTRΔf (1)
+where:
+• k is temperature (Kelvins)
+• R is resistance (Ω)
+• Δf is frequency (Hz)
+• k is Boltzmann’s constant (1.38–23 joule/Kelvins)
+• e is voltage (VRMS)
+Example 1. Noise in RC Network
+As an example of noise source determination, calculate the noise in a RC network. Figure 3 shows a
+typical RC network.
+2
+vt
+Figure 3. Calculating Noise in an RC Network
+The parallel RC network impedance (Z) is given by Equation 2:
+Z = R || = =-j
+(
+1
+jw
+C
+(
+R
+R
+1 + RC jw
+2
+1 + ( RC) w
+wR C 2
+2
+1 + ( RC) w
+Given that ω = 2πf, the total open-circuit noise voltage is shown in Equation 3:
+?
+=
+0
+?
+4kTRe(Z)df = 4kTR
+2 df
+0
+1 + (2 fRC) p
+?
+2kT
+dx
+2kT
+= [tan x]-1
+= =
+C p
+1 + x2
+C p
+?
+0
+0
+kT
+Note that R has dropped out of Equation 3, so e2 is independent of R. At room temperature, the thermal
+noise of a 47-nF capacitor is approximately 295.8 nVRMS (with T = 298 Kelvins, or approximately +25 ºC).
+This noise source occurs twice: once on the measured input and again on the reference (RA). The noise
+voltage across a capacitor depends only upon temperature and capacitance. The RMS sum of two such
+sources is approximately 418.32 nVRMS.
+(2)
+C
+(3)
+SBAA185– May 2011 Submit Documentation Feedback
+Thermal Noise Analysis in ECG Applications
+Copyright © 2011, Texas Instruments Incorporated
+3
+
+===== PDF PAGE 4 =====
+Noise in ECG Signal Path www.ti.com
+2.2 Thermal Noise from Protection Resistor
+There are 22-kΩ and 10-kΩ current limiting resistors from the electrode to the input of the ADS1298. Here,
+we calculate the thermal noise for all components in the ECG signal path. Figure 4 illustrates the
+protection architecture of a defibrillator, for example.
+Defibrillator
+Protection (DP7)
+R48
+22 k
+2.5 VCC
+D13
+5.1 V
+R49
+10 k
+D14
+5.1 V
+C1 C2
+D87
+NEON
++2.5 VCC
+Figure 4. Defibrillation Protection Part
+The noise units are nV/√Hz. Using Equation 1 we obtain the following data:
+• 32-kΩ input resistance (RA): (4 nV/√Hz/ kΩ at +25°C) = 22.94 nV/√Hz
+The protection circuit (R48, C1, R49, and C2) is also used as a second-order low-pass filter for
+anti-aliasing and radio frequency interference (RFI). Furthermore, the patient protection resistor value is
+limited by the maximum current under the fault conditions specified by AAMI/IEC.
+2.3 ADS1298/98R Noise
+Based on the information provided in the ADS1298/98R product data sheet, the noise measurement is
+taken with an internal reference, which includes the internal reference output noise. If we use a low-noise
+external reference, such as the REF5025, we can achieve better noise performance with a low gain
+setting. (The 2.5-V reference of the REF5025 output noise is 7.5 μVPP at 0.1 Hz to 10 Hz; higher
+frequency noise is filtered by the reference output capacitor.) A minimum of 1000 consecutive readings
+are then used to calculate the RMS and peak-to-peak noise for each reading.
+Table 1. ADS1298/ADS1298R Input-Referred Noise (μVRMS/μVPP) in High-Resolution Mode
+3-V Analog Supply and 2.4-V Reference(1)
+DR Bits of–3dB
+CONFIG1 Output Data Bandwidth Register Rate (SPS) (Hz) PGA Gain = 1 PGA Gain = 2 PGA Gain = 3 PGA Gain = 4 PGA Gain = 6 PGA Gain = 8 PGA
+Gain = 12
+000 32000 8398 335/3553 168/1701 112/1100 85/823 58/529 42.5/378 28.6/248
+001 16000 4193 56/613 28/295 18.8/188 14.3/143 9.7/94 7.4/69 5.2/44.3
+010 8000 2096 12.4/111 6.5/54 4.5/37.9 3.5/29.7 2.6/21.7 2.2/17.8 1.8/13.8
+011 4000 1048 6.1/44.8 3.2/23.3 2.4/17.1 1.9/14.0 1.5/11.1 1.3/9.7 1.2/8.5
+100 2000 524 4.1/27.8 2.2/15.4 1.6/11.0 1.3/9.1 1.1/7.3 1.0/6.5 0.9/6.0
+101 1000 262 2.9/19.0 1.6/10.1 1.2/7.5 1.0/6.2 0.8/5.0 0.7/4.6 0.6/4.1
+110 500 131 2.1/12.5 1.1/6.8 0.9/5.1 0.7/4.3 0.6/3.5 0.5/3.1 0.5/2.9
+(1) At least 1000 consecutive readings were used to calculate the RMS and peak-to-peak noise values in this table.
+4 Thermal Noise Analysis in ECG Applications SBAA185– May 2011
+Submit Documentation Feedback
+Copyright © 2011, Texas Instruments Incorporated
+
+===== PDF PAGE 5 =====
+www.ti.com Summary
+We can see that the RTI noise of the ADS1298/98R is specified as 1.1 μVRMS when the PGA gain = 6 and
+the data rate is 2 kSPS. For simple calculation, presuming that the internal filter is a single-pole filter, the
+noise bandwidth is π/2 times the–3-dB bandwidth; in this case, that value is approximately 822.68 Hz.
+Now, we combine the noise from the AAMI source noise, the protection resistors, and the ADS1298/98R:
+AAMI source noise: 418.32 nVRMS
+Protection resistors: 0.93 μVRMS (= 22.94nV/√Hz × √822.68 Hz) × √2)
+RTI noise of ADS1298/98R: 1.1 μVRMS
+Total noise: 1.5 μVRMS
+Using our 8× conversion factor from RMS to peak-to-peak (explained in Section 1), this total noise is then
+12 μVPP, which is much less than the 30 μVPP.
+3 Summary
+We can see from this report that we can optimize the protection resistor and reduce the noise bandwidth
+to achieve better noise performance. The noise factors discussed here only concern the thermal noise of
+the system, and do not include quantization noise or non-thermal sources (such as digital crosstalk,
+power-supply noise, and so forth). For electrosurgical interference (ESI), which is not addressed in this
+report, see Ref 5.
+4 References
+1. ANSI/AAMI EC11:1991/®2001, Diagnostic Electrocardiographic Devices.
+2. Chinese Standard: YY 1079-2008, Electrocardiographic Monitors.
+3. Markandey, V. (2009, revised 2010). ECG Implementation on the TMS320VC5505 DSP Medical
+Development Kit (MDK). Application report. Literature number SPRAB36B.
+4. 5. ADS1298 Product data sheet. Literature number SBAS459G.
+Yelderman, M., Widrow, B., Cioffi, J., Hesler, E., and Leddy, J.E. (1983). ECG enhancement by
+adaptive cancellation of electrosurgical interference. IEEE Transactions on Biomedical Engineering,
+Vol. BME-30, No. 7, July 1983.
+SBAA185– May 2011 Submit Documentation Feedback
+Thermal Noise Analysis in ECG Applications
+Copyright © 2011, Texas Instruments Incorporated
+5
+
+===== PDF PAGE 6 =====
+IMPORTANT NOTICE
+Texas Instruments Incorporated and its subsidiaries (TI) reserve the right to make corrections, modifications, enhancements, improvements,
+and other changes to its products and services at any time and to discontinue any product or service without notice. Customers should
+obtain the latest relevant information before placing orders and should verify that such information is current and complete. All products are
+sold subject to TI’s terms and conditions of sale supplied at the time of order acknowledgment.
+TI warrants performance of its hardware products to the specifications applicable at the time of sale in accordance with TI’s standard
+warranty. Testing and other quality control techniques are used to the extent TI deems necessary to support this warranty. Except where
+mandated by government requirements, testing of all parameters of each product is not necessarily performed.
+TI assumes no liability for applications assistance or customer product design. Customers are responsible for their products and
+applications using TI components. To minimize the risks associated with customer products and applications, customers should provide
+adequate design and operating safeguards.
+TI does not warrant or represent that any license, either express or implied, is granted under any TI patent right, copyright, mask work right,
+or other TI intellectual property right relating to any combination, machine, or process in which TI products or services are used. Information
+published by TI regarding third-party products or services does not constitute a license from TI to use such products or services or a
+warranty or endorsement thereof. Use of such information may require a license from a third party under the patents or other intellectual
+property of the third party, or a license from TI under the patents or other intellectual property of TI.
+Reproduction of TI information in TI data books or data sheets is permissible only if reproduction is without alteration and is accompanied
+by all associated warranties, conditions, limitations, and notices. Reproduction of this information with alteration is an unfair and deceptive
+business practice. TI is not responsible or liable for such altered documentation. Information of third parties may be subject to additional
+restrictions.
+Resale of TI products or services with statements different from or beyond the parameters stated by TI for that product or service voids all
+express and any implied warranties for the associated TI product or service and is an unfair and deceptive business practice. TI is not
+responsible or liable for any such statements.
+TI products are not authorized for use in safety-critical applications (such as life support) where a failure of the TI product would reasonably
+be expected to cause severe personal injury or death, unless officers of the parties have executed an agreement specifically governing
+such use. Buyers represent that they have all necessary expertise in the safety and regulatory ramifications of their applications, and
+acknowledge and agree that they are solely responsible for all legal, regulatory and safety-related requirements concerning their products
+and any use of TI products in such safety-critical applications, notwithstanding any applications-related information or support that may be
+provided by TI. Further, Buyers must fully indemnify TI and its representatives against any damages arising out of the use of TI products in
+such safety-critical applications.
+TI products are neither designed nor intended for use in military/aerospace applications or environments unless the TI products are
+specifically designated by TI as military-grade or "enhanced plastic." Only products designated by TI as military-grade meet military
+specifications. Buyers acknowledge and agree that any such use of TI products which TI has not designated as military-grade is solely at
+the Buyer's risk, and that they are solely responsible for compliance with all legal and regulatory requirements in connection with such use.
+TI products are neither designed nor intended for use in automotive applications or environments unless the specific TI products are
+designated by TI as compliant with ISO/TS 16949 requirements. Buyers acknowledge and agree that, if they use any non-designated
+products in automotive applications, TI will not be responsible for any failure to meet such requirements.
+Following are URLs where you can obtain information on other Texas Instruments products and application solutions:
+Products Applications
+Audio www.ti.com/audio Communications and Telecom www.ti.com/communications
+Amplifiers amplifier.ti.com Computers and Peripherals www.ti.com/computers
+Data Converters dataconverter.ti.com Consumer Electronics www.ti.com/consumer-apps
+DLP® Products www.dlp.com Energy and Lighting www.ti.com/energy
+DSP dsp.ti.com Industrial www.ti.com/industrial
+Clocks and Timers www.ti.com/clocks Medical www.ti.com/medical
+Interface interface.ti.com Security www.ti.com/security
+Logic logic.ti.com Space, Avionics and Defense www.ti.com/space-avionics-defense
+Power Mgmt power.ti.com Transportation and www.ti.com/automotive
+Automotive
+Microcontrollers microcontroller.ti.com Video and Imaging www.ti.com/video
+RFID www.ti-rfid.com Wireless www.ti.com/wireless-apps
+RF/IF and ZigBee® Solutions www.ti.com/lprf
+TI E2E Community Home Page e2e.ti.com
+Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265
+Copyright © 2011, Texas Instruments Incorporated

@@ -1,0 +1,2813 @@
+
+
+===== PDF PAGE 1 =====
+User's Guide
+SBAU171D–May 2010–Revised January 2016
+ADS1298ECG-FE/ADS1198ECG-FE
+This user's guide describes the characteristics, operation, and use of the ADS1298ECG-FE and
+ADS1198ECG-FE. The ADS1298ECG-FE and ADS1198ECG-FE are evaluation modules for the
+ADS1298, an eight-channel, 24-bit, and ADS1198, an eight-channel, 16-bit, analog-to digital converter
+(ADC). Both devices provide low-power, integrated analog front-end (AFE) designs for patient monitoring
+and portable and high-end electrocardiogram (ECG) and electroencephalogram (EEG) applications. This
+user's guide includes a complete circuit description, schematic diagram, and bill of materials.
+The following related documents are available through the Texas Instruments web site at www.ti.com.
+Device Literature Number
+ADS1298 SBAS459
+ADS1198 SBAS471
+Contents
+1 ADS1298ECG-FE/ADS1198ECG-FE Overview......................................................................... 3
+1.1 Important Disclaimer Information................................................................................. 3
+1.2 Introduction.......................................................................................................... 4
+1.3 Supported Features................................................................................................ 4
+1.4 Features Not Supported in Current Version..................................................................... 4
+1.5 ADS1x98ECG-FE Hardware...................................................................................... 5
+1.6 Minimum System Requirements for ADS1x98ECG-FE Evaluation Software............................... 5
+2 Quick Start.................................................................................................................... 6
+2.1 Default Jumper/Switch Configuration............................................................................ 6
+2.2 ADS1x98ECG-FE Operation...................................................................................... 7
+3 Using the ADS1298ECG-FE Software.................................................................................... 8
+3.1 Application User Menu............................................................................................. 9
+3.2 Top-Level Application Controls................................................................................... 9
+3.3 About Tab.......................................................................................................... 10
+3.4 ADC Register Tab................................................................................................. 11
+3.5 Analysis Tab....................................................................................................... 19
+3.6 Save Tab........................................................................................................... 27
+4 ADS1x98ECG-FE Input Signals.......................................................................................... 29
+4.1 Input Short Testing................................................................................................ 29
+4.2 Internal Test Signals Input...................................................................................... 29
+4.3 Temperature Sensor.............................................................................................. 30
+4.4 Normal Electrode Input.......................................................................................... 31
+4.5 MVDD Input, RLD Measurement, RLD Positive Electrode Driver, and RLD Negative Electrode Driver 31
+4.6 Lead Derivation.................................................................................................... 32
+4.7 Wilson Center Terminal (WCT).................................................................................. 32
+4.8 Right Leg Drive.................................................................................................... 32
+4.9 PACE Detection................................................................................................... 33
+5 ADS1298ECG-FE/ADS1198ECG-FE Hardware Details.............................................................. 35
+5.1 Jumper Description............................................................................................... 36
+5.2 Power Supply...................................................................................................... 37
+5.3 Clock................................................................................................................ 38
+5.4 Reference.......................................................................................................... 38
+5.5 Analog Output Signals............................................................................................ 39
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+1
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 2 =====
+www.ti.com
+5.6 Digital Signals...................................................................................................... 39
+5.7 Analog Input Signals.............................................................................................. 39
+Appendix A Schematics, BOM, Layout, and ECG Cable Details.......................................................... 41
+Appendix B External Optional Hardware...................................................................................... 47
+Appendix C Software Installation.............................................................................................. 50
+List of Figures
+1 ADS1x98ECG-FE Kit........................................................................................................ 5
+2 ADS1x98ECG-FE Default Jumper Locations............................................................................ 6
+3 Software Start Screen/About Tab......................................................................................... 8
+4 User Menu - File Item....................................................................................................... 9
+5 User Menu - Help Item...................................................................................................... 9
+6 Top Level Controls.......................................................................................................... 9
+7 Lead-Off Status Registers Display Window............................................................................ 10
+8 Channel Registers Tab.................................................................................................... 11
+9 Internal Reference and Buffer Connections............................................................................ 12
+10 Lead-Off Excitation Options............................................................................................... 13
+11 Input Multiplexer for a Single Channel.................................................................................. 13
+12 LOFF and RLD Tab........................................................................................................ 14
+13 LOFF_STATP and LOFF_STATN Comparators....................................................................... 15
+14 GPIO and OTHER Register Tab......................................................................................... 16
+15 Wilson Central and Augmented Lead Routing Diagrams............................................................. 17
+16 Device Registers Settings................................................................................................. 18
+17 Scope Tool Features....................................................................................................... 19
+18 Scope Analysis Tab (Noise Levels for Each Channel Shown)....................................................... 19
+19 Zoom Tool Options......................................................................................................... 20
+20 Histogram Bins for 12-Lead ECG Signal................................................................................ 21
+21 Statistics for the Signal Amplitude of Eight ECG Channels.......................................................... 21
+22 FFT Graph of Normal Electrode Configuration......................................................................... 22
+23 AC Analysis Parameters: Windowing Options......................................................................... 22
+24 FFT Analysis: Input Short Condition..................................................................................... 23
+25 Changing the User-Defined Dynamic Range for Channel 1.......................................................... 23
+26 FFT Plot Using Zoom Tool................................................................................................ 24
+27 ECG Display Tab Showing LEAD I-III and Augmented Leads....................................................... 25
+28 ECG Signal Zoom Feature for Six Leads............................................................................... 26
+29 ECG Signal Zoom Feature for Lead 1................................................................................... 26
+30 Save Tab.................................................................................................................... 28
+31 Example of Internal Test Signals Viewed on the ECG Display Tab................................................. 29
+32 Internal Temperature Sensor............................................................................................. 30
+33 Eight-Channel Read of Internal Temperature.......................................................................... 30
+34 Normal Electrode ECG Connection in ECG Display Tab............................................................. 31
+35 Digitization of PACE Signal Using ADS1298........................................................................... 34
+36 ADS1298ECG-FE Front-End Block Diagram........................................................................... 35
+37 Fluke Simulator Configuration............................................................................................ 40
+38 Top Component Placement............................................................................................... 44
+39 Top Layer................................................................................................................... 44
+40 Bottom Component Placement........................................................................................... 44
+41 Bottom Layer................................................................................................................ 44
+42 Internal Ground Plane (Layer 2).......................................................................................... 44
+ADS1298ECG-FE/ADS1198ECG-FE
+2 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 3 =====
+www.ti.com ADS1298ECG-FE/ADS1198ECG-FE Overview
+43 Internal Power Plane (Layer 3)........................................................................................... 44
+44 ECG Cable Schematic..................................................................................................... 46
+45 15-Pin, Shielded Connector from Biometric Cables................................................................... 47
+46 15-Pin, Twisted Wire Cable to Banana Jacks.......................................................................... 47
+47 15-Pin, Twisted Wire Cable............................................................................................... 47
+48 Cardiosim ECG Simulator Tool........................................................................................... 48
+49 Recommended Power Supply for ADS1x98ECG-FE.................................................................. 49
+50 Initialization of ADS1x98ECG-FE........................................................................................ 50
+51 License Agreement........................................................................................................ 50
+52 Installation Process........................................................................................................ 50
+53 Completion of ADS1x98ECG-FE Software Installation................................................................ 50
+List of Tables
+1 ADS1x98ECG-FE Default Jumper/Switch Configuration............................................................... 7
+2 ADS1298 Lead Measurements........................................................................................... 32
+3 Derived Lead Calculations................................................................................................ 32
+4 RLD Jumper Options...................................................................................................... 33
+5 ADS1x98ECG-FE Default Jumper/Switch Configuration............................................................. 36
+6 Power-Supply Test Points................................................................................................. 37
+7 Analog Supply Configurations (AVDD/AVSS).......................................................................... 38
+8 Digital Supply Configurations (DVDD/DGND).......................................................................... 38
+9 CLK Jumper Options....................................................................................................... 38
+10 External Reference Jumper Options..................................................................................... 39
+11 Test Signals................................................................................................................. 39
+12 Serial Interface Pinout..................................................................................................... 39
+13 Bill of Materials: ADS1x98ECG-FE..................................................................................... 42
+Trademarks
+Pentium III, Celeron are registered trademarks of Intel Corporation.
+Microsoft, Windows are registered trademarks of Microsoft Corporation.
+SPI is a trademark of Motorola Inc.
+All other trademarks are the property of their respective owners.
+1 ADS1298ECG-FE/ADS1198ECG-FE Overview
+1.1 Important Disclaimer Information
+CAUTION
+NOTICE: The ADS1298ECG-FE and ADS1198ECG-FE are intended for
+feasibility and evaluation testing only in laboratory and development
+environments. This product is not for diagnostic use. This product is not for use
+with a defibrillator.
+The ADS1298ECG-FE/ADS1198ECG-FE is to be used only under these conditions:
+• The ADS1298ECG-FE/ADS1198ECG-FE is intended only for electrical evaluation of the features of
+the ADS1298 device in a laboratory, simulation, or development environment.
+• The ADS1298ECG-FE/ADS1198ECG-FE is not intended for direct interface with a patient, patient
+diagnostics, or with a defibrillator.
+• The ADS1298ECG-FE/ADS1198ECG-FE is intended for development purposes ONLY. It is not
+intended to be used as all or part of an end equipment application.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+3
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 4 =====
+ADS1298ECG-FE/ADS1198ECG-FE Overview www.ti.com
+• The ADS1298ECG-FE/ADS1198ECG-FE should be used only by qualified engineers and technicians
+who are familiar with the risks associated with handling electrical and mechanical components,
+systems, and subsystems.
+• The user is responsible for the safety of themselves, fellow employees and contractors, and co-
+workers when using or handling the ADS1298ECG-FE/ADS1198ECG-FE. Furthermore, the user is
+fully responsible for the contact interface between the human body and electronics; consequently, the
+user is responsible for preventing electrical hazards such as shock, electrostatic discharge, and
+electrical overstress of electric circuit components.
+1.2 Introduction
+The ADS1x98ECG-FE is intended for evaluating the ADS1298 and ADS1198 for ECG and EEG
+applications. The digital SPI™ control interface is provided by the MMB0 Modular EVM motherboard that
+connects to the ADS1x98ECG FE evaluation board. The ADS1x98ECG-FE (see Figure 1) is NOT a
+reference design for ECG and EEG applications; rather, its purpose is to expedite evaluation and system
+development. The output of the ADS1298 yields a raw, unfiltered ECG signal.
+The MMB0 motherboard allows the ADS1x98 to be connected to the computer via an available USB port.
+This manual shows how to use the MMB0 as part of the ADS1x98ECG-FE, but does not provide technical
+details about the MMB0 itself.
+This document covers the operation of the ADS1x98ECG-FE evaluation system. Throughout the
+document, the abbreviation EVM and the term evaluation module are synonymous with the
+ADS1x98ECG-FE. For clarity of reading, this manual will refer only to the ADS1298ECG-FE or
+ADS1x98ECG-FE, but operation of the ADS1198ECG-FE is identical, unless otherwise noted.
+CAUTION
+Many of the components on the ADS1x98ECG-FE are susceptible to damage
+by electrostatic discharge (ESD). Customers are advised to observe proper
+ESD handling precautions when unpacking and handling the EVM, including
+the use of a grounded wrist strap, bootstraps, or mats at an approved ESD
+workstation. An electrostatic smock and safety glasses should also be worn.
+1.3 Supported Features
+Hardware Features:
+• Configurable for bipolar or unipolar supply operation
+• Configurable for internal and external clock and reference via jumper settings
+• Configurable for AC- or DC-coupled inputs
+• Configurable for up to 12 standard ECG leads
+• External Right Leg Drive (RLD) Reference (VCC– VEE)/2
+• External Wilson central voltage
+• Easy connectivity to popular ECG simulators
+Software Features:
+• Designed to display 12 lead ECG data
+• Analysis tools including a virtual oscilloscope, histogram, FFT, and ECG display
+• File printing for post-processing of raw ECG data
+• Sets the ADS1298/ADS1198 register settings via easy-to-use graphic user interface (GUI) software
+• Post-processing of ECG data using high-pass, low-pass, and 50/60Hz notch filters
+1.4 Features Not Supported in Current Version
+• Real-time data processing
+• AC lead-off detection filters
+ADS1298ECG-FE/ADS1198ECG-FE
+4 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 5 =====
+www.ti.com ADS1298ECG-FE/ADS1198ECG-FE Overview
+• QRS detection algorithms
+• Software PACE detection algorithms
+1.5 ADS1x98ECG-FE Hardware
+Figure 1 shows the hardware included in the ADS1x98ECG-FE kit. Contact the factory if any component is
+missing. The latest software is available for download on the TI website at http://www.ti.com.
+1.6 Figure 1. ADS1x98ECG-FE Kit
+The complete kit includes the following items:
+• ADS1x98ECG-FE printed circuit board (PCB)
+• MMB0 (Modular EVM motherboard)
+Minimum System Requirements for ADS1x98ECG-FE Evaluation Software
+The minimum system requirements for using the ADS1x98ECG-FE software application are:
+• Pentium III®/Celeron® processor, 866MHz or equivalent
+• Minimum 256MB of RAM (512MB or greater recommended)
+• USB 1.1-compatible input
+• Hard disk drive with at least 200MB free space
+• Microsoft® Windows® XP operating system with SP2 or Windows 7 operating systems (Windows Vista
+not tested)
+• Mouse or other pointing device
+• 1280 x 960 minimum display resolution
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+ADS1298ECG-FE/ADS1198ECG-FE
+5
+
+===== PDF PAGE 6 =====
+Quick Start www.ti.com
+2 Quick Start
+software.
+This section provides a QuickStart guide to quickly begin evaluating the EVM using the ADS1x98ECG-FE
+2.1 Default Jumper/Switch Configuration
+Figure 2 shows the jumpers found on the ADS1x98ECG-FE EVM and the respective factory default
+conditions for each.
+Figure 2. ADS1x98ECG-FE Default Jumper Locations
+Table 1 lists the jumpers and switches and the factory default conditions.
+ADS1298ECG-FE/ADS1198ECG-FE
+6 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 7 =====
+www.ti.com Quick Start
+Table 1. ADS1x98ECG-FE Default Jumper/Switch Configuration
+Jumper Default Position Description
+JP1 Installed RLD feedback
+JP2 Installed 1-2 AVDD selected for bipolar supply operation selected (AVDD = +2.5V)
+JP3 Header Not Installed External Vref buffer not connected
+JP4 Installed EVM +5V provided from J4 (power header)
+JP5 Open PWDN pin controlled from J5 header (pulled up to DVDD)
+JP6 to JP14 Header Not Installed (Pins 1-2
+shorted on PCB) DC-coupled input signals
+JP15 Installed 2-3 Shield drive is open
+JP16 Installed Wilson Central Terminal (WCT) connected to INM for CH1 and CH4-8
+JP17 Header Not Installed ECG shield drive
+JP18 Installed 2-3 CLK connected to OSC1
+JP19 Installed 1-2 OSC1 enabled
+JP20 Installed 2-3 AVSS selected for bipolar supply operation (AVSS = -2.5V)
+JP21 Installed 1-2 CS connected to DSP via J3.1
+JP22 Installed 2-3 START comes from J3.14
+JP23 Installed 1-2 CLKSEL set to 0 (ADS1198 uses Ext Master Clock (OSC1))
+JP24 Installed 2-3 DVDD supply = 3.3V
+JP25 Header Not Installed No external reference selected
+Installed 1-2 (top) WCT connected to CH8- input
+JP26
+Installed 3-4 (bottom) ECG_V1 connected to CH8+ input
+Installed 1-2 (top) WCT connected to CH7- input
+JP27
+Installed 3-4 (bottom) ECG_V5 connected to CH7+ input
+Installed 1-2 (top) WCT connected to CH6- input
+JP28
+Installed 3-4 (bottom) ECG_V3 connected to CH5+ input
+Installed 1-2 (top) WCT connected to CH5- input
+JP29
+Installed 3-4 (bottom) ECG_V4 connected to CH6+ input
+Installed 1-2 (top) WCT connected to CH4- input
+JP30
+Installed 3-4 (bottom) ECG_V2 connected to CH4+ input
+Installed 1-2 (top) ECG_RA connected to CH3- input
+JP31
+Installed 3-4 (bottom) ECG_LL connected to CH3+ input
+Installed 1-2 (top) ECG_RA connected to CH2- input
+JP32
+Installed 3-4 (bottom) ECG_ LA connected to CH2+ input
+Installed 1-2 (top) WCT connected to CH1- input
+JP33
+Installed 3-4 (bottom) ECG_V6 connected to CH1+ input
+2.2 ADS1x98ECG-FE Operation
+To prepare to evaluate the ADS1298 with the ADS1298ECG-FE, complete the following steps:
+1. Verify the jumpers on the ADS1298ECG-FE are as shown in Figure 2 (note that these settings are the
+factory-configured settings for the board).
+2. Verify that the jumpers on the MMB0 motherboard are configured as shown below:
+• MMB0 J13A → Open
+• MMB0 J13B → Open
+• Refer to Section B.2 for details about the MMB0 power supply.
+3. Install the ADS1298ECG-FE software using the latest software version. The latest software can be
+downloaded from the ADS1298ECG-FE product page or ADS1198ECG-FE product page. Double click
+the installer and follow the instruction to complete the software installation. For detailed installation
+information and screenshots, see Appendix C.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+7
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 8 =====
+Using the ADS1298ECG-FE Software www.ti.com
+3 Using the ADS1298ECG-FE Software
+The ADS1298ECG-FE software provides complete control over all the settings of the ADS1298. By using
+the user interface (UI), the ADS1298 control registers can be manipulated to evaluate the various options
+available on the device. Figure 3 shows the starting UI screen of the software. The UI consists of a user
+menu (Section 3.1), a few top-level controls (Section 3.2), and a tabbed interface, with different functions
+available on the different tabs. The tabs are:
+• About (Section 3.3)
+• ADC Register (Section 3.4.3)
+• Analysis (Section 3.5)
+• Save (Section 3.6)
+Figure 3. Software Start Screen/About Tab
+The user can adjust the settings when the software is not acquiring data. During acquisition, all controls
+are disabled and settings may not be changed. When a setting is changed via a control, the settings are
+immediately updated on the device and EVM. Settings in the software correspond to settings described in
+the ADS1298 product data sheet.
+ADS1298ECG-FE/ADS1198ECG-FE
+8 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 9 =====
+www.ti.com Using the ADS1298ECG-FE Software
+3.1 Application User Menu
+The application user menu is located along the top of the application menu. It consists of two items: File
+and Help.
+File Menu (see Figure 4)
+The File menu provides several options:
+• Capture Screen takes a screen capture of the current view of the application and saves it as to a
+file specified by the user.
+• Save Configuration Settings saves the current states of the ADS1298 control registers for
+reloading at a later time. This file is different from the save register on the Save tab (see
+Section 3.6), which saves the current register map to a tab-delimited text file.
+• Load Configuration Settings loads a previously save configuration setting file and initializes the
+hardware and software to the settings within the configuration file. The configuration file must be a
+file saved previously from this application using the Save Configuration Settings command, not a
+file from the Save tab.
+• Exit closes the application.
+Help Menu (see Figure 5)
+The Help menu provides the About option, which display the software and firmware version that is
+currently being used. Please have this information if you need to request assistance or have a question
+regarding the software or hardware.
+Figure 5. User Menu - Help Item
+Figure 4. User Menu - File Item
+3.2 Top-Level Application Controls
+Several controls/indicators are located along the top of the UI screen (see Figure 6). The controls and
+indicators are described below.
+Figure 6. Top Level Controls
+The Data Rate indicator displays the current data rate of the ADS1298. The data rate can be configured in
+CONFIG1 control register (see Section 3.4.2.1).
+The Progress indicator will display the current progress of data transfer to the PC during acquisition
+cycles.
+The Samples/CH control allows for the selection of the number of points, per channel, to collect during an
+acquisition cycle. Keep in mind the value entered into this control in relation to the current data rate. Large
+numbers of samples, coupled with slower data rates, can take time to acquire.
+The ACQUIRE control starts the acquisition process. When pressed, the software will collect the
+requested number of samples from the ADS1298. All points collected during an acquisition process will be
+contiguous points.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+9
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 10 =====
+Using the ADS1298ECG-FE Software www.ti.com
+The CONTINUOUS control starts a repeated acquisition process. This function acquires the requested
+samples and repeats the data acquisition until the button is turned off. Within a single acquisition cycle,
+the points will be contiguous, but from acquisition to acquisition, there may be points missing.
+The Analysis Data input referred checkbox changes the displayed data that is read from the ADC.
+Checking the box displays the data input referred, while not checking displays the data as converted.
+The Show/Poll Lead Off Status displays a window (see Figure 7) that shows the status of the Lead-Off
+status registers, LOFF STATP and LOFF STATN, of the ADS1298. When the lead for the channel is
+disconnected, the corresponding channel LED changes from green to red.
+Figure 7. Lead-Off Status Registers Display Window
+3.3 About Tab
+The About tab provides software information to the user. Important safety warning, restrictions, and
+disclaimers for the software and hardware are shown and should be followed during the evaluation of this
+product. Additional indicators are present to provide device information (Device ID and Rev) and software
+information (Firmware Version). The About tab should be the first screen displayed at startup (see
+Figure 3).
+ADS1298ECG-FE/ADS1198ECG-FE
+10 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 11 =====
+www.ti.com Using the ADS1298ECG-FE Software
+3.4 ADC Register Tab
+The ADC Register tab provides controls to manipulate ADC control registers of the ADS1298. Details of
+the control registers are provided in the product datasheet. The ADC Register tab consists of a few
+controls and several sub-tabs that further divide the control registers into different functions groups. The
+sub-tabs are:
+• Channel Registers tab (Section 3.4.2)
+• LOFF and RLD tab (Section 3.3)
+• GPIO and Other Registers tab (Section 3.4.4)
+• Register Map tab (Section 3.4.5)
+Figure 8. Channel Registers Tab
+3.4.1 Standby and Reset Controls
+The Standby control allows the user to place the ADS1298 in standby.
+The Reset control allows the user to reset the ADS1298. The Reset Mode determines which mode is
+executed when the Reset control is pressed. Device Defaults resets the device to the device defaults;
+Programmed Defaults resets the device, then writes the default values for using this software application.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+11
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 12 =====
+Using the ADS1298ECG-FE Software www.ti.com
+3.4.2 Channel Registers Tab (ADC Register)
+The Channel Register tab provides access to control registers that control different properties/settings for
+the ADC channels. The control register are grouped into two groups: Global Channel Registers and
+Channel Control Registers.
+3.4.2.1 Global Channel Registers
+The Global Channel Registers box includes Configuration Register 1 (CONFIG1), Configuration Register 2
+(CONFIG2), Configuration Register 3 (CONFIG3), and Lead Off Control Register (LOFF). The upper half
+of Figure 8 shows the section of the UI panel that allows manipulation and control of these registers.
+Configuration Register 1 enables the user to control the resolution mode, enable the daisy-chain
+configuration options, and program the data rate.
+NOTE: Since the HR bit is not available in the ADS1198, the Configuration Register 1 control will not
+show this control when testing the ADS1198.
+Configuration Register 2 enables the user to select an internal square wave test source amplitude of
+±1mV or ±2mV and a frequency of DC, 2Hz (fCLK/221), or 4Hz (fCLK/220).
+Configuration Register 3 controls the bandgap reference (illustrated in Figure 9) and right leg drive
+(RLD) options. This register enables the user to select between an external or internal reference voltage,
+enable/disable the internal reference buffer, toggle between a 2.4V or a 4.0V output voltage, and to
+enable/disable the RLD as well as choose whether the RLD voltage is provided internally or externally.
+22 F m
+VCAP1
+R1(1)
+Bandgap 2.4V or 4V
+VREFP
+R3(1)
+10 F m
+R2(1)
+VREFN
+AVSS
+To ADC Reference Inputs
+Figure 9. Internal Reference and Buffer Connections
+The Lead-Off Control Register allows the user to configure the threshold for the lead-off comparator,
+resistive pull-up or current-source excitation, the lead-off current magnitude, and DC or AC detection.
+Figure 10 illustrates a simplified diagram of the resistive pull-up and excitation options for the lead-off
+detect feature.
+ADS1298ECG-FE/ADS1198ECG-FE
+12 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 13 =====
+www.ti.com Using the ADS1298ECG-FE Software
+AVDD
+AVDD
+10M
+INP
+INN
+ADS129x
+PGA
+INP
+INN
+ADS129x
+PGA
+10M
+a) Pull-Up/Pull-Down Resistors b) Current Source
+Figure 10. Lead-Off Excitation Options
+3.4.2.2 Channel Control Registers
+The Channel Control Registers box allows the user to uniquely configure the front-end MUX for each ADC
+channel. Additionally, at the top of the Channel Control Registers box (see Figure 8) is the option to
+globally set all channels to the same setting. The channel-specific MUX is illustrated in Figure 11.
+ADS129x
+MUX
+TESTP_PACE_OUT1
+TestP
+VINP
+RLDIN
+RLD_REF
+INT_TEST
+INT_TEST
+MUX[2:0] = 101
+TempP MUX[2:0] = 100
+MvddP(1) MUX[2:0] = 011
+From LoffP
+MUX[2:0] = 000
+MUX[2:0] = 110
+EMI
+Filter
+MUX[2:0] = 111
+VINN MUX[2:0] = 000
+From LoffN
+MUX[2:0] = 010
+RLD_MEAS
+MvddN(1)
+MUX[2:0] = 011
+TempN MUX[2:0] = 100
+MUX[2:0] = 101
+INT_TEST
+MUX[2:0] = 010
+RLD_MEAS
+AND
+MUX[2:0] = 001
+MUX[2:0] = 001
+To PgaP
+(AVDD + AVSS)
+2
+To PgaN
+AND
+TestN
+TESTN_PACE_OUT2
+INT_TEST
+Figure 11. Input Multiplexer for a Single Channel
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+ADS1298ECG-FE/ADS1198ECG-FE
+13
+
+===== PDF PAGE 14 =====
+Using the ADS1298ECG-FE Software www.ti.com
+3.4.3 LOFF and RLD Tab (ADC Register)
+The LOFF and RLD tab provides control over the Lead-Off Detection and Current Control Registers and
+the Right Leg Derivation Control Registers. The tab and controls are shown in Figure 12.
+Figure 12. LOFF and RLD Tab
+3.4.3.1 Lead-Off Detection and Current Direction Control Registers
+The first two arrays of controls (Lead Off Sense) enable lead-off detection for both the positive and
+negative channels, LOFF_SENSP and LOFF_SENSN. By pressing the buttons, lead-off detection is
+enabled for each channel individually and for each input (positive and negative). Set All LOFFP Bits and
+Set All LOFFN Bits allow the user to turn on or off all the enable bits at once instead of clicking each
+individual channel control.
+The third array of controls (Lead Off Current Direction) determines the current direction used for lead-off
+detection when an excitation signal is selected as a pull-up/pull-down resistor. Each channel is controlled
+individually by selecting the button that corresponds to the desired channel to manipulate. When the
+button is not illuminated, LOFF_FLIP = 0 (INP is pulled-up to AVDD and INN is pulled-down to ground).
+When the button is pressed/illuminated, LOFF_FLIP = 1 (INP is pulled-down to ground and INN is pulled-
+up to AVDD). Further details of these registers and lead-off function are located in the Applications
+Section of the device data sheet.
+ADS1298ECG-FE/ADS1198ECG-FE
+14 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 15 =====
+www.ti.com Using the ADS1298ECG-FE Software
+Figure 10 describes the mode for Lead-Off Detection (that is, resistive or current source) and the 4-bit
+DAC settings to configure the lead-off threshold. Figure 13 illustrates the connections from the positive
+and negative inputs to the lead-off comparators. The output of the comparators is viewed by using
+Show/Poll Lead Off Status control as described in Section 3.2
+LOFF_STATP
+VINP
+PGA
+To ADC
+VINN
+LOFF_STATN
+4-Bit
+DAC
+COMP_TH[2:0]
+Figure 13. LOFF_STATP and LOFF_STATN Comparators
+3.4.3.2 Right Leg Drive Derivation Control Registers
+The Right Leg Drive Derivation Control Registers enable the user to set any combination of positive and/or
+negative electrodes to derive the RLD voltage that is fed to the internal right leg drive amplifier.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+15
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 16 =====
+Using the ADS1298ECG-FE Software www.ti.com
+3.4.4 GPIO and OTHER Registers Tab (ADC Register)
+The GPIO and Other Registers tab, located under the Analysis tab, includes controls for GPIO1 through
+GPIO4, respiration phase and frequency, routing of the Wilson amplifiers, and derivation of the Goldberger
+terminals. Figure 14 shows the GPIO and OTHER Registers tab and all controls contained on the tab.
+Figure 14. GPIO and OTHER Register Tab
+The General-Purpose I/O Register (GPIO) controls the four general-purpose I/O pins. Each GPIO can be
+set as an input or an output via GPIOCx controls. If the output is selected, the GPIODx control is enabled
+allowing the user to set the value to output. If the GPIO is selected as an input, the GPIODx control is
+disabled and shows the value of the GPIO. If any of the GPIOs are selected as inputs, the Read GPIO
+control is enabled which allows the GPIODx values to be updated to the current GPIO value.
+The PACE Detect Register does not enable a special PACE measurement mode. The register allows for
+enabling and configuration of the PACE amplifiers. PACE Amplifier 1 can connect to input channels 1-4
+and Pace Amplifier 2 can connect to input channels 5-8.
+The Configuration 4 Register allows control over the Respiration Frequency, WCT connection to the
+RLD and lead-off comparator enable status.
+NOTE: The Respiration Frequency control is disable since the functionality is not available on the
+ADS1298 and ADS1198.
+The Respiration Control Register is disabled for the ADS1298 and not available for the ADS1198.
+ADS1298ECG-FE/ADS1198ECG-FE
+16 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 17 =====
+www.ti.com Using the ADS1298ECG-FE Software
+3.4.4.1 Wilson Central and Augmented Lead Registers
+The Wilson Central Voltage (an average voltage between the right arm [RA], left arm [LA], and left leg [LL]
+connections) can be derived from any combination of positive and negative terminals from channels 1-4
+and routed to the WCT pin. Likewise, the Augmented Leads (AVF, AVL, AVR) may be derived from
+channels 1-4 and routed to the negative terminal of channels 5, 6, and 7. Figure 15 shows these
+configurations; Figure 15a illustrates the central lead routing, and Figure 15b shows the augmented lead
+routing.
+(a) Wilson Central Lead Routing (b) Wilson Augmented Lead Routing
+IN1P
+IN1N
+IN2P
+IN2N
+IN3P
+IN3N
+IN4P
+IN4N
+IN1P
+IN1N
+IN2P
+IN2N
+IN3P
+IN3N
+IN4P
+IN4N
+To Channel
+PGAs
+8:1 MUX
+8:1 MUX
+8:1 MUX
+8:1 MUX
+8:1 MUX
+8:1 MUX
+Wcta
+To Channel
+PGAs
+avF_ch4
+WCT1[2:0]
+WCT2[5:3]
+WCT
+Wctb
+WCT2[2:0]
+Wctc
+30k 30k 30k
+80pF
+AVSS
+WCT1[2:0]
+Wcta
+ADS1294/6/8
+WCT2[5:3]
+Wctb
+avF_ch6 avF_ch5 avF_ch7
+WCT2[2:0]
+Wctc
+IN5P
+IN5N
+IN6P
+IN6N
+IN7P
+IN7N
+ADS1298
+To Channel
+PGAs
+Figure 15. Wilson Central and Augmented Lead Routing Diagrams
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+17
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 18 =====
+Using the ADS1298ECG-FE Software www.ti.com
+3.4.5 Register Map (ADC Register)
+The Register Map tab is a helpful debug feature that allows the user to view the state of all the internal
+registers. This tab is illustrated in Figure 16. Refresh Registers control updates the register map values
+with the current register settings of the ADS1298.
+NOTE: Figure 16 shows registers for ADS1298. The RESP register is not present for the ADS1198.
+Figure 16. Device Registers Settings
+ADS1298ECG-FE/ADS1198ECG-FE
+18 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 19 =====
+www.ti.com Using the ADS1298ECG-FE Software
+3.5 Analysis Tab
+The Analysis tab provides access to the different analysis options that are available using the software.
+The different analyses are grouped by sub-tabs:
+• Scope tab (Section 3.5.1)
+• Histogram tab (Section 3.5.2)
+• FFT tab (Section 3.5.3)
+• ECG tab (Section 3.5.4)
+3.5.1 Scope Tab (Anaysis)
+The Scope tool is useful for examining the exact amplitude of the measured input signals from each
+channel. Additionally, users can determine the noise contribution from each channel at a given resolution,
+and review the sampling rate, the PGA gain, and the input signal amplitude. Figure 17 illustrates the
+Scope tool features.
+Figure 17. Scope Tool Features
+In the Scope Analysis window, as Figure 18 illustrates, the different noise levels are displayed when the
+MUX is selected as Input Short, PGA gain is set to 6 (default), and the sample rate is set to 500 samples
+per second (SPS).
+Figure 18. Scope Analysis Tab (Noise Levels for Each Channel Shown)
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+19
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 20 =====
+Using the ADS1298ECG-FE Software www.ti.com
+3.5.1.1 Zoom Tool
+The zoom tool allows the user to zoom in either on all channels simultaneously or on a single channel.
+Figure 19 shows an example of the waveform examination tool with the magnifying glass zoomed in on
+Channel 2. In this case, the tool makes it much easier to determine that the noise seen on the ECG
+waveform is a result of 50Hz/60Hz line cycle noise.
+Figure 19. Zoom Tool Options
+ADS1298ECG-FE/ADS1198ECG-FE
+20 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 21 =====
+www.ti.com Using the ADS1298ECG-FE Software
+3.5.2 Histogram Tab (Analysis)
+The Histogram tool is used primarily to see the bin separation of the different amplitudes of the ECG
+waveform harmonics. Figure 20 illustrates the histogram output for a 12-lead signal. The same ECG
+Signal Zoom analysis may be used on the histogram plots for a more detailed examination of the
+amplitude bins.
+Figure 20. Histogram Bins for 12-Lead ECG Signal
+Figure 21 shows the Histogram Analysis window that is displayed when the Histogram Analysis button
+(at the bottom of the screen in Figure 20) is clicked. The analysis window shows the mean, VRMS, and VPP
+channel amplitude bins.
+Figure 21. Statistics for the Signal Amplitude of Eight ECG Channels
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+ADS1298ECG-FE/ADS1198ECG-FE
+21
+
+===== PDF PAGE 22 =====
+Using the ADS1298ECG-FE Software www.ti.com
+3.5.3 FFT Tab
+The FFT tool allows the user to examine the channel-specific spectrum as well as typical figures of merit
+such as SNR, THD, ENOB, and CMRR. Each feature is numbered below and described in detail in the
+following subsections. Figure 22 illustrates an FFT plot for a normal electrode configuration.
+Figure 22. FFT Graph of Normal Electrode Configuration
+1 - Coherent Frequency Calculator
+Coherent sampling in an FFT is defined as FAIN/FSAMPLE = NWINDOW/NTOTAL, where:
+• FAIN is the input frequency
+• FSAMPLE is the sampling frequency of the ADS1298
+• NWINDOW is the number of odd integer cycles during a given sampling period
+• NTOTAL is the number of data points (in powers of 2) that is used to create the FFT
+If the conditions for coherent sampling can be met, the FFT results for a periodic signal will be
+optimized. The Ideal AIN Frequency is a value that is calculated based on the sampling rate, such that
+the coherent sampling criteria can be met.
+2 - AC Analysis Parameters
+This section of the tool allows the user to dictate the number of harmonics, DC leakage bins, harmonic
+leakage bins, and fundamental leakage bins that are used in the creation of various histograms.
+Pressing the Windowing button, illustrated in Figure 23, allows the user to evaluate the FFT graph
+under a variety of different windows. Note that pressing the Reference button toggles between dBFS
+(decibels, full-scale) and dBc (decibels to carrier).
+Figure 23. AC Analysis Parameters: Windowing Options
+ADS1298ECG-FE/ADS1198ECG-FE
+22 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 23 =====
+www.ti.com Using the ADS1298ECG-FE Software
+3 - FFT Analysis
+Pressing the FFT Analysis button pulls up the FFT Analysis window shown in Figure 24. This window
+provides calculated parameters obtained from the collected data that may be useful during evaluation.
+One of the values included in this analysis is the channel-to-channel noise.
+Figure 24. FFT Analysis: Input Short Condition
+4 - User-Defined Dynamic Range
+This section enables the user to examine the SNR of a specific channel within a given frequency band
+defined by Low Frequency and High Frequency. The SNR displayed in this window shows under the
+Dynamic Range heading as Figure 25 illustrates.
+Figure 25. Changing the User-Defined Dynamic Range for Channel 1
+5 - Input Amplitude
+This field is a user input that is important for accurately calculating the CMRR of each channel.
+6 - Zoom Tool
+As with the Analysis, Histogram, and Scope tool, this zoom function allows a closer examination of the
+FFT at frequencies of interest, as shown in Figure 26.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+ADS1298ECG-FE/ADS1198ECG-FE
+23
+
+===== PDF PAGE 24 =====
+Using the ADS1298ECG-FE Software www.ti.com
+Figure 26. FFT Plot Using Zoom Tool
+ADS1298ECG-FE/ADS1198ECG-FE
+24 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 25 =====
+www.ti.com Using the ADS1298ECG-FE Software
+3.5.4 ECG Tab (Analysis)
+This tool allows the user to examine the input signal according to the different lead configurations. For a
+detailed description of the lead configurations, see Table 2 in Section 4.6. Figure 27 shows Leads I-III and
+the Augmented Lead outputs with the input MUX configured in Normal Electrode mode. Figure 27 also
+shows numerical annotations 1 to 4, which highlight the different features of this tool. These features are
+described in detail in the following subsections.
+Figure 27. ECG Display Tab Showing LEAD I-III and Augmented Leads
+1 - Plot Set Selection Feature
+The Plot Set Selection control allows the user to change the visual selection between:
+• Limbs and Augmented Leads displays LEAD I, LEAD II, LEAD III, aVR, aVL, and AVF signals,
+• Chest Leads displays V1 - V6 signals.
+NOTE: For display that shows 6 leads combined, the ECG signals have any DC offset removed and
+a different offset added to the signal to display the signals as shown. To see the raw ECG
+data, you can select the individual signals as described below in the Zoom feature (box 4).
+2 - ECG Separation Feature
+The ECG separation control toggles the vertical distance between the input plots. This capability is
+useful when ECG signals are large and require more separation to avoid overlap, or to collapse the
+range between signals when the ECG signals are small.
+3 - Post Processing Filters Feature
+The Post Processing Filters Features controls provides a low-pass, a 50Hz/60Hz notch, and a high-
+pass digital filters for post-processing the data from the ADS1298. To activate each filter, the Enable
+checkbox should be checked. To disable the filter, the Enable checkbox should be unchecked. Any
+combination of the three digital filters can be used by enabling the respective filter.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+25
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 26 =====
+Using the ADS1298ECG-FE Software www.ti.com
+The low-pass filter controls a digital low-pass filter, whose order and cutoff frequency are controlled
+using the Filter Order and Cutoff Freq controls in the low-pass filter part of the Post Processing
+Filters group (left side of the box).
+The notch filter provides a 50Hz/60Hz notch filter, whose order and 50Hz/60Hz notch selection are
+controlled using the Filter Order and Notch Freq controls in the low-pass filter part of the Post
+Processing Filters group (center of the box).
+The high-pass filter controls a digital high-pass filter, whose order and cutoff frequency are
+controlled using the Filter Order and Cutoff Freq controls in the high-pass filter part of the Post
+Processing Filters group (right side of the box).
+NOTE: The digital filters are not part of the ADS1298. These are digital filters implemented in the UI
+to aid in the evaluation of the ADS1298ECG-FE.
+4 - Zoom Feature
+The zoom feature is available to allow the user to navigate and view all signals at the same time, as
+shown in Figure 28. This tool allows the user to zoom in/out on the horizontal or vertical axis and pan
+left or right while viewing all ECG signals simultaneously.
+Figure 28. ECG Signal Zoom Feature for Six Leads
+Additionally, each ECG signal can be zoomed individually by moving the mouse (which appears as a plus
+icon) over the lead of interest and clicking on it. A new window opens showing the raw ECG data as read
+from the ADS1298. This window provides controls in the lower right corner to zoom in/out or pan right/left
+to provide a more detailed inspection of the individual ECG signal.
+Figure 29. ECG Signal Zoom Feature for Lead 1
+ADS1298ECG-FE/ADS1198ECG-FE
+26 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 27 =====
+www.ti.com Using the ADS1298ECG-FE Software
+3.6 Save Tab
+The Save tab provides the user the ability to save the collected data for a record of the evaluation or
+further analysis. Reference the previous sections for the list of the anlaysis data available for each
+analysis.
+The Analysis to Save group allows the user to save the different analysis calculations that were performed
+on the data.
+• Scope Analysis saves the scope analysis data available from the scope analysis pop-up window
+• FFT Analysis saves the FFT analysis data available from the FFT analysis pop-up window.
+• Histogram Analysis saves the histogram analysis data available from the histogram analysis pop-up
+window.
+• Register Settings saves the current settings from the register map and can be useful to obtain the
+register values for your specific device configuration. Saving the register map in this format is not be
+confused with saving your register settings for reloading into the software at another time (see
+Section 3.1).
+Each item will be saved if the corresponding checkbox is checked.
+The Data to Save group allows the user to save the various data sets collected from the ADS1298. The
+CH x controls allow the user to specify which channels will be saved for each of the data selections made.
+• Data - Codes selects the raw data (in codes format) to be saved to a file.
+• Data - Volts selects the raw data (converted to voltage) to be saved to a file.
+• FFT Data selects the calculated FFT data to be saved to a file. Note: This is not raw data; it is the
+frequency bin and magnitude data that was calculated by the UI.
+• Histogram Data selected the calculated Histogram data to be saved to a file. Note: This is not raw
+data; it is the code bin and number of occurrences data that was calculated by the UI.
+The User Comments/Notes group allows the user to indicate a Record Number and User Comments
+that are saved with each file. This data permits the user to distinguish different data sets from one
+another.
+The Directory to Save Files is the directory where all the saved files will be placed. The user can select a
+directory by pressing the folder button (located to the right of the control). Each data file that is saved is
+automatically named to prevent overwriting of files.
+The Save To File button saves all the data files that were selected using the checkboxes to the selected
+directory.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+ADS1298ECG-FE/ADS1198ECG-FE
+27
+
+===== PDF PAGE 28 =====
+Using the ADS1298ECG-FE Software www.ti.com
+Figure 30. Save Tab
+ADS1298ECG-FE/ADS1198ECG-FE
+28 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 29 =====
+www.ti.com ADS1x98ECG-FE Input Signals
+4 ADS1x98ECG-FE Input Signals
+NOTE: Before evaluating specific ECG functions, it is recommended that the user acquire data with
+inputs shorted internally. This configuration ensures that the board is operating properly.
+4.1 Input Short Testing
+By default, the EVM powers up with the individual channels to an internal short with a data rate of 500SPS
+and a PGA gain of 6. Once the Acquire button is pressed, the Scope Analysis should reflect input-
+referred VPP values less than 5µVPP
+4.2 Internal Test Signals Input
+Configuration Register 2 controls the signal amplitude and frequency of an internally-generated square
+wave test signal. The primary purpose of this test signal is to verify the functionality of the front-end MUX,
+the PGA, and the ADC. The test signals may be viewed on the ECG Display tab, as Figure 31 shows.
+Detailed instructions for using the ECG Display tab are provided in Section 3.5.4.
+Figure 31. Example of Internal Test Signals Viewed on the ECG Display Tab
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+ADS1298ECG-FE/ADS1198ECG-FE
+29
+
+===== PDF PAGE 30 =====
+ADS1x98ECG-FE Input Signals www.ti.com
+4.3 Temperature Sensor
+The internal temperature sensor on the ADS1298 is shown in Figure 32. When the internal MUX is routed
+to the temperature sensor input, the ADC internal temperature is calculated from the ADC output voltage
+using Equation 1.
+AVDD
+1x
+2x
+8x
+1x
+AVSS
+Figure 32. Internal Temperature Sensor
+Temperature ( C) =° Temperature Reading ( V) 145,300 V m - m
++ 25 C°
+490 V/ C m °
+(1)
+The ADC can be configured to give a temperature reading by selecting the Temperature Sensor option on
+the Channel Control Registers GUI (see Section 3.4.2.2) and verified using the Scope tab as shown in
+Figure 33. The number 0.1447V (on the y-axis) can be calculated as a temperature using Equation 1:
+Temperature = (0.1447 – 0.145300) / 0.00049 + 25 = 23.78°C
+A more detailed description of the Scope tab is provided in Section 3.5.1.
+Figure 33. Eight-Channel Read of Internal Temperature
+ADS1298ECG-FE/ADS1198ECG-FE
+30 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 31 =====
+www.ti.com ADS1x98ECG-FE Input Signals
+4.4 Normal Electrode Input
+The Normal Electrode input on the MUX routes the inputs (VINP and VINN) differentially to the internal
+PGA, as Figure 11 illustrates. In this mode, an ECG, sine wave, or pulse generator may be connected to
+test the ADS1298.
+Figure 34 shows a typical six-lead output when connected to a 5mVPEAK, 80BPM ECG signal.
+Figure 34. Normal Electrode ECG Connection in ECG Display Tab
+4.4.1 Capturing 12-Lead ECG Signals
+To capture signals from external inputs:
+1. Configure the Channel Input control in Globally Set Channels to Normal Electrode.
+2. Connect the 10 ECG electrodes from the Fluke simulator to the EVM through the DB15 connector (J1).
+Refer to Section A.5 for the ECG cable details. The ECG electrode signals are passed through a single
+pole RC filter followed by the lead configuration. For ECG signal processing, the electrode signals are
+routed through J5 to the ADS1298 input. The signal path in the board can be chosen by jumper
+settings, depending on the application.
+4.5 MVDD Input, RLD Measurement, RLD Positive Electrode Driver, and RLD Negative
+Electrode Driver
+The MVDD input option allows the measurement of the supply voltage VS = (AVDD + AVSS)/2 for channels 1,
+2, 5, 6, 7, and 8; however, the supply voltage for channel 3 will be DVDD/2. As an example, in bipolar
+supply mode, AVDD = 3.0V and AVSS = –2.5V. Therefore, with the PGA gain = 1, the output voltage
+measured by the ADC will be approximately 0.25V.
+The RLD measurement takes the voltage at the RLDIN pin and measures it on the PGA with respect to
+(AVDD + AVSS)/2. This feature is beneficial if the user would like to optimize the gain of the RLD loop.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+31
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 32 =====
+ADS1x98ECG-FE Input Signals www.ti.com
+The voltage used to derive the right leg drive for both the positive and negative electrodes may also be
+measured with respect to (AVDD + AVSS)/2.
+4.6 Lead Derivation
+The EVM is configured to generate the 12 ECG signals using 10 electrodes connected to the eight ADC
+channels. Lead I, Lead II, and V1-V6 are computed in the analog domain, while the augmented leads and
+Lead III are computed digitally. The channel assignments are described in Table 2.
+• LA = Left Arm
+• LL = Left Leg
+• RA = Right Arm
+Table 2. ADS1298 Lead Measurements
+ADS1298 Input Channels Lead(1)
+1 V6 = V6 – WCT
+2 LEAD I = LA – RA
+3 LEAD II = LL – RA
+4 V2 = V2 – WCT
+5 V3 = V3 – WCT
+6 V4 = V4 – WCT
+7 V5 = V5 – WCT
+8 V1 = V1 – WCT
+(1) WCT = (LA + RA + LL)/3
+Table 3. Derived Lead Calculations
+Derived Lead Formula Used to Calculate
+LEAD III LL - RA - LA = LEAD II - LEAD I
+aVR RA - (LA + LL) / 2 = - (LEAD I + LEAD II) / 2
+aVL LA - (RA +LL) / 2 = LEAD I - LEAD II / 2
+aVF LL - (RA + LA) / 2 = LEAD II - LEAD I /2
+4.7 Wilson Center Terminal (WCT)
+The Wilson Center Terminal voltage is internally generated by the ADS1298 device. The WCT1 and
+WCT2 registers provide controls to select any of the eight inputs (CH1P to CH4P, CH1M to CH4M) for
+routing to the three integrated WCT amplifiers.
+The ADS1298ECG-FE is configured for 12-lead ECG inputs, with the limb electrodes connected as shown
+in Table 2. During EVM power-up, the firmware configures the device to route CH2P, CH2M, and CH3P
+(RA, LA, LL) to the internal buffers. This configuration generates a signal at the WCT pin equal to (RA +
+LA + LL)/3. By installing JP16, the WCT is routed to the single-ended channels to achieve the desired
+signals.
+4.8 Right Leg Drive
+The RL electrode is driven directly by the RLD signal generated on-chip by the ADS1298. The bandwidth
+of the RLD loop is determined by R8 (392kΩ) and C20 (10nF). Users can change these values to set the
+bandwidth based on their specific application. The loop stability is determined by the user’s specific
+system. Therefore, adjustment of the feedback component values may be required to ensure stability if
+additional filtering components and long cables are added before the ADS1298ECG-FE.
+In a typical application, the RLD signal is implemented as the average of RA, LA, and LL. For system
+flexibility, the ADS1298 allows the user to select any combination of the electrodes to generate the RLD
+(see ADS1298 data sheet or ADS1198 data sheet for more details).
+ADS1298ECG-FE/ADS1198ECG-FE
+32 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 33 =====
+www.ti.com ADS1x98ECG-FE Input Signals
+4.8.1 RLD Common Mode Voltage
+The RLD common mode voltage can be set to (AVDD+AVSS)/2 or to an externally provided source. If the
+application requires the common mode to be set to any voltage other than mid-supply, this can be
+accomplished by setting the appropriate bit in the Configuration 3 Register. On the ADS1298ECG-FE, the
+external RLDREF voltage is set using resistor R1 and adjustable resistor R2 (R1 and R2 are not installed
+by default).
+During power-up, the firmware configures the device for internal RLDREF operation. To configure the RLD
+circuitry manually, use the following steps and the controls found on the ADC Register tab.
+1. Verify that the Channel Input is set to the Normal Electrode mode for all channels (Channel
+Registers tab).
+2. In CONFIG3 control register (Channel Registers tab):
+• Enable the RLD Buffer (RLD Buffer Power = Enable)
+• Set the internal RLD reference (RLDREF Signal Source)
+3. Select the electrodes for the RLD loop from the Right Leg Drive Derivation Control Registers controls
+(LOFF and RLD tab)
+Once these steps are completed, measure and verify that the voltage on either side of R38 is close to
+mid-supply. This measurement confirms whether the RLD loop is functional.
+The on-chip RLD signal can be fed back into the ADS1298 by shorting JP1. This RLD signal can then be
+sent to the ADC (to measure for debug purposes) or to other electrodes for driving (to change the
+reference drive in case the RL electrode falls off). Refer to the ADS1298 product data sheet or ADS1198
+data sheet for additional details.
+4.8.2 Driving the RLD Cable Shield
+Apart from the RLD signal, the ADS1298ECG-FE also offers three options to drive the cable shield:
+• In-phase RLD signal
+• Out-of-phase RLD signal
+• Board AGND
+Table 4 summarizes the configuration of JP15 and JP17 for each of the options.
+Table 4. RLD Jumper Options
+ECG Cable
+ELEC_SHD signal JP15 JP17
+AGND 1-2 Don't Care
+RLD (0: In phase) 2-3 2-3
+RLD (180: Out of phase) 2-3 1-2
+4.9 PACE Detection
+The ADS1298 supports data rates up to 32kSPS for software PACE detection, which typically requires a
+data rate of at least 8kSPS.
+The ADS1298ECG-FE does not include software PACE detection algorithms.
+NOTE: The ADS1298 provides the user the flexibility of doing hardware PACE detection with external circuitry.
+PACE detection can be done simultaneously on two channels: one from the odd channels and one from
+the even channels. Refer to the ADS1298 product data sheet or ADS1198 product data sheet for
+additional details.
+To turn on the PACE buffer and select the channels, set the PACE Register from the GPIO and OTHER
+Registers tab. The PGA outputs of the selected channels are available at connector J5, pins 1 and 2.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+33
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 34 =====
+ADS1x98ECG-FE Input Signals www.ti.com
+Figure 35 shows an example waveform created by a Fluke Medsim 300B processed by the ADS1298 at a
+data rate of 8kSPS. Using higher data rates increases power consumption because all channels must
+sample at this data rate simultaneously; thus, the PACE buffers offer the flexibility to process PACE
+signals separately from the ADS1298. The signal must be AC coupled to obtain the waveform\ shown
+below.
+Figure 35. Digitization of PACE Signal Using ADS1298
+ADS1298ECG-FE/ADS1198ECG-FE
+34 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 35 =====
+www.ti.com ADS1298ECG-FE/ADS1198ECG-FE Hardware Details
+5 ADS1298ECG-FE/ADS1198ECG-FE Hardware Details
+The ADS1298 ECG front-end evaluation board is configured to be used with the TI MMB0 data converter
+evaluation platform. The ADS1298ECG-FE board is a four-layer circuit board. The board schematic and
+layout are provided in Appendix A.
+The ADS1298ECG-FE can be used as a demonstration board for standard, 12-lead ECG applications with
+an input configuration of 10 electrodes. Users can also bypass the 12-lead configuration and provide any
+type of signal directly to the ADS1298 through a variety of hardware jumper settings (JP26-33; see
+Section A.4). External support circuits are provided for testing purposes such as external references,
+clocks, lead-off resistors, and shield drive amplifiers.
+Figure 36 shows the functional block diagram with important jumper names for the board.
+Figure 36. ADS1298ECG-FE Front-End Block Diagram
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+ADS1298ECG-FE/ADS1198ECG-FE
+35
+
+===== PDF PAGE 36 =====
+ADS1298ECG-FE/ADS1198ECG-FE Hardware Details www.ti.com
+5.1 Jumper Description
+Table 5 shows the jumpers on the ADS1298ECG-FE and options available for each jumper.
+Table 5. ADS1x98ECG-FE Default Jumper/Switch Configuration
+Jumper Function Settings
+JP1 Installed RLD feedback
+JP2 AVDD supply source
+1-2: AVDD selected for bipolar supply operation (AVDD = +2.5V)
+2-3: AVDD selected for single supply operation (AVDD = +3.0V)
+JP3 External Reference Connection
+(Header Not Installed)(1)
+Open: External reference not connected
+Installed: External reference connected
+JP4 Connect EVM +5V rail to
+J4(power header)
+Open: EVM +5V must be supplied externally
+Installed: EVM +5V supplied from J4 (power header)
+JP5 PWDN source Open: PWDN pin controlled from J5 header (pulled up to DVDD)
+Installed: Device is powered down (PWDN pin = AGND)
+JP6 to
+JP114
+Input signal DC/AC couples
+(Header Not Installed)
+1-2: DC-coupled input signals (Pins 1-2 shorted on PCB)
+2-3: AC-coupled input signals (Requires installation of header and cutting PCB
+short of pin 1-2)
+JP15 ECG shield drive connected
+1-2: ECG shield is grounded (AGND)
+2-3: ECG shield is connected to buffer (required U2 installation, otherwise shield
+connection is open)
+JP16 Wilson Central Terminal (WCT)
+connection
+Open: WCT NOT connected to JP26-30 and JP33
+Installed: WCT connected to JP26-30 and JP33 for connection to CH1 and CH4-8
+IN-
+JP17 ECG shield drive buffer
+input(Header Not Installed)(2)
+1-2: ECG shield drive connected to RLDOUT
+2-3: ECG shield drive connected to RLDINV
+JP18 CLK connection 1-2: CLK connected to DSP (J3.17)
+2-3: CLK connected to OSC1
+JP19 OSC1 Enable 1-2: OSC1 enabled
+2-3: OSC1 disabled
+JP20 AVSS supply source
+1-2: AVSS selected for single supply operation (AVSS = 0V (AGND))
+2-3: AVSS selected for bipolar supply operation (AVSS = -2.5V)
+1-2: CS connected to DSP via J3.1
+JP21 CS source
+2-3: CS connected to DSP via J3.7
+JP22 START source
+1-2: START comes from J3.1
+2-3: START comes from J3.14
+JP23 CLKSEL source
+1-2: External Master Clock
+2-3: Internal Master Clock (CLKSEL controlled by J3.2 (pulled up to DVDD))
+JP24 DVDD Supply Select 1-2: DVDD supply = 1.8V
+2-3: DVDD supply = 3.3V
+JP25 External Reference Selection
+(Header Not Installed)(3)
+1-2: Select U4 as reference source
+2-3: Selected U3 as reference source
+CH8- connection Open: Channel input not connected
+Installed: Channel input connected to WCT (requires JP16 to be installed)
+JP26
+CH8+ connection Open: Channel input not connected
+Installed: Channel input connected to ECG_V1
+CH7- connection Open: Channel input not connected
+Installed:Channel input connected to WCT (requires JP16 to be installed)
+JP27
+CH7+ connection Open: Channel input not connected
+Installed: Channel input connected to ECG_V5
+CH6- connection Open: Channel input not connected
+Installed: Channel input connected to WCT (requires JP16 to be installed)
+JP28
+CH6+ connection Open: Channel input not connected
+Installed: Channel input connected to ECG_V4
+(1) (3) Requires installation of JP25 and references U3/U4
+(2) Requires installation of U2
+Requires installation of JP3 and references U3/U4
+ADS1298ECG-FE/ADS1198ECG-FE
+36 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 37 =====
+www.ti.com ADS1298ECG-FE/ADS1198ECG-FE Hardware Details
+Table 5. ADS1x98ECG-FE Default Jumper/Switch Configuration (continued)
+Jumper Function Settings
+CH5- connection Open: Channel input not connected
+Installed: Channel input connected to WCT (requires JP16 to be installed)
+JP29
+CH5+ connection Open: Channel input not connected
+Installed: Channel input connected to ECG_V3
+CH4- connection Open: Channel input not connected
+Installed: Channel input connected to WCT (requires JP16 to be installed)
+JP30
+CH4+ connection Open: Channel input not connected
+Installed: Channel input connected to ECG_V2
+CH3- connection Open: Channel input not connected
+Installed: Channel input is connected to ECG_RA
+JP31
+CH3+ connection Open: Channel input not connected
+Installed: Channel input is connected to ECG_LL
+CH2- connection Open: Channel input not connected
+Installed: Channel input is connected to ECG_RA
+JP32
+CH2+ connection Open: Channel input not connected
+Installed: Channel input is connected to ECG_ LA
+CH1- connection Open: Channel input not connected
+Installed: Channel input connected to WCT (requires JP16 to be installed)
+JP33
+CH1+ connection Open: Channel input not connected
+Installed: Channel input connected to ECG_V6
+5.2 Power Supply
+The ADS1x98EVM mounts on the MMB0 EVM with connectors J2, J3 and J4. The main power supplies
+(+5V, +3V and +1.8V) for the front-end board are supplied by the host board, MMB0, through connector
+J4. All other power supplies needed for the front-end board are generated on board by power
+management devices. The EVM is shipped in +3V unipolar supply configuration.
+The ADS1298 can operate in a single supply with +3.0V to +5.0V analog supply (AVDD/AVSS) or bipolar
+mode supply (±1.5V to ±2.5V). An additional digital supply of and +1.8V to +3.0V digital supply (DVDD) is
+required for operation. The ADS1298EVM power consumption can be measured by removing the JP4
+jumper and JP24 jumper to connect an ammeter. By shorting JP5, the ADS1298 can be placed in
+powerdown mode for low power consumption.
+Test points TP5, TP6, TP7, TP8, TP9, TP10, and TP14 are provided to verify the power supplies voltages
+are correct. The test points and voltages are shown in Table 6.
+Table 6. Power-Supply Test Points
+Test Point Voltage
+TP7 +5.0V
+TP9 +1.8V
+TP10 +3.3V
+TP5 +3.0V
+TP13 +2.5V
+TP6 –2.5V
+TP8 GND
+The front-end board must be properly configured in order to achieve the various power-supply schemes.
+The default power-supply setting for the ADS1298ECG-FE is a bipolar analog supply of ±2.5V and DVDD
+of either +3V or +1.8V. Table 7 shows the board and component configurations for each analog power-
+supply scheme and Table 8 shows the board configurations for the digital supply.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+37
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 38 =====
+ADS1298ECG-FE/ADS1198ECG-FE Hardware Details www.ti.com
+Table 7. Analog Supply Configurations (AVDD/AVSS)
+Unipolar Analog Supply Bipolar Analog Supply
+AVDD/AVSS 3V 5V ±1.5V ±2.5V
+JP20 1-2 1-2 2-3 2-3
+JP2 2-3 2-3 1-2 1-2
+U7 TPS73230 TPS73250 Don't Care Don't Care
+U9 Don't Care Don't Care TPS73201 TPS73201
+U8 Don't Care Don't Care TPS72301 TPS72301
+R52 Don't Care Don't Care 21kΩ 47.5kΩ
+R53 Don't Care Don't Care 78.7kΩ 43kΩ
+R56 Don't Care Don't Care 23.3kΩ 49.9kΩ
+R57 Don't Care Don't Care 95.3kΩ 46.4kΩ
+C87, C67, C62 Not Installed Not Installed Not Installed Not Installed
+Table 8. Digital Supply Configurations (DVDD/DGND)
+DVDD +3.0V +1.8V
+JP24 1-2 2-3
+5.3 Clock
+The ADS1298 has an on-chip oscillator circuit that generates a 2.048MHz clock (nominal). This clock can
+vary by ±5% over temperature. For applications that require higher accuracy, the ADS1298 also accepts
+an external clock signal. The ADS1298ECG-FE provides an option to test both internal and external clock
+configurations. For the external signal, circuitry is available to generate the external clock from an on-
+board oscillator or from an externally connected source.
+The external oscillator included on the EVM is powered from DVDD, the same supply as the ADS1298.
+Care must be taken to ensure that the externally supplied clock oscillator can operate either with +1.8V or
++3.0V, depending on the DVDD supply configuration. Table 9 shows the jumper settings for the three
+options for the ADS1298 clocks.
+Table 9. CLK Jumper Options
+ADS1298 Clock Internal Clock External OSC Clock External Clock
+JP18 Not Installed 2-3 1-2
+JP19 Don't Care
+1-2 (Disable) 2-3 (Enable)
+Don't Care
+A 2.048MHz oscillator installed on the EVM for +3V DVDD operation is FXO-HC735-2.048MHz. If
+operation at +1.8V DVDD is desired, the oscillator will need to be replaced. SiT8002AC-34-18E-2.048 is a
+possible oscillator for +1.8V DVDD operation. The EVM is shipped with the external oscillator enabled.
+5.4 Reference
+The ADS1298 has an on-chip internal reference circuit that provides reference voltages to the device.
+Alternatively, the internal reference can be powered down and VREFP can be applied externally. This
+configuration is achieved with the external reference generators (U3 and U4) and driver buffer. NOTE: U3,
+U4, and driver buffer are not installed. The externally provided reference voltage can be set to either
+4.096V or 2.5V, depending on the analog supply voltage. Measure TP3 to make sure the external
+reference is correct. The settings for the external reference is described in Table 10.
+ADS1298ECG-FE/ADS1198ECG-FE
+38 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 39 =====
+www.ti.com ADS1298ECG-FE/ADS1198ECG-FE Hardware Details
+Table 10. External Reference Jumper Options
+Internal Reference External Reference
+ADS1298 Reference VREF = 2.5V VREFP = 4.096V VREFP = 2.5V
+JP25 Don't Care 2-3 1-2
+JP3 Not Installed Installed Installed
+The software uses the VREF value from the Reference Voltage control (CONFIG3 register) in
+Section 3.4.2.1) to calculate the input-referred voltage value for all the tests. The default value is 2.5V. If
+the user is using an alternative value, the control must be updated to display the collected data to the
+proper scale.
+5.5 Analog Output Signals
+Several output signals from the ADS1298 are provided on the J5 header. Table 11 lists the various test
+signals and their location on the header. The PACEOUT pins can also be used as an auxiliary differential
+input channel. Alternatively with appropriate user configuration, these pins may provide PACE detection
+for use with external PACE detection circuitry (see PACE Detect Register in Section 3.4.4).
+Table 11. Test Signals
+Signal J5 Pin Number Signal
+PACEOUT2 1 2 PACEOUT1
+NOT CONNECTED 3 4 NOT CONNECTED
+PWDNB 5 6 GPIO4
+DAISY_IN 7 8 GPIO3
+GND 9 10 NOT CONNECTED
+5.6 Digital Signals
+The ADS1298 digital signals (including SPI interface signals, some GPIO signals, and some of the control
+signals) are available at connector J3. These signals are used to interface to the MMB0 board DSP. The
+pinout for this connector is given in Table 12.
+Table 12. Serial Interface Pinout
+Signal J3 Pin Number Signal
+START/CS 1 2 CLKSEL
+CLK 3 4 GND
+NC 5 6 GPIO1
+CS 7 8 RESETB
+NC 9 10 GND
+DIN 11 12 GPIO2
+DOUT 13 14 NC/START
+DRDYB 15 16 NC
+NC 17 18 GND
+NC 19 20 NC
+5.7 Analog Input Signals
+The ADS1298ECG-FE provides users the option to feed in standard ECG signals from a patient simulator
+to the DB15 connector (J1), or to feed inputs from any arbitrary signal source directly to the ADS1298.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+ADS1298ECG-FE/ADS1198ECG-FE
+39
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 40 =====
+ADS1298ECG-FE/ADS1198ECG-FE Hardware Details www.ti.com
+5.7.1 Patient Simulator Input
+The output from any typical patient simulator can be directly fed into the DB15 connector (J1). For all
+measurements in this user guide, a Fluke medSim 300B simulator was used as the ECG signal source
+(Figure 37) . The simulator is capable of generating ECG signals down to 50µV of amplitude. Particular
+attention must be given to the common-mode value of the input signal for proper data capture. Refer to
+the ADS1298 product data sheet or ADS1198 product data sheet for the common-mode range for various
+programmable gain amplifier (PGA) gain settings. Section 4.4.1 explains the process used to capture 12-
+lead ECG data.
+Figure 37. Fluke Simulator Configuration
+5.7.2 Arbitrary Input Signals
+Arbitrary input signals can be connected to the ADS1298 by bypassing the DB15 connector and feeding
+the signal directly at jumpers JP26-JP33. This requires the removal of the 16 jumpers at JP26-JP33. The
+input signal must be connected differentially since each ADC channel input is differential. If it is desired to
+connect single-ended signals, bias the negative input of the channels to a mid-supply voltage.
+NOTE: Ensure that the single-ended signal has an offset equal to the voltage supplied at the
+negative input of the channel.
+ADS1298ECG-FE/ADS1198ECG-FE
+40 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 41 =====
+Appendix A
+SBAU171D–May 2010–Revised January 2016
+Schematics, BOM, Layout, and ECG Cable Details
+A.1 Overview
+This section contains the complete bill of materials, printed circuit board (PCB) layouts, and schematic
+diagrams for the ADS1x98ECG-FE.
+NOTE: Board layouts are not to scale. These are intended to show how the board is laid out; they
+are not intended to be used for manufacturing ADS1298ECG-FE PCBs.
+A.2 ADS1x98ECG-FE Front-End Board Schematics
+The ADS1x98ECG-FE schematic is appended to this document.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Schematics, BOM, Layout, and ECG Cable Details
+Copyright © 2010–2016, Texas Instruments Incorporated
+41
+
+===== PDF PAGE 42 =====
+Bill of Materials www.ti.com
+A.3 Bill of Materials
+Table 13 lists the bill of materials for the ADS1x98ECG-FE.
+Table 13. Bill of Materials: ADS1x98ECG-FE
+Count RefDes Description Size Part Number MFR
+1 NA Printed wiring board 6514709 TI
+15 C1, C2, C3, C4, C5,
+C6, C11, C17, C47,
+C48, C49, C52, C58,
+C76, C77
+Capacitor, ceramic 1µF 25V 10% X5R 0603 GRM188R61E105KA12D Murata
+0 C7, C8, C15, C19,
+C21, C22, C25, C27,
+C34, C36, C38, C40,
+C41, C42, C43, C44,
+C56, C62, C67, C78,
+C79, C81, C83, C85,
+C87, C89
+Not installed
+1 C9 Capacitor, ceramic 22µF 6.3V 10% X5R 0805 JMK212BJ226KG-T Taiyo Yuden
+11 C10, C45, C46, C50,
+C51, C54, C55, C60,
+C61, C65, C66
+Capacitor, ceramic 10µF 10V 10% X5R 0805 GRM219R61A106KE44D Murata
+10 C12, C13, C14, C16,
+C18, C57, C69, C70,
+C94, C95
+Capacitor, ceramic 0.1µF 50V 10% X7R 0603 GRM188R71H104KA93D Murata
+1 C20 Capacitor, ceramic 10nF 50V 10% X7R 0603 GRM188R71H103KA01D Murata
+20 C23, C24, C26, C28,
+C29, C30, C31, C32,
+C72, C73, C74, C75,
+C80, C82, C84, C86,
+C88, C91, C92, C93
+Capacitor, ceramic 47pF 50V 5% C0G 0603 GRM1885C1H470JA01D Murata
+0 C33, C35, C37 Not installed
+0 C39 Not installed
+4 C53, C59, C63, C64 Capacitor, ceramic 2.2µF 6.3V 10% X5R 0603 GRM185R60J225KE26D Murata
+2 C68, C71 Capacitor, ceramic 100µF 10V 20% X5R 1210 LMK325BJ107MM-T Taiyo Yuden
+1 C90 Capacitor, ceramic 1000pF 50V 5% X7R 0603 C1608X7R1H102J TDK
+0 D1 - D10 Not installed
+1 J1 Connector, DSUB Rcpt 15-position R/A PCB SLD D15S13A4GV00LF FCI
+2 J2, J3 10x2x0.1 female (installed from bottom side) SSW-110-21-FM-D Samtec
+1 J4 5x2x0.1 female (installed from bottom side) SSW-105-21-FM-D Samtec
+0 J5 Not installed
+4 JP1, JP4, JP5, JP16 2-position jumper 0 .1" spacing TSW-102-07-T-S Samtec
+0 JP3 Not installed
+0 JP6, JP7, JP8, JP9,
+JP10, JP11, JP12,
+JP13, JP14, JP17,
+JP25
+Not installed
+9 JP2, JP15, JP18,
+JP19, JP20, JP21,
+JP22, JP23, JP24
+3-position jumper 0.1" spacing TSW-103-07-T-S Samtec
+8 JP26, JP27, JP28,
+JP29, JP30, JP31,
+JP32, JP33
+2x2x0.1, 2-pin dual row header TSW-102-07-T-D Samtec
+5 L1 - L5 Ferrite bead 470Ω 0805 BK2125HM471-T Taiyo Yuden
+0 R1, R4, R5, R11,
+R12, R15, R16, R19,
+R20, R23, R24, R27,
+R28, R31, R32, R35,
+R36, R41, R42, R45 -
+R51, R54, R55, R58 -
+R66, R68, R69, R70
+Not installed
+0 R2 Not installed
+5 R3, R71, R72, R73,
+R74
+Resistor, 0.0Ω 1/10W 5% SMD 0603 RC0603JR-070RL Yageo
+42 SBAU171D–May 2010–Revised January 2016
+Schematics, BOM, Layout, and ECG Cable Details
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 43 =====
+www.ti.com Bill of Materials
+Table 13. Bill of Materials: ADS1x98ECG-FE (continued)
+Count RefDes Description Size Part Number MFR
+14 R6, R7, R10, R14,
+R18, R22, R26, R30,
+R34, R38, R40, R44,
+R67, R75
+Resistor, 10.0kΩ 1/10W 1% SMD 0603 RC0603FR-0710KL Yageo
+1 R8 Resistor, 392kΩ 1/10W 1% SMD 0603 RC0603FR-07392KL Yageo
+10 R9, R13, R17, R21,
+R25, R29, R33, R37,
+R39, R43
+Resistor, 22.1kΩ 1/10W 1% SMD 0603 RC0603FR-0722K1L Yageo
+1 R52 Resistor, 47.5kΩ 1/10W 1% SMD 0603 RC0603FR-0747K5L Yageo
+1 R53 Resistor, 43.2kΩ 1/10W 1% SMD 0603 RC0603FR-0743K2L Yageo
+1 R56 Resistor, 49.9kΩ 1/10W 1% SMD 0603 RC0603FR-0749K9L Yageo
+1 R57 Resistor, 46.4kΩ 1/10W 1% SMD 0603 RC0603FR-0746K4L Yageo
+5 TP1, TP2, TP8, TP11,
+TP12
+Test point PC Mini .040"D BLACK 5001 Keystone
+8 TP3, TP4, TP5, TP6,
+TP7, TP9, TP10,
+TP13
+Test point PC Mini .040"D RED 5000 Keystone
+1 U1(1) IC ADC 24BIT SPI 32KSPS 64TQFP ADS1298IPAG TI
+IC ADC 16BIT SPI 8KSPS 64TQFP ADS1198IPAG TI
+0 U2 Not Installed
+0 U3, U4, U5 Not installed
+1 U6 IC UNREG CHRG PUMP V INV SOT23-5 TPS60403DBVR TI
+1 U7 IC LDO REG 250MA 3.0V SOT23-5 TPS73230DBVT TI
+1 U8 IC LDO REG NEG 200MA ADJ SOT23-5 TPS72301DBVT TI
+1 U9 IC LDO REG 250MA ADJ-V SOT23-5 TPS73201DBV TI
+1 U10 IC EEPROM 256KBIT 400KHZ 8TSSOP 24AA256-I/ST Microchip
+1 OSC1 OSC 2.0480 MHz 3.3V HCMOS SMT FXO-HC735-2.048MHZ Fox
+(1) Installed device is determined by Installed Device checkbox located near lower left corner of the board.
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Schematics, BOM, Layout, and ECG Cable Details
+43
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 44 =====
+Printed Circuit Board Layout www.ti.com
+A.4 Printed Circuit Board Layout
+Figure 38 through Figure 43 show the ADS1x98ECG-FE PCB layouts.
+Figure 39. Top Layer
+Figure 38. Top Component Placement
+Figure 40. Bottom Component Placement Figure 41. Bottom Layer
+44 SBAU171D–May 2010–Revised January 2016
+Schematics, BOM, Layout, and ECG Cable Details
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 45 =====
+www.ti.com Printed Circuit Board Layout
+Figure 42. Internal Ground Plane (Layer 2) Figure 43. Internal Power Plane (Layer 3)
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Schematics, BOM, Layout, and ECG Cable Details
+45
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 46 =====
+ECG Cable Details www.ti.com
+A.5 ECG Cable Details
+Figure 44 shows the details of the recommended ECG cable.
+Cable details:
+• 10-lead ECG cable for Philips/HP-snap, button (Part No: 010302013);
+http://www.biometriccables.com/index.php?productID=692
+• 10-lead ECG cable for Philips/HP-Clip-on type (Part No: 010303013A);
+http://www.biometriccables.com/index.php?productID=693
+Another compatible cable for the ADS1298ECG-FE: HP/Philips/Agilent-compatible 10-lead ECG cable.
+Figure 44. ECG Cable Schematic
+46 SBAU171D–May 2010–Revised January 2016
+Schematics, BOM, Layout, and ECG Cable Details
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 47 =====
+Appendix B
+SBAU171D–May 2010–Revised January 2016
+External Optional Hardware
+B.1 Optional External Hardware (Not Included)
+The input of the ADS1x98ECG-FE requires a DB15 connector. Figure 45 illustrates the most optimal cable
+connection to the ADS1298ECG-FE. Figure 46 and Figure 47 show two alternate ways that cables can be
+constructed to interface with the ADS1x98ECG-FE. Figure 48 shows an alternate testing tool to the
+instrument used in the tests for this user guide (refer to Section 5.7.1).
+Figure 45. 15-Pin, Shielded Connector from Biometric Cables
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+External Optional Hardware
+47
+
+===== PDF PAGE 48 =====
+Optional External Hardware (Not Included) www.ti.com
+Figure 47. 15-Pin, Twisted Wire Cable
+Figure 46. 15-Pin, Twisted Wire Cable to Banana Jacks
+Figure 48. Cardiosim ECG Simulator Tool
+48 SBAU171D–May 2010–Revised January 2016
+External Optional Hardware
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 49 =====
+www.ti.com ADS1x98ECG-FE Power-Supply Recommendations
+B.2 ADS1x98ECG-FE Power-Supply Recommendations
+If you chose to power the MMB0 board through the wall adapter jack, it must comply with the following
+requirements:
+• Output voltage: 5.5 VDC to 15 VDC
+• Maximum output current: 500 mA
+• Output connector: barrel plug (positive center), 2.5-mm I.D. x 5.5-mm O.D. (9-mm insertion depth)
+• Complies with applicable regional safety standards
+Figure 49 shows a +6V power-supply cable (not provided in the EVM kit) connected to a battery pack with
+four 1.5V batteries connected in series. Connecting to a wall-powered source makes the ADS1x98ECG-
+FE more susceptible to 50Hz/60Hz noise pickup; therefore, for best performance, it is recommended to
+power the ADS1x98ECG-FE with a battery source. This configuration minimizes the amount of noise
+pickup seen at the digitized output of the ADS1298.
+Figure 49. Recommended Power Supply for ADS1x98ECG-FE
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+External Optional Hardware
+49
+
+===== PDF PAGE 50 =====
+Appendix C
+SBAU171D–May 2010–Revised January 2016
+Software Installation
+C.1 Minimum Requirements
+Before installing the software, verify that the PC meets the minimum requirements outlined below.
+• Pentium III®/Celeron® processor, 866MHz or equivalent
+• Minimum 256MB of RAM (512MB or greater recommended)
+• USB 1.1-compatible input
+• Hard disk drive with at least 200MB free space
+• Microsoft® Windows® XP operating system with SP2 or Windows 7 operating systems (Windows Vista
+not tested)
+• Mouse or other pointing device
+• 1280 x 960 minimum display resolution
+C.2 Installing the Software
+CAUTION
+Do not connect the ADS1x98ECG-FE before installing the software on a
+suitable PC. Failure to observe this caution may cause Microsoft Windows to
+not recognize the ADS1x98ECG-FE.
+The latest software is available from the ADS1x98ECGFE-PDK product folder on the TI web site. Check
+the TI web site regularly for updated versions.
+To install the ADS1298 software:
+• Download the software from the ADS1298ECG-FE product page
+• Click on the executable file ads129xecg-fe-y.y.y.exe, where y.y.y represents the version number of
+the software installer.
+To install the ADS1198 software:
+• Download the software from the ADS1198ECG-FE product page
+• Click on the executable file ads1198ecg-fe-y.y.y.exe, where y.y.y represents the version number of
+the software installer.
+Then follow the prompts illustrated in Figure 50 through Figure 53.
+You must accept the license agreement (shown in Figure 51) before proceeding with the installation.
+Software Installation
+50 SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 51 =====
+www.ti.com Installing the Software
+Figure 50. Initialization of ADS1x98ECG-FE Figure 51. License Agreement
+Figure 52. Installation Process Figure 53. Completion of ADS1x98ECG-FE Software
+Installation
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Software Installation
+51
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 52 =====
+Installing the Software www.ti.com
+1
+2
+3
+4
+5
+6
+D
+R9
+22.1k
+R13
+22.1k
+C
+AVDD AVSS
+D1
+NI
+R10
+10k
+C91
+47pF
+C72
+47pF
+AGND AGND
+AVDD AVSS
+D2
+NI
+R14
+10k
+C80
+47pF
+C73
+47pF
+AGND AGND
+C78 AVDD
+R11
+NI
+NI
+R17
+22.1k
+JP11
+ECG_V2
+C81 R12
+NI
+AVSS
+AVDD
+R15
+NI
+NI
+ECG_V2
+NI
+JP10
+ECG_V3
+R21
+22.1k
+R16
+NI
+NI
+ECG_V3
+J1
+AVDD AVSS
+D5
+NI
+R18
+10k
+C28
+47pF
+C26
+47pF
+AGND AGND
+AVDD AVSS
+D6
+NI
+R22
+10k
+C82
+47pF
+AGND
+C27 AVDD
+R19
+NI
+NI
+R25
+22.1k
+JP9
+ECG_V4
+C83 R20
+NI
+AVSS
+AVDD
+R23
+NI
+NI
+ECG_V4
+R28
+NI
+NI
+R29
+22.1k
+C29
+47pF
+AGND
+R24
+NI
+JP8
+ECG_V5
+ECG_V5
+NI
+AVDD
+AVDD AVSS
+R27
+NI
+D8
+NI
+R26
+C79 NI
+10k
+C93
+47pF
+C32
+47pF
+AGND AGND
+AVDD AVSS
+D9
+NI
+R30
+10k
+C84
+47pF
+C75
+47pF
+AGND AGND
+D
+JP6
+ECG_V6
+ECG_V6
+NI
+C85 AVSS
+AVDD
+R31
+NI
+NI
+R32
+NI
+JP7
+ECG_V1
+ECG_V1
+NI
+C
+ELEC_V2
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+ELEC_V3
+ELEC_V4
+ELEC_V5
+ELEC_V6
+ELEC_SHD
+ELEC_RA
+ELEC_LA
+ELEC_LL
+ELEC_V1
+ELEC_RL
+DB15_F-RA
+AVSS
+AVDD AVSS
+D3
+NI
+AVSS
+AVSS
+AVDD
+R41
+NI
+ECG_SHD_DRV
+JP15
+B
+AGND
+R39
+22.1k
+R43
+22.1k
+R40
+10k
+C86
+47pF
+C74
+47pF
+AGND AGND
+AVDD AVSS
+D4
+NI
+R44
+10k
+C24
+47pF
+C23
+47pF
+AGND AGND
+C87 NI
+R33
+22.1k
+JP14
+C25 R42
+NI
+AVSS
+AVDD
+R45
+NI
+NI
+NI
+JP13
+R46
+NI
+NI
+AVDD
+AVDD AVSS
+R35
+NI
+D7
+NI
+R34
+C89 NI
+10k
+JP12
+C88
+C30
+R36
+ECG_RA ECG_LL
+ECG_RA
+47pF
+47pF
+NI
+NI
+AGND AGND
+AVSS
+AVDD AVSS
+D10
+NI
+R38
+ECG_RL
+10k
+ECG_LA
+ECG_LA
+C92
+47pF
+C31
+47pF
+AGND AGND
+B
+R37
+22.1k
+A
+AVSS
+ECG_LL
+ECG_RL
+12500 TI Boulevard. Dallas, Texas 75243
+Title:
+ADS1298 ECG FE
+Engineer:
+Tom Hendrick
+DOCUMENTCONTROL #
+Drawn By:
+Tom Hendrick
+ti
+A
+REV:
+C
+FILE:
+DATE:
+25-Aug-2010
+SIZE:
+SHEET: OF:
+1 5
+1 2 3 4 5 6
+Software Installation
+52 SBAU171D–May 2010–Revised January 2016
+Copyright © 2010–2016, Texas Instruments Incorporated
+Submit Documentation Feedback
+
+===== PDF PAGE 53 =====
+www.ti.com Installing the Software
+1
+2
+3
+4
+5
+6
+D
+AVDD
+R59
+NI
+R60
+NI
+R61
+NI
+C
+AVDD
+C21 NI
+5
+AGND
+U2
+NI
+1
+R4
+ECG_SHD_DRV ECG_SHD_DRV
+4
+NI
+3
+ECG_RL
+R63
+NI
+R64
+NI
+ECG_RL
+R65
+NI
+R66
+NI
+2
+C22 NI
+AGND
+AVSS
+ECG_V6
+JP17
+NI
+R5 NI
+JP1
+R3 0
+C20
+0.01uF
+WCT
+JP16
+R8
+392K
+AVSS
+C90
+AVDD
+R1
+NI
+R2
+NI
+AVSS
+VCAP3
+D
+C3
+1uF
+C13
+AVSS
+R62
+NI
+JP26
+0.1uF
+1 2
+3 4
+100pF
+JP27
+1 2
+3 4
+DVDD
+JP28
+ECG_V6
+ECG_V1
+ECG_V5
+ECG_V4
+ECG_V3
+ECG_V2
+ECG_LL
+ECG_RA
+ECG_LA
+ECG_V1
+1 2
+3 4
+U1
+ADS1198
+64
+ECG_V5
+JP29
+ECG_V4
+1 2
+3 4
+ECG_V3
+JP30
+ECG_V2
+1 2
+3 4
+ECG_LL
+ECG_RA
+JP31
+ECG_LA
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+1 2
+3 4
+12
+R58
+NI
+JP32
+1 2
+3 4
+AVSS
+JP33
+1 2
+3 4
+13
+14
+15
+16
+31
+AGND
+18
+B
+AVDD
+AVDD
+C8
+AVDD
+C6
+C16
+C7
+C19
+1uF
+0.1uF
+NI
+NI
+NI
+AVSS AVSS
+AGND
+AVDD
+AVDD
+DVDD
+C4
+C14
+C17
+C18
+C12
+1uF 0.1uF
+1uF
+0.1uF
+0.1uF
+AVSS
+AGND AGND
+C15
+NI
+C5
+VREFP
+PACEOUT2
+PACEOUT1
+PACEOUT2
+PACEOUT1
+C10
+TP3
+10uF
+AVSS
+VREFP
+C95
+0.1uF
+1uF
+TP1 TP2
+TP11 TP12
+AGND
+RLDINV
+RLDOUT
+RLDIN
+AVDD
+WCT
+IN8N
+IN8P
+IN7N
+IN7P
+IN6N
+IN6P
+IN5N
+IN5P
+IN4N
+IN4P
+IN3N
+IN3P
+IN2N
+IN2P
+IN1N
+IN1P
+RESV1
+RLDINV 61
+RLDOUT 63
+RLDIN 62
+RLDREF 60
+AVDD 21
+AVDD 19
+AVSS 58
+AVSS 57
+AVSS 20
+AVSS 23
+AVDD 56
+AVDD 59
+AVDD 22
+VCAP3 55
+AVDD1 54
+AVSS1 53
+CLKSEL DGND DVDD AVSS DGND DVDD /DRDY GPIO4 DOUT GPIO2 GPIO3 SCLK /CS CLK PACE_OUT2
+PACE_OUT1
+START RESV3/NC
+VREFN
+RESV2/NC
+/PWDN
+VCAP1
+GPIO1
+DAISY_IN
+DIN VCAP2
+/RESET
+DGND 52
+49
+50
+32
+51
+48
+47
+46
+43
+44
+45
+40
+39
+37
+38
+34
+33
+26
+24 VCAP4
+VREFP
+AGND
+36
+DVDD
+R6
+10K
+R7
+10K
+CLK
+/RESET
+GPIO1
+/RESET
+GPIO1
+/PWDN
+DAISY_IN
+/PWDN
+DAISY_IN
+VCAP2
+VBG
+JP5
+C33
+C9
+C2
+AGND
+NI
+22uF
+1uF
+AVSS
+AVSS
+PACEOUT1
+GPIO4
+GPIO3
+AVSS
+C76
+1uF
+CLKSEL
+SPI_DRDY
+GPIO4
+SPI_OUT
+GPIO2
+GPIO3
+SPI_CLK
+C77
+1uF
+AGND
+CLKSEL
+SPI_DRDY
+GPIO4
+SPI_OUT
+GPIO2
+GPIO3
+SPI_CLK
+DVDD
+R75
+10K
+C
+SPI_CS
+SPI_CS
+SPI_START
+SPI_IN
+17
+29
+25
+27
+35
+28
+42
+41
+30
+DVDD
+SPI_START
+SPI_IN
+C11
+1uF
+AGND
+JP18
+EXT_CLK
+4
+3
+OSC1
+VDD
+E/D 1
+Output
+GND 2
+HC735-2.048MHZ
+EXT_CLK
+JP19
+AGND
+B
+VCAP4
+C1
+1uF
+AVSS
+J5
+A
+2
+4
+6
+8
+10
+NI
+1
+3
+5
+7
+9
+PACEOUT2
+/PWDN
+DAISY_IN
+AGND
+Engineer:
+Tom Hendrick
+Drawn By:
+Tom Hendrick
+FILE:
+ECG ADC Frontend
+Title:
+ti
+12500 TI Boulevard. Dallas, Texas 75243
+ADS1298 ECG FE
+DOCUMENTCONTROL #
+REV:
+C
+DATE:
+25-Aug-2010
+SIZE:
+SHEET: OF:
+2 5
+A
+1 2 3 4 5 6
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Software Installation
+53
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 54 =====
+Installing the Software www.ti.com
+1
+2
+3
+4
+5
+6
+D
+D
+External Reference
+1
+External Reference Drivers
+AVDD
+C34
+N/C
+N/C 8
+VIN
+TEMP
+GND
+N/C 7
+U3
+NI
+OUT 6
+TRIM 5
+2
+C40 NI
+3
+4
+NI
+C43
+C35
+NI
+AVSS
+AVDD
+NI
+7
+C
+AVSS
+AVDD
+C36
+2
+R49
+NI
+3
+1
+2
+N/C
+N/C 8
+VIN
+TEMP
+GND
+N/C 7
+U4
+NI
+OUT 6
+TRIM 5
+JP25
+NI
+R47
+NI
+R48
+NI
+R50 NI
+C41 8
+U5
+NI
+C42 NI
+6
+NI
+AGND
+R51
+NI
+JP3
+VREFP
+NI
+C
+C38
+NI
+C39
+NI
+3
+4
+NI
+C44
+C37
+NI
+AVSS
+4
+AVSS
+AGND
+NI
+AVSS
+NOT INSTALLED
+B
+B
+A
+ti
+A
+Engineer:
+Drawn By:
+Tom Hendrick
+Tom Hendrick
+12500 TI Boulevard. Dallas, Texas 75243
+Title:
+ADS1298 ECG FE
+DOCUMENTCONTROL #
+REV:
+C
+FILE:
+DATE:
+25-Aug-2010
+SIZE:
+SHEET: OF:
+3 5
+1 2 3 4 5 6
+Software Installation
+54 SBAU171D–May 2010–Revised January 2016
+Copyright © 2010–2016, Texas Instruments Incorporated
+Submit Documentation Feedback
+
+===== PDF PAGE 55 =====
+www.ti.com Installing the Software
+1
+2
+3
+4
+5
+6
+C48
+D
+D
+VCC_5v
+C45
+10uF
+L1
+3.3uH
+AGND 1uF
+2 OUT 1
+IN
+CFLY+ 5
+CFLY- 3
+U6
+C46
+C47
+10uF
+1uF
+GND
+AGND
+U7
+TP4
+4
+1
+C52
+C
+1uF
+3
+AGND
+2
+IN
+EN
+GND
+TPS60403
+AGND
+OUT 5
+NR/FB 4
+R54
+NI
+R55
+NI
+TPS73230
+U9
+C53
+C54
+2.2uF
+10uF
+AGND
+C56
+NI
+AGND
+AGND
+1
+AGND
+C58
+1uF
+3
+AGND
+2
+IN
+EN
+GND
+OUT 5
+NR/FB 4
+B
+R56
+49.9K
+R57
+46.4K
+C59
+C60
+2.2uF
+10uF
+AGND
+C62
+NI
+AGND
+VCC_-5v
+AGND
+2
+TPS73201
+U8
+AGND
+C63
+2.2uF
+3
+IN
+EN
+GND
+OUT 5
+NR/FB 4
+R52
+47.5K
+L2
+3.3uH
+C49
+C50
+C51
+1uF
+10uF
+10uF
+AGND AGND
+L3
++3.0V
+3.3uH C55
+10uF
+AGND
+L5
++2.5V
+3.3uH C61
+10uF
+AGND
+L4
+-2.5V
+3.3uH C66
+10uF
+AGND
+VCC_-5v
+TP5
+JP2
+AVDD
+C
+C57
+0.1uF
+TP13
+TP6
+B
+AGND
+1
+TPS72301
+AGND
+R53
+43.2K
+A
+C64
+C65
+2.2uF
+10uF
+AGND
+C67
+NI
+AGND
+JP20
+AVSS
+AGND
+AGND
+ECG Power Supplies
+ti
+12500 TI Boulevard. Dallas, Texas 75243
+Title:
+ADS1298 ECG FE
+Engineer:
+Tom Hendrick
+DOCUMENTCONTROL #
+Drawn By:
+Tom Hendrick
+A
+REV:
+C
+FILE:
+DATE:
+25-Aug-2010
+SIZE:
+SHEET: OF:
+4 5
+1 2 3 4 5 6
+SBAU171D–May 2010–Revised January 2016
+Submit Documentation Feedback
+Software Installation
+55
+Copyright © 2010–2016, Texas Instruments Incorporated
+
+===== PDF PAGE 56 =====
+Installing the Software www.ti.com
+1
+2
+3
+4
+5
+6
+D
+D
+MDK Interface Connectors
+DVDD
+DVDD
+R67
+10K
+C71 100uF
+J4
+C
+J2
+1 2
+3 4
+5 6
+7 8
+9 10
+11 12
+13 14
+15 16
+17 18
+19 20
+Dummy Connector
+1 2
+JP21
+3 4
+SPI_CLK
+SPI_CS
+J3
+11 12
+TP7
+JP4
+5 6
+7 8
+9 10
+GPIO1
+/RESET
+GPIO2
+C69
+SPI_IN
+SPI_OUT
+SPI_DRDY
+EXT_CLK
+13 15 17 14
+16
+18
+0.1uF
+19 20
+JP22
+SPI_START
+AGND
+SDA
+JP23
+CLKSEL
+VCC_5v
+VCC_3.3V
+C94 0.1uF
+U10
+SCL
+8
+VCC
+6
+5 SCL
+SDA
+7
+WP
+A0 1
+A1 2
+A2 3
+GND 4
+C68
+100uF
+VCC_3.3V
+R68 NI
+R69 NI
+R70 NI
+24AA256-I/ST
+R71
+0
+R72
+0
+R73
+0
+2
+4
+6
+8
+10
+1
+3
+5
+7
+9
+TP9
+VCC_1.8V
+JP24
+C70
+AGND
+0.1uF
+TP10
+VCC_3.3V
+TP8
+C
+R74 0
+AGND
+NOTE: J2, J3, J4 female connectors should be populated from the bottom side !
+B
+B
+A
+ECG MDK Board Interface Adapter
+Title:
+Engineer:
+ti
+12500 TI Boulevard. Dallas, Texas 75243
+ADS1298 ECG FE
+Tom Hendrick
+DOCUMENTCONTROL #
+Drawn By:
+Tom Hendrick
+1 2 3 4 A
+5 6
+REV:
+C
+FILE:
+DATE:
+25-Aug-2010
+SIZE:
+SHEET: OF:
+5 5
+Software Installation
+56 SBAU171D–May 2010–Revised January 2016
+Copyright © 2010–2016, Texas Instruments Incorporated
+Submit Documentation Feedback
+
+===== PDF PAGE 57 =====
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025

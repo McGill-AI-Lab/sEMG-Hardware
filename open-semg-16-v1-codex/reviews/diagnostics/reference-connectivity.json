@@ -1,0 +1,5651 @@
+{
+  "components": {
+    "BT1": {
+      "value": "Battery",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "Battery",
+        "description": "Multiple-cell battery"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.7V",
+          "function": "+_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": "-_2",
+          "type": "passive"
+        }
+      }
+    },
+    "C1": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN1P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C2": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN1N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C3": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN2P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C4": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN2N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C5": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN3P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C6": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C7": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C8": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "DGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C9": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "DGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C10": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN3N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C11": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN4P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C12": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN4N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C13": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN5P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C14": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN5N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C15": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN6P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C16": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN6N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C17": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN7P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C18": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN7N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C19": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-VREFP)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C20": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-VREFP)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C21": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN8P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C22": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-IN8N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C23": {
+      "value": "22uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-VCAP1)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C24": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-VCAP2)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C25": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-VCAP3)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C26": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U1-VCAP4)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C27": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN1P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C28": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN1N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C29": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN2P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C30": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN2N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C31": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN3P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C32": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C33": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C34": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "DGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C35": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "DGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C36": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN3N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C37": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN4P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C38": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN4N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C39": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN5P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C40": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN5N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C41": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN6P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C42": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN6N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C43": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN7P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C44": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN7N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C45": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-VREFP)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C46": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-VREFP)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C47": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN8P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C48": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-IN8N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C49": {
+      "value": "22uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-VCAP1)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C50": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-VCAP2)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C51": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-VCAP3)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C52": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U2-VCAP4)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C53": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.7V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C54": {
+      "value": "2.2uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C55": {
+      "value": "10nF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        },
+        "1": {
+          "net": "Net-(U4-BP)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C56": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.7V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "C57": {
+      "value": "200uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "AGND",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "E1": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E1-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E1-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E2": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E2-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E2-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E3": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E3-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E3-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E4": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E4-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E4-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E5": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E5-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E5-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E6": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E6-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E6-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E7": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E7-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E7-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E8": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E8-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E8-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E9": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E9-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E9-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E10": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E10-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E10-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E11": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E11-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E11-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E12": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E12-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E12-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E13": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E13-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E13-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E14": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E14-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E14-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E15": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E15-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E15-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "E16": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E16-Pin_1)",
+          "function": "Pin_1_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(E16-Pin_2)",
+          "function": "Pin_2_2",
+          "type": "passive"
+        }
+      }
+    },
+    "R1": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E1-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN1P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R2": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E1-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN1N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R3": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E2-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN2P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R4": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E2-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN2N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R5": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E3-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN3P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R6": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E3-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN3N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R7": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E4-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN4P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R8": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E4-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN4N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R9": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E5-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN5P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R10": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E5-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN5N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R11": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E6-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN6P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R12": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E6-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN6N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R13": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E7-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN7P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R14": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E7-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN7N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R15": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E8-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN8P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R16": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E8-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U1-IN8N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R17": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E9-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN1P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R18": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E9-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN1N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R19": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E10-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN2P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R20": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E10-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN2N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R21": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E11-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN3P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R22": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E11-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN3N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R23": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E12-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN4P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R24": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E12-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN4N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R25": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E13-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN5P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R26": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E13-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN5N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R27": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E14-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN6P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R28": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E14-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN6N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R29": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E15-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN7P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R30": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E15-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN7N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R31": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E16-Pin_1)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN8P)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "R32": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "pins": {
+        "1": {
+          "net": "Net-(E16-Pin_2)",
+          "function": null,
+          "type": "passive"
+        },
+        "2": {
+          "net": "Net-(U2-IN8N)",
+          "function": null,
+          "type": "passive"
+        }
+      }
+    },
+    "U1": {
+      "value": "ADS1298xPAG",
+      "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "libsource": {
+        "lib": "Analog_ADC",
+        "part": "ADS1298xPAG",
+        "description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+      },
+      "pins": {
+        "17": {
+          "net": "+3.3V",
+          "function": "TESTP_PACE_OUT1_17",
+          "type": "bidirectional"
+        },
+        "18": {
+          "net": "+3.3V",
+          "function": "TESTP_PACE_OUT2_18",
+          "type": "bidirectional"
+        },
+        "52": {
+          "net": "+3.3V",
+          "function": "CLKSEL_52",
+          "type": "input"
+        },
+        "62": {
+          "net": "+3.3V",
+          "function": "RLDIN_62",
+          "type": "input"
+        },
+        "39": {
+          "net": "/CS_ADC1",
+          "function": "~{CS}_39",
+          "type": "input"
+        },
+        "47": {
+          "net": "/DRDY_ADC1",
+          "function": "~{DRDY}_47",
+          "type": "output"
+        },
+        "43": {
+          "net": "/MISO",
+          "function": "DOUT_43",
+          "type": "output"
+        },
+        "34": {
+          "net": "/MOSI",
+          "function": "DIN_34",
+          "type": "input"
+        },
+        "35": {
+          "net": "/PWDN",
+          "function": "~{PWDN}_35",
+          "type": "input"
+        },
+        "36": {
+          "net": "/RESET",
+          "function": "~{RESET}_36",
+          "type": "input"
+        },
+        "40": {
+          "net": "/SCLK",
+          "function": "SCLK_40",
+          "type": "input"
+        },
+        "38": {
+          "net": "/START",
+          "function": "START_38",
+          "type": "input"
+        },
+        "19": {
+          "net": "AGND",
+          "function": "AVDD_19",
+          "type": "power_in"
+        },
+        "20": {
+          "net": "AGND",
+          "function": "AVSS_20",
+          "type": "power_in"
+        },
+        "21": {
+          "net": "AGND",
+          "function": "AVDD_21",
+          "type": "passive"
+        },
+        "22": {
+          "net": "AGND",
+          "function": "AVDD_22",
+          "type": "passive"
+        },
+        "23": {
+          "net": "AGND",
+          "function": "AVSS_23",
+          "type": "passive"
+        },
+        "25": {
+          "net": "AGND",
+          "function": "VREFN_25",
+          "type": "passive"
+        },
+        "32": {
+          "net": "AGND",
+          "function": "AVSS_32",
+          "type": "passive"
+        },
+        "33": {
+          "net": "AGND",
+          "function": "DGND_33",
+          "type": "power_in"
+        },
+        "49": {
+          "net": "AGND",
+          "function": "DGND_49",
+          "type": "passive"
+        },
+        "51": {
+          "net": "AGND",
+          "function": "DGND_51",
+          "type": "passive"
+        },
+        "53": {
+          "net": "AGND",
+          "function": "AVSS1_53",
+          "type": "power_in"
+        },
+        "54": {
+          "net": "AGND",
+          "function": "AVDD1_54",
+          "type": "power_in"
+        },
+        "56": {
+          "net": "AGND",
+          "function": "AVDD_56",
+          "type": "passive"
+        },
+        "57": {
+          "net": "AGND",
+          "function": "AVSS_57",
+          "type": "passive"
+        },
+        "58": {
+          "net": "AGND",
+          "function": "AVSS_58",
+          "type": "passive"
+        },
+        "59": {
+          "net": "AGND",
+          "function": "AVDD_59",
+          "type": "passive"
+        },
+        "31": {
+          "net": "DGND",
+          "function": "RESV1_31",
+          "type": "input"
+        },
+        "41": {
+          "net": "DGND",
+          "function": "DAISY_IN_41",
+          "type": "input"
+        },
+        "42": {
+          "net": "DGND",
+          "function": "GPIO1_42",
+          "type": "bidirectional"
+        },
+        "44": {
+          "net": "DGND",
+          "function": "GPIO2_44",
+          "type": "bidirectional"
+        },
+        "45": {
+          "net": "DGND",
+          "function": "GPIO3_45",
+          "type": "bidirectional"
+        },
+        "46": {
+          "net": "DGND",
+          "function": "GPIO4_46",
+          "type": "bidirectional"
+        },
+        "48": {
+          "net": "DGND",
+          "function": "DVDD_48",
+          "type": "power_in"
+        },
+        "50": {
+          "net": "DGND",
+          "function": "DVDD_50",
+          "type": "passive"
+        },
+        "15": {
+          "net": "Net-(U1-IN1N)",
+          "function": "IN1N_15",
+          "type": "input"
+        },
+        "16": {
+          "net": "Net-(U1-IN1P)",
+          "function": "IN1P_16",
+          "type": "input"
+        },
+        "13": {
+          "net": "Net-(U1-IN2N)",
+          "function": "IN2N_13",
+          "type": "input"
+        },
+        "14": {
+          "net": "Net-(U1-IN2P)",
+          "function": "IN2P_14",
+          "type": "input"
+        },
+        "11": {
+          "net": "Net-(U1-IN3N)",
+          "function": "IN3N_11",
+          "type": "input"
+        },
+        "12": {
+          "net": "Net-(U1-IN3P)",
+          "function": "IN3P_12",
+          "type": "input"
+        },
+        "9": {
+          "net": "Net-(U1-IN4N)",
+          "function": "IN4N_9",
+          "type": "input"
+        },
+        "10": {
+          "net": "Net-(U1-IN4P)",
+          "function": "IN4P_10",
+          "type": "input"
+        },
+        "7": {
+          "net": "Net-(U1-IN5N)",
+          "function": "IN5N_7",
+          "type": "input"
+        },
+        "8": {
+          "net": "Net-(U1-IN5P)",
+          "function": "IN5P_8",
+          "type": "input"
+        },
+        "5": {
+          "net": "Net-(U1-IN6N)",
+          "function": "IN6N_5",
+          "type": "input"
+        },
+        "6": {
+          "net": "Net-(U1-IN6P)",
+          "function": "IN6P_6",
+          "type": "input"
+        },
+        "3": {
+          "net": "Net-(U1-IN7N)",
+          "function": "IN7N_3",
+          "type": "input"
+        },
+        "4": {
+          "net": "Net-(U1-IN7P)",
+          "function": "IN7P_4",
+          "type": "input"
+        },
+        "1": {
+          "net": "Net-(U1-IN8N)",
+          "function": "IN8N_1",
+          "type": "input"
+        },
+        "2": {
+          "net": "Net-(U1-IN8P)",
+          "function": "IN8P_2",
+          "type": "input"
+        },
+        "28": {
+          "net": "Net-(U1-VCAP1)",
+          "function": "VCAP1_28",
+          "type": "passive"
+        },
+        "30": {
+          "net": "Net-(U1-VCAP2)",
+          "function": "VCAP2_30",
+          "type": "passive"
+        },
+        "55": {
+          "net": "Net-(U1-VCAP3)",
+          "function": "VCAP3_55",
+          "type": "passive"
+        },
+        "26": {
+          "net": "Net-(U1-VCAP4)",
+          "function": "VCAP4_26",
+          "type": "passive"
+        },
+        "24": {
+          "net": "Net-(U1-VREFP)",
+          "function": "VREFP_24",
+          "type": "passive"
+        },
+        "37": {
+          "net": "unconnected-(U1-CLK-Pad37)",
+          "function": "CLK_37",
+          "type": "bidirectional"
+        },
+        "27": {
+          "net": "unconnected-(U1-NC-Pad27)",
+          "function": "NC_27",
+          "type": "no_connect"
+        },
+        "29": {
+          "net": "unconnected-(U1-NC-Pad29)",
+          "function": "NC_29",
+          "type": "no_connect"
+        },
+        "61": {
+          "net": "unconnected-(U1-RLDINV-Pad61)",
+          "function": "RLDINV_61",
+          "type": "input+no_connect"
+        },
+        "63": {
+          "net": "unconnected-(U1-RLDOUT-Pad63)",
+          "function": "RLDOUT_63",
+          "type": "output+no_connect"
+        },
+        "60": {
+          "net": "unconnected-(U1-RLDREF-Pad60)",
+          "function": "RLDREF_60",
+          "type": "input+no_connect"
+        },
+        "64": {
+          "net": "unconnected-(U1-WCT-Pad64)",
+          "function": "WCT_64",
+          "type": "output+no_connect"
+        }
+      }
+    },
+    "U2": {
+      "value": "ADS1298xPAG",
+      "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "libsource": {
+        "lib": "Analog_ADC",
+        "part": "ADS1298xPAG",
+        "description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+      },
+      "pins": {
+        "17": {
+          "net": "+3.3V",
+          "function": "TESTP_PACE_OUT1_17",
+          "type": "bidirectional"
+        },
+        "18": {
+          "net": "+3.3V",
+          "function": "TESTP_PACE_OUT2_18",
+          "type": "bidirectional"
+        },
+        "62": {
+          "net": "+3.3V",
+          "function": "RLDIN_62",
+          "type": "input"
+        },
+        "39": {
+          "net": "/CS_ADC2",
+          "function": "~{CS}_39",
+          "type": "input"
+        },
+        "43": {
+          "net": "/MISO",
+          "function": "DOUT_43",
+          "type": "output"
+        },
+        "34": {
+          "net": "/MOSI",
+          "function": "DIN_34",
+          "type": "input"
+        },
+        "35": {
+          "net": "/PWDN",
+          "function": "~{PWDN}_35",
+          "type": "input"
+        },
+        "36": {
+          "net": "/RESET",
+          "function": "~{RESET}_36",
+          "type": "input"
+        },
+        "40": {
+          "net": "/SCLK",
+          "function": "SCLK_40",
+          "type": "input"
+        },
+        "38": {
+          "net": "/START",
+          "function": "START_38",
+          "type": "input"
+        },
+        "37": {
+          "net": "ADC_CLK",
+          "function": "CLK_37",
+          "type": "bidirectional"
+        },
+        "19": {
+          "net": "AGND",
+          "function": "AVDD_19",
+          "type": "power_in"
+        },
+        "20": {
+          "net": "AGND",
+          "function": "AVSS_20",
+          "type": "power_in"
+        },
+        "21": {
+          "net": "AGND",
+          "function": "AVDD_21",
+          "type": "passive"
+        },
+        "22": {
+          "net": "AGND",
+          "function": "AVDD_22",
+          "type": "passive"
+        },
+        "23": {
+          "net": "AGND",
+          "function": "AVSS_23",
+          "type": "passive"
+        },
+        "25": {
+          "net": "AGND",
+          "function": "VREFN_25",
+          "type": "passive"
+        },
+        "32": {
+          "net": "AGND",
+          "function": "AVSS_32",
+          "type": "passive"
+        },
+        "33": {
+          "net": "AGND",
+          "function": "DGND_33",
+          "type": "power_in"
+        },
+        "49": {
+          "net": "AGND",
+          "function": "DGND_49",
+          "type": "passive"
+        },
+        "51": {
+          "net": "AGND",
+          "function": "DGND_51",
+          "type": "passive"
+        },
+        "53": {
+          "net": "AGND",
+          "function": "AVSS1_53",
+          "type": "power_in"
+        },
+        "54": {
+          "net": "AGND",
+          "function": "AVDD1_54",
+          "type": "power_in"
+        },
+        "56": {
+          "net": "AGND",
+          "function": "AVDD_56",
+          "type": "passive"
+        },
+        "57": {
+          "net": "AGND",
+          "function": "AVSS_57",
+          "type": "passive"
+        },
+        "58": {
+          "net": "AGND",
+          "function": "AVSS_58",
+          "type": "passive"
+        },
+        "59": {
+          "net": "AGND",
+          "function": "AVDD_59",
+          "type": "passive"
+        },
+        "31": {
+          "net": "DGND",
+          "function": "RESV1_31",
+          "type": "input"
+        },
+        "41": {
+          "net": "DGND",
+          "function": "DAISY_IN_41",
+          "type": "input"
+        },
+        "42": {
+          "net": "DGND",
+          "function": "GPIO1_42",
+          "type": "bidirectional"
+        },
+        "44": {
+          "net": "DGND",
+          "function": "GPIO2_44",
+          "type": "bidirectional"
+        },
+        "45": {
+          "net": "DGND",
+          "function": "GPIO3_45",
+          "type": "bidirectional"
+        },
+        "46": {
+          "net": "DGND",
+          "function": "GPIO4_46",
+          "type": "bidirectional"
+        },
+        "48": {
+          "net": "DGND",
+          "function": "DVDD_48",
+          "type": "power_in"
+        },
+        "50": {
+          "net": "DGND",
+          "function": "DVDD_50",
+          "type": "passive"
+        },
+        "52": {
+          "net": "DGND",
+          "function": "CLKSEL_52",
+          "type": "input"
+        },
+        "15": {
+          "net": "Net-(U2-IN1N)",
+          "function": "IN1N_15",
+          "type": "input"
+        },
+        "16": {
+          "net": "Net-(U2-IN1P)",
+          "function": "IN1P_16",
+          "type": "input"
+        },
+        "13": {
+          "net": "Net-(U2-IN2N)",
+          "function": "IN2N_13",
+          "type": "input"
+        },
+        "14": {
+          "net": "Net-(U2-IN2P)",
+          "function": "IN2P_14",
+          "type": "input"
+        },
+        "11": {
+          "net": "Net-(U2-IN3N)",
+          "function": "IN3N_11",
+          "type": "input"
+        },
+        "12": {
+          "net": "Net-(U2-IN3P)",
+          "function": "IN3P_12",
+          "type": "input"
+        },
+        "9": {
+          "net": "Net-(U2-IN4N)",
+          "function": "IN4N_9",
+          "type": "input"
+        },
+        "10": {
+          "net": "Net-(U2-IN4P)",
+          "function": "IN4P_10",
+          "type": "input"
+        },
+        "7": {
+          "net": "Net-(U2-IN5N)",
+          "function": "IN5N_7",
+          "type": "input"
+        },
+        "8": {
+          "net": "Net-(U2-IN5P)",
+          "function": "IN5P_8",
+          "type": "input"
+        },
+        "5": {
+          "net": "Net-(U2-IN6N)",
+          "function": "IN6N_5",
+          "type": "input"
+        },
+        "6": {
+          "net": "Net-(U2-IN6P)",
+          "function": "IN6P_6",
+          "type": "input"
+        },
+        "3": {
+          "net": "Net-(U2-IN7N)",
+          "function": "IN7N_3",
+          "type": "input"
+        },
+        "4": {
+          "net": "Net-(U2-IN7P)",
+          "function": "IN7P_4",
+          "type": "input"
+        },
+        "1": {
+          "net": "Net-(U2-IN8N)",
+          "function": "IN8N_1",
+          "type": "input"
+        },
+        "2": {
+          "net": "Net-(U2-IN8P)",
+          "function": "IN8P_2",
+          "type": "input"
+        },
+        "28": {
+          "net": "Net-(U2-VCAP1)",
+          "function": "VCAP1_28",
+          "type": "passive"
+        },
+        "30": {
+          "net": "Net-(U2-VCAP2)",
+          "function": "VCAP2_30",
+          "type": "passive"
+        },
+        "55": {
+          "net": "Net-(U2-VCAP3)",
+          "function": "VCAP3_55",
+          "type": "passive"
+        },
+        "26": {
+          "net": "Net-(U2-VCAP4)",
+          "function": "VCAP4_26",
+          "type": "passive"
+        },
+        "24": {
+          "net": "Net-(U2-VREFP)",
+          "function": "VREFP_24",
+          "type": "passive"
+        },
+        "27": {
+          "net": "unconnected-(U2-NC-Pad27)",
+          "function": "NC_27",
+          "type": "no_connect"
+        },
+        "29": {
+          "net": "unconnected-(U2-NC-Pad29)",
+          "function": "NC_29",
+          "type": "no_connect"
+        },
+        "61": {
+          "net": "unconnected-(U2-RLDINV-Pad61)",
+          "function": "RLDINV_61",
+          "type": "input+no_connect"
+        },
+        "63": {
+          "net": "unconnected-(U2-RLDOUT-Pad63)",
+          "function": "RLDOUT_63",
+          "type": "output+no_connect"
+        },
+        "60": {
+          "net": "unconnected-(U2-RLDREF-Pad60)",
+          "function": "RLDREF_60",
+          "type": "input+no_connect"
+        },
+        "64": {
+          "net": "unconnected-(U2-WCT-Pad64)",
+          "function": "WCT_64",
+          "type": "output+no_connect"
+        },
+        "47": {
+          "net": "unconnected-(U2-~{DRDY}-Pad47)",
+          "function": "~{DRDY}_47",
+          "type": "output+no_connect"
+        }
+      }
+    },
+    "U3": {
+      "value": "ESP32-S3-DevKitC",
+      "footprint": "PCM_Espressif:ESP32-S3-DevKitC",
+      "libsource": {
+        "lib": "PCM_Espressif",
+        "part": "ESP32-S3-DevKitC",
+        "description": "ESP32-S3-DevKitC"
+      },
+      "pins": {
+        "1": {
+          "net": "+3.3V",
+          "function": "3V3_1",
+          "type": "passive"
+        },
+        "2": {
+          "net": "+3.3V",
+          "function": "3V3_2",
+          "type": "power_in"
+        },
+        "21": {
+          "net": "+5V",
+          "function": "5V_21",
+          "type": "power_in"
+        },
+        "16": {
+          "net": "/CS_ADC1",
+          "function": "GPIO10/ADC1_CH9_16",
+          "type": "bidirectional"
+        },
+        "20": {
+          "net": "/CS_ADC2",
+          "function": "GPIO14/ADC2_CH3_20",
+          "type": "bidirectional"
+        },
+        "15": {
+          "net": "/DRDY_ADC1",
+          "function": "GPIO9/ADC1_CH8_15",
+          "type": "bidirectional"
+        },
+        "19": {
+          "net": "/MISO",
+          "function": "GPIO13/ADC2_CH2_19",
+          "type": "bidirectional"
+        },
+        "17": {
+          "net": "/MOSI",
+          "function": "GPIO11/ADC2_CH0_17",
+          "type": "bidirectional"
+        },
+        "7": {
+          "net": "/PWDN",
+          "function": "GPIO7/ADC1_CH6_7",
+          "type": "bidirectional"
+        },
+        "6": {
+          "net": "/RESET",
+          "function": "GPIO6/ADC1_CH5_6",
+          "type": "bidirectional"
+        },
+        "18": {
+          "net": "/SCLK",
+          "function": "GPIO12/ADC2_CH1_18",
+          "type": "bidirectional"
+        },
+        "12": {
+          "net": "/START",
+          "function": "GPIO8/ADC1_CH7_12",
+          "type": "bidirectional"
+        },
+        "22": {
+          "net": "DGND",
+          "function": "GND_22",
+          "type": "passive"
+        },
+        "23": {
+          "net": "DGND",
+          "function": "GND_23",
+          "type": "passive"
+        },
+        "24": {
+          "net": "DGND",
+          "function": "GND_24",
+          "type": "passive"
+        },
+        "44": {
+          "net": "DGND",
+          "function": "GND_44",
+          "type": "power_in"
+        },
+        "3": {
+          "net": "unconnected-(U3-CHIP_PU-Pad3)",
+          "function": "CHIP_PU_3",
+          "type": "input"
+        },
+        "31": {
+          "net": "unconnected-(U3-GPIO0-Pad31)",
+          "function": "GPIO0_31",
+          "type": "bidirectional"
+        },
+        "41": {
+          "net": "unconnected-(U3-GPIO1/ADC1_CH0-Pad41)",
+          "function": "GPIO1/ADC1_CH0_41",
+          "type": "bidirectional"
+        },
+        "40": {
+          "net": "unconnected-(U3-GPIO2/ADC1_CH1-Pad40)",
+          "function": "GPIO2/ADC1_CH1_40",
+          "type": "bidirectional"
+        },
+        "13": {
+          "net": "unconnected-(U3-GPIO3/ADC1_CH2-Pad13)",
+          "function": "GPIO3/ADC1_CH2_13",
+          "type": "bidirectional"
+        },
+        "4": {
+          "net": "unconnected-(U3-GPIO4/ADC1_CH3-Pad4)",
+          "function": "GPIO4/ADC1_CH3_4",
+          "type": "bidirectional"
+        },
+        "5": {
+          "net": "unconnected-(U3-GPIO5/ADC1_CH4-Pad5)",
+          "function": "GPIO5/ADC1_CH4_5",
+          "type": "bidirectional"
+        },
+        "8": {
+          "net": "unconnected-(U3-GPIO15/ADC2_CH4/32K_P-Pad8)",
+          "function": "GPIO15/ADC2_CH4/32K_P_8",
+          "type": "bidirectional"
+        },
+        "9": {
+          "net": "unconnected-(U3-GPIO16/ADC2_CH5/32K_N-Pad9)",
+          "function": "GPIO16/ADC2_CH5/32K_N_9",
+          "type": "bidirectional"
+        },
+        "10": {
+          "net": "unconnected-(U3-GPIO17/ADC2_CH6-Pad10)",
+          "function": "GPIO17/ADC2_CH6_10",
+          "type": "bidirectional"
+        },
+        "11": {
+          "net": "unconnected-(U3-GPIO18/ADC2_CH7-Pad11)",
+          "function": "GPIO18/ADC2_CH7_11",
+          "type": "bidirectional"
+        },
+        "25": {
+          "net": "unconnected-(U3-GPIO19/USB_D--Pad25)",
+          "function": "GPIO19/USB_D-_25",
+          "type": "bidirectional"
+        },
+        "26": {
+          "net": "unconnected-(U3-GPIO20/USB_D+-Pad26)",
+          "function": "GPIO20/USB_D+_26",
+          "type": "bidirectional"
+        },
+        "27": {
+          "net": "unconnected-(U3-GPIO21-Pad27)",
+          "function": "GPIO21_27",
+          "type": "bidirectional"
+        },
+        "32": {
+          "net": "unconnected-(U3-GPIO35-Pad32)",
+          "function": "GPIO35_32",
+          "type": "bidirectional"
+        },
+        "33": {
+          "net": "unconnected-(U3-GPIO36-Pad33)",
+          "function": "GPIO36_33",
+          "type": "bidirectional"
+        },
+        "34": {
+          "net": "unconnected-(U3-GPIO37-Pad34)",
+          "function": "GPIO37_34",
+          "type": "bidirectional"
+        },
+        "35": {
+          "net": "unconnected-(U3-GPIO38-Pad35)",
+          "function": "GPIO38_35",
+          "type": "bidirectional"
+        },
+        "36": {
+          "net": "unconnected-(U3-GPIO39/MTCK-Pad36)",
+          "function": "GPIO39/MTCK_36",
+          "type": "bidirectional"
+        },
+        "37": {
+          "net": "unconnected-(U3-GPIO40/MTDO-Pad37)",
+          "function": "GPIO40/MTDO_37",
+          "type": "bidirectional"
+        },
+        "38": {
+          "net": "unconnected-(U3-GPIO41/MTDI-Pad38)",
+          "function": "GPIO41/MTDI_38",
+          "type": "bidirectional"
+        },
+        "39": {
+          "net": "unconnected-(U3-GPIO42/MTMS-Pad39)",
+          "function": "GPIO42/MTMS_39",
+          "type": "bidirectional"
+        },
+        "43": {
+          "net": "unconnected-(U3-GPIO43/U0TXD-Pad43)",
+          "function": "GPIO43/U0TXD_43",
+          "type": "bidirectional"
+        },
+        "42": {
+          "net": "unconnected-(U3-GPIO44/U0RXD-Pad42)",
+          "function": "GPIO44/U0RXD_42",
+          "type": "bidirectional"
+        },
+        "30": {
+          "net": "unconnected-(U3-GPIO45-Pad30)",
+          "function": "GPIO45_30",
+          "type": "bidirectional"
+        },
+        "14": {
+          "net": "unconnected-(U3-GPIO46-Pad14)",
+          "function": "GPIO46_14",
+          "type": "bidirectional"
+        },
+        "28": {
+          "net": "unconnected-(U3-GPIO47-Pad28)",
+          "function": "GPIO47_28",
+          "type": "bidirectional"
+        },
+        "29": {
+          "net": "unconnected-(U3-GPIO48-Pad29)",
+          "function": "GPIO48_29",
+          "type": "bidirectional"
+        }
+      }
+    },
+    "U4": {
+      "value": "LP2985-3.3",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "libsource": {
+        "lib": "Regulator_Linear",
+        "part": "LP2985-3.3",
+        "description": "150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5"
+      },
+      "pins": {
+        "5": {
+          "net": "+3.3V",
+          "function": "VOUT_5",
+          "type": "power_out"
+        },
+        "1": {
+          "net": "+3.7V",
+          "function": "VIN_1",
+          "type": "power_in"
+        },
+        "3": {
+          "net": "/EN",
+          "function": "ON/~{OFF}_3",
+          "type": "input"
+        },
+        "2": {
+          "net": "AGND",
+          "function": "GND_2",
+          "type": "power_in"
+        },
+        "4": {
+          "net": "Net-(U4-BP)",
+          "function": "BP_4",
+          "type": "input"
+        }
+      }
+    },
+    "U5": {
+      "value": "TLV75533PDBV",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "libsource": {
+        "lib": "Regulator_Linear",
+        "part": "TLV75533PDBV",
+        "description": "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+      },
+      "pins": {
+        "5": {
+          "net": "+3.3V",
+          "function": "OUT_5",
+          "type": "power_out"
+        },
+        "1": {
+          "net": "+3.7V",
+          "function": "IN_1",
+          "type": "power_in"
+        },
+        "3": {
+          "net": "/EN",
+          "function": "EN_3",
+          "type": "input"
+        },
+        "2": {
+          "net": "AGND",
+          "function": "GND_2",
+          "type": "power_in"
+        },
+        "4": {
+          "net": "unconnected-(U5-NC-Pad4)",
+          "function": "NC_4",
+          "type": "no_connect"
+        }
+      }
+    }
+  },
+  "nets": {
+    "+3.3V": [
+      {
+        "ref": "C32",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C33",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C34",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C35",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C54",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C57",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C6",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C7",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C8",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C9",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "17",
+        "pinfunction": "TESTP_PACE_OUT1_17",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "18",
+        "pinfunction": "TESTP_PACE_OUT2_18",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "52",
+        "pinfunction": "CLKSEL_52",
+        "pintype": "input"
+      },
+      {
+        "ref": "U1",
+        "pin": "62",
+        "pinfunction": "RLDIN_62",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "17",
+        "pinfunction": "TESTP_PACE_OUT1_17",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "18",
+        "pinfunction": "TESTP_PACE_OUT2_18",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "62",
+        "pinfunction": "RLDIN_62",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "1",
+        "pinfunction": "3V3_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "2",
+        "pinfunction": "3V3_2",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U4",
+        "pin": "5",
+        "pinfunction": "VOUT_5",
+        "pintype": "power_out"
+      },
+      {
+        "ref": "U5",
+        "pin": "5",
+        "pinfunction": "OUT_5",
+        "pintype": "power_out"
+      }
+    ],
+    "+3.7V": [
+      {
+        "ref": "BT1",
+        "pin": "1",
+        "pinfunction": "+_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C53",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C56",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U4",
+        "pin": "1",
+        "pinfunction": "VIN_1",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U5",
+        "pin": "1",
+        "pinfunction": "IN_1",
+        "pintype": "power_in"
+      }
+    ],
+    "+5V": [
+      {
+        "ref": "U3",
+        "pin": "21",
+        "pinfunction": "5V_21",
+        "pintype": "power_in"
+      }
+    ],
+    "/CS_ADC1": [
+      {
+        "ref": "U1",
+        "pin": "39",
+        "pinfunction": "~{CS}_39",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "16",
+        "pinfunction": "GPIO10/ADC1_CH9_16",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/CS_ADC2": [
+      {
+        "ref": "U2",
+        "pin": "39",
+        "pinfunction": "~{CS}_39",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "20",
+        "pinfunction": "GPIO14/ADC2_CH3_20",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/DRDY_ADC1": [
+      {
+        "ref": "U1",
+        "pin": "47",
+        "pinfunction": "~{DRDY}_47",
+        "pintype": "output"
+      },
+      {
+        "ref": "U3",
+        "pin": "15",
+        "pinfunction": "GPIO9/ADC1_CH8_15",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/EN": [
+      {
+        "ref": "U4",
+        "pin": "3",
+        "pinfunction": "ON/~{OFF}_3",
+        "pintype": "input"
+      },
+      {
+        "ref": "U5",
+        "pin": "3",
+        "pinfunction": "EN_3",
+        "pintype": "input"
+      }
+    ],
+    "/MISO": [
+      {
+        "ref": "U1",
+        "pin": "43",
+        "pinfunction": "DOUT_43",
+        "pintype": "output"
+      },
+      {
+        "ref": "U2",
+        "pin": "43",
+        "pinfunction": "DOUT_43",
+        "pintype": "output"
+      },
+      {
+        "ref": "U3",
+        "pin": "19",
+        "pinfunction": "GPIO13/ADC2_CH2_19",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MOSI": [
+      {
+        "ref": "U1",
+        "pin": "34",
+        "pinfunction": "DIN_34",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "34",
+        "pinfunction": "DIN_34",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "17",
+        "pinfunction": "GPIO11/ADC2_CH0_17",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/PWDN": [
+      {
+        "ref": "U1",
+        "pin": "35",
+        "pinfunction": "~{PWDN}_35",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "35",
+        "pinfunction": "~{PWDN}_35",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "7",
+        "pinfunction": "GPIO7/ADC1_CH6_7",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/RESET": [
+      {
+        "ref": "U1",
+        "pin": "36",
+        "pinfunction": "~{RESET}_36",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "36",
+        "pinfunction": "~{RESET}_36",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "6",
+        "pinfunction": "GPIO6/ADC1_CH5_6",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/SCLK": [
+      {
+        "ref": "U1",
+        "pin": "40",
+        "pinfunction": "SCLK_40",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "40",
+        "pinfunction": "SCLK_40",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "18",
+        "pinfunction": "GPIO12/ADC2_CH1_18",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/START": [
+      {
+        "ref": "U1",
+        "pin": "38",
+        "pinfunction": "START_38",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "38",
+        "pinfunction": "START_38",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "12",
+        "pinfunction": "GPIO8/ADC1_CH7_12",
+        "pintype": "bidirectional"
+      }
+    ],
+    "ADC_CLK": [
+      {
+        "ref": "U2",
+        "pin": "37",
+        "pinfunction": "CLK_37",
+        "pintype": "bidirectional"
+      }
+    ],
+    "AGND": [
+      {
+        "ref": "BT1",
+        "pin": "2",
+        "pinfunction": "-_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C1",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C10",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C11",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C12",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C13",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C14",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C15",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C16",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C17",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C18",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C19",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C2",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C20",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C21",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C22",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C23",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C24",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C25",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C26",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C27",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C28",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C29",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C3",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C30",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C31",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C32",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C33",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C36",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C37",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C38",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C39",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C4",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C40",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C41",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C42",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C43",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C44",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C45",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C46",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C47",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C48",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C49",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C5",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C50",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C51",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C52",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C53",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C54",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C55",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C56",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C57",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C6",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C7",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "19",
+        "pinfunction": "AVDD_19",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "20",
+        "pinfunction": "AVSS_20",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "21",
+        "pinfunction": "AVDD_21",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "22",
+        "pinfunction": "AVDD_22",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "23",
+        "pinfunction": "AVSS_23",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "25",
+        "pinfunction": "VREFN_25",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "32",
+        "pinfunction": "AVSS_32",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "33",
+        "pinfunction": "DGND_33",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "49",
+        "pinfunction": "DGND_49",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "51",
+        "pinfunction": "DGND_51",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "53",
+        "pinfunction": "AVSS1_53",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "54",
+        "pinfunction": "AVDD1_54",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "56",
+        "pinfunction": "AVDD_56",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "57",
+        "pinfunction": "AVSS_57",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "58",
+        "pinfunction": "AVSS_58",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "59",
+        "pinfunction": "AVDD_59",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "19",
+        "pinfunction": "AVDD_19",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "20",
+        "pinfunction": "AVSS_20",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "21",
+        "pinfunction": "AVDD_21",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "22",
+        "pinfunction": "AVDD_22",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "23",
+        "pinfunction": "AVSS_23",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "25",
+        "pinfunction": "VREFN_25",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "32",
+        "pinfunction": "AVSS_32",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "33",
+        "pinfunction": "DGND_33",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "49",
+        "pinfunction": "DGND_49",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "51",
+        "pinfunction": "DGND_51",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "53",
+        "pinfunction": "AVSS1_53",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "54",
+        "pinfunction": "AVDD1_54",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "56",
+        "pinfunction": "AVDD_56",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "57",
+        "pinfunction": "AVSS_57",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "58",
+        "pinfunction": "AVSS_58",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "59",
+        "pinfunction": "AVDD_59",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U4",
+        "pin": "2",
+        "pinfunction": "GND_2",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U5",
+        "pin": "2",
+        "pinfunction": "GND_2",
+        "pintype": "power_in"
+      }
+    ],
+    "DGND": [
+      {
+        "ref": "C34",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C35",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C8",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C9",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "31",
+        "pinfunction": "RESV1_31",
+        "pintype": "input"
+      },
+      {
+        "ref": "U1",
+        "pin": "41",
+        "pinfunction": "DAISY_IN_41",
+        "pintype": "input"
+      },
+      {
+        "ref": "U1",
+        "pin": "42",
+        "pinfunction": "GPIO1_42",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "44",
+        "pinfunction": "GPIO2_44",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "45",
+        "pinfunction": "GPIO3_45",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "46",
+        "pinfunction": "GPIO4_46",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "48",
+        "pinfunction": "DVDD_48",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "50",
+        "pinfunction": "DVDD_50",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "31",
+        "pinfunction": "RESV1_31",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "41",
+        "pinfunction": "DAISY_IN_41",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "42",
+        "pinfunction": "GPIO1_42",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "44",
+        "pinfunction": "GPIO2_44",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "45",
+        "pinfunction": "GPIO3_45",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "46",
+        "pinfunction": "GPIO4_46",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "48",
+        "pinfunction": "DVDD_48",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "50",
+        "pinfunction": "DVDD_50",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "52",
+        "pinfunction": "CLKSEL_52",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "22",
+        "pinfunction": "GND_22",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "23",
+        "pinfunction": "GND_23",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "24",
+        "pinfunction": "GND_24",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "44",
+        "pinfunction": "GND_44",
+        "pintype": "power_in"
+      }
+    ],
+    "Net-(E1-Pin_1)": [
+      {
+        "ref": "E1",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R1",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E1-Pin_2)": [
+      {
+        "ref": "E1",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R2",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E2-Pin_1)": [
+      {
+        "ref": "E2",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R3",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E2-Pin_2)": [
+      {
+        "ref": "E2",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R4",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E3-Pin_1)": [
+      {
+        "ref": "E3",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R5",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E3-Pin_2)": [
+      {
+        "ref": "E3",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R6",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E4-Pin_1)": [
+      {
+        "ref": "E4",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R7",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E4-Pin_2)": [
+      {
+        "ref": "E4",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R8",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E5-Pin_1)": [
+      {
+        "ref": "E5",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R9",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E5-Pin_2)": [
+      {
+        "ref": "E5",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R10",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E6-Pin_1)": [
+      {
+        "ref": "E6",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R11",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E6-Pin_2)": [
+      {
+        "ref": "E6",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R12",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E7-Pin_1)": [
+      {
+        "ref": "E7",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R13",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E7-Pin_2)": [
+      {
+        "ref": "E7",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R14",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E8-Pin_1)": [
+      {
+        "ref": "E8",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R15",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E8-Pin_2)": [
+      {
+        "ref": "E8",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R16",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E9-Pin_1)": [
+      {
+        "ref": "E9",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R17",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E9-Pin_2)": [
+      {
+        "ref": "E9",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R18",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E10-Pin_1)": [
+      {
+        "ref": "E10",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R19",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E10-Pin_2)": [
+      {
+        "ref": "E10",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R20",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E11-Pin_1)": [
+      {
+        "ref": "E11",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R21",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E11-Pin_2)": [
+      {
+        "ref": "E11",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R22",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E12-Pin_1)": [
+      {
+        "ref": "E12",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R23",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E12-Pin_2)": [
+      {
+        "ref": "E12",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R24",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E13-Pin_1)": [
+      {
+        "ref": "E13",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R25",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E13-Pin_2)": [
+      {
+        "ref": "E13",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R26",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E14-Pin_1)": [
+      {
+        "ref": "E14",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R27",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E14-Pin_2)": [
+      {
+        "ref": "E14",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R28",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E15-Pin_1)": [
+      {
+        "ref": "E15",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R29",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E15-Pin_2)": [
+      {
+        "ref": "E15",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R30",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E16-Pin_1)": [
+      {
+        "ref": "E16",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R31",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E16-Pin_2)": [
+      {
+        "ref": "E16",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R32",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U1-IN1N)": [
+      {
+        "ref": "C2",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R2",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "15",
+        "pinfunction": "IN1N_15",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN1P)": [
+      {
+        "ref": "C1",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R1",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "16",
+        "pinfunction": "IN1P_16",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN2N)": [
+      {
+        "ref": "C4",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R4",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "13",
+        "pinfunction": "IN2N_13",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN2P)": [
+      {
+        "ref": "C3",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R3",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "14",
+        "pinfunction": "IN2P_14",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN3N)": [
+      {
+        "ref": "C10",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R6",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "11",
+        "pinfunction": "IN3N_11",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN3P)": [
+      {
+        "ref": "C5",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R5",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "12",
+        "pinfunction": "IN3P_12",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN4N)": [
+      {
+        "ref": "C12",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R8",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "9",
+        "pinfunction": "IN4N_9",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN4P)": [
+      {
+        "ref": "C11",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R7",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "10",
+        "pinfunction": "IN4P_10",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN5N)": [
+      {
+        "ref": "C14",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R10",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "7",
+        "pinfunction": "IN5N_7",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN5P)": [
+      {
+        "ref": "C13",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R9",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "8",
+        "pinfunction": "IN5P_8",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN6N)": [
+      {
+        "ref": "C16",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R12",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "5",
+        "pinfunction": "IN6N_5",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN6P)": [
+      {
+        "ref": "C15",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R11",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "6",
+        "pinfunction": "IN6P_6",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN7N)": [
+      {
+        "ref": "C18",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R14",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "3",
+        "pinfunction": "IN7N_3",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN7P)": [
+      {
+        "ref": "C17",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R13",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "4",
+        "pinfunction": "IN7P_4",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN8N)": [
+      {
+        "ref": "C22",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R16",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "1",
+        "pinfunction": "IN8N_1",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN8P)": [
+      {
+        "ref": "C21",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R15",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "2",
+        "pinfunction": "IN8P_2",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-VCAP1)": [
+      {
+        "ref": "C23",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "28",
+        "pinfunction": "VCAP1_28",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U1-VCAP2)": [
+      {
+        "ref": "C24",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "30",
+        "pinfunction": "VCAP2_30",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U1-VCAP3)": [
+      {
+        "ref": "C25",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "55",
+        "pinfunction": "VCAP3_55",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U1-VCAP4)": [
+      {
+        "ref": "C26",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "26",
+        "pinfunction": "VCAP4_26",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U1-VREFP)": [
+      {
+        "ref": "C19",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C20",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "24",
+        "pinfunction": "VREFP_24",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U2-IN1N)": [
+      {
+        "ref": "C28",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R18",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "15",
+        "pinfunction": "IN1N_15",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN1P)": [
+      {
+        "ref": "C27",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R17",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "16",
+        "pinfunction": "IN1P_16",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN2N)": [
+      {
+        "ref": "C30",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R20",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "13",
+        "pinfunction": "IN2N_13",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN2P)": [
+      {
+        "ref": "C29",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R19",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "14",
+        "pinfunction": "IN2P_14",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN3N)": [
+      {
+        "ref": "C36",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R22",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "11",
+        "pinfunction": "IN3N_11",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN3P)": [
+      {
+        "ref": "C31",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R21",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "12",
+        "pinfunction": "IN3P_12",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN4N)": [
+      {
+        "ref": "C38",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R24",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "9",
+        "pinfunction": "IN4N_9",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN4P)": [
+      {
+        "ref": "C37",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R23",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "10",
+        "pinfunction": "IN4P_10",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN5N)": [
+      {
+        "ref": "C40",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R26",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "7",
+        "pinfunction": "IN5N_7",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN5P)": [
+      {
+        "ref": "C39",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R25",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "8",
+        "pinfunction": "IN5P_8",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN6N)": [
+      {
+        "ref": "C42",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R28",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "5",
+        "pinfunction": "IN6N_5",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN6P)": [
+      {
+        "ref": "C41",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R27",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "6",
+        "pinfunction": "IN6P_6",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN7N)": [
+      {
+        "ref": "C44",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R30",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "3",
+        "pinfunction": "IN7N_3",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN7P)": [
+      {
+        "ref": "C43",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R29",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "4",
+        "pinfunction": "IN7P_4",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN8N)": [
+      {
+        "ref": "C48",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R32",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "1",
+        "pinfunction": "IN8N_1",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN8P)": [
+      {
+        "ref": "C47",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R31",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "2",
+        "pinfunction": "IN8P_2",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-VCAP1)": [
+      {
+        "ref": "C49",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "28",
+        "pinfunction": "VCAP1_28",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U2-VCAP2)": [
+      {
+        "ref": "C50",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "30",
+        "pinfunction": "VCAP2_30",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U2-VCAP3)": [
+      {
+        "ref": "C51",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "55",
+        "pinfunction": "VCAP3_55",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U2-VCAP4)": [
+      {
+        "ref": "C52",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "26",
+        "pinfunction": "VCAP4_26",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U2-VREFP)": [
+      {
+        "ref": "C45",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C46",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "24",
+        "pinfunction": "VREFP_24",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U4-BP)": [
+      {
+        "ref": "C55",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U4",
+        "pin": "4",
+        "pinfunction": "BP_4",
+        "pintype": "input"
+      }
+    ],
+    "unconnected-(U1-CLK-Pad37)": [
+      {
+        "ref": "U1",
+        "pin": "37",
+        "pinfunction": "CLK_37",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U1-NC-Pad27)": [
+      {
+        "ref": "U1",
+        "pin": "27",
+        "pinfunction": "NC_27",
+        "pintype": "no_connect"
+      }
+    ],
+    "unconnected-(U1-NC-Pad29)": [
+      {
+        "ref": "U1",
+        "pin": "29",
+        "pinfunction": "NC_29",
+        "pintype": "no_connect"
+      }
+    ],
+    "unconnected-(U1-RLDINV-Pad61)": [
+      {
+        "ref": "U1",
+        "pin": "61",
+        "pinfunction": "RLDINV_61",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U1-RLDOUT-Pad63)": [
+      {
+        "ref": "U1",
+        "pin": "63",
+        "pinfunction": "RLDOUT_63",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U1-RLDREF-Pad60)": [
+      {
+        "ref": "U1",
+        "pin": "60",
+        "pinfunction": "RLDREF_60",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U1-WCT-Pad64)": [
+      {
+        "ref": "U1",
+        "pin": "64",
+        "pinfunction": "WCT_64",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U2-NC-Pad27)": [
+      {
+        "ref": "U2",
+        "pin": "27",
+        "pinfunction": "NC_27",
+        "pintype": "no_connect"
+      }
+    ],
+    "unconnected-(U2-NC-Pad29)": [
+      {
+        "ref": "U2",
+        "pin": "29",
+        "pinfunction": "NC_29",
+        "pintype": "no_connect"
+      }
+    ],
+    "unconnected-(U2-RLDINV-Pad61)": [
+      {
+        "ref": "U2",
+        "pin": "61",
+        "pinfunction": "RLDINV_61",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U2-RLDOUT-Pad63)": [
+      {
+        "ref": "U2",
+        "pin": "63",
+        "pinfunction": "RLDOUT_63",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U2-RLDREF-Pad60)": [
+      {
+        "ref": "U2",
+        "pin": "60",
+        "pinfunction": "RLDREF_60",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U2-WCT-Pad64)": [
+      {
+        "ref": "U2",
+        "pin": "64",
+        "pinfunction": "WCT_64",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U2-~{DRDY}-Pad47)": [
+      {
+        "ref": "U2",
+        "pin": "47",
+        "pinfunction": "~{DRDY}_47",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U3-CHIP_PU-Pad3)": [
+      {
+        "ref": "U3",
+        "pin": "3",
+        "pinfunction": "CHIP_PU_3",
+        "pintype": "input"
+      }
+    ],
+    "unconnected-(U3-GPIO0-Pad31)": [
+      {
+        "ref": "U3",
+        "pin": "31",
+        "pinfunction": "GPIO0_31",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO1/ADC1_CH0-Pad41)": [
+      {
+        "ref": "U3",
+        "pin": "41",
+        "pinfunction": "GPIO1/ADC1_CH0_41",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO2/ADC1_CH1-Pad40)": [
+      {
+        "ref": "U3",
+        "pin": "40",
+        "pinfunction": "GPIO2/ADC1_CH1_40",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO3/ADC1_CH2-Pad13)": [
+      {
+        "ref": "U3",
+        "pin": "13",
+        "pinfunction": "GPIO3/ADC1_CH2_13",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO4/ADC1_CH3-Pad4)": [
+      {
+        "ref": "U3",
+        "pin": "4",
+        "pinfunction": "GPIO4/ADC1_CH3_4",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO5/ADC1_CH4-Pad5)": [
+      {
+        "ref": "U3",
+        "pin": "5",
+        "pinfunction": "GPIO5/ADC1_CH4_5",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO15/ADC2_CH4/32K_P-Pad8)": [
+      {
+        "ref": "U3",
+        "pin": "8",
+        "pinfunction": "GPIO15/ADC2_CH4/32K_P_8",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO16/ADC2_CH5/32K_N-Pad9)": [
+      {
+        "ref": "U3",
+        "pin": "9",
+        "pinfunction": "GPIO16/ADC2_CH5/32K_N_9",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO17/ADC2_CH6-Pad10)": [
+      {
+        "ref": "U3",
+        "pin": "10",
+        "pinfunction": "GPIO17/ADC2_CH6_10",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO18/ADC2_CH7-Pad11)": [
+      {
+        "ref": "U3",
+        "pin": "11",
+        "pinfunction": "GPIO18/ADC2_CH7_11",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO19/USB_D--Pad25)": [
+      {
+        "ref": "U3",
+        "pin": "25",
+        "pinfunction": "GPIO19/USB_D-_25",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO20/USB_D+-Pad26)": [
+      {
+        "ref": "U3",
+        "pin": "26",
+        "pinfunction": "GPIO20/USB_D+_26",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO21-Pad27)": [
+      {
+        "ref": "U3",
+        "pin": "27",
+        "pinfunction": "GPIO21_27",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO35-Pad32)": [
+      {
+        "ref": "U3",
+        "pin": "32",
+        "pinfunction": "GPIO35_32",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO36-Pad33)": [
+      {
+        "ref": "U3",
+        "pin": "33",
+        "pinfunction": "GPIO36_33",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO37-Pad34)": [
+      {
+        "ref": "U3",
+        "pin": "34",
+        "pinfunction": "GPIO37_34",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO38-Pad35)": [
+      {
+        "ref": "U3",
+        "pin": "35",
+        "pinfunction": "GPIO38_35",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO39/MTCK-Pad36)": [
+      {
+        "ref": "U3",
+        "pin": "36",
+        "pinfunction": "GPIO39/MTCK_36",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO40/MTDO-Pad37)": [
+      {
+        "ref": "U3",
+        "pin": "37",
+        "pinfunction": "GPIO40/MTDO_37",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO41/MTDI-Pad38)": [
+      {
+        "ref": "U3",
+        "pin": "38",
+        "pinfunction": "GPIO41/MTDI_38",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO42/MTMS-Pad39)": [
+      {
+        "ref": "U3",
+        "pin": "39",
+        "pinfunction": "GPIO42/MTMS_39",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO43/U0TXD-Pad43)": [
+      {
+        "ref": "U3",
+        "pin": "43",
+        "pinfunction": "GPIO43/U0TXD_43",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO44/U0RXD-Pad42)": [
+      {
+        "ref": "U3",
+        "pin": "42",
+        "pinfunction": "GPIO44/U0RXD_42",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO45-Pad30)": [
+      {
+        "ref": "U3",
+        "pin": "30",
+        "pinfunction": "GPIO45_30",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO46-Pad14)": [
+      {
+        "ref": "U3",
+        "pin": "14",
+        "pinfunction": "GPIO46_14",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO47-Pad28)": [
+      {
+        "ref": "U3",
+        "pin": "28",
+        "pinfunction": "GPIO47_28",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO48-Pad29)": [
+      {
+        "ref": "U3",
+        "pin": "29",
+        "pinfunction": "GPIO48_29",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U5-NC-Pad4)": [
+      {
+        "ref": "U5",
+        "pin": "4",
+        "pinfunction": "NC_4",
+        "pintype": "no_connect"
+      }
+    ]
+  }
+}

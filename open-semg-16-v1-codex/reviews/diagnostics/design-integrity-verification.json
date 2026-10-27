@@ -1,0 +1,19 @@
+{
+  "current": {
+    "files_checked": 11,
+    "changed": [],
+    "missing": []
+  },
+  "reference": {
+    "files_checked": 10,
+    "changed": [],
+    "missing": []
+  },
+  "comparison": {
+    "schematic_byte_identical": true,
+    "project_byte_identical": true,
+    "normalized_connectivity_identical": true,
+    "schematic_sha256": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+    "project_sha256": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7"
+  }
+}

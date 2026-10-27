@@ -1,2 +1,13 @@
 sandbox_mode = "workspace-write"
 approval_policy = "never"
+
+[mcp_servers.kicad]
+command = "/Users/home/.local/bin/uvx"
+args = ["kicad-mcp-pro"]
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+
+[mcp_servers.kicad.env]
+KICAD_MCP_PROJECT_DIR = "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex"
+KICAD_MCP_PROFILE = "build"
+KICAD_MCP_OPERATING_MODE = "write"

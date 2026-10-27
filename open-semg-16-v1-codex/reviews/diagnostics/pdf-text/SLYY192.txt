@@ -1,0 +1,2341 @@
+
+
+===== PDF PAGE 1 =====
+Fundamentals of Precision ADC
+Noise Analysis
+
+===== PDF PAGE 2 =====
+Design tips and tricks to reduce noise with delta-sigma ADCs
+Design tips and tricks to reduce noise with delta-sigma ADCs
+About the author
+Bryan Lizon is a product marketing engineer for the Precision Analog-to-Digital Converter (ADC) team at Texas
+Instruments (TI). In this role, Bryan has been responsible for the marketing functions for TI’s factory automation and
+control, test and measurement, medical and automotive ADCs. He joined TI in 2014 as part of the Precision ADC team
+after receiving his Bachelor of Science degree in electrical engineering from the University of Arizona.
+Bryan became interested in the topic of ADC noise soon after joining the ADC team, seeing that many disparate
+questions seemed like they could be traced back to challenges with noise, precision and resolution. Specifically, he
+found many customers had difficulty understanding the relationship between noise and gain, as well as how that
+related to data-sheet performance. To explore this relationship further and provide insight to engineers, Bryan wrote and
+illustrated a three-part blog post series framed as a whodunit mystery. From there, he took a more technical approach
+and expanded this topic to include multiple noise sources and how they interact with precision ADCs. Bryan turned this
+content into an internal presentation to educate TI’s sales team, followed by an online series of 12 articles, which TI
+assembled into this e-book.
+Other contributors include:
+Christopher Hall, applications engineer, Precision ADCs
+Ryan Andrews, applications engineer, Precision ADCs
+Joachim Wuerker, systems manager, Precision ADCs
+Fundamentals of Precision ADC Noise Analysis 2 March 2025
+
+===== PDF PAGE 3 =====
+Introduction from the author
+Introduction from the author
+When I first began working in the semiconductor industry, I had never heard of a delta-sigma analog-to-digital converter
+(ADC). My university training focused heavily on digital design, and the only ADCs we used were low-resolution
+successive-approximation-register (SAR) ADCs integrated into microcontrollers (MCUs). As a result, it was somewhat
+daunting to be assigned to the Precision ADC team, where digital knowledge is certainly useful, but analog design is
+king. As my training ramped up, I noticed that despite a variety of issues that engineers raised, many of their challenges
+arose from what seemed like a very obvious question: How do you get the best noise performance out of a 16-bit, 24-bit
+or even 32-bit ADC?
+Now, I should note that this is a simple question with a complicated answer. And as is typical for most engineering
+questions, the answer is “It depends.” “Depends on what?” you might ask—and exploring that question is the basis for
+this e-book. What affects a high-resolution ADC’s noise performance? How does each component contribute noise to
+the system, and how do these noise sources interact with each other? Which noise source dominates, and how do you
+apply these principles to your specific application?
+If you’ve ever been tasked with designing a signal chain that uses a delta-sigma ADC, you have likely had to ask
+yourself these questions. Regardless of your efforts to minimize power consumption, decrease board space or reduce
+cost, noise levels greater than the input signals render any design effectively useless. As a result, this e-book is
+designed to provide fundamental knowledge to help any analog designer understand signal-chain noise, its effect on
+analog-to-digital conversion, and how to minimize its impact and maintain high-precision measurements. I will examine
+common noise sources in a typical signal chain and complement this understanding with methods to mitigate noise and
+maintain high-precision measurements.
+Before continuing, I’d like to mention that this e-book covers precision (noise), not accuracy. While the two terms are
+often used interchangeably, they refer to different—though related—aspects of signal-chain design. When designing
+high-performance data-acquisition systems, you must also consider errors due to inaccuracy, such as offset, gain error,
+integral nonlinearity and drift, in addition to minimizing noise.
+Fundamentals of Precision ADC Noise Analysis 3 March 2025
+
+===== PDF PAGE 4 =====
+Chapter 1: Introduction to ADC noise
+Chapter 1: Introduction to ADC noise
+Chapter 1 encompasses three sections. In Section 3.1, I’ll focus on analog-to-digital converter (ADC) noise fundamentals
+while answering questions and discussing topics such as:
+• What is noise?
+• Where does noise come from in a typical signal chain?
+• Understanding inherent noise in ADCs.
+• How is noise different in high-resolution vs. low-resolution ADCs?
+In Section 3.2, I’ll shift the focus to these topics:
+• Measuring ADC noise.
+• Noise specifications in ADC data sheets.
+• Absolute vs. relative noise parameters.
+In Section 3.3, I’ll step through a complete design example, using a resistive bridge to help illustrate how the theories
+from Section 3.1 and Section 3.2 apply to a real-world application.
+Types of ADC noise•
+ADC noise measurement methods and parameters•
+Defining system noise performance•
+Fundamentals of Precision ADC Noise Analysis 4 March 2025
+
+===== PDF PAGE 5 =====
+Chapter 1: Introduction to ADC noise
+Types of ADC noise
+Noise is any undesired signal (typically random) that adds to the desired signal, causing it to deviate from its original
+value. Noise is inherent in all electrical systems, so there is no such thing as a “noise-free” circuit.
+Figure 1 depicts how you might experience noise in the real world: an image with the noise filtered out and that
+same image with no filtering. Note the crisp detail in Figure 1a, while Figure 1b is almost completely obscured. In
+the analog-to-digital conversion process, the result would be information loss between the analog input and the digital
+output—much like how the two images in Figure 1 bear virtually no resemblance to each other.
+In electronic circuits, noise comes in many forms, including:
+• Broadband (thermal, Johnson) noise, which is temperature-dependent noise caused by the physical movement of
+charge inside electrical conductors.
+• 1/f (pink, flicker) noise, which is low-frequency noise that has a power density inversely proportional to frequency.
+• Popcorn (burst) noise, which is low frequency in nature and caused by device defects, making it random and
+mathematically unpredictable.
+Figure 1. A noise-free image (a) and the same image with noise (b)
+These forms of noise may enter the signal chain through multiple sources, including:
+• ADCs, which contribute a combination of thermal noise and quantization noise.
+• Internal or external amplifiers, which can add broadband and 1/f noise that the ADC then samples, allowing it to
+affect the output code result.
+Fundamentals of Precision ADC Noise Analysis 5 March 2025
+
+===== PDF PAGE 6 =====
+Chapter 1: Introduction to ADC noise
+• Internal or external voltage references, which also contribute broadband and 1/f noise that appears in the ADC’s
+output code.
+• Nonideal power supplies, which may add noise into the signal you’re trying to measure with several means of
+coupling.
+• Internal or external clocks, which contribute jitter that translates into nonuniform sampling. This appears as an
+additional noise source for sinusoidal input signals and is generally more critical for higher-speed ADCs.
+• Poor printed circuit board (PCB) layouts, which can couple noise from other parts of the system or environment into
+sensitive analog circuitry.
+• Sensors, which can be one of the noisiest components in high-resolution systems.
+Figure 2 depicts these noise sources in a typical signal chain.
+Figure 2. Common noise sources in a typical signal chain
+In the three sections that make up Chapter 1, I’ll focus on inherent ADC noise only. For a more comprehensive
+understanding of signal-chain noise, Chapters 3–6 discuss sources of noise in the remaining circuit components.
+Inherent noise in ADCs
+You can categorize total ADC noise into two main sources: quantization noise and thermal noise. These two noise
+sources are uncorrelated, which enables the root-sum-square method to determine the total ADC noise, NADC,Total, as
+shown in Equation 1:
+NADC, Total = NADC, Tℎermal2 + NADC, Quantization2 (1)
+Each ADC noise source has particular properties that are important when understanding how to mitigate inherent ADC
+noise.
+Figure 3 depicts the plot of an ADC’s ideal transfer function (unaffected by offset or gain error). The transfer function
+extends from the minimum input voltage to the maximum input voltage horizontally and is divided into a number of
+steps based off the total number of ADC codes along the vertical axis. This particular plot has 16 codes (or steps),
+representing a 4-bit ADC. (Note: An ADC using straight binary code would have a transfer function that only includes the
+first quadrant.)
+Fundamentals of Precision ADC Noise Analysis 6 March 2025
+
+===== PDF PAGE 7 =====
+Chapter 1: Introduction to ADC noise
+Figure 3. An ADC’s ideal transfer function
+Quantization noise comes from the process of mapping an infinite number of analog voltages to a finite number of digital
+codes. As a result, any single digital output can correspond to several analog input voltages that may differ by as much
+as ½ least significant bit (LSB), which is defined in Equation 2:
+LSB size (N) = FSR
+2N (2)
+where FSR represents the value of the full-scale range (FSR) in volts and N is the ADC’s resolution.
+If you map this LSB error relative to a quantized AC signal, you’ll get a plot like the one shown in Figure 4. Note the
+dissimilarity between the quantized, stair-step-shaped digital output and the smooth, sinusoidal analog input. Taking the
+difference between these two waveforms and plotting the result yields the sawtooth-shaped error shown at the bottom
+of Figure 4. This error varies between ±½ LSB and appears as noise in the result. 1.0
+Figure 4. Analog input, digital output and LSB error waveforms.
+Similarly, for DC signals, the error associated with quantization varies between ±½ LSB of the input signal. However,
+since DC signals have no frequency component, quantization “noise” actually appears as an offset error in the ADC
+output.
+Fundamentals of Precision ADC Noise Analysis 7 March 2025
+
+===== PDF PAGE 8 =====
+Chapter 1: Introduction to ADC noise
+Finally, an obvious but important result of quantization noise is that the ADC cannot measure beyond its resolution, as it
+cannot distinguish between sub-LSB changes in the input.
+Unlike quantization noise, which is a byproduct of the analog-to-digital (or digital-to-analog) conversion process, thermal
+noise is a phenomenon inherent in all electrical components as a result of the physical movement of charge inside
+electrical conductors. Therefore, you can measure thermal noise even without applying an input signal.
+Unfortunately, you cannot affect your ADC’s thermal noise because it is a function of the device design. Throughout the
+rest of this section, I’ll refer to all ADC noise sources other than quantization noise as the ADC’s thermal noise.
+Figure 5 depicts thermal noise in the time domain, which typically has a Gaussian distribution.
+Figure 5. Thermal noise in the time domain with Gaussian distribution.
+Although you cannot affect the ADC’s inherent thermal noise, you can potentially change the ADC’s level of quantization
+noise due to its dependence on LSB size. Quantifying the significance of this change depends on whether you’re
+using a “low-resolution” or “high-resolution” ADC, however. Let’s quickly define these two terms so that you can better
+understand how to use LSB size and quantization noise to your advantage.
+Low- vs. high-resolution ADCs
+A low-resolution ADC is any device whose total noise is more dependent on quantization noise such that NADC,Quantization
+>> NADC,Thermal. Conversely, a high-resolution ADC is any device whose total noise is more dependent on thermal noise,
+such that NADC,Quantization << NADC,Thermal. The transition between low and high resolution typically occurs at the 16-bit
+level, with anything <16 bits considered low resolution and anything >16 bits considered high resolution. While not
+always true, I’ll keep this general convention throughout the remainder of this e-book.
+Why make the distinction at the 16-bit level? Let’s look at two ADC data sheets to find out. Table 1a shows the actual
+noise tables for the TI ADS114S08 , a 16-bit delta-sigma ADC, while Table 1b shows the noise tables for its 24-bit
+counterpart, the ADS124S08 . Other than their resolutions, these ADCs are identical.
+Fundamentals of Precision ADC Noise Analysis 8 March 2025
+
+===== PDF PAGE 9 =====
+Chapter 1: Introduction to ADC noise
+Table 1. Input-referred noise for the 16-bit ADS114S08 (a) and 24-bit ADS124S08 (b) in µV RMS (µV PP ) at V REF = 2.5 V, G = 1 V/V.
+Gain Data Rate (SPS) Gain
+Data Rate (SPS)
+1 1
+2.5 76.3 (76.3) 2.5 0.32 (1.8)
+5 76.3 (76.3) 5 0.40 (2.4)
+10 76.3 (76.3) 10 0.53 (3.0)
+16.6 76.3 (76.3) 16.6 0.76 (7.2)
+20 76.3 (76.3) 20 0.81 (4.8)
+50 76.3 (76.3) 50 1.3 (7.2)
+60 76.3 (76.3) 60 1.4 (8.0)
+100 76.3 (76.3) 100 1.8 (9.2)
+200 76.3 (76.3) 200 2.4 (13)
+400 76.3 (76.3) 400 3.6 (19)
+800 76.3 (76.3) 800 5.0 (29)
+1000 76.3 (76.3) 1000 6.0 (32)
+2000 76.3 (76.3) 2000 7.8 (45)
+4000 76.3 (95) 4000 15 (95)
+(a) (b)
+In the noise table for the 16-bit ADS114S08, all of the input-referred noise voltages are the same regardless of data rate.
+Compare that to the 24-bit ADS124S08’s input-referred noise values, which are all different and decrease/improve with
+decreasing data rates.
+While this doesn’t result in any definitive conclusions by itself, let’s use Equation 3 and Equation 4 to calculate the LSB
+size for each ADC, assuming a 2.5-V reference voltage:
+2 × VREF
+2 × 2.5
+LSBADS114S08 =
+216 = 76.3 μV (3)
+2N
+2 × VREF
+LSBADS124S08 =
+=
+=
+2N
+2 × 2.5
+224 = 0.298 μV (4)
+Combining these observations, you can see that the low-resolution (16-bit) ADC’s noise performance as reported in its
+data sheet is equivalent to its LSB size (maximum quantization noise). On the other hand, the noise reported in the
+high-resolution (24-bit) ADC’s data sheet is clearly much larger than its LSB size (quantization noise). In this case, the
+high-resolution ADC’s quantization noise is so low that it’s effectively hidden by the thermal noise. Figure 6 represents
+this comparison qualitatively.
+Figure 6. Qualitative representation of quantization noise and thermal noise in low- (a) and high-resolution (b) ADCs.
+Fundamentals of Precision ADC Noise Analysis 9 March 2025
+
+===== PDF PAGE 10 =====
+Chapter 1: Introduction to ADC noise
+How can you use this result to your advantage? For low-resolution ADCs where quantization noise dominates, you can
+use a smaller reference voltage to reduce the LSB size, which reduces the quantization noise amplitude. This has the
+effect of lowering the ADC’s total noise, represented by Figure 7a.
+For high-resolution ADCs where thermal noise dominates, use a larger reference voltage to increase the input range
+(dynamic range) of the ADC, while ensuring that the quantization noise level remains below the thermal noise. Assuming
+no other system changes, this increased reference voltage enables a better signal-to-noise ratio, which you can see in
+Figure 7b.
+Figure 7. Adjusting quantization noise in low- (a) and high-resolution (b) ADCs to improve performance.
+Now that you understand the components of ADC noise and how they vary between high- and low-resolution ADCs, let’s
+build on that knowledge.
+Key takeaways
+Here is a summary of important points to better understand types of ADC noise:
+1. 2. 3. 4. Noise is inherent in all electrical systems.
+Noise is introduced via all signal chain components.
+There are two main types of ADC noise:
+• Quantization noise, which scales with the reference voltage.
+• Thermal noise, which is a fixed value for a given ADC.
+One type of noise generally dominates depending on the ADC’s resolution:
+• High-resolution ADC characteristics:
+– Thermal noise-dominated.
+– The resolution is typically >1 LSB.
+– Increase the reference voltage to increase the dynamic range.
+• Low-resolution ADC characteristics:
+– Quantization noise-dominated.
+– The resolution is typically limited by LSB size.
+– Decrease the reference voltage to decrease the quantization noise and increase the resolution.
+Fundamentals of Precision ADC Noise Analysis 10 March 2025
+
+===== PDF PAGE 11 =====
+Chapter 1: Introduction to ADC noise
+ADC noise measurement methods and parameters
+Before I explain how ADC noise is measured, it’s important to understand that when you look at ADC data-sheet
+specifications, the goal is to characterize the ADC, not the system. As a result, the way that ADC manufacturers test
+ADC noise and the test system itself should demonstrate the capabilities of the ADC, not the limitations of the testing
+system. Therefore, using the ADC in a different system or under different conditions may lead to noise performance that
+varies from what the data-sheet reports.
+There are two methods ADC manufacturers use to measure ADC noise. The first method shorts the ADC’s inputs
+together to measure slight variations in output code as a result of thermal noise. The second method involves inputting
+a sine wave with a specific amplitude and frequency (such as 1 VPP at 1 kHz) and reporting how the ADC quantizes the
+sine wave. Figure 8 demonstrates these types of noise measurements.
+Figure 8. Input-short test setup (a) and sine-wave-input test setup (b).
+Typically, ADC manufacturers choose an individual ADC’s noise measurement method based on its target end
+application(s). For example, delta-sigma ADCs that measure slow-moving signals such as temperature or weight use the
+input-short test, which precisely measures performance at DC. Delta-sigma ADCs used in high-speed data-acquisition
+systems generally rely on the sine-wave-input method, where AC performance is critical. For many ADCs, the data sheet
+specifies both types of measurements.
+For example, the 24-bit ADS127L01 from TI has a high maximum sampling rate of 512 kSPS and a low pass-band
+ripple wideband filter, both of which enable high-resolution AC signal sampling for test and measurement equipment.
+However, these applications often require accurate measurement of the signal’s DC component as well. As a result, TI
+characterizes not only the ADC’s performance with a range of AC input signals at multiple sample rates, but also the
+ADS127L01’s DC performance using the input-short test.
+Noise specifications in ADC data sheets
+If you look at the ADS127L01’s data sheet—or almost any ADC data sheet, for that matter—you’ll see noise performance
+reported in two forms: graphically and numerically. Figure 9 shows a fast Fourier transform (FFT) of the ADS127L01’s
+noise performance using an input sine wave with an amplitude of –0.5 dbFS and a 4-kHz frequency. This plot makes
+it possible to calculate and report important AC parameters such as the signal-to-noise ratio (SNR), total harmonic
+distortion (THD), signal-to-noise ratio and distortion (SINAD) and effective number of bits (ENOB).
+Fundamentals of Precision ADC Noise Analysis 11 March 2025
+
+===== PDF PAGE 12 =====
+Chapter 1: Introduction to ADC noise
+Figure 9. Example ADS127L01 FFT with a 4-kHz, –0.5-dBFS input signal.
+For DC performance, a noise histogram shows the distribution of output codes for a specific gain setting, filter type
+and sample rate. This plot makes it possible to calculate and report important DC noise performance parameters such
+as input-referred noise, effective resolution and noise-free resolution. (Note: Many engineers use the terms “ENOB”
+and “effective resolution” synonymously to describe an ADC’s DC performance. However, ENOB is purely a dynamic
+performance specification derived from SINAD and is not meant to convey DC performance. Throughout the rest of this
+e-book, I will use these terms accordingly. For more comprehensive parameter definitions and equations, see Table 2
+later in this section, Section 1.2.) Figure 10 shows the noise histogram for the ADS127L01. 6500
+Figure 10. Example ADS127L01 noise histogram.
+Like the FFT plot, the noise histogram provides important graphical information about DC noise performance. Since the
+noise histogram has a Gaussian distribution, the definition of average (root mean square [RMS]) noise performance is
+typically one standard deviation—the red-shaded region in Figure 11a.
+Fundamentals of Precision ADC Noise Analysis 12 March 2025
+
+===== PDF PAGE 13 =====
+Chapter 1: Introduction to ADC noise
+Figure 11. ADS127L01 RMS (a) and peak-to-peak noise (b).
+In Figure 11b, the teal-shaded region depicts the peak-to-peak (VN,PP) noise performance of the ADC. Peak-to-peak
+noise is given as 6 or 6.6 standard deviations due to the crest factor of Gaussian noise, which is the ratio of the peak
+value to the average value. Peak-to-peak noise defines the statistical probability that the measured noise will be within
+this range. If your input signal also falls in this range, there is a chance that it will be obscured by the noise floor, resulting
+in code flicker. Additional oversampling will help reduce peak-to-peak noise at the cost of a longer sampling time.
+You’ll also find the aforementioned AC and DC specifications numerically in the electrical characteristics section of most
+ADC data sheets. An exception to this rule involves ADCs with integrated amplifiers, where noise performance varies
+with gain as well as data rate. In such instances, there is generally a separate noise table for parameters such as
+input-referred noise (RMS or peak-to-peak), effective resolution, noise-free resolution, ENOB and SNR.
+Table 2 summarizes AC and DC noise parameters, their definitions, the applicable noise test and equations.
+Table 2. Typical ADC noise parameters with definitions and equations.
+Noise parameter Definition Noise test Equation (units)
+Input-referred noise
+Resolution or internal noise of the ADC (plus programmable
+gain amplifier [PGA] noise for integrated devices) specified
+as a noise voltage source applied to the ADC’s input pins
+(before gain).
+n/a Measured (VRMS,VPP)
+SNR Ratio of the output signal amplitude to the output noise
+level, not including harmonics or DC.
+Input sine wave
+(AC) 10log10
+VSignal(RMS)
+VNoise(RMS) (dBc)
+THD
+Indication of a circuit’s linearity in terms of its effect on
+the harmonic content of a signal, given as the ratio of the
+summed harmonics to the RMS signal amplitude.
+Input sine wave
+(AC) 10log10
+VHarmonics
+VSignal(RMS) (dBc)
+SINAD Ratio of the RMS value of the output signal to the RMS
+value of all other spectral components, not including DC.
+VSignal(RMS)
+Input sine wave
+(AC)
+10log10
+(dBC)
+Σ VHarmonics + VNoise(RMS)
+Effective resolution
+Dynamic range figure of merit using the ratio of full-scale
+range (FSR) to RMS noise voltage to define the noise
+performance of an ADC.
+DC-input (DC) log2
+FSR
+VN, RMS (bits)
+Noise-free resolution
+Dynamic range figure of merit using the ratio of FSR to
+peak-to-peak noise voltage to define the maximum number
+of bits unaffected by peak-to-peak noise.
+DC-input (DC) log2
+FSR
+VN, PP (bits)
+Fundamentals of Precision ADC Noise Analysis 13 March 2025
+
+===== PDF PAGE 14 =====
+Chapter 1: Introduction to ADC noise
+Table 2. Typical ADC noise parameters with definitions and equations. (continued)
+Noise parameter Definition Noise test Equation (units)
+Noise-free counts Figure of merit representing the number of noise-free codes
+(or counts) that you can realize with noise. DC-input (DC) 2 ( Noise-free resolution ) (counts)
+ENOB
+Figure of merit relating the SINAD performance to that of an
+ideal ADC’s resolution with a certain number of bits (given
+by the ENOB).
+Input sine wave
+(AC)
+SINAD(dBc)− 1.76dB
+6.02 (bits)
+Absolute vs. relative noise parameters
+An important characteristic of all of the equations in Table 2 is that they involve some ratio of values. These are “relative
+parameters.” As the name implies, these parameters provide a noise performance metric relative to some absolute value,
+usually the input signal (decibels relative to carrier [dBc]) or the FSR (decibels relative to full scale [dBFS]).
+Figure 12 shows an output spectrum of the ADS127L01 using an input signal at –0.5 dBFS, where full scale is 2.5 V.
+Figure 12. ADS127L01 FFT, with the input voltage (V IN ) referenced to full scale.
+If you choose a system input signal that is not referenced to the same full-scale voltage, or if the input signal amplitude
+varies from the value defined in the data sheet, you should not necessarily expect to achieve data-sheet performance,
+even if all of your other input conditions are identical.
+Similarly, for DC noise parameters, you can see from Table 2 that effective resolution is relative to the ADC’s input-
+referred noise performance at the given operating conditions, as well as at the ADC’s FSR. Since FSR depends on the
+ADC’s reference voltage, using a reference voltage other than what’s listed in the data sheet has an effect on your ADC’s
+performance metrics.
+For high-resolution ADCs, increasing the reference voltage increases the maximum input dynamic range, while input-
+referred noise stays the same. That is because high-resolution ADC noise performance is largely independent of the
+reference voltage. For low-resolution ADCs, where noise is dominated by LSB size, increasing the reference voltage
+actually increases input-referred noise, while the maximum input dynamic range remains approximately the same. Table
+3 on the following page summarizes these effects.
+Fundamentals of Precision ADC Noise Analysis 14 March 2025
+
+===== PDF PAGE 15 =====
+Chapter 1: Introduction to ADC noise
+Table 3. Effect of changing reference voltage on ADC noise parameters.
+Reference voltage Parameter Low-resolution ADCs High-resolution ADCs
+Increases Dynamic range Input-referred noise Stays the same Increases Increases
+Stays the same
+Decreases Dynamic range Input-referred noise Stays the same Decreases Decreases
+Stays the same
+Therefore, to characterize an ADC’s maximum dynamic range, most ADC manufacturers specify effective resolution and
+noise-free resolution, using the assumption that the FSR is maximized. Or, in other words, if your system does not use
+the maximum FSR (or whatever FSR the manufacturer used to characterize the ADC), you should not expect to achieve
+the effective or noise-free resolution values specified in the data sheet.
+Let’s illustrate this point by using a 1-V reference voltage with an ADC whose data-sheet noise is characterized with a
+reference voltage of 2.5 V. Continuing with the ADS127L01 as an example, Table 4 shows that using a 2.5-V reference
+voltage and a 2-kSPS data rate in very low power mode results in 1.34 μVRMS of input-referred noise and an effective
+resolution of 21.83 bits.
+Table 4. ADS127L01 noise performance: low-latency filter, AVDD = 3V, DVDD = 1.8 V and V REF = 2.5 V.
+Mode Data rate (SPS) VRMS_noise (µVRMS) ENOB
+512,000 7.40 19.37
+128,000 5.12 19.90
+High resolution (HR)
+32,000 2.74 20.80
+8,000 1.41 21.76
+256,000 7.22 19.40
+64,000 4.97 19.94
+Low power (LP)
+16,000 2.65 20.85
+4,000 1.37 21.80
+128,000 6.97 19.45
+32,000 4.80 19.99
+Very-low power (VLP)
+8,000 2.57 20.89
+2,000 1.34 21.83
+However, using a 1-V reference voltage reduces the FSR to 2 V. You can use this 2-V value to calculate the new expected
+effective resolution (dynamic range), given by Equation 5:
+log2
+FSR
+VNoise, RMS = log2
+2 V
+= 20.51 bits (5)
+1.34 × 10−6V
+Changing the reference voltage reduces the ADC’s FSR, which in turn reduces its effective resolution (dynamic range)
+compared to the data-sheet value by more than 1.3 bits. Equation 6 generalizes this loss of resolution:
+resolution (dynamic
+range) loss = log2(% utilization) = log2
+2 V
+5 V=− 1.32 bits (6)
+where % utilization is simply the ratio of the actual FSR to the FSR at which the ADC’s noise is characterized.
+While this apparent resolution loss may seem like a drawback to using high-resolution delta-sigma ADCs, recall that
+while the FSR is decreasing, the input-referred noise is not. Therefore, I suggest performing ADC noise analysis using
+Fundamentals of Precision ADC Noise Analysis 15 March 2025
+
+===== PDF PAGE 16 =====
+Chapter 1: Introduction to ADC noise
+an absolute noise parameter, or one that is measured directly. Using an absolute noise parameter eliminates the
+dependence on the input signal and reference voltage characteristic of relative noise parameters. Additionally, absolute
+parameters simplify the relationship between ADC noise and system noise.
+For ADC noise analysis, I recommend using input-referred noise. I’ve bolded this phrase because it’s not common
+practice to use input-referred noise to define ADC performance. In fact, a majority of engineers speak exclusively in
+terms of relative parameters such as effective and noise-free resolution, and are deeply concerned when they cannot
+maximize those values. After all, if you need to use a 24-bit ADC to achieve 16-bit effective resolution, it feels like you’re
+paying for performance that the ADC cannot actually provide.
+However, an effective resolution of 16 bits doesn’t necessarily tell you anything about how much of the FSR you use. You
+may only need 16 bits of effective resolution, but if the minimum input signal is 50 nV, you will never be able to resolve
+that with a 16-bit ADC. Therefore, the true benefit of a high-resolution delta-sigma ADC is the low levels of input-referred
+noise it offers. It does not mean that effective resolution is unimportant—just that it is not the best way to parameterize a
+system.
+Ultimately, if the ADC cannot resolve both the minimum and maximum input signals, maximizing SNR or effective
+resolution is irrelevant. And unlike effective resolution, you can typically derive the ADC’s required input-referred noise
+directly and easily from the system specifications. This characteristic makes input-referred noise analysis more flexible to
+system changes. Additionally, it enables easy comparison between different ADCs in order to choose a specific ADC for
+any application.
+Key takeaways
+Here is a summary of important points to better understand ADC noise measurement methods and parameters:
+1. 2. 3. 4. Different measurements quantify different types of noise:
+• To measure AC noise performance, use the AC-signal applied test.
+• To measure DC noise performance, use the input-short test.
+• ADC end applications typically determine the noise measurement type.
+Noise is introduced via all signal-chain components.
+• In general, assume that the input signal is equal to the FSR.
+There are two types of noise parameters:
+• Relative—calculated using a ratio of measured values.
+• Absolute—measured directly.
+Input-referred noise is the absolute measure of an ADC’s resolution (the smallest measurable signal). Noise-free bits
+and effective resolution are relative parameters that describe the dynamic range of the ADC.
+Defining system noise performance
+In Section 3.1 and Section 3.2, I explored ADC noise performance in detail, from its characteristics and sources to
+how it’s measured and specified. Now, I’ll apply the theoretical understanding from Section 3.1 and Section 3.2 to a
+real-world design example. Ultimately, the goal is to give you the knowledge necessary to answer the question, “What
+noise performance do I really need?,” allowing you to easily and confidently choose an ADC for your next application.
+Fundamentals of Precision ADC Noise Analysis 16 March 2025
+
+===== PDF PAGE 17 =====
+Chapter 1: Introduction to ADC noise
+System specifications
+I’ll begin the example by defining system specifications for the application, converting these specifications into a target
+noise-performance parameter, and using that information to compare potential ADCs. As an example, let’s analyze a
+weigh-scale application that uses a four-wire resistive bridge similar to that shown in Figure 13.
+Figure 13. Typical four-wire resistive bridge.
+For the system specifications, assume a bridge with a sensitivity of 2 mV/V and an excitation voltage of 2.5 V that you
+want to sample at 5 samples per second (SPS). This provides a maximum output voltage of 5 mV that corresponds to a
+weight range of 1 kg. Let’s also assume that you want to be able to resolve a minimum applied weight of 50 mg. Table 5
+summarizes these parameters.
+Table 5. Example design system specifications.
+Parameter System specification
+Bridge sensitivity 2 mV/V
+Excitation/reference voltage 2.5 V
+Output data date 5 SPS
+Weight range 1 kg
+Weight resolution 50 mg
+Now that you have the system specifications, let’s convert them into common noise parameters to help you choose your
+ADC.
+Defining a system noise parameter
+In Section 3.2, I strongly recommended using input-referred noise to define system noise parameters and choose an
+ADC. But let’s begin with the more common approach of using noise-free counts and noise-free resolution. Then you
+can compare this method to using input-referred noise directly. Equation 7 and Equation 8 calculate your initial noise
+parameters:
+noise‐free counts (NFC) = max signal
+min signal=
+1 kg
+50 mg = 20, 000 counts (7)
+noise‐free resolution = log2(NFC) = log2(20, 000) = 14.3 bits (8)
+With a required noise-free resolution of 14.3 bits, you might quickly conclude that you only need a 16-bit ADC. However,
+as I explained in Section 3.2, the noise-free resolution that a high-resolution delta-sigma ADC can actually provide
+depends on the percent utilization of the ADC’s full-scale range. In this example, the system uses a 2.5-V reference
+Fundamentals of Precision ADC Noise Analysis 17 March 2025
+
+===== PDF PAGE 18 =====
+Chapter 1: Introduction to ADC noise
+voltage and the maximum input signal is the product of the excitation voltage (2.5 V) and bridge sensitivity (2 mV/V).
+Equation 9 shows the expected resolution loss using Equation 6 from Section 3.2:
+resolution (dynamic
+range) loss = log2
+2.5 V × 2 mV
+V
+2 × 2.5 V=− 9.96 bits (9)
+This is a dramatic result. Since you’re only using 0.1% of the available full-scale range, you’ll lose almost 10 bits of
+resolution. At this level, even a 24-bit ADC would not be sufficient to meet the system requirements. To remedy the issue,
+you’d need to increase the percent utilization by either changing the system specifications or amplifying the input signal.
+Assuming that you have little control over what the system requires, you’re left with gaining up the input, an action that
+absolutely changes the noise performance of the signal chain.
+Fortunately, you can continue your analysis without needing a detailed understanding of how amplifier noise affects
+system performance. Instead, you can use your existing knowledge to analyze the data-sheet noise tables of an ADC
+with an integrated PGA to determine if it meets the system requirements.
+For example, Table 6 shows the effective and noise-free resolution tables for the 24-bit ADS124S08 up to 50 SPS, with
+the target data rate highlighted. Note that the ADS124S08 includes gains from 1 V/V up to 128 V/V.
+Table 6. ADS124S08 effective resolution (noise-free resolution) – Sinc3 filter at AVDD = 3.3 V, AVSS = 0 V, PGA enabled, global chop
+disabled and an internal 2.5-V reference.
+Data rate
+(SPS)
+Gain
+1 2 4 8 16 32 64 128
+2.5 23.9 (21.4) 23.9 (21.4) 23.8 (21.4) 23.6 (21.2) 23.0 (20.5) 22.6 (20.2) 21.9 (19.1) 21.0 (18.4)
+5 23.6 (21.0) 23.5 (21.2) 23.4 (21.0) 23.2 (20.7) 22.9 (20.0) 22.2 (19.5) 21.4 (18.9) 20.5 (17.6)
+10 23.2 (20.7) 23.0 (20.5) 22.9 (20.4) 22.8 (20.2) 22.3 (19.6) 21.7 (19.2) 20.9 (18.4) 20.1 (17.3)
+16.6 22.6 (20.2) 22.7 (20.1) 22.6 (20.0) 22.4 (19.8) 22.0 (19.4) 21.3 (18.8) 20.5 (17.9) 19.7 (17.0)
+20 22.6 (20.0) 22.5 (20.0) 22.4 (19.8) 22.3 (19.8) 21.9 (19.3) 21.2 (18.4) 20.4 (17.7) 19.6 (17.0)
+50 21.9 (19.4) 21.9 (19.4) 21.9 (19.3) 21.7 (19.0) 21.2 (18.6) 20.5 (17.8) 19.7 (17.2) 18.9 (16.2)
+Table 7. Expected noise-free resolution (bits) using the ADS124S08.
+Gain
+Data rate
+1 2 4 8 16 32 64 128
+Data-sheet resolution
+(bits) 21.0 21.2 21.0 20.7 20.0 19.5 18.9 17.6
+Percent utilization 0.1% 0.2% 0.4% 0.8% 1.6% 3.2% 6.4% 12.8%
+Resolution loss (bits) –9.97 –8.97 –7.97 –6.97 –5.97 –4.97 –3.97 –2.97
+System resolution
+(bits) 11.03 12.23 13.03 13.73 14.03 14.53 14.93 14.63
+To determine if this ADC meets your requirements, you need to recalculate the expected resolution loss for each gain
+setting separately, as each results in a different percent utilization. You then need to add this to each corresponding
+noise-free resolution value reported in Table 6 to see if it meets the system specifications. Table 7 lists these different
+values as well as the calculated system noise-free resolution in bits using the ADS124S08 at a 5-SPS data rate.
+Table 7 tells you that you can only achieve the required system noise-free resolution of 14.3 bits using a gain of 32, 64 or
+128 V/V at 5 SPS. Table 8 highlights these values in the context of the data-sheet noise tables.
+Fundamentals of Precision ADC Noise Analysis 18 March 2025
+
+===== PDF PAGE 19 =====
+Chapter 1: Introduction to ADC noise
+One key takeaway from Table 8 is that there is no simple way to correlate the values in the data sheet to the system-
+noise parameter without multiple calculations. While this may not be relevant now after calculating the results, what if the
+system specifications suddenly change?
+Suppose you decided to increase the excitation (reference) voltage from 2.5 V to 5 V. You’re also going to increase the
+bridge sensitivity to 20 mV/V (which means that you cannot use the highest gain settings, since doing so will over-range
+the ADC). And you’re exploring the option of sampling at 20 SPS instead of 5 SPS. How do these changes affect your
+ADC noise analysis?
+To determine the answer, you would have to calculate a new resolution loss for each gain setting at the new data rate
+and reference voltage. Additionally, you would have to recreate the table in Table 6 based off of a 5-V reference voltage,
+since this figure’s calculations use a reference voltage of 2.5 V. Finally, you would have to recreate Table 7 by subtracting
+the calculated resolution losses from the noise-free resolution table that was created using a 5-V reference voltage.
+Admittedly, this is a lot of work, and is a direct result of noise-free resolution being a relative parameter. So let’s now
+switch to using an absolute noise parameter, as I suggested in Section 1.2, and see how the analysis changes.
+Table 8. Gain settings that meet the system requirements using the ADS124S08 at a 5-SPS data rate.
+Data rate
+(SPS)
+Gain
+1 2 4 8 16 32 64 128
+2.5 23.9 (21.4) 23.9 (21.4) 23.8 (21.4) 23.6 (21.2) 23.0 (20.5) 22.6 (20.2) 21.9 (19.1) 21.0 (18.4)
+5 23.6 (21.0) 23.5 (21.2) 23.4 (21.0) 23.2 (20.7) 22.9 (20.0) 22.2 (19.5) 21.4 (18.9) 20.5 (17.6)
+10 23.2 (20.7) 23.0 (20.5) 22.9 (20.4) 22.8 (20.2) 22.3 (19.6) 21.7 (19.2) 20.9 (18.4) 20.1 (17.3)
+16.6 22.6 (20.2) 22.7 (20.1) 22.6 (20.0) 22.4 (19.8) 22.0 (19.4) 21.3 (18.8) 20.5 (17.9) 19.7 (17.0)
+20 22.6 (20.0) 22.5 (20.0) 22.4 (19.8) 22.3 (19.8) 21.9 (19.3) 21.2 (18.4) 20.4 (17.7) 19.6 (17.0)
+50 21.9 (19.4) 21.9 (19.4) 21.9 (19.3) 21.7 (19.0) 21.2 (18.6) 20.5 (17.8) 19.7 (17.2) 18.9 (16.2)
+Table 9. Gain and data-rate combinations providing ≤250 nV PP using the ADS124S08. (Note: Table values are given as “noise µV RMS
+(µV PP )” using a 2.5-V reference voltage.)
+Data rate
+(SPS)
+Gain
+1 2 4 8 16 32 64 128
+2.5 0.32 (1.8) 0.16 (0.89) 0.085 (0.45) 0.049 (0.26) 0.036 (0.20) 0.025 (0.13) 0.020 (0.14) 0.019 (0.11)
+5 0.40 (2.4) 0.21 (1.0) 0.11 (0.60) 0.066 (0.37) 0.040 (0.30) 0.033 (0.20) 0.029 (0.16) 0.027 (0.20)
+10 0.53 (3.0) 0.29 (1.6) 0.16 (0.89) 0.088 (0.52) 0.061 (0.39) 0.046 (0.25) 0.040 (0.23) 0.036 (0.24)
+16.6 0.76 (4.2) 0.36 (2.2) 0.20 (1.2) 0.11 (0.67) 0.077 (0.47) 0.060 (0.35) 0.052 (0.32) 0.046 (0.30)
+20 0.81 (4.8) 0.41 (2.4) 0.22 (1.4) 0.12 (0.71) 0.082 (0.48) 0.064 (0.44) 0.056 (0.37) 0.048 (0.30)
+50 1.3 (7.2) 0.62 (3.7) 0.33 (1.9) 0.18 (1.2) 0.13 (0.76) 0.11 (0.69) 0.091 (0.53) 0.080 (0.53)
+Using input-referred noise
+Like noise-free resolution, you only need to know a few of your system specifications to determine the required input-
+referred noise for your bridge. You need to know its maximum output signal, which is 5 mV. You also need to know
+the weight range to which this maximum signal corresponds, which is 1 kg. And finally, you need to know your weight
+resolution, which is 50 mg. With these few bits of information, you can use Equation 10 to determine that your ADC
+needs to be able to resolve a peak-to-peak signal of 250 nV:
+1 kg
+50 mg=
+5 mV
+? , ? = 250 nVPP (10)
+Fundamentals of Precision ADC Noise Analysis 19 March 2025
+
+===== PDF PAGE 20 =====
+Chapter 1: Introduction to ADC noise
+One of the benefits of using input-referred noise is that you don’t have to worry about calculating resolution loss.
+Instead, you can directly compare your calculated value against the input-referred noise table for your ADC to determine
+which combination of settings offers an equal or lower level of noise performance.
+Table 9 is an abridged version of the input-referred noise table for the ADS124S08. I’ve highlighted any combination of
+gain and data-rate settings that provides ≤250 nVPP of input-referred noise.
+If you compare the results in Table 9 to your analysis using noise-free resolution in Table 8, you’ll see that Table 9
+provides the entire range of ADS124S08 settings that meet the system requirements. Table 8 only provides the values at
+the data rate selected and requires that you perform new calculations for different data rates, making this approach less
+adaptable to system specification changes.
+Effects of system changes
+Let’s now assume that you’ve increased your weight range to 5 kg and your weight resolution to 500 mg, and kept your
+bridge’s maximum output signal at 5 mV, as in Equation 11:
+5 kg
+500 mg=
+5 mV
+? , ? = 500 nVPP (11)
+With a quick calculation, you can determine that your system noise requirement has been relaxed to 500 nVPP, which
+makes more gain and data-rate combinations available to you. Table 10 demonstrates that these relaxed system
+specifications allow you to sample faster (up to 20 SPS) or decrease your gain (down to 4 V/V) while still achieving the
+requisite noise performance.
+Table 10. Gain and data-rate combinations providing ≤500 nV PP using the ADS124S08. (Note: Table values are given as “noise µV RMS
+(µV PP )” using a 2.5-V reference voltage.)
+Data rate
+(SPS)
+Gain
+1 2 4 8 16 32 64 128
+2.5 0.32 (1.8) 0.16 (0.89) 0.085 (0.45) 0.049 (0.26) 0.036 (0.20) 0.025 (0.13) 0.020 (0.14) 0.019 (0.11)
+5 0.40 (2.4) 0.21 (1.0) 0.11 (0.60) 0.066 (0.37) 0.040 (0.30) 0.033 (0.20) 0.029 (0.16) 0.027 (0.20)
+10 0.53 (3.0) 0.29 (1.6) 0.16 (0.89) 0.088 (0.52) 0.061 (0.39) 0.046 (0.25) 0.040 (0.23) 0.036 (0.24)
+16.6 0.76 (4.2) 0.36 (2.2) 0.20 (1.2) 0.11 (0.67) 0.077 (0.47) 0.060 (0.35) 0.052 (0.32) 0.046 (0.30)
+20 0.81 (4.8) 0.41 (2.4) 0.22 (1.4) 0.12 (0.71) 0.082 (0.48) 0.064 (0.44) 0.056 (0.37) 0.048 (0.30)
+50 1.3 (7.2) 0.62 (3.7) 0.33 (1.9) 0.18 (1.2) 0.13 (0.76) 0.11 (0.69) 0.091 (0.53) 0.080 (0.53)
+Table 11. Gain and data-rate combinations providing ≤50 nV PP using the ADS1262. (Note: Table values are given as “noise µV RMS
+(µV PP )” using a 2.5-V reference voltage.)
+Data rate
+(SPS) Gain
+Filter mode
+1 2 4 8 16 32
+FIR 0.145 (0.637) 0.071 (0.279) 0.038 (0.149) 0.023 (0.089) 0.014 (0.064) 0.011 (0.051)
+Sinc1 0.121 (0.510) 0.058 (0.249) 0.033 (0.143) 0.018 (0.073) 0.012 (0.054) 0.008 (0.037)
+2.5
+Sinc2 0.101 (0.437) 0.055 (0.225) 0.025 (0.104) 0.015 (0.064) 0.010 (0.043) 0.007 (0.031)
+Sinc3 0.080 (0.307) 0.046 (0.195) 0.026 (0.116) 0.013 (0.052) 0.008 (0.034) 0.006 (0.023)
+Sinc4 0.080 (0.308) 0.043 (0.180) 0.020 (0.078) 0.013 (0.049) 0.008 (0.031) 0.007 (0.027)
+FIR 0.206 (1.007) 0.098 (0.448) 0.054 (0.252) 0.028 (0.123) 0.020 (0.098) 0.015 (0.073)
+Sinc1 0.161 (0.726) 0.090 (0.432) 0.047 (0.246) 0.026 (0.120) 0.017 (0.083) 0.012 (0.057)
+5
+Sinc2 0.146 (0.661) 0.069 (0.308) 0.038 (0.195) 0.021 (0.100) 0.013 (0.061) 0.011 (0.050)
+Sinc3 0.128 (0.611) 0.067 (0.325) 0.033 (0.153) 0.019 (0.095) 0.012 (0.054) 0.010 (0.046)
+Sinc4 0.122 (0.587) 0.063 (0.269) 0.030 (0.144) 0.017 (0.076) 0.011 (0.048) 0.008 (0.039)
+Fundamentals of Precision ADC Noise Analysis 20 March 2025
+
+===== PDF PAGE 21 =====
+Chapter 1: Introduction to ADC noise
+Table 11. Gain and data-rate combinations providing ≤50 nV PP using the ADS1262. (Note: Table values are given as “noise µV RMS
+(µV PP )” using a 2.5-V reference voltage.) (continued)
+Data rate
+(SPS) Gain
+Filter mode
+1 2 4 8 16 32
+FIR 0.284 (1.418) 0.142 (0.753) 0.077 (0.379) 0.041 (0.197) 0.027 (0.156) 0.023 (0.118)
+Sinc1 0.229 (1.220) 0.123 (0.662) 0.060 (0.322) 0.035 (0.177) 0.023 (0.118) 0.018 (0.103)
+10
+Sinc2 0.193 (1.019) 0.093 (0.488) 0.048 (0.254) 0.028 (0.149) 0.019 (0.099) 0.016 (0.079)
+Sinc3 0.176 (0.896) 0.088 (0.452) 0.043 (0.217) 0.028 (0.137) 0.018 (0.091) 0.014 (0.067)
+Sinc4 0.164 (0.788) 0.076 (0.389) 0.040 (0.200) 0.024 (0.119) 0.016 (0.081) 0.013 (0.065)
+What if your weigh scale requires more resolution instead? For example, you keep the 5-kg weight range requirement,
+but return to the 50-mg weight resolution from the first example. Keeping your maximum bridge output the same (5
+mV), you now require 50 nVPP of input-referred noise, which is extremely low. Looking at Table 9 or 10, it’s clear that no
+combination of ADS124S08 gain and data rates provides this level of performance. But because you can easily perform
+this same analysis with any ADC, simply choose one with better noise performance.
+Table 11 shows the noise table for the ADS1262 , a 32-bit ADC that is functionally similar to the ADS124S08 but offers
+better noise performance. The teal shading in Table 11 indicates the data-rate and noise combinations that provide ≤50
+nVPP of input-referred noise, and confirm that the ADS1262 can meet your system’s new resolution requirements.
+For the sake of argument, let’s compare the input-referred noise result to a relative parameter. Table 12 highlights the
+ADS1262’s noise-free resolution performance at the same data-rate and gain configurations shown in Table 11.
+Table 12. Effective (noise-free) resolution correlating to ≤50 nV PP using the ADS1262 and a 5-V reference voltage.
+Data rate
+(SPS) Gain
+Filter mode
+1 (Bypass) 2 4 8 16 32
+FIR 26.0 (23.9) 25.9 (23.9) 25.8 (23.8) 25.5 (23.6) 25.4 (23.0) 24.6 (22.4)
+Sinc1 26.3 (24.2) 26.2 (24.1) 26.0 (23.9) 25.9 (23.8) 25.6 (23.3) 25.0 (22.8)
+2.5
+Sinc2 26.6 (24.4) 26.3 (24.2) 26.4 (24.3) 26.1 (24.0) 25.8 (23.6) 25.2 (23.1)
+Sinc3 26.9 (25.0) 26.5 (24.4) 26.3 (24.2) 26.3 (24.3) 26.1 (23.9) 25.6 (23.5)
+Sinc4 26.9 (25.0) 26.6 (24.5) 26.7 (24.7) 26.3 (24.4) 26.2 (24.1) 25.2 (23.3)
+FIR 25.5 (23.2) 25.4 (23.2) 25.3 (23.1) 25.2 (23.1) 24.8 (22.4) 24.1 (21.9)
+Sinc1 25.9 (23.7) 25.5 (23.3) 25.5 (23.1) 25.4 (23.1) 25.0 (22.7) 24.4 (22.2)
+5
+Sinc2 26.0 (23.9) 25.9 (23.8) 25.8 (23.4) 25.7 (23.4) 25.4 (23.1) 24.6 (22.4)
+Sinc3 26.2 (24.0) 26.0 (23.7) 26.0 (23.8) 25.8 (23.5) 25.6 (23.3) 24.7 (22.5)
+Sinc4 26.3 (24.0) 26.1 (24.0) 26.1 (22.5) 25.9 (23.8) 25.7 (23.5) 25.0 (22.8)
+FIR 25.1 (22.7) 24.9 (22.5) 24.8 (22.5) 24.7 (22.4) 24.4 (21.8) 23.5 (21.2)
+Sinc1 25.4 (23.0) 25.1 (22.7) 25.1 (22.7) 24.9 (22.6) 24.6 (22.2) 23.8 (21.4)
+10
+Sinc2 25.6 (23.2) 25.5 (23.1) 25.4 (23.0) 25.2 (22.8) 24.9 (22.4) 24.1 (21.7)
+Sinc3 25.8 (23.4) 25.6 (23.2) 25.6 (23.3) 25.2 (22.9) 25.0 (22.5) 24.2 (22.0)
+Sinc4 25.9 (23.6) 25.8 (23.4) 25.7 (23.4) 25.5 (23.1) 25.1 (22.7) 24.4 (22.0)
+In Section 3.2, I pointed out that many engineers were unnecessarily concerned with maximizing their noise-free
+resolution (dynamic range). Let’s examine this point by calculating your system’s noise-free resolution from the largest
+highlighted value at the system-required 5-SPS data rate. In Table 12, this value is 23.5 bits and is available at a gain of
+16 V/V using the Sinc4 filter.
+Fundamentals of Precision ADC Noise Analysis 21 March 2025
+
+===== PDF PAGE 22 =====
+Chapter 1: Introduction to ADC noise
+Remember from Table 12’s caption that the table calculations use a 5-V reference voltage, not the 2.5-V reference
+voltage that the system specifies. To compensate for this difference, each of the resolution values given in Table 11 must
+decrease by one bit. This means that you can only expect a maximum of 22.5 bits of noise-free resolution at the given
+conditions. You can now calculate the expected resolution loss for the ADS1262 at these settings.
+Using the result from Equation 12, the system noise-free resolution is only 16.5 bits using a 32-bit ADC:
+resolution (dynamic
+16 V
+V × 2.5 V × 2 mV
+V
+range) loss = log2
+2 × 2.5 V=− 5.96 bits (12)
+For many, this is a disheartening result that seems to confirm the fear that you are paying for performance the ADC
+cannot actually provide. However, if you look at the same settings from Table 11, you’ll see that you’re actually taking
+advantage of 48-nVPP noise at the given conditions. This is an incredibly small value that no 16-bit ADC and very few
+24-bit ADCs can provide.
+Ultimately, this is the point I’m trying to make. You need such a high-resolution ADC to achieve 16.5 bits of noise-free
+resolution (dynamic range) because the system requires extremely low noise performance. That is why it makes sense to
+define system performance and choose ADCs using input-referred noise.
+In Section 4, I’ll discuss effective noise bandwidth in detail and delve into topics including how to determine the amount
+of noise that passes into the system and methods to restrict noise bandwidth.
+Key takeaways
+Here is a summary of important points to better understand how to define system noise performance:
+1. Use a common process:
+• Convert sensor inputs (temperature, weight, current, resistance, etc.) to voltage.
+• Define system resolution and range.
+• Compare against ADC noise tables.
+2. Input-referred noise is best to define system performance:
+• Enables fair comparison between ADCs.
+• Eliminates dependency on voltage reference.
+• Provides a range of applicable-gain and data-rate settings.
+3. Focus on resolving smallest and largest signals—maximizing dynamic range is not always important.
+Fundamentals of Precision ADC Noise Analysis 22 March 2025
+
+===== PDF PAGE 23 =====
+Chapter 2: Effective noise bandwidth
+Chapter 2: Effective noise bandwidth
+Understanding analog-to-digital converter (ADC) noise can be challenging—even for the most experienced analog
+designers. Delta-sigma ADCs have a combination of quantization and thermal noise that varies depending on the ADC’s
+resolution, reference voltage and output data rate (ODR). At a system level, noise analysis is further complicated by
+additional signal-chain components, many of which have dissimilar noise characteristics that make them challenging to
+compare.
+If you want to be able to estimate the noise in your system, however, you must understand how much noise each
+component contributes, how one component’s noise may affect another and which noise sources dominate. Although
+this may seem like a difficult task, you can use a signal chain’s effective noise bandwidth (ENBW) to help simplify the
+process.
+To that end, Chapter 2 is about noise in delta-sigma ADCs , and begins with developing an understanding of basic
+ENBW topics such as:
+• What is ENBW?
+• Why is ENBW important?
+• What contributes to the system’s ENBW?
+I will then continue the ENBW discussion by stepping through a simple design example using a two-stage filter to
+explore these subjects:
+• How to calculate ENBW.
+• How system changes affect ENBW.
+Effective noise bandwidth fundamentals •
+2.2 Calculating effective noise bandwidth•
+Fundamentals of Precision ADC Noise Analysis 23 March 2025
+
+===== PDF PAGE 24 =====
+Chapter 2: Effective noise bandwidth
+Effective noise bandwidth fundamentals
+Since ENBW is an abstract concept, let’s use the simple analogy of doors and windows on a cold night to understand
+it more easily. To reduce your energy costs and save money, you need to keep all of your doors and windows closed
+as much as possible in order to limit the amount of cold air entering your home. In this case, your home is the system,
+your doors and windows are the filter, the cold air is noise and ENBW is a measurement of how open (or closed) your
+openings are. The larger the gap (ENBW), the more cold air (noise) gets into your home (system) and vice versa, as
+shown in Figure 14.
+Figure 14. A wide-open door equals more noise (a), while a barely open door equals less noise (b).
+In general signal-processing terms, a filter’s ENBW is the cutoff frequency, fC, of an ideal brick-wall filter whose noise
+power is approximately equivalent to the noise power of the original filter, H(f). Relating this definition back to the door
+and window analogy, a system’s ENBW is equivalent to combining the opening widths of each door and window— which
+may all be different—into one definable value that applies equally to them all. This simplification makes it much easier to
+understand how much “cold air” is getting in.
+As an example, let’s simplify a single-pole, low-pass resistor-capacitor (RC) filter (Figure 15a) into an ideal brick-wall filter
+(Figure 15b). To do so, calculate the noise power under the actual filter response using integration. This calculated value
+is the original filter’s ENBW, which then becomes the cutoff frequency, fC, of an analogous ideal brick-wall filter.
+Fundamentals of Precision ADC Noise Analysis 24 March 2025
+
+===== PDF PAGE 25 =====
+Chapter 2: Effective noise bandwidth
+Figure 15. Single-pole RC filter response (a); ENBW plot for the RC filter (b).
+In this case, you can calculate a single-pole, low-pass filter’s ENBW using the direct-integration method, or you can use
+Equation 13, which relates the original RC filter’s 3-dB point to its ENBW:
+ENBW1 − pole RC filter = 1.57 × f−3 dB (13)
+For more information about how this formula was derived, see the TI Precision Labs training series on operational
+amplifier (op amp) noise .
+With this simple example, ENBW is defined as the transformation from a real-world filter response to an ideal filter
+response. But let’s discuss the motivation for using this technique and see how it can help simplify your noise analysis
+calculations.
+Why is ENBW important?
+To understand why ENBW is important, let’s assume that you want to use an ADC with no filtering to measure low-level
+resistive-bridge signals whose typical full-scale output can be as low as 10 mV. To accomplish this, you’ll need to add an
+amplifier at the ADC’s input to gain up your signals of interest above the ADC’s noise floor, as well as widen the ADC’s
+dynamic range. With no other filtering, the amplifier passes virtually all of its noise to the ADC. In this case, the noise is
+limited only by the amplifier’s bandwidth, which could be thousands of kilohertz or more.
+Fundamentals of Precision ADC Noise Analysis 25 March 2025
+
+===== PDF PAGE 26 =====
+Chapter 2: Effective noise bandwidth
+Fortunately, you’ll also need to add an antialiasing filter after the amplifier. This filter performs two functions: first, it limits
+unwanted signals from folding back into the pass band; second, it reduces the signal chain’s ENBW far more than the
+amplifier’s bandwidth alone, given that Equation 14 is generally true:
+BWFilter ≪ BWAMP (14)
+Figure 16 models the new ADC input stage.
+Figure 16. ADC input stage with amplifier and antialiasing filter.
+Given the condition in Equation 15, you know that the antialiasing filter limits the amplifier noise passing into the ADC—
+but how much noise does it remove? Or, more importantly, how much noise still passes through to affect the ADC and
+the resulting measurement? In order to calculate this, you need to look at the amplifier’s noise characteristics.
+BWFilter ≪ BWAMP (15)
+Figure 17 shows an amplifier’s voltage noise spectral density plot with a large 1/f (flicker) region. Taken by itself, this
+plot tells you very little about the amplifier’s actual noise contribution (highlighted in teal). In fact, the nonconstant noise
+density—a common trait of nonchopper-stabilized amplifiers—makes it even more challenging to calculate how much
+noise passes to the ADC.
+Figure 17. Generic amplifier noise density plot with a large 1/f region.
+To find out how much noise passes to the ADC, you’ll need to calculate the system’s ENBW. Once you’ve determined
+the ideal brick-wall filter response, you can overlay it on the amplifier’s noise spectral density curve, depicted by the red
+region in Figure 18.
+Fundamentals of Precision ADC Noise Analysis 26 March 2025
+
+===== PDF PAGE 27 =====
+Chapter 2: Effective noise bandwidth
+Figure 18. Amplifier noise-density plot with overlaid ENBW.
+The antialiasing filter in Figure 18 is designed such that it provides a 200-Hz ENBW, effectively acting as a cutoff for
+the amplifier’s noise. All that’s left to do is calculate this noise, represented by the dark grey area in Figure 18. When
+broadband noise dominates, you can use Equation 16 to calculate the root-mean-square (RMS) voltage noise:
+VNoise, Broadband = VNoise spectral density × ENBW (16)
+If the device has a large 1/f noise component, similar to the amplifier shown in Figure 17 and Figure 18, you can use
+direct integration or simplified formulas to calculate the device’s noise contribution. For more information on each of
+these methods, please review the TI Precision Labs training module on op amp noise .
+In this case, the calculated RMS voltage noise passed to the ADC is 100nVRMS.
+What contributes to the system’s ENBW?
+Through this simple amplifier/antialiasing filter analysis, I inadvertently defined two sources that help determine a signal
+chain’s ENBW. However, multiple filtering sources can exist in any design, and at least some filtering exists in every
+design. Even printed circuit boards (PCBs) that do not contain traditional filtering have trace impedances and parallel
+trace capacitances. These parasitics can create an unintentional RC filter, albeit one with a very large bandwidth and
+therefore little effect on the overall ENBW.
+Figure 19 highlights the most common sources of filtering in a typical data-acquisition (DAQ) system: external filters such
+as electromagnetic interference (EMI) filters, the amplifier’s bandwidth, antialiasing filters, digital filters of delta-sigma
+ADCs and/or any post-processing filters created digitally in an MCU or field-programmable gate array. It’s important
+to note that not all of these filtering sources appear in every signal chain. For example, many delta-sigma-based DAQ
+systems do not require post-processing filters due to the integrated filters inside these ADCs.
+If your signal chain has multiple filter components, you must calculate each component’s ENBW by combining all
+downstream filters in the signal chain. For example, to calculate the noise contribution of the amplifier in Figure
+19, you would have to combine the amplifier’s bandwidth with the antialiasing filter, the ADC’s digital filter and any
+post-processing filters. However, you could ignore the EMI filter.
+Fortunately, even if one circuit has multiple sources of filtering, some filter types generally have a greater effect on
+overall ENBW than others. As a result, you may only need to calculate that component’s ENBW and ignore the other
+sources of filtering. For example, at lower-output data rates (ODRs), a delta-sigma ADC’s digital filter typically provides
+Fundamentals of Precision ADC Noise Analysis 27 March 2025
+
+===== PDF PAGE 28 =====
+Chapter 2: Effective noise bandwidth
+the narrowest bandwidth in the signal chain and therefore dominates the system’s ENBW. Conversely, if you were to use
+a faster ODR with a very wide input-signal bandwidth, the antialiasing filter would generally limit the system’s ENBW.
+Now that you understand the fundamentals of ENBW, let’s step through a simple example to help clarify how to apply
+ENBW to a real-world system.
+Figure 19. Common sources of filtering in delta-sigma ADC DAQ systems.
+Key takeaways
+Here is a summary of important points to better understand ENBW fundamentals:
+1. 2. 3. 4. 5. ENBW represents an ideal brick-wall filter’s cutoff frequency for a given generic filter, H(f).
+You must determine the ENBW for each noise source in the system.
+To calculate each noise source’s ENBW, combine all downstream filters in the system.
+ENBW helps determine how much noise each component passes into the system.
+ENBW is typically dominated by the filter with the smallest cutoff frequency, which is generally an antialiasing filter or
+digital filter, especially for precision delta-sigma ADCs.
+2.2 Calculating effective noise bandwidth
+Let’s continue to explore ENBW as it relates to delta-sigma ADCs and system-level design, stepping through a simple
+example using a two-stage filter to understand:
+• How to calculate ENBW.
+• How system changes affect ENBW.
+How to calculate ENBW
+For this example, let’s use a simple, two-stage DAQ system comprising an antialiasing filter followed by a delta-sigma
+ADC with an integrated sinc filter, shown in Figure 20. As I previously discussed, I’ll focus on these two filter types
+because they typically have the greatest impact on the overall ENBW, but this analysis is generally applicable to any type
+or number of additional filters.
+Figure 20. Simplified DAQ system block diagram.
+Fundamentals of Precision ADC Noise Analysis 28 March 2025
+
+===== PDF PAGE 29 =====
+Chapter 2: Effective noise bandwidth
+For the antialiasing filter, let’s use a single-pole RC filter, since I already discussed how to calculate its ENBW in Section
+2.1 (reiterated below in Equation 17). Moreover, a delta-sigma ADC typically only requires a simple RC filter to provide
+sufficient antialiasing. Table 1 summarizes the chosen resistor and capacitor values for this example, though other valid
+combinations exist.
+Table 13. Antialiasing filter component values.
+Antialiasing (RC) filter
+Resistors (W) 1,000 total (2 × 500)
+Capacitor (nF) 100
+–3-dB cutoff frequency (Hz) 1,590
+With the passive component values selected, calculate the antialiasing filter’s ENBW using Equation 17:
+ENBW1 − pole RC filter = 1.57 × f−3 dB
+ENBW1− pole RC filter = 1.57 × 1, 590 Hz = 2, 500 Hz (17)
+Finally, plot the antialiasing filter’s response as shown in Figure 21, with the filter’s ENBW represented by the red-shaded
+area.
+Figure 21. Antialiasing filter response with ENBW highlighted.
+With a firm understanding of the antialiasing filter’s frequency response, the next step is to determine the response of the
+ADC’s sinc filter. For this example, let’s choose the 32-bit, low-noise ADS1262 from TI, although this analysis is generally
+applicable to any delta-sigma ADC. In this case, I’ll use the ADS1262’s Sinc4 filter at a data rate of 60 samples per
+second (SPS). Figure 22 recreates a data-sheet plot for this filter’s frequency response at these settings (derived from
+the ADS1262 calculation tool ).
+Fundamentals of Precision ADC Noise Analysis 29 March 2025
+
+===== PDF PAGE 30 =====
+Chapter 2: Effective noise bandwidth
+Figure 22. ADS1262 sinc filter response – linear frequency scale, f max = 300 Hz.
+One subtle but important difference between these two filter response plots is that the sinc filter plot Figure 22 uses
+a linear frequency axis, while the antialiasing filter plot Figure 21 has a logarithmic frequency axis. This disparity
+results from the slow data rates of most delta-sigma ADCs, where showing multiple frequency decades is generally
+unnecessary. Unfortunately, this choice complicates the process of combining the filters into the same plot.
+Additionally, recall that a sinc filter response repeats indefinitely—it does not simply “stop” at 300 Hz, as it might appear
+to in Figure 22.
+If you take both of these issues into consideration and plot the sinc filter response on a logarithmic axis over a much
+wider frequency range, the result in Figure 23 is very different from the typical plot in most ADC data sheets.
+Figure 23. ADS1262 sinc filter response – logarithmic frequency scale, f max = 10 MHz.
+With a logarithmic axis plotted out to 10 MHz, you can now see the high-frequency peaks indicating the filter response
+repeating. Why is this important? As a result of this repetition, integrating under the sinc filter’s frequency response curve
+yields an infinite ENBW (from a mathematical perspective, the sinc filter’s integral diverges at infinity). Figure 24 depicts a
+plot of both the antialiasing and sinc filter frequency responses as well as their respective ENBWs.
+Fundamentals of Precision ADC Noise Analysis 30 March 2025
+
+===== PDF PAGE 31 =====
+Chapter 2: Effective noise bandwidth
+Figure 24. ENBWs of sinc and antialiasing filters.
+How do you continue this analysis given the sinc filter’s infinite ENBW? You simply need to set limits on the integration.
+Generally, some multiple (1 or 2) of the modulator clock frequency (fMOD) is acceptable, but in this case you can use the
+antialiasing filter as the limit.
+Now that both filters are magnitude plots (in decibels [dB]) with the same x-axis scale, you can simply add them together
+to determine the overall system ENBW. This yields the filter response shown in Figure 25. Integrating the combined RC
+and digital filter response now results in an ENBW of 14 Hz, orders of magnitude smaller than either filter by itself.
+Figure 25. System response of sinc and antialiasing filters.
+The narrower ENBW results from the antialiasing filter’s attenuation of the sinc filter noise power at higher frequencies,
+allowing less noise into the system. This also further explains why you don’t necessarily need to account for the infinite
+frequency response of the sinc filter. The antialiasing filter already removes much of the noise power associated with the
+high-frequency peaks occurring at multiples of fMOD that would otherwise fold back into the passband . Many analog
+designers assume that the antialiasing filter’s intended purpose is to remove low-frequency noise, which is generally the
+responsibility of the delta-sigma ADC’s digital filter .
+If you followed this assumption and attempted to design an antialiasing filter with a very low cutoff frequency, you
+would generally need to use large resistor and capacitor values. However, large passive component values lead to longer
+signal settling times, which you generally want to avoid. Even if you could accept an additional settling time, ADC input
+leakage currents can cause significant offset voltages across large filter resistors, leading to system-level inaccuracy.
+Fundamentals of Precision ADC Noise Analysis 31 March 2025
+
+===== PDF PAGE 32 =====
+Chapter 2: Effective noise bandwidth
+Thus, it is actually to the system’s benefit that you only need to design antialiasing filters for high-frequency noise, as
+smaller passive components can help avoid the aforementioned issues.
+How system changes affect ENBW
+Suppose you now want to change the ADC’s sample rate or the antialiasing filter’s cutoff frequency. How does this affect
+the system ENBW? Intuitively, it would make sense that the filter with the smaller cutoff would dominate the ENBW
+calculation—as I have already shown—and this is a generally correct assumption. To illustrate this point, Table 14 lists all
+available digital filter ODRs of the ADS1262, as well as the corresponding system ENBW for a range of antialiasing cutoff
+frequencies. Table 14 also provides the ADC’s 3-dB point, which effectively acts as its cutoff frequency.
+Table 14. Effect of ADC data rate and antialiasing filter cutoff frequency on a system’s ENBW.
+System ENBW (Hz)
+ADS1262 data rate
+(SPS)
+ADS1262 Sinc4 filter 3
+dB (Hz)(1)
+Antialiasing filter (fC =
+25 Hz)
+Antialiasing filter (fC =
+250 Hz)
+Antialiasing filter (fC =
+2,500 Hz)
+Antialiasing filter (fC =
+25,000 Hz)
+2.5 0.58 0.59 0.59 0.59 0.59
+5 1.15 1.19 1.19 1.19 1.19
+10 2.28 2.37 2.39 2.39 2.39
+16.7 3.80 3.92 3.98 3.99 4.31
+20 4.63 4.68 4.78 4.78 4.79
+50 11 10.72 11.96 11.97 12.09
+60 13 12.40 14.34 14.37 14.40
+100 22 17.69 23.82 23.96 24.10
+400 90 30.87 88.83 95.77 96.16
+1,200 272 36.10 196.79 285.11 288.13
+2,400 543 37.62 267.42 556.39 574.60
+4,800 1,076 38.42 319.89 1,026.41 1,137.07
+7,200 1,580 38.69 340.86 1,392.37 1,676.52
+14,400 2,930 38.95 363.18 2,048.71 3,077.72
+19,200 3,900 39.03 370.23 2.353.61 4,076.05
+(1) Derived from the ADS1262 calculator tool.
+The colored sections in Table 13 represent the following situations:
+### = where f3 dB (ADC) ≤ fC,(AA filter) ### = where f3 dB (ADC) ≥ 10 × fC,(AA filter) ### = where f3 dB (ADC) < 10 × fC,(AA filter) AND f3 dB (ADC) > fC,(AA
+filter)
+These results allow you to approximate the system ENBW instead of performing complex integrations, assuming that
+one of the conditions expressed in Equation 18 and Equation 19 is true:
+If f3 dB(ADC) ≤ fC(AA filter) ENBWSystem ≅ f3 dB (ADC) If f3 dB(ADC) ≥ 10 × fC(AA filter) ENBWSystem ≅ fENBW (AA filter) Note that in Equation 19, the system ENBW can be approximated as the antialiasing filter’s ENBW, not its cutoff
+frequency.
+If neither Equation 18 or Equation 19 is true, such that f3 dB (ADC) is between fC,(AA filter) and 10 × fC,(AA filter), you must
+determine the combined system bandwidth using integration or other numerical methods. You could also approximate
+(18)
+(19)
+Fundamentals of Precision ADC Noise Analysis 32 March 2025
+
+===== PDF PAGE 33 =====
+Chapter 2: Effective noise bandwidth
+the system bandwidth as just f3 dB (ADC) or fENBW (AA filter), whichever is smaller. This method overestimates the total noise
+and provides a worst-case value.
+Additionally, these conditions generally apply to any number of additional filter stages, as long as their cutoff frequencies
+were much larger than that of the ADC or antialiasing filter. In such cases, you wouldn’t have to calculate their ENBWs,
+making the analysis less complex.
+In Section 5, I’ll continue the discussion of noise in delta-sigma ADCs by adding both integrated and external amplifiers
+to the signal chain.
+Key takeaways
+Here is a summary of important points to better understand ENBW in delta-sigma ADCs:
+1. 2. 3. ENBW is dominated by the filter with the smallest cutoff frequency, which is typically an antialiasing filter or digital
+filter, especially for precision delta-sigma ADCs.
+Antialiasing filters exist to remove noise at high frequencies, not low frequencies.
+You can calculate ENBW using direct integration or approximate it in most cases using the ADC’s 3-dB point or the
+antialiasing filter’s cutoff frequency.
+Fundamentals of Precision ADC Noise Analysis 33 March 2025
+
+===== PDF PAGE 34 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Chapter 3: Amplifier noise, dynamic range and gain
+In data-acquisition (DAQ) systems, taking precision measurements of low-level input signals is a common design
+challenge. For example, many factory automation applications use programmable logic controllers (PLCs) to make
+decisions based on temperature sensor or load cell readings. Similarly, oil-drilling platforms use industrial differential-
+pressure flow meters to determine—with milliliter precision—how much oil is removed from a well.
+To measure these process variables, many types of applications employ analog sensors such as resistance temperature
+detectors (RTDs), thermocouples or resistive bridges. These sensors typically output very low-level signals that need to
+be gained up above the DAQ system’s noise floor. Additionally, engineers may use gain to increase the dynamic range
+by using more of the analog-to-digital converter’s (ADC) full-scale range (FSR). In either case, adding gain to any analog
+system generally requires an amplifier, which may be a discrete component or integrated into one of the signal-chain
+components, such as an ADC.
+As with the introduction of any component to an electrical system, these amplifiers contribute noise. How does this noise
+affect the system? Chapter 3 seeks to answer this question by offering an in-depth understanding of amplifier noise and
+how it affects a typical signal chain.
+First, I will focus on these topics as they relate to amplifier noise:
+• Output- vs. input-referred noise.
+• Adding an amplifier at the input of an ADC.
+• Low- vs. high-resolution ADCs.
+I’ll then go into a detailed design example using commercially available ADCs and amplifiers to complement and expand
+on the theories explored.
+How amplifier noise affects delta sigma ADCs•
+An amplifier-plus-precision delta-sigma ADC design example•
+Fundamentals of Precision ADC Noise Analysis 34 March 2025
+
+===== PDF PAGE 35 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+How amplifier noise affects delta sigma ADCs
+Output-referred noise—or noise referred-to-output, VN,RTO— is the noise measured at the output of the ADC, as its name
+implies. Recall from Section 1.2 that one method ADC manufacturers use to characterize ADC noise is to short the
+device’s inputs together and measure the noise at the output to determine the intrinsic noise of the ADC, as shown in
+Figure 26.
+Figure 26. Measuring output-referred noise.
+However, also recall that the value actually reported in the data sheet is typically input-referred. Similar to output noise,
+input-referred noise—or noise referred-to-input, VN,RTI—is the noise at the input of the ADC. Unlike output-referred noise,
+input-referred noise is calculated, not measured. For an ADC with no integrated gain stage, the input-referred noise is
+equal to the output-referred noise, as shown in Equation 20:
+VN, RTO = VN, RTI = VN, ADC(no gain) (20)
+Why do ADC manufacturers specify noise as input-referred rather than output-referred? To answer this question, it helps
+to create an equivalent circuit noise model by separating the ADC from its noise into a “noiseless” ADC, preceded by a
+voltage source equal to the ADC’s input-referred noise, as shown in Figure 27.
+Figure 27. Noiseless ADC preceded by a noise source equal to the ADC’s input-referred noise.
+Now, when you input a real signal into the ADC, it’s easy to see that you want ADC noise to be characterized as
+input-referred because this defines the system’s input resolution. Effectively, the input signal “competes” with the
+input-referred noise: If the signal’s amplitude is greater than the input-referred noise, you will be able to observe it;
+otherwise, the signal is buried in the noise, and you won’t be able to observe it.
+Ultimately, if you know the smallest input signal that you need to resolve, the input-referred noise tells you very quickly
+and easily if a specific ADC can provide the necessary resolution. And while this is less important for stand-alone ADCs
+where output-referred noise is equal to input-referred noise, what happens if you add an amplifier into the signal path?
+Adding an amplifier to the input of an ADC
+To analyze the amplifier’s impact on overall system noise, you can separate it from its noise source just as you did for the
+ADC. In this case, you can model it as a noiseless amplifier preceded by a voltage source equal to the amplifier’s noise,
+VN,AMP, shown in Figure 28. Additionally, you can assume that the input source (VSignal) is noiseless, though in practice
+the gain stage would amplify any sensor noise.
+Fundamentals of Precision ADC Noise Analysis 35 March 2025
+
+===== PDF PAGE 36 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Figure 28. Noiseless amplifier and noiseless ADC with separate, referred to-input noise sources.
+Since you can’t directly measure input-referred noise, you need to first determine the output-referred noise of the
+system, as shown in Figure 28. Assuming that the amplifier and ADC noise are uncorrelated, take the root sum square
+(RSS) of both values to determine the total output-referred noise.
+An unfortunate side effect of gaining up the input signal is that you also gain up the amplifier’s noise. As a result, you first
+need to scale the amplifier noise by the amplifier’s gain, GAMP. Equation 21shows the resulting output-referred noise:
+2
+VN, RTO = VN, AMP × GAMP
++ VN, ADC
+2 nVRMS (21)
+You can now use this output-referred noise equation and transform it into an equivalent input-referred noise source
+for the system. To accomplish that, first simplify the circuit diagram in Figure 28 to one with an equivalent circuit
+noise model that combines both noise sources into one referred-to-input noise source (VN,RTI). This also simplifies your
+analysis by enabling you to determine whether the simple signal chain (ADC plus amplifier) has enough resolution for
+your application.
+Figure 29. Noiseless components with one total input-referred noise source.
+To calculate the input-referred noise from the output-referred noise, divide each individual noise term by the circuit gain,
+GAMP, as shown in Equation 22:
+2
+2
+VN, RTI = VN, AMP
++ VN, ADC /GAMP
+nVRMS (22)
+Note the location of the gain term, GAMP, in both Equation 21 and Equation 22. In Equation 21, the amplifier’s noise is
+proportional to the gain, while in Equation 22 the ADC’s noise is proportional to the inverse of the gain. In either case,
+given a sufficiently large amplifier gain and comparable amplifier noise, the ADC noise becomes negligible. The resulting
+input-referred noise is then completely dependent on the amplifier’s noise, given by Equation 23. This is true whether or
+not the amplifier is integrated into the ADC or is a discrete component.
+If GAMP × VN, AMP > > VN, ADC tℎen VN, RTI = VN, AMP nVRMS (23)
+What if you add additional amplifiers to the signal chain, as in Figure 30? You could add multiple discrete amplifiers or an
+ADC with an integrated amplifier as well as an external amplifier.
+Fundamentals of Precision ADC Noise Analysis 36 March 2025
+
+===== PDF PAGE 37 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Figure 30. Noiseless amplifiers and a noiseless ADC with separate, referred-to-input noise sources.
+As you did previously, combine all of these noise terms into one input-referred noise source with an equivalent circuit
+noise model, shown in Figure 31.
+Figure 31. Multiple noiseless amplifiers at the input of an ADC with one total input-referred noise source.
+You can use Figure 31 and Equation 21 and Equation 22 to help determine the input-referred noise for this extended
+signal chain with n number of amplifiers, represented by Equation 24:
+VN, AMP2
+2
+VN, ADC
+2
+VN, RTI = VN, AMP12 +
++ … +
+nVRMS (24)
+GAMP1
+GAMP1 × … × GAMPn
+As in the previous example, the new input-referred noise equation depends on the noise contributions of all devices in
+the signal chain. However, each term is scaled by the inverse of the product of all amplifier gains, leaving only the initial
+term—the first amplifier’s voltage noise—independent of gain.
+Similar to Equation 23, this means that with a large first-stage gain, all other terms in Equation 24 effectively approach
+zero, leaving the system’s input-referred noise dependent on the noise of the first amplifier only. Therefore, for best
+performance in both single- and multi-stage amplifier configurations, choose a low-noise first-stage amplifier with a large
+gain.
+As Equation 23 implies, the effect of this choice is not equal for all ADCs. In fact, you could pair a lower-resolution ADC
+with a higher-noise amplifier, or use a larger gain and still meet the required system noise performance. Moreover, a
+higher-resolution ADC might not see any effect from even a modest gain increase.
+Let’s analyze these conclusions further by looking at the 16-bit ADS114S08 compared to the 24-bit ADS124S08 . These
+two ADCs have different resolutions but are otherwise identical, including an integrated programmable gain amplifier
+(PGA) with the same amplifier noise. Their similarities allow you to analyze how the different ADC resolutions affect
+system noise as gain changes.
+Low- vs. high-resolution ADCs
+Table 15 shows the input-referred noise for both the ADS114S08 (Table 15a) and ADS124S08 (Table 15b) at gains of 1
+V/V and 2 V/V and for all available data rates. If you choose any data rate—50 SPS, for example—and take the ratio of
+the input-referred noise at these gains, you will get approximately 2 for both ADCs. In other words, as the gain increases
+by a factor of 2, the noise simultaneously decreases by a factor of 2. In this case, adding gain improves system noise
+performance for both the lower- (16-bit) and higher-resolution (24-bit) ADCs.
+Fundamentals of Precision ADC Noise Analysis 37 March 2025
+
+===== PDF PAGE 38 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Table 15. Input-referred noise (µV RMS [µV PP ]) tables for the ADS114S08 (a) and ADS124S08 (b) showing G = 1 and 2 V/V – Sinc3 filter,
+AVDD = 3.3 V, AVSS = 0 V, PGA enabled, global chop disabled and internal 2.5-V reference.
+Compare Table 15 to Table 16, which shows the same calculations using the highest gains of 64 V/V and 128 V/V. Here,
+the lower-resolution ADC has maintained the ratio of 2, while the ratio for the higher-resolution ADC has decreased to
+approximately 1. In the latter case, increasing gain no longer improves noise performance. What causes this difference?
+Table 16. Input-referred noise (µV RMS [µV PP ]) tables for the ADS114S08 (a) and ADS124S08 (b) showing G = 64 and 128 V/V – Sinc3
+filter, AVDD = 3.3 V, AVSS = 0 V, PGA enabled, global chop disabled and internal 2.5-V reference.
+For the lower-resolution (quantization-noise-dominant) ADC, the constant ratio between the gains results from the high
+levels of ADC noise compared to amplifier noise. In this case, the condition stated in Equation 23 is not met, as the ADC
+noise is much larger than the amplifier noise. The ADC noise does decrease each time you increase the gain by a factor
+of 2, but even at its lowest level (G = 128 V/V), ADC noise still dominates compared to amplifier noise. Thus, you never
+Fundamentals of Precision ADC Noise Analysis 38 March 2025
+
+===== PDF PAGE 39 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+actually “see” the amplifier noise in the measurement, making this specific signal chain less dependent on the amplifier’s
+performance and enabling you to potentially improve the noise performance using larger gain values.
+For higher-resolution (thermal-noise-dominant) ADCs, the opposite is true, even though both ADCs use the same
+amplifier. In this case, the ADC noise is much lower compared to the amplifier noise multiplied by the gain, and therefore
+meets the condition in Equation 23. As a result, VN,RTI effectively becomes constant, resulting in virtually no change in
+input-referred noise performance despite increasing gain. In such circumstances, amplifier performance is critical, and in
+many cases using an amplifier results in worse system resolution than a system with no amplifier at all.
+Key takeaways
+Here is a summary of important points to better understand how amplifier noise affects delta-sigma ADCs:
+1. 2. 3. 4. For signal chains with no gain, output-referred noise equals input-referred noise.
+Output-referred noise is measured; input-referred noise is calculated.
+• Input-referred noise represents the system’s input resolution.
+First-stage amplifier noise dominates the system input-referred noise (assuming similar component noise values and
+a large first-stage gain).
+• Using a high-resolution (low-noise) ADC with a noisy amplifier degrades system performance.
+For best noise performance, the first stage is generally configured as a low-noise, small-signal-gain amplifier.
+An amplifier-plus-precision delta-sigma ADC design example
+I have defined output- and input-referred noise, derived equations for each, delved into single- and multi-stage amplifier
+configurations, and discussed the effects of increasing gain on low- and high-resolution ADCs. I also concluded that
+you need to more carefully consider the noise performance of high-gain external amplifiers when pairing them with
+high-resolution ADCs.
+Now, I’ll set out to prove this claim using a design example that analyzes how different amplifiers affect the noise of
+the same high-resolution ADC. I’ll use TI’s 32-bit ADS1262 as a baseline ADC due to its very low noise levels and
+its integrated PGA. The integrated PGA noise acts as a reference point for the analysis and enables comparison with
+several different external amplifiers.
+Calculating ADC input-referred noise
+The first thing you need to do is determine the baseline input-referred noise of the ADC. To do so, you could theoretically
+use the equations derived in Section 5.1, as well as the equivalent noise model shown in Figure 32.
+Figure 32. Noiseless components with one total input-referred noise source.
+However, this approach requires the noise spectral densities for both the ADC and PGA, which are not common
+specifications in an ADC’s data sheet. Instead, you can actually forgo any calculation and simply look up the applicable
+Fundamentals of Precision ADC Noise Analysis 39 March 2025
+
+===== PDF PAGE 40 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+input-referred noise in the ADC data sheet’s noise tables. This highlights one of the benefits of using ADCs with
+integrated amplifiers: the ADC manufacturer completes the calculations discussed in Section 5.1, simplifying system
+noise analysis compared to using external amplifiers with an ADC.
+Table 17. ADS1262 input-referred noise in µV RMS (µV PP ) for ODR = 60 SPS, Sinc4 filter, T A = 25°C, AVDD = 5 V, AVSS = 0 V, V REF = 2.5
+V.
+Gain
+Data rate (SPS) Filter mode
+1 2 4 8 16 32
+80 Sinc4 0.383 (2.288) 0.195 (1.174) 0.105 (0.623) 0.059 (0.347) 0.040 (0.242) 0.031 (0.188)
+Therefore, the only action left is to choose the ADC’s settings. For this example, I will use the ADS1262 at an output
+data rate (ODR) of 60 samples per second (SPS) and a Sinc4 filter, although the same methodology applies to any
+combination of data rates and filter types. Table 17 shows the input-referred noise values for the ADS1262 at these
+settings and across all available gains. I will use these values as the baseline input-referred noise throughout the
+remainder of this analysis.
+Selecting an external amplifier
+Now that you understand how to determine the ADC’s input-referred noise, the next step is to select an external amplifier
+and compare it to the baseline performance. Once selected, you can use a modified version of the single-amplifier
+noise model and input-referred noise equation derived in Section 3.1 to complete the analysis. While you are actually
+evaluating a multi-stage amplifier circuit, you do not need to use the multi-stage amplifier model from Section 3.1, since
+the amplifier noise from the ADS1262’s integrated PGA is included in the total input-referred noise reported in Table 17.
+Figure 33 and Equation 25 show the modified version of the equivalent noise model and its corresponding input-referred
+noise equation, respectively.
+Figure 33. Modified equivalent noise model with ADS1262 ADC and PGA noise combined.
+2
+VN, RTI = VN, AMP
++ VN, ADS1262/GAMP, EXT
+2 nVRMS (25)
+For this analysis, let’s choose the OPA141 , OPA211 and OPA378 , three precision op amps with dissimilar voltage noise
+characteristics, to demonstrate the benefits and challenges of each. Please note that you can perform this same analysis
+on any type of external amplifier.
+Calculating amplifier voltage noise
+The next step is to determine the noise voltage of each amplifier. To do so, you need the voltage noise density plot and
+noise specifications for each, beginning with the OPA141 in Figure 34. Note that the OPA141’s voltage noise density
+comprises two distinct regions: a low-frequency 1/f (flicker) noise region highlighted in red and a flat broadband region
+highlighted in teal.
+Fundamentals of Precision ADC Noise Analysis 40 March 2025
+
+===== PDF PAGE 41 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Figure 34. OPA141 voltage noise density plot (a) and table of noise parameters (b) with 1/f (red) and broadband noise (teal) highlighted.
+This nonflat noise density makes calculating the OPA141’s noise contribution a challenge. For narrow bandwidth
+systems, the 1/f noise will dominate, whereas wide-bandwidth systems will be much more dependent on the amplifier’s
+broadband noise. Therefore, to determine the amplifier’s noise contribution, you first need to calculate the system
+effective noise bandwidth (ENBW).
+Given the narrow bandwidth of the ADC’s digital filter at the chosen ODR, you can assume that the ADC’s bandwidth
+dominates the overall signal chain. At the end of Chapter 2, I calculated an effective noise bandwidth of 14 Hz using
+the ADS1262’s Sinc4 filter at 60 SPS (you could also have approximated the ENBW using the filter’s –3-dB point at
+this ODR). You can use 14 Hz as the system ENBW and overlay it on the OPA141 plot as an ideal brick-wall filter to
+determine the amplifier’s noise contribution, highlighted by the teal region in Figure 35.
+Figure 35. OPA141 voltage noise spectral density plot with an ideal brick-wall filter at 14 Hz.
+Fundamentals of Precision ADC Noise Analysis 41 March 2025
+
+===== PDF PAGE 42 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Since the ENBW is small, the OPA141’s noise comes almost entirely from the 1/f region. To determine the actual value
+of this noise, you can use direct integration or simplified formulas that estimate the area under the noise density curve.
+When you perform these calculations, you’ll find that the OPA141 contributes 45 nVRMS of noise into the system.
+How does this compare to the next op amp, the OPA211? Figure 36 shows the OPA211’s noise parameters as well as its
+voltage noise spectral density curve, which has a similar shape compared to the OPA141. The teal region highlights the
+OPA211’s noise contribution given an ENBW of 14 Hz.
+Figure 36. OPA211 voltage noise spectral density plot (a) and table of noise parameters (b).
+However, this teal region represents only 18.3 nVRMS of noise contributed to the system by the OPA211, considerably
+less than the OPA141. Therefore, you should never assume anything from the shape of the noise plot or the values in the
+amplifier’s noise tables. Instead, it’s very important to perform the necessary calculations before making any judgments
+regarding the noise performance of an external amplifier.
+The third op amp, the OPA378, has a different voltage noise spectral density curve compared to the previous two, shown
+in Figure 37. Since the OPA378 is a chopper-stabilized amplifier, its noise spectral density curve is approximately flat,
+with no significant 1/f component. Therefore, you can use the data sheet’s voltage noise density value (20 nV/√Hz) to
+calculate that approximately 76 nVRMS of voltage noise passes into the system, highlighted in teal.
+Fundamentals of Precision ADC Noise Analysis 42 March 2025
+
+===== PDF PAGE 43 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Figure 37. OPA378 voltage noise spectral density plot (a) and table of noise parameters (b).
+With the voltage-noise calculations complete, let’s add these amplifiers to the input of the ADS1262 and see how they
+impact system noise performance. But first, let’s a take a quick look at one other parameter captured in Figure 37:
+current noise.
+A point about current noise
+While my focus has been on voltage noise throughout this section, the OPA378’s noise spectral density curve in Figure
+37 includes a current noise plot as well (in units of femtoamperes per square-root hertz). Using the same ENBW from
+the voltage noise calculations, you can calculate the OPA378’s current-noise contribution to be 759 fARMS. While this
+value may seem insignificant compared to the OPA378’s voltage noise, recall that the cumulative effect of current
+noise depends on the input impedance this component sees. Therefore, it is imperative to understand at what input
+impedance you can consider the OPA378’s current noise to be significant.
+Figure 38 plots input impedance versus the percentage increase of total noise (voltage plus current) using the OPA378.
+The figure highlights several different input impedances and their corresponding effect on total noise. For example, an
+input impedance of 14 kΩ results in a current noise that increases total noise by 1% relative to voltage noise alone. Or, if
+you could afford a 10% increase in noise budget, your system could tolerate an input impedance of 46 kΩ.
+Fundamentals of Precision ADC Noise Analysis 43 March 2025
+
+===== PDF PAGE 44 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Figure 38. The percentage increase of OPA378 total noise (voltage plus current) as a function of input impedance.
+Therefore, current noise can be important when your signal source/sensor output impedance is large. However, for
+typical sensor inputs such as RTDs or resistive bridge circuits—whose impedance is generally ≤1 kΩ—current noise
+would have very little impact on the total noise.
+I will ignore current noise in this example under the assumption that the input impedance is small. However, a complete
+noise analysis always includes current noise calculations, at least to confirm that it is negligible.
+Now, let’s complete the analysis by adding the external op amps to the input of the ADS1262 to compare the results.
+External operational amps and precision delta-sigma ADCs
+Table 18 summarizes the noise performance of the three different op amps analyzed thus far.
+Table 18. Op amp voltage noise using an ENBW = 14 Hz.
+Op amp Voltage noise at ENBW = 14 Hz (nVRMS)
+OPA141 45
+OPA211 18
+OPA378 76
+To compare these external op amps against the ADC’s baseline performance, you can plot the input-referred noise as a
+function of gain for the ADS1262 using the data-sheet values. Then, using the information in Table 18, add each op amp
+to the input of the ADS1262 and use Equation 25 to plot the total input-referred noise across all binary gain values up to
+512 V/V. In all cases using external op amps, set the ADS1262 gain to 1 V/V. Figure 39 depicts this plot.
+Figure 39. Input-referred noise as a function of gain for the ADS1262 alone and for three external operational amplifiers plus the
+ADS1262.
+Fundamentals of Precision ADC Noise Analysis 44 March 2025
+
+===== PDF PAGE 45 =====
+Chapter 3: Amplifier noise, dynamic range and gain
+Figure 39 provides several interesting conclusions, most notably that the OPA378 and OPA141 actually increase the total
+input-referred noise—even at the highest gains— compared to using the ADS1262 alone, while the OPA211 decreases
+the overall system noise.
+Additionally, all of the curves in Figure 39 begin to flatten at some gain, for example at 16 V/V for the OPA378 and at
+64 V/V for the OPA211. This transition point acts as a useful gain limit, or the point at which adding more gain has a
+negligible impact on input-referred noise performance (and therefore no value from a resolution perspective).
+As I discussed at the beginning of Section 5, increasing gain will result in the first gain stage dominating the overall
+input-referred noise equation (see Equation 25). At this point, the noise-versus-gain relationship essentially becomes
+constant. Even the ADS1262 by itself experiences this phenomenon at 32 V/V, with the internal PGA becoming the
+dominant noise source.
+In many circumstances, adding an external op amp to the input of a high-resolution delta-sigma ADC will actually hurt
+your noise performance, as was the case with the OPA141 and OPA378. This is because ADC manufacturers optimize
+delta-sigma ADCs—and any integrated PGAs, if applicable—for precision and accuracy within a relatively narrow range
+of input signals. However, even precision amplifiers like those discussed in this section need to allow for a much wider
+range of input signals, making it more challenging to achieve the same level of performance.
+When external amplifiers do improve noise performance, this improvement has a limit (as shown in Figure 39). Adding
+an external op amp can also impact other system performance metrics such as offset, gain error and drift, in addition to
+increasing cost, board space and power consumption.
+Ultimately, it is imperative to carefully consider the purpose of amplifiers in the signal chain when using high-
+resolution delta-sigma ADCs. In some cases they may be necessary—attenuating high-voltage inputs, for example—
+so understanding their effect on system noise is critical to a successful design.
+Key takeaways
+Here is a summary of important points to better understand how amplifier noise affects delta-sigma ADCs:
+1. 2. 3. 4. 5. Know how to determine total amplifier noise.
+Consider the impact of current noise if the source has a high-impedance output.
+Integrated PGAs offer several benefits:
+• They require less math when designing a DAQ system.
+• They are optimized for resolution and accuracy.
+Understand that higher gain does not always increase resolution; it depends on the amplifier(s) that you use, the
+ADC and the system ENBW.
+Amplifiers can impact other performance metrics in addition to noise (offset, drift, etc.).
+Fundamentals of Precision ADC Noise Analysis 45 March 2025
+
+===== PDF PAGE 46 =====
+Chapter 4: Voltage reference noise
+Chapter 4: Voltage reference noise
+Imagine that you need to design a high-resolution sensor-measurement system, such as a precision temperature-
+sensing unit to control an industrial oven. To accomplish this, you install a thermocouple in the oven to measure the
+temperature, attach the thermocouple leads to the measurement system, and the analog-to-digital converter (ADC)
+outputs a digital code. How do you determine the actual temperature to which that code corresponds?
+In analog circuit design, you use a voltage reference as a baseline to make analog measurements against. In the context
+of this example, the nominal voltage of the reference determines the resulting output code, which correlates to a specific
+temperature. If you changed the reference voltage, the output code would scale as well, while the measured temperature
+would remain the same.
+Since the output code is directly related to the value of the reference voltage, a noisy or inaccurate voltage reference
+yields measurements that are similarly unreliable. Therefore, for high-resolution systems, choosing an appropriate
+voltage reference is equally as important as choosing a precision ADC.
+To further understand how different noise sources impact precision delta-sigma ADCs, I’ll first discuss these topics as
+they relate to voltage reference noise:
+• Reference noise and ADC noise.
+• How gain affects reference noise.
+Then, I’ll take the observations from Section 6.1 and define several ways to reduce reference noise. I’ll also examine how
+reference noise affects low- and high-resolution ADCs.
+How voltage reference noise affects delta-sigma ADCs•
+Reducing reference noise in delta-sigma ADC signal chains•
+Fundamentals of Precision ADC Noise Analysis 46 March 2025
+
+===== PDF PAGE 47 =====
+Chapter 4: Voltage reference noise
+How voltage reference noise affects delta-sigma ADCs
+In Section 3.2, I discussed two different types of measurements used to characterize ADC noise: sine-wave input
+and input short. Sine-wave input, as its name implies, inputs a sine wave with a specific amplitude and frequency to
+characterize how the ADC quantizes this signal. Conversely, the input-short method determines ADC performance at DC
+by shorting the device’s inputs and measuring the slight variations in the output code as a result of thermal noise. Figure
+40 illustrates these types of noise measurements.
+Figure 40. Sine-wave-input test setup (a); input-short test setup (b).
+The ADC’s output code is proportional to the ADC input signal amplitude (VIN) divided by the ADC’s reference voltage
+(VREF), as expressed by Equation 26:
+output code ∝
+VIN
+VREF (26)
+When ADC manufacturers use a nonzero input signal to characterize an ADC—as is the case with the sine-wave-input
+method—the resulting output code includes some reference noise. While the intent is to characterize only the ADC
+noise, this reference noise invariably becomes part of the noise parameters reported in the ADC’s data sheet, including
+signal-to-noise ratio (SNR) and signal-to-noise ratio and distortion (SINAD). Therefore, using a system similar to the
+ADC’s testing setup allows you to achieve ADC noise performance comparable to what is reported in the data sheet for
+devices characterized by the sine-wave-input method.
+Comparatively, the input-short method uses a 0-V input signal to measure the fluctuations in the ADC output code when
+no signal is present. In this case, no reference noise appears at the output because the ratio in Equation 26 always
+equals zero. The input-short method defines an ADC’s absolute resolution limit, since you cannot expect to reliably
+measure an input smaller than the ADC’s inherent noise. As a result of the shorted inputs, data-sheet noise parameters,
+such as input-referred noise and effective resolution, do not include the effects of reference noise. If you want to
+measure a nonzero input signal with this type of ADC, you should expect the previously unseen voltage reference noise
+to increase the total noise seen at the output beyond what is stated in the ADC’s data sheet.
+To determine how much noise the voltage reference adds, Figure 41 shows the relationship between ADC noise,
+reference noise and combined noise as a function of how much of the full-scale range (FSR) is used (percent utilization).
+Figure 41, along with the subsequent discussion, is applicable to cases where the ADC noise is less than the reference
+noise (NADC < NREF). If the opposite were true (NADC > NREF), the lower-noise voltage reference would offer little to no
+benefit due to comparatively higher ADC noise.
+Fundamentals of Precision ADC Noise Analysis 47 March 2025
+
+===== PDF PAGE 48 =====
+Chapter 4: Voltage reference noise
+Figure 41. ADC noise (teal bar chart), reference noise (red bar chart) and combined ADC-plus-reference noise (grey line) as a function of
+positive FSR utilization.
+Figure 41 has three important points:
+• Point A. This point is the total noise when the input voltage is 0 V. Since Point A uses the same conditions that define
+the input-short noise measurement test, you can read it directly from the ADC’s data sheet.
+• Point B. This is the total noise when the input voltage is equal to the reference voltage—that is, a full-scale reading. In
+general, take the root sum of squares (RSS) of the reference noise and the ADC noise to determine Point B. However,
+when the reference noise is much larger than the ADC noise—as is the case in Figure 41—you can approximate Point
+B as just the reference noise. Either way, you generally cannot read the value of the voltage reference noise directly
+from the data sheet, since it depends on several factors including the voltage reference’s noise characteristics. Figure
+42 shows the output noise spectral density for TI’s REF6025 , a 2.5-V precision voltage reference.
+Figure 42. Output noise spectral density plot for the REF6025.
+In Figure 42, note the significant increase in noise density at low frequencies (1/f [flicker] noise) compared to the
+relatively flat noise density at higher frequencies (broadband noise). Like several of the amplifiers analyzed in Section 3.2,
+reference noise performance is not necessarily constant over frequency.
+Fortunately, you can use the same methods to calculate reference noise that you use to calculate amplifier noise,
+including direct integration or simplified formulas . You will also need to calculate the system’s effective noise bandwidth
+(ENBW) to use these methods, as ENBW provides a cutoff frequency for the reference noise entering the system.
+Fundamentals of Precision ADC Noise Analysis 48 March 2025
+
+===== PDF PAGE 49 =====
+Chapter 4: Voltage reference noise
+• Point C. This point is any generic noise value between the extremes of Points A and B. You can calculate Point C
+using Equation 27:
+VNoise@Point C = Point A2 + (%FS × Point B)2 (27)
+In Equation 27, Point B scales according to the percent utilization of the FSR. In general, you can use Equation 27 to
+determine the total noise at any point on the plot in Figure 41, including Points A and B.
+One important result of Equation 27 is that given the condition that NADC < NREF, there exists a point at which
+reference noise dominates regardless of percent utilization. At this point, increasing your signal amplitude offers no noise
+performance benefit, which contradicts the common belief that gaining up the input signal always reduces noise.
+Instead, you need to balance increasing gain and FSR utilization to ensure that you meet the system noise requirements.
+Let’s examine the relationship between gain and reference noise with an example.
+How gain affects reference noise
+For this example, let’s continue using the REF6025 shown in Figure 42 and pair it with the ADS1261 , a 24-bit delta
+sigma ADC. This device offers low noise and an integrated programmable gain amplifier (PGA), both of which will make
+the reference-noise-versus-gain relationship more apparent. Despite these choices, you can apply this analysis to any
+combination of ADCs and voltage references. Figure 43 shows the system setup for this example.
+Figure 43. System setup using the ADS1261 and REF6025.
+Similar to the amplifier noise analysis in Section 3.1, you can separate the components in Figure 43 into noiseless
+devices preceded by a voltage source that is equivalent to each component’s noise. The ADC noise (VN,ADC) is listed in
+the ADS1261’s data sheet, while you must calculate the voltage reference noise (VN,REF) using the REF6025 data sheet
+as well as the system ENBW. Fortunately, you can use the approximation methods I detailed in Section 2.2 to determine
+the system ENBW. In this case, the ENBW is 13 Hz using a 60 samples per second (SPS) output data rate (ODR) as well
+as the low-latency filter of the ADS1261. This yields approximately 1.2 µVRMS of noise using the REF6025. Finally, you
+need to choose an input signal that allows you to use all available ADC gain options. Using the ADS1261’s maximum
+gain of 128 V/V enables a maximum differential input voltage of ±19.5 mV using a 2.5-V reference voltage. Table 19
+summarizes the system specifications.
+Fundamentals of Precision ADC Noise Analysis 49 March 2025
+
+===== PDF PAGE 50 =====
+Chapter 4: Voltage reference noise
+Table 19. System specifications for the ADS1261-plus-REF6025 example.
+Parameter Value
+Input signal (mV) ±19.5
+ENBW (Hz) 13
+REF6025 noise (µVRMS) 1.2 (at 13 Hz)
+ADC data rate (SPS) 60
+Filter type Sinc4
+ADC gains 1:128 (binary)
+ADS1261 noise (see data sheet)
+You can now plot the noise of each component as a function of the ADS1261 PGA’s gain to see how gain affects
+ADC and reference noise. You can also calculate the system’s effective resolution at each step to understand how the
+introduction of reference noise affects the system’s dynamic range. Note that “effective resolution” in this context is
+calculated using a 19.5-mV signal and not the maximum possible FSR at each gain setting, as is common in ADC data
+sheets. Figure 44 shows the plot for the ADS1261.
+Figure 44. ADS1261 noise, reference noise and effective resolution as a function of gain.
+Figure 44 shows that the reference noise is almost negligible compared to the ADC noise, even when using 100% of
+the positive FSR. Changing the gain had no effect on how much reference noise passed into the system due to the very
+small input voltage, but it did reduce the total noise by reducing the ADC noise (as expected).
+Interestingly, both Figure 41 and Figure 44 have a useful FSR utilization limit (as was the case with the amplifier noise
+analysis). Increasing the input signal beyond this point offers no benefit from a system noise perspective. In Figure 41,
+this occurs at a 40% utilization factor. In Figure 44, this limit begins at approximately a gain of 32 V/V as the effective
+resolution curve begins to flatten.
+(These limits are specific to this input voltage, noise bandwidth, ADC and reference combination. Different combinations
+change this system limitation, making it essential to calculate where this point is in any system to avoid degrading noise
+performance.)
+Moreover, Figure 41 and Figure 44 demonstrate the importance of matching your ADC noise to your voltage reference
+noise (as they relate to your circuit parameters). If your input signals are small and cannot be changed, gaining up
+Fundamentals of Precision ADC Noise Analysis 50 March 2025
+
+===== PDF PAGE 51 =====
+Chapter 4: Voltage reference noise
+your input signal reduces your ADC noise and therefore the total system noise. You might also be able to use a noisier
+reference as a result, since very little reference noise will actually pass into the system.
+Comparatively, if your input signals are greater than mid-scale, you can expect the reference noise to dominate. In these
+cases, you should always make sure that the ADC noise and reference noise are comparable. Otherwise you will be
+paying for voltage-reference performance that you cannot actually use. Fortunately, there are multiple ways to reduce the
+effects of reference noise and maintain precision systems.
+Key takeaways
+Here is a summary of important points to better understand how voltage reference noise affects delta-sigma ADCs:
+1. 2. 3. 4. The system noise contribution from the reference voltage scales with FSR utilization.
+Reference noise can have 1/f and broadband regions similar to amplifiers.
+Reference noise in a system results in a useful FSR utilization limit, after which it is not possible to improve noise
+performance further through signal gain.
+Try to match the reference source’s noise amplitude to the ADC’s noise performance to avoid degrading resolution
+with nonzero input signals.
+Reducing reference noise in delta-sigma ADC signal chains
+In Section 6.1, I discussed the relationship between ADC noise and reference noise, derived an equation for calculating
+reference noise and determined the effect that gain has on the level of reference noise in a system.
+I’ll conclude the discussion of reference noise by analyzing several different methods for reducing its effect in the overall
+system. I’ll also examine the difference between the impact of reference noise on low- and high-resolution ADCs.
+Reducing the effects of reference noise
+The amount of reference noise that enters a data-acquisition system depends on the reference source’s noise
+performance as well as the percent utilization of the FSR. To demonstrate this reliance on percent utilization, I plotted
+ADC noise, reference noise and total noise as a function of the full-scale utilization (input voltage), assuming a 2.5-V
+reference. Figure 45 shows a plot of this relationship using the TI ADS1261 , a 24-bit delta-sigma ADC with an integrated
+PGA.
+Figure 45. ADC noise, reference noise and effective resolution as a function of FSR utilization.
+Fundamentals of Precision ADC Noise Analysis 51 March 2025
+
+===== PDF PAGE 52 =====
+Chapter 4: Voltage reference noise
+As in Section 4.1, reference noise begins to dominate the system’s total noise at a utilization factor of 40%, nullifying
+the noise benefit provided by a high-resolution ADC. To help mitigate this issue and achieve precision systems, here are
+three techniques to help decrease reference noise and take advantage of the noise-reduction benefits of delta-sigma
+ADCs:
+• Choose a lower-noise reference. One of the most obvious ways to reduce the level of reference noise entering a
+system is to choose a voltage reference with less noise. This has the effect of reducing the level of the red bars in
+Figure 45 and extending the useful FSR utilization limit. But as I suggested in Section 4.1, take care to match the level
+of reference noise to the level of ADC noise for any given input signal. For example, if you sample a 2.5-V input signal
+using the ADS1261, you could only use a gain of 1 V/V. In those circumstances, choosing a voltage reference with
+less noise than the REF6025 will likely have little effect on overall system noise, since the FSR utilization is so high in
+Figure 45.
+• Increase the reference voltage. Another method to potentially reduce the effects of reference noise is to increase
+the reference voltage, as this affects a change in the percent utilization. For example, doubling the reference voltage
+decreases the percent utilization by a factor of 2. However, this method only offers a system noise benefit if there is
+no proportional increase in reference noise, which is not always the case. Many discrete voltage-reference families
+specify noise in microvolts per volt because the reference noise scales linearly with the reference voltage. In this case,
+doubling the reference voltage also doubles the reference noise, yielding no system noise benefit despite a decrease
+in percent utilization.
+• Reduce the system ENBW. A third option to reduce the amount of reference noise passed into the system is to
+limit the overall ENBW. One way to limit ENBW is by reducing the antialiasing or reference filter cutoff frequencies.
+However, TI recommends using C0G-type capacitors for input signal-path filters due to the C0G’s low voltage
+and temperature coefficients. Typical C0G capacitors used in signal-chain design are only available up to 10 to
+15 nF, inherently limiting how low the antialiasing filter cutoff can be. Conversely, reference filters may employ
+higher-capacitance, X7R-type capacitors due to the voltage reference’s virtually constant DC output voltage. For
+each filter type, use low-drift, low-impedance resistors (<10 kΩ) because the resistor’s thermal noise increases with
+impedance and may begin to dominate the signal-chain noise. Another way to reduce the system ENBW is to slow
+down the ADC’s output data rate. Figure 46 shows how reducing the ADC’s output data rate decreases both the
+ADC and reference noise simultaneously. For example, between ENBW = 96 Hz (left) and ENBW = 0.6 Hz (right), the
+reference noise at 100% utilization has decreased by a factor of 2.3, while the ADC noise has decreased by a factor
+of 10, resulting in far less total noise.
+Figure 46. Limiting the ENBW reduces total noise: 0.6 Hz (a), 24 Hz (b) and 96 Hz (c).
+Fundamentals of Precision ADC Noise Analysis 52 March 2025
+
+===== PDF PAGE 53 =====
+Chapter 4: Voltage reference noise
+While these three methods can mitigate reference noise for many applications, other systems may have fixed parameters
+—such as settling time or sensor-output voltage—that make these techniques harder to employ. In such instances, you
+can reduce the amount of reference noise passing into the system by choosing an appropriate reference configuration:
+internal, external or ratiometric.
+Internal references
+Precision ADCs often include integrated precision voltage references that are generally suitable for many applications.
+An integrated reference eliminates the added cost, area and power consumed by an external reference. In general,
+however, internal references are lower power and may have higher noise and higher drift compared to precision external
+references, making them less suitable for some high-precision and high-accuracy systems.
+Figure 47 shows the ADS1261 measuring a resistive bridge while using its integrated voltage reference as the reference
+source for the measurement.
+Figure 47. Measuring a resistive bridge using the ADS1261’s internal reference.
+External references
+If the specifications of an integrated voltage reference are insufficient and the ADC allows an external reference
+source, you can choose an external reference instead. External references generally benefit from lower noise and
+better drift parameters relative to integrated references. This increased performance comes at the expense of higher
+power consumption, additional cost and increased printed circuit board (PCB) area. Also, since the ADC and voltage
+reference do not share the same die, their temperature drift specifications may no longer correlate; that is the case with
+an integrated reference. Therefore, the ADC and reference can drift independently and in opposite directions, causing
+greater inaccuracy. To avoid this issue, connect both devices to a good, thermally conductive ground plane.
+A helpful hint when connecting an ADC to an external reference source is to route the ADC’s negative external reference
+input (REFN) back to the ground pin of the external reference instead of connecting REFN directly to the PCB’s ground
+plane. This makes a “star” ground connection that helps avoid ground plane noise pickup on the negative reference
+input and maintain precision measurement results.
+Figure 48 shows the same resistive bridge connection diagram as in Figure 47, but using a REF6025 voltage reference
+instead of the ADS1261’s internal reference.
+Fundamentals of Precision ADC Noise Analysis 53 March 2025
+
+===== PDF PAGE 54 =====
+Chapter 4: Voltage reference noise
+Figure 48. Measuring a resistive bridge using the ADS1261’s internal reference.
+Ratiometric references
+Where sensor excitation is necessary, such as measuring resistive bridges or resistance temperature detectors, use a
+ratiometric configuration. This configuration uses the same excitation source for the analog input and reference voltage.
+As a result, any noise or drift in the excitation source will affect the measurement and the reference equally. Since the
+ADC output code is a ratio of the input to the reference, the excitation source noise and drift tend to cancel, resulting in
+noise performance that is much closer to the shorted-input case. In general, this configuration yields the lowest amount
+of total noise compared to the other two configurations.
+The main disadvantage of the ratiometric reference is that it can only be used for applications where sensor excitation is
+necessary. As a result, if the system doesn’t require sensor excitation, you must choose one of the other two reference
+configuration options.
+Figure 49 shows the same circuit as in Figure 47 and Figure 48, but with a ratiometric reference configuration. Note how
+the 5-V bridge-excitation voltage is also used as the ADS1261’s external differential reference voltage (REFP – REFN).
+Figure 49. Measuring a resistive bridge using the ADS1261 and a ratiometric reference.
+So far, I’ve made the qualitative claim that a ratiometric reference provides better noise performance than an external
+reference, which provides better noise performance than an internal reference. If you look at the data sheet for TI’s 24-bit
+ADS1259 , you can see that this is quantitatively true as well. Figure 50 shows a plot from the ADS1259’s data sheet that
+includes measured noise performance for all three configurations.
+Fundamentals of Precision ADC Noise Analysis 54 March 2025
+
+===== PDF PAGE 55 =====
+Chapter 4: Voltage reference noise
+Figure 50. Comparing the total noise increase from internal, external and ratiometric reference configurations with the ADS1259.
+At VIN = 0 V, the plot in Figure 50 shows the ADS1259’s inherent noise to be approximately 0.5 µVRMS. At 100%
+utilization (VIN = ±2.5 V), the internal reference increases this baseline noise by 400% to 2.5 µVRMS, while the external
+REF5025 increases the total noise by 150% to 1.25 µVRMS. Compare those curves to the almost-flat ratiometric
+reference curve, which increases the total noise by only 50% at 100% utilization. This configuration allows you to
+use the entire FSR of the ADS1259 without increasing total noise by a significant amount, resulting in the best overall
+system noise performance.
+Can you apply these conclusions equally to all delta-sigma ADCs? So far in this e-book, I have analyzed 24- and 32-bit
+ADCs to get a better understanding of how voltage reference noise affects the performance of these devices. In general,
+these high-resolution ADCs offer very low noise such that any reference noise has a noticeable effect on system noise.
+How does reference noise impact lower-resolution ADCs?
+Lower- vs. higher-resolution ADCs
+You can apply the same principles used to measure the impact of reference noise on lower-resolution ADCs to higher-
+resolution ADCs. Using the same setup from the previous examples, let’s connect the REF6025 to ADCs with different
+resolutions and measure the total noise at 100% utilization. Figure 51 depicts this setup.
+Figure 51. System setup using the ADS1262 and REF6025.
+Let’s choose eight ADCs with different resolutions to act as the n -bit ADC in Figure 51. Table 20 provides baseline noise
+information for each ADC as a function of its resolution.
+Fundamentals of Precision ADC Noise Analysis 55 March 2025
+
+===== PDF PAGE 56 =====
+Chapter 4: Voltage reference noise
+Table 20. Inherent ADC noise by ADC resolution.
+ADC resolution (bits) ADC noise (mVRMS) (G = 1, 10 SPS, VREF = 2.5 V)
+8 19.5
+10 4.9
+12 1.2
+14 0.3
+16 0.076
+18 0.0029
+24 5.3×10-4
+32 1.76×10-4
+As I discussed in Section 3.1, quantization noise usually dominates a lower-resolution ADC’s total noise (<16 bit) such
+that its value corresponds to the least significant bit (LSB) size. On the contrary, 18-, 24- and 32-bit ADC noise is larger
+than the corresponding LSB size due to the relatively larger amount of thermal noise in higher-resolution ADCs.
+To calculate the combined noise of the ADC and voltage reference, take the RSS of the noise of each component; I
+assumed 100% utilization. Table 21 includes the resulting total noise of both components, as well as the percentage
+noise increase compared to just the ADC’s noise.
+Table 21. Total noise and percentage increase by ADC resolution.
+ADC resolution (bits) ADC noise (mVRMS) (G = 1, 10 SPS, VREF = 2.5
+V)
+ADC + REF6025 noise (mVRMS)
+(100% FSR)
+Percentage noise increase (%)
+8 19.5 19.5 0
+10 4.9 4.9 0
+12 1.2 1.2 0
+14 0.3 0.3 0
+16 0.076 0.076 0.01
+18 0.0029 0.00311 7.40
+24 5.3×10-4 0.00125 136.58
+32 1.76×10-4 0.00115 553.36
+Table 21 offers a stark contrast between the effects that reference noise has on lower- and higher-resolution ADCs. Up to
+approximately the 16-bit level (the red highlighted cells in Table 21), the REF6025’s noise has virtually no impact on the
+total noise of the system, even at 100% utilization. In these cases, the high levels of ADC quantization noise outweigh
+the lower levels of reference noise. Therefore, the low-noise external reference provides little benefit here, especially
+when compared against the increased system cost and size. In fact, many lower-resolution ADCs do not include external
+reference inputs for this reason, instead relying on an integrated reference or even the supply voltage to perform this
+function.
+However, this does not imply that you should never be concerned with reference noise when using lower-resolution
+ADCs. The cumulative effect depends on the noise of the specific voltage reference, the system bandwidth and the
+percent utilization. I recommend performing some quick calculations to determine the general effect that any external
+components might have on the system.
+Where reference noise always has a greater impact is on the 18-, 24- and 32-bit higher-resolution ADCs (the teal
+highlighted cells in Table 21). All of these ADCs experience a significant increase in noise relative to the ADC by itself.
+This result is more pronounced as the ADC resolution increases, with the 32-bit ADC experiencing an incredible 553%
+Fundamentals of Precision ADC Noise Analysis 56 March 2025
+
+===== PDF PAGE 57 =====
+Chapter 4: Voltage reference noise
+increase in noise due to reference noise alone. At the higher-resolution levels, using the noise-reduction methods
+outlined in this section and choosing an appropriate reference configuration are critical to maintaining precision
+measurements.
+Key takeaways
+Here is a summary of important points to better understand how to reduce the effects of voltage-reference noise on
+delta-sigma ADCs:
+1. To reduce reference noise:
+• Use a low-noise reference.
+2. • Reduce your ENBW.
+• Increase the reference voltage (as long as the reference noise does not increase proportionally).
+• Use a ratiometric configuration.
+Optimize system noise performance by choosing a reference configuration that provides reference noise
+performance similar to your ADC’s noise performance.
+Fundamentals of Precision ADC Noise Analysis 57 March 2025
+
+===== PDF PAGE 58 =====
+Chapter 5: Clock noise
+Chapter 5: Clock noise
+All data-acquisition (DAQ) systems require a reference point. At the end of Section 6, the reference point was a voltage
+level that when compared to the analog input signal generated an output code. However, DAQ systems also require
+another type of reference point, though not one necessarily related to voltage.
+In a DAQ system, clocks serve as the time reference such that all components can operate synchronously. For analog-
+to-digital converters (ADCs), accurate and stable clocks ensure that the host sends commands to the ADC and that the
+ADC receives commands from the host in the correct order and without corruption. More importantly, the system clock
+signal enables users to sample the inputs and send data whenever required such that the entire system operates as
+intended.
+Although you may think of clocks as a digital input signals, these components can affect the analog performance of
+precision DAQ systems. To further understand how clocks affect precision ADCs, I’ll discuss these topics as they relate
+to clock signals:
+• Clock jitter.
+• Clock intermodulation.
+• The best printed circuit board (PCB) layout practices for clocking.
+How clock signals affect precision ADCs•
+Fundamentals of Precision ADC Noise Analysis 58 March 2025
+
+===== PDF PAGE 59 =====
+Chapter 5: Clock noise
+How clock signals affect precision ADCs
+While you may expect an ADC’s sampling period to be perfectly constant, there is always some deviation from the ideal.
+“Clock jitter” refers to the variation in a clock waveform’s edges from one period to the next. Since all ADCs use a clock
+edge to control the sampling point, clock-edge variation results in deviations in the sampling instance. This deviation
+results in a nonconstant sampling frequency that appears in the conversion result as another source of noise.
+Similar to most noise sources discussed so far in this e-book, clock jitter is random and follows a Gaussian distribution.
+As a result, the sampling uncertainty error is also Gaussian, behaving just like thermal noise. Ultimately, the effect of
+clock jitter on ADC performance is primarily an increase in the ADC’s noise floor and, subsequently, the total thermal
+noise of the signal chain. Figure 52 shows the sampling-edge variation caused by clock jitter on a sinusoidal input signal.
+Figure 52. Clock signal showing sampling-edge variation due to jitter.
+The amount by which the thermal noise increases depends on the input signal’s slew rate and the amount of clock
+jitter in your clock source. You can calculate the theoretical upper limit of the ADC’s signal-to-noise ratio (SNR) using
+Equation 28:
+SNRUpper Limit=− 20 × log10 2 × π × fIN × tJITTER (28)
+where fIN is the input signal frequency and tJITTER is the clock source’s jitter specification. For signals with higher
+frequency content, you can expect the input signal slew rate to be higher and the SNR degradation from clock jitter to be
+worse.
+One key benefit to oversampling data converters like delta-sigma ADCs is that the ideal SNR improves when using
+higher oversampling ratios (OSRs). Oversampling averages multiple conversions over a defined period of time, which in
+turn averages out some of the sampling variations caused by clock jitter. Equation 29 quantifies the SNR improvement
+due to oversampling, which is simply an extension of Equation 28 that adds a term dependent on the delta-sigma ADC’s
+OSR:
+Fundamentals of Precision ADC Noise Analysis 59 March 2025
+
+===== PDF PAGE 60 =====
+Chapter 5: Clock noise
+SNRUpper Limit(Oversampling)=− 20 × log10 2 × π × fIN × tJITTER + 10 × log10(OSR) (29)
+To visualize the performance difference between an ADC with oversampling and one without, Figure 53 plots Equation
+28 and Equation 29 as a function of input signal frequency and jitter. Each plot includes curves for four different clock
+jitter specifications (0.5 ns, 5 ns, 50 ns and 500 ns). Figure 53a represents the SNR for an oversampling ADC, while
+Figure 53b represents the SNR for an ADC without an oversampled architecture.
+Given the benefits of oversampling, the four plots in Figure 53a offer a 21-dB improvement in SNR compared to the
+equivalent jitter specification curves in Figure 53b. However, both plots illustrate the same effect: As you increase the
+input signal frequency or amount of clock jitter, the resulting SNR decreases. Therefore, applications with higher SNR
+targets may require more expensive, higher-power clocking solutions to minimize the jitter.
+For example, the evaluation module (EVM) for TI’s ADS127L01 —a 512-kSPS, 24-bit delta-sigma ADC—uses an
+oscillator with a 5-ps jitter specification (typical). Note that this jitter spec is far lower than any of the jitter specifications
+plotted in Figure 53. However, if you consider the cost vs. performance trade-off for low-jitter oscillators, you might
+wonder if this choice is necessary or simply overkill.
+To help answer this question, Table 22 compares the data-sheet noise specifications for the ADS127L01 using the
+“Wideband 1” digital filter setting, with the SNR upper limit calculated for both 5 ps and 500 ps of clock jitter. The
+SNR upper-limit calculation uses the digital filter passband frequency as “fIN” to represent the maximum input signal
+frequency, which is where the effect of clock jitter is most apparent.
+Table 22. TI’s ADS127L01 wideband 1-filter SNR vs. SNR Upper Limit with 5 ps and 500 ps of clock jitter.
+Operating mode Data rate (SPS) Pass band (kHz) ADC SNR (dB)
+(data sheet)
+OSR SNRUpper Limit (dB)
+(t JITTER = 5 ps)
+SNRUpper Limit
+(dB) (t JITTER = 500
+ps)
+512,000 32 230.4 103.7 117.9 77.9
+256,000 64 115.2 107.3 126.9 86.9
+High resolution
+128,000 128 57.6 110.4 135.9 95.9
+64,000 256 28.8 113.4 145.0 105.0
+256,000 32 115.2 103.9 123.9 83.9
+128,000 64 57.6 107.6 132.9 92.9
+Low power
+64,000 128 28.8 110.7 141.9 101.9
+32,000 256 14.4 113.7 151.0 111.0
+128,000 32 57.6 104.1 129.9 89.9
+64,000 64 28.8 107.8 138.9 98.9
+Very low power
+32,000 128 14.4 110.9 148.0 108.0
+16,000 256 7.2 113.9 157.0 117.0
+Fundamentals of Precision ADC Noise Analysis 60 March 2025
+
+===== PDF PAGE 61 =====
+Chapter 5: Clock noise
+Figure 53. SNR plots for oversampling ADCs (a) and other ADCs (b).
+When tJITTER = 5 ps, all calculated SNR values (highlighted in teal) are greater than the ADC’s data-sheet SNR
+specifications. Using this clock source, you could safely assume that the noise from clock jitter would not be your
+system’s dominant noise source. Compare that to entries highlighted in red representing the SNR values that fall below
+the ADC’s SNR specifications, all of which are for tJITTER = 500 ps. In this case, the noise from clock jitter would actually
+limit the ADC’s achievable SNR when using the full signal bandwidth.
+Another key takeaway from both Table 22 and Figure 53 is that increasing the OSR (which is equivalent to slowing down
+the ADC’s output data rate) improves the SNR performance even further. In general, systems that can support slower
+output data rates are measuring slower-moving input signals. These systems will experience less noise due to jitter as
+the slight variations in the clock edges effectively go “unnoticed.”
+Finally, one additional way that you can reduce the noise caused by clock jitter is by choosing an ADC that uses an
+integrated clock divider to produce the modulator sampling clock, such as the ADS131A04. A clock divider acts on only
+one of the two input clock edges (typically the rising edge) to produce an output clock frequency that is no more than
+half of the original input clock frequency. Since you can reasonably assume that some jitter exists on both input clock
+edges, dividing the clock in half effectively reduces the jitter on the output clock. If you continue to divide down the input
+clock multiple times, you further lessen the effect of the input clock’s jitter on your ADC.
+Clock intermodulation
+Another way that clock sources affect ADC noise performance and increase system noise is through clock
+intermodulation. Virtually all DAQ systems have multiple switching components that require a clock input. In some cases,
+these clock inputs may require different input frequencies derived from separate clock sources.
+If these clock sources are discrete and asynchronous, they can potentially couple with each other and produce tones in
+the frequency spectrum. Given two clock sources at frequencies F1 and F2, the difference or sum of their fundamental
+frequencies produces intermodulation tones. These are called second-order intermodulation products; see Figure 54.
+Fundamentals of Precision ADC Noise Analysis 61 March 2025
+
+===== PDF PAGE 62 =====
+Chapter 5: Clock noise
+Figure 54. Intermodulation products due to asynchronous clock sources.
+Moreover, the sum or difference between the fundamental frequencies and other intermodulation products, including
+their harmonics, produce additional higher-order tones. While these tones may exist beyond your signal bandwidth of
+interest, they can still alias into the ADC passband and degrade AC specs like SNR and total harmonic distortion.
+The fast Fourier transform (FFT) in Figure 55 illustrates these intermodulation effects. Using an ADC with shorted inputs
+(a 0-V differential input), the processor clock was set to 12 MHz while the ADC modulator clock was reduced to 11.996
+MHz, creating a difference of 4 kHz.
+Figure 55. FFT showing intermodulation tones at multiples of 4 kHz.
+Due to the difference in the processor and ADC clocks, a second-order intermodulation tone appears in the frequency
+spectrum at 4 kHz, with additional harmonics produced at multiples of 4 kHz. This illustrates how intermodulation
+products may fall directly into the pass band of the ADC and contribute noise.
+To mitigate this problem, wide-bandwidth applications often use one clock source to generate all other frequencies used
+in the system to ensure that they are all synchronous. Another useful mitigation technique is to choose clock frequencies
+and sampling rates that are least likely to produce tones within the signal bandwidth of interest.
+Best PCB layout practices for clocking
+When designing the PCB layout for your clock source, take care to keep the clock signal as clean as possible. Although
+it is considered a digital input, treat the clock signal as if it were another important analog signal. Minimize trace
+impedances, route traces away from Serial Peripheral Interface (SPI) signals and other noisy circuitry, and consider
+including PCB footprints for a series resistor and shunt capacitor to help handle reflections or overshoot. Figure 56
+shows an example clock layout from the ADS127L01 EVM.
+Fundamentals of Precision ADC Noise Analysis 62 March 2025
+
+===== PDF PAGE 63 =====
+Chapter 5: Clock noise
+Figure 56. Example clock layout.
+The red line in Figure 57 traces the clock path from the source to the ADC (U26, highlighted in red). The clock path
+begins with the clock source (Y1), which is then fed into a clock fan-out buffer (U23). Both of these components are
+highlighted in teal in the top-right corner of Figure 56. The clock fan-out buffer generates two identical copies of the
+original input clock frequency: one to drive the ADC and another to drive a microcontroller (through R55).
+To go to the ADC, the clock signal continues on through a small 43-Ω resistor (R56) in series with the clock buffer output
+to help dampen reflections. The clock signal then connects to a jumper (JP6) that selects one of three different ADC
+clock frequencies. The other two clock frequencies are produced by two D flip-flops (U24 and U25, highlighted in orange
+in Figure 56). These components divide down the clock buffer output to produce the clock for the other two modes:
+low-power mode and very-low-power mode. All three mode choices are also synchronous to the original clock source. In
+Figure 56, the solid red line passes through the high-resolution mode selection.
+After the jumper, the selected clock signal passes through another resistor (R60) and a shunt capacitor (C76) before
+reaching the ADC clock pin. The path is kept as short and as direct as possible. The SPI interface signals (highlighted in
+green) are also kept away from the clock input until they reach the ADC.
+Fundamentals of Precision ADC Noise Analysis 63 March 2025
+
+===== PDF PAGE 64 =====
+Chapter 5: Clock noise
+Additional clocking tips for best performance
+If you follow the clock layout guidelines provided here but still suspect that your clock is degrading your ADC
+performance, here are some additional clock-related issues to test:
+• The clock signal quality at the ADC input. If the clock signal at the ADC clock input pin shows excessive overshoot
+and ringing, you may need to slew the clock edges further by adding or increasing the size of the small series
+resistor and shunt capacitor (R60 and C76 in Figure 56, respectively). Adding these components effectively applies a
+low-pass filter to the clock input while preserving the fundamental clock frequency. You may also notice what appear
+to be “shelves” or “steps” in the clock edges. This is caused by reflections of the clock signal as it travels along a
+trace and runs into a high-impedance input. A series resistor will help dampen these clock reflections.
+• The supply pins on the ADC. Because both the ADC’s DVDD input and the clock source or clock buffer may share
+the same digital supply, check these pins for large transients. Transients result from sudden demands in current and
+may require additional decoupling capacitors to suppress. But take care when choosing the size of your decoupling
+capacitors: smaller decoupling capacitors have less inductance and can supply the necessary current more quickly,
+while larger decoupling capacitors help store the bulk of the necessary charge and filter any noise on the supply
+rail. A combination of both decoupling capacitor sizes may be necessary to keep the digital supplies quiet and
+stable. Another technique to help reduce transients from coupling into the ADC output is to place a small ferrite bead
+between the ADC digital supply pin and the clock source or clock buffer supply pins.
+• Split the ground plane. If your PCB’s size prohibits placing clock circuitry far away from sensitive analog circuitry,
+it may help to partially split the ground in order to isolate the clock current’s return path. However, always tie back
+both sides of your ground plane as close to the device as possible to avoid significant ground potential differences
+between the ADC’s analog and digital sections.
+Ultimately, following the practices and procedures recommended in Chapter 5 should help to avoid the most common
+clocking-related issues and ensure that your clock source is not the biggest contributor of noise to your signal chain.
+Key takeaways
+Here is a summary of important points to better understand how clock noise affects ADCs:
+1. Clock-edge variation results in deviations in the sampling instance. This nonconstant sampling frequency appears in
+the conversion result as another source of noise.
+2. Oversampling ADCs average multiple readings of the input signal, averaging out some of the effect of clock jitter and
+improving SNR in the process.
+3. Use a low-jitter clock source for higher-speed, high-dynamic-range applications.
+4. Best PCB layout practices:
+• Minimize trace impedances.
+• Route traces away from SPI signals and other noisy circuitry.
+• Consider a series resistor and shunt capacitor to help handle reflections or overshoot.
+Fundamentals of Precision ADC Noise Analysis 64 March 2025
+
+===== PDF PAGE 65 =====
+Chapter 6: Power-supply noise
+Chapter 6: Power-supply noise
+So far, I’ve focused on noise contributed by analog components that could either be external to, or integrated in, your
+analog-to-digital converter (ADC). Chapter 6 analyzes noise contributed by power supplies, which must originate outside
+of your device. Even though some ADCs might integrate power-management features such as a low-dropout (LDO)
+regulator to clean up noisy supplies or a charge pump to extend the input-voltage range, these features—and the ADC
+itself—still need power from an external source. And like any other component in mixed-signal data-acquisition systems,
+power supplies contribute noise.
+Fortunately, you can treat power-supply noise analysis similarly to the other noise sources I’ve discussed so far. Assume
+that your supplies will contribute some noise, although the impact on your system performance depends on the level
+and type of noise from the source. For example, a 3-V lithium-ion battery used in portable applications will generally be
+noisier and have more output-voltage variation than the precision bench-top power supply used to characterize an ADC.
+Once you’ve chosen the supply source and voltage rails for your application, there are methods you can take to reduce
+the impact that power-supply noise has on your ADC’s performance.
+Since I have been focusing on signal-chain design, let’s assume that your power supplies (and subsequent noise
+contributions) are fixed. In other words, I won’t discuss power-supply design techniques that could change the power-
+supply noise contribution. Instead, I’ll focus on how this noise affects your ADC’s output by discussing these concepts:
+• Types and sources of power-supply noise.
+• Measuring and quantifying power-supply noise rejection.
+• How noise on each of the ADC’s supplies impacts system performance.
+In Section 8.2, I’ll use a precision ADC EVM to apply the theory from Section 8.1 to a real-world example, and discuss
+power-supply noise-mitigation techniques.
+Many thanks to my colleague Ryan Andrews for his contributions to Chapter 6.
+Power-supply noise and its effect on delta-sigma ADCs•
+Reducing power-supply noise in delta-sigma ADCs•
+Fundamentals of Precision ADC Noise Analysis 65 March 2025
+
+===== PDF PAGE 66 =====
+Chapter 6: Power-supply noise
+Power-supply noise and its effect on delta-sigma ADCs
+For any analog signal chain, power ultimately comes from one of two sources: batteries or an AC line voltage. Both
+power-source options are often followed by some form of power-supply conditioning circuitry that regulates power for
+the rest of the system. The supply source, as well as the active and passive conditioning components, will contribute
+some level of noise, which manifests itself in the power supply’s output as a variation from the expected voltage. This
+variation could appear as a steady DC shift in the output or as an AC signal at some frequency and amplitude riding on
+top of the output.
+While the latter may seem specific to line-voltage-powered systems, battery-powered systems may contain AC noise
+as well. The power-conditioning components themselves can contribute noise that impacts performance. These devices
+include LDOs, DC/DC converters and switched-mode power supplies (SMPSs). LDOs primarily contribute thermal noise,
+like all electrical components. Switching devices add large current transients on top of thermal noise. Current transients
+generally consist of both a lower-frequency ripple (typically in the 100-kHz to 1-MHz range) as well as higher-frequency
+spikes (+100 MHz) centered on the nominal output voltage. Figure 57 shows an oscilloscope plot of switching ripple,
+transient spikes and thermal noise.
+Figure 57. SMPS noise (transients, ripple and thermal noise).
+In addition to power-supply conditioning components, AC noise can originate from other switching components that use
+the same supply—such as clocks and clock buffers—as well as from ambient lighting or other environmental elements.
+Ultimately, your ADC power supplies will likely have some combination of both thermal and switching noise,
+regardless of which power source you use. However, since power-supply noise is external to the ADC, semiconductor
+manufacturers can only specify how effective an ADC is at rejecting this noise. This specification is called power-supply
+rejection (PSR).
+Measuring and quantifying power-supply noise rejection
+In ADCs, PSR describes the change in the ADC output (ΔVOUT) relative to changes in its power supply (ΔVSUPPLY). PSR is
+often given as a ratio expressed in decibels. This ratio is referred to as the power-supply rejection ratio (PSRR). Note that
+the absolute value is conventionally used to describe PSRR, since the negative sign is implied. Equation 30 calculates
+PSRR:
+PSRR = 20 × log10
+ΔVOUT
+ΔVSUPPLY (30)
+Fundamentals of Precision ADC Noise Analysis 66 March 2025
+
+===== PDF PAGE 67 =====
+Chapter 6: Power-supply noise
+You’ll find two different methods to specify PSRR in ADC data sheets: PSRRDC and PSRRAC. PSRRDC describes how
+much the ADC output changes due to a DC shift in its power supply, while PSRRAC describes how much power-supply
+noise appears in the output. Similar to the ADC noise-measurement discussion in Section 3.2, the PSRR measurement
+method used by ADC manufacturers depends on the types of signals the ADC is intended to measure.
+For example, low-speed sensor-measurement applications typically use ADCs optimized for DC performance, such as
+the TI ADS1261 , a low-noise, 24-bit delta-sigma ADC that can sample up to 40 kSPS. Table 23 shows the ADS1261’s
+data-sheet specification for PSRRDC since the signal pass band is typically very narrow for this ADC. The data sheet
+gives a minimum and typical PSRR specification for both the analog and digital power supplies.
+Table 23. ADS1261 PSRR for AVDD = 5 V, AVSS = 0 V, DVDD = 3.3 V, V REF = 2.5 V, gain = 1 V/V, output data rate = 20 SPS.
+Parameter Test conditions Min Typ Max Unit
+PSRR Power-supply rejection ratio (1) AVDD and AVSS DVDD 90 100 100
+120
+dB
+(1) Power-supply rejection ratio specified at dc.
+To measure PSRRDC, ADC manufacturers short the device’s inputs together, bias them to a common-mode voltage
+(VCM) typically near mid-supply, and measure the offset voltage at the ADC’s output. Then, the supply voltage is
+changed by 100 mV to see how much the offset voltage changes. Figure 58 shows a typical PSRRDC measurement
+setup, with the additional 100-mV offset voltage.
+Figure 58. PSRR DC measurement setup using ±100-mV offset on AVDD.
+As shown in Table 23, the ADS1261’s typical PSRRDC is 100 dB for the analog supply, AVDD. You can input a PSRR of
+–100 dB and a ΔVSUPPLY of 100 mV into Equation 30 and solve for ΔVOUT to calculate the expected change in offset.
+From Equation 30, a 100-mV change in AVDD should produce a 1-µV change in offset voltage at the ADC output.
+Figure 59 illustrates the output offset voltage’s variation due to the change in power supply in the time domain. The
+output offset voltage swing is centered on the ADS1261’s nominal offset voltage of 50 µV, which is specified using the
+same conditions given in Table 23.
+Fundamentals of Precision ADC Noise Analysis 67 March 2025
+
+===== PDF PAGE 68 =====
+Chapter 6: Power-supply noise
+Figure 59. Change in offset voltage due to a 100-mV change in AVDD using the ADS1261.
+Comparatively, wide-bandwidth applications such as vibration monitoring require a wider signal pass band, and
+therefore higher-bandwidth ADCs. Such ADCs are more prone to unwanted high-frequency content that may alias or
+fall directly into the signal bandwidth of interest. For this reason, wideband ADCs generally specify PSR using PSRRAC.
+Table 24 shows the PSRR specifications for TI’s ADS127L01 , a 24-bit, high-speed delta-sigma ADC that samples up to
+512 kSPS.
+Table 24. ADS127L01 PSRR specifications at T A = 25°C, AVDD = 3 V, internal LVDD, DVDD = 1.8 V, V REF = 2.5 V.
+Parameter Test conditions Min Typ Max Unit
+AVDD 90 dB
+PSRR Power-supply rejection ratio fPS = 60 Hz
+DVDD 85
+LVDD 80
+The measurement setup for PSRRAC is very similar to PSRRDC, such that the ADC’s inputs are shorted together and
+then biased to a mid-supply common-mode voltage. However, instead of introducing a DC offset to the supply, PSRRAC
+is measured with an AC signal riding on top of the nominal DC supply. This AC signal mimics noise at a particular
+frequency (for example, the 60-Hz power-line frequency shown in Table 24).
+Figure 60 shows a typical PSRRAC measurement setup with a 100-mVP sine wave on top of the ADC analog supply
+voltage, AVDD. If your supply voltage was 3 V, you could recreate the test setup in Figure 60 using a 100-mVP sine wave
+with a 3-V DC offset.
+Figure 60. PSRR AC measurement setup using a 100-mV P sine wave.
+Fundamentals of Precision ADC Noise Analysis 68 March 2025
+
+===== PDF PAGE 69 =====
+Chapter 6: Power-supply noise
+To calculate PSRRAC in the time domain, you can use Equation 30 just as you did to calculate PSRRDC. Using the
+100-mVP amplitude as your supply ripple (ΔVSUPPLY) and the ADS127L01’s AVDD PSRR from Table 24 (–90 dB), you can
+expect 3.2 µVP of switching ripple at 60 Hz to appear at the ADC output. Figure 61 shows the ripple on the supply and
+how it translates to a similar ripple at the output, centered on the ADC’s nominal offset voltage.
+Figure 61. Noise in ADC output due to a 100-mV P power-supply ripple using the ADS127L01.
+You can also calculate PSRRAC in the frequency domain by converting the 100-mVP supply ripple into decibels using the
+ADC’s reference voltage. If you use the 2.5-V reference voltage specified in Table 24, 100 mVP equates to –28 dBFS, or
+decibels relative to full scale. The PSRRAC in this case is the difference in decibels between the supply-ripple amplitude
+and the tone measured in the frequency spectrum that appears at the supply-ripple frequency (60 Hz). Figure 62 plots
+both the supply-ripple amplitude and the noise that appears in the ADC output, where the difference is the direct result
+of the ADC’s PSRR at that frequency.
+Figure 62. ADS127L01 PSRR AC in the frequency domain.
+How noise on each of the ADC’s supplies impacts system performance
+In the preceding section, I discussed how to measure and specify power-supply noise using the analog supply as an
+example. While this may be acceptable for those ADCs that only require one supply voltage, higher-resolution ADCs
+tend to at least have separate analog and digital supplies, with some precision ADCs requiring more. For example, you
+can see in Table 24 that the ADS127L01 actually has three different supplies: analog (AVDD), digital (DVDD) and the
+low-voltage modulator supply (LVDD). Figure 63 plots the PSRR for each supply as a function of frequency.
+Fundamentals of Precision ADC Noise Analysis 69 March 2025
+
+===== PDF PAGE 70 =====
+Chapter 6: Power-supply noise
+Figure 63. t A = 25°C, AVDD = 3.3 V, V REF = 2.5 V, high-resolution (HR) mode, INTLDO = 1.
+You can conclude from Figure 63 that LVDD is most susceptible to power-supply noise on the ADS127L01. Intuitively,
+this makes sense, as this supply is directly used by the ADC’s delta-sigma modulator, which samples the input signal.
+For this specific ADC, then, you would want to apply some power-supply noise-reduction techniques to LVDD to ensure
+that it has the least amount of noise in order to maximize performance.
+Additionally, you can see in Figure 63 that the PSRR for all three supplies remains relatively constant until the power-
+supply frequency (fPS) is approximately 200 kHz. At this frequency, the PSRR begins to increase to 160 dB for all
+three supplies. In Figure 63, the ADS127L01 operates at 512 kSPS using the Wideband 1 digital filter setting. This
+filter response sets the ADC passband to approximately 204 kHz. Therefore, the ADS127L01’s digital filter stopband
+attenuation further rejects the power-supply ripple at frequencies beyond the ADC passband—by about 116 dB. This
+improves the PSRR for all three supplies at higher frequencies.
+These observations from Figure 63 provide hints about two important questions regarding power-supply noise: first,
+which ADC supply voltage is most critical when considering your system’s PSR; and second, how can you reduce the
+overall power-supply noise in your system?
+Key takeaways
+Here is a summary of important points to better understand power-supply noise and how it affects ADCs:
+1. 2. 3. 4. Power supplies and conditioning components can contribute noise.
+Power supply noise is a variation from the expected output voltage.
+• This variation could be a steady DC shift in the output or as an AC signal at some frequency and amplitude riding
+on top of the output.
+PSR describes the change in the ADC output (ΔVOUT) relative to changes in its power supply (ΔVSUPPLY).
+• PSRRDC describes how much the ADC output changes due to a DC shift in its power supply.
+• PSRRAC describes how much power-supply noise appears in the output.
+Power supply noise can have a different effect on the ADC’s separate supplies—AVDD, DVDD, LVDD, etc.
+Fundamentals of Precision ADC Noise Analysis 70 March 2025
+
+===== PDF PAGE 71 =====
+Chapter 6: Power-supply noise
+Reducing power-supply noise in delta-sigma ADCs
+Let’s continue the power-supply noise discussion with a design example using the ADS127L01 EVM . This example
+will help illustrate which supplies are most critical when trying to increase your system’s PSR. Finally, I’ll discuss best
+practices to maintain low power-supply noise and debugging tips to improve your system’s overall noise performance.
+AVDD, DVDD or LVDD: Which is most important?
+In Section 6.1, I looked at the PSRR for each of the power supplies used by the TI ADS127L01 (shown again in Figure
+64). Like most ADCs, the ADS127L01 uses both an analog and a digital supply (AVDD and DVDD, respectively). I
+chose this device for our discussion because it also requires a third LVDD supply. LVDD directly powers the delta-sigma
+modulator in the ADS127L01. The LVDD supply can either be provided from an internal LDO (connected to AVDD) or
+from an external LVDD supply source. As you’ll see later, driving LVDD externally with a noisy supply will have the most
+adverse effect on ADC noise performance.
+Figure 64. t A = 25°C, AVDD = 3.3 V, V REF = 2.5 V, HR mode, INTLDO = 1.
+From Figure 64, you can see that LVDD is most susceptible to coupling noise into the ADC output because it has
+the lowest PSRR of the three supplies. LVDD is most sensitive to noise because it directly powers the delta-sigma
+modulator, which in turn directly controls the analog-input-to-digital-output conversion process. Comparatively, AVDD
+powers the remaining analog circuitry, including generating the main bias current, but this has less of a direct impact on
+the conversion results. Powering the ADC’s digital core, DVDD has the least impact on the conversion results because
+the modulator output is already in binary form when it reaches the digital decimation filter. For devices that require
+multiple supplies, it’s best to prioritize the supply that most directly powers the delta-sigma modulator, which is typically
+AVDD.
+To illustrate the effects of driving the modulator with a noisy supply in the real world, I conducted an ADC input-short
+noise measurement on the ADS127L01 EVM under these four conditions:
+• Clean supplies on AVDD, LVDD and DVDD (no ripple).
+• AVDD = 3 V + 1-kHz, 100-mVP ripple, clean LVDD and DVDD.
+• LVDD = 1.825 V + 1-kHz, 100-mVP ripple, clean AVDD and VDD.
+• DVDD = 1.8 V + 1-kHz, 100-mVP ripple, clean AVDD and LVDD.
+Fundamentals of Precision ADC Noise Analysis 71 March 2025
+
+===== PDF PAGE 72 =====
+Chapter 6: Power-supply noise
+In each case, I shorted the ADC inputs together, biased them to mid-supply (1.5 V) and computed the maximum
+achievable signal-to-noise ratio relative to the ADC full scale. This result is the ADC’s dynamic range. Table 22 in the
+ADS127L01 data sheet lists the typical noise performance for each of the ADC’s modes of operation and data rate. This
+test was conducted in very low-power mode with a 4-MHz clock input using the Wideband 2 digital filter setting with
+an oversampling ratio equal to 256. From Table 22, you can expect approximately 114 dB of dynamic range at these
+settings.
+Figure 65. Noise histogram (a) and FFT (b) for clean supplies on AVDD, LVDD and DVDD.
+As anticipated, the EVM performs best when using clean voltage supplies for all three ADC supply pins. Figure 65
+shows a noise histogram (Figure 65a) and fast Fourier transform (FFT) (Figure 65b) under these conditions, resulting in a
+dynamic range of 113.56 dB, which is very close to the data-sheet specifications.
+I then added a 1-kHz, 100-mVP sine wave on top of the 3-V AVDD supply. This sine wave mimics power-supply noise,
+and was applied to the ADC using a signal generator with a DC offset equal to the nominal AVDD supply voltage (3
+V). In this case, the internal LDO on the ADS127L01 was still able to reject most of this noise and maintain nominal
+performance at 113.33 dB, as shown in Figure 66. Notice that a small tone appears in the frequency spectrum at 1 kHz
+with a magnitude of –127 dB. This should correlate to the original input signal level relative to full scale (–28 dB for an
+ADC using a 2.5-V reference voltage) minus the AVDD PSRR, or about 100 dB.
+Fundamentals of Precision ADC Noise Analysis 72 March 2025
+
+===== PDF PAGE 73 =====
+Chapter 6: Power-supply noise
+Figure 66. Noise histogram (a) and FFT (b) for clean supplies on LVDD and DVDD, ripple on AVDD.
+Figure 67. Noise histogram (a) and FFT (b) for clean supplies on AVDD and DVDD, ripple on LVDD.
+In the next test, I reverted back to using the default AVDD supply on the EVM and used the signal generator to provide
+the LVDD supply instead. In this test, I input a 1-kHz, 100-mVP sine-wave ripple centered on a 1.825-VDC offset and
+bypassed the internal LDO. As a result, the LVDD supply noise caused a significant degradation in noise performance
+(105.52 dB), as shown in Figure 67. Also, compared to Figure 66b, the 1-kHz tone is much more apparent in the
+frequency spectrum (–106 dB).
+In the last test, I reverted AVDD and LVDD back to the default clean EVM supplies and applied the sine wave to DVDD.
+In this case, the 1-kHz, 100-mVP sine-wave ripple was centered on a 1.8-VDC offset. Interestingly, Figure 68 shows less
+dynamic range degradation compared to the LVDD experiment (111.14 dB), even though more harmonics of the 1-kHz
+ripple were visible in the resulting FFT.
+Fundamentals of Precision ADC Noise Analysis 73 March 2025
+
+===== PDF PAGE 74 =====
+Chapter 6: Power-supply noise
+Figure 68. Noise histogram (a) and FFT (b) for clean supplies on AVDD and LVDD, ripple on DVDD.
+Ultimately, these experiments confirm the results in Figure 64 while reiterating that some supplies—especially the one
+that feeds the delta-sigma modulator—are more susceptible to power-supply noise than others, and may require special
+care to maintain a high PSR.
+Improving PSRR
+To that end, let’s consider a few ways to maintain a good PSRR in your system using three different techniques, starting
+with the most critical: layout.
+• Optimize your layout. Layout optimization is by far the most important technique you can use to improve PSRR and
+maintain system performance. As I have spent significant time discussing DC/DC switching regulator noise coupling
+onto your supplies, one specific layout optimization action that you can take is to isolate this noise by placing
+switching regulators away from sensitive analog inputs. Switching regulators are great for their efficiency, but they
+can inject large transients on your supplies that couple into surrounding circuitry, including the ADC itself. If the
+power-conditioning circuits are on the same side of the printed circuit board (PCB) as the digital components, neither
+of the noisy return currents should ever have to flow through the more sensitive analog circuitry.
+However, some PCBs may be restricted by their size or shape such that these types of layout techniques are not
+feasible. For example, Figure 69 shows the scale of a PCB compared to a quarter using TI’s RTD temperature
+transmitter reference design for 2-wire, 4- to 20- mA current-loop systems . With such limited space, optimizing
+your layout can be a challenge.
+In these cases—and all PCB layouts, for that matter— ensure that you always use proper supply decoupling. There
+are two main classifications of decoupling capacitors: bulk and local. Bulk decoupling capacitors are generally placed
+directly at the output of the supply source. These capacitors help filter the supply output and hold the voltage steady
+as the load current fluctuates. In addition, most active components will require at least one local decoupling capacitor
+directly next to each of the main supply pins. Local capacitors are generally an order of magnitude smaller compared
+to bulk capacitors and are used to provide the instantaneous current demands from the device while filtering out
+Fundamentals of Precision ADC Noise Analysis 74 March 2025
+
+===== PDF PAGE 75 =====
+Chapter 6: Power-supply noise
+higher-frequency noise. If more than one decoupling capacitor is recommended for a given supply pin—for example,
+0.01 µF in parallel with 1 µF—place the smaller capacitor closest to the supply pin.
+Figure 69. Temperature transmitter PCB compared to a quarter using one of TI’s temperature transmitter reference designs.
+Additionally, in Section 6.1, I mentioned that certain active components such as clocks can introduce large transients
+onto a power supply. You can suppress this noise by using additional decoupling components such as a series ferrite
+bead. Figure 70 shows a portion of the ADS127L01 EVM schematic with some extra decoupling components used by
+the ADC and clock fan-out buffer supplies. This fan-out buffer must be referenced to the same digital input/output level
+as the ADS127L01 digital core (DVDD), which may allow switching transients to couple onto this supply. To maintain
+system performance, the EVM uses capacitors and a ferrite to decouple DVDD from the fan-out buffer output supply
+(VDDO).
+Figure 70. Decoupling components (capacitors and ferrite) for the ADC digital supply (DVDD) and clock buffer output supply (VDDO) on
+the ADS127L01 EVM schematic.
+Figure 71. ADS127L01EVM schematic (a) and voltage measurements at the buffer test point (b).
+Fundamentals of Precision ADC Noise Analysis 75 March 2025
+
+===== PDF PAGE 76 =====
+Chapter 6: Power-supply noise
+I previously discussed the ADS127L01 EVM’s clock fan-out buffer—and its clocking circuits in general—in Chapter 5,
+showing the EVM’s clocking circuit and highlighting the fan-out buffer in teal and the ADC in red in that chapter’s Figure
+61. Figure 71a shows this same image with those same highlights, although now I’ve also highlighted the decoupling
+components in yellow. The red arrow traces the DVDD supply path to the IOVDD supply.
+Figure 71a calls out a test point at the IOVDD supply pins, while Figure 71b shows an oscilloscope capture of the
+voltage at this point (Ch1). This screen capture demonstrates the large supply transients produced by the buffer due to
+each rising and falling edge of the output clock signal (Ch2) as seen across C65.
+Without the decoupling circuit shown in Figure 70, the transients shown in Figure 71a would couple onto DVDD and
+affect the performance of the ADC, similar to the results seen in Figure 68. However, proper decoupling contains these
+glitches to the output of the clock fan out buffer. This containment is evident by Figure 72b, showing an oscilloscope
+capture at the test point (C73) called out in Figure 72a. Note that the transients shown in Figure 71 are effectively
+removed from the oscilloscope capture in Figure 72, resulting in very little power-supply noise reaching the ADC.
+Figure 72. ADS127L01EVM schematic (a) and voltage measurements at the ADC test point (b).
+Routing is another layout method that you should consider to maintain low power-supply noise. Always route the power
+traces from the source through the pads of the capacitors and then to the device pins whenever possible. Also, make
+the traces thicker for supplies that may carry higher amounts of current. And don’t forget that ground is a supply, too.
+Ground serves as the current return path for both signals and supplies. Using a large ground pour or plane with extra
+vias reduces the return path inductance and allows return currents to easily make their way back to the source. Figure
+73 demonstrates some of these concepts.
+Fundamentals of Precision ADC Noise Analysis 76 March 2025
+
+===== PDF PAGE 77 =====
+Chapter 6: Power-supply noise
+Figure 73. Routing techniques, including thick traces and routing through capacitor pads.
+• • Frequency planning. Another technique you can use to mitigate power-supply noise employs frequency planning,
+either for the switching regulator or your ADC. As discussed at the beginning of Chapter 6 and reiterated in Figure 64,
+ADCs can exhibit different PSRR characteristics on each supply. Additionally, all ADC supplies will see a large boost
+in PSRR at frequencies that fall within the digital filter stop band (see Figure 64). In delta-sigma ADCs, the digital filter
+response repeats at multiples of the modulator frequency (fMOD). Therefore, switching noise may still alias into the
+ADC pass band if this noise happens to fall near the modulator frequency or any multiple thereof.
+If possible, choose a switching frequency that falls into one of the nulls of the filter (typically at multiples of the output
+data rate) to keep these signals from aliasing and improve your system’s PSR. Figure 74 illustrates the stop band for
+common ADC filter types: a wideband finite impulse response filter (Figure 74a) and a sinc filter (Figure 74b). Since
+the ADC data rate is typically fixed by the system requirements, the regions highlighted by the red arrows are the
+recommended bands for switching frequencies based on the digital filter response. If your data rate is flexible but your
+switching frequency is fixed, consider choosing your ADC’s output data rate such that it creates a null at this frequency.
+Figure 74. Recommended switching frequency bands using flat pass-band (a) and sinc filters (b).
+• Adding an LDO. As I discussed in Section 6.1, you can further improve your system’s PSRR by adding an LDO to
+suppress unwanted noise. If you intend to use switching power supplies in your system, you should also consider the
+specific switching frequencies that will work best in your system. You can use this technique for all high-resolution
+ADC applications, though it is most important for wider-bandwidth applications where noise is more likely to couple
+or alias into the output. In those cases, choose an LDO that has the most PSR for the switching frequency you plan
+Fundamentals of Precision ADC Noise Analysis 77 March 2025
+
+===== PDF PAGE 78 =====
+Chapter 6: Power-supply noise
+to use. Or conversely, consider a switching frequency that fits within the highest portion of the PSRR curve for your
+LDO. Figure 75 shows a PSRR versus frequency plot for the TI TPS7A49 LDO. Note that as the switching frequency
+increases, the PSRR of this LDO decreases.
+Figure 75. PSRR vs. frequency plot for the TPS7A49 LDO, C OUT = 2.2 µF.
+How to prevent and debug power-supply issues
+When reviewing an ADC’s power-supply design, you can begin by verifying several parameters in order to rule out
+any potential issues and ensure first-pass success. Start by reviewing key power-supply specifications, such as the
+output current limits and the input/output voltage range of the components. Make sure to account for the total current
+consumption of all active components sharing the supply, and budget for extra headroom. Also, check the maximum
+capacitive load for the supply output, as all of the bulk and local decoupling capacitors on that supply are effectively in
+parallel and can add up quickly. Too much capacitance may produce slow startup times. Finally, check that the LDO has
+at least the minimum dropout voltage between the input and the output and consider adding any other recommended
+noise-reduction (CNR) or feed-forward (CFF) capacitors for additional filtering, as shown in Figure 76.
+Figure 76. Filtering capacitors on an LDO.
+Once you’ve confirmed that your power supplies are configured properly, you can try to improve overall noise
+performance by increasing the size of ADC decoupling capacitors to provide additional filtering. This can be helpful
+not only on the main supply pins, but also on any internal voltage nodes brought out to a dedicated pin for external
+decoupling. The ADC manufacturer can usually recommend capacitance values for those as well. Remember to place
+smaller capacitors closest to the device pins in parallel with larger capacitors for best performance.
+Lastly, if you believe the supply-conditioning components themselves are introducing one or more tones into the ADC
+spectrum, try replacing each of the ADC supplies with an external bench supply, one at a time. If this does not reveal the
+issue, you can also try replacing the main supply source for your board to determine where the noise is coming from.
+Fundamentals of Precision ADC Noise Analysis 78 March 2025
+
+===== PDF PAGE 79 =====
+Chapter 6: Power-supply noise
+Key takeaways
+Here is a summary of important points to better understand how to reduce power-supply noise effects in delta-sigma
+ADCs:
+1. Prioritize the supply that most directly powers the delta-sigma modulator, which is typically AVDD, for ADCs with
+multiple supplies.
+2. Methods to improve PSRR:
+• Optimize layout.
+• Frequency planning.
+3. Debugging:
+• Adding an LDO.
+• Ensure key power-supply specs are met.
+• Increase ADC decoupling capacitors.
+• Replace supplies with a benchtop source one by one.
+Conclusion
+And with that, you’ve reached the end of this e-book. I hope you enjoyed expanding your understanding of noise in
+analog signal-chain design.
+Fundamentals of Precision ADC Noise Analysis 79 March 2025
+
+===== PDF PAGE 80 =====
+Chapter 6: Power-supply noise
+Additional resources:
+• TI Precision Labs – ADCs: ADC Noise (training series)
+– Introduction to noise in ADC systems
+– Types of noise in ADCs
+– ADC noise measurement, methods and parameters
+– System noise performance for low-speed delta-sigma ADCs
+– Calculating the total noise for ADC systems
+– Hands-on experiment – ADC noise
+• Top 10 questions about noise in high-resolution delta sigma ADCs (technical article)
+• And then there was noise: The mystery of the missing ENOB (technical article)
+• And then there was noise: The mystery of the missing ENOB (Part 2) (technical article)
+• And then there was noise: The mystery of the missing ENOB (Part 3) (technical article)
+Fundamentals of Precision ADC Noise Analysis 80 March 2025
+
+===== PDF PAGE 81 =====
+TI Worldwide Technical Support
+TI Worldwide Technical Support
+TI Support
+Thank you for your business. Find the answer to your support need or get in touch with our support center at
+www.ti.com/support
+China: http://www.ti.com.cn/guidedsupport/cn/docs/supporthome.tsp
+Japan: http://www.tij.co.jp/guidedsupport/jp/docs/supporthome.tsp
+Technical support forums
+Search through millions of technical questions and answers at TI’s E2E™ Community (engineer-to-engineer) at
+e2e.ti.com
+China: http://www.deyisupport.com/
+Japan: http://e2e.ti.com/group/jp/
+TI Training
+From technology fundamentals to advanced implementation, we offer on-demand and live training to help bring your
+next-generation designs to life. Get started now at training.ti.com
+China: http://www.ti.com.cn/general/cn/docs/gencontent.tsp?contentId=71968
+Japan: https://training.ti.com/jp
+Fundamentals of Precision ADC Noise Analysis 81 March 2025
+
+===== PDF PAGE 82 =====
+Important Notice: The products and services of Texas Instruments Incorporated and its subsidiaries described herein are sold subject to TI’s standard
+terms and conditions of sale. Customers are advised to obtain the most current and complete information about TI products and services before
+placing orders. TI assumes no liability for applications assistance, customer’s applications or product designs, software performance, or infringement
+of patents. The publication of information regarding any other company’s products or services does not constitute TI’s approval, warranty or
+endorsement thereof.
+All trademarks are the property of their respective owners.
+© 2025 Texas Instruments Incorporated SLYY192A
+
+===== PDF PAGE 83 =====
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you
+will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these
+resources.
+TI’s products are provided subject to TI’s Terms of Sale or other applicable terms available either on ti.com or provided in conjunction with
+such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable warranties or warranty disclaimers for
+TI products.
+TI objects to and rejects any additional or different terms you may have proposed. IMPORTANT NOTICE
+Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265
+Copyright © 2025, Texas Instruments Incorporated

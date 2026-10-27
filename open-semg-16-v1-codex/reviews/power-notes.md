@@ -1,0 +1,97 @@
+# Independent power and component-stress review
+
+Completed 2026-10-27 against the current KiCad CLI XML netlist, embedded schematic symbols, and text extracted directly from the original local manufacturer PDFs. This first section was completed before inspecting the reference revision or applying the Amberflow checklist. No design files were edited.
+
+## Sources
+
+- **P1:** `../docs/datasheets/originals/components/LP2985.pdf`, TI **SLVS522S**, revised May 2025: pinout p3 Table 4-1; absolute/recommended conditions p4 §§5.1/5.3; thermal p5 §5.4; dropout p6 and enable/noise p7 §5.5; output enable p16 §6.3.1; capacitance/ESR pp20–21 §§7.1.1–7.1.3; reverse current p21 §7.1.4; silicon identification p30 §8.1.1 Table 8-1.
+- **P2:** `../docs/datasheets/originals/components/TLV755P.pdf`, TI **SBVS320D**, revised September 2024: pinout p3 Table 4-1; absolute/recommended conditions p4 §§5.1/5.3; thermal p5 §5.4; exact dropout/EN p6 §5.5; enable pp12–13 §6.3.2; capacitance p15 §7.1.1; dropout p15 §7.1.2; reverse current pp17–18 §7.1.4; power/thermal p18 §7.1.5.
+- **P3:** `../docs/datasheets/originals/components/ESP32-S3-WROOM-1.pdf`, Espressif v1.8: p27 Tables 6-1/6-2 (3.0–3.6-V operation and supply capable of at least 0.5 A); p28 Tables 6-4/6-5 (RF current). These describe the module; U3 is a DevKitC assembly with additional unspecified board overhead.
+- **P4:** `../docs/datasheets/originals/components/ADS1298.pdf`, TI **SBAS459K**, revised August 2015: p12 §7.1 absolute limits; p12 §7.3 operating conditions; p16 §7.5 current table with RLD, WCT and pace amplifiers off.
+- Connectivity: `reviews/diagnostics/current-netlist.xml` and derived `current-connectivity.json`. These establish nets regardless of visible power-label names.
+
+## Inventory and exact topology
+
+| Item | Actual specification/properties | Actual connections |
+|---|---|---|
+| BT1 | Generic `Battery` symbol, no cell MPN, capacity, protection, connector, discharge rating or charge specification | pin1 `+3.7V`; pin2 `AGND`. The label does not establish battery chemistry or actual voltage. User intends single-cell Li-Po. |
+| U4 | Symbol/value `LP2985-3.3`; footprint `Package_TO_SOT_SMD:SOT-23-5`; fixed **3.3 V**, **150 mA**. Complete orderable part, grade and silicon generation **absent**. | pin1 VIN `+3.7V`; pin2 GND `AGND`; pin3 ON/OFF `/EN`; pin4 BP to C55; pin5 VOUT `+3.3V`. |
+| U5 | `TLV75533PDBV`; footprint SOT-23-5, **DBV**, fixed **3.3 V**, **500 mA**, no exposed thermal pad. Reel suffix unspecified. | pin1 IN `+3.7V`; pin2 GND `AGND`; pin3 EN `/EN`; pin4 NC intentionally unconnected; pin5 OUT `+3.3V`. |
+| C53/C56 | 1 µF each, no MPN/dielectric/tolerance/voltage/footprint | `+3.7V` to `AGND`, input bypass for U4/U5. |
+| C54 | 2.2 µF, unspecified technology/ratings | `+3.3V` to `AGND`. |
+| C55 | 10 nF, unspecified technology/ratings | U4 BP pin4 to `AGND`. |
+| C57 | 200 µF, generic unpolarized capacitor, unspecified technology/ratings | `+3.3V` to `AGND`. |
+| U3 | ESP32-S3-DevKitC symbol/footprint, complete board version/SKU absent | pins1/2 3V3 to `+3.3V`, pin21 5V to source-free `+5V`, GND pins22/23/24/44 to **DGND**. |
+
+## Prioritized findings
+
+1. **Critical — ADC supplies have zero analog span, and digital ground is an isolated DC island.** Both U1/U2 AVDD pins19/21/22/56/59 and AVDD1 pin54 are on **AGND**, as are AVSS20/23/32/57/58 and AVSS1 pin53; ADC DGND33/49/51 are also AGND. Thus AVDD−AVSS = **0 V**, versus ADS1298 operating minimum **2.7 V**. ADC DVDD48/50 are on the differently named **DGND**, which also connects U3's grounds and the grounded ADC GPIOs/DAISY_IN/RESV1. There is no DC bond from this DGND island to AGND/battery negative in the netlist. Consequently the MCU has no defined return to the battery and ADC DVDD relative to its actual DGND is undefined. This is a connectivity failure, not a layout-grounding preference. C8/C9/C34/C35 are between +3.3V and this floating DGND island and do not correct the return. Correct explicit supply and ground wiring and re-export netlist before any power-up; verify resistance/power-pin spans on unpowered hardware before supplying current-limited power. P4 p12 specifies AVSS-to-DGND absolute range −3 to +0.2 V and operating supply spans.
+
+2. **High — Two independent LDO outputs directly drive one rail.** U4.5 and U5.5 both land on `+3.3V`; this is confirmed by ERC power-output conflict. Both nominal voltages are 3.3 V, so there is **no demonstrated 5-V/3.3-V mis-selection**. However, two nominally equal setpoints are not a current-sharing circuit. Accuracy and load regulation decide which LDO carries most/all current; 150 mA + 500 mA must not be claimed as a 650-mA rail. The higher regulator can bias the other's output while it is disabled or unpowered. TLV755P has an active **120 Ω typical output pulldown**, so if one starts while U5 is disabled it adds approximately **3.3/120 = 27.5 mA** load (conditional estimate at datasheet pulldown test point; actual resistance varies). Different startup thresholds/ramps make this relevant even with shared EN. P1 §7.1.4 and P2 §7.1.4 warn against reverse current and external output bias. Choose one adequately rated source or distinct rails/controlled isolation; do not parallel ordinary fixed LDOs. An actual USB-powered DevKit may introduce another source (digital review verifies official board details).
+
+3. **High — Both LDO enable pins are undriven.** `/EN` contains only U4.3 and U5.3, with no pull, switch, connector, supply or MCU pin. A label is not a driver. Startup/off behavior is undefined; there is no demonstrated intentional self-latch or controller-controlled enable. P1 p3 Table4-1 and p16 §6.3.1 instruct tying ON/OFF to VIN if unused; full-temperature high threshold is **1.6 V**, guaranteed-off threshold **0.15 V** (p7, specified conditions). P2 p6 defines enabled ≥**1.0 V**, disabled ≤**0.3 V**; §6.3.2 directs EN→IN when no shutdown control is needed. Correct to a defined hardware state/control source. If legacy LP2985 is retained, its EN slew requirement **≥40 mV/µs** (p16) also needs attention; new silicon has no such slew condition.
+
+   The TLV755P's120Ω internal pulldown is **OUT→GND active discharge**, not an EN-input pulldown (P2 Fig6-1 and §6.3.2). No EN bias resistance/default is specified, so it cannot establish a guaranteed disabled state. P1 p24 typical schematic explicitly requires active ON/OFF termination, and §7.2.2.1 explicitly disallows leaving ON/OFF unconnected. SharedEN does not prevent mismatch when turn-on/off thresholds, delays, UVLO or thermal states differ.
+
+4. **Medium/Unverified — Battery discharge headroom and RF thermal margin not designed to stated performance.** Net labels and generic BT1 do not define minimum cell voltage, ESR, current or capacity. A 3.3-V LDO necessarily loses regulation before the entire discharge of a conventional single-cell Li-Po. Conditional calculations below show what must be budgeted. Low battery should trigger a firmware/hardware cutoff consistent with required output noise and MCU minimum supply, or use an appropriate supply architecture. Cell protection/charger/isolation and thermal evidence are absent.
+
+5. **Medium/Unverified — Capacitance, ESR and maximum output load are unresolved.** All 57 caps have two connected pins, so **no capacitor terminal is literally unconnected**. AGND is a valid battery-negative net. C53/C56 nominal 1 µF and C54 nominal2.2 µF, C55 nominal10nF agree with the respective typical LDO circuit values, but MPNs/ratings/derating are absent. U4 and U5 share all rail capacitors. +3.3V→AGND sum is **222.4 µF** = C6/C32 (0.1+0.1) + C7/C33 (10+10) + C54(2.2) + C57(200). +3.3V→DGND has another **20.2 µF** = C8/C34(.1+.1)+C9/C35(10+10); after correcting grounds total is **242.6 µF**, excluding the DevKit's capacitors. TLV755P §5.3 specifies COUT up to **200 µF** and §7.1.1 calls200µF maximum for best performance; LP2985 **new chip** §5.3 also lists200µF maximum. The stated nominal sum exceeds these maxima; effective capacitance could be lower, and the actual part technology is unknown. This is a specified-range/qualification concern, **not proof of oscillation**. Check worst-case effective capacitance, tolerances, startup/inrush and transient/stability response, and select a documented output network within supported limits.
+
+6. **Unverified — Legacy/new LP2985 ESR and procurement cannot be resolved.** The schematic's family value does not select silicon. P1 p30 Table8-1 identifies reel CSO **DLN/GF8** as legacy and **RFB** as new; **M3** is significant for the new chip. Legacy: effective COUT≥2.2µF plus permitted ESR range in Figs5-36–38; ceramic is explicitly permitted, with §7.1.2.2 discussing ESR as low as5mΩ. New: effective COUT≥1µF, 0–1Ω ESR, supported COUT up to200µF. **Do not claim “LP2985 requires tantalum” or “ceramic-only is necessarily unstable.”** Ceramic suitability depends on capacitance/ESR, load, temperature and actual silicon. No technology is specified here, so even “ceramic-only” cannot be asserted. Select full MPN/CSO and capacitor parts, then validate. BP10nF is correct nominal value; BP leakage should stay below100nA (§7.1.3).
+
+7. **Medium/Unverified — Reverse bias on shutdown/hot-plug is unprotected.** Large C57/aggregate output capacitance can retain +3.3V as +3.7V input collapses; USB/DevKit can externally bias output while battery input absent. P2 §5.1 limits VOUT to min(VIN+0.3V,6V); P1 new-chip limit is min(VIN+0.3V,9V). Both application sections warn reverse current may damage parts and is not safely limited. Static schematic cannot establish the transient. Evaluate source sequencing and isolation/protection; measure VOUT−VIN and reverse current with realistic insertion/removal/USB states.
+
+8. **Unverified — Ratings and footprints mostly absent.** All R1–R32 and C1–C57 have no footprint, manufacturer part, voltage/power rating, dielectric or tolerance. BT1/electrodes lack physical definition. Thus no reliable capacitor-stress, resistor-rating or DC-bias verdict is possible, even though normal series-input-resistor DC dissipation is expected to be small. No PCB file exists to establish thermal copper, decoupling proximity or cap current-loop inductance. No claim of >5% supply dip can be made from static schematic.
+
+## Quantitative calculations (conditional corrected topology)
+
+**These are design-budget calculations, not predictions of an operating present circuit: the present circuit has broken supplies.**
+
+- Headroom `H = Vcell − 3.3 V`: assumed conventional cell at4.2V full gives0.9V; nominal labeled3.7V gives0.4V; cell3.3V gives0V. Actual cell extremes require its datasheet.
+- U5 TLV75533PDBV at500mA: p6 max dropout **215mV** up to85°C, **238mV** up to125°C; approximate regulation threshold3.515V/3.538V. Nominal3.7V leaves185mV/162mV headroom beyond these figures before wiring/cell droop/output tolerance. **Do not use 258mV**: that row is DYD, not DBV. At365mA a simple RDS(on) scaling of238mV/500mA gives~174mV, but this is an engineering estimate, not an independently guaranteed dropout specification.
+- U4 LP2985 at150mA full temperature: max legacy575mV implies3.875V threshold (nominal3.7V short by175mV); max new254mV implies3.554V (146mV surplus). At50mA max legacy225mV/new184mV implies3.525V/3.484V. Dropout is defined as the differential causing100mV output loss (P1 p7 footnote); adding these values is a headroom screen, not a guarantee of nominal-voltage accuracy under all input/load conditions.
+- A full4.2V cell stays below LP recommended max16V by11.8V and TLV recommended max5.5V by1.3V; TLV absolute maximum6V leaves1.8V. LP new absolute18V/legacy16V are stress ratings. No measured battery voltage is provided. U3 module recommended3.0–3.6V allows ±0.3V about3.3V; a directly applied4.2V cell would exceed3.6V and is **not how the present schematic routes BT1**.
+- ADS1298 current P4 p16, at3V analog/3V digital with RLD/WCT/pace off: HR2.75+0.5 = **3.25mA/device**, two **6.5mA**; LP1.8+0.5 = **2.3mA/device**, two4.6mA (digital current depends data rate/load). Values at3.3V are estimates; actual3.3-V rail current/active RLD must be measured. These ADC currents are comfortably below U4's150mA if U4 supplies only the AFE and valid input headroom is maintained.
+- ESP module p28: Wi-Fi TX peak **355mA** (802.11b1Mbps20.5dBm); BLE20dBm344mA; BLE0dBm187mA; Wi-Fi RX95–97mA. The module's p27 supply requirement is capability of at least0.5A. A single150mA LP2985 cannot be assumed to support this load. U5's500mA nominal capacity matches the module capability requirement before ADC/DevKit overhead, but regulator thermal/transient limits still govern. **Do not add parallel LDO ratings.**
+- Illustrative corrected single3.3V load:355mA module+6.5mA AFE = **361.5mA**, excluding DevKit LED/USB bridge/onboard regulator/other overhead. At4.2V input, `P ≈ (4.2−3.3)×0.3615 = 0.325W`. U5 **DBV JEDEC RθJA231.1°C/W** (p5) gives~**75.2°C rise**, so Tj≈100.2°C at25°C ambient,125.2°C at50°C ambient. At500mA,0.45W gives104°C rise,129°C at25°C ambient. This uses sustained current/duty at a JEDEC reference board; real RF bursts and PCB/enclosure thermal impedance differ. The advertised60.3°C/W belongs to **DYD EVM**, not the selectedDBV. Actual thermal failure is **unverified**; board review plus thermal measurement is required. At3.7V and361.5mA,0.1446W×231.1≈33.4°C rise. LDO dissipation falls as battery voltage falls while headroom worsens.
+- U4 supplying6.5mA at4.2V:~5.85mW plus Iq loss; with205.4°C/W legacy thermal metric rise~1.2°C. This shows an independent AFE regulator can be comfortably current/thermal rated, conditional on correct wiring and stable capacitor network; does not excuse present parallel wiring.
+- For an isolated ideal200µF capacitor, stored charge at3.3V is **660µC**, stored energy`CV²/2`=**1.089mJ**. Charging in550µs would require average1.2A; actual TLV550µs startup is characterized for1µF, so **cannot apply its550µs startup to this design**. Current limit and load extend startup; this is not proof of failure.
+- Supply-step screen`ΔV≈ΔIΔt/C + ΔI·ESR`: allowing5% of3.3V=165mV, Ceff200µF and a0.3A step gives ideal unsupported interval`CΔV/ΔI`≈**110µs**, before ESR and regulator response. Ceff100µF gives55µs. No current waveform/ESR/layout is provided; do not call a>5% dip demonstrated. Scope the actual rail near U3 and each AFE.
+- Battery current with independent LDOs approximates load current plus quiescent currents; runtime`hours≈usable_capacity_Ah/Iavg_A`. At361.5mA illustrative continuous load, runtime per usableAh≈**2.77h/Ah**, before overhead/derating/low-voltage cutoff. No battery capacity or discharge rating is specified; this is a normalized calculation only.
+- For a2kΩ resistor with an assumed4.2V fully across it: I=2.1mA,P=8.82mW. This does **not** establish patient current, clamp current or rating compliance because actual fault path and resistor part are unspecified. At5V:2.5mA,12.5mW. Nominal small dissipation alone cannot establish wearer safety.
+
+## Confirmed limited positives
+
+- Both regulator symbols' pin assignments match their manufacturer5-pin SOT23 pinouts; U5 is correctly marked DBV and its NC4 is intentionally left disconnected.
+- Both selected fixed outputs are3.3V, matching their `+3.3V` label.
+- U4 BP4 has the manufacturer-recommended10nF bypass to its actual GND2 net; no BP terminal is floating.
+- Input bypass1µF exists at each regulator and output bypass exists with groundedAGND terminals; physical placement/effective values remain unverified.
+- No switching converter directly feeds a sensitive analog rail in this schematic. Supply isolation performance is nevertheless not established, since outputs are paralleled and ADS supplies miswired.
+- No standalone LED, transistor, power multiplexer, adjustable regulator or power-good control network exists in the carrier schematic. The DevKit assembly may contain these and must be assessed from its board documentation.
+
+## Before power-up / before human use
+
+Before power-up: correct AVDD/DVDD/ground connectivity, select one source or separate rails, drive EN to a defined state, specify all power/cap parts and current budget, review DevKit3V3/USB interactions, and rerun netlist/ERC. Bench bring-up must be current limited and initially use dummy inputs.
+
+Before human use: define protected cell and charging/USB/disconnect modes; establish current-limited electrode/protection circuitry and bias return; review single faults and isolation; validate battery, supply transients/temperatures, RF coupling and electrode behavior on a simulator. The present data establishes no wearer-safety qualification.
+
+## Phase 2 — reference comparison
+
+After completing the independent review above, read-only byte comparisons confirm the current schematic **and project settings are identical** to `../open-semg-16-v1/` counterparts. Root also reports identical normalized connectivity and65ERC violations in both. Therefore confirmed power faults **persist**; there is no evidence supporting a **Fixed** or **New** classification. Lack of historical Amberflow annotations does not change the directly reconstructed same-topology result.
+
+| Power-related checklist item | Earlier revision | Current revision | Classification / limit |
+|---|---|---|---|
+| IC supply below operating minimum | ADS analog supply span0V; MCU no battery return | Same | **Persists**, critical. |
+| Two regulators drive same rail | U4.5/U5.5 `+3.3V` | Same | **Persists**, no sanctioned sharing/isolation. |
+| Floating enable/control at reset | `/EN` only U4.3/U5.3 | Same | **Persists**; not a proven self-latch. |
+| Regulator setpoint inconsistent with label | Both3.3V fixed variants | Same | **No issue found** for setpoints, although actual rail is not guaranteed with floatingEN. |
+| Regulator input above rating | Generic battery voltage unspecified; intended conventional LiPo compatible | Same | **No issue found** for conditional3.0–4.2V cell range; actual cell unverified. |
+| Regulator dropout | Single-cell3.3V LDO headroom limited; exact cell/load unknown | Same | **Unverified** operating occurrence; unavoidable below necessary headroom, design limitation persists. |
+| Capacitor unconnected / floating ground | All57caps have2netlist pins; digital-ground island lacksDCreturn | Same | No literally unconnected capacitor pin. **Persists** for isolatedDGND/incorrectdigitaldecoupling fault; other cap grounds onbatteryAGND connect. |
+| Insufficient regulator output cap / ceramic-only invalid | Nominal caps present; parts unknown | Same | **Unverified** effectivecap/ESR; no evidence supporting blanketceramic prohibition. |
+| Excessive output capacitance | AGND sum222.4µF nominal vs200µFmax; partsunknown | Same | **Unverified** effectivecap/stability; nominal concern persists. |
+| Rail dip>5% / brownout | No waveform/load/capESR data | Same | **Unverified**; screen calculation above. |
+| Regulator reverse current or powered-off receiver | Paralleloutputs and possibleUSBexternalbias | Same | **Unverified** damage/transient; topology riskpersists. |
+| Supply thermal/current margin | Fullpart/PCB/duty/cell unknown | Same | **Unverified**; conditionalDBV calculation above. |
+| Resistor rating / capacitorworkingvoltage | NoMPN/rating/footprint | Same | **Unverified**; no demonstrated overrating. |
+| Adjustable setpoint needing sink / power mux / switcher upstream | No such carrier circuits | Same | **Not applicable**, DevKitboard treated separately. |
