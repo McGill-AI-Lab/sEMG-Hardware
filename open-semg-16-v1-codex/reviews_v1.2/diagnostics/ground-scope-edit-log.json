@@ -1,0 +1,29 @@
+{
+  "phase": "ground-scope",
+  "method": "source-span patch; strict parse, unique UUID/reference checks, native KiCad candidate export, atomic replace",
+  "source": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "before_sha256": "4593aa72c936d6e7b59c67a12132e4037795fb3f5fa4698faf569dbf8bf731b1",
+  "after_sha256": "a4b067833757aecacc0c5503c1b863bda055c1e76f2cd3de972e276b74239b0d",
+  "changes": [
+    {
+      "finding": "F05/F09",
+      "change": "Use existing global AGND scope consistently at new common return; exact net membership unchanged. Removes new same_local_global_label ambiguity."
+    }
+  ],
+  "candidate_validation": {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/ground-scope-candidate-netlist.xml",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/ground-scope-candidate.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+}

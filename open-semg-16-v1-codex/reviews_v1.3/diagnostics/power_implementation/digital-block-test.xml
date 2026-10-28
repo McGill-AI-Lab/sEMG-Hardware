@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch</source>
+    <date>2026-10-27T21:36:51</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>digital-block-test.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C90">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U9 VCCA local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U9 VCCA local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c4b11728-fde9-50de-80b8-1a285369eb8c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C91">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U9 VCCB local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U9 VCCB local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77372115-943e-5eef-9e34-fb9a28a1634f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C92">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U10 local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U10 local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e0ecaea-eeed-5a25-8d00-3850ad072e08</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C93">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U11 local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U11 local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ae70992-ba2d-5d46-bd52-ddf8f9d8b09b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C94">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U12 local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U12 local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92e67824-6c8f-5940-b385-c38ac0f33a12</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C95">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U13 local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U13 local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdb3966a-54bc-5472-9710-d0d52eaca576</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C96">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U14 local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U14 local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ffd4c88-d191-56bd-8229-72c253b7578c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C97">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U15 local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U15 local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0d46433f-f308-57bb-aa5e-820f1c3b2b43</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C98">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">U16 local bypass; verify effective capacitance</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="C_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="U16 local bypass; verify effective capacitance"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6fc7957a-5065-52e4-b90c-aebb4b2b12e6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">Defined READY low during reset; GPIO4 must not be held through restart</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="Defined READY low during reset; GPIO4 must not be held through restart"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0846dbb3-ee42-5264-8298-a770e7a20d70</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R71">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">AXC disabled during ramp / missing logic drive</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="AXC disabled during ramp / missing logic drive"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04639ab2-76dc-5918-b50b-7162420b213b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R72">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">DOUT1 disabled by default</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="DOUT1 disabled by default"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b78fa497-9049-59a4-8723-11df006a1d64</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R73">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">DOUT2 disabled by default</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="DOUT2 disabled by default"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4fe8eb96-17c8-5f9a-bbc5-47bfe2a8883a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R74">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">ADC CS1 low while forward interface isolated</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="ADC CS1 low while forward interface isolated"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd5b86d7-63f1-54c2-b11b-078873c4bc32</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R75">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">ADC CS2 low while forward interface isolated</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="ADC CS2 low while forward interface isolated"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc0f8d13-f055-50ed-b068-2891a2fcc7a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R76">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">Shared open-drain reset pullup; includes stock DevKit pullup in sink-current calculation</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="Shared open-drain reset pullup; includes stock DevKit pullup in sink-current calculation"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83317f79-60f5-5039-96bc-39533b683eb2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R77">
+      <value>67.8k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">Main nominal falling threshold 0.405*(1+67.8/10)=3.1509V</field>
+        <field name="Tolerance">0.1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="Main nominal falling threshold 0.405*(1+67.8/10)=3.1509V"/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f106e77a-b438-52ac-8fbe-cb784d7b446e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R78">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">Main sense lower divider</field>
+        <field name="Tolerance">0.1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="Main sense lower divider"/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ebed9ba-5e71-5193-88be-bf3ebee3c2c0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R79">
+      <value>59.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">AFE operating-floor threshold 2.79855V; not acquisition-validity guarantee</field>
+        <field name="Tolerance">0.1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="AFE operating-floor threshold 2.79855V; not acquisition-validity guarantee"/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2e4362b-8f01-596c-b6b5-678b9eb567ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R80">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">AFE sense lower divider</field>
+        <field name="Tolerance">0.1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="AFE sense lower divider"/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a41b3f95-8317-5aca-88a2-d1f175e4982e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R81">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">Weak defined DOUT1 input when ADC deselected</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="Weak defined DOUT1 input when ADC deselected"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6983446d-ae29-57e2-886a-970fc6358881</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R82">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">Weak defined DOUT2 input when ADC deselected</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="Weak defined DOUT2 input when ADC deselected"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd4a6af2-c83d-5f88-81b6-334da6d105f0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R83">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">Defined shared MISO when both isolation outputs are high impedance</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="Defined shared MISO when both isolation outputs are high impedance"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>166d6db8-cbfb-5733-ac5f-9d3a8530450d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R84">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">To be selected</field>
+        <field name="MPN">TBD</field>
+        <field name="Purpose">Defined raw DRDY when ADC domain unpowered</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="R_Verified" description=""/>
+      <property name="Manufacturer" value="To be selected"/>
+      <property name="MPN" value="TBD"/>
+      <property name="Purpose" value="Defined raw DRDY when ADC domain unpowered"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9f6bb63-c538-5f60-a917-5284c6d460e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>SN74AXC8T245PWR</value>
+      <footprint>Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">SN74AXC8T245PWR</field>
+        <field name="Purpose">V1.3 power sequencing / shared-MISO interface; bench qualification required</field>
+        <field name="Direction">DIR1=HIGH, DIR2=LOW: all eight A-to-B (TI Table 7-1)</field>
+        <field name="Footprint">Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="SN74AXC8T245PWR" description=""/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="SN74AXC8T245PWR"/>
+      <property name="Purpose" value="V1.3 power sequencing / shared-MISO interface; bench qualification required"/>
+      <property name="Direction" value="DIR1=HIGH, DIR2=LOW: all eight A-to-B (TI Table 7-1)"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>320fd195-bbcd-5372-a6a0-ea327f73f5fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="24"/>
+            <pin num="23"/>
+            <pin num="22"/>
+            <pin num="21"/>
+            <pin num="20"/>
+            <pin num="19"/>
+            <pin num="18"/>
+            <pin num="17"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="13"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>74LVC1G125GW</value>
+      <footprint>Package_TO_SOT_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC1G125.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC1G125GW</field>
+        <field name="Purpose">V1.3 power sequencing / shared-MISO interface; bench qualification required</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-353_SC-70-5</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC1G125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="74LVC1G125GW" description=""/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC1G125GW"/>
+      <property name="Purpose" value="V1.3 power sequencing / shared-MISO interface; bench qualification required"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c807ab01-e666-5822-b88a-15c07696ab70</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>74LVC1G125GW</value>
+      <footprint>Package_TO_SOT_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC1G125.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC1G125GW</field>
+        <field name="Purpose">V1.3 power sequencing / shared-MISO interface; bench qualification required</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-353_SC-70-5</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC1G125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="74LVC1G125GW" description=""/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC1G125GW"/>
+      <property name="Purpose" value="V1.3 power sequencing / shared-MISO interface; bench qualification required"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7c9eaab-fc13-501d-be27-865d852a41dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>74LVC1G157GW</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC1G157.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC1G157GW</field>
+        <field name="Purpose">DRDY level regenerator only; both data inputs identical, select grounded</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-363_SC-70-6</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC1G157.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="74LVC1G157GW" description=""/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC1G157GW"/>
+      <property name="Purpose" value="DRDY level regenerator only; both data inputs identical, select grounded"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0bcaf75f-30f3-5d0a-b5d3-4bd5338463ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>SN74LVC1G132DCKR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g132.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">SN74LVC1G132DCKR</field>
+        <field name="Purpose">Schmitt NAND: AFE_BLOCK=NOT(POWER_GOOD AND MCU_READY); slow reset ramp accepted</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-353_SC-70-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g132.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="SN74LVC1G132DCKR" description=""/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="SN74LVC1G132DCKR"/>
+      <property name="Purpose" value="Schmitt NAND: AFE_BLOCK=NOT(POWER_GOOD AND MCU_READY); slow reset ramp accepted"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab1377ec-5ea8-5ef3-b093-b8d8da2f3b51</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U14">
+      <value>74LVC2G32DP</value>
+      <footprint>Package_SO:TSSOP-8_3x3mm_P0.65mm</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC2G32.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">74LVC2G32DP</field>
+        <field name="Purpose">DOUT isolation: /OE=AFE_BLOCK OR corresponding MCU-side /CS (stable HIGH before enable)</field>
+        <field name="Footprint">Package_SO:TSSOP-8_3x3mm_P0.65mm</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC2G32.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="74LVC2G32DP" description=""/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="74LVC2G32DP"/>
+      <property name="Purpose" value="DOUT isolation: /OE=AFE_BLOCK OR corresponding MCU-side /CS (stable HIGH before enable)"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4f41b3e-9a01-5beb-b88e-b5c653879be3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U15">
+      <value>TPS3808G01DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps3808.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS3808G01DBVR</field>
+        <field name="Purpose">MAIN floor monitor; CT open gives 20ms typical; reset shared with U16 and DevKit CHIP_PU</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3808.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="TPS3808G01DBVR" description=""/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="TPS3808G01DBVR"/>
+      <property name="Purpose" value="MAIN floor monitor; CT open gives 20ms typical; reset shared with U16 and DevKit CHIP_PU"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d4ee564-fa3e-5ed7-8f0a-50fc45ebf28c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="1"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U16">
+      <value>TPS3808G01DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps3808.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS3808G01DBVR</field>
+        <field name="Purpose">AFE floor monitor; CT open gives 20ms typical; any fault resets MCU and releases READY</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3808.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Impl" part="TPS3808G01DBVR" description=""/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="TPS3808G01DBVR"/>
+      <property name="Purpose" value="AFE floor monitor; CT open gives 20ms typical; any fault resets MCU and releases READY"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/digital-block-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77c70bd3-60c3-5ab2-8be2-50d19539570c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="1"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Power_Impl" part="74LVC1G125GW">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G125GW</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="~OE" type="input"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="tri_state"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Impl" part="74LVC1G157GW">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G157GW</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="I1" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="I0" type="input"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="S" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Impl" part="74LVC2G32DP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC2G32DP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1A" type="input"/>
+        <pin num="2" name="1B" type="input"/>
+        <pin num="3" name="2Y" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2B" type="input"/>
+        <pin num="7" name="1Y" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Impl" part="C_Verified">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Verified</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Impl" part="R_Verified">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Verified</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Impl" part="SN74AXC8T245PWR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AXC8T245PWR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="power_in"/>
+        <pin num="2" name="DIR1" type="input"/>
+        <pin num="3" name="A1" type="bidirectional"/>
+        <pin num="4" name="A2" type="bidirectional"/>
+        <pin num="5" name="A3" type="bidirectional"/>
+        <pin num="6" name="A4" type="bidirectional"/>
+        <pin num="7" name="A5" type="bidirectional"/>
+        <pin num="8" name="A6" type="bidirectional"/>
+        <pin num="9" name="A7" type="bidirectional"/>
+        <pin num="10" name="A8" type="bidirectional"/>
+        <pin num="11" name="DIR2" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="B8" type="bidirectional"/>
+        <pin num="15" name="B7" type="bidirectional"/>
+        <pin num="16" name="B6" type="bidirectional"/>
+        <pin num="17" name="B5" type="bidirectional"/>
+        <pin num="18" name="B4" type="bidirectional"/>
+        <pin num="19" name="B3" type="bidirectional"/>
+        <pin num="20" name="B2" type="bidirectional"/>
+        <pin num="21" name="B1" type="bidirectional"/>
+        <pin num="22" name="~OE" type="input"/>
+        <pin num="23" name="VCCB" type="power_in"/>
+        <pin num="24" name="VCCB" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Impl" part="SN74LVC1G132DCKR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1G132DCKR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Impl" part="TPS3808G01DBVR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3808G01DBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="~RESET" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="~MR" type="input"/>
+        <pin num="4" name="CT" type="input"/>
+        <pin num="5" name="SENSE" type="input"/>
+        <pin num="6" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="1" name="/AFE_2V98" class="Default">
+      <node ref="C91" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R79" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="23" pinfunction="VCCB_23" pintype="power_in"/>
+      <node ref="U9" pin="24" pinfunction="VCCB_24" pintype="power_in"/>
+    </net>
+    <net code="2" name="/AFE_BLOCK" class="Default">
+      <node ref="R71" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U13" pin="4" pinfunction="Y_4" pintype="output"/>
+      <node ref="U14" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U14" pin="5" pinfunction="2A_5" pintype="input"/>
+      <node ref="U9" pin="22" pinfunction="~OE_22" pintype="input"/>
+    </net>
+    <net code="3" name="/AFE_SENSE" class="Default">
+      <node ref="R79" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R80" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U16" pin="5" pinfunction="SENSE_5" pintype="input"/>
+    </net>
+    <net code="4" name="/AGND" class="Default">
+      <node ref="C90" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C91" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C92" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C93" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C94" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C95" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C96" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C97" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C98" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R74" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R75" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R78" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R80" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R81" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R82" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R83" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R84" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U11" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U12" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U12" pin="6" pinfunction="S_6" pintype="input"/>
+      <node ref="U13" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U14" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U15" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U16" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U9" pin="10" pinfunction="A8_10" pintype="bidirectional"/>
+      <node ref="U9" pin="11" pinfunction="DIR2_11" pintype="input"/>
+      <node ref="U9" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U9" pin="13" pinfunction="GND_13" pintype="power_in"/>
+    </net>
+    <net code="5" name="/CS_ADC1" class="Default">
+      <node ref="R74" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="16" pinfunction="B6_16" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/CS_ADC2" class="Default">
+      <node ref="R75" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="15" pinfunction="B7_15" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/DOUT1_BLOCK" class="Default">
+      <node ref="R72" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="~OE_1" pintype="input"/>
+      <node ref="U14" pin="7" pinfunction="1Y_7" pintype="output"/>
+    </net>
+    <net code="8" name="/DOUT2_BLOCK" class="Default">
+      <node ref="R73" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U11" pin="1" pinfunction="~OE_1" pintype="input"/>
+      <node ref="U14" pin="3" pinfunction="2Y_3" pintype="output"/>
+    </net>
+    <net code="9" name="/DOUT_ADC1" class="Default">
+      <node ref="R81" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="10" name="/DOUT_ADC2" class="Default">
+      <node ref="R82" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U11" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="11" name="/DRDY_ADC1" class="Default">
+      <node ref="R84" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="1" pinfunction="I1_1" pintype="input"/>
+      <node ref="U12" pin="3" pinfunction="I0_3" pintype="input"/>
+    </net>
+    <net code="12" name="/MAIN_3V3" class="Default">
+      <node ref="C90" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C92" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C93" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C94" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C95" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C96" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C97" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C98" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R71" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R72" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R73" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R76" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R77" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U11" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U12" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U13" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U14" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U15" pin="3" pinfunction="~MR_3" pintype="input"/>
+      <node ref="U15" pin="6" pinfunction="VDD_6" pintype="power_in"/>
+      <node ref="U16" pin="3" pinfunction="~MR_3" pintype="input"/>
+      <node ref="U16" pin="6" pinfunction="VDD_6" pintype="power_in"/>
+      <node ref="U9" pin="1" pinfunction="VCCA_1" pintype="power_in"/>
+      <node ref="U9" pin="2" pinfunction="DIR1_2" pintype="input"/>
+    </net>
+    <net code="13" name="/MAIN_SENSE" class="Default">
+      <node ref="R77" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R78" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U15" pin="5" pinfunction="SENSE_5" pintype="input"/>
+    </net>
+    <net code="14" name="/MCU_CS1" class="Default">
+      <node ref="U14" pin="2" pinfunction="1B_2" pintype="input"/>
+      <node ref="U9" pin="8" pinfunction="A6_8" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/MCU_CS2" class="Default">
+      <node ref="U14" pin="6" pinfunction="2B_6" pintype="input"/>
+      <node ref="U9" pin="9" pinfunction="A7_9" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/MCU_DRDY" class="Default">
+      <node ref="U12" pin="4" pinfunction="Y_4" pintype="output"/>
+    </net>
+    <net code="17" name="/MCU_MOSI" class="Default">
+      <node ref="U9" pin="3" pinfunction="A1_3" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/MCU_PWDN" class="Default">
+      <node ref="U9" pin="7" pinfunction="A5_7" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/MCU_READY" class="Default">
+      <node ref="R70" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U13" pin="2" pinfunction="B_2" pintype="input"/>
+    </net>
+    <net code="20" name="/MCU_RESET" class="Default">
+      <node ref="U9" pin="6" pinfunction="A4_6" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/MCU_SCLK" class="Default">
+      <node ref="U9" pin="4" pinfunction="A2_4" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/MCU_START" class="Default">
+      <node ref="U9" pin="5" pinfunction="A3_5" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/MISO" class="Default">
+      <node ref="R83" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="4" pinfunction="Y_4" pintype="tri_state"/>
+      <node ref="U11" pin="4" pinfunction="Y_4" pintype="tri_state"/>
+    </net>
+    <net code="24" name="/MOSI" class="Default">
+      <node ref="U9" pin="21" pinfunction="B1_21" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/POWER_GOOD" class="Default">
+      <node ref="R76" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U13" pin="1" pinfunction="A_1" pintype="input"/>
+      <node ref="U15" pin="1" pinfunction="~RESET_1" pintype="open_collector"/>
+      <node ref="U16" pin="1" pinfunction="~RESET_1" pintype="open_collector"/>
+    </net>
+    <net code="26" name="/PWDN" class="Default">
+      <node ref="U9" pin="17" pinfunction="B5_17" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="/RESET" class="Default">
+      <node ref="U9" pin="18" pinfunction="B4_18" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/SCLK" class="Default">
+      <node ref="U9" pin="20" pinfunction="B2_20" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/START" class="Default">
+      <node ref="U9" pin="19" pinfunction="B3_19" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="unconnected-(U9-B8-Pad14)" class="Default">
+      <node ref="U9" pin="14" pinfunction="B8_14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U15-CT-Pad4)" class="Default">
+      <node ref="U15" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U16-CT-Pad4)" class="Default">
+      <node ref="U16" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

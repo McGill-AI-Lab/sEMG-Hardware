@@ -1,0 +1,4219 @@
+{
+  "stage": "final",
+  "passed": false,
+  "assertion_count": 1043,
+  "failed": [
+    "Exactly original U4 EN undriven violation removed; all other ERC identities preserved"
+  ],
+  "initial_erc": {
+    "severities": {
+      "error": 35,
+      "warning": 26
+    },
+    "type_severity": {
+      "power_pin_not_driven:error": 3,
+      "pin_not_driven:error": 2,
+      "pin_to_pin:error": 2,
+      "pin_not_connected:error": 28,
+      "lib_symbol_mismatch:warning": 1,
+      "unconnected_wire_endpoint:warning": 19,
+      "multiple_net_names:warning": 2,
+      "pin_to_pin:warning": 4
+    },
+    "total": 61
+  },
+  "stage_erc": {
+    "severities": {
+      "error": 34,
+      "warning": 26
+    },
+    "type_severity": {
+      "power_pin_not_driven:error": 3,
+      "pin_to_pin:error": 2,
+      "pin_not_connected:error": 28,
+      "pin_not_driven:error": 1,
+      "lib_symbol_mismatch:warning": 1,
+      "unconnected_wire_endpoint:warning": 19,
+      "pin_to_pin:warning": 4,
+      "multiple_net_names:warning": 2
+    },
+    "total": 60
+  },
+  "component_count": 133,
+  "net_count": 132,
+  "checks": [
+    {
+      "check": "Only R36, R37 and R38 added to all 130 baseline components",
+      "passed": true
+    },
+    {
+      "check": "BT1: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "BT1: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "BT1: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "BT1: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C1: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C1: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C1: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C1: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C2: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C2: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C2: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C2: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C3: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C3: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C3: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C3: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C4: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C4: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C4: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C4: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C5: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C5: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C5: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C5: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C6: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C6: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C6: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C6: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C7: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C7: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C7: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C7: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C8: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C8: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C8: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C8: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C9: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C9: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C9: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C9: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C10: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C10: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C10: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C10: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C11: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C11: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C11: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C11: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C12: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C12: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C12: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C12: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C13: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C13: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C13: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C13: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C14: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C14: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C14: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C14: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C15: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C15: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C15: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C15: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C16: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C16: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C16: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C16: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C17: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C17: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C17: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C17: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C18: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C18: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C18: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C18: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C19: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C19: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C19: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C19: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C20: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C20: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C20: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C20: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C21: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C21: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C21: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C21: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C22: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C22: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C22: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C22: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C23: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C23: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C23: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C23: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C24: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C24: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C24: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C24: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C25: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C25: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C25: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C25: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C26: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C26: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C26: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C26: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C27: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C27: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C27: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C27: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C28: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C28: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C28: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C28: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C29: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C29: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C29: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C29: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C30: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C30: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C30: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C30: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C31: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C31: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C31: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C31: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C32: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C32: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C32: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C32: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C33: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C33: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C33: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C33: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C34: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C34: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C34: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C34: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C35: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C35: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C35: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C35: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C36: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C36: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C36: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C36: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C37: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C37: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C37: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C37: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C38: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C38: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C38: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C38: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C39: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C39: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C39: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C39: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C40: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C40: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C40: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C40: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C41: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C41: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C41: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C41: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C42: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C42: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C42: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C42: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C43: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C43: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C43: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C43: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C44: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C44: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C44: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C44: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C45: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C45: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C45: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C45: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C46: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C46: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C46: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C46: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C47: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C47: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C47: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C47: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C48: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C48: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C48: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C48: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C49: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C49: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C49: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C49: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C50: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C50: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C50: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C50: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C51: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C51: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C51: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C51: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C52: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C52: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C52: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C52: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C53: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C53: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C53: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C53: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C54: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C54: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C54: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C54: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C55: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C55: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C55: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C55: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C56: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C56: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C56: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C56: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "C57: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "C57: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "C57: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "C57: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E1: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E1: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E1: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E1: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E2: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E2: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E2: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E2: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E3: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E3: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E3: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E3: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E4: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E4: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E4: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E4: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E5: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E5: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E5: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E5: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E6: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E6: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E6: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E6: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E7: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E7: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E7: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E7: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E8: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E8: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E8: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E8: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E9: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E9: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E9: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E9: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E10: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E10: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E10: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E10: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E11: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E11: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E11: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E11: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E12: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E12: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E12: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E12: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E13: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E13: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E13: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E13: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E14: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E14: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E14: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E14: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E15: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E15: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E15: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E15: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "E16: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "E16: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "E16: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "E16: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R1: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R1: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R1: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R1: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R2: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R2: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R2: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R2: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R3: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R3: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R3: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R3: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R4: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R4: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R4: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R4: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R5: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R5: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R5: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R5: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R6: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R6: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R6: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R6: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R7: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R7: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R7: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R7: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R8: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R8: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R8: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R8: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R9: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R9: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R9: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R9: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R10: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R10: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R10: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R10: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R11: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R11: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R11: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R11: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R12: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R12: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R12: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R12: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R13: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R13: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R13: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R13: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R14: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R14: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R14: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R14: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R15: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R15: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R15: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R15: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R16: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R16: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R16: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R16: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R17: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R17: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R17: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R17: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R18: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R18: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R18: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R18: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R19: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R19: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R19: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R19: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R20: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R20: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R20: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R20: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R21: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R21: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R21: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R21: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R22: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R22: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R22: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R22: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R23: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R23: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R23: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R23: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R24: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R24: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R24: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R24: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R25: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R25: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R25: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R25: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R26: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R26: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R26: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R26: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R27: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R27: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R27: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R27: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R28: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R28: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R28: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R28: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R29: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R29: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R29: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R29: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R30: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R30: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R30: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R30: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R31: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R31: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R31: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R31: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R32: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R32: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R32: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R32: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R33: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R33: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R33: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R33: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R34: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R34: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R34: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R34: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "R35: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "R35: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "R35: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "R35: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP1: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP1: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP1: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP1: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP2: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP2: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP2: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP2: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP3: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP3: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP3: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP3: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP4: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP4: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP4: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP4: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP5: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP5: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP5: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP5: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP6: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP6: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP6: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP6: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP7: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP7: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP7: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP7: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP8: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP8: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP8: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP8: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP9: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP9: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP9: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP9: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP10: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP10: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP10: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP10: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP11: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP11: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP11: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP11: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP12: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP12: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP12: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP12: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP13: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP13: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP13: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP13: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP14: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP14: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP14: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP14: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP15: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP15: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP15: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP15: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "TP16: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "TP16: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "TP16: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "TP16: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "U1: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "U1: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "U1: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "U1: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "U2: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "U2: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "U2: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "U2: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "U3: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "U3: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "U3: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "U3: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "U4: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "U4: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "U4: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "U4: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "U5: baseline value retained",
+      "passed": true
+    },
+    {
+      "check": "U5: baseline footprint retained",
+      "passed": true
+    },
+    {
+      "check": "U5: baseline libsource retained",
+      "passed": true
+    },
+    {
+      "check": "U5: baseline pins retained",
+      "passed": true
+    },
+    {
+      "check": "No net introduced or removed",
+      "passed": true
+    },
+    {
+      "check": "+3.3V: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "+3.7V: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "+5V: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/CS_ADC1: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/CS_ADC2: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/DRDY_ADC1: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/DRDY_ADC2: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/EN: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/MISO: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/MOSI: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/PWDN: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/RESET: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/SCLK: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/START: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VCAP1_ADC1: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VCAP1_ADC2: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VCAP2_ADC1: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VCAP2_ADC2: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VCAP3_ADC1: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VCAP3_ADC2: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VCAP4_ADC1: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VCAP4_ADC2: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VREFP_ADC1: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "/VREFP_ADC2: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "ADC_CLK: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "AGND: exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E1-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E1-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E2-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E2-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E3-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E3-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E4-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E4-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E5-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E5-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E6-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E6-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E7-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E7-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E8-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E8-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E9-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E9-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E10-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E10-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E11-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E11-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E12-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E12-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E13-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E13-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E14-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E14-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E15-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E15-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E16-Pin_1): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(E16-Pin_2): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN1N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN1P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN2N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN2P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN3N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN3P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN4N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN4P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN5N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN5P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN6N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN6P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN7N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN7P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN8N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U1-IN8P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN1N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN1P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN2N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN2P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN3N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN3P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN4N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN4P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN5N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN5P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN6N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN6P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN7N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN7P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN8N): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U2-IN8P): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "Net-(U4-BP): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U1-NC-Pad27): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U1-NC-Pad29): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U1-RLDINV-Pad61): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U1-RLDOUT-Pad63): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U1-RLDREF-Pad60): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U1-WCT-Pad64): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U2-NC-Pad27): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U2-NC-Pad29): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U2-RLDINV-Pad61): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U2-RLDOUT-Pad63): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U2-RLDREF-Pad60): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U2-WCT-Pad64): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-CHIP_PU-Pad3): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO0-Pad31): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO1/ADC1_CH0-Pad41): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO2/ADC1_CH1-Pad40): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO3/ADC1_CH2-Pad13): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO4/ADC1_CH3-Pad4): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO5/ADC1_CH4-Pad5): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO15/ADC2_CH4/32K_P-Pad8): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO16/ADC2_CH5/32K_N-Pad9): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO17/ADC2_CH6-Pad10): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO18/ADC2_CH7-Pad11): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO19/USB_D--Pad25): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO20/USB_D+-Pad26): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO21-Pad27): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO35-Pad32): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO36-Pad33): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO37-Pad34): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO38-Pad35): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO39/MTCK-Pad36): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO40/MTDO-Pad37): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO41/MTDI-Pad38): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO42/MTMS-Pad39): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO43/U0TXD-Pad43): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO44/U0RXD-Pad42): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO45-Pad30): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO46-Pad14): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO47-Pad28): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U3-GPIO48-Pad29): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "unconnected-(U5-NC-Pad4): exact baseline membership plus only declared resistor terminals",
+      "passed": true
+    },
+    {
+      "check": "R36: intended value and endpoints",
+      "passed": true
+    },
+    {
+      "check": "R37: intended value and endpoints",
+      "passed": true
+    },
+    {
+      "check": "R38: intended value and endpoints",
+      "passed": true
+    },
+    {
+      "check": "U1: AVDD/AVDD1/DVDD remain on intended +3.3V",
+      "passed": true
+    },
+    {
+      "check": "U1: physical returns and intended digital lows remain AGND",
+      "passed": true
+    },
+    {
+      "check": "U1: aux 17/18/62 still follow actual AVDD",
+      "passed": true
+    },
+    {
+      "check": "U1 input1: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input2: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input3: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input4: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input5: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input6: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input7: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input8: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input9: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input10: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input11: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input12: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input13: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input14: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input15: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U1 input16: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2: AVDD/AVDD1/DVDD remain on intended +3.3V",
+      "passed": true
+    },
+    {
+      "check": "U2: physical returns and intended digital lows remain AGND",
+      "passed": true
+    },
+    {
+      "check": "U2: aux 17/18/62 still follow actual AVDD",
+      "passed": true
+    },
+    {
+      "check": "U2 input1: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input2: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input3: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input4: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input5: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input6: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input7: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input8: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input9: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input10: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input11: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input12: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input13: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input14: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input15: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "U2 input16: exact baseline net membership",
+      "passed": true
+    },
+    {
+      "check": "channel1P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel1P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel1N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel1N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel2P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel2P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel2N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel2N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel3P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel3P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel3N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel3N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel4P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel4P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel4N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel4N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel5P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel5P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel5N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel5N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel6P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel6P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel6N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel6N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel7P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel7P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel7N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel7N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel8P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel8P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel8N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel8N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel9P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel9P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel9N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel9N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel10P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel10P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel10N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel10N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel11P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel11P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel11N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel11N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel12P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel12P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel12N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel12N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel13P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel13P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel13N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel13N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel14P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel14P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel14N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel14N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel15P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel15P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel15N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel15N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel16P: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel16P: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "channel16N: same ADC and 2k resistor mapping",
+      "passed": true
+    },
+    {
+      "check": "channel16N: electrode terminal through correct resistor",
+      "passed": true
+    },
+    {
+      "check": "Shared conversion CLK remains only U1.37/U2.37/TP1.1",
+      "passed": true
+    },
+    {
+      "check": "Master/slave CLKSEL retained",
+      "passed": true
+    },
+    {
+      "check": "Both reference nets remain independent",
+      "passed": true
+    },
+    {
+      "check": "U1 bypass 24/C19: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U1 bypass 24/C20: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U1 bypass 28/C23: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U1 bypass 30/C24: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U1 bypass 55/C25: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U1 bypass 26/C26: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U2 bypass 24/C45: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U2 bypass 24/C46: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U2 bypass 28/C49: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U2 bypass 30/C50: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U2 bypass 55/C51: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "U2 bypass 26/C52: topology and return retained",
+      "passed": true
+    },
+    {
+      "check": "RLD/WCT disconnections retained; no body drive added",
+      "passed": true
+    },
+    {
+      "check": "F04 remains open: parallel LDO outputs unaltered",
+      "passed": true
+    },
+    {
+      "check": "F05: EN has only regulator inputs and fitted zero-ohm OFF strap",
+      "passed": true
+    },
+    {
+      "check": "Embedded libraries byte-identical",
+      "passed": true
+    },
+    {
+      "check": "Every pre-existing wire object byte-preserved",
+      "passed": true
+    },
+    {
+      "check": "Every pre-existing no_connect object byte-preserved",
+      "passed": true
+    },
+    {
+      "check": "Every pre-existing global_label object byte-preserved",
+      "passed": true
+    },
+    {
+      "check": "Every pre-existing junction object byte-preserved",
+      "passed": true
+    },
+    {
+      "check": "No additional NC marker",
+      "passed": true
+    },
+    {
+      "check": "Exactly three local signal labels and one global AGND label added",
+      "passed": true
+    },
+    {
+      "check": "C1: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C2: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C3: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C4: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C5: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C10: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C11: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C12: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C13: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C14: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C15: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C16: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C17: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C18: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C21: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C22: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C27: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C28: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C29: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C30: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C31: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C36: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C37: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C38: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C39: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C40: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C41: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C42: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C43: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C44: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C47: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C48: C0G/NP0 1% requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R1: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R2: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R3: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R4: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R5: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R6: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R7: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R8: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R9: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R10: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R11: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R12: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R13: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R14: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R15: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R16: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R17: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R18: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R19: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R20: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R21: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R22: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R23: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R24: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R25: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R26: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R27: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R28: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R29: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R30: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R31: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "R32: 0.1% >=0.1W requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C25: >=10V requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C51: >=10V requirement exported",
+      "passed": true
+    },
+    {
+      "check": "C55 leakage <100nA requirement exported",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.DS_Store",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/dry_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/#auto_saved_files#",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/AGENTS.md.before-restructure",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/ref_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/ref_electrode.bak",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/dry_electrode.bak",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/sym-lib-table",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/open-semg-16-v1.kicad_prl copy",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/open-semg-16-v1.kicad_pro",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/dry_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/open-semg-16-v1.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/ref_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/open-semg-16-v1.kicad_prl",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/sym-lib-table",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/open-semg-16-v1.1.kicad_pro",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/dry_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/open-semg-16-v1.1.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/ref_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/open-semg-16-v1.1.kicad_prl",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/sym-lib-table",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.history/open-semg-16-v1.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.history/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.history/README.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.codex/config.toml.pre-migration-20261027-185221",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.codex/config.toml.disabled",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/power-notes.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/.DS_Store",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/hardware-audit.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/digital-notes.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/analog-notes.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/full_review.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/updates_from_v1.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/.codex/config.toml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/audit-checks.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-connectivity.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-netlist.xml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-connectivity.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-erc.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/audit-file-manifest.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-netlist.xml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-erc.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-connectivity.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/audit-checks.py",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-schematic-inventory.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/digital-devkit-v1.1-lfs-pointer.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/independent-review-checkpoint.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/baseline-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/extract-pdf.m",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/design-integrity-verification.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/open-semg-16-v1.kicad_pro",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/dry_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/open-semg-16-v1.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/ref_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/open-semg-16-v1.kicad_prl",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/sym-lib-table",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/schematic-svg/open-semg-16-v1.svg",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SLAA412.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/ADS1298-EVM.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/ADS1298.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA196.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SLAA414.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA230.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA185.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SLYY192.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/TLV755P.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA188.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/ESP32-S3-WROOM-1.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA160.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/LP2985.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/clock-edit-log.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/final-schematic.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/after-power-netlist.xml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/probes-view.png",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/after-clock-netlist.xml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/power-edit-log.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/after-power-erc.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/pre-edit-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/controls-view.png",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/power-view.png",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/initial-erc.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/annotation-edit-log.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/created-file-manifest.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/controls_probes-edit-log.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/validation-results.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/initial-netlist.xml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/initial-v2.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/implement_v2.py",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/schematic_tools.py",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/final-erc.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/final-connectivity.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/v1.1-migration-netlist.xml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/v1.1-migration-erc.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/v1-hashes-before-verification.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/initial-geometry.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/extract-pdf.m",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/render-pdf.m",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/final-netlist.xml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/verify_v2.py",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/after-clock-erc.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/reference-view.png",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/pdf-text/ADS1298.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/pdf-text/TLV755P.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/pdf-text/LP2985.txt",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/.DS_Store",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/Wearable sEMG Report.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/.DS_Store",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/INDEX.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/latest_run.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/.DS_Store",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/.DS_Store",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/reference-designs/ADS1298-EVM.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA196.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SLAA412.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA230.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA185.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SLYY192.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SLAA414.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA160.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA188.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/components/ADS1298.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/components/ESP32-S3-WROOM-1.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/components/LP2985.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/components/TLV755P.pdf",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/reference-designs/ADS1298-EVM_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/reference-designs/ADS1298-EVM_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA160_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA188_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA230_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/.DS_Store",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLAA414_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLYY192_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLAA414_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA188_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA185_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA196_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA230_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLAA412_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA196_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA160_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLAA412_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA185_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLYY192_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/.DS_Store",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/LP2985_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ESP32-S3-WROOM-1_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ADS1298_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ESP32-S3-WROOM-1_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ADS1298_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/TLV755P_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ADS1298_docling.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/LP2985_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/TLV755P_llamaparse.md",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/reference-designs/ADS1298-EVM.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/reference-designs/ADS1298-EVM_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA160_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA185.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA230_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLAA414_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLYY192_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA188.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA188_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA160.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLAA412_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA196_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLYY192.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA230.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA185_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLAA414.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA196.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLAA412.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/ADS1298.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/TLV755P.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/ESP32-S3-WROOM-1.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/ESP32-S3-WROOM-1_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/ADS1298_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/TLV755P_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/LP2985_llamaparse.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/LP2985.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/dry_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_prl",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/ref_electrode.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/sym-lib-table",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_pro",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/.codex/config.toml",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/initial-erc.json",
+      "passed": true
+    },
+    {
+      "check": "Protected/pre-existing file unchanged: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/initial-netlist.xml",
+      "passed": true
+    },
+    {
+      "check": "ERC changes limited to removal of undriven U4 EN after OFF strap",
+      "passed": true
+    },
+    {
+      "check": "Exactly original U4 EN undriven violation removed; all other ERC identities preserved",
+      "passed": false
+    },
+    {
+      "check": "Initial V1.2 net partitions match V1.1 final",
+      "passed": true
+    }
+  ],
+  "limits": "Static connectivity/specification/file-integrity checks only. No powered, analog, physical, firmware or wearer-safety qualification."
+}

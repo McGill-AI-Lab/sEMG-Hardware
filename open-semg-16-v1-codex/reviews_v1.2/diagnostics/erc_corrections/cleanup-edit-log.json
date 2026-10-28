@@ -1,0 +1,907 @@
+{
+  "phase": "cleanup",
+  "target": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "method": "controlled KiCad-aware source-span edits; strict parse, unique UUID/reference checks, native candidate netlist validation, atomic replace",
+  "before_sha256": "ba9629e78815ca8c96abb9eceaf660f1581658b9570082da840ccf2f2c5f881e",
+  "after_sha256": "0da646beb5cbe8e0f3bc1edddb1a6f393110b1e6f7fe659d4286de4a7e298da6",
+  "changes": [
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "e8554e5f-764e-4ed9-b3b5-af17444eaea4",
+      "endpoints_mm": [
+        [
+          62.23,
+          36.83
+        ],
+        [
+          63.5,
+          36.83
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "a1d6f88d-0e8a-413e-a213-337d5f4dfb8c",
+      "endpoints_mm": [
+        [
+          62.23,
+          57.15
+        ],
+        [
+          63.5,
+          57.15
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "b9ec5222-9de5-4232-ac72-616ed32d16fa",
+      "endpoints_mm": [
+        [
+          62.23,
+          78.74
+        ],
+        [
+          63.5,
+          78.74
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "fed4f893-2155-4132-a14d-83d66da5026f",
+      "endpoints_mm": [
+        [
+          62.23,
+          99.06
+        ],
+        [
+          63.5,
+          99.06
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "d5e72200-7740-47f6-bcd1-166d3890ab1a",
+      "endpoints_mm": [
+        [
+          62.23,
+          119.38
+        ],
+        [
+          63.5,
+          119.38
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "13c6d5b3-2529-4363-adf9-c4bf92ed6b75",
+      "endpoints_mm": [
+        [
+          66.04,
+          144.78
+        ],
+        [
+          67.31,
+          144.78
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "7629d020-a15b-4a11-a0da-525dc621807c",
+      "endpoints_mm": [
+        [
+          66.04,
+          166.37
+        ],
+        [
+          67.31,
+          166.37
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "1944fad2-2fdc-4b3d-bc63-86c9cadeb58c",
+      "endpoints_mm": [
+        [
+          66.04,
+          187.96
+        ],
+        [
+          67.31,
+          187.96
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "921c1c3f-7201-4f7d-b96d-27f51fc32b80",
+      "endpoints_mm": [
+        [
+          194.31,
+          109.22
+        ],
+        [
+          195.58,
+          109.22
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "8928b8b2-a15b-4448-9ee8-2288aad4981d",
+      "endpoints_mm": [
+        [
+          289.56,
+          35.56
+        ],
+        [
+          290.83,
+          35.56
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "9bb1d07d-9b6b-4b89-b88f-7bd033c17f63",
+      "endpoints_mm": [
+        [
+          289.56,
+          55.88
+        ],
+        [
+          290.83,
+          55.88
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "d7e9643c-0720-4f66-9307-e79118aac293",
+      "endpoints_mm": [
+        [
+          289.56,
+          77.47
+        ],
+        [
+          290.83,
+          77.47
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "7ecfa58c-ad63-49c8-a47a-781baca645b6",
+      "endpoints_mm": [
+        [
+          289.56,
+          97.79
+        ],
+        [
+          290.83,
+          97.79
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "b6acd6a4-9497-49d0-8aa5-178ccdce006e",
+      "endpoints_mm": [
+        [
+          289.56,
+          118.11
+        ],
+        [
+          290.83,
+          118.11
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "a88e4c81-bd1e-4997-b072-fb203d08f059",
+      "endpoints_mm": [
+        [
+          293.37,
+          143.51
+        ],
+        [
+          294.64,
+          143.51
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "b8457160-69b9-41fc-8320-2b8cf245d5cd",
+      "endpoints_mm": [
+        [
+          293.37,
+          165.1
+        ],
+        [
+          294.64,
+          165.1
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "917266e2-ea46-48be-8937-e23d14e2e70e",
+      "endpoints_mm": [
+        [
+          293.37,
+          186.69
+        ],
+        [
+          294.64,
+          186.69
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F19; preserve F07/F09/F12/F18",
+      "operation": "remove redundant tail",
+      "wire_uuid": "b88d0700-d107-4800-a4a8-d3b91c190de7",
+      "endpoints_mm": [
+        [
+          421.64,
+          107.95
+        ],
+        [
+          422.91,
+          107.95
+        ]
+      ],
+      "length_mm": 1.27
+    },
+    {
+      "finding": "F09/F19",
+      "operation": "trim only excess CS_ADC2 tail",
+      "wire_uuid": "34341901-2092-4668-89af-eb552c157d44",
+      "before": [
+        [
+          562.61,
+          96.52
+        ],
+        [
+          576.58,
+          96.52
+        ]
+      ],
+      "after": [
+        [
+          562.61,
+          96.52
+        ],
+        [
+          568.96,
+          96.52
+        ]
+      ],
+      "retained_label_uuid": "f775580c-f47c-4bc7-a9f8-15143a81985e"
+    },
+    {
+      "finding": "F19; preserve F01/F03",
+      "operation": "replace local AVDD alias with global +3.3V on same node",
+      "uuid": "066ca9c8-7bd4-4f0b-92e4-56350bd7253c",
+      "at_mm": [
+        "160.02",
+        "85.09",
+        "0"
+      ]
+    },
+    {
+      "finding": "F19; preserve F01/F03",
+      "operation": "replace local AVDD alias with global +3.3V on same node",
+      "uuid": "3589528b-9c95-40c8-a912-f86516f6c24c",
+      "at_mm": [
+        "201.93",
+        "116.84",
+        "0"
+      ]
+    },
+    {
+      "finding": "F19; preserve F01/F03",
+      "operation": "replace local AVDD alias with global +3.3V on same node",
+      "uuid": "792ff479-7cd1-49c0-b4af-14b86c12e8f8",
+      "at_mm": [
+        "387.35",
+        "83.82",
+        "0"
+      ]
+    },
+    {
+      "finding": "F19; preserve F01/F03",
+      "operation": "replace local AVDD alias with global +3.3V on same node",
+      "uuid": "bd298a1f-5ec1-4f2d-a055-09b58728a7c2",
+      "at_mm": [
+        "429.26",
+        "115.57",
+        "0"
+      ]
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR032",
+      "symbol_uuid": "0dd769b0-97bd-49f8-884e-40047a0e719a",
+      "at_mm": [
+        "293.37",
+        "41.91",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR046",
+      "symbol_uuid": "1b63f1a8-8daf-4510-a97a-fb01c46d8240",
+      "at_mm": [
+        "293.37",
+        "135.89",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR078",
+      "symbol_uuid": "1ee8f480-e7c6-4665-bed1-8071a0bd2f70",
+      "at_mm": [
+        "100.33",
+        "317.5",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR052",
+      "symbol_uuid": "278e48c8-2849-4e0e-804e-e9601a9a69b7",
+      "at_mm": [
+        "297.18",
+        "182.88",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR049",
+      "symbol_uuid": "2da13e67-03e9-4fcf-9be6-1ea8a1826a11",
+      "at_mm": [
+        "297.18",
+        "161.29",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR056",
+      "symbol_uuid": "2fa16bde-6b5c-400d-ab76-06a1a665dffb",
+      "at_mm": [
+        "410.21",
+        "190.5",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR043",
+      "symbol_uuid": "307b6756-f313-4f82-abac-ae9a6904822a",
+      "at_mm": [
+        "293.37",
+        "114.3",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR017",
+      "symbol_uuid": "3476dc6d-d03d-49c6-b994-728066f69ce3",
+      "at_mm": [
+        "69.85",
+        "151.13",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR050",
+      "symbol_uuid": "3946fd84-7b1d-4578-8d92-d0f18fe79bd8",
+      "at_mm": [
+        "297.18",
+        "171.45",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR073",
+      "symbol_uuid": "3d50c866-465a-4ca6-99ed-7d251f84a21f",
+      "at_mm": [
+        "134.62",
+        "279.4",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR035",
+      "symbol_uuid": "406ff095-4874-4757-9ed4-68cff83806d2",
+      "at_mm": [
+        "293.37",
+        "72.39",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR027",
+      "symbol_uuid": "40e840b0-fd1f-483c-a9e4-124c44446403",
+      "at_mm": [
+        "69.85",
+        "205.74",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR058",
+      "symbol_uuid": "41b3a01a-a129-4b46-8f5a-b207900f20a3",
+      "at_mm": [
+        "297.18",
+        "204.47",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR010",
+      "symbol_uuid": "4290c7de-9f2e-4f89-af96-4542c5b179e9",
+      "at_mm": [
+        "66.04",
+        "95.25",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR02",
+      "symbol_uuid": "46973c6c-0cc5-4426-a873-b86e0c2ad8aa",
+      "at_mm": [
+        "66.04",
+        "53.34",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR067",
+      "symbol_uuid": "50ca1f51-1a9e-4a1b-8add-62d6e6c910b9",
+      "at_mm": [
+        "48.26",
+        "267.97",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR05",
+      "symbol_uuid": "565b751b-a4af-4429-958d-371c31796f74",
+      "at_mm": [
+        "66.04",
+        "85.09",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR071",
+      "symbol_uuid": "578dfbf0-0159-4593-8ea5-3a5ae8742e53",
+      "at_mm": [
+        "147.32",
+        "276.86",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR041",
+      "symbol_uuid": "57b21d13-7fa3-4407-9966-c0c2943a4c7b",
+      "at_mm": [
+        "293.37",
+        "93.98",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR011",
+      "symbol_uuid": "5c686278-0578-42a0-8431-b7097a5d173e",
+      "at_mm": [
+        "66.04",
+        "105.41",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR048",
+      "symbol_uuid": "6924a7b5-39f2-412c-b0ad-cf7bba79c0da",
+      "at_mm": [
+        "297.18",
+        "149.86",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR072",
+      "symbol_uuid": "6956fad7-2c85-44ed-b2ff-463c90e33268",
+      "at_mm": [
+        "118.11",
+        "279.4",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR033",
+      "symbol_uuid": "6db0af6e-5a27-4e95-8f2d-7a8654c6b872",
+      "at_mm": [
+        "293.37",
+        "52.07",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR077",
+      "symbol_uuid": "75465292-3919-4463-b1a7-d46f47ba584d",
+      "at_mm": [
+        "36.83",
+        "317.5",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR034",
+      "symbol_uuid": "8321af25-7beb-44e9-8a4c-1e1d4458a36b",
+      "at_mm": [
+        "293.37",
+        "62.23",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR03",
+      "symbol_uuid": "879f7952-19ca-4e35-a1cf-63d7d9422990",
+      "at_mm": [
+        "66.04",
+        "63.5",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR01",
+      "symbol_uuid": "92f5b858-bc82-465b-8187-4b6f017e18de",
+      "at_mm": [
+        "66.04",
+        "43.18",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR025",
+      "symbol_uuid": "9b2e49d0-7be5-4fb2-89c4-54a3c6156eed",
+      "at_mm": [
+        "182.88",
+        "191.77",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR018",
+      "symbol_uuid": "9e48e611-e8e4-4577-9167-6e6e84bf0c1b",
+      "at_mm": [
+        "69.85",
+        "162.56",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR036",
+      "symbol_uuid": "aefd5d5b-9fd3-4161-bc89-31ebd3a4583c",
+      "at_mm": [
+        "293.37",
+        "83.82",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR04",
+      "symbol_uuid": "afa55b68-dbd6-466f-be49-0ea55a8c0a71",
+      "at_mm": [
+        "66.04",
+        "73.66",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR019",
+      "symbol_uuid": "b7a018ec-599d-4439-bdbc-aae62d790a31",
+      "at_mm": [
+        "69.85",
+        "172.72",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR044",
+      "symbol_uuid": "dc561a3a-e277-42a5-996a-a6b87a750472",
+      "at_mm": [
+        "293.37",
+        "124.46",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR070",
+      "symbol_uuid": "dd280da1-ff99-4813-ae61-df3f2f8b4158",
+      "at_mm": [
+        "95.25",
+        "276.86",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR042",
+      "symbol_uuid": "e0fc9ffd-feee-49ae-8f9d-616e22eca3e0",
+      "at_mm": [
+        "293.37",
+        "104.14",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR057",
+      "symbol_uuid": "e2129d31-9ffb-4248-8658-6e87604a3b7a",
+      "at_mm": [
+        "297.18",
+        "193.04",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR013",
+      "symbol_uuid": "e8542017-f273-441b-8bbc-662dee8bbe1d",
+      "at_mm": [
+        "66.04",
+        "125.73",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR080",
+      "symbol_uuid": "e9f29f15-359e-4b40-9dfe-29631fd34add",
+      "at_mm": [
+        "121.92",
+        "320.04",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR026",
+      "symbol_uuid": "ecb9a8ee-1f32-4601-8dd9-bf3f1c1c4a38",
+      "at_mm": [
+        "69.85",
+        "194.31",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR021",
+      "symbol_uuid": "ef8493fd-e43b-4b92-bda1-2d3b63a6355c",
+      "at_mm": [
+        "69.85",
+        "184.15",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR015",
+      "symbol_uuid": "efa73e2c-b81b-4338-bf25-2c141f54cea7",
+      "at_mm": [
+        "66.04",
+        "137.16",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR079",
+      "symbol_uuid": "f1835687-027a-473a-b6e3-f3977d54e654",
+      "at_mm": [
+        "135.89",
+        "317.5",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F02/F19",
+      "operation": "normalize existing GND instance value to common AGND",
+      "reference": "#PWR012",
+      "symbol_uuid": "f942dfb0-5ad3-4d86-a2bd-e17d9e99ba22",
+      "at_mm": [
+        "66.04",
+        "115.57",
+        "0"
+      ],
+      "pin_type": "power input unchanged"
+    },
+    {
+      "finding": "F19",
+      "operation": "reconcile embedded Device:Battery cache with installed simulation metadata only",
+      "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols/Device.kicad_sym",
+      "added_fields": {
+        "Sim.Device": "V",
+        "Sim.Type": "DC",
+        "Sim.Pins": "1=+ 2=-"
+      },
+      "pins_and_geometry": "unchanged",
+      "BT1_instance": "unchanged"
+    }
+  ],
+  "candidate_cli": {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/cleanup-candidate-netlist.xml",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/cleanup-candidate.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+}

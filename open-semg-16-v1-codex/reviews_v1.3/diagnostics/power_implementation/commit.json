@@ -1,0 +1,24 @@
+{
+  "method": "bounded source spans; saved baseline; native candidate export/ERC; explicit pin/net assertions; atomic active schematic replace",
+  "target": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.3/open-semg-16-v1.3.kicad_sch",
+  "candidate_verification": {
+    "stage": "candidate",
+    "passed": true,
+    "assertions": 966,
+    "errors": [],
+    "components": 204,
+    "nets": 180,
+    "channel_mappings_passed": 16,
+    "ERC": {
+      "errors": 5,
+      "warnings": 4
+    },
+    "independent_regulator_outputs_separate": true,
+    "original_SPI_protocol_preserved": true,
+    "raw_DOUTs_isolated_before_shared_MISO": true
+  },
+  "new_libraries": [
+    "V13_Power",
+    "Power_Impl"
+  ]
+}

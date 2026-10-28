@@ -1,0 +1,17 @@
+{
+  "components": 32,
+  "mapped_pin_checks": 110,
+  "errors": [],
+  "shared_miso_outputs": [
+    "MISO",
+    "MISO"
+  ],
+  "readiness_supervisors": [
+    "POWER_GOOD",
+    "POWER_GOOD"
+  ],
+  "cs_gate_inputs": [
+    "MCU_CS1",
+    "MCU_CS2"
+  ]
+}

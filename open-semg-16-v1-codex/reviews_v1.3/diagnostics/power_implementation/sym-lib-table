@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ESP32-S3-DEVKITC-1-N8R2")(type "KiCad")(uri "/Users/karenchen/Downloads/ESP32-S3-DEVKITC-1-N8R2/ESP32-S3-DEVKITC-1-N8R2.kicad_sym")(options "")(descr ""))
+
+(lib (name "V13_Power") (type "KiCad") (uri "${KIPRJMOD}/V13_Power.kicad_sym") (options "") (descr "V1.3 candidate custom symbols"))
+(lib (name "Power_Impl") (type "KiCad") (uri "${KIPRJMOD}/Power_Impl.kicad_sym") (options "") (descr "V1.3 candidate custom symbols"))
+)

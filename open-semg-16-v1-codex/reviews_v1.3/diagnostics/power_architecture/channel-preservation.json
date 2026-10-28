@@ -1,0 +1,69 @@
+{
+  "all_16_mappings_pass": true,
+  "channels": [
+    {
+      "channel": 1,
+      "mapping_ok": true
+    },
+    {
+      "channel": 2,
+      "mapping_ok": true
+    },
+    {
+      "channel": 3,
+      "mapping_ok": true
+    },
+    {
+      "channel": 4,
+      "mapping_ok": true
+    },
+    {
+      "channel": 5,
+      "mapping_ok": true
+    },
+    {
+      "channel": 6,
+      "mapping_ok": true
+    },
+    {
+      "channel": 7,
+      "mapping_ok": true
+    },
+    {
+      "channel": 8,
+      "mapping_ok": true
+    },
+    {
+      "channel": 9,
+      "mapping_ok": true
+    },
+    {
+      "channel": 10,
+      "mapping_ok": true
+    },
+    {
+      "channel": 11,
+      "mapping_ok": true
+    },
+    {
+      "channel": 12,
+      "mapping_ok": true
+    },
+    {
+      "channel": 13,
+      "mapping_ok": true
+    },
+    {
+      "channel": 14,
+      "mapping_ok": true
+    },
+    {
+      "channel": 15,
+      "mapping_ok": true
+    },
+    {
+      "channel": 16,
+      "mapping_ok": true
+    }
+  ]
+}

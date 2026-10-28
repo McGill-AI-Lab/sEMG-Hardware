@@ -1,0 +1,22 @@
+{
+  "input": "final-schematic.pdf",
+  "output": [
+    "new-controls-view.png",
+    "requirements-view.png"
+  ],
+  "source": "render-pdf.m",
+  "initial_compiler": "default macOS27.0 SDK linker failed due unsupported arm64e.x1 architecture in installed tbd files",
+  "successful_compile": [
+    "clang",
+    "-isysroot",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk",
+    "-framework",
+    "Cocoa",
+    "-framework",
+    "PDFKit",
+    "render-pdf.m",
+    "-o",
+    "render-pdf"
+  ],
+  "result": "Images generated and visually inspected; temporary binary removed. No schematic modification."
+}

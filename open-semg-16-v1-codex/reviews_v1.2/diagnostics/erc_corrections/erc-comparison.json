@@ -1,0 +1,1595 @@
+{
+  "basis": "Original erc_analysis.md V01\u2013V60 mapped to retained historical root final-erc.json; final new diagnostics/erc_corrections/final-erc.json",
+  "resolved": 49,
+  "introduced_electrical_conditions": 0,
+  "remaining": 11,
+  "resolved_by_original_class": {
+    "CE": 1,
+    "UI": 26,
+    "SD": 22
+  },
+  "original_VT_remaining": 7,
+  "original_AE_remaining": 3,
+  "new_deferral": "V21 GPIO3 retained because eFuse state is unknown; not a newly introduced ERC report",
+  "raw_unchanged_records": 7,
+  "rows": [
+    {
+      "analysis_id": "V01",
+      "original_class": "VT",
+      "status": "Retained exactly",
+      "final_index": 1,
+      "initial": {
+        "description": "Input Power pin not driven by any Output Power pins",
+        "items": [
+          {
+            "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+            "pos": {
+              "x": 66.04,
+              "y": 43.18
+            },
+            "uuid": "b7896f6d-cdbb-4979-8766-b73a29a4a88c"
+          }
+        ],
+        "severity": "error",
+        "type": "power_pin_not_driven"
+      },
+      "final": {
+        "description": "Input Power pin not driven by any Output Power pins",
+        "items": [
+          {
+            "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+            "pos": {
+              "x": 66.04,
+              "y": 43.18
+            },
+            "uuid": "b7896f6d-cdbb-4979-8766-b73a29a4a88c"
+          }
+        ],
+        "severity": "error",
+        "type": "power_pin_not_driven"
+      }
+    },
+    {
+      "analysis_id": "V02",
+      "original_class": "VT",
+      "status": "Retained exactly",
+      "final_index": 2,
+      "initial": {
+        "description": "Input Power pin not driven by any Output Power pins",
+        "items": [
+          {
+            "description": "Symbol #PWR068 Pin 1 [Power input, Line]",
+            "pos": {
+              "x": 95.25,
+              "y": 269.24
+            },
+            "uuid": "65299478-57c1-477c-9211-c345cd2d6218"
+          }
+        ],
+        "severity": "error",
+        "type": "power_pin_not_driven"
+      },
+      "final": {
+        "description": "Input Power pin not driven by any Output Power pins",
+        "items": [
+          {
+            "description": "Symbol #PWR068 Pin 1 [Power input, Line]",
+            "pos": {
+              "x": 95.25,
+              "y": 269.24
+            },
+            "uuid": "65299478-57c1-477c-9211-c345cd2d6218"
+          }
+        ],
+        "severity": "error",
+        "type": "power_pin_not_driven"
+      }
+    },
+    {
+      "analysis_id": "V03",
+      "original_class": "CE",
+      "status": "Resolved: F04 direct LDO output sharing physically disconnected",
+      "final_index": null,
+      "initial": {
+        "description": "Pins of type Power output and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U4 Pin 5 [VOUT, Power output, Line]",
+            "pos": {
+              "x": 128.27,
+              "y": 269.24
+            },
+            "uuid": "4c0e44dd-2a5a-49e7-8d26-4bcdeffa7f68"
+          },
+          {
+            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+            "pos": {
+              "x": 129.54,
+              "y": 309.88
+            },
+            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_to_pin"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V04",
+      "original_class": "VT",
+      "status": "Retained exactly",
+      "final_index": 3,
+      "initial": {
+        "description": "Pins of type Output and Output are connected",
+        "items": [
+          {
+            "description": "Symbol U1 Pin 43 [DOUT, Output, Line]",
+            "pos": {
+              "x": 195.58,
+              "y": 152.4
+            },
+            "uuid": "a804e879-7924-4735-86f4-5aa8ba00f675"
+          },
+          {
+            "description": "Symbol U2 Pin 43 [DOUT, Output, Line]",
+            "pos": {
+              "x": 422.91,
+              "y": 151.13
+            },
+            "uuid": "38cbf10d-4065-4bb5-a23b-2fdeb250f324"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_to_pin"
+      },
+      "final": {
+        "description": "Pins of type Output and Output are connected",
+        "items": [
+          {
+            "description": "Symbol U1 Pin 43 [DOUT, Output, Line]",
+            "pos": {
+              "x": 195.58,
+              "y": 152.4
+            },
+            "uuid": "a804e879-7924-4735-86f4-5aa8ba00f675"
+          },
+          {
+            "description": "Symbol U2 Pin 43 [DOUT, Output, Line]",
+            "pos": {
+              "x": 422.91,
+              "y": 151.13
+            },
+            "uuid": "38cbf10d-4065-4bb5-a23b-2fdeb250f324"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_to_pin"
+      }
+    },
+    {
+      "analysis_id": "V05",
+      "original_class": "AE",
+      "status": "Retained exactly",
+      "final_index": 4,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 3 [CHIP_PU, Input, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 43.18
+            },
+            "uuid": "cfa969c5-8e37-47bf-a045-3c017c96281a"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 3 [CHIP_PU, Input, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 43.18
+            },
+            "uuid": "cfa969c5-8e37-47bf-a045-3c017c96281a"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      }
+    },
+    {
+      "analysis_id": "V06",
+      "original_class": "AE",
+      "status": "Retained exactly",
+      "final_index": 5,
+      "initial": {
+        "description": "Input pin not driven by any Output pins",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 3 [CHIP_PU, Input, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 43.18
+            },
+            "uuid": "cfa969c5-8e37-47bf-a045-3c017c96281a"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_driven"
+      },
+      "final": {
+        "description": "Input pin not driven by any Output pins",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 3 [CHIP_PU, Input, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 43.18
+            },
+            "uuid": "cfa969c5-8e37-47bf-a045-3c017c96281a"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_driven"
+      }
+    },
+    {
+      "analysis_id": "V07",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 8 [GPIO15/ADC2_CH4/32K_P, Bidirectional, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 50.8
+            },
+            "uuid": "c7fe87fa-2f10-4e56-9051-aeceb5f4602b"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V08",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 9 [GPIO16/ADC2_CH5/32K_N, Bidirectional, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 53.34
+            },
+            "uuid": "8bb9b256-c392-44af-bfa4-09054b34d0a7"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V09",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 36 [GPIO39/MTCK, Bidirectional, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 60.96
+            },
+            "uuid": "2128f0e8-66fd-46f4-ba85-acf025c5b7cf"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V10",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 37 [GPIO40/MTDO, Bidirectional, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 63.5
+            },
+            "uuid": "571dad94-66a7-4e67-a30e-274a75cd4444"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V11",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 38 [GPIO41/MTDI, Bidirectional, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 66.04
+            },
+            "uuid": "67b54cb9-47f7-429f-86bf-e2a4540d044f"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V12",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 39 [GPIO42/MTMS, Bidirectional, Line]",
+            "pos": {
+              "x": 511.81,
+              "y": 68.58
+            },
+            "uuid": "28b07b49-2e3b-4f16-9059-48baaabbe63d"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V13",
+      "original_class": "AE",
+      "status": "Retained exactly",
+      "final_index": 6,
+      "initial": {
+        "description": "Input Power pin not driven by any Output Power pins",
+        "items": [
+          {
+            "description": "Symbol #PWR063 Pin 1 [Power input, Line]",
+            "pos": {
+              "x": 535.94,
+              "y": 27.94
+            },
+            "uuid": "3fa1685c-0ed0-4d29-a1de-00eaa0c3700e"
+          }
+        ],
+        "severity": "error",
+        "type": "power_pin_not_driven"
+      },
+      "final": {
+        "description": "Input Power pin not driven by any Output Power pins",
+        "items": [
+          {
+            "description": "Symbol #PWR063 Pin 1 [Power input, Line]",
+            "pos": {
+              "x": 535.94,
+              "y": 27.94
+            },
+            "uuid": "3fa1685c-0ed0-4d29-a1de-00eaa0c3700e"
+          }
+        ],
+        "severity": "error",
+        "type": "power_pin_not_driven"
+      }
+    },
+    {
+      "analysis_id": "V14",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 43 [GPIO43/U0TXD, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 43.18
+            },
+            "uuid": "8f0de143-24a2-4cf6-82f6-77b68d9dccf3"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V15",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 42 [GPIO44/U0RXD, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 45.72
+            },
+            "uuid": "6b5bb64b-0a3b-4969-bc23-3e5d90a5f588"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V16",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 26 [GPIO20/USB_D+, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 50.8
+            },
+            "uuid": "24b9956c-0093-480e-bf6e-3c202986e453"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V17",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 25 [GPIO19/USB_D-, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 53.34
+            },
+            "uuid": "0fb67ce2-47a8-4ea4-8e65-9aec3f990419"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V18",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 31 [GPIO0, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 60.96
+            },
+            "uuid": "6889afaf-5d7f-4314-a13c-b142ace68a25"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V19",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 41 [GPIO1/ADC1_CH0, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 63.5
+            },
+            "uuid": "01c982f1-204d-4a47-ae93-ca21543eda82"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V20",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 40 [GPIO2/ADC1_CH1, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 66.04
+            },
+            "uuid": "0605c299-2d2b-40ac-a74f-924d39c69476"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V21",
+      "original_class": "UI",
+      "status": "Deferred GPIO3: user confirmed eFuse state unknown; no NC added",
+      "final_index": 7,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 13 [GPIO3/ADC1_CH2, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 68.58
+            },
+            "uuid": "810351da-8113-4a08-bf3b-96eeeeea5f0e"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 13 [GPIO3/ADC1_CH2, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 68.58
+            },
+            "uuid": "810351da-8113-4a08-bf3b-96eeeeea5f0e"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      }
+    },
+    {
+      "analysis_id": "V22",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 4 [GPIO4/ADC1_CH3, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 71.12
+            },
+            "uuid": "bc5f3d45-c62f-45b0-9e17-3cc02c3ce904"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V23",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 5 [GPIO5/ADC1_CH4, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 73.66
+            },
+            "uuid": "e24ff256-1407-4452-8b62-3796e883c65d"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V24",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 10 [GPIO17/ADC2_CH6, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 99.06
+            },
+            "uuid": "dafc3c56-e60a-4c8a-976d-8ddd6a369fe7"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V25",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 11 [GPIO18/ADC2_CH7, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 101.6
+            },
+            "uuid": "31c584f3-6db0-446c-8ab6-d6b7279d63f3"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V26",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 27 [GPIO21, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 104.14
+            },
+            "uuid": "36304e0b-1d68-481f-94c6-02ea6862afd0"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V27",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 32 [GPIO35, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 106.68
+            },
+            "uuid": "d18b7919-c2ee-400f-acb0-078f68386a32"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V28",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 33 [GPIO36, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 109.22
+            },
+            "uuid": "b0c1911a-52aa-44fe-9881-4f8e7abadddf"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V29",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 34 [GPIO37, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 111.76
+            },
+            "uuid": "2efdaa0d-fb86-4275-b912-9c8071aec0d4"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V30",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 35 [GPIO38, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 114.3
+            },
+            "uuid": "29b85401-be1e-47de-9737-c20fda741df7"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V31",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 30 [GPIO45, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 116.84
+            },
+            "uuid": "797d7d25-675e-4474-9bf3-85f68873e5dc"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V32",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 14 [GPIO46, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 119.38
+            },
+            "uuid": "0868d39f-2c75-409e-9e48-0b160740f239"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V33",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 28 [GPIO47, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 121.92
+            },
+            "uuid": "edea7cb7-c3e8-4dc8-9bc8-14e6716c3785"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V34",
+      "original_class": "UI",
+      "status": "Resolved: Verified external carrier pin; truthful NC annotation",
+      "final_index": null,
+      "initial": {
+        "description": "Pin not connected",
+        "items": [
+          {
+            "description": "Symbol U3 Pin 29 [GPIO48, Bidirectional, Line]",
+            "pos": {
+              "x": 562.61,
+              "y": 124.46
+            },
+            "uuid": "8f307098-1866-4a3e-926d-d4024adc4b70"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_not_connected"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V35",
+      "original_class": "SD",
+      "status": "Resolved: Embedded Battery cache reconciled with installed simulation metadata",
+      "final_index": null,
+      "initial": {
+        "description": "Symbol 'Battery' doesn't match copy in library 'Device'",
+        "items": [
+          {
+            "description": "Symbol BT1 [Battery]",
+            "pos": {
+              "x": 36.83,
+              "y": 312.42
+            },
+            "uuid": "149825b1-8c0c-479c-a2e9-5c608ac46157"
+          }
+        ],
+        "severity": "warning",
+        "type": "lib_symbol_mismatch"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V36",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 62.23,
+              "y": 36.83
+            },
+            "uuid": "e8554e5f-764e-4ed9-b3b5-af17444eaea4"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V37",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 62.23,
+              "y": 57.15
+            },
+            "uuid": "a1d6f88d-0e8a-413e-a213-337d5f4dfb8c"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V38",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 62.23,
+              "y": 78.74
+            },
+            "uuid": "b9ec5222-9de5-4232-ac72-616ed32d16fa"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V39",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 62.23,
+              "y": 99.06
+            },
+            "uuid": "fed4f893-2155-4132-a14d-83d66da5026f"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V40",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 62.23,
+              "y": 119.38
+            },
+            "uuid": "d5e72200-7740-47f6-bcd1-166d3890ab1a"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V41",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 66.04,
+              "y": 144.78
+            },
+            "uuid": "13c6d5b3-2529-4363-adf9-c4bf92ed6b75"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V42",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 66.04,
+              "y": 166.37
+            },
+            "uuid": "7629d020-a15b-4a11-a0da-525dc621807c"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V43",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 66.04,
+              "y": 187.96
+            },
+            "uuid": "1944fad2-2fdc-4b3d-bc63-86c9cadeb58c"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V44",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 194.31,
+              "y": 109.22
+            },
+            "uuid": "921c1c3f-7201-4f7d-b96d-27f51fc32b80"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V45",
+      "original_class": "VT",
+      "status": "Retained condition; U5.5 supply-output representative replaces U4.5 after F04 isolation",
+      "final_index": 8,
+      "initial": {
+        "description": "Pins of type Bidirectional and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U1 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line]",
+            "pos": {
+              "x": 195.58,
+              "y": 121.92
+            },
+            "uuid": "b2a93068-aa80-4aec-ba64-11e021b26d31"
+          },
+          {
+            "description": "Symbol U4 Pin 5 [VOUT, Power output, Line]",
+            "pos": {
+              "x": 128.27,
+              "y": 269.24
+            },
+            "uuid": "4c0e44dd-2a5a-49e7-8d26-4bcdeffa7f68"
+          }
+        ],
+        "severity": "warning",
+        "type": "pin_to_pin"
+      },
+      "final": {
+        "description": "Pins of type Bidirectional and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U1 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line]",
+            "pos": {
+              "x": 195.58,
+              "y": 121.92
+            },
+            "uuid": "b2a93068-aa80-4aec-ba64-11e021b26d31"
+          },
+          {
+            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+            "pos": {
+              "x": 129.54,
+              "y": 309.88
+            },
+            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+          }
+        ],
+        "severity": "warning",
+        "type": "pin_to_pin"
+      }
+    },
+    {
+      "analysis_id": "V46",
+      "original_class": "VT",
+      "status": "Retained condition; U5.5 supply-output representative replaces U4.5 after F04 isolation",
+      "final_index": 9,
+      "initial": {
+        "description": "Pins of type Bidirectional and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U1 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line]",
+            "pos": {
+              "x": 195.58,
+              "y": 124.46
+            },
+            "uuid": "dfe0ee43-f77c-4980-aeb6-83c6ee313096"
+          },
+          {
+            "description": "Symbol U4 Pin 5 [VOUT, Power output, Line]",
+            "pos": {
+              "x": 128.27,
+              "y": 269.24
+            },
+            "uuid": "4c0e44dd-2a5a-49e7-8d26-4bcdeffa7f68"
+          }
+        ],
+        "severity": "warning",
+        "type": "pin_to_pin"
+      },
+      "final": {
+        "description": "Pins of type Bidirectional and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U1 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line]",
+            "pos": {
+              "x": 195.58,
+              "y": 124.46
+            },
+            "uuid": "dfe0ee43-f77c-4980-aeb6-83c6ee313096"
+          },
+          {
+            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+            "pos": {
+              "x": 129.54,
+              "y": 309.88
+            },
+            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+          }
+        ],
+        "severity": "warning",
+        "type": "pin_to_pin"
+      }
+    },
+    {
+      "analysis_id": "V47",
+      "original_class": "SD",
+      "status": "Resolved: Names/scopes consolidated on existing physical net; functional attachments preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Both +3.3V and AVDD are attached to the same items; +3.3V will be used in the netlist",
+        "items": [
+          {
+            "description": "Global Label '+3.3V'",
+            "pos": {
+              "x": 565.15,
+              "y": 187.96
+            },
+            "uuid": "8b21c772-a7e2-49e8-be88-8f0bc106d537"
+          },
+          {
+            "description": "Label 'AVDD'",
+            "pos": {
+              "x": 201.93,
+              "y": 116.84
+            },
+            "uuid": "3589528b-9c95-40c8-a912-f86516f6c24c"
+          }
+        ],
+        "severity": "warning",
+        "type": "multiple_net_names"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V48",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 289.56,
+              "y": 35.56
+            },
+            "uuid": "8928b8b2-a15b-4448-9ee8-2288aad4981d"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V49",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 289.56,
+              "y": 55.88
+            },
+            "uuid": "9bb1d07d-9b6b-4b89-b88f-7bd033c17f63"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V50",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 289.56,
+              "y": 77.47
+            },
+            "uuid": "d7e9643c-0720-4f66-9307-e79118aac293"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V51",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 289.56,
+              "y": 97.79
+            },
+            "uuid": "7ecfa58c-ad63-49c8-a47a-781baca645b6"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V52",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 289.56,
+              "y": 118.11
+            },
+            "uuid": "b6acd6a4-9497-49d0-8aa5-178ccdce006e"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V53",
+      "original_class": "SD",
+      "status": "Resolved: Names/scopes consolidated on existing physical net; functional attachments preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Both AGND and GND are attached to the same items; AGND will be used in the netlist",
+        "items": [
+          {
+            "description": "Global Label 'AGND'",
+            "pos": {
+              "x": 506.73,
+              "y": 210.82
+            },
+            "uuid": "f8029c61-176b-4e4e-8cca-70ca9f9dbd18"
+          },
+          {
+            "description": "Symbol #PWR032 Pin 1 [Power input, Line]",
+            "pos": {
+              "x": 293.37,
+              "y": 41.91
+            },
+            "uuid": "3859c848-39c3-4f96-8e1a-3b5564814a99"
+          }
+        ],
+        "severity": "warning",
+        "type": "multiple_net_names"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V54",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 293.37,
+              "y": 143.51
+            },
+            "uuid": "a88e4c81-bd1e-4997-b072-fb203d08f059"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V55",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 293.37,
+              "y": 165.1
+            },
+            "uuid": "b8457160-69b9-41fc-8320-2b8cf245d5cd"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V56",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 293.37,
+              "y": 186.69
+            },
+            "uuid": "917266e2-ea46-48be-8937-e23d14e2e70e"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V57",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 1.27 mm",
+            "pos": {
+              "x": 421.64,
+              "y": 107.95
+            },
+            "uuid": "b88d0700-d107-4800-a4a8-d3b91c190de7"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    },
+    {
+      "analysis_id": "V58",
+      "original_class": "VT",
+      "status": "Retained condition; U5.5 supply-output representative replaces U4.5 after F04 isolation",
+      "final_index": 10,
+      "initial": {
+        "description": "Pins of type Bidirectional and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U2 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line]",
+            "pos": {
+              "x": 422.91,
+              "y": 120.65
+            },
+            "uuid": "d51af41d-e08a-4bb5-b997-5ec080c5b364"
+          },
+          {
+            "description": "Symbol U4 Pin 5 [VOUT, Power output, Line]",
+            "pos": {
+              "x": 128.27,
+              "y": 269.24
+            },
+            "uuid": "4c0e44dd-2a5a-49e7-8d26-4bcdeffa7f68"
+          }
+        ],
+        "severity": "warning",
+        "type": "pin_to_pin"
+      },
+      "final": {
+        "description": "Pins of type Bidirectional and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U2 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line]",
+            "pos": {
+              "x": 422.91,
+              "y": 120.65
+            },
+            "uuid": "d51af41d-e08a-4bb5-b997-5ec080c5b364"
+          },
+          {
+            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+            "pos": {
+              "x": 129.54,
+              "y": 309.88
+            },
+            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+          }
+        ],
+        "severity": "warning",
+        "type": "pin_to_pin"
+      }
+    },
+    {
+      "analysis_id": "V59",
+      "original_class": "VT",
+      "status": "Retained condition; U5.5 supply-output representative replaces U4.5 after F04 isolation",
+      "final_index": 11,
+      "initial": {
+        "description": "Pins of type Bidirectional and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U2 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line]",
+            "pos": {
+              "x": 422.91,
+              "y": 123.19
+            },
+            "uuid": "5174a6bf-688a-47ed-8972-27129b0243ef"
+          },
+          {
+            "description": "Symbol U4 Pin 5 [VOUT, Power output, Line]",
+            "pos": {
+              "x": 128.27,
+              "y": 269.24
+            },
+            "uuid": "4c0e44dd-2a5a-49e7-8d26-4bcdeffa7f68"
+          }
+        ],
+        "severity": "warning",
+        "type": "pin_to_pin"
+      },
+      "final": {
+        "description": "Pins of type Bidirectional and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U2 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line]",
+            "pos": {
+              "x": 422.91,
+              "y": 123.19
+            },
+            "uuid": "5174a6bf-688a-47ed-8972-27129b0243ef"
+          },
+          {
+            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+            "pos": {
+              "x": 129.54,
+              "y": 309.88
+            },
+            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+          }
+        ],
+        "severity": "warning",
+        "type": "pin_to_pin"
+      }
+    },
+    {
+      "analysis_id": "V60",
+      "original_class": "SD",
+      "status": "Resolved: Redundant tail removed or excess CS tail trimmed; functional path preserved",
+      "final_index": null,
+      "initial": {
+        "description": "Unconnected wire endpoint",
+        "items": [
+          {
+            "description": "Horizontal Wire, length 13.97 mm",
+            "pos": {
+              "x": 562.61,
+              "y": 96.52
+            },
+            "uuid": "34341901-2092-4668-89af-eb552c157d44"
+          }
+        ],
+        "severity": "warning",
+        "type": "unconnected_wire_endpoint"
+      },
+      "final": null
+    }
+  ]
+}

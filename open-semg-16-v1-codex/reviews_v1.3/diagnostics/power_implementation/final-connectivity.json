@@ -1,0 +1,6511 @@
+{
+  "components": {
+    "BT1": {
+      "value": "Battery",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Multiple-cell battery"
+      }
+    },
+    "C1": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C2": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C3": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C4": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C5": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C6": {
+      "value": "0.1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C7": {
+      "value": "10uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C8": {
+      "value": "0.1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C9": {
+      "value": "10uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C10": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C11": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C12": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C13": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C14": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C15": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C16": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C17": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C18": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C19": {
+      "value": "0.1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C20": {
+      "value": "10uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C21": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C22": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C23": {
+      "value": "22uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C24": {
+      "value": "1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C25": {
+      "value": "1uF",
+      "footprint": null,
+      "fields": {
+        "Voltage rating": ">=10 V",
+        "Qualification": "F14: qualify selected 1uF part at VCAP3 bias (~5.2V at 3.3V AVDD), including DC bias, tolerance and temperature",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C26": {
+      "value": "1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C27": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C28": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C29": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C30": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C31": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C32": {
+      "value": "0.1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C33": {
+      "value": "10uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C34": {
+      "value": "0.1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C35": {
+      "value": "10uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C36": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C37": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C38": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C39": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C40": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C41": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C42": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C43": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C44": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C45": {
+      "value": "0.1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C46": {
+      "value": "10uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C47": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C48": {
+      "value": "620pF",
+      "footprint": null,
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C49": {
+      "value": "22uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C50": {
+      "value": "1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C51": {
+      "value": "1uF",
+      "footprint": null,
+      "fields": {
+        "Voltage rating": ">=10 V",
+        "Qualification": "F14: qualify selected 1uF part at VCAP3 bias (~5.2V at 3.3V AVDD), including DC bias, tolerance and temperature",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C52": {
+      "value": "1uF",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C57": {
+      "value": "220uF",
+      "footprint": "Capacitor_SMD:CP_Elec_10x7.9",
+      "fields": {
+        "MPN": "6SVP220M",
+        "Manufacturer": "Panasonic",
+        "Voltage rating": "6.3V",
+        "Tolerance": "+/-20%",
+        "ESR": "25mOhm max at 100kHz",
+        "Qualification": "Polarized: positive to MAIN, negative AGND. Verify land pattern and converter startup with full tolerance network. Pin1 positive; pin2 negative. No wearer qualification.",
+        "Footprint": "Capacitor_SMD:CP_Elec_10x7.9",
+        "Datasheet": "https://industrial.panasonic.com/ww/products/pt/os-con/models/6SVP220M",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    "C58": {
+      "value": "10u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C106KE15L",
+        "Manufacturer": "Murata",
+        "Qualification": "MAIN CIN: >=4uF effective at4.2V including tolerance/bias/temp; candidate data curve needed",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C59": {
+      "value": "22u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C226ME44L",
+        "Manufacturer": "Murata",
+        "Qualification": "MAIN COUT: >=7uF effective at3.3V; verify ESR/bias/temp; existing C57 additional",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C60": {
+      "value": "10u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C106KE15L",
+        "Manufacturer": "Murata",
+        "Qualification": "PRE CIN: >=4uF effective at4.2V including tolerance/bias/temp; candidate data curve needed",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C61": {
+      "value": "22u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C226ME44L",
+        "Manufacturer": "Murata",
+        "Qualification": "PRE COUT part1 of2x22uF nominal per TI VOUT>3.6V recommendation; >=7uF combined effective",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C62": {
+      "value": "22u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C226ME44L",
+        "Manufacturer": "Murata",
+        "Qualification": "PRE COUT part2 of2x22uF nominal; effective C/ESR/bias/temp to verify",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C63": {
+      "value": "10u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C106KE15L",
+        "Manufacturer": "Murata",
+        "Qualification": "LT3042 CIN local >=4.7uF effective at4.06V; verify bias/tolerance/temp",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C64": {
+      "value": "10u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C106KE15L",
+        "Manufacturer": "Murata",
+        "Qualification": "LT3042 COUT local >=4.7uF effective at3.05V; ESR<50mOhm ESL<2nH plus existing40.4uF ADC banks",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C65": {
+      "value": "4.7u 10V X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR71A475KA73L",
+        "Manufacturer": "Murata",
+        "Qualification": "SET capacitor: low leakage and microphonics; nominal4.7uF, slow start with PGFB=IN",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C90": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U9 VCCA local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C91": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U9 VCCB local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C92": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U10 local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C93": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U11 local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C94": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U12 local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C95": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U13 local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C96": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U14 local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C97": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U15 local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C98": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U16 local bypass; verify effective capacitance",
+        "Voltage rating": "16V",
+        "Dielectric": "X7R or qualified C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C110": {
+      "value": "100nF 50V C0G",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "fields": {
+        "MPN": "GRM31C5C1H104JA01L",
+        "Voltage rating": "50V",
+        "Tolerance": "5%",
+        "Purpose": "U1.55 to AVSS; parallel existing C25; TI ADS1298 Figure106; placement and qualification required",
+        "Footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "Datasheet": "https://www.murata.com/en-us/products/productdetail?partno=GRM31C5C1H104JA01L",
+        "Description": null
+      }
+    },
+    "C111": {
+      "value": "100nF 50V C0G",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "fields": {
+        "MPN": "GRM31C5C1H104JA01L",
+        "Voltage rating": "50V",
+        "Tolerance": "5%",
+        "Purpose": "U2.55 to AVSS; parallel existing C51; TI ADS1298 Figure106; placement and qualification required",
+        "Footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "Datasheet": "https://www.murata.com/en-us/products/productdetail?partno=GRM31C5C1H104JA01L",
+        "Description": null
+      }
+    },
+    "C112": {
+      "value": "10u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C106KE15L",
+        "Qualification": "Place next to U1.54 AVDD1 / U1.53 AVSS1; effective C >=1uF; verify effective C at3.05V before assembly",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C113": {
+      "value": "10u 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "MPN": "GRM21BR61C106KE15L",
+        "Qualification": "Place next to U2.54 AVDD1 / U2.53 AVSS1; effective C >=1uF; verify effective C at3.05V before assembly",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C114": {
+      "value": "100nF 50V C0G",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "fields": {
+        "MPN": "GRM31C5C1H104JA01L",
+        "Voltage rating": "50V",
+        "Tolerance": "5%",
+        "Purpose": "Place at U1.54 AVDD1 / U1.53 AVSS1; TI ADS1298 Figure106; placement and qualification required",
+        "Footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "Datasheet": "https://www.murata.com/en-us/products/productdetail?partno=GRM31C5C1H104JA01L",
+        "Description": null
+      }
+    },
+    "C115": {
+      "value": "100nF 50V C0G",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "fields": {
+        "MPN": "GRM31C5C1H104JA01L",
+        "Voltage rating": "50V",
+        "Tolerance": "5%",
+        "Purpose": "Place at U2.54 AVDD1 / U2.53 AVSS1; TI ADS1298 Figure106; placement and qualification required",
+        "Footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "Datasheet": "https://www.murata.com/en-us/products/productdetail?partno=GRM31C5C1H104JA01L",
+        "Description": null
+      }
+    },
+    "C116": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U17 local bypass",
+        "Voltage rating": "16V",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C117": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U18 local bypass",
+        "Voltage rating": "16V",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "C118": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "MPN": "GRM188R71C104KA01D",
+        "Purpose": "U19 local bypass",
+        "Voltage rating": "16V",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "E1": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E2": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E3": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E4": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E5": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E6": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E7": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E8": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E9": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E10": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E11": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E12": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E13": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E14": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E15": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "E16": {
+      "value": "Electrodes",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      }
+    },
+    "F1": {
+      "value": "1.5A FAST",
+      "footprint": "Fuse:Fuse_1206_3216Metric",
+      "fields": {
+        "Manufacturer": "Littelfuse",
+        "MPN": "046601.5NR",
+        "Rating": "1.5A, 63VAC/DC, 1206; 50A interrupt rating; derate for continuous current and temperature",
+        "Purpose": "Secondary board-input protection; not a wearer-current limiter or substitute for protected cell",
+        "Cold resistance": "0.046ohm nominal at25C",
+        "Melting I2t": "0.1103A2s nominal",
+        "Footprint": "Fuse:Fuse_1206_3216Metric",
+        "Datasheet": "https://www.littelfuse.com/assetdocs/littelfuse_fuse_466_datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f",
+        "Description": null
+      }
+    },
+    "J17": {
+      "value": "B2B-PH-K-S(LF)(SN)",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "fields": {
+        "Manufacturer": "JST",
+        "MPN": "B2B-PH-K-S(LF)(SN)",
+        "Purpose": "Protected 1S pack input; pin1 positive, pin2 return. Unplug pack for OFF.",
+        "Pack requirement": "4.20V maximum; >=1.5A discharge capability; cell protection cutoff >=3.0V; compatible off-body charger",
+        "Mating harness": "PHR-2 housing, SPH-002T-P0.5S contacts, AWG24; verify pack cable pin polarity",
+        "Footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+        "Datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+        "Description": null
+      }
+    },
+    "JP1": {
+      "value": "INHIBIT (OPEN=RUN)",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "fields": {
+        "Manufacturer": "Samtec",
+        "MPN": "TSW-102-07-G-S",
+        "Assembly": "Fit header, no shunt for RUN; short only for service inhibit",
+        "Purpose": "MAIN_ENABLE to AGND inhibits converter. Not galvanic isolation; unplug pack for OFF.",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+        "Datasheet": "https://www.samtec.com/products/tsw-102-07-g-s",
+        "Description": null
+      }
+    },
+    "L1": {
+      "value": "0.47uH XFL4015",
+      "footprint": null,
+      "fields": {
+        "MPN": "XFL4015-471MEC",
+        "Manufacturer": "Coilcraft",
+        "Footprint_Requirement": "Exact XFL4015 4x4mm manufacturer recommended land pattern required before PCB",
+        "Qualification": "TI TPS63802 reference candidate. At25C: Isat5.4A at20% L drop,6.6A at30%; verify all tolerance/current/temp corners and application eligibility",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "L2": {
+      "value": "0.47uH XFL4015",
+      "footprint": null,
+      "fields": {
+        "MPN": "XFL4015-471MEC",
+        "Manufacturer": "Coilcraft",
+        "Footprint_Requirement": "Exact XFL4015 4x4mm manufacturer recommended land pattern required before PCB",
+        "Qualification": "TI TPS63802 reference candidate. At25C: Isat5.4A at20% L drop,6.6A at30%; verify all tolerance/current/temp corners and application eligibility",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "Q1": {
+      "value": "AO3401A",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "fields": {
+        "Manufacturer": "Alpha & Omega Semiconductor",
+        "MPN": "AO3401A",
+        "Purpose": "Reverse-polarity P-MOS: D3=fused input, S2=protected output; not reverse-current blocking",
+        "RDS_on": "85mOhm max atVGS=-2.5V, TJ25C; qualify hot condition",
+        "Limits": "VDS=-30V; VGS=+/-12V",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23",
+        "Datasheet": "https://www.aosmd.com/res/data_sheets/AO3401A.pdf",
+        "Description": null
+      }
+    },
+    "Q2": {
+      "value": "AO3400A",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "fields": {
+        "Manufacturer": "Alpha and Omega Semiconductor",
+        "MPN": "AO3400A",
+        "Purpose": "G1 S2 D3; dedicated CHIP_PU sink through2.2ohm. Validate reset fall/hold-up/pulse SOA.",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23",
+        "Datasheet": "https://www.aosmd.com/res/data_sheets/AO3400A.pdf",
+        "Description": null
+      }
+    },
+    "R1": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R2": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R3": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R4": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R5": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R6": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R7": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R8": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R9": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R10": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R11": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R12": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R13": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R14": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R15": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R16": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R17": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R18": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R19": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R20": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R21": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R22": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R23": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R24": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R25": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R26": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R27": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R28": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R29": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R30": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R31": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R32": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      }
+    },
+    "R33": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "CRCW060310K0FKEA",
+        "Manufacturer": "Vishay",
+        "Tolerance": "1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R34": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "CRCW060310K0FKEA",
+        "Manufacturer": "Vishay",
+        "Tolerance": "1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R35": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "CRCW060310K0FKEA",
+        "Manufacturer": "Vishay",
+        "Tolerance": "1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R36": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Purpose": "F09: DIN/MOSI low default while MCU high impedance",
+        "Rated power": ">=0.1 W; verify temperature derating",
+        "Tolerance": "1%",
+        "MPN": "CRCW060310K0FKEA",
+        "Manufacturer": "Vishay",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R37": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Purpose": "F09: SCLK low default while MCU high impedance",
+        "Rated power": ">=0.1 W; verify temperature derating",
+        "Tolerance": "1%",
+        "MPN": "CRCW060310K0FKEA",
+        "Manufacturer": "Vishay",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R39": {
+      "value": "56.0k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW060356K0BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R40": {
+      "value": "10.0k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW060310K0BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R41": {
+      "value": "22.0k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW060322K0BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R42": {
+      "value": "10.0k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW060310K0BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R43": {
+      "value": "10.0k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW060310K0BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R44": {
+      "value": "69.8k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW060369K8BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R45": {
+      "value": "200R 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW0603200RBYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R46": {
+      "value": "10.0k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW060310K0BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R47": {
+      "value": "29.8k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW060329K8BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R48": {
+      "value": "2.49k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW06032K49BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R49": {
+      "value": "2.70k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW06032K70BYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R50": {
+      "value": "100k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "MPN": "TNPW0603100KBYTA",
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R52": {
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Yageo",
+        "MPN": "RC0603FR-07100KL",
+        "Tolerance": "1%",
+        "Power": "0.1W",
+        "Purpose": "Q1 gate pull-down",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R70": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "Defined READY low during reset; GPIO4 must not be held through restart",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R71": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "AXC disabled during ramp / missing logic drive",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R72": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "DOUT1 disabled by default",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R73": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "DOUT2 disabled by default",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R74": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "Switched CS1 low bias; clamp releases during acquisition",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R75": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "Switched CS2 low bias; clamp releases during acquisition",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R76": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "Clean open-drain rail-good pullup; isolated from DevKit reset RC",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R77": {
+      "value": "67.8k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "TNPW060367K8BYTA",
+        "Purpose": "Main nominal falling threshold 0.405*(1+67.8/10)=3.1509V",
+        "Tolerance": "0.1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R78": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "TNPW060310K0BYTA",
+        "Purpose": "Main sense lower divider",
+        "Tolerance": "0.1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R79": {
+      "value": "59.1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "TNPW060359K1BYTA",
+        "Purpose": "AFE operating-floor threshold 2.79855V; not acquisition-validity guarantee",
+        "Tolerance": "0.1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R80": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "TNPW060310K0BYTA",
+        "Purpose": "AFE sense lower divider",
+        "Tolerance": "0.1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R81": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "Weak defined DOUT1 input when ADC deselected",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R82": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "Weak defined DOUT2 input when ADC deselected",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R83": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "Defined shared MISO when both isolation outputs are high impedance",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R84": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060310K0FKEA",
+        "Purpose": "Defined raw DRDY when ADC domain unpowered",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R85": {
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW0603100KFKEA",
+        "Purpose": "Reset sink gate default",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R86": {
+      "value": "2.2",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW08052R20FKEAHP",
+        "Purpose": "Reset-cap discharge limiter; >=10uJ pulse capability required",
+        "Tolerance": "1%",
+        "Power rating": ">=0.1W",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "R87": {
+      "value": "36.0k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Manufacturer": "Vishay",
+        "MPN": "CRCW060336K0FKEA",
+        "Purpose": "LOW:18uA*36.36k<0.8V. HIGH:3.048/35.64k+10uA<100uA AXC load.",
+        "Tolerance": "1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP1": {
+      "value": "ADC_CLK",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP2": {
+      "value": "DRDY_ADC1",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP3": {
+      "value": "DRDY_ADC2",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP4": {
+      "value": "MAIN_3V3",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP5": {
+      "value": "BAT",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP6": {
+      "value": "AGND",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP7": {
+      "value": "VREFP_ADC1",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP8": {
+      "value": "VCAP1_ADC1",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP9": {
+      "value": "VCAP2_ADC1",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP10": {
+      "value": "VCAP3_ADC1",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP11": {
+      "value": "VCAP4_ADC1",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP12": {
+      "value": "VREFP_ADC2",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP13": {
+      "value": "VCAP1_ADC2",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP14": {
+      "value": "VCAP2_ADC2",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP15": {
+      "value": "VCAP3_ADC2",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "TP16": {
+      "value": "VCAP4_ADC2",
+      "footprint": null,
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      }
+    },
+    "U1": {
+      "value": "ADS1298xPAG",
+      "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "fields": {
+        "Footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/ads1298.pdf",
+        "Description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+      }
+    },
+    "U2": {
+      "value": "ADS1298xPAG",
+      "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "fields": {
+        "Footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/ads1298.pdf",
+        "Description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+      }
+    },
+    "U3": {
+      "value": "ESP32-S3-DevKitC",
+      "footprint": "PCM_Espressif:ESP32-S3-DevKitC",
+      "fields": {
+        "MPN": "ESP32-S3-DevKitC-1-N8R2",
+        "Board requirement": "Genuine Espressif Rev1.1 matching official 20221130 schematic; verify actual assembly before power",
+        "Power modes": "External nominal3.3V via pins1/2 only while seated. Both USB ports physically inaccessible. Unplug pack and unseat for USB service.",
+        "Footprint": "PCM_Espressif:ESP32-S3-DevKitC",
+        "Datasheet": null,
+        "Description": "ESP32-S3-DevKitC"
+      }
+    },
+    "U6": {
+      "value": "TPS63802DLAR MAIN 3.3V",
+      "footprint": null,
+      "fields": {
+        "MPN": "TPS63802DLAR",
+        "Manufacturer": "Texas Instruments",
+        "Footprint_Requirement": "TI DLA0010A HotRod 4223750/D. No generic 10+EP substitute; exact local footprint required before PCB",
+        "Operating_Requirement": "Bench input 3.0-4.2V; protected pack and cell-specific cutoff/inrush qualification before battery use",
+        "Footprint": null,
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+        "Description": null
+      }
+    },
+    "U7": {
+      "value": "TPS63802DLAR AFE PRE 4.0V",
+      "footprint": null,
+      "fields": {
+        "MPN": "TPS63802DLAR",
+        "Manufacturer": "Texas Instruments",
+        "Footprint_Requirement": "TI DLA0010A HotRod 4223750/D. No generic 10+EP substitute; exact local footprint required before PCB",
+        "Operating_Requirement": "Bench input 3.0-4.2V; protected pack and cell-specific cutoff/inrush qualification before battery use",
+        "Footprint": null,
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+        "Description": null
+      }
+    },
+    "U8": {
+      "value": "LT3042IMSE AFE 2.98V",
+      "footprint": "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm",
+      "fields": {
+        "MPN": "LT3042IMSE#PBF",
+        "Manufacturer": "Analog Devices",
+        "Qualification": "IN/OUT local >=4.7uF effective; output ESR<50mOhm ESL<2nH. PGFB=IN disables fast start. SET leakage/precision/layout qualification required",
+        "Footprint": "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm",
+        "Datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf",
+        "Description": null
+      }
+    },
+    "U9": {
+      "value": "SN74AXC8T245PWR",
+      "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "SN74AXC8T245PWR",
+        "Purpose": "V1.3 power sequencing / shared-MISO interface; bench qualification required",
+        "Direction": "DIR1=HIGH, DIR2=LOW: all eight A-to-B (TI Table 7-1)",
+        "Footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf",
+        "Description": null
+      }
+    },
+    "U10": {
+      "value": "74LVC1G125GW",
+      "footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+      "fields": {
+        "Manufacturer": "Nexperia",
+        "MPN": "74LVC1G125GW",
+        "Purpose": "V1.3 power sequencing / shared-MISO interface; bench qualification required",
+        "Footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+        "Datasheet": "https://assets.nexperia.com/documents/data-sheet/74LVC1G125.pdf",
+        "Description": null
+      }
+    },
+    "U11": {
+      "value": "74LVC1G125GW",
+      "footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+      "fields": {
+        "Manufacturer": "Nexperia",
+        "MPN": "74LVC1G125GW",
+        "Purpose": "V1.3 power sequencing / shared-MISO interface; bench qualification required",
+        "Footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+        "Datasheet": "https://assets.nexperia.com/documents/data-sheet/74LVC1G125.pdf",
+        "Description": null
+      }
+    },
+    "U12": {
+      "value": "74LVC1G157GW",
+      "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+      "fields": {
+        "Manufacturer": "Nexperia",
+        "MPN": "74LVC1G157GW",
+        "Purpose": "DRDY level regenerator only; both data inputs identical, select grounded",
+        "Footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+        "Datasheet": "https://assets.nexperia.com/documents/data-sheet/74LVC1G157.pdf",
+        "Description": null
+      }
+    },
+    "U13": {
+      "value": "SN74HCS20PWR",
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "SN74HCS20PWR",
+        "Purpose": "Schmitt NAND: BLOCK=NOT(POWER_GOOD AND MCU_READY AND CHIP_PU). Unused gate inputs grounded/output NC.",
+        "Footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/sn74hcs20.pdf",
+        "Description": null
+      }
+    },
+    "U14": {
+      "value": "74LVC2G32DP",
+      "footprint": "Package_SO:TSSOP-8_3x3mm_P0.65mm",
+      "fields": {
+        "Manufacturer": "Nexperia",
+        "MPN": "74LVC2G32DP",
+        "Purpose": "DOUT isolation: /OE=AFE_BLOCK OR corresponding MCU-side /CS (stable HIGH before enable)",
+        "Footprint": "Package_SO:TSSOP-8_3x3mm_P0.65mm",
+        "Datasheet": "https://assets.nexperia.com/documents/data-sheet/74LVC2G32.pdf",
+        "Description": null
+      }
+    },
+    "U15": {
+      "value": "TPS3808G01DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "TPS3808G01DBVR",
+        "Purpose": "MAIN floor monitor; CT open20ms typical. Clean RESET shared with U16; U17/Q2 drive separate DevKit reset.",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+        "Description": null
+      }
+    },
+    "U16": {
+      "value": "TPS3808G01DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "TPS3808G01DBVR",
+        "Purpose": "AFE floor monitor; CT open gives 20ms typical; any fault resets MCU and releases READY",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+        "Description": null
+      }
+    },
+    "U17": {
+      "value": "SN74LVC1G132DCKR",
+      "footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "SN74LVC1G132DCKR",
+        "Purpose": "Invert rail-good to reset sink; DevKit reset capacitor is isolated from clean POWER_GOOD",
+        "Footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g132.pdf",
+        "Description": null
+      }
+    },
+    "U18": {
+      "value": "SN74LVC1G132DCKR",
+      "footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "SN74LVC1G132DCKR",
+        "Purpose": "Invert AFE_BLOCK for translated active-clamp release on AXC channel8",
+        "Footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g132.pdf",
+        "Description": null
+      }
+    },
+    "U19": {
+      "value": "SN74LVC541APWR",
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "SN74LVC541APWR",
+        "Purpose": "All data inputs GND. Outputs LOW while ALLOW_AFE=0, HiZ during acquisition. Individual10k branches bias ADS inputs without permanentHIGH load.",
+        "Footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc541a.pdf",
+        "Description": null
+      }
+    }
+  },
+  "nets": {
+    "+3.7V": [
+      {
+        "ref": "BT1",
+        "pin": "1",
+        "pinfunction": "+_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "F1",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "J17",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP5",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      }
+    ],
+    "+5V": [
+      {
+        "ref": "U3",
+        "pin": "21",
+        "pinfunction": "5V_21",
+        "pintype": "power_in"
+      }
+    ],
+    "/AFE_BLOCK": [
+      {
+        "ref": "R71",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U13",
+        "pin": "6",
+        "pinfunction": "1Y_6",
+        "pintype": "output"
+      },
+      {
+        "ref": "U14",
+        "pin": "1",
+        "pinfunction": "1A_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U14",
+        "pin": "5",
+        "pinfunction": "2A_5",
+        "pintype": "input"
+      },
+      {
+        "ref": "U18",
+        "pin": "1",
+        "pinfunction": "A_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U18",
+        "pin": "2",
+        "pinfunction": "B_2",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "22",
+        "pinfunction": "~OE_22",
+        "pintype": "input"
+      }
+    ],
+    "/AFE_ILIM": [
+      {
+        "ref": "R48",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U8",
+        "pin": "5",
+        "pinfunction": "ILIM_5",
+        "pintype": "passive"
+      }
+    ],
+    "/AFE_PRE_FB": [
+      {
+        "ref": "R45",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R46",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U7",
+        "pin": "4",
+        "pinfunction": "FB_4",
+        "pintype": "input"
+      }
+    ],
+    "/AFE_PRE_SW1": [
+      {
+        "ref": "L2",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U7",
+        "pin": "9",
+        "pinfunction": "L1_9",
+        "pintype": "passive"
+      }
+    ],
+    "/AFE_PRE_SW2": [
+      {
+        "ref": "L2",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U7",
+        "pin": "7",
+        "pinfunction": "L2_7",
+        "pintype": "passive"
+      }
+    ],
+    "/AFE_SENSE": [
+      {
+        "ref": "R79",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R80",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U16",
+        "pin": "5",
+        "pinfunction": "SENSE_5",
+        "pintype": "input"
+      }
+    ],
+    "/AFE_SET": [
+      {
+        "ref": "C65",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R47",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U8",
+        "pin": "7",
+        "pinfunction": "SET_7",
+        "pintype": "passive"
+      }
+    ],
+    "/ALLOW_AFE": [
+      {
+        "ref": "R87",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U19",
+        "pin": "1",
+        "pinfunction": "~OE1_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "19",
+        "pinfunction": "~OE2_19",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "14",
+        "pinfunction": "B8_14",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/CHIP_PU": [
+      {
+        "ref": "R86",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U13",
+        "pin": "4",
+        "pinfunction": "1C_4",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "3",
+        "pinfunction": "CHIP_PU_3",
+        "pintype": "input"
+      }
+    ],
+    "/CLAMP_CS1": [
+      {
+        "ref": "R74",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U19",
+        "pin": "13",
+        "pinfunction": "Y6_13",
+        "pintype": "tri_state"
+      }
+    ],
+    "/CLAMP_CS2": [
+      {
+        "ref": "R75",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U19",
+        "pin": "12",
+        "pinfunction": "Y7_12",
+        "pintype": "tri_state"
+      }
+    ],
+    "/CLAMP_MOSI": [
+      {
+        "ref": "R36",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U19",
+        "pin": "18",
+        "pinfunction": "Y1_18",
+        "pintype": "tri_state"
+      }
+    ],
+    "/CLAMP_PWDN": [
+      {
+        "ref": "R35",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U19",
+        "pin": "14",
+        "pinfunction": "Y5_14",
+        "pintype": "tri_state"
+      }
+    ],
+    "/CLAMP_RESET": [
+      {
+        "ref": "R34",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U19",
+        "pin": "15",
+        "pinfunction": "Y4_15",
+        "pintype": "tri_state"
+      }
+    ],
+    "/CLAMP_SCLK": [
+      {
+        "ref": "R37",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U19",
+        "pin": "17",
+        "pinfunction": "Y2_17",
+        "pintype": "tri_state"
+      }
+    ],
+    "/CLAMP_START": [
+      {
+        "ref": "R33",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U19",
+        "pin": "16",
+        "pinfunction": "Y3_16",
+        "pintype": "tri_state"
+      }
+    ],
+    "/CS_ADC1": [
+      {
+        "ref": "R74",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "39",
+        "pinfunction": "~{CS}_39",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "16",
+        "pinfunction": "B6_16",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/CS_ADC2": [
+      {
+        "ref": "R75",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "39",
+        "pinfunction": "~{CS}_39",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "15",
+        "pinfunction": "B7_15",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/DOUT1_BLOCK": [
+      {
+        "ref": "R72",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U10",
+        "pin": "1",
+        "pinfunction": "~OE_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U14",
+        "pin": "7",
+        "pinfunction": "1Y_7",
+        "pintype": "output"
+      }
+    ],
+    "/DOUT2_BLOCK": [
+      {
+        "ref": "R73",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U11",
+        "pin": "1",
+        "pinfunction": "~OE_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U14",
+        "pin": "3",
+        "pinfunction": "2Y_3",
+        "pintype": "output"
+      }
+    ],
+    "/DOUT_ADC1": [
+      {
+        "ref": "R81",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "43",
+        "pinfunction": "DOUT_43",
+        "pintype": "output"
+      },
+      {
+        "ref": "U10",
+        "pin": "2",
+        "pinfunction": "A_2",
+        "pintype": "input"
+      }
+    ],
+    "/DOUT_ADC2": [
+      {
+        "ref": "R82",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U11",
+        "pin": "2",
+        "pinfunction": "A_2",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "43",
+        "pinfunction": "DOUT_43",
+        "pintype": "output"
+      }
+    ],
+    "/DRDY_ADC1": [
+      {
+        "ref": "R84",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP2",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "47",
+        "pinfunction": "~{DRDY}_47",
+        "pintype": "output"
+      },
+      {
+        "ref": "U12",
+        "pin": "1",
+        "pinfunction": "I1_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U12",
+        "pin": "3",
+        "pinfunction": "I0_3",
+        "pintype": "input"
+      }
+    ],
+    "/DRDY_ADC2": [
+      {
+        "ref": "TP3",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "47",
+        "pinfunction": "~{DRDY}_47",
+        "pintype": "output"
+      }
+    ],
+    "/MAIN_FB": [
+      {
+        "ref": "R39",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R40",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U6",
+        "pin": "4",
+        "pinfunction": "FB_4",
+        "pintype": "input"
+      }
+    ],
+    "/MAIN_PG": [
+      {
+        "ref": "R43",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R50",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U6",
+        "pin": "5",
+        "pinfunction": "PG_5",
+        "pintype": "open_collector"
+      },
+      {
+        "ref": "U7",
+        "pin": "1",
+        "pinfunction": "EN_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U8",
+        "pin": "3",
+        "pinfunction": "EN/UV_3",
+        "pintype": "input"
+      }
+    ],
+    "/MAIN_SENSE": [
+      {
+        "ref": "R77",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R78",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U15",
+        "pin": "5",
+        "pinfunction": "SENSE_5",
+        "pintype": "input"
+      }
+    ],
+    "/MAIN_SW1": [
+      {
+        "ref": "L1",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U6",
+        "pin": "9",
+        "pinfunction": "L1_9",
+        "pintype": "passive"
+      }
+    ],
+    "/MAIN_SW2": [
+      {
+        "ref": "L1",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U6",
+        "pin": "7",
+        "pinfunction": "L2_7",
+        "pintype": "passive"
+      }
+    ],
+    "/MCU_ALLOW": [
+      {
+        "ref": "U18",
+        "pin": "4",
+        "pinfunction": "Y_4",
+        "pintype": "output"
+      },
+      {
+        "ref": "U9",
+        "pin": "10",
+        "pinfunction": "A8_10",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_CS1": [
+      {
+        "ref": "U14",
+        "pin": "2",
+        "pinfunction": "1B_2",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "16",
+        "pinfunction": "GPIO10/ADC1_CH9_16",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U9",
+        "pin": "8",
+        "pinfunction": "A6_8",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_CS2": [
+      {
+        "ref": "U14",
+        "pin": "6",
+        "pinfunction": "2B_6",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "20",
+        "pinfunction": "GPIO14/ADC2_CH3_20",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U9",
+        "pin": "9",
+        "pinfunction": "A7_9",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_DRDY": [
+      {
+        "ref": "U12",
+        "pin": "4",
+        "pinfunction": "Y_4",
+        "pintype": "output"
+      },
+      {
+        "ref": "U3",
+        "pin": "15",
+        "pinfunction": "GPIO9/ADC1_CH8_15",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_MOSI": [
+      {
+        "ref": "U3",
+        "pin": "17",
+        "pinfunction": "GPIO11/ADC2_CH0_17",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U9",
+        "pin": "3",
+        "pinfunction": "A1_3",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_PWDN": [
+      {
+        "ref": "U3",
+        "pin": "7",
+        "pinfunction": "GPIO7/ADC1_CH6_7",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U9",
+        "pin": "7",
+        "pinfunction": "A5_7",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_READY": [
+      {
+        "ref": "R70",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U13",
+        "pin": "2",
+        "pinfunction": "1B_2",
+        "pintype": "input"
+      },
+      {
+        "ref": "U3",
+        "pin": "4",
+        "pinfunction": "GPIO4/ADC1_CH3_4",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_RESET": [
+      {
+        "ref": "U3",
+        "pin": "6",
+        "pinfunction": "GPIO6/ADC1_CH5_6",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U9",
+        "pin": "6",
+        "pinfunction": "A4_6",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_SCLK": [
+      {
+        "ref": "U3",
+        "pin": "18",
+        "pinfunction": "GPIO12/ADC2_CH1_18",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U9",
+        "pin": "4",
+        "pinfunction": "A2_4",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MCU_START": [
+      {
+        "ref": "U3",
+        "pin": "12",
+        "pinfunction": "GPIO8/ADC1_CH7_12",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U9",
+        "pin": "5",
+        "pinfunction": "A3_5",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MISO": [
+      {
+        "ref": "R83",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U10",
+        "pin": "4",
+        "pinfunction": "Y_4",
+        "pintype": "tri_state"
+      },
+      {
+        "ref": "U11",
+        "pin": "4",
+        "pinfunction": "Y_4",
+        "pintype": "tri_state"
+      },
+      {
+        "ref": "U3",
+        "pin": "19",
+        "pinfunction": "GPIO13/ADC2_CH2_19",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/MOSI": [
+      {
+        "ref": "R36",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "34",
+        "pinfunction": "DIN_34",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "34",
+        "pinfunction": "DIN_34",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "21",
+        "pinfunction": "B1_21",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/POWER_GOOD": [
+      {
+        "ref": "R76",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U13",
+        "pin": "1",
+        "pinfunction": "1A_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U15",
+        "pin": "1",
+        "pinfunction": "~RESET_1",
+        "pintype": "open_collector"
+      },
+      {
+        "ref": "U16",
+        "pin": "1",
+        "pinfunction": "~RESET_1",
+        "pintype": "open_collector"
+      },
+      {
+        "ref": "U17",
+        "pin": "1",
+        "pinfunction": "A_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "U17",
+        "pin": "2",
+        "pinfunction": "B_2",
+        "pintype": "input"
+      }
+    ],
+    "/PRE_FB_TOP": [
+      {
+        "ref": "R44",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R45",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "/PWDN": [
+      {
+        "ref": "R35",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "35",
+        "pinfunction": "~{PWDN}_35",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "35",
+        "pinfunction": "~{PWDN}_35",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "17",
+        "pinfunction": "B5_17",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/RESET": [
+      {
+        "ref": "R34",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "36",
+        "pinfunction": "~{RESET}_36",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "36",
+        "pinfunction": "~{RESET}_36",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "18",
+        "pinfunction": "B4_18",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/RESET_SINK_DRAIN": [
+      {
+        "ref": "Q2",
+        "pin": "3",
+        "pinfunction": "D_3",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R86",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      }
+    ],
+    "/RESET_SINK_GATE": [
+      {
+        "ref": "Q2",
+        "pin": "1",
+        "pinfunction": "G_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "R85",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U17",
+        "pin": "4",
+        "pinfunction": "Y_4",
+        "pintype": "output"
+      }
+    ],
+    "/SCLK": [
+      {
+        "ref": "R37",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "40",
+        "pinfunction": "SCLK_40",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "40",
+        "pinfunction": "SCLK_40",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "20",
+        "pinfunction": "B2_20",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/START": [
+      {
+        "ref": "R33",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "38",
+        "pinfunction": "START_38",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "38",
+        "pinfunction": "START_38",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "19",
+        "pinfunction": "B3_19",
+        "pintype": "bidirectional"
+      }
+    ],
+    "/VCAP1_ADC1": [
+      {
+        "ref": "C23",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP8",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "28",
+        "pinfunction": "VCAP1_28",
+        "pintype": "passive"
+      }
+    ],
+    "/VCAP1_ADC2": [
+      {
+        "ref": "C49",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP13",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "28",
+        "pinfunction": "VCAP1_28",
+        "pintype": "passive"
+      }
+    ],
+    "/VCAP2_ADC1": [
+      {
+        "ref": "C24",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP9",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "30",
+        "pinfunction": "VCAP2_30",
+        "pintype": "passive"
+      }
+    ],
+    "/VCAP2_ADC2": [
+      {
+        "ref": "C50",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP14",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "30",
+        "pinfunction": "VCAP2_30",
+        "pintype": "passive"
+      }
+    ],
+    "/VCAP3_ADC1": [
+      {
+        "ref": "C110",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C25",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP10",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "55",
+        "pinfunction": "VCAP3_55",
+        "pintype": "passive"
+      }
+    ],
+    "/VCAP3_ADC2": [
+      {
+        "ref": "C111",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C51",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP15",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "55",
+        "pinfunction": "VCAP3_55",
+        "pintype": "passive"
+      }
+    ],
+    "/VCAP4_ADC1": [
+      {
+        "ref": "C26",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP11",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "26",
+        "pinfunction": "VCAP4_26",
+        "pintype": "passive"
+      }
+    ],
+    "/VCAP4_ADC2": [
+      {
+        "ref": "C52",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP16",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "26",
+        "pinfunction": "VCAP4_26",
+        "pintype": "passive"
+      }
+    ],
+    "/VREFP_ADC1": [
+      {
+        "ref": "C19",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C20",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP7",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "24",
+        "pinfunction": "VREFP_24",
+        "pintype": "passive"
+      }
+    ],
+    "/VREFP_ADC2": [
+      {
+        "ref": "C45",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C46",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP12",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "24",
+        "pinfunction": "VREFP_24",
+        "pintype": "passive"
+      }
+    ],
+    "ADC_CLK": [
+      {
+        "ref": "TP1",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "37",
+        "pinfunction": "CLK_37",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "37",
+        "pinfunction": "CLK_37",
+        "pintype": "bidirectional"
+      }
+    ],
+    "AFE_2V98": [
+      {
+        "ref": "C112",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C113",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C114",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C115",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C118",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C32",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C33",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C34",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C35",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C6",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C64",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C7",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C8",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C9",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C91",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R49",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R79",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "17",
+        "pinfunction": "TESTP_PACE_OUT1_17",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "18",
+        "pinfunction": "TESTP_PACE_OUT2_18",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "19",
+        "pinfunction": "AVDD_19",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "21",
+        "pinfunction": "AVDD_21",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "22",
+        "pinfunction": "AVDD_22",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "48",
+        "pinfunction": "DVDD_48",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "50",
+        "pinfunction": "DVDD_50",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "52",
+        "pinfunction": "CLKSEL_52",
+        "pintype": "input"
+      },
+      {
+        "ref": "U1",
+        "pin": "54",
+        "pinfunction": "AVDD1_54",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "56",
+        "pinfunction": "AVDD_56",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "59",
+        "pinfunction": "AVDD_59",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "62",
+        "pinfunction": "RLDIN_62",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "20",
+        "pinfunction": "VCC_20",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "17",
+        "pinfunction": "TESTP_PACE_OUT1_17",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "18",
+        "pinfunction": "TESTP_PACE_OUT2_18",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "19",
+        "pinfunction": "AVDD_19",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "21",
+        "pinfunction": "AVDD_21",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "22",
+        "pinfunction": "AVDD_22",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "48",
+        "pinfunction": "DVDD_48",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "50",
+        "pinfunction": "DVDD_50",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "54",
+        "pinfunction": "AVDD1_54",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "56",
+        "pinfunction": "AVDD_56",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "59",
+        "pinfunction": "AVDD_59",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "62",
+        "pinfunction": "RLDIN_62",
+        "pintype": "input"
+      },
+      {
+        "ref": "U8",
+        "pin": "10",
+        "pinfunction": "OUT_10",
+        "pintype": "power_out"
+      },
+      {
+        "ref": "U8",
+        "pin": "9",
+        "pinfunction": "OUTS_9",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "23",
+        "pinfunction": "VCCB_23",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U9",
+        "pin": "24",
+        "pinfunction": "VCCB_24",
+        "pintype": "power_in"
+      }
+    ],
+    "AFE_PRE_4V0": [
+      {
+        "ref": "C61",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C62",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C63",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R44",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U7",
+        "pin": "6",
+        "pinfunction": "VOUT_6",
+        "pintype": "power_out"
+      },
+      {
+        "ref": "U8",
+        "pin": "1",
+        "pinfunction": "IN_1",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U8",
+        "pin": "2",
+        "pinfunction": "IN_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U8",
+        "pin": "6",
+        "pinfunction": "PGFB_6",
+        "pintype": "input"
+      }
+    ],
+    "AGND": [
+      {
+        "ref": "BT1",
+        "pin": "2",
+        "pinfunction": "-_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C1",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C10",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C11",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C110",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C111",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C112",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C113",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C114",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C115",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C116",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C117",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C118",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C12",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C13",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C14",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C15",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C16",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C17",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C18",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C19",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C2",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C20",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C21",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C22",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C23",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C24",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C25",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C26",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C27",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C28",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C29",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C3",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C30",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C31",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C32",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C33",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C34",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C35",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C36",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C37",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C38",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C39",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C4",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C40",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C41",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C42",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C43",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C44",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C45",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C46",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C47",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C48",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C49",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C5",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C50",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C51",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C52",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C57",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C58",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C59",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C6",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C60",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C61",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C62",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C63",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C64",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C65",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C7",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C8",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C9",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C90",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C91",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C92",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C93",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C94",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C95",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C96",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C97",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C98",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "J17",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "JP1",
+        "pin": "2",
+        "pinfunction": "B_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "Q2",
+        "pin": "2",
+        "pinfunction": "S_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R40",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R42",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R46",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R47",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R48",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R49",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R50",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R52",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R70",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R78",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R80",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R81",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R82",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R83",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R84",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R85",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R87",
+        "pin": "2",
+        "pinfunction": "2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP6",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "20",
+        "pinfunction": "AVSS_20",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "23",
+        "pinfunction": "AVSS_23",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "25",
+        "pinfunction": "VREFN_25",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "31",
+        "pinfunction": "RESV1_31",
+        "pintype": "input"
+      },
+      {
+        "ref": "U1",
+        "pin": "32",
+        "pinfunction": "AVSS_32",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "33",
+        "pinfunction": "DGND_33",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "41",
+        "pinfunction": "DAISY_IN_41",
+        "pintype": "input"
+      },
+      {
+        "ref": "U1",
+        "pin": "42",
+        "pinfunction": "GPIO1_42",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "44",
+        "pinfunction": "GPIO2_44",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "45",
+        "pinfunction": "GPIO3_45",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "46",
+        "pinfunction": "GPIO4_46",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U1",
+        "pin": "49",
+        "pinfunction": "DGND_49",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "51",
+        "pinfunction": "DGND_51",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "53",
+        "pinfunction": "AVSS1_53",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U1",
+        "pin": "57",
+        "pinfunction": "AVSS_57",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "58",
+        "pinfunction": "AVSS_58",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U10",
+        "pin": "3",
+        "pinfunction": "GND_3",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U11",
+        "pin": "3",
+        "pinfunction": "GND_3",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U12",
+        "pin": "2",
+        "pinfunction": "GND_2",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U12",
+        "pin": "6",
+        "pinfunction": "S_6",
+        "pintype": "input"
+      },
+      {
+        "ref": "U13",
+        "pin": "10",
+        "pinfunction": "2B_10",
+        "pintype": "input"
+      },
+      {
+        "ref": "U13",
+        "pin": "12",
+        "pinfunction": "2C_12",
+        "pintype": "input"
+      },
+      {
+        "ref": "U13",
+        "pin": "13",
+        "pinfunction": "2D_13",
+        "pintype": "input"
+      },
+      {
+        "ref": "U13",
+        "pin": "7",
+        "pinfunction": "GND_7",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U13",
+        "pin": "9",
+        "pinfunction": "2A_9",
+        "pintype": "input"
+      },
+      {
+        "ref": "U14",
+        "pin": "4",
+        "pinfunction": "GND_4",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U15",
+        "pin": "2",
+        "pinfunction": "GND_2",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U16",
+        "pin": "2",
+        "pinfunction": "GND_2",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U17",
+        "pin": "3",
+        "pinfunction": "GND_3",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U18",
+        "pin": "3",
+        "pinfunction": "GND_3",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U19",
+        "pin": "10",
+        "pinfunction": "GND_10",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U19",
+        "pin": "2",
+        "pinfunction": "A1_2",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "3",
+        "pinfunction": "A2_3",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "4",
+        "pinfunction": "A3_4",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "5",
+        "pinfunction": "A4_5",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "6",
+        "pinfunction": "A5_6",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "7",
+        "pinfunction": "A6_7",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "8",
+        "pinfunction": "A7_8",
+        "pintype": "input"
+      },
+      {
+        "ref": "U19",
+        "pin": "9",
+        "pinfunction": "A8_9",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "20",
+        "pinfunction": "AVSS_20",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "23",
+        "pinfunction": "AVSS_23",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "25",
+        "pinfunction": "VREFN_25",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "31",
+        "pinfunction": "RESV1_31",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "32",
+        "pinfunction": "AVSS_32",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "33",
+        "pinfunction": "DGND_33",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "41",
+        "pinfunction": "DAISY_IN_41",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "42",
+        "pinfunction": "GPIO1_42",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "44",
+        "pinfunction": "GPIO2_44",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "45",
+        "pinfunction": "GPIO3_45",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "46",
+        "pinfunction": "GPIO4_46",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U2",
+        "pin": "49",
+        "pinfunction": "DGND_49",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "51",
+        "pinfunction": "DGND_51",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "52",
+        "pinfunction": "CLKSEL_52",
+        "pintype": "input"
+      },
+      {
+        "ref": "U2",
+        "pin": "53",
+        "pinfunction": "AVSS1_53",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U2",
+        "pin": "57",
+        "pinfunction": "AVSS_57",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "58",
+        "pinfunction": "AVSS_58",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "22",
+        "pinfunction": "GND_22",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "23",
+        "pinfunction": "GND_23",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "24",
+        "pinfunction": "GND_24",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "44",
+        "pinfunction": "GND_44",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U6",
+        "pin": "3",
+        "pinfunction": "AGND_3",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U6",
+        "pin": "8",
+        "pinfunction": "GND_8",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U7",
+        "pin": "3",
+        "pinfunction": "AGND_3",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U7",
+        "pin": "8",
+        "pinfunction": "GND_8",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U8",
+        "pin": "11",
+        "pinfunction": "GND_11",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U8",
+        "pin": "8",
+        "pinfunction": "GND_8",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U9",
+        "pin": "11",
+        "pinfunction": "DIR2_11",
+        "pintype": "input"
+      },
+      {
+        "ref": "U9",
+        "pin": "12",
+        "pinfunction": "GND_12",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U9",
+        "pin": "13",
+        "pinfunction": "GND_13",
+        "pintype": "power_in"
+      }
+    ],
+    "BAT_FUSED": [
+      {
+        "ref": "F1",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "Q1",
+        "pin": "3",
+        "pinfunction": "D_3",
+        "pintype": "passive"
+      }
+    ],
+    "MAIN_3V3": [
+      {
+        "ref": "C116",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C117",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C57",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C59",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C90",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C92",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C93",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C94",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C95",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C96",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C97",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C98",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R39",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R43",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R71",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R72",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R73",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R76",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R77",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP4",
+        "pin": "1",
+        "pinfunction": "1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U10",
+        "pin": "5",
+        "pinfunction": "VCC_5",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U11",
+        "pin": "5",
+        "pinfunction": "VCC_5",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U12",
+        "pin": "5",
+        "pinfunction": "VCC_5",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U13",
+        "pin": "14",
+        "pinfunction": "VCC_14",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U13",
+        "pin": "5",
+        "pinfunction": "1D_5",
+        "pintype": "input"
+      },
+      {
+        "ref": "U14",
+        "pin": "8",
+        "pinfunction": "VCC_8",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U15",
+        "pin": "3",
+        "pinfunction": "~MR_3",
+        "pintype": "input"
+      },
+      {
+        "ref": "U15",
+        "pin": "6",
+        "pinfunction": "VDD_6",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U16",
+        "pin": "3",
+        "pinfunction": "~MR_3",
+        "pintype": "input"
+      },
+      {
+        "ref": "U16",
+        "pin": "6",
+        "pinfunction": "VDD_6",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U17",
+        "pin": "5",
+        "pinfunction": "VCC_5",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U18",
+        "pin": "5",
+        "pinfunction": "VCC_5",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U3",
+        "pin": "1",
+        "pinfunction": "3V3_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "2",
+        "pinfunction": "3V3_2",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U6",
+        "pin": "6",
+        "pinfunction": "VOUT_6",
+        "pintype": "power_out"
+      },
+      {
+        "ref": "U9",
+        "pin": "1",
+        "pinfunction": "VCCA_1",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U9",
+        "pin": "2",
+        "pinfunction": "DIR1_2",
+        "pintype": "input"
+      }
+    ],
+    "MAIN_ENABLE": [
+      {
+        "ref": "JP1",
+        "pin": "1",
+        "pinfunction": "A_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R41",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R42",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U6",
+        "pin": "1",
+        "pinfunction": "EN_1",
+        "pintype": "input"
+      }
+    ],
+    "Net-(E1-Pin_1)": [
+      {
+        "ref": "E1",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R1",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E1-Pin_2)": [
+      {
+        "ref": "E1",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R2",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E2-Pin_1)": [
+      {
+        "ref": "E2",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R3",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E2-Pin_2)": [
+      {
+        "ref": "E2",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R4",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E3-Pin_1)": [
+      {
+        "ref": "E3",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R5",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E3-Pin_2)": [
+      {
+        "ref": "E3",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R6",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E4-Pin_1)": [
+      {
+        "ref": "E4",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R7",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E4-Pin_2)": [
+      {
+        "ref": "E4",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R8",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E5-Pin_1)": [
+      {
+        "ref": "E5",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R9",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E5-Pin_2)": [
+      {
+        "ref": "E5",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R10",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E6-Pin_1)": [
+      {
+        "ref": "E6",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R11",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E6-Pin_2)": [
+      {
+        "ref": "E6",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R12",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E7-Pin_1)": [
+      {
+        "ref": "E7",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R13",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E7-Pin_2)": [
+      {
+        "ref": "E7",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R14",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E8-Pin_1)": [
+      {
+        "ref": "E8",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R15",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E8-Pin_2)": [
+      {
+        "ref": "E8",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R16",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E9-Pin_1)": [
+      {
+        "ref": "E9",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R17",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E9-Pin_2)": [
+      {
+        "ref": "E9",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R18",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E10-Pin_1)": [
+      {
+        "ref": "E10",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R19",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E10-Pin_2)": [
+      {
+        "ref": "E10",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R20",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E11-Pin_1)": [
+      {
+        "ref": "E11",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R21",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E11-Pin_2)": [
+      {
+        "ref": "E11",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R22",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E12-Pin_1)": [
+      {
+        "ref": "E12",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R23",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E12-Pin_2)": [
+      {
+        "ref": "E12",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R24",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E13-Pin_1)": [
+      {
+        "ref": "E13",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R25",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E13-Pin_2)": [
+      {
+        "ref": "E13",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R26",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E14-Pin_1)": [
+      {
+        "ref": "E14",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R27",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E14-Pin_2)": [
+      {
+        "ref": "E14",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R28",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E15-Pin_1)": [
+      {
+        "ref": "E15",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R29",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E15-Pin_2)": [
+      {
+        "ref": "E15",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R30",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E16-Pin_1)": [
+      {
+        "ref": "E16",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R31",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(E16-Pin_2)": [
+      {
+        "ref": "E16",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R32",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "Net-(U1-IN1N)": [
+      {
+        "ref": "C2",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R2",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "15",
+        "pinfunction": "IN1N_15",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN1P)": [
+      {
+        "ref": "C1",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R1",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "16",
+        "pinfunction": "IN1P_16",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN2N)": [
+      {
+        "ref": "C4",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R4",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "13",
+        "pinfunction": "IN2N_13",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN2P)": [
+      {
+        "ref": "C3",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R3",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "14",
+        "pinfunction": "IN2P_14",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN3N)": [
+      {
+        "ref": "C10",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R6",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "11",
+        "pinfunction": "IN3N_11",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN3P)": [
+      {
+        "ref": "C5",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R5",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "12",
+        "pinfunction": "IN3P_12",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN4N)": [
+      {
+        "ref": "C12",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R8",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "9",
+        "pinfunction": "IN4N_9",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN4P)": [
+      {
+        "ref": "C11",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R7",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "10",
+        "pinfunction": "IN4P_10",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN5N)": [
+      {
+        "ref": "C14",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R10",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "7",
+        "pinfunction": "IN5N_7",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN5P)": [
+      {
+        "ref": "C13",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R9",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "8",
+        "pinfunction": "IN5P_8",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN6N)": [
+      {
+        "ref": "C16",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R12",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "5",
+        "pinfunction": "IN6N_5",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN6P)": [
+      {
+        "ref": "C15",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R11",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "6",
+        "pinfunction": "IN6P_6",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN7N)": [
+      {
+        "ref": "C18",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R14",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "3",
+        "pinfunction": "IN7N_3",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN7P)": [
+      {
+        "ref": "C17",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R13",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "4",
+        "pinfunction": "IN7P_4",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN8N)": [
+      {
+        "ref": "C22",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R16",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "1",
+        "pinfunction": "IN8N_1",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U1-IN8P)": [
+      {
+        "ref": "C21",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R15",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "2",
+        "pinfunction": "IN8P_2",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN1N)": [
+      {
+        "ref": "C28",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R18",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "15",
+        "pinfunction": "IN1N_15",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN1P)": [
+      {
+        "ref": "C27",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R17",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "16",
+        "pinfunction": "IN1P_16",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN2N)": [
+      {
+        "ref": "C30",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R20",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "13",
+        "pinfunction": "IN2N_13",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN2P)": [
+      {
+        "ref": "C29",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R19",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "14",
+        "pinfunction": "IN2P_14",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN3N)": [
+      {
+        "ref": "C36",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R22",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "11",
+        "pinfunction": "IN3N_11",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN3P)": [
+      {
+        "ref": "C31",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R21",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "12",
+        "pinfunction": "IN3P_12",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN4N)": [
+      {
+        "ref": "C38",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R24",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "9",
+        "pinfunction": "IN4N_9",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN4P)": [
+      {
+        "ref": "C37",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R23",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "10",
+        "pinfunction": "IN4P_10",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN5N)": [
+      {
+        "ref": "C40",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R26",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "7",
+        "pinfunction": "IN5N_7",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN5P)": [
+      {
+        "ref": "C39",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R25",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "8",
+        "pinfunction": "IN5P_8",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN6N)": [
+      {
+        "ref": "C42",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R28",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "5",
+        "pinfunction": "IN6N_5",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN6P)": [
+      {
+        "ref": "C41",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R27",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "6",
+        "pinfunction": "IN6P_6",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN7N)": [
+      {
+        "ref": "C44",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R30",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "3",
+        "pinfunction": "IN7N_3",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN7P)": [
+      {
+        "ref": "C43",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R29",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "4",
+        "pinfunction": "IN7P_4",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN8N)": [
+      {
+        "ref": "C48",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R32",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "1",
+        "pinfunction": "IN8N_1",
+        "pintype": "input"
+      }
+    ],
+    "Net-(U2-IN8P)": [
+      {
+        "ref": "C47",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R31",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "2",
+        "pinfunction": "IN8P_2",
+        "pintype": "input"
+      }
+    ],
+    "Q1_GATE": [
+      {
+        "ref": "Q1",
+        "pin": "1",
+        "pinfunction": "G_1",
+        "pintype": "input"
+      },
+      {
+        "ref": "R52",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "SW_BAT_PROT": [
+      {
+        "ref": "C58",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C60",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "Q1",
+        "pin": "2",
+        "pinfunction": "S_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R41",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U6",
+        "pin": "10",
+        "pinfunction": "VIN_10",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U6",
+        "pin": "2",
+        "pinfunction": "MODE_2",
+        "pintype": "input"
+      },
+      {
+        "ref": "U7",
+        "pin": "10",
+        "pinfunction": "VIN_10",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U7",
+        "pin": "2",
+        "pinfunction": "MODE_2",
+        "pintype": "input"
+      }
+    ],
+    "unconnected-(U1-NC-Pad27)": [
+      {
+        "ref": "U1",
+        "pin": "27",
+        "pinfunction": "NC_27",
+        "pintype": "no_connect"
+      }
+    ],
+    "unconnected-(U1-NC-Pad29)": [
+      {
+        "ref": "U1",
+        "pin": "29",
+        "pinfunction": "NC_29",
+        "pintype": "no_connect"
+      }
+    ],
+    "unconnected-(U1-RLDINV-Pad61)": [
+      {
+        "ref": "U1",
+        "pin": "61",
+        "pinfunction": "RLDINV_61",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U1-RLDOUT-Pad63)": [
+      {
+        "ref": "U1",
+        "pin": "63",
+        "pinfunction": "RLDOUT_63",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U1-RLDREF-Pad60)": [
+      {
+        "ref": "U1",
+        "pin": "60",
+        "pinfunction": "RLDREF_60",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U1-WCT-Pad64)": [
+      {
+        "ref": "U1",
+        "pin": "64",
+        "pinfunction": "WCT_64",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U2-NC-Pad27)": [
+      {
+        "ref": "U2",
+        "pin": "27",
+        "pinfunction": "NC_27",
+        "pintype": "no_connect"
+      }
+    ],
+    "unconnected-(U2-NC-Pad29)": [
+      {
+        "ref": "U2",
+        "pin": "29",
+        "pinfunction": "NC_29",
+        "pintype": "no_connect"
+      }
+    ],
+    "unconnected-(U2-RLDINV-Pad61)": [
+      {
+        "ref": "U2",
+        "pin": "61",
+        "pinfunction": "RLDINV_61",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U2-RLDOUT-Pad63)": [
+      {
+        "ref": "U2",
+        "pin": "63",
+        "pinfunction": "RLDOUT_63",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U2-RLDREF-Pad60)": [
+      {
+        "ref": "U2",
+        "pin": "60",
+        "pinfunction": "RLDREF_60",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U2-WCT-Pad64)": [
+      {
+        "ref": "U2",
+        "pin": "64",
+        "pinfunction": "WCT_64",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO0-Pad31)": [
+      {
+        "ref": "U3",
+        "pin": "31",
+        "pinfunction": "GPIO0_31",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO1/ADC1_CH0-Pad41)": [
+      {
+        "ref": "U3",
+        "pin": "41",
+        "pinfunction": "GPIO1/ADC1_CH0_41",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO2/ADC1_CH1-Pad40)": [
+      {
+        "ref": "U3",
+        "pin": "40",
+        "pinfunction": "GPIO2/ADC1_CH1_40",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO3/ADC1_CH2-Pad13)": [
+      {
+        "ref": "U3",
+        "pin": "13",
+        "pinfunction": "GPIO3/ADC1_CH2_13",
+        "pintype": "bidirectional"
+      }
+    ],
+    "unconnected-(U3-GPIO5/ADC1_CH4-Pad5)": [
+      {
+        "ref": "U3",
+        "pin": "5",
+        "pinfunction": "GPIO5/ADC1_CH4_5",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO15/ADC2_CH4/32K_P-Pad8)": [
+      {
+        "ref": "U3",
+        "pin": "8",
+        "pinfunction": "GPIO15/ADC2_CH4/32K_P_8",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO16/ADC2_CH5/32K_N-Pad9)": [
+      {
+        "ref": "U3",
+        "pin": "9",
+        "pinfunction": "GPIO16/ADC2_CH5/32K_N_9",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO17/ADC2_CH6-Pad10)": [
+      {
+        "ref": "U3",
+        "pin": "10",
+        "pinfunction": "GPIO17/ADC2_CH6_10",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO18/ADC2_CH7-Pad11)": [
+      {
+        "ref": "U3",
+        "pin": "11",
+        "pinfunction": "GPIO18/ADC2_CH7_11",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO19/USB_D--Pad25)": [
+      {
+        "ref": "U3",
+        "pin": "25",
+        "pinfunction": "GPIO19/USB_D-_25",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO20/USB_D+-Pad26)": [
+      {
+        "ref": "U3",
+        "pin": "26",
+        "pinfunction": "GPIO20/USB_D+_26",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO21-Pad27)": [
+      {
+        "ref": "U3",
+        "pin": "27",
+        "pinfunction": "GPIO21_27",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO35-Pad32)": [
+      {
+        "ref": "U3",
+        "pin": "32",
+        "pinfunction": "GPIO35_32",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO36-Pad33)": [
+      {
+        "ref": "U3",
+        "pin": "33",
+        "pinfunction": "GPIO36_33",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO37-Pad34)": [
+      {
+        "ref": "U3",
+        "pin": "34",
+        "pinfunction": "GPIO37_34",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO38-Pad35)": [
+      {
+        "ref": "U3",
+        "pin": "35",
+        "pinfunction": "GPIO38_35",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO39/MTCK-Pad36)": [
+      {
+        "ref": "U3",
+        "pin": "36",
+        "pinfunction": "GPIO39/MTCK_36",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO40/MTDO-Pad37)": [
+      {
+        "ref": "U3",
+        "pin": "37",
+        "pinfunction": "GPIO40/MTDO_37",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO41/MTDI-Pad38)": [
+      {
+        "ref": "U3",
+        "pin": "38",
+        "pinfunction": "GPIO41/MTDI_38",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO42/MTMS-Pad39)": [
+      {
+        "ref": "U3",
+        "pin": "39",
+        "pinfunction": "GPIO42/MTMS_39",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO43/U0TXD-Pad43)": [
+      {
+        "ref": "U3",
+        "pin": "43",
+        "pinfunction": "GPIO43/U0TXD_43",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO44/U0RXD-Pad42)": [
+      {
+        "ref": "U3",
+        "pin": "42",
+        "pinfunction": "GPIO44/U0RXD_42",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO45-Pad30)": [
+      {
+        "ref": "U3",
+        "pin": "30",
+        "pinfunction": "GPIO45_30",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO46-Pad14)": [
+      {
+        "ref": "U3",
+        "pin": "14",
+        "pinfunction": "GPIO46_14",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO47-Pad28)": [
+      {
+        "ref": "U3",
+        "pin": "28",
+        "pinfunction": "GPIO47_28",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U3-GPIO48-Pad29)": [
+      {
+        "ref": "U3",
+        "pin": "29",
+        "pinfunction": "GPIO48_29",
+        "pintype": "bidirectional+no_connect"
+      }
+    ],
+    "unconnected-(U7-PG-Pad5)": [
+      {
+        "ref": "U7",
+        "pin": "5",
+        "pinfunction": "PG_5",
+        "pintype": "open_collector+no_connect"
+      }
+    ],
+    "unconnected-(U8-PG-Pad4)": [
+      {
+        "ref": "U8",
+        "pin": "4",
+        "pinfunction": "PG_4",
+        "pintype": "open_collector+no_connect"
+      }
+    ],
+    "unconnected-(U13-2Y-Pad8)": [
+      {
+        "ref": "U13",
+        "pin": "8",
+        "pinfunction": "2Y_8",
+        "pintype": "output+no_connect"
+      }
+    ],
+    "unconnected-(U13-NC-Pad3)": [
+      {
+        "ref": "U13",
+        "pin": "3",
+        "pinfunction": "NC_3",
+        "pintype": "passive+no_connect"
+      }
+    ],
+    "unconnected-(U13-NC-Pad11)": [
+      {
+        "ref": "U13",
+        "pin": "11",
+        "pinfunction": "NC_11",
+        "pintype": "passive+no_connect"
+      }
+    ],
+    "unconnected-(U15-CT-Pad4)": [
+      {
+        "ref": "U15",
+        "pin": "4",
+        "pinfunction": "CT_4",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U16-CT-Pad4)": [
+      {
+        "ref": "U16",
+        "pin": "4",
+        "pinfunction": "CT_4",
+        "pintype": "input+no_connect"
+      }
+    ],
+    "unconnected-(U19-Y8-Pad11)": [
+      {
+        "ref": "U19",
+        "pin": "11",
+        "pinfunction": "Y8_11",
+        "pintype": "tri_state+no_connect"
+      }
+    ]
+  }
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "ID": "A1",
+    "Category": "Analog — supply pins",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**A1 — An IC supply pin operates above its rating or below its minimum operating voltage.**<br>**Why it matters:** An IC needs a supply inside its operating range.<br>**V0 components:** U1/U2 ADS1298; U6 ESP32; U4/U7 LDOs.<br>**V0 finding:** ADC AVDD/AVDD1 pins 19/21/22/54/56/59 are on source-free +3.3VA. This confirms missing power under H2, but the floating voltage cannot be assigned a number. DVDD48/50 and U6.2 are on +3.3V relative to AGND.",
+    "V1_4": "**CANNOT VERIFY.** The missing analog-source connection is corrected under H2: U1/U2 AVDD19/21/22/54/56/59 and DVDD48/50 now reach /+3.3V from U3.1/.2; negatives reach /GND. Nominal 3.3 V meets ADC analog 2.7–5.25 V, digital 1.65–3.6 V and ESP module 3.0–3.6 V ranges. Actual loaded voltage is unmeasured, and the V0 floating voltage was unknown: do not count a numerical undervoltage as FIXED. Keep connections; identify fitted DevKit/source and measure supplies at U3 and both ADCs during startup and Wi-Fi loading. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf), [S2](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)"
+  },
+  {
+    "ID": "B1",
+    "Category": "Analog — resistors",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**B1 — A resistor dissipates more power than its footprint or component rating allows.**<br>**Why it matters:** Excess dissipation can overheat a resistor.<br>**V0 components:** R3–R19/R21–R35=2 kΩ; R1/R36=1 MΩ; R20=10 kΩ.<br>**V0 finding:** No resistor power ratings, manufacturer parts or footprints specified; electrode voltages are unspecified. No demonstrated excessive resistor dissipation.",
+    "V1_4": "**CANNOT VERIFY.** Input R1–R32 retain 2 kΩ and now specify ≥0.1 W; R39/R40 CS and R41 strap pulls are 10 kΩ with ≥0.1 W requirements. These are selection requirements, not proof of fitted parts/input-voltage limits. R33–R35 have no selected power rating. Select compliant parts and document actual voltage bounds; no resistance change justified. A 10 kΩ resistor across 3.3 V dissipates 1.089 mW; 3.3 V across 2 kΩ gives 5.445 mW. Compare actual P=V²/R to the selected rating; these examples are not measured electrode losses."
+  },
+  {
+    "ID": "C1",
+    "Category": "Analog — capacitors",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**C1 — Voltage across a capacitor reaches or exceeds its rating.**<br>**Why it matters:** Capacitor voltage must remain below its terminal-to-terminal rating.<br>**V0 components:** All capacitors; especially C65/C4 VCAP3.<br>**V0 finding:** Capacitances are given, but voltage ratings and orderable parts are absent.",
+    "V1_4": "**CANNOT VERIFY.** VCAP3 capacitors C25/C51 and added C58/C59 now require ≥10 V, addressing the approximately 5.2 V nominal internal node at 3.3 V AVDD. A written requirement is not a fitted-part inspection, and other ratings remain incomplete. Select parts meeting existing requirements and compare maximum actual voltages to ratings. No value change or added capacitor follows solely from this check. The 5.2 V projection is not a guaranteed overshoot maximum. No excluded tolerance/DC-bias analysis performed. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "C2",
+    "Category": "Analog — capacitors",
+    "Classification": "NOT FOUND",
+    "Problem": "**C2 — A capacitor has a pin connected to nothing.**<br>**Why it matters:** An open terminal prevents the capacitor from serving its circuit.<br>**V0 components:** C1–C73 as populated.<br>**V0 finding:** Every drawn capacitor pin joins a net containing another component connection.",
+    "V1_4": "**NOT FOUND.** All 58 capacitors have both terminals connected to another component terminal in the fresh netlist. No open capacitor terminal found in either revision. No correction; connectivity checks do not prove stability or physical placement."
+  },
+  {
+    "ID": "C3",
+    "Category": "Analog — capacitors",
+    "Classification": "NOT FOUND",
+    "Problem": "**C3 — A decoupling capacitor has a floating ground connection.**<br>**Why it matters:** A bypass capacitor needs a valid ground return.<br>**V0 components:** C20/C21/C71/C72 and other return capacitors.<br>**V0 finding:** All capacitor returns that are drawn as ground connect to the battery-negative AGND/GND net.",
+    "V1_4": "**NOT FOUND.** All grounded capacitor returns, including C8/C9/C34/C35, reach /GND with both ADCs and U3 grounds. V0 capacitor returns also reached valid battery ground. Keep the connections; this is NOT FOUND, not a V0 fault credited as fixed."
+  },
+  {
+    "ID": "C4",
+    "Category": "Analog — capacitors",
+    "Classification": "NOT FOUND",
+    "Problem": "**C4 — A voltage regulator has insufficient output capacitance.**<br>**Why it matters:** A regulator needs its specified output capacitance for stable regulation.<br>**V0 components:** U4/C44=2.2 µF; U7/C46=200 µF.<br>**V0 finding:** Both regulators have nominal output capacitance meeting their stated minimums.",
+    "V1_4": "**NOT FOUND.** External LDOs/capacitors are removed. The complete U3 board includes its own regulator bypass; carrier rail bypass totals 42.6 µF nominal. Insufficient capacitance is not demonstrated. Do not add output capacitance. Identify fitted regulator and qualify its existing combined bank: reference SGM2212 recommends 1–10 µF effective output capacitance. That is a compatibility question, not proof that the present rail oscillates. Do not delete ADC bypasses without evidence. [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf), [S4](https://www.sg-micro.com/rect/assets/54089b71-cc25-4f36-af2e-34b07f00a108/SGM2212.pdf)"
+  },
+  {
+    "ID": "C5",
+    "Category": "Analog — capacitors",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**C5 — A regulator requires output-capacitor ESR but uses only unsuitable ceramic capacitors.**<br>**Why it matters:** Some regulators require particular capacitor ESR, the effective series resistance.<br>**V0 components:** U4/C44; U7/C46.<br>**V0 finding:** Capacitor technology/ESR and exact LP2985 orderable chip identity are absent.",
+    "V1_4": "**CANNOT VERIFY.** LP2985 is removed; its legacy ESR constraints do not transfer automatically to U3. Reference-board SGM2212 supports ceramic capacitors. Exact fitted regulator/capacitor specifications remain unknown, and its complete output bank needs qualification. Identify parts and check documentation or measure startup/load-step stability before selecting a capacitor or regulator change. No ESR resistor justified by a generic warning. No measured oscillation asserted. [S4](https://www.sg-micro.com/rect/assets/54089b71-cc25-4f36-af2e-34b07f00a108/SGM2212.pdf)"
+  },
+  {
+    "ID": "C6",
+    "Category": "Analog — capacitors",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**C6 — Missing or insufficient decoupling causes a rail dip greater than 5%.**<br>**Why it matters:** A rail dip can corrupt operation or trigger a reset.<br>**V0 components:** ADC decoupling; C44/C46/C47/C48; U6.<br>**V0 finding:** Capacitors exist; missing analog source is H2. No transient evidence establishes a greater-than 5% dip.",
+    "V1_4": "**CANNOT VERIFY.** C6–C9/C32–C35 and added C60–C63 bypass the shared rail, but no waveform establishes ≤5% droop. Measure 3V3 relative to local ground at U3 and both ADCs during boot and peak Wi-Fi/ADC activity. Five percent of 3.3 V is 165 mV. Do not add bulk capacitance without demonstrated need."
+  },
+  {
+    "ID": "C7",
+    "Category": "Analog — capacitors",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**C7 — A capacitive load makes an amplifier unstable.**<br>**Why it matters:** Capacitive loading can destabilize an enabled amplifier.<br>**V0 components:** U1 RLDOUT63; R36=1 MΩ/C73=1.5 nF; J1.<br>**V0 finding:** Output electrode/cable load and enabled RLD settings are unknown. Feedback capacitance is not proof of an unstable load.",
+    "V1_4": "**CANNOT VERIFY.** The external RLD feedback/electrode-output branches are removed; RLDOUT63/RLDINV61/RLDREF60 are unused. No external RLD load is drawn. This does not establish a V0 instability or a verified stability fix. Keep optional RLD/WCT/PACE functions disabled as specified. No compensation change; test an actual enabled loop only if one is required. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "D1",
+    "Category": "Analog — LEDs",
+    "Classification": "NOT FOUND",
+    "Problem": "**D1 — An LED has no suitable current limitation.**<br>**Why it matters:** A bare LED requires current limitation.<br>**V0 components:** No LED in V0 schematic.<br>**V0 finding:** No LED circuit is represented by the V0 module/carrier schematic.",
+    "V1_4": "**NOT FOUND.** U3 is a complete DevKit. Official reference-board power LED D5 has R11=5.1 kΩ; RGB D6 contains a driver. No missing limiter found in that reference. Even zero forward voltage gives 3.3/5100=0.647 mA through R11. No added resistor; confirm installed board variant. These are internal board references, not new carrier parts. [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf)"
+  },
+  {
+    "ID": "D2",
+    "Category": "Analog — LEDs",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**D2 — An LED is driven directly into an open-collector sink causing incorrect operation/excessive current.**<br>**Why it matters:** An inappropriate LED/open-collector connection can cause wrong behavior or excess current.<br>**V0 components:** None.<br>**V0 finding:** No LED/open-collector arrangement.",
+    "V1_4": "**NOT APPLICABLE.** No direct bare-LED/open-collector arrangement in the carrier or official board reference. No correction."
+  },
+  {
+    "ID": "E1",
+    "Category": "Analog — regulators",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**E1 — Regulator input voltage exceeds the maximum rating.**<br>**Why it matters:** Excess input voltage can damage a regulator.<br>**V0 components:** BT1; U4.1/U7.1.<br>**V0 finding:** Both inputs are labelled +3.7V, below their limits nominally; actual BT1 maximum is unspecified.",
+    "V1_4": "**CANNOT VERIFY.** BT1 and both external regulators are removed. USB supplies U3’s internal LDO; nominal USB does not show input overvoltage, but installed board/source remain unverified. Use documented board power mode and compare actual LDO input to fitted-part limits. Reference SGM2212 operates over 2.7–20 V; do not assign that rating to an unidentified clone. [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf), [S4](https://www.sg-micro.com/rect/assets/54089b71-cc25-4f36-af2e-34b07f00a108/SGM2212.pdf)"
+  },
+  {
+    "ID": "E2",
+    "Category": "Analog — regulators",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**E2 — A regulator enters dropout during expected operation.**<br>**Why it matters:** Dropout is the extra input voltage an LDO needs above its output to maintain regulation.<br>**V0 components:** U4 LP2985-3.3; U7 TLV75533PDBV.<br>**V0 finding:** Battery minimum under load and actual regulator current sharing unknown.",
+    "V1_4": "**CANNOT VERIFY.** V0 battery-to-3.3 V path no longer exists. USB powers the onboard LDO, but actual cable/diode losses and load are unknown. Measure minimum LDO input/output under peak load. Reference SGM2212-3.3 maximum dropout is 0.380 V at 500 mA and 0.610 V at 800 mA over the stated temperature range. Include output tolerance; its dropout point is defined at 95% output, not exact nominal regulation. No added converter justified by V0’s uncertain headroom. [S4](https://www.sg-micro.com/rect/assets/54089b71-cc25-4f36-af2e-34b07f00a108/SGM2212.pdf)"
+  },
+  {
+    "ID": "E3",
+    "Category": "Analog — regulators",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**E3 — A regulator is disabled by its own enable arrangement or remains latched off.**<br>**Why it matters:** Self-dependent enables or latches can keep a supply off.<br>**V0 components:** U4.3/U7.3 /EN.<br>**V0 finding:** Undriven shared enable is confirmed under E6; its actual voltage/off state is not known. No self-output dependency is drawn.",
+    "V1_4": "**CANNOT VERIFY.** Old LDOs and /EN are gone. U3 has its documented onboard CHIP_PU pull-up/reset network; no carrier self-latching enable arrangement is present. No extra enable part. Power-cycle actual board to verify startup. V0’s actual latch/off waveform was never established, so do not count that hypothetical failure as FIXED; E6 records the real floating-enable correction. [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf)"
+  },
+  {
+    "ID": "E4",
+    "Category": "Analog — regulators",
+    "Classification": "NOT FOUND",
+    "Problem": "**E4 — Regulator output voltage does not match the voltage indicated by its rail name.**<br>**Why it matters:** A wrong regulator setpoint can deliver the wrong named voltage.<br>**V0 components:** U4.5/U7.5.<br>**V0 finding:** Both 3.3 V fixed-output types drive +3.3V.",
+    "V1_4": "**NOT FOUND.** Documented fixed 3.3 V board output supplies /+3.3V. No setpoint/rail-name mismatch found. V0’s source-free +3.3VA was a connection fault, not an LDO setpoint mismatch. No E4 correction; measure the delivered rail."
+  },
+  {
+    "ID": "E5",
+    "Category": "Analog — regulators",
+    "Classification": "FIXED",
+    "Problem": "**E5 — Two regulator outputs drive the same rail.**<br>**Why it matters:** Paralleled independent outputs have no guaranteed current sharing.<br>**V0 components:** U4.5 LP2985; U7.5 TLV75533.<br>**V0 finding:** Both output pins directly share +3.3V.",
+    "V1_4": "**FIXED.** V0 U4.5 LP2985 and U7.5 TLV755 are both removed. One USB-powered board LDO supplies the carrier through U3 3V3 headers 1/2; two pins from one output are not two regulators. Keep the explicit one-source mode: no external 3.3 V or 5 V injection while using USB. No added mux/sharing circuit. Fresh netlist confirms no other carrier power source. [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf)"
+  },
+  {
+    "ID": "E6",
+    "Category": "Analog — regulators",
+    "Classification": "FIXED",
+    "Problem": "**E6 — Regulator enable input floats or depends incorrectly on another rail’s power-good.**<br>**Why it matters:** Two joined enable inputs do not generate a valid enable level.<br>**V0 components:** U4.3/U7.3 /EN.<br>**V0 finding:** Only these two input pins occupy /EN; there is no driver, pull or switch.",
+    "V1_4": "**FIXED.** V0 U4/U7 and their two-input-only /EN net are removed. External U3.3 CHIP_PU is unused, but the complete reference board has R5=10 kΩ pull-up and C6=1 µF reset capacitor. No extra external EN resistor required. Verify installed board matches the documented assembly; ERC cannot see its internal RC. [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf)"
+  },
+  {
+    "ID": "E7",
+    "Category": "Analog — regulators",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**E7 — A switching regulator directly supplies an analog IC with potentially unacceptable noise.**<br>**Why it matters:** A switching supply can cause analog noise in some arrangements.<br>**V0 components:** U4/U7.<br>**V0 finding:** Both explicit regulators are linear LDOs.",
+    "V1_4": "**NOT APPLICABLE.** Documented U3 regulator is a linear LDO, as were V0 U4/U7. No switching-regulator-to-ADC arrangement appears. Confirm actual board identity. No switching-supply redesign or independent analog-noise/layout investigation. [S4](https://www.sg-micro.com/rect/assets/54089b71-cc25-4f36-af2e-34b07f00a108/SGM2212.pdf)"
+  },
+  {
+    "ID": "E8",
+    "Category": "Analog — regulators",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**E8 — A regulator cannot sink current when a required output-setpoint change occurs.**<br>**Why it matters:** Lowering a programmed output may require sinking current.<br>**V0 components:** U4/U7.<br>**V0 finding:** Fixed 3.3 V parts; no output-setpoint switching.",
+    "V1_4": "**NOT APPLICABLE.** Fixed 3.3 V supply; no adjustable setpoint or required lowering transition in either revision. No correction."
+  },
+  {
+    "ID": "E9",
+    "Category": "Analog — regulators",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**E9 — A control/signal voltage rises before the receiver supply is valid.**<br>**Why it matters:** A signal before valid receiver power can violate sequencing or inject current.<br>**V0 components:** U6→U1/U2 control nets.<br>**V0 finding:** No ramp or pre-firmware waveform; analog rail is source-free.",
+    "V1_4": "**CANNOT VERIFY.** Common MCU/ADC rail removes separate carrier power domains; R33–R37 hold forward controls low while GPIOs are high impedance. R39/R40 now pull CS high with the rail, requiring a check against TI all-inputs-low ramp guidance. Capture rail/CS/RESET/PWDN/GPIO timing through cold start and supply loss. Validate existing sequence before adding supervisors or isolation. A passive network does not establish an actual waveform. [S1 §11.1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "F1",
+    "Category": "Analog — amplifiers",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**F1 — Amplifier supply span exceeds or falls below its allowed limits.**<br>**Why it matters:** Internal amplifiers require a valid analog supply span.<br>**V0 components:** U1/U2 internal PGA/RLD.<br>**V0 finding:** Analog supply has no valid source; numeric voltage on +3.3VA unknown.",
+    "V1_4": "**CANNOT VERIFY.** AVDD/AVDD1 now connect to nominal 3.3 V and AVSS/AVSS1 to /GND. H2 closes the source connection fault. V0 numerical floating voltage and V1.4 actual loaded span remain unmeasured, so a numerical F1 comparison is unresolved. Measure span against 2.7–5.25 V at both ADCs. No amplifier replacement; no duplicate supply-fault count. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "F2",
+    "Category": "Analog — amplifiers",
+    "Classification": "NOT FOUND",
+    "Problem": "**F2 — Amplifier positive/negative supply pins are reversed.**<br>**Why it matters:** Reversed positive/negative supplies can prevent operation or cause damage.<br>**V0 components:** U1/U2 internal analog circuits.<br>**V0 finding:** AVSS is grounded; AVDD is source-free, not shown connected to a negative source.",
+    "V1_4": "**NOT FOUND.** AVDD=nominal 3.3 V and AVSS=GND. V0 had grounded AVSS and unpowered AVDD, not a deliberately reversed source. Pin identities/net polarity checked; no F2 correction."
+  },
+  {
+    "ID": "F3",
+    "Category": "Analog — amplifiers",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**F3 — Amplifier input is outside its common-mode range.**<br>**Why it matters:** Common-mode is the input pair’s average voltage; even a small differential signal can be invalid if that average is outside PGA limits.<br>**V0 components:** U1/U2 input pairs and optional RLD.<br>**V0 finding:** Electrode common-mode/DC offsets and enabled bias configuration unknown.",
+    "V1_4": "**CANNOT VERIFY.** Removed RLD/reference-electrode branches do not establish actual electrode common-mode or a measured fault/fix. Specify input average, differential amplitude, DC offsets and programmed gain/reference. At 3.3 V, gain 6 and |VD|=0.4 V, PGA common-mode requires 1.4 V<VCM<1.9 V, with additional full-scale/rail constraints. Measure actual inputs; select bias correction only if needed. No independent RLD redesign. [S1 §9.3.1.5](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "F4",
+    "Category": "Analog — amplifiers",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**F4 — Amplifier oscillates/rings because of inadequate stability or phase margin.**<br>**Why it matters:** An unstable feedback loop can oscillate or ring.<br>**V0 components:** U1 RLD loop; internal amplifiers.<br>**V0 finding:** No loop model or measured response; 1 MΩ∥1.5 nF feedback does not certify or disprove stability.",
+    "V1_4": "**CANNOT VERIFY.** External RLD loop removed; optional RLD/WCT/PACE must remain off. No V0 oscillation or V1.4 instability measurement exists. No compensation change based on deletion of a circuit. If an enabled loop is required, test its actual load/model. Board LDO/capacitor qualification is addressed separately. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "F5",
+    "Category": "Analog — amplifiers",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**F5 — Amplifier output is clipped, saturated or overloaded.**<br>**Why it matters:** Input offset/signal can exceed gain-dependent headroom; an output can also be overloaded.<br>**V0 components:** U1/U2 PGA and RLD.<br>**V0 finding:** Actual input magnitude/DC offset, gain/reference, RLD enable and load unknown.",
+    "V1_4": "**CANNOT VERIFY.** Schematic gives bounded bench-source/gain examples, but actual input/firmware data are absent. Enable/settle/read back both 2.4 V references and gain settings. At gain 6 the nominal reference full scale is ±0.4 V, subject also to PGA common-mode limits. Measure full input DC plus signal; alter gain/bias only after showing a violation. No separate clipping or overload proven. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "G1",
+    "Category": "Analog — power multiplexers",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**G1 — Power multiplexer output remains off.**<br>**Why it matters:** This condition requires the controlled power-multiplexer arrangement described by Ambrflow.<br>**V0 components:** None.<br>**V0 finding:** No power multiplexer.",
+    "V1_4": "**NOT APPLICABLE.** Neither revision contains a power multiplexer. Reference-board USB diodes are not a controlled-priority mux. Complete inventories checked; no mux component or new architecture justified."
+  },
+  {
+    "ID": "G2",
+    "Category": "Analog — power multiplexers",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**G2 — Priority input is never used.**<br>**Why it matters:** This condition requires the controlled power-multiplexer arrangement described by Ambrflow.<br>**V0 components:** None.<br>**V0 finding:** No power multiplexer.",
+    "V1_4": "**NOT APPLICABLE.** Neither revision contains a power multiplexer. Reference-board USB diodes are not a controlled-priority mux. Complete inventories checked; no mux component or new architecture justified."
+  },
+  {
+    "ID": "G3",
+    "Category": "Analog — power multiplexers",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**G3 — A power-multiplexer input is rejected incorrectly.**<br>**Why it matters:** This condition requires the controlled power-multiplexer arrangement described by Ambrflow.<br>**V0 components:** None.<br>**V0 finding:** No power multiplexer.",
+    "V1_4": "**NOT APPLICABLE.** Neither revision contains a power multiplexer. Reference-board USB diodes are not a controlled-priority mux. Complete inventories checked; no mux component or new architecture justified."
+  },
+  {
+    "ID": "G4",
+    "Category": "Analog — power multiplexers",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**G4 — Expected power-multiplexer failover does not work.**<br>**Why it matters:** This condition requires the controlled power-multiplexer arrangement described by Ambrflow.<br>**V0 components:** None.<br>**V0 finding:** No power multiplexer.",
+    "V1_4": "**NOT APPLICABLE.** Neither revision contains a power multiplexer. Reference-board USB diodes are not a controlled-priority mux. Complete inventories checked; no mux component or new architecture justified."
+  },
+  {
+    "ID": "G5",
+    "Category": "Analog — power multiplexers",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**G5 — A power-multiplexer control pin floats.**<br>**Why it matters:** This condition requires the controlled power-multiplexer arrangement described by Ambrflow.<br>**V0 components:** None.<br>**V0 finding:** No power multiplexer.",
+    "V1_4": "**NOT APPLICABLE.** Neither revision contains a power multiplexer. Reference-board USB diodes are not a controlled-priority mux. Complete inventories checked; no mux component or new architecture justified."
+  },
+  {
+    "ID": "G6",
+    "Category": "Analog — power multiplexers",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**G6 — A power-multiplexer input is disconnected.**<br>**Why it matters:** This condition requires the controlled power-multiplexer arrangement described by Ambrflow.<br>**V0 components:** None.<br>**V0 finding:** No power multiplexer.",
+    "V1_4": "**NOT APPLICABLE.** Neither revision contains a power multiplexer. Reference-board USB diodes are not a controlled-priority mux. Complete inventories checked; no mux component or new architecture justified."
+  },
+  {
+    "ID": "G7",
+    "Category": "Analog — power multiplexers",
+    "Classification": "NOT APPLICABLE",
+    "Problem": "**G7 — Power-multiplexer output rail specifies a voltage no input can provide.**<br>**Why it matters:** This condition requires the controlled power-multiplexer arrangement described by Ambrflow.<br>**V0 components:** None.<br>**V0 finding:** No power multiplexer.",
+    "V1_4": "**NOT APPLICABLE.** Neither revision contains a power multiplexer. Reference-board USB diodes are not a controlled-priority mux. Complete inventories checked; no mux component or new architecture justified."
+  },
+  {
+    "ID": "H1",
+    "Category": "Analog — wiring",
+    "Classification": "NOT FOUND",
+    "Problem": "**H1 — An IC has no valid ground connection.**<br>**Why it matters:** An IC needs a valid supply return; a ground name alone is insufficient.<br>**V0 components:** U1/U2; U6; U4/U7.<br>**V0 finding:** Actual ADC DGND33/49/51, AVSS, MCU GND1/40/41 and LDO GND2 all connect to BT1.2 on AGND/GND. The separately named DGND control island is not an actual V0 IC supply-ground connection.",
+    "V1_4": "**NOT FOUND.** U1/U2 real AVSS/DGND and U3 GND22/23/24/44 all share /GND. V0 real IC supply grounds also reached battery negative; its separate DGND control island was a J3 fault. No H1 fault in either comparison revision. Keep common return; no added ground architecture."
+  },
+  {
+    "ID": "H2",
+    "Category": "Analog — wiring",
+    "Classification": "FIXED",
+    "Problem": "**H2 — A power rail is disconnected from all valid sources.**<br>**Why it matters:** A source-free analog rail cannot deliberately power the ADCs.<br>**V0 components:** U1/U2 +3.3VA.<br>**V0 finding:** Analog rail contains only ADC positive-supply pins and decouplers; no battery/regulator output.",
+    "V1_4": "**FIXED.** U1/U2 AVDD19/21/22/54/56/59 and DVDD48/50 all reach /+3.3V via U3.1/.2; actual returns reach U3 ground. Source is inside the complete USB-powered board. No missing rail connection remains. Confirm actual board and measure loaded rail. Do not add another regulator or PWR_FLAG solely because the carrier symbol omits internal power-output modeling. V0 floating voltage is not assumed 0 V. [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf)"
+  },
+  {
+    "ID": "I1",
+    "Category": "Mixed-signal",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**I1 — Logic voltage is too low/high for the receiving component.**<br>**Why it matters:** Logic must meet receiver thresholds under actual loading.<br>**V0 components:** U6↔U1/U2; floating DGND straps.<br>**V0 finding:** At nominal common 3.3 V, normal SPI/DRDY thresholds are compatible. DGND control island has no guaranteed logic-low reference (J3).",
+    "V1_4": "**CANNOT VERIFY.** All interfaces share nominal 3.3 V/GND. ADS→ESP nominal static margins are 0.425 V. ESP minimum VOH and ADS minimum VIH both equal 0.8×3.3=2.64 V, with no extra guaranteed high margin; 10 kΩ pulls load highs by≈0.33 mA. Measure loaded levels at ADC receivers and check drive settings/test conditions before changing pulls or adding translators. Compatible nominal labels do not prove dynamic operation; equality is not a measured failure. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf), [S2](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)"
+  },
+  {
+    "ID": "I2",
+    "Category": "Mixed-signal",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**I2 — A digital signal edge is too slow for its interface.**<br>**Why it matters:** Slow edges can violate serial timing.<br>**V0 components:** SPI/START/RESET/DRDY.<br>**V0 finding:** No measured edge rate or total load supplied; no large external RC on SPI nets.",
+    "V1_4": "**CANNOT VERIFY.** No large external bus RC; bias resistors and changed GPIOs do not prove edge compliance. Measure SCLK/DIN/DOUT at receivers under selected speed/loading and compare timing. SCLK is Schmitt-triggered. No buffer/series part justified by schematic names alone. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "I3",
+    "Category": "Mixed-signal",
+    "Classification": "NOT FOUND",
+    "Problem": "**I3 — An open-drain signal lacks a pull-up or has an excessively strong pull-up.**<br>**Why it matters:** An open-drain output needs a suitable pull-up.<br>**V0 components:** U1/U2 DOUT43 and DRDY47.<br>**V0 finding:** These are driven outputs, not open-drain lines needing generic pull-ups. No power-good line exists.",
+    "V1_4": "**NOT FOUND.** DOUT/DRDY are driven outputs. CS pull-ups define input deselection, not an open-drain DOUT/DRDY requirement. Reference-board reset sink has its own 10 kΩ pull-up. No missing/excessive relevant pull-up found. Do not add generic DRDY pulls; excluded general sink-capability analysis not performed. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf), [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf)"
+  },
+  {
+    "ID": "I4",
+    "Category": "Mixed-signal",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**I4 — ADC source impedance/settling prevents valid acquisition.**<br>**Why it matters:** Source impedance/settling must match this ADC’s architecture and accuracy needs.<br>**V0 components:** U1/U2 input 2 kΩ/620 pF networks.<br>**V0 finding:** Actual electrode impedance versus frequency and data-rate/gain/settling requirements absent.",
+    "V1_4": "**CANNOT VERIFY.** Same 2 kΩ/620 pF lead filters; ADS1298 has CMOS PGA inputs ahead of delta-sigma conversion, not a directly driven generic SAR sample-and-hold. RC=1.24 µs, simple pole≈128.4 kHz; 1.2 nA through the drawn 2 kΩ alone gives 2.4 µV. These do not include electrode impedance or prove 24-bit settling. Obtain actual source/gain/data-rate and test settled output. No input buffer or filter-value change justified. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "I5",
+    "Category": "Mixed-signal",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**I5 — A slow signal enters a non-hysteretic input or crosses threshold repeatedly.**<br>**Why it matters:** Slow/noisy threshold crossings can repeatedly trigger an input without adequate hysteresis.<br>**V0 components:** Control inputs; U6 EN RC.<br>**V0 finding:** No signal waveform demonstrating a slow/chattering crossing. Module EN has its RC network.",
+    "V1_4": "**CANNOT VERIFY.** Defined reset bias does not certify clean ramps. SCLK has documented hysteresis (different rising/falling thresholds); U3’s EN RC is onboard. Measure relevant ramp/noise crossings before adding Schmitt buffers or changing RC values. No chatter waveform established. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf), [S3](https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf)"
+  },
+  {
+    "ID": "J1",
+    "Category": "Firmware — reset conditions",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**J1 — A boot-strapping pin floats or is held at the wrong level.**<br>**Why it matters:** A wrong boot/debug strap can select unintended behavior.<br>**V0 components:** U6 GPIO0 pin 27; GPIO3 pin 15; GPIO45 pin 26; GPIO46 pin 16.<br>**V0 finding:** GPIO0/45/46 have defined internal default pulls. GPIO3 has no pull, but its effect depends on eFuse-selected JTAG policy; normal boot failure is unproven.",
+    "V1_4": "**CANNOT VERIFY.** R41=10 kΩ now pulls U3 GPIO3 pin 13 high, defining USB JTAG when strap-controlled. Default/forced eFuse modes still determine ownership; the resistor cannot override forced pad JTAG. GPIO39–42 now serve CS2/MISO/DRDY and overlap JTAG pads. Read eFuses, reserve pins and verify cold boot; do not burn eFuses automatically. Physical floating strap improved, but no V0 functional boot failure was proven. [S2](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)"
+  },
+  {
+    "ID": "J2",
+    "Category": "Firmware — reset conditions",
+    "Classification": "FIXED",
+    "Problem": "**J2 — A switch/enable relies only on an uncertain controller reset pull state.**<br>**Why it matters:** ADC power-down/enable needs a defined state before firmware.<br>**V0 components:** U6 GPIO6→U1/U2 PWDN35.<br>**V0 finding:** ADC power-down/enable depends on a GPIO with no guaranteed reset bias; no external pull.",
+    "V1_4": "**FIXED.** R35=10 kΩ now pulls both PWDN35 low while U3 GPIO7 is high impedance; R34 similarly biases RESET36 and R33 START38. Retain pulls; hold MCU reset and verify levels. Two 10 µA leakage limits through 10 kΩ give≤0.20 V versus VIL=0.66 V at 3.3 V. This fixes missing hardware bias; a pull does not override actively driven warm-reset states. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf), [S2](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)"
+  },
+  {
+    "ID": "J3",
+    "Category": "Firmware — reset conditions",
+    "Classification": "FIXED",
+    "Problem": "**J3 — A transistor gate/regulator enable/control input floats during controller idle/reset.**<br>**Why it matters:** Undefined controls can make power/reset/clock selection unpredictable.<br>**V0 components:** U4/U7 EN; U1/U2 controls, CLKSEL and DGND straps.<br>**V0 finding:** Floating LDO enable, unreferenced DGND strap island, ADC reset/start/enable GPIO nets, and CLK37 tied only to CLKSEL52.",
+    "V1_4": "**FIXED.** Old floating LDO /EN removed; intended low straps now share real /GND. R33–R37=10 kΩ define START/RESET/PWDN/MOSI/SCLK and R39/R40 define CS high. U1 CLKSEL52=3V3, U2 CLKSEL52=GND; both CLK37 join /ADC_CLK. No missing passive bias/clock connection remains for these V0 omissions. Firmware must enable U1 CLK_EN and validate master-first reset/recovery. Check held-reset defaults and measure clock at both chips. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf), [S2](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)"
+  },
+  {
+    "ID": "J4",
+    "Category": "Firmware — reset conditions",
+    "Classification": "NOT FOUND",
+    "Problem": "**J4 — A controller input exceeds its maximum input voltage.**<br>**Why it matters:** An MCU input must stay within its local supply-referenced voltage limits.<br>**V0 components:** U6 MISO20/DRDY12.<br>**V0 finding:** Nominal 3.3 V ADC outputs do not show overvoltage; actual fault-state waveforms absent.",
+    "V1_4": "**NOT FOUND.** MISO U3.37 and DRDY U3.38/.39 receive ADC outputs on the same 3.3 V rail/ground. No 5 V GPIO connection or excessive static input voltage found in either revision. Board USB5 V is an internal power input, not GPIO drive. No level shifter justified by these connections; startup/overshoot remain measurement checks under E9/L2/I2."
+  },
+  {
+    "ID": "K1",
+    "Category": "Firmware — operating states",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**K1 — A GPIO exceeds its permitted current.**<br>**Why it matters:** An excessive load or incompatible driven state can overstress a GPIO.<br>**V0 components:** U6 ADC-control GPIOs; ADS GPIO pins 42/44/45/46.<br>**V0 finding:** No heavy DC GPIO load shown; actual directions, drive and fault-state currents unspecified.",
+    "V1_4": "**CANNOT VERIFY.** Bias currents are≈0.33 mA when driving against 10 kΩ, with no demonstrated overload. Actual GPIO/ADC modes unknown. Grounded ADS GPIO42/44/45/46 must remain inputs/output-low; optional modes on tied analog pins must stay off. Inspect/read back configuration and restart states. No driver/series resistor justified from a hypothetical misconfiguration."
+  },
+  {
+    "ID": "K2",
+    "Category": "Firmware — operating states",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**K2 — Two output pins drive incompatible levels onto the same net.**<br>**Why it matters:** Opposing active outputs can contend.<br>**V0 components:** U1.43 MISO; U2.43→U1.41.<br>**V0 finding:** Daisy path keeps ADC DOUT pins on different nets. No hard two-DOUT short.",
+    "V1_4": "**CANNOT VERIFY.** U1/U2 DOUT43 share /SPI_MISO with U3 GPIO40. This is supported with separate CS and high-impedance deselected DOUT; R39/R40 default deselection. Actual firmware exclusivity and JTAG/input ownership are unverified. Keep shared bus; configure one CS low at a time and GPIO40–42 as inputs. Scope both CS/MISO during boot/reset/reads and inspect eFuses. ERC output/output alone is not proof of conflict. [S1 §9.4.2.1](https://www.ti.com/lit/ds/symlink/ads1298.pdf), [S2](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)"
+  },
+  {
+    "ID": "K3",
+    "Category": "Firmware — operating states",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**K3 — The controller drives a component whose supply is off.**<br>**Why it matters:** Driving an unpowered receiver can inject input current.<br>**V0 components:** U6→U1/U2.<br>**V0 finding:** Analog supply has no source, but digital supply is nominally present; no actual GPIO-high/off-state timing supplied.",
+    "V1_4": "**CANNOT VERIFY.** Common always-connected MCU/ADC3V3 removes separate carrier power domains. PWDN is an operating control, not a drawn DVDD switch. Actual ramp/reset combinations are unmeasured. Validate actual supply/control timing; do not equate power-down mode with physically removed DVDD or add isolation without a demonstrated state. [S1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  },
+  {
+    "ID": "L1",
+    "Category": "Firmware — state transitions",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**L1 — A state change causes a supply dip or brownout reset.**<br>**Why it matters:** A load transition can lower the rail and cause brownout, a reset due to low supply.<br>**V0 components:** BT1/LDOs/U6.<br>**V0 finding:** No state-transition/current/supply waveform or source-impedance model.",
+    "V1_4": "**CANNOT VERIFY.** Wi-Fi and ADCs share the DevKit rail; actual source/load budget and transition traces remain absent. Capture 3V3 at U3/ADCs, LDO input and reset reason under actual Wi-Fi/ADC changes. No brownout event established; do not add bulk capacitance or a separate rail before measuring. C6’s 5% threshold is 165 mV."
+  },
+  {
+    "ID": "L2",
+    "Category": "Firmware — state transitions",
+    "Classification": "CANNOT VERIFY",
+    "Problem": "**L2 — Controller drives an input high before receiver supply is valid.**<br>**Why it matters:** A GPIO high before receiver power is valid can violate sequencing.<br>**V0 components:** U6 controls→ADS1298.<br>**V0 finding:** Reset GPIO default levels are not guaranteed; no timing capture proves a high-before-valid event.",
+    "V1_4": "**CANNOT VERIFY.** R33–R37 give low defaults while GPIOs are high impedance; common rails reduce supply differences. CS pulls rise with the rail; precise ramp behavior and warm-reset active states remain unverified. Capture rails/CS/RESET/PWDN/forward GPIOs and validate startup note. Consult TI about CS ramp guidance if unresolved; no new control IC justified by an unobserved transient. [S1 §11.1](https://www.ti.com/lit/ds/symlink/ads1298.pdf)"
+  }
+]

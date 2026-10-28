@@ -1,0 +1,20 @@
+sandbox_mode = "workspace-write"
+approval_policy = "never"
+
+[sandbox_workspace_write]
+network_access = false
+
+[mcp_servers.kicad]
+command = "/Users/home/.local/bin/uvx"
+args = ["kicad-mcp-pro"]
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+
+[mcp_servers.kicad.env]
+KICAD_MCP_WORKSPACE_ROOT = "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.3"
+KICAD_MCP_PROJECT_DIR = "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.3"
+KICAD_MCP_PROJECT_FILE = "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.3/open-semg-16-v1.2.kicad_pro"
+KICAD_MCP_SCH_FILE = "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.3/open-semg-16-v1.2.kicad_sch"
+KICAD_MCP_KICAD_CLI = "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli"
+KICAD_MCP_PROFILE = "build"
+KICAD_MCP_OPERATING_MODE = "write"

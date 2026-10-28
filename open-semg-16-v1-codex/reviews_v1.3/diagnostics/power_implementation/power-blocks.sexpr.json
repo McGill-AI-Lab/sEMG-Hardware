@@ -1,0 +1,433 @@
+{
+  "lib_definitions": {
+    "Device:R": "(symbol \"Device:R\"\n\t\t(pin_numbers\n\t\t\t(hide yes)\n\t\t)\n\t\t(pin_names\n\t\t\t(offset 0)\n\t\t)\n\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(in_pos_files yes)\n\t\t(duplicate_pin_numbers_are_jumpers no)\n\t\t(property \"Reference\" \"R\"\n\t\t\t(at 2.032 0 90)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Value\" \"R\"\n\t\t\t(at 0 0 90)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Footprint\" \"\"\n\t\t\t(at -1.778 0 90)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Datasheet\" \"\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Description\" \"Resistor\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"ki_keywords\" \"R res resistor\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"ki_fp_filters\" \"R_*\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(symbol \"R_0_1\"\n\t\t\t(rectangle\n\t\t\t\t(start -1.016 -2.54)\n\t\t\t\t(end 1.016 2.54)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0.254)\n\t\t\t\t\t(type default)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(symbol \"R_1_1\"\n\t\t\t(pin passive line\n\t\t\t\t(at 0 3.81 270)\n\t\t\t\t(length 1.27)\n\t\t\t\t(name \"\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"1\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin passive line\n\t\t\t\t(at 0 -3.81 90)\n\t\t\t\t(length 1.27)\n\t\t\t\t(name \"\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"2\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(embedded_fonts no)\n\t)",
+    "Device:C": "(symbol \"Device:C\"\n\t\t(pin_numbers\n\t\t\t(hide yes)\n\t\t)\n\t\t(pin_names\n\t\t\t(offset 0.254)\n\t\t)\n\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(in_pos_files yes)\n\t\t(duplicate_pin_numbers_are_jumpers no)\n\t\t(property \"Reference\" \"C\"\n\t\t\t(at 0.635 2.54 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left)\n\t\t\t)\n\t\t)\n\t\t(property \"Value\" \"C\"\n\t\t\t(at 0.635 -2.54 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left)\n\t\t\t)\n\t\t)\n\t\t(property \"Footprint\" \"\"\n\t\t\t(at 0.9652 -3.81 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Datasheet\" \"\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Description\" \"Unpolarized capacitor\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"ki_keywords\" \"cap capacitor\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"ki_fp_filters\" \"C_*\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(symbol \"C_0_1\"\n\t\t\t(polyline\n\t\t\t\t(pts\n\t\t\t\t\t(xy -2.032 0.762) (xy 2.032 0.762)\n\t\t\t\t)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0.508)\n\t\t\t\t\t(type default)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(polyline\n\t\t\t\t(pts\n\t\t\t\t\t(xy -2.032 -0.762) (xy 2.032 -0.762)\n\t\t\t\t)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0.508)\n\t\t\t\t\t(type default)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(symbol \"C_1_1\"\n\t\t\t(pin passive line\n\t\t\t\t(at 0 3.81 270)\n\t\t\t\t(length 2.794)\n\t\t\t\t(name \"\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"1\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin passive line\n\t\t\t\t(at 0 -3.81 90)\n\t\t\t\t(length 2.794)\n\t\t\t\t(name \"\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"2\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(embedded_fonts no)\n\t)",
+    "Device:L": "(symbol \"Device:L\"\n\t\t(pin_numbers\n\t\t\t(hide yes)\n\t\t)\n\t\t(pin_names\n\t\t\t(offset 1.016)\n\t\t\t(hide yes)\n\t\t)\n\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(in_pos_files yes)\n\t\t(duplicate_pin_numbers_are_jumpers no)\n\t\t(property \"Reference\" \"L\"\n\t\t\t(at -1.27 0 90)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Value\" \"L\"\n\t\t\t(at 1.905 0 90)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Footprint\" \"\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Datasheet\" \"\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Description\" \"Inductor\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"ki_keywords\" \"inductor choke coil reactor magnetic\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"ki_fp_filters\" \"Choke_* *Coil* Inductor_* L_*\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(symbol \"L_0_1\"\n\t\t\t(arc\n\t\t\t\t(start 0 2.54)\n\t\t\t\t(mid 0.6323 1.905)\n\t\t\t\t(end 0 1.27)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0)\n\t\t\t\t\t(type default)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(arc\n\t\t\t\t(start 0 1.27)\n\t\t\t\t(mid 0.6323 0.635)\n\t\t\t\t(end 0 0)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0)\n\t\t\t\t\t(type default)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(arc\n\t\t\t\t(start 0 0)\n\t\t\t\t(mid 0.6323 -0.635)\n\t\t\t\t(end 0 -1.27)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0)\n\t\t\t\t\t(type default)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(arc\n\t\t\t\t(start 0 -1.27)\n\t\t\t\t(mid 0.6323 -1.905)\n\t\t\t\t(end 0 -2.54)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0)\n\t\t\t\t\t(type default)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(symbol \"L_1_1\"\n\t\t\t(pin passive line\n\t\t\t\t(at 0 3.81 270)\n\t\t\t\t(length 1.27)\n\t\t\t\t(name \"1\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"1\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin passive line\n\t\t\t\t(at 0 -3.81 90)\n\t\t\t\t(length 1.27)\n\t\t\t\t(name \"2\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"2\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(embedded_fonts no)\n\t)",
+    "Regulator_Linear:LT3042xMSE": "(symbol \"Regulator_Linear:LT3042xMSE\"\n\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(in_pos_files yes)\n\t\t(duplicate_pin_numbers_are_jumpers no)\n\t\t(property \"Reference\" \"U\"\n\t\t\t(at -6.35 6.35 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Value\" \"LT3042xMSE\"\n\t\t\t(at 1.27 6.35 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left)\n\t\t\t)\n\t\t)\n\t\t(property \"Footprint\" \"Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm\"\n\t\t\t(at 0 8.255 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Datasheet\" \"https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Description\" \"200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"ki_keywords\" \"linear voltage regulator low-noise\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"ki_fp_filters\" \"MSOP*1EP*3x3mm*P0.5mm*\"\n\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(symbol \"LT3042xMSE_0_1\"\n\t\t\t(rectangle\n\t\t\t\t(start -7.62 5.08)\n\t\t\t\t(end 7.62 -7.62)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0.254)\n\t\t\t\t\t(type default)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type background)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(symbol \"LT3042xMSE_1_1\"\n\t\t\t(pin power_in line\n\t\t\t\t(at -10.16 2.54 0)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"IN\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"1\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin passive line\n\t\t\t\t(at -10.16 2.54 0)\n\t\t\t\t(length 2.54)\n\t\t\t\t(hide yes)\n\t\t\t\t(name \"IN\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"2\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin input line\n\t\t\t\t(at -10.16 0 0)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"EN/UV\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"3\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin open_collector line\n\t\t\t\t(at 10.16 -5.08 180)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"PG\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"4\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin passive line\n\t\t\t\t(at -10.16 -2.54 0)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"ILIM\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"5\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin input line\n\t\t\t\t(at 10.16 -2.54 180)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"PGFB\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"6\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin passive line\n\t\t\t\t(at -10.16 -5.08 0)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"SET\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"7\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin power_in line\n\t\t\t\t(at 0 -10.16 90)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"GND\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"8\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin input line\n\t\t\t\t(at 10.16 0 180)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"OUTS\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"9\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin power_out line\n\t\t\t\t(at 10.16 2.54 180)\n\t\t\t\t(length 2.54)\n\t\t\t\t(name \"OUT\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"10\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(pin passive line\n\t\t\t\t(at 0 -10.16 90)\n\t\t\t\t(length 2.54)\n\t\t\t\t(hide yes)\n\t\t\t\t(name \"GND\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(number \"11\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(embedded_fonts no)\n\t)",
+    "V13_Power:TPS63802DLAR": "(symbol \"V13_Power:TPS63802DLAR\"\n      (pin_names (offset 0.508)) (exclude_from_sim no) (in_bom yes) (on_board yes)\n      (property \"Reference\" \"U\" (at -7.62 15.24 0) (effects (font (size 1.27 1.27))))\n      (property \"Value\" \"TPS63802DLAR\" (at 0 -16.51 0) (effects (font (size 1.27 1.27))))\n      (property \"Footprint\" \"\" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))\n      (property \"Datasheet\" \"https://www.ti.com/lit/ds/symlink/tps63802.pdf\" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))\n      (property \"Description\" \"2A buck-boost; 10-pin TI DLA0010A HotRod; verified pin map SLVSEU9D p4\" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))\n      (symbol \"TPS63802DLAR_0_1\" (rectangle (start -10.16 10.16) (end 10.16 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))\n      (symbol \"TPS63802DLAR_1_1\" (pin power_in line (at -12.7 7.62 0) (length 2.54) (name \"VIN\" (effects (font (size 1.0 1.0)))) (number \"10\" (effects (font (size 1.0 1.0))))) (pin input line (at -12.7 2.54 0) (length 2.54) (name \"EN\" (effects (font (size 1.0 1.0)))) (number \"1\" (effects (font (size 1.0 1.0))))) (pin input line (at -12.7 -2.54 0) (length 2.54) (name \"MODE\" (effects (font (size 1.0 1.0)))) (number \"2\" (effects (font (size 1.0 1.0))))) (pin power_in line (at -2.54 -12.7 90) (length 2.54) (name \"AGND\" (effects (font (size 1.0 1.0)))) (number \"3\" (effects (font (size 1.0 1.0))))) (pin power_in line (at 2.54 -12.7 90) (length 2.54) (name \"GND\" (effects (font (size 1.0 1.0)))) (number \"8\" (effects (font (size 1.0 1.0))))) (pin input line (at 12.7 -2.54 180) (length 2.54) (name \"FB\" (effects (font (size 1.0 1.0)))) (number \"4\" (effects (font (size 1.0 1.0))))) (pin open_collector line (at 12.7 -7.62 180) (length 2.54) (name \"PG\" (effects (font (size 1.0 1.0)))) (number \"5\" (effects (font (size 1.0 1.0))))) (pin power_out line (at 12.7 7.62 180) (length 2.54) (name \"VOUT\" (effects (font (size 1.0 1.0)))) (number \"6\" (effects (font (size 1.0 1.0))))) (pin passive line (at -5.08 12.7 270) (length 2.54) (name \"L1\" (effects (font (size 1.0 1.0)))) (number \"9\" (effects (font (size 1.0 1.0))))) (pin passive line (at 5.08 12.7 270) (length 2.54) (name \"L2\" (effects (font (size 1.0 1.0)))) (number \"7\" (effects (font (size 1.0 1.0))))))\n      (embedded_fonts no))"
+  },
+  "items": "(symbol (lib_id \"V13_Power:TPS63802DLAR\") (at 119.38 449.58 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"71475f53-e570-554d-8a14-94acebfa3000\")\n        (property \"Reference\" \"U6\" (at 113.38 431.58 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"TPS63802DLAR MAIN 3.3V\" (at 113.38 434.58 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"\" (at 119.38 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"https://www.ti.com/lit/ds/symlink/tps63802.pdf\" (at 119.38 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TPS63802DLAR\" (at 119.38 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Texas Instruments\" (at 119.38 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Footprint_Requirement\" \"TI DLA0010A HotRod 4223750/D. No generic 10+EP substitute; exact local footprint required before PCB\" (at 119.38 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Operating_Requirement\" \"Bench input 3.0-4.2V; protected pack and cell-specific cutoff/inrush qualification before battery use\" (at 119.38 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"10\" (uuid \"9c1b1478-9c76-5ba0-bf81-3f010beec750\")) (pin \"1\" (uuid \"d5a2015b-4e0e-5830-8041-bd108023b30a\")) (pin \"2\" (uuid \"406f1b16-e09c-57af-a0ec-1635ab94c75a\")) (pin \"3\" (uuid \"ae13f4f3-5c84-5b9d-9188-98062a9a460b\")) (pin \"8\" (uuid \"4a4edeed-1482-5a01-bfe0-ecdb3f3cb1b3\")) (pin \"4\" (uuid \"6a7d99f8-469c-5e06-a5e0-2f1cd3c6dc21\")) (pin \"5\" (uuid \"dc16c9d6-1a36-5e1c-988c-62cb07bead1f\")) (pin \"6\" (uuid \"3d980678-ebc7-540e-aab1-d104c9b5e38e\")) (pin \"9\" (uuid \"a7c70b05-63ba-5be2-85fa-e716dbc29224\")) (pin \"7\" (uuid \"6b6f9eb8-f9c6-57c0-9d74-38be81141924\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"U6\") (unit 1)))))\n(wire (pts (xy 106.68 441.96) (xy 104.14 441.96)) (stroke (width 0) (type default)) (uuid \"7b6f6ac0-e73a-5a6b-ba4b-1be65069939c\"))\n(label \"SW_BAT_PROT\" (at 104.14 441.96 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"f4148f78-7568-53a2-a3ae-31d023d35a08\"))\n(wire (pts (xy 106.68 447.04) (xy 104.14 447.04)) (stroke (width 0) (type default)) (uuid \"d378cabd-cf35-5310-a053-fb532db6018c\"))\n(label \"MAIN_ENABLE\" (at 104.14 447.04 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"150a1b4a-3900-53f4-a5ba-88dfdb896a40\"))\n(wire (pts (xy 106.68 452.12) (xy 104.14 452.12)) (stroke (width 0) (type default)) (uuid \"fa49529b-1da0-5b32-a333-489cfecba288\"))\n(label \"SW_BAT_PROT\" (at 104.14 452.12 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"fd528c13-d123-5688-9142-541e428d8262\"))\n(wire (pts (xy 116.84 462.28) (xy 116.84 464.82)) (stroke (width 0) (type default)) (uuid \"d660d3a2-fa3c-5971-b0a2-effa7ff8d93b\"))\n(label \"AGND\" (at 116.84 464.82 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"5bb5d3c0-080e-5ef4-8f16-0d43a57538ef\"))\n(wire (pts (xy 121.92 462.28) (xy 121.92 464.82)) (stroke (width 0) (type default)) (uuid \"6790a4ae-88e5-5bad-8515-1e8344ebd7a4\"))\n(label \"AGND\" (at 121.92 464.82 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"a8ae90de-2b36-581a-8d24-1d9cfc30ed42\"))\n(wire (pts (xy 132.08 452.12) (xy 134.62 452.12)) (stroke (width 0) (type default)) (uuid \"f87fb1af-9b92-56f2-946d-ebf5d4f83b4b\"))\n(label \"MAIN_FB\" (at 134.62 452.12 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"6d2e0210-d4c3-52f1-9395-b427b568b5b1\"))\n(wire (pts (xy 132.08 457.2) (xy 134.62 457.2)) (stroke (width 0) (type default)) (uuid \"9339a0b1-d736-5169-a595-21a427b65e22\"))\n(label \"MAIN_PG\" (at 134.62 457.2 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"213308ed-387b-5cc0-857e-f7311fcb57d4\"))\n(wire (pts (xy 132.08 441.96) (xy 134.62 441.96)) (stroke (width 0) (type default)) (uuid \"f8ac73db-0c35-5200-b5c2-90fd92c6c3f2\"))\n(label \"MAIN_3V3\" (at 134.62 441.96 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"40472aed-f8fb-59d1-adf6-30d8339c4a35\"))\n(wire (pts (xy 114.3 436.88) (xy 114.3 434.34)) (stroke (width 0) (type default)) (uuid \"22cc1f72-d45b-5e3e-bac6-4e80ca549756\"))\n(label \"MAIN_SW1\" (at 114.3 434.34 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"88d5be94-49b4-5320-8d3f-cb086c65de2b\"))\n(wire (pts (xy 124.46 436.88) (xy 124.46 434.34)) (stroke (width 0) (type default)) (uuid \"4e68aa74-e1a9-533d-a1c4-a1ca9688a5df\"))\n(label \"MAIN_SW2\" (at 124.46 434.34 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"0df4b768-f0ce-5f9f-b278-fadd4056aa0b\"))\n(symbol (lib_id \"V13_Power:TPS63802DLAR\") (at 299.72 449.58 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"4ab4eb71-6950-5f52-8a1e-053cb98e772c\")\n        (property \"Reference\" \"U7\" (at 293.72 431.58 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"TPS63802DLAR AFE PRE 4.0V\" (at 293.72 434.58 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"\" (at 299.72 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"https://www.ti.com/lit/ds/symlink/tps63802.pdf\" (at 299.72 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TPS63802DLAR\" (at 299.72 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Texas Instruments\" (at 299.72 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Footprint_Requirement\" \"TI DLA0010A HotRod 4223750/D. No generic 10+EP substitute; exact local footprint required before PCB\" (at 299.72 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Operating_Requirement\" \"Bench input 3.0-4.2V; protected pack and cell-specific cutoff/inrush qualification before battery use\" (at 299.72 449.58 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"10\" (uuid \"5028393c-414a-554d-bd5d-46025d15d756\")) (pin \"1\" (uuid \"4f6a5aa6-8ae7-52ad-83c3-864ae4b8a25f\")) (pin \"2\" (uuid \"98705deb-40b8-53c0-922f-45ee0ee14119\")) (pin \"3\" (uuid \"89308e4d-5b0b-5507-8404-4fd4e0f79c4d\")) (pin \"8\" (uuid \"487f628d-4428-55ce-8a4b-dad39649a549\")) (pin \"4\" (uuid \"d5196f01-5e3f-5112-92f4-93743b6fdab8\")) (pin \"5\" (uuid \"1c6ea7ae-160f-5936-b41f-0803f970f47c\")) (pin \"6\" (uuid \"4abc8562-7c55-5ed2-ab43-ae107ca1a1d2\")) (pin \"9\" (uuid \"fdc8d352-6948-5724-ad7b-254df18dca64\")) (pin \"7\" (uuid \"7b2e907b-e165-572d-87ad-78d87ca4d54e\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"U7\") (unit 1)))))\n(wire (pts (xy 287.02 441.96) (xy 284.48 441.96)) (stroke (width 0) (type default)) (uuid \"d679686a-dc9f-5b67-98d7-5f4a2fec75da\"))\n(label \"SW_BAT_PROT\" (at 284.48 441.96 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"de48979f-fa33-5a64-8140-fabc28c1d8bb\"))\n(wire (pts (xy 287.02 447.04) (xy 284.48 447.04)) (stroke (width 0) (type default)) (uuid \"30cab66c-c53e-5198-9372-5abe07bd3c05\"))\n(label \"MAIN_PG\" (at 284.48 447.04 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"df22609a-9bb9-5226-8618-e793aa594833\"))\n(wire (pts (xy 287.02 452.12) (xy 284.48 452.12)) (stroke (width 0) (type default)) (uuid \"be53b72c-a5fd-5cbd-ab0d-7bb2f2dfcebf\"))\n(label \"SW_BAT_PROT\" (at 284.48 452.12 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"21aa980f-7a2b-501c-ae83-237afb61f735\"))\n(wire (pts (xy 297.18 462.28) (xy 297.18 464.82)) (stroke (width 0) (type default)) (uuid \"9aff7c16-0847-593c-9cfc-ee803fd5eb5a\"))\n(label \"AGND\" (at 297.18 464.82 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"0591eb7d-1f48-59de-8c94-b22c531f7f01\"))\n(wire (pts (xy 302.26 462.28) (xy 302.26 464.82)) (stroke (width 0) (type default)) (uuid \"d4169955-751a-5d0a-aca3-52f699943d22\"))\n(label \"AGND\" (at 302.26 464.82 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"1c4d1f8c-0520-5651-bf73-ffefab190c31\"))\n(wire (pts (xy 312.42 452.12) (xy 314.96 452.12)) (stroke (width 0) (type default)) (uuid \"39f99033-47c2-5397-8751-b1a3d699a8f6\"))\n(label \"AFE_PRE_FB\" (at 314.96 452.12 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"813ec0de-875d-549a-85df-a2d499d2d1b0\"))\n(no_connect (at 312.42 457.2) (uuid \"4a750b31-b34d-55fd-9fdf-72b152bc23ff\"))\n(wire (pts (xy 312.42 441.96) (xy 314.96 441.96)) (stroke (width 0) (type default)) (uuid \"52e11adb-5361-5051-8035-2efe78589a4a\"))\n(label \"AFE_PRE_4V0\" (at 314.96 441.96 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"628296e9-07f0-57c6-8232-d76c97ae61b7\"))\n(wire (pts (xy 294.64 436.88) (xy 294.64 434.34)) (stroke (width 0) (type default)) (uuid \"3f156091-bc9a-5818-9ac4-27928907b032\"))\n(label \"AFE_PRE_SW1\" (at 294.64 434.34 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"55cb5b48-f903-5788-84fc-23c8b8a67caf\"))\n(wire (pts (xy 304.8 436.88) (xy 304.8 434.34)) (stroke (width 0) (type default)) (uuid \"4d12daf4-fb1d-55f8-85e8-1c33849225b0\"))\n(label \"AFE_PRE_SW2\" (at 304.8 434.34 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"2825802e-7d33-5f24-8069-d7ab24daaa5f\"))\n(symbol (lib_id \"Device:L\") (at 119.38 411.48 90) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"40879223-1ac8-5b6a-bb6e-6016172a4c36\")\n        (property \"Reference\" \"L1\" (at 123.19 406.68 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"0.47uH XFL4015\" (at 123.19 409.48 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"\" (at 119.38 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 119.38 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"XFL4015-471MEC\" (at 119.38 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Coilcraft\" (at 119.38 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Footprint_Requirement\" \"Exact XFL4015 4x4mm manufacturer recommended land pattern required before PCB\" (at 119.38 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"TI TPS63802 reference candidate. At25C: Isat5.4A at20% L drop,6.6A at30%; verify all tolerance/current/temp corners and application eligibility\" (at 119.38 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"7adfa193-8328-57a8-b7ad-28f110901d21\")) (pin \"2\" (uuid \"a874c54f-942d-5152-9e44-d40d1f7e2d6d\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"L1\") (unit 1)))))\n(wire (pts (xy 115.57 411.48) (xy 118.11 411.48)) (stroke (width 0) (type default)) (uuid \"aa9f08da-f19a-5182-afc2-25dfed4389d4\"))\n(label \"MAIN_SW1\" (at 118.11 411.48 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"53223614-d01f-5436-8be6-a3d59daecc1a\"))\n(wire (pts (xy 123.19 411.48) (xy 120.65 411.48)) (stroke (width 0) (type default)) (uuid \"4b1ee55a-76ba-581b-b5b9-90548996fc5f\"))\n(label \"MAIN_SW2\" (at 120.65 411.48 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"be858678-398a-5bf5-871f-641380d94e5f\"))\n(symbol (lib_id \"Device:L\") (at 299.72 411.48 90) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"f3b8863b-ff14-5fe4-a849-a242d3a6ae26\")\n        (property \"Reference\" \"L2\" (at 303.53 406.68 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"0.47uH XFL4015\" (at 303.53 409.48 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"\" (at 299.72 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 299.72 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"XFL4015-471MEC\" (at 299.72 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Coilcraft\" (at 299.72 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Footprint_Requirement\" \"Exact XFL4015 4x4mm manufacturer recommended land pattern required before PCB\" (at 299.72 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"TI TPS63802 reference candidate. At25C: Isat5.4A at20% L drop,6.6A at30%; verify all tolerance/current/temp corners and application eligibility\" (at 299.72 411.48 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"566c36ee-ad7d-57c0-8b0e-88a7af53909a\")) (pin \"2\" (uuid \"ae31f7f2-22c4-58d4-b102-1d08a030c394\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"L2\") (unit 1)))))\n(wire (pts (xy 295.91 411.48) (xy 298.45 411.48)) (stroke (width 0) (type default)) (uuid \"631926ac-41fa-55a7-afcd-056021d12ceb\"))\n(label \"AFE_PRE_SW1\" (at 298.45 411.48 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"4b471d08-941d-5640-935f-876ca32027c4\"))\n(wire (pts (xy 303.53 411.48) (xy 300.99 411.48)) (stroke (width 0) (type default)) (uuid \"29393a39-c383-5a36-86d7-151830b92e2d\"))\n(label \"AFE_PRE_SW2\" (at 300.99 411.48 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"1c9ff216-46e4-5ece-b91c-d26ea00fc88e\"))\n(symbol (lib_id \"Device:C\") (at 59.69 439.42 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"60f7a3da-a40c-5de8-bd07-63d4e22e5974\")\n        (property \"Reference\" \"C58\" (at 63.5 434.62 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"10u 16V\" (at 63.5 437.42 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Capacitor_SMD:C_0805_2012Metric\" (at 59.69 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 59.69 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"GRM21BR61C106KE15L\" (at 59.69 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Murata\" (at 59.69 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"MAIN CIN: >=4uF effective at4.2V including tolerance/bias/temp; candidate data curve needed\" (at 59.69 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"3ab0ef97-3072-5a0a-ae0d-e7bb5b3b0ee9\")) (pin \"2\" (uuid \"2325ecaf-48d2-557a-a502-71d8193feed9\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"C58\") (unit 1)))))\n(wire (pts (xy 59.69 435.61) (xy 59.69 433.07)) (stroke (width 0) (type default)) (uuid \"12c4abf0-91ad-5139-9392-34c91e9f0629\"))\n(label \"SW_BAT_PROT\" (at 59.69 433.07 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"6a06296e-2fb1-5dff-956d-fb9906a15d47\"))\n(wire (pts (xy 59.69 443.23) (xy 59.69 445.77)) (stroke (width 0) (type default)) (uuid \"d8f7b87b-9a9b-5dd9-8fe6-b0d775b1f1db\"))\n(label \"AGND\" (at 59.69 445.77 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"e6957184-3f54-5dbc-a9c6-bf3877eef1db\"))\n(symbol (lib_id \"Device:C\") (at 180.34 439.42 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"3baa63d6-2701-5586-8db8-2104fc42c985\")\n        (property \"Reference\" \"C59\" (at 184.15 434.62 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"22u 16V\" (at 184.15 437.42 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Capacitor_SMD:C_0805_2012Metric\" (at 180.34 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 180.34 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"GRM21BR61C226ME44L\" (at 180.34 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Murata\" (at 180.34 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"MAIN COUT: >=7uF effective at3.3V; verify ESR/bias/temp; existing C57 additional\" (at 180.34 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"be6bf819-c99f-54f6-9ac7-25ec7bf91f01\")) (pin \"2\" (uuid \"896c448f-aaa2-56ae-b933-1fea103da219\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"C59\") (unit 1)))))\n(wire (pts (xy 180.34 435.61) (xy 180.34 433.07)) (stroke (width 0) (type default)) (uuid \"48465319-3692-5c7a-bfb8-c15bfac8d5bf\"))\n(label \"MAIN_3V3\" (at 180.34 433.07 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"322661cd-49eb-5149-989d-9d310c076f9f\"))\n(wire (pts (xy 180.34 443.23) (xy 180.34 445.77)) (stroke (width 0) (type default)) (uuid \"ca0ac730-aa0d-56b9-8ded-163c9d0aaa4b\"))\n(label \"AGND\" (at 180.34 445.77 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"86163a0c-64f6-5f52-94a6-8a55b4e80e99\"))\n(symbol (lib_id \"Device:C\") (at 240.03 439.42 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"a8e53adb-6293-5619-a518-08f7829b592c\")\n        (property \"Reference\" \"C60\" (at 243.84 434.62 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"10u 16V\" (at 243.84 437.42 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Capacitor_SMD:C_0805_2012Metric\" (at 240.03 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 240.03 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"GRM21BR61C106KE15L\" (at 240.03 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Murata\" (at 240.03 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"PRE CIN: >=4uF effective at4.2V including tolerance/bias/temp; candidate data curve needed\" (at 240.03 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"00b3b185-6a77-59dd-919d-08a16eaac21d\")) (pin \"2\" (uuid \"47afa2de-15a8-538b-b708-5a1bbe3d868f\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"C60\") (unit 1)))))\n(wire (pts (xy 240.03 435.61) (xy 240.03 433.07)) (stroke (width 0) (type default)) (uuid \"5328926e-922c-5207-a8e2-78270a2f0b6e\"))\n(label \"SW_BAT_PROT\" (at 240.03 433.07 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"e4b1ec2d-bf50-5feb-bce6-ae350ebc12f9\"))\n(wire (pts (xy 240.03 443.23) (xy 240.03 445.77)) (stroke (width 0) (type default)) (uuid \"1afd3ac9-33fb-5b9a-b883-f77319d92d08\"))\n(label \"AGND\" (at 240.03 445.77 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"6052099e-b1d9-58c2-9d95-3cdf255bd43f\"))\n(symbol (lib_id \"Device:C\") (at 359.41 439.42 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"ff933749-2506-5ec7-90d8-d6a527e3477f\")\n        (property \"Reference\" \"C61\" (at 363.22 434.62 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"22u 16V\" (at 363.22 437.42 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Capacitor_SMD:C_0805_2012Metric\" (at 359.41 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 359.41 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"GRM21BR61C226ME44L\" (at 359.41 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Murata\" (at 359.41 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"PRE COUT part1 of2x22uF nominal per TI VOUT>3.6V recommendation; >=7uF combined effective\" (at 359.41 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"8d37b9ce-b44e-5a8e-8a76-6a0f680cfd46\")) (pin \"2\" (uuid \"3c8cdd71-f5b0-50df-b6e4-a4c9ecc5b92f\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"C61\") (unit 1)))))\n(wire (pts (xy 359.41 435.61) (xy 359.41 433.07)) (stroke (width 0) (type default)) (uuid \"844f0e47-bfcf-5613-b100-2b9bf7238fd8\"))\n(label \"AFE_PRE_4V0\" (at 359.41 433.07 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"06a1bba4-dffd-5730-8e9b-88a30d8bc51b\"))\n(wire (pts (xy 359.41 443.23) (xy 359.41 445.77)) (stroke (width 0) (type default)) (uuid \"3cc83f7c-a497-53b2-a618-659e0567c03c\"))\n(label \"AGND\" (at 359.41 445.77 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"b1594501-c9d6-5e6b-9b28-922053e35d89\"))\n(symbol (lib_id \"Device:C\") (at 410.21 439.42 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"db1a1f27-5c44-58cd-8066-e7add3843efc\")\n        (property \"Reference\" \"C62\" (at 414.02 434.62 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"22u 16V\" (at 414.02 437.42 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Capacitor_SMD:C_0805_2012Metric\" (at 410.21 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 410.21 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"GRM21BR61C226ME44L\" (at 410.21 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Murata\" (at 410.21 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"PRE COUT part2 of2x22uF nominal; effective C/ESR/bias/temp to verify\" (at 410.21 439.42 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"aacc2229-e06c-5f78-8753-cf942120def8\")) (pin \"2\" (uuid \"ed24ebc4-685c-5e3c-84db-4065c6280307\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"C62\") (unit 1)))))\n(wire (pts (xy 410.21 435.61) (xy 410.21 433.07)) (stroke (width 0) (type default)) (uuid \"ef65cc06-1d86-5734-a4c5-f9e3f16710a6\"))\n(label \"AFE_PRE_4V0\" (at 410.21 433.07 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"3aec6230-55d0-55b2-85b7-4afe404e51f0\"))\n(wire (pts (xy 410.21 443.23) (xy 410.21 445.77)) (stroke (width 0) (type default)) (uuid \"4e3e0400-3dfe-504f-a7ed-3564617154b6\"))\n(label \"AGND\" (at 410.21 445.77 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"0d143da4-6b1b-5d11-a247-02e0122c6733\"))\n(symbol (lib_id \"Device:R\") (at 54.61 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"b4f42816-2702-5ed8-91ea-293551867577\")\n        (property \"Reference\" \"R39\" (at 58.42 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"56.0k 0.1%\" (at 58.42 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 54.61 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 54.61 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW060356K0BYTA\" (at 54.61 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 54.61 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 54.61 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 54.61 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"6b673bb9-9c6a-5e6f-a75c-f550ef014248\")) (pin \"2\" (uuid \"55378f25-e9d8-5805-b43f-0a9b73d92600\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R39\") (unit 1)))))\n(wire (pts (xy 54.61 491.49) (xy 54.61 488.95)) (stroke (width 0) (type default)) (uuid \"d19e29cf-b71c-57b3-b039-fcd698c0e692\"))\n(label \"MAIN_3V3\" (at 54.61 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"3bc83b4f-9236-53ea-9164-900d80748f6a\"))\n(wire (pts (xy 54.61 499.11) (xy 54.61 501.65)) (stroke (width 0) (type default)) (uuid \"6be1d962-bc80-5b1e-9d83-3449f725e315\"))\n(label \"MAIN_FB\" (at 54.61 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"af6b20f7-651c-545f-8e16-1b29cf6f1ff5\"))\n(symbol (lib_id \"Device:R\") (at 95.25 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"6f3cfb18-48d5-53ce-9724-d2834a5a7405\")\n        (property \"Reference\" \"R40\" (at 99.06 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"10.0k 0.1%\" (at 99.06 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 95.25 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 95.25 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW060310K0BYTA\" (at 95.25 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 95.25 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 95.25 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 95.25 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"555e87a7-403b-5a95-aaf1-b3bc0ac6c4b6\")) (pin \"2\" (uuid \"82f62fae-0bda-53a0-b62a-55fb4c7efe68\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R40\") (unit 1)))))\n(wire (pts (xy 95.25 491.49) (xy 95.25 488.95)) (stroke (width 0) (type default)) (uuid \"a38b9cdb-3bbc-5caf-bece-88db66441040\"))\n(label \"MAIN_FB\" (at 95.25 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"d85e4ed2-4ce9-5ce1-aff1-be2419c0ff07\"))\n(wire (pts (xy 95.25 499.11) (xy 95.25 501.65)) (stroke (width 0) (type default)) (uuid \"05ac88bb-ff5a-5e79-8fd5-28766b4f1349\"))\n(label \"AGND\" (at 95.25 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"35e7d842-6e34-5e84-9a78-c0b3f945aa97\"))\n(symbol (lib_id \"Device:R\") (at 139.7 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"91b57f31-0507-5dc2-9179-4221491b8e76\")\n        (property \"Reference\" \"R41\" (at 143.51 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"22.0k 0.1%\" (at 143.51 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 139.7 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 139.7 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW060322K0BYTA\" (at 139.7 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 139.7 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 139.7 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 139.7 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"9a8754cf-8356-5372-9cc2-f4a309d9a2e1\")) (pin \"2\" (uuid \"d027138b-f839-54c7-b3d0-38beb5dc812a\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R41\") (unit 1)))))\n(wire (pts (xy 139.7 491.49) (xy 139.7 488.95)) (stroke (width 0) (type default)) (uuid \"58436eba-c15c-596b-ad34-6cef51e0249f\"))\n(label \"SW_BAT_PROT\" (at 139.7 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"2346680f-5cdd-5d25-8209-31f6cd1dffcd\"))\n(wire (pts (xy 139.7 499.11) (xy 139.7 501.65)) (stroke (width 0) (type default)) (uuid \"d5dd53fb-1e96-5675-a738-fa27e5fa85ff\"))\n(label \"MAIN_ENABLE\" (at 139.7 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"8d2cc7d3-49b9-5e32-b890-808fd6b04cde\"))\n(symbol (lib_id \"Device:R\") (at 185.42 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"f0f503db-0d73-56ae-b8c0-3af2dc375541\")\n        (property \"Reference\" \"R42\" (at 189.23 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"10.0k 0.1%\" (at 189.23 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 185.42 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 185.42 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW060310K0BYTA\" (at 185.42 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 185.42 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 185.42 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 185.42 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"1d1b84f4-0db5-5455-865f-1f03373e26e4\")) (pin \"2\" (uuid \"24696f19-34b8-5691-8aa6-11a985c3ead3\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R42\") (unit 1)))))\n(wire (pts (xy 185.42 491.49) (xy 185.42 488.95)) (stroke (width 0) (type default)) (uuid \"3cc1e8bf-8740-5c44-b618-0fbfe5d9d56d\"))\n(label \"MAIN_ENABLE\" (at 185.42 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"925da345-b5b9-5e99-9f43-8c984c30a33c\"))\n(wire (pts (xy 185.42 499.11) (xy 185.42 501.65)) (stroke (width 0) (type default)) (uuid \"8ca047c1-3b75-5714-87c5-9a4453a25b0e\"))\n(label \"AGND\" (at 185.42 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"90e713e9-70a3-5fac-b9ed-fa295c9cb9e2\"))\n(symbol (lib_id \"Device:R\") (at 224.79 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"2cb772f6-80ac-5820-81cd-19a65af71c82\")\n        (property \"Reference\" \"R43\" (at 228.6 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"10.0k 0.1%\" (at 228.6 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 224.79 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 224.79 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW060310K0BYTA\" (at 224.79 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 224.79 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 224.79 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 224.79 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"435d67b4-361c-53d6-aa0e-5db644cbbc74\")) (pin \"2\" (uuid \"e7c9bfd7-9d76-53b8-917a-0a5f1d9779a4\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R43\") (unit 1)))))\n(wire (pts (xy 224.79 491.49) (xy 224.79 488.95)) (stroke (width 0) (type default)) (uuid \"1f3c87ea-4c34-5713-88ba-0432e6d9a384\"))\n(label \"MAIN_3V3\" (at 224.79 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"710f2f41-68ce-5c3f-99e7-ac1e05eb5baa\"))\n(wire (pts (xy 224.79 499.11) (xy 224.79 501.65)) (stroke (width 0) (type default)) (uuid \"bd95a572-4eea-56b2-be10-916e929585d8\"))\n(label \"MAIN_PG\" (at 224.79 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"c0ccd103-5533-5920-9de2-d0cfc8b2c90b\"))\n(symbol (lib_id \"Device:R\") (at 275.59 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"2e7e0ada-cbf1-5fa7-9cea-136b489f3f20\")\n        (property \"Reference\" \"R44\" (at 279.4 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"69.8k 0.1%\" (at 279.4 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 275.59 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 275.59 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW060369K8BYTA\" (at 275.59 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 275.59 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 275.59 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 275.59 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"d0fd003f-89f5-5d5e-9566-25c951bf2824\")) (pin \"2\" (uuid \"6baf4fd0-3633-5373-a3cc-3bcd4bb8f0db\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R44\") (unit 1)))))\n(wire (pts (xy 275.59 491.49) (xy 275.59 488.95)) (stroke (width 0) (type default)) (uuid \"5eec7bd7-cfc1-5d0e-b44a-d140f334b72d\"))\n(label \"AFE_PRE_4V0\" (at 275.59 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"d61c2da7-1311-5eab-adcd-43a88a8c9e5b\"))\n(wire (pts (xy 275.59 499.11) (xy 275.59 501.65)) (stroke (width 0) (type default)) (uuid \"24b96674-3025-5d25-9041-225063007d73\"))\n(label \"PRE_FB_TOP\" (at 275.59 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"d91a4dff-4f55-5b6b-a12a-6930c7e09bf0\"))\n(symbol (lib_id \"Device:R\") (at 320.04 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"4e702f8d-f97f-578d-85ad-db6079977387\")\n        (property \"Reference\" \"R45\" (at 323.85 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"200R 0.1%\" (at 323.85 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 320.04 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 320.04 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW0603200RBYTA\" (at 320.04 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 320.04 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 320.04 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 320.04 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"b5a892ee-75d3-55ec-9f10-5595d3e6bb13\")) (pin \"2\" (uuid \"d692cfbb-51a9-5acd-8efe-9580b9f6df0a\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R45\") (unit 1)))))\n(wire (pts (xy 320.04 491.49) (xy 320.04 488.95)) (stroke (width 0) (type default)) (uuid \"a4a79971-0ab9-5729-8878-dbc3ab70e3c3\"))\n(label \"PRE_FB_TOP\" (at 320.04 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"f2fbd31c-a7fa-59c5-8316-95e1cfc46a30\"))\n(wire (pts (xy 320.04 499.11) (xy 320.04 501.65)) (stroke (width 0) (type default)) (uuid \"0c91a245-aa21-54b9-b3df-4d2e6c22dbb8\"))\n(label \"AFE_PRE_FB\" (at 320.04 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"b6ef19d1-a710-504a-8137-cb583851250c\"))\n(symbol (lib_id \"Device:R\") (at 364.49 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"0caac299-6915-54b2-809e-cff2d892e57d\")\n        (property \"Reference\" \"R46\" (at 368.3 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"10.0k 0.1%\" (at 368.3 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 364.49 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 364.49 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW060310K0BYTA\" (at 364.49 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 364.49 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 364.49 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 364.49 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"947d504b-7c03-591f-8ee7-42ea7b6b0651\")) (pin \"2\" (uuid \"9a4e25d0-1ec9-543e-958a-59ba87d29574\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R46\") (unit 1)))))\n(wire (pts (xy 364.49 491.49) (xy 364.49 488.95)) (stroke (width 0) (type default)) (uuid \"00fc7d6e-9746-5ce9-91e9-3d16606e42f1\"))\n(label \"AFE_PRE_FB\" (at 364.49 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"31dfbe58-42b2-5560-b7fd-65b6a12b4329\"))\n(wire (pts (xy 364.49 499.11) (xy 364.49 501.65)) (stroke (width 0) (type default)) (uuid \"e8e20456-4ce4-55d6-b0fc-2b8cdec929fd\"))\n(label \"AGND\" (at 364.49 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"adb39637-ef50-58be-a4db-4245c5edffe1\"))\n(symbol (lib_id \"Device:R\") (at 410.21 495.3 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"da8e7786-5c1d-5596-b855-744fb0521eda\")\n        (property \"Reference\" \"R50\" (at 414.02 490.5 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"100k 0.1%\" (at 414.02 493.3 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 410.21 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 410.21 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW0603100KBYTA\" (at 410.21 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 410.21 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 410.21 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 410.21 495.3 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"718c52a6-7eff-58a7-a51e-daf5caff66c3\")) (pin \"2\" (uuid \"14b7a2cd-47bf-5a37-9d2c-ea4455ec649b\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R50\") (unit 1)))))\n(wire (pts (xy 410.21 491.49) (xy 410.21 488.95)) (stroke (width 0) (type default)) (uuid \"3f682b2f-9908-5e0b-9e4a-e732b9a1d4b5\"))\n(label \"MAIN_PG\" (at 410.21 488.95 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"41fbac29-2d10-5a80-8e5f-4ea702914ebd\"))\n(wire (pts (xy 410.21 499.11) (xy 410.21 501.65)) (stroke (width 0) (type default)) (uuid \"33081103-39c4-5d3c-a74e-fa3b9b4d31bd\"))\n(label \"AGND\" (at 410.21 501.65 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"68409f6c-bfff-531b-b147-dba261d2672b\"))\n(symbol (lib_id \"Regulator_Linear:LT3042xMSE\") (at 299.72 590.55 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"a8935a73-3fef-5378-982d-6756b434989f\")\n        (property \"Reference\" \"U8\" (at 293.72 572.55 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"LT3042IMSE AFE 2.98V\" (at 293.72 575.55 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm\" (at 299.72 590.55 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf\" (at 299.72 590.55 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"LT3042IMSE#PBF\" (at 299.72 590.55 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Analog Devices\" (at 299.72 590.55 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"IN/OUT local >=4.7uF effective; output ESR<50mOhm ESL<2nH. PGFB=IN disables fast start. SET leakage/precision/layout qualification required\" (at 299.72 590.55 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"4996b560-ed0a-584f-a38d-64e52f8fc390\")) (pin \"2\" (uuid \"ca091ac4-7ed0-59c4-9f6b-8e2333124a9d\")) (pin \"3\" (uuid \"8a5f2661-c311-5bdc-9f52-c2e7d7950fba\")) (pin \"4\" (uuid \"8988285d-67bf-528d-ac3e-4b39b806be35\")) (pin \"5\" (uuid \"d1c16d31-36ce-5fe5-8335-6de828a7e902\")) (pin \"6\" (uuid \"e3390086-43a6-5736-87f5-25556f341770\")) (pin \"7\" (uuid \"3f909b78-237d-5170-9f8c-7edc46c220a8\")) (pin \"8\" (uuid \"f9097f7f-c3dd-5526-a470-8067eee31a8c\")) (pin \"9\" (uuid \"3182489e-8ed1-5e05-abfe-89dbca010508\")) (pin \"10\" (uuid \"83bb1d75-fe88-5b1f-81c3-7ab128b5f2f3\")) (pin \"11\" (uuid \"007cabdf-c9f5-5c5a-b2fd-006b2124c9a6\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"U8\") (unit 1)))))\n(wire (pts (xy 289.56 588.01) (xy 287.02 588.01)) (stroke (width 0) (type default)) (uuid \"32b69fe1-e747-53a9-9ea8-f6047551d404\"))\n(label \"AFE_PRE_4V0\" (at 287.02 588.01 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"35d2186f-a5be-569e-96e8-14f398dbcb1a\"))\n(wire (pts (xy 289.56 590.55) (xy 287.02 590.55)) (stroke (width 0) (type default)) (uuid \"b99fa505-ce0b-5d41-909d-9e8b320bb803\"))\n(label \"MAIN_PG\" (at 287.02 590.55 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"8ad6d531-87aa-5396-934b-4348e4b588b2\"))\n(no_connect (at 309.88 595.63) (uuid \"a4a97ca1-00ee-5a67-9c15-d78033a24255\"))\n(wire (pts (xy 289.56 593.09) (xy 287.02 593.09)) (stroke (width 0) (type default)) (uuid \"c5eab4bd-4821-5d6a-b442-5e712f59a097\"))\n(label \"AFE_ILIM\" (at 287.02 593.09 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"0f55e5b7-f605-5dd3-af5d-d038c76b405f\"))\n(wire (pts (xy 309.88 593.09) (xy 312.42 593.09)) (stroke (width 0) (type default)) (uuid \"e2e83634-8e59-540a-9c63-03e29778939c\"))\n(label \"AFE_PRE_4V0\" (at 312.42 593.09 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"01cc3623-3f20-5401-ba8c-60e347d15046\"))\n(wire (pts (xy 289.56 595.63) (xy 287.02 595.63)) (stroke (width 0) (type default)) (uuid \"40b8ef0c-a13d-54e7-ae5d-9013812e36aa\"))\n(label \"AFE_SET\" (at 287.02 595.63 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"c1c5cad7-1289-5b34-8ce9-60fcf15a7f7e\"))\n(wire (pts (xy 299.72 600.71) (xy 299.72 603.25)) (stroke (width 0) (type default)) (uuid \"e9d905a0-8b65-5da7-a299-f97a855854f1\"))\n(label \"AGND\" (at 299.72 603.25 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"645cd99e-729c-570d-b667-fc985e619c25\"))\n(wire (pts (xy 309.88 590.55) (xy 312.42 590.55)) (stroke (width 0) (type default)) (uuid \"adcf5518-9ba1-59eb-acde-b6508cea1957\"))\n(label \"AFE_2V98\" (at 312.42 590.55 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"90da7f92-41c8-58f8-afcb-f3e4da1d9dc4\"))\n(wire (pts (xy 309.88 588.01) (xy 312.42 588.01)) (stroke (width 0) (type default)) (uuid \"741f773e-ac77-5537-ae0a-b2c19b60c348\"))\n(label \"AFE_2V98\" (at 312.42 588.01 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"0f8d5ddc-6f44-51a8-b5a7-df69645a9ab5\"))\n(symbol (lib_id \"Device:C\") (at 240.03 580.39 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"0c4e2e7d-29d1-5504-8bf9-3a806f860af1\")\n        (property \"Reference\" \"C63\" (at 243.84 575.59 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"10u 16V\" (at 243.84 578.39 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Capacitor_SMD:C_0805_2012Metric\" (at 240.03 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 240.03 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"GRM21BR61C106KE15L\" (at 240.03 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Murata\" (at 240.03 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"LT3042 CIN local >=4.7uF effective at4.06V; verify bias/tolerance/temp\" (at 240.03 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"f37c4e00-5ee1-5756-b565-5bc3c61a327e\")) (pin \"2\" (uuid \"e49c3def-2604-5c90-9e27-70a82aca452d\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"C63\") (unit 1)))))\n(wire (pts (xy 240.03 576.58) (xy 240.03 574.04)) (stroke (width 0) (type default)) (uuid \"1f18ad7e-07c3-5e54-a30f-60893ef773b2\"))\n(label \"AFE_PRE_4V0\" (at 240.03 574.04 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"6c7aa6a4-7384-54af-a257-a1b803739944\"))\n(wire (pts (xy 240.03 584.2) (xy 240.03 586.74)) (stroke (width 0) (type default)) (uuid \"4cdf283e-ed8f-526b-85a6-4bae57350ec7\"))\n(label \"AGND\" (at 240.03 586.74 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"bf0b6895-28fb-52f4-babb-92600b7224f8\"))\n(symbol (lib_id \"Device:C\") (at 364.49 580.39 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"cfc0ccad-febe-5c02-8da0-f41c51a7a6c2\")\n        (property \"Reference\" \"C64\" (at 368.3 575.59 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"10u 16V\" (at 368.3 578.39 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Capacitor_SMD:C_0805_2012Metric\" (at 364.49 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 364.49 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"GRM21BR61C106KE15L\" (at 364.49 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Murata\" (at 364.49 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"LT3042 COUT local >=4.7uF effective at3.05V; ESR<50mOhm ESL<2nH plus existing40.4uF ADC banks\" (at 364.49 580.39 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"eed19493-7628-5cee-8de8-c9824508a2e7\")) (pin \"2\" (uuid \"92d66282-7d69-5b39-b011-1b25d8b1ddb0\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"C64\") (unit 1)))))\n(wire (pts (xy 364.49 576.58) (xy 364.49 574.04)) (stroke (width 0) (type default)) (uuid \"9b7700a7-f557-57f0-adeb-3d3c22935f0d\"))\n(label \"AFE_2V98\" (at 364.49 574.04 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"84f51f61-c0ef-5ae7-b00e-4f356ffc4d8d\"))\n(wire (pts (xy 364.49 584.2) (xy 364.49 586.74)) (stroke (width 0) (type default)) (uuid \"43d1431a-fdc1-58d4-97a9-067e39e3f7ae\"))\n(label \"AGND\" (at 364.49 586.74 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"e88ebbee-dd2e-5f53-9420-06e70b54642b\"))\n(symbol (lib_id \"Device:C\") (at 190.5 614.68 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"670121aa-63bb-5638-83c4-f3384c269ed8\")\n        (property \"Reference\" \"C65\" (at 194.31 609.88 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"4.7u 10V X7R\" (at 194.31 612.68 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Capacitor_SMD:C_0805_2012Metric\" (at 190.5 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 190.5 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"GRM21BR71A475KA73L\" (at 190.5 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Manufacturer\" \"Murata\" (at 190.5 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"SET capacitor: low leakage and microphonics; nominal4.7uF, slow start with PGFB=IN\" (at 190.5 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"19ba44fc-c3d6-52d3-ab9d-12d9a9d15d34\")) (pin \"2\" (uuid \"c77fe56d-e593-5ee7-8d3e-6c65bbf720be\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"C65\") (unit 1)))))\n(wire (pts (xy 190.5 610.87) (xy 190.5 608.33)) (stroke (width 0) (type default)) (uuid \"c76bafda-e130-5dfa-a6d0-ec298215b10c\"))\n(label \"AFE_SET\" (at 190.5 608.33 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"1f447653-9236-5e62-98d3-c685bb4a5f5c\"))\n(wire (pts (xy 190.5 618.49) (xy 190.5 621.03)) (stroke (width 0) (type default)) (uuid \"ab011566-fbe0-55b4-90c2-806ede9ddea6\"))\n(label \"AGND\" (at 190.5 621.03 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"234c02c1-0497-575f-b50b-c06d27698505\"))\n(symbol (lib_id \"Device:R\") (at 240.03 614.68 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"02894447-cd52-52e0-a7ad-42f591ff2e24\")\n        (property \"Reference\" \"R47\" (at 243.84 609.88 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"29.8k 0.1%\" (at 243.84 612.68 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 240.03 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 240.03 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW060329K8BYTA\" (at 240.03 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 240.03 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 240.03 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 240.03 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"08c7aec0-a833-5f65-948d-91d198d9298c\")) (pin \"2\" (uuid \"09a413a8-8d95-5000-9f24-1bbffbf0e181\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R47\") (unit 1)))))\n(wire (pts (xy 240.03 610.87) (xy 240.03 608.33)) (stroke (width 0) (type default)) (uuid \"28de6c69-ddc1-52d3-8d2a-85543c8f5eea\"))\n(label \"AFE_SET\" (at 240.03 608.33 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"fa3e00f3-44c8-51b9-bde8-604f7bd0dba1\"))\n(wire (pts (xy 240.03 618.49) (xy 240.03 621.03)) (stroke (width 0) (type default)) (uuid \"11ab6c99-71e1-55a9-9ec4-aee9c93d53db\"))\n(label \"AGND\" (at 240.03 621.03 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"e294302d-2102-522c-ad0c-fe8c73e4ff74\"))\n(symbol (lib_id \"Device:R\") (at 299.72 614.68 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"0f48d968-8078-5a6b-bc9c-297f1a4ec17d\")\n        (property \"Reference\" \"R48\" (at 303.53 609.88 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"2.49k 0.1%\" (at 303.53 612.68 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 299.72 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 299.72 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW06032K49BYTA\" (at 299.72 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 299.72 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 299.72 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 299.72 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"9265b59b-b7cc-5afc-8680-3d949622e84d\")) (pin \"2\" (uuid \"780d0357-3827-5a81-8226-aeb438c720ac\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R48\") (unit 1)))))\n(wire (pts (xy 299.72 610.87) (xy 299.72 608.33)) (stroke (width 0) (type default)) (uuid \"18ff7f43-d1aa-5916-bc54-b6b33079a64f\"))\n(label \"AFE_ILIM\" (at 299.72 608.33 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"49a324d3-e1c9-5d17-82c3-e38436853453\"))\n(wire (pts (xy 299.72 618.49) (xy 299.72 621.03)) (stroke (width 0) (type default)) (uuid \"006e2bec-d0fa-53d3-a2fe-937527403b6f\"))\n(label \"AGND\" (at 299.72 621.03 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"a611c141-6031-52a0-a836-d4146e043ecd\"))\n(symbol (lib_id \"Device:R\") (at 364.49 614.68 0) (unit 1)\n        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid \"08f62c3c-49a6-560b-be66-11c1d8240209\")\n        (property \"Reference\" \"R49\" (at 368.3 609.88 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Value\" \"2.70k 0.1%\" (at 368.3 612.68 0) (effects (font (size 1.0 1.0)) (justify left))) (property \"Footprint\" \"Resistor_SMD:R_0603_1608Metric\" (at 364.49 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Datasheet\" \"\" (at 364.49 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"MPN\" \"TNPW06032K70BYTA\" (at 364.49 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Tolerance\" \"0.1%\" (at 364.49 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"TCR\" \"10 ppm/K\" (at 364.49 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (property \"Qualification\" \"Vishay TNPW ordering-code candidate; procurement availability to verify\" (at 364.49 614.68 0) (effects (font (size 1.0 1.0)) (hide yes))) (pin \"1\" (uuid \"d7ddc038-1e53-5dae-925a-02b83dc95d13\")) (pin \"2\" (uuid \"895c188b-cc8e-5429-9edf-c686222b15ff\"))\n        (instances (project \"open-semg-16-v1.3\" (path \"/240ade95-63db-4882-95be-8d01c1806f6c\" (reference \"R49\") (unit 1)))))\n(wire (pts (xy 364.49 610.87) (xy 364.49 608.33)) (stroke (width 0) (type default)) (uuid \"0605ebf7-ae1a-5987-8df8-d20e492387b4\"))\n(label \"AFE_2V98\" (at 364.49 608.33 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"6f00eada-6049-5e8b-9c37-8c20b735b9ec\"))\n(wire (pts (xy 364.49 618.49) (xy 364.49 621.03)) (stroke (width 0) (type default)) (uuid \"c750b212-d2b1-5a57-8b34-436c82f4a6e5\"))\n(label \"AGND\" (at 364.49 621.03 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid \"1d0cf58e-dba1-5700-bb6d-69ba179ff2f3\"))\n(text \"V1.3 POWER: protected 1S pack / bench3.0-4.2V. NO USB while seated. Unplug pack for OFF/service.\" (at 50 390 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid \"3fea26e6-f74b-5270-a9e9-7547bfc92308\"))\n(text \"U6:3.3V main; U7:independent4.0V pre; U8:quiet2.98V AVDD+DVDD. Outputs never paralleled.\" (at 50 525 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid \"5c2cf694-ea3f-5172-b095-2c53ee034017\"))\n(text \"22k/10k MAIN EN cutoff is provisional: about3.10-3.31V falling at switched/protected input; pack qualification required.\" (at 50 535 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid \"a4dba2b9-7e8e-544d-82d0-e1c8f1fd4a67\"))\n(text \"MAIN_PG sequences preconverter and LDO; separate supervisors/READY gate must isolate every MCU/ADC path on rail/reset fault.\" (at 50 545 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid \"e77f0f93-65e4-59c8-9839-77d75d190d41\"))\n(text \"PCB/BOM release gate: exact TPS DLA0010A+inductor footprints, MLCC effective-C/ESR/leakage, inrush/UVLO/rebound/noise/thermal tests.\" (at 50 555 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid \"f6d05932-7610-5dc4-b79d-1a06dc1330a1\"))",
+  "bom": [
+    {
+      "ref": "U6",
+      "value": "TPS63802DLAR MAIN 3.3V",
+      "lib_id": "V13_Power:TPS63802DLAR",
+      "mpn": "TPS63802DLAR",
+      "footprint": "",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "Footprint_Requirement": "TI DLA0010A HotRod 4223750/D. No generic 10+EP substitute; exact local footprint required before PCB",
+        "Operating_Requirement": "Bench input 3.0-4.2V; protected pack and cell-specific cutoff/inrush qualification before battery use"
+      }
+    },
+    {
+      "ref": "U7",
+      "value": "TPS63802DLAR AFE PRE 4.0V",
+      "lib_id": "V13_Power:TPS63802DLAR",
+      "mpn": "TPS63802DLAR",
+      "footprint": "",
+      "fields": {
+        "Manufacturer": "Texas Instruments",
+        "Footprint_Requirement": "TI DLA0010A HotRod 4223750/D. No generic 10+EP substitute; exact local footprint required before PCB",
+        "Operating_Requirement": "Bench input 3.0-4.2V; protected pack and cell-specific cutoff/inrush qualification before battery use"
+      }
+    },
+    {
+      "ref": "L1",
+      "value": "0.47uH XFL4015",
+      "lib_id": "Device:L",
+      "mpn": "XFL4015-471MEC",
+      "footprint": "",
+      "fields": {
+        "Manufacturer": "Coilcraft",
+        "Footprint_Requirement": "Exact XFL4015 4x4mm manufacturer recommended land pattern required before PCB",
+        "Qualification": "TI TPS63802 reference candidate. At25C: Isat5.4A at20% L drop,6.6A at30%; verify all tolerance/current/temp corners and application eligibility"
+      }
+    },
+    {
+      "ref": "L2",
+      "value": "0.47uH XFL4015",
+      "lib_id": "Device:L",
+      "mpn": "XFL4015-471MEC",
+      "footprint": "",
+      "fields": {
+        "Manufacturer": "Coilcraft",
+        "Footprint_Requirement": "Exact XFL4015 4x4mm manufacturer recommended land pattern required before PCB",
+        "Qualification": "TI TPS63802 reference candidate. At25C: Isat5.4A at20% L drop,6.6A at30%; verify all tolerance/current/temp corners and application eligibility"
+      }
+    },
+    {
+      "ref": "C58",
+      "value": "10u 16V",
+      "lib_id": "Device:C",
+      "mpn": "GRM21BR61C106KE15L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "Qualification": "MAIN CIN: >=4uF effective at4.2V including tolerance/bias/temp; candidate data curve needed"
+      }
+    },
+    {
+      "ref": "C59",
+      "value": "22u 16V",
+      "lib_id": "Device:C",
+      "mpn": "GRM21BR61C226ME44L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "Qualification": "MAIN COUT: >=7uF effective at3.3V; verify ESR/bias/temp; existing C57 additional"
+      }
+    },
+    {
+      "ref": "C60",
+      "value": "10u 16V",
+      "lib_id": "Device:C",
+      "mpn": "GRM21BR61C106KE15L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "Qualification": "PRE CIN: >=4uF effective at4.2V including tolerance/bias/temp; candidate data curve needed"
+      }
+    },
+    {
+      "ref": "C61",
+      "value": "22u 16V",
+      "lib_id": "Device:C",
+      "mpn": "GRM21BR61C226ME44L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "Qualification": "PRE COUT part1 of2x22uF nominal per TI VOUT>3.6V recommendation; >=7uF combined effective"
+      }
+    },
+    {
+      "ref": "C62",
+      "value": "22u 16V",
+      "lib_id": "Device:C",
+      "mpn": "GRM21BR61C226ME44L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "Qualification": "PRE COUT part2 of2x22uF nominal; effective C/ESR/bias/temp to verify"
+      }
+    },
+    {
+      "ref": "R39",
+      "value": "56.0k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW060356K0BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R40",
+      "value": "10.0k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW060310K0BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R41",
+      "value": "22.0k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW060322K0BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R42",
+      "value": "10.0k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW060310K0BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R43",
+      "value": "10.0k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW060310K0BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R44",
+      "value": "69.8k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW060369K8BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R45",
+      "value": "200R 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW0603200RBYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R46",
+      "value": "10.0k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW060310K0BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R50",
+      "value": "100k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW0603100KBYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "U8",
+      "value": "LT3042IMSE AFE 2.98V",
+      "lib_id": "Regulator_Linear:LT3042xMSE",
+      "mpn": "LT3042IMSE#PBF",
+      "footprint": "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm",
+      "fields": {
+        "Manufacturer": "Analog Devices",
+        "Qualification": "IN/OUT local >=4.7uF effective; output ESR<50mOhm ESL<2nH. PGFB=IN disables fast start. SET leakage/precision/layout qualification required"
+      }
+    },
+    {
+      "ref": "C63",
+      "value": "10u 16V",
+      "lib_id": "Device:C",
+      "mpn": "GRM21BR61C106KE15L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "Qualification": "LT3042 CIN local >=4.7uF effective at4.06V; verify bias/tolerance/temp"
+      }
+    },
+    {
+      "ref": "C64",
+      "value": "10u 16V",
+      "lib_id": "Device:C",
+      "mpn": "GRM21BR61C106KE15L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "Qualification": "LT3042 COUT local >=4.7uF effective at3.05V; ESR<50mOhm ESL<2nH plus existing40.4uF ADC banks"
+      }
+    },
+    {
+      "ref": "C65",
+      "value": "4.7u 10V X7R",
+      "lib_id": "Device:C",
+      "mpn": "GRM21BR71A475KA73L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "fields": {
+        "Manufacturer": "Murata",
+        "Qualification": "SET capacitor: low leakage and microphonics; nominal4.7uF, slow start with PGFB=IN"
+      }
+    },
+    {
+      "ref": "R47",
+      "value": "29.8k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW060329K8BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R48",
+      "value": "2.49k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW06032K49BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    },
+    {
+      "ref": "R49",
+      "value": "2.70k 0.1%",
+      "lib_id": "Device:R",
+      "mpn": "TNPW06032K70BYTA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "fields": {
+        "Tolerance": "0.1%",
+        "TCR": "10 ppm/K",
+        "Qualification": "Vishay TNPW ordering-code candidate; procurement availability to verify"
+      }
+    }
+  ],
+  "pin_nets": {
+    "U6.10": "SW_BAT_PROT",
+    "U6.1": "MAIN_ENABLE",
+    "U6.2": "SW_BAT_PROT",
+    "U6.3": "AGND",
+    "U6.8": "AGND",
+    "U6.4": "MAIN_FB",
+    "U6.5": "MAIN_PG",
+    "U6.6": "MAIN_3V3",
+    "U6.9": "MAIN_SW1",
+    "U6.7": "MAIN_SW2",
+    "U7.10": "SW_BAT_PROT",
+    "U7.1": "MAIN_PG",
+    "U7.2": "SW_BAT_PROT",
+    "U7.3": "AGND",
+    "U7.8": "AGND",
+    "U7.4": "AFE_PRE_FB",
+    "U7.5": null,
+    "U7.6": "AFE_PRE_4V0",
+    "U7.9": "AFE_PRE_SW1",
+    "U7.7": "AFE_PRE_SW2",
+    "L1.1": "MAIN_SW1",
+    "L1.2": "MAIN_SW2",
+    "L2.1": "AFE_PRE_SW1",
+    "L2.2": "AFE_PRE_SW2",
+    "C58.1": "SW_BAT_PROT",
+    "C58.2": "AGND",
+    "C59.1": "MAIN_3V3",
+    "C59.2": "AGND",
+    "C60.1": "SW_BAT_PROT",
+    "C60.2": "AGND",
+    "C61.1": "AFE_PRE_4V0",
+    "C61.2": "AGND",
+    "C62.1": "AFE_PRE_4V0",
+    "C62.2": "AGND",
+    "R39.1": "MAIN_3V3",
+    "R39.2": "MAIN_FB",
+    "R40.1": "MAIN_FB",
+    "R40.2": "AGND",
+    "R41.1": "SW_BAT_PROT",
+    "R41.2": "MAIN_ENABLE",
+    "R42.1": "MAIN_ENABLE",
+    "R42.2": "AGND",
+    "R43.1": "MAIN_3V3",
+    "R43.2": "MAIN_PG",
+    "R44.1": "AFE_PRE_4V0",
+    "R44.2": "PRE_FB_TOP",
+    "R45.1": "PRE_FB_TOP",
+    "R45.2": "AFE_PRE_FB",
+    "R46.1": "AFE_PRE_FB",
+    "R46.2": "AGND",
+    "R50.1": "MAIN_PG",
+    "R50.2": "AGND",
+    "U8.1": "AFE_PRE_4V0",
+    "U8.2": "AFE_PRE_4V0",
+    "U8.3": "MAIN_PG",
+    "U8.4": null,
+    "U8.5": "AFE_ILIM",
+    "U8.6": "AFE_PRE_4V0",
+    "U8.7": "AFE_SET",
+    "U8.8": "AGND",
+    "U8.9": "AFE_2V98",
+    "U8.10": "AFE_2V98",
+    "U8.11": "AGND",
+    "C63.1": "AFE_PRE_4V0",
+    "C63.2": "AGND",
+    "C64.1": "AFE_2V98",
+    "C64.2": "AGND",
+    "C65.1": "AFE_SET",
+    "C65.2": "AGND",
+    "R47.1": "AFE_SET",
+    "R47.2": "AGND",
+    "R48.1": "AFE_ILIM",
+    "R48.2": "AGND",
+    "R49.1": "AFE_2V98",
+    "R49.2": "AGND"
+  },
+  "ports": {
+    "input": "SW_BAT_PROT",
+    "main": "MAIN_3V3",
+    "pre": "AFE_PRE_4V0",
+    "afe": "AFE_2V98",
+    "enable": "MAIN_ENABLE",
+    "main_good": "MAIN_PG",
+    "ground": "AGND"
+  },
+  "references": [
+    "U6",
+    "U7",
+    "L1",
+    "L2",
+    "C58",
+    "C59",
+    "C60",
+    "C61",
+    "C62",
+    "R39",
+    "R40",
+    "R41",
+    "R42",
+    "R43",
+    "R44",
+    "R45",
+    "R46",
+    "R50",
+    "U8",
+    "C63",
+    "C64",
+    "C65",
+    "R47",
+    "R48",
+    "R49"
+  ],
+  "facts": {
+    "main_nominal_V": 3.3,
+    "pre_nominal_V": 4.0,
+    "afe_nominal_V": 2.98,
+    "main_DC_with_0p2pct_resistors_V": [
+      3.2503229317365268,
+      3.3499458693386774
+    ],
+    "pre_DC_with_0p2pct_resistors_V": [
+      3.9391536646706586,
+      4.061182336673346
+    ],
+    "afe_DC_with_0p2pct_RSET_V": [
+      2.9125592,
+      3.0476792
+    ]
+  }
+}

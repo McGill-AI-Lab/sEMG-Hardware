@@ -1,0 +1,35 @@
+{
+  "verification": "Read-only live confirmation before edits and at delivery; writes restricted to v1.2 and reviews_v1.2",
+  "project": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Current project configuration:\n- Project directory: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2\n- Project file: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_pro\n- Resolved project: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_pro\n- PCB file: (not set)\n- Schematic file: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch\n- Output directory: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/output\n- KiCad CLI: /Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli (found)\n- Server profile: build\n- Experimental tools: False"
+        }
+      ],
+      "structuredContent": {
+        "result": "Current project configuration:\n- Project directory: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2\n- Project file: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_pro\n- Resolved project: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_pro\n- PCB file: (not set)\n- Schematic file: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch\n- Output directory: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/output\n- KiCad CLI: /Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli (found)\n- Server profile: build\n- Experimental tools: False"
+      },
+      "isError": false
+    }
+  },
+  "schematic_category": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "# Tools in `schematic`\nInspect and edit schematic files with hybrid IPC reload support.\nActive operating mode: `write`\n\n- `sch_plan_from_spec [MATURITY:beta / HEADLESS]`\n- `sch_preview_plan [MATURITY:beta / HEADLESS]`\n- `sch_apply_plan [MATURITY:beta / HEADLESS]`\n- `sch_verify_plan [MATURITY:beta / HEADLESS]`\n- `sch_rollback_plan [MATURITY:beta / HEADLESS]`"
+        }
+      ],
+      "structuredContent": {
+        "result": "# Tools in `schematic`\nInspect and edit schematic files with hybrid IPC reload support.\nActive operating mode: `write`\n\n- `sch_plan_from_spec [MATURITY:beta / HEADLESS]`\n- `sch_preview_plan [MATURITY:beta / HEADLESS]`\n- `sch_apply_plan [MATURITY:beta / HEADLESS]`\n- `sch_verify_plan [MATURITY:beta / HEADLESS]`\n- `sch_rollback_plan [MATURITY:beta / HEADLESS]`"
+      },
+      "isError": false
+    }
+  },
+  "workspace_root_source": "v1.2/.codex/config.toml:14",
+  "write_operation_result": "sch_plan_from_spec rejected by runtime approval policy never; controlled fallback used; no MCP design writes succeeded."
+}

@@ -1,0 +1,127 @@
+{
+  "scope": "Conditional arithmetic only; stated efficiency/load/capacitance assumptions are not measurements",
+  "main_dc_V": [
+    3.354457936263737,
+    3.445669663863864
+  ],
+  "afe_dc_V": [
+    2.9154796000000003,
+    3.0446395999999996
+  ],
+  "minimum_static_headroom_V": 0.3098183362637372,
+  "headroom_above_300mV_screen_V": 0.009818336263737237,
+  "positive_main_margin_to_3V6_V": 0.15433033613613611,
+  "en_falling_battery_V": [
+    3.095331863736264,
+    3.304940936536536
+  ],
+  "en_rising_battery_V": [
+    3.414892303296704,
+    3.625381376976976
+  ],
+  "bleeder_current_min_A": 0.0010691160982764945,
+  "bleeder_current_nominal_A": 0.0011037037037037037,
+  "bleeder_power_nominal_W": 0.003289037037037037,
+  "nominal_supervisor_thresholds_V": [
+    3.1509000000000005,
+    2.79855
+  ],
+  "common_mode_gain6_bounds_V": [
+    {
+      "differential_V": 0.3,
+      "AVDD3V3": [
+        1.0999999999999999,
+        2.1999999999999997
+      ],
+      "AVDD2V98": [
+        1.0999999999999999,
+        1.88
+      ],
+      "AVDD_low_corner": [
+        1.0999999999999999,
+        1.8154796000000002
+      ]
+    },
+    {
+      "differential_V": 0.35,
+      "AVDD3V3": [
+        1.2499999999999998,
+        2.05
+      ],
+      "AVDD2V98": [
+        1.2499999999999998,
+        1.73
+      ],
+      "AVDD_low_corner": [
+        1.2499999999999998,
+        1.6654796000000003
+      ]
+    },
+    {
+      "differential_V": 0.4,
+      "AVDD3V3": [
+        1.4000000000000001,
+        1.8999999999999995
+      ],
+      "AVDD2V98": [
+        1.4000000000000001,
+        1.5799999999999996
+      ],
+      "AVDD_low_corner": [
+        1.4000000000000001,
+        1.5154796
+      ]
+    }
+  ],
+  "battery_current_scenarios": [
+    {
+      "main_A": 0.1,
+      "main_W": 0.34,
+      "battery3V7_eta90_A": 0.1021021021021021,
+      "battery3V2_eta85_A": 0.125
+    },
+    {
+      "main_A": 0.2,
+      "main_W": 0.68,
+      "battery3V7_eta90_A": 0.2042042042042042,
+      "battery3V2_eta85_A": 0.25
+    },
+    {
+      "main_A": 0.4,
+      "main_W": 1.36,
+      "battery3V7_eta90_A": 0.4084084084084084,
+      "battery3V2_eta85_A": 0.5
+    },
+    {
+      "main_A": 0.56,
+      "main_W": 1.9040000000000001,
+      "battery3V7_eta90_A": 0.5717717717717719,
+      "battery3V2_eta85_A": 0.7
+    },
+    {
+      "main_A": 0.75,
+      "main_W": 2.55,
+      "battery3V7_eta90_A": 0.7657657657657657,
+      "battery3V2_eta85_A": 0.9374999999999999
+    }
+  ],
+  "converter_thermal_screens": [
+    {
+      "main_A": 0.56,
+      "assumed_efficiency": 0.85,
+      "loss_W": 0.3360000000000001,
+      "rise_C_all_loss_in_IC": 27.216000000000005
+    },
+    {
+      "main_A": 0.75,
+      "assumed_efficiency": 0.85,
+      "loss_W": 0.45000000000000007,
+      "rise_C_all_loss_in_IC": 36.45
+    }
+  ],
+  "ldo_thermal_power_W": 0.0254,
+  "capacitor_only_droop_V": 0.15,
+  "C57_charge_C": 0.00068,
+  "C57_energy_J": 0.001156,
+  "hypothetical_runtime_h_per_usable_Ah_at_main200mA": 4.897058823529411
+}

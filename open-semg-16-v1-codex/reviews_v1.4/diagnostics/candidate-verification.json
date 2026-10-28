@@ -1,0 +1,2193 @@
+{
+  "pass": true,
+  "checks": 378,
+  "passed": 378,
+  "component_count_v1_2": 133,
+  "component_count_v1_4": 117,
+  "nets_v1_4": 127,
+  "channels_verified": 16,
+  "erc_counts": {
+    "error": 7
+  },
+  "erc_violations": [
+    {
+      "type": "power_pin_not_driven",
+      "severity": "error",
+      "description": "Input Power pin not driven by any Output Power pins",
+      "items": [
+        "Symbol U1 Pin 19 [AVDD, Power input, Line]"
+      ]
+    },
+    {
+      "type": "power_pin_not_driven",
+      "severity": "error",
+      "description": "Input Power pin not driven by any Output Power pins",
+      "items": [
+        "Symbol U1 Pin 20 [AVSS, Power input, Line]"
+      ]
+    },
+    {
+      "type": "pin_to_pin",
+      "severity": "error",
+      "description": "Pins of type Output and Output are connected",
+      "items": [
+        "Symbol U1 Pin 43 [DOUT, Output, Line]",
+        "Symbol U2 Pin 43 [DOUT, Output, Line]"
+      ]
+    },
+    {
+      "type": "pin_not_connected",
+      "severity": "error",
+      "description": "Pin not connected",
+      "items": [
+        "Symbol U3 Pin 3 [CHIP_PU, Input, Line]"
+      ]
+    },
+    {
+      "type": "pin_not_driven",
+      "severity": "error",
+      "description": "Input pin not driven by any Output pins",
+      "items": [
+        "Symbol U3 Pin 3 [CHIP_PU, Input, Line]"
+      ]
+    },
+    {
+      "type": "pin_not_connected",
+      "severity": "error",
+      "description": "Pin not connected",
+      "items": [
+        "Symbol U3 Pin 21 [5V, Power input, Line]"
+      ]
+    },
+    {
+      "type": "power_pin_not_driven",
+      "severity": "error",
+      "description": "Input Power pin not driven by any Output Power pins",
+      "items": [
+        "Symbol U3 Pin 21 [5V, Power input, Line]"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "name": "exact component set (117)",
+      "pass": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "no test points, batteries or obsolete regulators",
+      "pass": true
+    },
+    {
+      "name": "one named 3.3V rail and common GND",
+      "pass": true
+    },
+    {
+      "name": "U1.19 supply",
+      "pass": true
+    },
+    {
+      "name": "U1.21 supply",
+      "pass": true
+    },
+    {
+      "name": "U1.22 supply",
+      "pass": true
+    },
+    {
+      "name": "U1.54 supply",
+      "pass": true
+    },
+    {
+      "name": "U1.56 supply",
+      "pass": true
+    },
+    {
+      "name": "U1.59 supply",
+      "pass": true
+    },
+    {
+      "name": "U1.48 supply",
+      "pass": true
+    },
+    {
+      "name": "U1.50 supply",
+      "pass": true
+    },
+    {
+      "name": "U1.20 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.23 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.32 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.53 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.57 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.58 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.33 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.49 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.51 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.25 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.31 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.41 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.42 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.44 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.45 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.46 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U1.17 unused analog tie to actual AVDD",
+      "pass": true
+    },
+    {
+      "name": "U1.18 unused analog tie to actual AVDD",
+      "pass": true
+    },
+    {
+      "name": "U1.62 unused analog tie to actual AVDD",
+      "pass": true
+    },
+    {
+      "name": "U2.19 supply",
+      "pass": true
+    },
+    {
+      "name": "U2.21 supply",
+      "pass": true
+    },
+    {
+      "name": "U2.22 supply",
+      "pass": true
+    },
+    {
+      "name": "U2.54 supply",
+      "pass": true
+    },
+    {
+      "name": "U2.56 supply",
+      "pass": true
+    },
+    {
+      "name": "U2.59 supply",
+      "pass": true
+    },
+    {
+      "name": "U2.48 supply",
+      "pass": true
+    },
+    {
+      "name": "U2.50 supply",
+      "pass": true
+    },
+    {
+      "name": "U2.20 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.23 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.32 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.53 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.57 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.58 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.33 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.49 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.51 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.25 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.31 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.41 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.42 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.44 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.45 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.46 ground/unused-input tie",
+      "pass": true
+    },
+    {
+      "name": "U2.17 unused analog tie to actual AVDD",
+      "pass": true
+    },
+    {
+      "name": "U2.18 unused analog tie to actual AVDD",
+      "pass": true
+    },
+    {
+      "name": "U2.62 unused analog tie to actual AVDD",
+      "pass": true
+    },
+    {
+      "name": "all DevKit 3V3/GND header pins",
+      "pass": true
+    },
+    {
+      "name": "master CLKSEL high; slave CLKSEL low",
+      "pass": true
+    },
+    {
+      "name": "ADC_CLK exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "U1",
+            "37"
+          ],
+          [
+            "U2",
+            "37"
+          ]
+        ],
+        "expected": [
+          [
+            "U1",
+            "37"
+          ],
+          [
+            "U2",
+            "37"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "SPI_MOSI exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "R36",
+            "1"
+          ],
+          [
+            "U1",
+            "34"
+          ],
+          [
+            "U2",
+            "34"
+          ],
+          [
+            "U3",
+            "17"
+          ]
+        ],
+        "expected": [
+          [
+            "R36",
+            "1"
+          ],
+          [
+            "U1",
+            "34"
+          ],
+          [
+            "U2",
+            "34"
+          ],
+          [
+            "U3",
+            "17"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "SPI_SCLK exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "R37",
+            "1"
+          ],
+          [
+            "U1",
+            "40"
+          ],
+          [
+            "U2",
+            "40"
+          ],
+          [
+            "U3",
+            "18"
+          ]
+        ],
+        "expected": [
+          [
+            "R37",
+            "1"
+          ],
+          [
+            "U1",
+            "40"
+          ],
+          [
+            "U2",
+            "40"
+          ],
+          [
+            "U3",
+            "18"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "SPI_MISO exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "U1",
+            "43"
+          ],
+          [
+            "U2",
+            "43"
+          ],
+          [
+            "U3",
+            "37"
+          ]
+        ],
+        "expected": [
+          [
+            "U1",
+            "43"
+          ],
+          [
+            "U2",
+            "43"
+          ],
+          [
+            "U3",
+            "37"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "CS_ADC1 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "R39",
+            "1"
+          ],
+          [
+            "U1",
+            "39"
+          ],
+          [
+            "U3",
+            "27"
+          ]
+        ],
+        "expected": [
+          [
+            "R39",
+            "1"
+          ],
+          [
+            "U1",
+            "39"
+          ],
+          [
+            "U3",
+            "27"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "CS_ADC2 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "R40",
+            "1"
+          ],
+          [
+            "U2",
+            "39"
+          ],
+          [
+            "U3",
+            "36"
+          ]
+        ],
+        "expected": [
+          [
+            "R40",
+            "1"
+          ],
+          [
+            "U2",
+            "39"
+          ],
+          [
+            "U3",
+            "36"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "START exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "R33",
+            "1"
+          ],
+          [
+            "U1",
+            "38"
+          ],
+          [
+            "U2",
+            "38"
+          ],
+          [
+            "U3",
+            "12"
+          ]
+        ],
+        "expected": [
+          [
+            "R33",
+            "1"
+          ],
+          [
+            "U1",
+            "38"
+          ],
+          [
+            "U2",
+            "38"
+          ],
+          [
+            "U3",
+            "12"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "RESET exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "R34",
+            "1"
+          ],
+          [
+            "U1",
+            "36"
+          ],
+          [
+            "U2",
+            "36"
+          ],
+          [
+            "U3",
+            "6"
+          ]
+        ],
+        "expected": [
+          [
+            "R34",
+            "1"
+          ],
+          [
+            "U1",
+            "36"
+          ],
+          [
+            "U2",
+            "36"
+          ],
+          [
+            "U3",
+            "6"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "PWDN exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "R35",
+            "1"
+          ],
+          [
+            "U1",
+            "35"
+          ],
+          [
+            "U2",
+            "35"
+          ],
+          [
+            "U3",
+            "7"
+          ]
+        ],
+        "expected": [
+          [
+            "R35",
+            "1"
+          ],
+          [
+            "U1",
+            "35"
+          ],
+          [
+            "U2",
+            "35"
+          ],
+          [
+            "U3",
+            "7"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "DRDY_ADC1 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "U1",
+            "47"
+          ],
+          [
+            "U3",
+            "38"
+          ]
+        ],
+        "expected": [
+          [
+            "U1",
+            "47"
+          ],
+          [
+            "U3",
+            "38"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "DRDY_ADC2 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "U2",
+            "47"
+          ],
+          [
+            "U3",
+            "39"
+          ]
+        ],
+        "expected": [
+          [
+            "U2",
+            "47"
+          ],
+          [
+            "U3",
+            "39"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "R33 defined low bias",
+      "pass": true
+    },
+    {
+      "name": "R34 defined low bias",
+      "pass": true
+    },
+    {
+      "name": "R35 defined low bias",
+      "pass": true
+    },
+    {
+      "name": "R36 defined low bias",
+      "pass": true
+    },
+    {
+      "name": "R37 defined low bias",
+      "pass": true
+    },
+    {
+      "name": "R39 chip-select high bias",
+      "pass": true
+    },
+    {
+      "name": "R40 chip-select high bias",
+      "pass": true
+    },
+    {
+      "name": "GPIO3 external strap high",
+      "pass": true
+    },
+    {
+      "name": "R33 10k bias value",
+      "pass": true
+    },
+    {
+      "name": "R34 10k bias value",
+      "pass": true
+    },
+    {
+      "name": "R35 10k bias value",
+      "pass": true
+    },
+    {
+      "name": "R36 10k bias value",
+      "pass": true
+    },
+    {
+      "name": "R37 10k bias value",
+      "pass": true
+    },
+    {
+      "name": "R39 10k bias value",
+      "pass": true
+    },
+    {
+      "name": "R40 10k bias value",
+      "pass": true
+    },
+    {
+      "name": "R41 10k bias value",
+      "pass": true
+    },
+    {
+      "name": "DevKit pin 3 has no carrier supply/control source",
+      "pass": true
+    },
+    {
+      "name": "DevKit pin 21 has no carrier supply/control source",
+      "pass": true
+    },
+    {
+      "name": "CH01_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH01_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH01_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH01_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH02_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH02_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH02_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH02_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH03_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH03_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH03_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH03_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH04_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH04_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH04_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH04_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH05_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH05_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH05_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH05_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH06_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH06_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH06_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH06_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH07_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH07_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH07_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH07_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH08_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH08_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH08_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH08_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH09_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH09_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH09_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH09_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH10_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH10_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH10_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH10_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH11_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH11_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH11_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH11_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH12_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH12_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH12_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH12_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH13_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH13_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH13_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH13_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH14_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH14_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH14_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH14_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH15_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH15_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH15_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH15_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH16_P electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH16_P ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "CH16_N electrode-to-resistor exact path",
+      "pass": true
+    },
+    {
+      "name": "CH16_N ADC RC exact path",
+      "pass": true
+    },
+    {
+      "name": "all 32 ADC inputs distinct",
+      "pass": true
+    },
+    {
+      "name": "VCAP1_ADC1 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C23",
+            "1"
+          ],
+          [
+            "U1",
+            "28"
+          ]
+        ],
+        "expected": [
+          [
+            "C23",
+            "1"
+          ],
+          [
+            "U1",
+            "28"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C23 value and bypass return",
+      "pass": true
+    },
+    {
+      "name": "VCAP2_ADC1 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C24",
+            "1"
+          ],
+          [
+            "U1",
+            "30"
+          ]
+        ],
+        "expected": [
+          [
+            "C24",
+            "1"
+          ],
+          [
+            "U1",
+            "30"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C24 value and bypass return",
+      "pass": true
+    },
+    {
+      "name": "VCAP3_ADC1 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C25",
+            "1"
+          ],
+          [
+            "C58",
+            "1"
+          ],
+          [
+            "U1",
+            "55"
+          ]
+        ],
+        "expected": [
+          [
+            "C25",
+            "1"
+          ],
+          [
+            "C58",
+            "1"
+          ],
+          [
+            "U1",
+            "55"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C25 value and bypass return",
+      "pass": true
+    },
+    {
+      "name": "VCAP4_ADC1 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C26",
+            "1"
+          ],
+          [
+            "U1",
+            "26"
+          ]
+        ],
+        "expected": [
+          [
+            "C26",
+            "1"
+          ],
+          [
+            "U1",
+            "26"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C26 value and bypass return",
+      "pass": true
+    },
+    {
+      "name": "VREFP_ADC1 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C19",
+            "1"
+          ],
+          [
+            "C20",
+            "1"
+          ],
+          [
+            "U1",
+            "24"
+          ]
+        ],
+        "expected": [
+          [
+            "C19",
+            "1"
+          ],
+          [
+            "C20",
+            "1"
+          ],
+          [
+            "U1",
+            "24"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C19 VREF return",
+      "pass": true
+    },
+    {
+      "name": "C20 VREF return",
+      "pass": true
+    },
+    {
+      "name": "VCAP1_ADC2 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C49",
+            "1"
+          ],
+          [
+            "U2",
+            "28"
+          ]
+        ],
+        "expected": [
+          [
+            "C49",
+            "1"
+          ],
+          [
+            "U2",
+            "28"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C49 value and bypass return",
+      "pass": true
+    },
+    {
+      "name": "VCAP2_ADC2 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C50",
+            "1"
+          ],
+          [
+            "U2",
+            "30"
+          ]
+        ],
+        "expected": [
+          [
+            "C50",
+            "1"
+          ],
+          [
+            "U2",
+            "30"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C50 value and bypass return",
+      "pass": true
+    },
+    {
+      "name": "VCAP3_ADC2 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C51",
+            "1"
+          ],
+          [
+            "C59",
+            "1"
+          ],
+          [
+            "U2",
+            "55"
+          ]
+        ],
+        "expected": [
+          [
+            "C51",
+            "1"
+          ],
+          [
+            "C59",
+            "1"
+          ],
+          [
+            "U2",
+            "55"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C51 value and bypass return",
+      "pass": true
+    },
+    {
+      "name": "VCAP4_ADC2 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C52",
+            "1"
+          ],
+          [
+            "U2",
+            "26"
+          ]
+        ],
+        "expected": [
+          [
+            "C52",
+            "1"
+          ],
+          [
+            "U2",
+            "26"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C52 value and bypass return",
+      "pass": true
+    },
+    {
+      "name": "VREFP_ADC2 exact membership",
+      "pass": true,
+      "detail": {
+        "actual": [
+          [
+            "C45",
+            "1"
+          ],
+          [
+            "C46",
+            "1"
+          ],
+          [
+            "U2",
+            "24"
+          ]
+        ],
+        "expected": [
+          [
+            "C45",
+            "1"
+          ],
+          [
+            "C46",
+            "1"
+          ],
+          [
+            "U2",
+            "24"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C45 VREF return",
+      "pass": true
+    },
+    {
+      "name": "C46 VREF return",
+      "pass": true
+    },
+    {
+      "name": "C58 required added bypass",
+      "pass": true
+    },
+    {
+      "name": "C59 required added bypass",
+      "pass": true
+    },
+    {
+      "name": "C60 required added bypass",
+      "pass": true
+    },
+    {
+      "name": "C61 required added bypass",
+      "pass": true
+    },
+    {
+      "name": "C62 required added bypass",
+      "pass": true
+    },
+    {
+      "name": "C63 required added bypass",
+      "pass": true
+    },
+    {
+      "name": "C6 retained supply decoupling",
+      "pass": true
+    },
+    {
+      "name": "C7 retained supply decoupling",
+      "pass": true
+    },
+    {
+      "name": "C8 retained supply decoupling",
+      "pass": true
+    },
+    {
+      "name": "C9 retained supply decoupling",
+      "pass": true
+    },
+    {
+      "name": "C32 retained supply decoupling",
+      "pass": true
+    },
+    {
+      "name": "C33 retained supply decoupling",
+      "pass": true
+    },
+    {
+      "name": "C34 retained supply decoupling",
+      "pass": true
+    },
+    {
+      "name": "C35 retained supply decoupling",
+      "pass": true
+    },
+    {
+      "name": "complete retained V1.2 pin partitions, with explicit changes only",
+      "pass": true,
+      "detail": {
+        "missing_partitions": [],
+        "unexpected_partitions": []
+      }
+    },
+    {
+      "name": "C1 retained value",
+      "pass": true
+    },
+    {
+      "name": "C1 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C10 retained value",
+      "pass": true
+    },
+    {
+      "name": "C10 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C11 retained value",
+      "pass": true
+    },
+    {
+      "name": "C11 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C12 retained value",
+      "pass": true
+    },
+    {
+      "name": "C12 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C13 retained value",
+      "pass": true
+    },
+    {
+      "name": "C13 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C14 retained value",
+      "pass": true
+    },
+    {
+      "name": "C14 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C15 retained value",
+      "pass": true
+    },
+    {
+      "name": "C15 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C16 retained value",
+      "pass": true
+    },
+    {
+      "name": "C16 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C17 retained value",
+      "pass": true
+    },
+    {
+      "name": "C17 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C18 retained value",
+      "pass": true
+    },
+    {
+      "name": "C18 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C19 retained value",
+      "pass": true
+    },
+    {
+      "name": "C19 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C2 retained value",
+      "pass": true
+    },
+    {
+      "name": "C2 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C20 retained value",
+      "pass": true
+    },
+    {
+      "name": "C20 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C21 retained value",
+      "pass": true
+    },
+    {
+      "name": "C21 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C22 retained value",
+      "pass": true
+    },
+    {
+      "name": "C22 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C23 retained value",
+      "pass": true
+    },
+    {
+      "name": "C23 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C24 retained value",
+      "pass": true
+    },
+    {
+      "name": "C24 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C25 retained value",
+      "pass": true
+    },
+    {
+      "name": "C25 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C26 retained value",
+      "pass": true
+    },
+    {
+      "name": "C26 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C27 retained value",
+      "pass": true
+    },
+    {
+      "name": "C27 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C28 retained value",
+      "pass": true
+    },
+    {
+      "name": "C28 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C29 retained value",
+      "pass": true
+    },
+    {
+      "name": "C29 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C3 retained value",
+      "pass": true
+    },
+    {
+      "name": "C3 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C30 retained value",
+      "pass": true
+    },
+    {
+      "name": "C30 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C31 retained value",
+      "pass": true
+    },
+    {
+      "name": "C31 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C32 retained value",
+      "pass": true
+    },
+    {
+      "name": "C32 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C33 retained value",
+      "pass": true
+    },
+    {
+      "name": "C33 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C34 retained value",
+      "pass": true
+    },
+    {
+      "name": "C34 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C35 retained value",
+      "pass": true
+    },
+    {
+      "name": "C35 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C36 retained value",
+      "pass": true
+    },
+    {
+      "name": "C36 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C37 retained value",
+      "pass": true
+    },
+    {
+      "name": "C37 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C38 retained value",
+      "pass": true
+    },
+    {
+      "name": "C38 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C39 retained value",
+      "pass": true
+    },
+    {
+      "name": "C39 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C4 retained value",
+      "pass": true
+    },
+    {
+      "name": "C4 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C40 retained value",
+      "pass": true
+    },
+    {
+      "name": "C40 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C41 retained value",
+      "pass": true
+    },
+    {
+      "name": "C41 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C42 retained value",
+      "pass": true
+    },
+    {
+      "name": "C42 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C43 retained value",
+      "pass": true
+    },
+    {
+      "name": "C43 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C44 retained value",
+      "pass": true
+    },
+    {
+      "name": "C44 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C45 retained value",
+      "pass": true
+    },
+    {
+      "name": "C45 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C46 retained value",
+      "pass": true
+    },
+    {
+      "name": "C46 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C47 retained value",
+      "pass": true
+    },
+    {
+      "name": "C47 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C48 retained value",
+      "pass": true
+    },
+    {
+      "name": "C48 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C49 retained value",
+      "pass": true
+    },
+    {
+      "name": "C49 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C5 retained value",
+      "pass": true
+    },
+    {
+      "name": "C5 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C50 retained value",
+      "pass": true
+    },
+    {
+      "name": "C50 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C51 retained value",
+      "pass": true
+    },
+    {
+      "name": "C51 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C52 retained value",
+      "pass": true
+    },
+    {
+      "name": "C52 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C6 retained value",
+      "pass": true
+    },
+    {
+      "name": "C6 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C7 retained value",
+      "pass": true
+    },
+    {
+      "name": "C7 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C8 retained value",
+      "pass": true
+    },
+    {
+      "name": "C8 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "C9 retained value",
+      "pass": true
+    },
+    {
+      "name": "C9 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R1 retained value",
+      "pass": true
+    },
+    {
+      "name": "R1 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R10 retained value",
+      "pass": true
+    },
+    {
+      "name": "R10 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R11 retained value",
+      "pass": true
+    },
+    {
+      "name": "R11 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R12 retained value",
+      "pass": true
+    },
+    {
+      "name": "R12 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R13 retained value",
+      "pass": true
+    },
+    {
+      "name": "R13 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R14 retained value",
+      "pass": true
+    },
+    {
+      "name": "R14 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R15 retained value",
+      "pass": true
+    },
+    {
+      "name": "R15 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R16 retained value",
+      "pass": true
+    },
+    {
+      "name": "R16 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R17 retained value",
+      "pass": true
+    },
+    {
+      "name": "R17 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R18 retained value",
+      "pass": true
+    },
+    {
+      "name": "R18 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R19 retained value",
+      "pass": true
+    },
+    {
+      "name": "R19 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R2 retained value",
+      "pass": true
+    },
+    {
+      "name": "R2 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R20 retained value",
+      "pass": true
+    },
+    {
+      "name": "R20 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R21 retained value",
+      "pass": true
+    },
+    {
+      "name": "R21 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R22 retained value",
+      "pass": true
+    },
+    {
+      "name": "R22 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R23 retained value",
+      "pass": true
+    },
+    {
+      "name": "R23 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R24 retained value",
+      "pass": true
+    },
+    {
+      "name": "R24 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R25 retained value",
+      "pass": true
+    },
+    {
+      "name": "R25 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R26 retained value",
+      "pass": true
+    },
+    {
+      "name": "R26 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R27 retained value",
+      "pass": true
+    },
+    {
+      "name": "R27 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R28 retained value",
+      "pass": true
+    },
+    {
+      "name": "R28 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R29 retained value",
+      "pass": true
+    },
+    {
+      "name": "R29 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R3 retained value",
+      "pass": true
+    },
+    {
+      "name": "R3 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R30 retained value",
+      "pass": true
+    },
+    {
+      "name": "R30 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R31 retained value",
+      "pass": true
+    },
+    {
+      "name": "R31 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R32 retained value",
+      "pass": true
+    },
+    {
+      "name": "R32 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R33 retained value",
+      "pass": true
+    },
+    {
+      "name": "R33 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R34 retained value",
+      "pass": true
+    },
+    {
+      "name": "R34 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R35 retained value",
+      "pass": true
+    },
+    {
+      "name": "R35 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R36 retained value",
+      "pass": true
+    },
+    {
+      "name": "R36 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R37 retained value",
+      "pass": true
+    },
+    {
+      "name": "R37 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R4 retained value",
+      "pass": true
+    },
+    {
+      "name": "R4 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R5 retained value",
+      "pass": true
+    },
+    {
+      "name": "R5 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R6 retained value",
+      "pass": true
+    },
+    {
+      "name": "R6 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R7 retained value",
+      "pass": true
+    },
+    {
+      "name": "R7 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R8 retained value",
+      "pass": true
+    },
+    {
+      "name": "R8 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "R9 retained value",
+      "pass": true
+    },
+    {
+      "name": "R9 retained procurement requirements",
+      "pass": true
+    },
+    {
+      "name": "U1 every package pin represented",
+      "pass": true
+    },
+    {
+      "name": "U2 every package pin represented",
+      "pass": true
+    },
+    {
+      "name": "C25 VCAP3 voltage requirement preserved",
+      "pass": true
+    },
+    {
+      "name": "C51 VCAP3 voltage requirement preserved",
+      "pass": true
+    },
+    {
+      "name": "C58 VCAP3 voltage requirement preserved",
+      "pass": true
+    },
+    {
+      "name": "C59 VCAP3 voltage requirement preserved",
+      "pass": true
+    },
+    {
+      "name": "all historical version/review files unchanged",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "V1.4 project settings unchanged",
+      "pass": true
+    },
+    {
+      "name": "no ERC exclusions",
+      "pass": true
+    },
+    {
+      "name": "only seven documented ERC diagnostics, no unintended warnings",
+      "pass": true
+    }
+  ],
+  "limits": "Connectivity checks do not prove firmware, analog performance, power integrity, assembly or human safety."
+}

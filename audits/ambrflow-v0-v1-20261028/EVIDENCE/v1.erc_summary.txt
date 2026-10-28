@@ -1,0 +1,67 @@
+KiCad 10.0.7: 65 reported violations
+{'power_pin_not_driven': 4, 'pin_not_driven': 2, 'pin_to_pin': 6, 'pin_not_connected': 29, 'label_dangling': 1, 'lib_symbol_mismatch': 1, 'unconnected_wire_endpoint': 20, 'multiple_net_names': 2}
+error | power_pin_not_driven | Input Power pin not driven by any Output Power pins | Symbol #PWR01 Pin 1 [Power input, Line] at {'x': 66.04, 'y': 43.18}
+error | power_pin_not_driven | Input Power pin not driven by any Output Power pins | Symbol #PWR068 Pin 1 [Power input, Line] at {'x': 95.25, 'y': 269.24}
+error | pin_not_driven | Input pin not driven by any Output pins | Symbol U4 Pin 3 [ON/~{OFF}, Input, Line] at {'x': 107.95, 'y': 271.78}
+error | pin_to_pin | Pins of type Power output and Power output are connected | Symbol U4 Pin 5 [VOUT, Power output, Line] at {'x': 128.27, 'y': 269.24} ; Symbol U5 Pin 5 [OUT, Power output, Line] at {'x': 129.54, 'y': 309.88}
+error | pin_to_pin | Pins of type Output and Output are connected | Symbol U1 Pin 43 [DOUT, Output, Line] at {'x': 195.58, 'y': 152.4} ; Symbol U2 Pin 43 [DOUT, Output, Line] at {'x': 422.91, 'y': 151.13}
+error | pin_not_connected | Pin not connected | Symbol U1 Pin 37 [CLK, Bidirectional, Line] at {'x': 195.58, 'y': 157.48}
+error | power_pin_not_driven | Input Power pin not driven by any Output Power pins | Symbol #PWR09 Pin 1 [Power input, Line] at {'x': 201.93, 'y': 93.98}
+error | label_dangling | Label not connected | Global Label 'ADC_CLK' at {'x': 220.98, 'y': 157.48}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 3 [CHIP_PU, Input, Line] at {'x': 511.81, 'y': 43.18}
+error | pin_not_driven | Input pin not driven by any Output pins | Symbol U3 Pin 3 [CHIP_PU, Input, Line] at {'x': 511.81, 'y': 43.18}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 8 [GPIO15/ADC2_CH4/32K_P, Bidirectional, Line] at {'x': 511.81, 'y': 50.8}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 9 [GPIO16/ADC2_CH5/32K_N, Bidirectional, Line] at {'x': 511.81, 'y': 53.34}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 36 [GPIO39/MTCK, Bidirectional, Line] at {'x': 511.81, 'y': 60.96}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 37 [GPIO40/MTDO, Bidirectional, Line] at {'x': 511.81, 'y': 63.5}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 38 [GPIO41/MTDI, Bidirectional, Line] at {'x': 511.81, 'y': 66.04}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 39 [GPIO42/MTMS, Bidirectional, Line] at {'x': 511.81, 'y': 68.58}
+error | power_pin_not_driven | Input Power pin not driven by any Output Power pins | Symbol #PWR063 Pin 1 [Power input, Line] at {'x': 535.94, 'y': 27.94}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 43 [GPIO43/U0TXD, Bidirectional, Line] at {'x': 562.61, 'y': 43.18}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 42 [GPIO44/U0RXD, Bidirectional, Line] at {'x': 562.61, 'y': 45.72}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 26 [GPIO20/USB_D+, Bidirectional, Line] at {'x': 562.61, 'y': 50.8}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 25 [GPIO19/USB_D-, Bidirectional, Line] at {'x': 562.61, 'y': 53.34}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 31 [GPIO0, Bidirectional, Line] at {'x': 562.61, 'y': 60.96}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 41 [GPIO1/ADC1_CH0, Bidirectional, Line] at {'x': 562.61, 'y': 63.5}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 40 [GPIO2/ADC1_CH1, Bidirectional, Line] at {'x': 562.61, 'y': 66.04}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 13 [GPIO3/ADC1_CH2, Bidirectional, Line] at {'x': 562.61, 'y': 68.58}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 4 [GPIO4/ADC1_CH3, Bidirectional, Line] at {'x': 562.61, 'y': 71.12}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 5 [GPIO5/ADC1_CH4, Bidirectional, Line] at {'x': 562.61, 'y': 73.66}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 10 [GPIO17/ADC2_CH6, Bidirectional, Line] at {'x': 562.61, 'y': 99.06}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 11 [GPIO18/ADC2_CH7, Bidirectional, Line] at {'x': 562.61, 'y': 101.6}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 27 [GPIO21, Bidirectional, Line] at {'x': 562.61, 'y': 104.14}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 32 [GPIO35, Bidirectional, Line] at {'x': 562.61, 'y': 106.68}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 33 [GPIO36, Bidirectional, Line] at {'x': 562.61, 'y': 109.22}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 34 [GPIO37, Bidirectional, Line] at {'x': 562.61, 'y': 111.76}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 35 [GPIO38, Bidirectional, Line] at {'x': 562.61, 'y': 114.3}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 30 [GPIO45, Bidirectional, Line] at {'x': 562.61, 'y': 116.84}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 14 [GPIO46, Bidirectional, Line] at {'x': 562.61, 'y': 119.38}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 28 [GPIO47, Bidirectional, Line] at {'x': 562.61, 'y': 121.92}
+error | pin_not_connected | Pin not connected | Symbol U3 Pin 29 [GPIO48, Bidirectional, Line] at {'x': 562.61, 'y': 124.46}
+warning | lib_symbol_mismatch | Symbol 'Battery' doesn't match copy in library 'Device' | Symbol BT1 [Battery] at {'x': 36.83, 'y': 312.42}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 62.23, 'y': 36.83}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 62.23, 'y': 57.15}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 62.23, 'y': 78.74}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 62.23, 'y': 99.06}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 62.23, 'y': 119.38}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 66.04, 'y': 144.78}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 66.04, 'y': 166.37}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 66.04, 'y': 187.96}
+warning | multiple_net_names | Both +3.3V and AVDD are attached to the same items; +3.3V will be used in the netlist | Symbol #PWR064 Pin 1 [Power input, Line] at {'x': 538.48, 'y': 38.1} ; Label 'AVDD' at {'x': 160.02, 'y': 85.09}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 194.31, 'y': 109.22}
+warning | pin_to_pin | Pins of type Bidirectional and Power output are connected | Symbol U1 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line] at {'x': 195.58, 'y': 121.92} ; Symbol U4 Pin 5 [VOUT, Power output, Line] at {'x': 128.27, 'y': 269.24}
+warning | pin_to_pin | Pins of type Bidirectional and Power output are connected | Symbol U1 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line] at {'x': 195.58, 'y': 124.46} ; Symbol U4 Pin 5 [VOUT, Power output, Line] at {'x': 128.27, 'y': 269.24}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 15.24 mm at {'x': 195.58, 'y': 157.48}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 289.56, 'y': 35.56}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 289.56, 'y': 55.88}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 289.56, 'y': 77.47}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 289.56, 'y': 97.79}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 289.56, 'y': 118.11}
+warning | multiple_net_names | Both AGND and GND are attached to the same items; AGND will be used in the netlist | Symbol #PWR022 Pin 1 [Power input, Line] at {'x': 160.02, 'y': 187.96} ; Symbol #PWR032 Pin 1 [Power input, Line] at {'x': 293.37, 'y': 41.91}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 293.37, 'y': 143.51}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 293.37, 'y': 165.1}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 293.37, 'y': 186.69}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm at {'x': 421.64, 'y': 107.95}
+warning | pin_to_pin | Pins of type Bidirectional and Power output are connected | Symbol U2 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line] at {'x': 422.91, 'y': 120.65} ; Symbol U4 Pin 5 [VOUT, Power output, Line] at {'x': 128.27, 'y': 269.24}
+warning | pin_to_pin | Pins of type Bidirectional and Power output are connected | Symbol U2 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line] at {'x': 422.91, 'y': 123.19} ; Symbol U4 Pin 5 [VOUT, Power output, Line] at {'x': 128.27, 'y': 269.24}
+warning | unconnected_wire_endpoint | Unconnected wire endpoint | Horizontal Wire, length 13.97 mm at {'x': 562.61, 'y': 96.52}

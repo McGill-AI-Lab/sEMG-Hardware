@@ -1,0 +1,4586 @@
+[
+  {
+    "ref": "C39",
+    "at": [
+      "at",
+      "293.37",
+      "121.92",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C39",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C29",
+    "at": [
+      "at",
+      "293.37",
+      "59.69",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C29",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C1",
+    "at": [
+      "at",
+      "66.04",
+      "40.64",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C1",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C56",
+    "at": [
+      "at",
+      "100.33",
+      "313.69",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C56",
+      "Value": "1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "U4",
+    "at": [
+      "at",
+      "118.11",
+      "271.78",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Regulator_Linear:LP2985-3.3"
+    ],
+    "props": {
+      "Reference": "U4",
+      "Value": "LP2985-3.3",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/lp2985.pdf",
+      "Description": "150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C10",
+    "at": [
+      "at",
+      "66.04",
+      "92.71",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C10",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR045",
+    "at": [
+      "at",
+      "430.53",
+      "132.08",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR045",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R32",
+    "at": [
+      "at",
+      "290.83",
+      "196.85",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R32",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR032",
+    "at": [
+      "at",
+      "293.37",
+      "41.91",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR032",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R31",
+    "at": [
+      "at",
+      "290.83",
+      "186.69",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R31",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C35",
+    "at": [
+      "at",
+      "429.26",
+      "88.9",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C35",
+      "Value": "10uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR061",
+    "at": [
+      "at",
+      "345.44",
+      "210.82",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR061",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C37",
+    "at": [
+      "at",
+      "293.37",
+      "101.6",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C37",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR016",
+    "at": [
+      "at",
+      "222.25",
+      "142.24",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR016",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "BT1",
+    "at": [
+      "at",
+      "36.83",
+      "312.42",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:Battery"
+    ],
+    "props": {
+      "Reference": "BT1",
+      "Value": "Battery",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Multiple-cell battery"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C23",
+    "at": [
+      "at",
+      "95.25",
+      "203.2",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C23",
+      "Value": "22uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C55",
+    "at": [
+      "at",
+      "134.62",
+      "275.59",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C55",
+      "Value": "10nF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C12",
+    "at": [
+      "at",
+      "66.04",
+      "113.03",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C12",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C25",
+    "at": [
+      "at",
+      "118.11",
+      "208.28",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C25",
+      "Value": "1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R23",
+    "at": [
+      "at",
+      "287.02",
+      "97.79",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R23",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E5",
+    "at": [
+      "at",
+      "38.1",
+      "119.38",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E5",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R22",
+    "at": [
+      "at",
+      "287.02",
+      "87.63",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R22",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C16",
+    "at": [
+      "at",
+      "69.85",
+      "158.75",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C16",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR046",
+    "at": [
+      "at",
+      "293.37",
+      "135.89",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR046",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R12",
+    "at": [
+      "at",
+      "63.5",
+      "154.94",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R12",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C14",
+    "at": [
+      "at",
+      "66.04",
+      "133.35",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C14",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR078",
+    "at": [
+      "at",
+      "100.33",
+      "317.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR078",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR060",
+    "at": [
+      "at",
+      "335.28",
+      "208.28",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR060",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R27",
+    "at": [
+      "at",
+      "290.83",
+      "143.51",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R27",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR074",
+    "at": [
+      "at",
+      "36.83",
+      "307.34",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR074",
+      "Value": "+3.7V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR064",
+    "at": [
+      "at",
+      "538.48",
+      "38.1",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR064",
+      "Value": "+3.3V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C19",
+    "at": [
+      "at",
+      "137.16",
+      "184.15",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C19",
+      "Value": "0.1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR052",
+    "at": [
+      "at",
+      "297.18",
+      "182.88",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR052",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR062",
+    "at": [
+      "at",
+      "355.6",
+      "213.36",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR062",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R5",
+    "at": [
+      "at",
+      "59.69",
+      "78.74",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R5",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E8",
+    "at": [
+      "at",
+      "38.1",
+      "191.77",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E8",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR049",
+    "at": [
+      "at",
+      "297.18",
+      "161.29",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR049",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR056",
+    "at": [
+      "at",
+      "410.21",
+      "190.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR056",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR043",
+    "at": [
+      "at",
+      "293.37",
+      "114.3",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR043",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR059",
+    "at": [
+      "at",
+      "322.58",
+      "205.74",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR059",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R19",
+    "at": [
+      "at",
+      "287.02",
+      "55.88",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R19",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR063",
+    "at": [
+      "at",
+      "535.94",
+      "27.94",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR063",
+      "Value": "+5V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C41",
+    "at": [
+      "at",
+      "297.18",
+      "147.32",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C41",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR017",
+    "at": [
+      "at",
+      "69.85",
+      "151.13",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR017",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C38",
+    "at": [
+      "at",
+      "293.37",
+      "111.76",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C38",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R15",
+    "at": [
+      "at",
+      "63.5",
+      "187.96",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R15",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR029",
+    "at": [
+      "at",
+      "107.95",
+      "209.55",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR029",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR028",
+    "at": [
+      "at",
+      "95.25",
+      "207.01",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR028",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR050",
+    "at": [
+      "at",
+      "297.18",
+      "171.45",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR050",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E11",
+    "at": [
+      "at",
+      "265.43",
+      "77.47",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E11",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C53",
+    "at": [
+      "at",
+      "95.25",
+      "273.05",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C53",
+      "Value": "1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "U3",
+    "at": [
+      "at",
+      "537.21",
+      "83.82",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "PCM_Espressif:ESP32-S3-DevKitC"
+    ],
+    "props": {
+      "Reference": "U3",
+      "Value": "ESP32-S3-DevKitC",
+      "Footprint": "PCM_Espressif:ESP32-S3-DevKitC",
+      "Datasheet": "",
+      "Description": "ESP32-S3-DevKitC"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR073",
+    "at": [
+      "at",
+      "134.62",
+      "279.4",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR073",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E3",
+    "at": [
+      "at",
+      "38.1",
+      "78.74",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E3",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR030",
+    "at": [
+      "at",
+      "118.11",
+      "212.09",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR030",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR035",
+    "at": [
+      "at",
+      "293.37",
+      "72.39",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR035",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR027",
+    "at": [
+      "at",
+      "69.85",
+      "205.74",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR027",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR058",
+    "at": [
+      "at",
+      "297.18",
+      "204.47",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR058",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E4",
+    "at": [
+      "at",
+      "38.1",
+      "99.06",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E4",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR010",
+    "at": [
+      "at",
+      "66.04",
+      "95.25",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR010",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C44",
+    "at": [
+      "at",
+      "297.18",
+      "179.07",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C44",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R17",
+    "at": [
+      "at",
+      "287.02",
+      "35.56",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R17",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR02",
+    "at": [
+      "at",
+      "66.04",
+      "53.34",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR02",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C13",
+    "at": [
+      "at",
+      "66.04",
+      "123.19",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C13",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R13",
+    "at": [
+      "at",
+      "63.5",
+      "166.37",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R13",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R8",
+    "at": [
+      "at",
+      "59.69",
+      "109.22",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R8",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R7",
+    "at": [
+      "at",
+      "59.69",
+      "99.06",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R7",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E14",
+    "at": [
+      "at",
+      "265.43",
+      "147.32",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E14",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E6",
+    "at": [
+      "at",
+      "38.1",
+      "148.59",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E6",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR067",
+    "at": [
+      "at",
+      "48.26",
+      "267.97",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR067",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR05",
+    "at": [
+      "at",
+      "66.04",
+      "85.09",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR05",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR075",
+    "at": [
+      "at",
+      "100.33",
+      "309.88",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR075",
+      "Value": "+3.7V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR071",
+    "at": [
+      "at",
+      "147.32",
+      "276.86",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR071",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR041",
+    "at": [
+      "at",
+      "293.37",
+      "93.98",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR041",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R26",
+    "at": [
+      "at",
+      "287.02",
+      "128.27",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R26",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR011",
+    "at": [
+      "at",
+      "66.04",
+      "105.41",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR011",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR022",
+    "at": [
+      "at",
+      "160.02",
+      "187.96",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR022",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C9",
+    "at": [
+      "at",
+      "201.93",
+      "90.17",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C9",
+      "Value": "10uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E12",
+    "at": [
+      "at",
+      "265.43",
+      "97.79",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E12",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E2",
+    "at": [
+      "at",
+      "38.1",
+      "57.15",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E2",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR031",
+    "at": [
+      "at",
+      "128.27",
+      "214.63",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR031",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C24",
+    "at": [
+      "at",
+      "107.95",
+      "205.74",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C24",
+      "Value": "1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C54",
+    "at": [
+      "at",
+      "147.32",
+      "273.05",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C54",
+      "Value": "2.2uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C18",
+    "at": [
+      "at",
+      "69.85",
+      "180.34",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C18",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R25",
+    "at": [
+      "at",
+      "287.02",
+      "118.11",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R25",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C7",
+    "at": [
+      "at",
+      "166.37",
+      "90.17",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C7",
+      "Value": "10uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C17",
+    "at": [
+      "at",
+      "69.85",
+      "170.18",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C17",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR048",
+    "at": [
+      "at",
+      "297.18",
+      "149.86",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR048",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR072",
+    "at": [
+      "at",
+      "118.11",
+      "279.4",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR072",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR07",
+    "at": [
+      "at",
+      "201.93",
+      "86.36",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR07",
+      "Value": "+3.3V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C4",
+    "at": [
+      "at",
+      "66.04",
+      "71.12",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C4",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR047",
+    "at": [
+      "at",
+      "458.47",
+      "140.97",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR047",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR033",
+    "at": [
+      "at",
+      "293.37",
+      "52.07",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR033",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C57",
+    "at": [
+      "at",
+      "135.89",
+      "313.69",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C57",
+      "Value": "200uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR077",
+    "at": [
+      "at",
+      "36.83",
+      "317.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR077",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R30",
+    "at": [
+      "at",
+      "290.83",
+      "175.26",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R30",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C3",
+    "at": [
+      "at",
+      "66.04",
+      "60.96",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C3",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C28",
+    "at": [
+      "at",
+      "293.37",
+      "49.53",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C28",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR034",
+    "at": [
+      "at",
+      "293.37",
+      "62.23",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR034",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR066",
+    "at": [
+      "at",
+      "36.83",
+      "267.97",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR066",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR03",
+    "at": [
+      "at",
+      "66.04",
+      "63.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR03",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C15",
+    "at": [
+      "at",
+      "69.85",
+      "148.59",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C15",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR069",
+    "at": [
+      "at",
+      "147.32",
+      "269.24",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR069",
+      "Value": "+3.3V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R18",
+    "at": [
+      "at",
+      "287.02",
+      "45.72",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R18",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C34",
+    "at": [
+      "at",
+      "417.83",
+      "88.9",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C34",
+      "Value": "0.1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C46",
+    "at": [
+      "at",
+      "375.92",
+      "182.88",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C46",
+      "Value": "10uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C42",
+    "at": [
+      "at",
+      "297.18",
+      "157.48",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C42",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR06",
+    "at": [
+      "at",
+      "154.94",
+      "86.36",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDDA"
+    ],
+    "props": {
+      "Reference": "#PWR06",
+      "Value": "+3.3V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDDA\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C2",
+    "at": [
+      "at",
+      "66.04",
+      "50.8",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C2",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "U5",
+    "at": [
+      "at",
+      "121.92",
+      "312.42",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Regulator_Linear:TLV75533PDBV"
+    ],
+    "props": {
+      "Reference": "U5",
+      "Value": "TLV75533PDBV",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+      "Description": "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR01",
+    "at": [
+      "at",
+      "66.04",
+      "43.18",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR01",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C6",
+    "at": [
+      "at",
+      "154.94",
+      "90.17",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C6",
+      "Value": "0.1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C21",
+    "at": [
+      "at",
+      "69.85",
+      "191.77",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C21",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR039",
+    "at": [
+      "at",
+      "382.27",
+      "92.71",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR039",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR040",
+    "at": [
+      "at",
+      "429.26",
+      "92.71",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR040",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C5",
+    "at": [
+      "at",
+      "66.04",
+      "82.55",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C5",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR076",
+    "at": [
+      "at",
+      "135.89",
+      "309.88",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR076",
+      "Value": "+3.3V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR014",
+    "at": [
+      "at",
+      "203.2",
+      "133.35",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR014",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR025",
+    "at": [
+      "at",
+      "182.88",
+      "191.77",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR025",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR018",
+    "at": [
+      "at",
+      "69.85",
+      "162.56",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR018",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C40",
+    "at": [
+      "at",
+      "293.37",
+      "132.08",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C40",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R2",
+    "at": [
+      "at",
+      "59.69",
+      "46.99",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R2",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "U2",
+    "at": [
+      "at",
+      "405.13",
+      "143.51",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Analog_ADC:ADS1298xPAG"
+    ],
+    "props": {
+      "Reference": "U2",
+      "Value": "ADS1298xPAG",
+      "Footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/ads1298.pdf",
+      "Description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR023",
+    "at": [
+      "at",
+      "137.16",
+      "190.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR023",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C52",
+    "at": [
+      "at",
+      "355.6",
+      "209.55",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C52",
+      "Value": "1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C32",
+    "at": [
+      "at",
+      "382.27",
+      "88.9",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C32",
+      "Value": "0.1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C43",
+    "at": [
+      "at",
+      "297.18",
+      "168.91",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C43",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR020",
+    "at": [
+      "at",
+      "200.66",
+      "177.8",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR020",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR09",
+    "at": [
+      "at",
+      "201.93",
+      "93.98",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR09",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR036",
+    "at": [
+      "at",
+      "293.37",
+      "83.82",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR036",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR04",
+    "at": [
+      "at",
+      "66.04",
+      "73.66",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR04",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R20",
+    "at": [
+      "at",
+      "287.02",
+      "66.04",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R20",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR051",
+    "at": [
+      "at",
+      "427.99",
+      "176.53",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR051",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR019",
+    "at": [
+      "at",
+      "69.85",
+      "172.72",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR019",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR068",
+    "at": [
+      "at",
+      "95.25",
+      "269.24",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR068",
+      "Value": "+3.7V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R11",
+    "at": [
+      "at",
+      "63.5",
+      "144.78",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R11",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R16",
+    "at": [
+      "at",
+      "63.5",
+      "198.12",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R16",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR065",
+    "at": [
+      "at",
+      "542.29",
+      "137.16",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR065",
+      "Value": "DGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C20",
+    "at": [
+      "at",
+      "148.59",
+      "184.15",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C20",
+      "Value": "10uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E16",
+    "at": [
+      "at",
+      "265.43",
+      "190.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E16",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR037",
+    "at": [
+      "at",
+      "382.27",
+      "85.09",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDDA"
+    ],
+    "props": {
+      "Reference": "#PWR037",
+      "Value": "+3.3V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDDA\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E15",
+    "at": [
+      "at",
+      "265.43",
+      "168.91",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E15",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "U1",
+    "at": [
+      "at",
+      "177.8",
+      "144.78",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Analog_ADC:ADS1298xPAG"
+    ],
+    "props": {
+      "Reference": "U1",
+      "Value": "ADS1298xPAG",
+      "Footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/ads1298.pdf",
+      "Description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R29",
+    "at": [
+      "at",
+      "290.83",
+      "165.1",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R29",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C30",
+    "at": [
+      "at",
+      "293.37",
+      "69.85",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C30",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C50",
+    "at": [
+      "at",
+      "335.28",
+      "204.47",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C50",
+      "Value": "1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C31",
+    "at": [
+      "at",
+      "293.37",
+      "81.28",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C31",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E9",
+    "at": [
+      "at",
+      "266.7",
+      "35.56",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E9",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR024",
+    "at": [
+      "at",
+      "172.72",
+      "191.77",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR024",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R10",
+    "at": [
+      "at",
+      "59.69",
+      "129.54",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R10",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR055",
+    "at": [
+      "at",
+      "400.05",
+      "190.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR055",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E13",
+    "at": [
+      "at",
+      "265.43",
+      "118.11",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E13",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E1",
+    "at": [
+      "at",
+      "39.37",
+      "36.83",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E1",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR038",
+    "at": [
+      "at",
+      "429.26",
+      "85.09",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:VDD"
+    ],
+    "props": {
+      "Reference": "#PWR038",
+      "Value": "+3.3V",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"VDD\""
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR044",
+    "at": [
+      "at",
+      "293.37",
+      "124.46",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR044",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR08",
+    "at": [
+      "at",
+      "154.94",
+      "93.98",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR08",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR070",
+    "at": [
+      "at",
+      "95.25",
+      "276.86",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR070",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR042",
+    "at": [
+      "at",
+      "293.37",
+      "104.14",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR042",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C49",
+    "at": [
+      "at",
+      "322.58",
+      "201.93",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C49",
+      "Value": "22uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR057",
+    "at": [
+      "at",
+      "297.18",
+      "193.04",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR057",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C27",
+    "at": [
+      "at",
+      "293.37",
+      "39.37",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C27",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R28",
+    "at": [
+      "at",
+      "290.83",
+      "153.67",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R28",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R21",
+    "at": [
+      "at",
+      "287.02",
+      "77.47",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R21",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR013",
+    "at": [
+      "at",
+      "66.04",
+      "125.73",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR013",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C36",
+    "at": [
+      "at",
+      "293.37",
+      "91.44",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C36",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C8",
+    "at": [
+      "at",
+      "190.5",
+      "90.17",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C8",
+      "Value": "0.1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR080",
+    "at": [
+      "at",
+      "121.92",
+      "320.04",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR080",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR026",
+    "at": [
+      "at",
+      "69.85",
+      "194.31",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR026",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R6",
+    "at": [
+      "at",
+      "59.69",
+      "88.9",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R6",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R3",
+    "at": [
+      "at",
+      "59.69",
+      "57.15",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R3",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR021",
+    "at": [
+      "at",
+      "69.85",
+      "184.15",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR021",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR015",
+    "at": [
+      "at",
+      "66.04",
+      "137.16",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR015",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C51",
+    "at": [
+      "at",
+      "345.44",
+      "207.01",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C51",
+      "Value": "1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C48",
+    "at": [
+      "at",
+      "297.18",
+      "200.66",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C48",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR079",
+    "at": [
+      "at",
+      "135.89",
+      "317.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR079",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR053",
+    "at": [
+      "at",
+      "387.35",
+      "186.69",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR053",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C22",
+    "at": [
+      "at",
+      "69.85",
+      "201.93",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C22",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C33",
+    "at": [
+      "at",
+      "393.7",
+      "88.9",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C33",
+      "Value": "10uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R14",
+    "at": [
+      "at",
+      "63.5",
+      "176.53",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R14",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C45",
+    "at": [
+      "at",
+      "364.49",
+      "182.88",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C45",
+      "Value": "0.1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R24",
+    "at": [
+      "at",
+      "287.02",
+      "107.95",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R24",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E10",
+    "at": [
+      "at",
+      "265.43",
+      "55.88",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E10",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C47",
+    "at": [
+      "at",
+      "297.18",
+      "190.5",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C47",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR012",
+    "at": [
+      "at",
+      "66.04",
+      "115.57",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR012",
+      "Value": "GND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R4",
+    "at": [
+      "at",
+      "59.69",
+      "67.31",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R4",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R9",
+    "at": [
+      "at",
+      "59.69",
+      "119.38",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R9",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C11",
+    "at": [
+      "at",
+      "66.04",
+      "102.87",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C11",
+      "Value": "620pF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "E7",
+    "at": [
+      "at",
+      "38.1",
+      "170.18",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Connector:Conn_01x02_Pin"
+    ],
+    "props": {
+      "Reference": "E7",
+      "Value": "Electrodes",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x02, script generated"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "C26",
+    "at": [
+      "at",
+      "128.27",
+      "210.82",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:C"
+    ],
+    "props": {
+      "Reference": "C26",
+      "Value": "1uF",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Unpolarized capacitor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "#PWR054",
+    "at": [
+      "at",
+      "364.49",
+      "189.23",
+      "0"
+    ],
+    "lib": [
+      "lib_id",
+      "power:GND"
+    ],
+    "props": {
+      "Reference": "#PWR054",
+      "Value": "AGND",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Power symbol creates a global label with name \"GND\" , ground"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  },
+  {
+    "ref": "R1",
+    "at": [
+      "at",
+      "59.69",
+      "36.83",
+      "90"
+    ],
+    "lib": [
+      "lib_id",
+      "Device:R"
+    ],
+    "props": {
+      "Reference": "R1",
+      "Value": "2K\u03a9",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Resistor"
+    },
+    "unit": [
+      "unit",
+      "1"
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/unused-netlist.xml",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  },
+  {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/unused-erc.json",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Found 33 violations\nSaved ERC Report to /Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/unused-erc.json\n",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+]

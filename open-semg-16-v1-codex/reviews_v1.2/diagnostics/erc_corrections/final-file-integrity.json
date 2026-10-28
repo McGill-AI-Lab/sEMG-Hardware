@@ -1,0 +1,1482 @@
+{
+  "passed": true,
+  "checked_utc": "2026-10-28T00:27:32.074140+00:00",
+  "pre_existing_files_checked": 243,
+  "only_modified_existing_file": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "final_schematic_sha256": "202b2b320076c5e802f55e6ed566ae640cb948c6544777b9d51b11222e371208",
+  "all_other_pre_existing_files_unchanged": true,
+  "final_static_checks": 2050,
+  "final_erc": {
+    "total": 11,
+    "severities": {
+      "error": 7,
+      "warning": 4
+    },
+    "types": {
+      "power_pin_not_driven": 3,
+      "pin_to_pin": 5,
+      "pin_not_connected": 2,
+      "pin_not_driven": 1
+    }
+  },
+  "checks": [
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.DS_Store",
+      "before": "4fc7132bcefd54db1dd92b788fb769826142083ce28728723e5e29401522023e",
+      "after": "4fc7132bcefd54db1dd92b788fb769826142083ce28728723e5e29401522023e",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/dry_electrode.kicad_sym",
+      "before": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "after": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/#auto_saved_files#",
+      "before": "b05eecf44565ab1bc7cbae3c2cf198f55d9a6051241d1f6989c0bf11c92c3fa2",
+      "after": "b05eecf44565ab1bc7cbae3c2cf198f55d9a6051241d1f6989c0bf11c92c3fa2",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/AGENTS.md.before-restructure",
+      "before": "9932335dfc5dcbb87a32e121b956b7bb5ff50b8b1a6fe8a985d0a1d0dce75ec9",
+      "after": "9932335dfc5dcbb87a32e121b956b7bb5ff50b8b1a6fe8a985d0a1d0dce75ec9",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/ref_electrode.kicad_sym",
+      "before": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "after": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/ref_electrode.bak",
+      "before": "67d6ec4bada2635d4bc0607a85823d0797f4ca8398f6c08c5993dfb0d2c60a82",
+      "after": "67d6ec4bada2635d4bc0607a85823d0797f4ca8398f6c08c5993dfb0d2c60a82",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/dry_electrode.bak",
+      "before": "84d6660eb386553e7de3bf5cd5c854f9490d46ed998568c3ce150fb40b3d0be3",
+      "after": "84d6660eb386553e7de3bf5cd5c854f9490d46ed998568c3ce150fb40b3d0be3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/AGENTS.md",
+      "before": "8d8434177b5be2e88a3a7554981d86c6d7dc618931072d730717dd218b31d3f2",
+      "after": "8d8434177b5be2e88a3a7554981d86c6d7dc618931072d730717dd218b31d3f2",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/sym-lib-table",
+      "before": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "after": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/open-semg-16-v1.kicad_prl copy",
+      "before": "91b67c8037c151301205e17a4530b8993f03d08b225f7133c2828aaf9abf7192",
+      "after": "91b67c8037c151301205e17a4530b8993f03d08b225f7133c2828aaf9abf7192",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/open-semg-16-v1.kicad_pro",
+      "before": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "after": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/dry_electrode.kicad_sym",
+      "before": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "after": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/open-semg-16-v1.kicad_sch",
+      "before": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+      "after": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/ref_electrode.kicad_sym",
+      "before": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "after": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/open-semg-16-v1.kicad_prl",
+      "before": "91b67c8037c151301205e17a4530b8993f03d08b225f7133c2828aaf9abf7192",
+      "after": "91b67c8037c151301205e17a4530b8993f03d08b225f7133c2828aaf9abf7192",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1/sym-lib-table",
+      "before": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "after": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/updates_from_v1.1.md",
+      "before": "1ff4075fbe8f832c071a0389bff5845f9311938dbfb1e0dcf2a07aeec73d75dc",
+      "after": "1ff4075fbe8f832c071a0389bff5845f9311938dbfb1e0dcf2a07aeec73d75dc",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/initial-erc.json",
+      "before": "fefa240d16e97ccbb3a8a293a55f2b8227400c07dd5f56e8461357ff06eb61a4",
+      "after": "fefa240d16e97ccbb3a8a293a55f2b8227400c07dd5f56e8461357ff06eb61a4",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/initial-netlist.xml",
+      "before": "bdbe153f630eeaeb07580f547ea8c770d4cbdadae2ed66946dac15b46f018850",
+      "after": "bdbe153f630eeaeb07580f547ea8c770d4cbdadae2ed66946dac15b46f018850",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/final-erc.json",
+      "before": "6490939e7eb49cb94f69a032d685d037580666108617a840b11b8e7ac8d54276",
+      "after": "6490939e7eb49cb94f69a032d685d037580666108617a840b11b8e7ac8d54276",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/erc_analysis.md",
+      "before": "fe1b66e6c6e5d994fa9875eb9bdd311601fec69fa7263407fc9a3dd840a84776",
+      "after": "fe1b66e6c6e5d994fa9875eb9bdd311601fec69fa7263407fc9a3dd840a84776",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/final-netlist.xml",
+      "before": "b9e9d8f9a740798cc0fa36b9b4053b780f3333c608766d0d95ebc13ec1c485e2",
+      "after": "b9e9d8f9a740798cc0fa36b9b4053b780f3333c608766d0d95ebc13ec1c485e2",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/open-semg-16-v1.1.kicad_pro",
+      "before": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "after": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/dry_electrode.kicad_sym",
+      "before": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "after": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/open-semg-16-v1.1.kicad_sch",
+      "before": "3fc4f21c8675c3c424349b29e323e724401b7a09468912befc215e78e49cf6e5",
+      "after": "3fc4f21c8675c3c424349b29e323e724401b7a09468912befc215e78e49cf6e5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/ref_electrode.kicad_sym",
+      "before": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "after": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/open-semg-16-v1.1.kicad_prl",
+      "before": "9719fd871f2f5136d5beea9ffb8c8a5cd08baca9eb173f7541b4285a658d0e77",
+      "after": "9719fd871f2f5136d5beea9ffb8c8a5cd08baca9eb173f7541b4285a658d0e77",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/sym-lib-table",
+      "before": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "after": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.history/open-semg-16-v1.kicad_sch",
+      "before": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+      "after": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.history/.gitignore",
+      "before": "1e18182125437ce3d2ec460b357a9ea06f059d795052de04a9a9f1044b8e20ba",
+      "after": "1e18182125437ce3d2ec460b357a9ea06f059d795052de04a9a9f1044b8e20ba",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.history/README.txt",
+      "before": "79c41e25e7633a1deff5e5a7456573c64f0061d508b7e0e5753d985456fe29e7",
+      "after": "79c41e25e7633a1deff5e5a7456573c64f0061d508b7e0e5753d985456fe29e7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.codex/config.toml.pre-migration-20261027-185221",
+      "before": "1b50a04d44e111fca1514bd505792ee7aea51fd0d6f3f14d1248a9f44ef9ddd3",
+      "after": "1b50a04d44e111fca1514bd505792ee7aea51fd0d6f3f14d1248a9f44ef9ddd3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/.codex/config.toml.disabled",
+      "before": "bbcd1321c973fc138fe8f74e192e047892fa9858891b97ba84d2356f273820ec",
+      "after": "bbcd1321c973fc138fe8f74e192e047892fa9858891b97ba84d2356f273820ec",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/power-notes.md",
+      "before": "5c1412b286ed0dc096cc0b00477c5beadc17daa21bd2f0f5b82fb0ad250d555b",
+      "after": "5c1412b286ed0dc096cc0b00477c5beadc17daa21bd2f0f5b82fb0ad250d555b",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/.DS_Store",
+      "before": "dc422790f4a5fd0954c1a7a6b0d47080a1943a9464cf65ca0d8b1f949891bb70",
+      "after": "dc422790f4a5fd0954c1a7a6b0d47080a1943a9464cf65ca0d8b1f949891bb70",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/hardware-audit.md",
+      "before": "e47c34952f23280cdb436effa3b101497b1f03e05433ff94314b19b6e672814a",
+      "after": "e47c34952f23280cdb436effa3b101497b1f03e05433ff94314b19b6e672814a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/digital-notes.md",
+      "before": "477f499513e6dd74a260a7def05bdb032ee632af9af40db7d20d5ed93eaaf77c",
+      "after": "477f499513e6dd74a260a7def05bdb032ee632af9af40db7d20d5ed93eaaf77c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/analog-notes.md",
+      "before": "0974b6de771d61d78899fee0f4f320425631871d47326f2907adf2299584b5e7",
+      "after": "0974b6de771d61d78899fee0f4f320425631871d47326f2907adf2299584b5e7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/full_review.md",
+      "before": "835334d47150142d2cf03b0b2e93653c9df3af6a720f6d7ca9be00546671c0de",
+      "after": "835334d47150142d2cf03b0b2e93653c9df3af6a720f6d7ca9be00546671c0de",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/updates_from_v1.md",
+      "before": "b1aef20b5ddf9ef86dc13d6d83f58f5181086e984f7c9e4f1a8366962fd3ebbc",
+      "after": "b1aef20b5ddf9ef86dc13d6d83f58f5181086e984f7c9e4f1a8366962fd3ebbc",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/dry_electrode.kicad_sym",
+      "before": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "after": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_prl",
+      "before": "29219a3adde666bd58bf8c3174c1879fd7b6ef25dcd844f279f9b30e29b94df5",
+      "after": "29219a3adde666bd58bf8c3174c1879fd7b6ef25dcd844f279f9b30e29b94df5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/ref_electrode.kicad_sym",
+      "before": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "after": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+      "before": "7efd6a06e2ac45a553e7731665950c98c9a680dd36da6db584a826dc016e9494",
+      "after": "202b2b320076c5e802f55e6ed566ae640cb948c6544777b9d51b11222e371208",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/sym-lib-table",
+      "before": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "after": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_pro",
+      "before": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "after": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-schematic.pdf",
+      "before": "0c2328b122a38e1933195079a718f41908905f9c700bafa10d82477087bbe212",
+      "after": "0c2328b122a38e1933195079a718f41908905f9c700bafa10d82477087bbe212",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/hardware-edit-log.json",
+      "before": "b9b6572f01c9787f42b2268402e7d213be52ddadd5dd4171eb71eb55b4d8a2ee",
+      "after": "b9b6572f01c9787f42b2268402e7d213be52ddadd5dd4171eb71eb55b4d8a2ee",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-validation.json",
+      "before": "787c9396d37e58b183d67ff50a4a5953daca93154e37977d134ee1c045c021c5",
+      "after": "787c9396d37e58b183d67ff50a4a5953daca93154e37977d134ee1c045c021c5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/specifications-edit-log.json",
+      "before": "395822a4a17c16c1287d8d88aa4e592d240cfe8d23a6e8b418ac3b9265bda836",
+      "after": "395822a4a17c16c1287d8d88aa4e592d240cfe8d23a6e8b418ac3b9265bda836",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/hardware-candidate-netlist.xml",
+      "before": "33ec8078ec9a8742e15b28597172a76a1cc797167cec34bfb83639841b25d663",
+      "after": "33ec8078ec9a8742e15b28597172a76a1cc797167cec34bfb83639841b25d663",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-cli-log.json",
+      "before": "99ac1ac7d9c9fb75070a1bbeffa345f9b6607248aa283dbe86431923acf1625b",
+      "after": "99ac1ac7d9c9fb75070a1bbeffa345f9b6607248aa283dbe86431923acf1625b",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/requirements-view.png",
+      "before": "830d82cfd779a519ee839cceed8cf984103f59de0c648b1c057fdeb3a2b10db8",
+      "after": "830d82cfd779a519ee839cceed8cf984103f59de0c648b1c057fdeb3a2b10db8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/modification-plan.json",
+      "before": "4c77c991045b62d003d3e2aac54f49e4bbe1e65a90e8c5ec7e4c63961db8afb4",
+      "after": "4c77c991045b62d003d3e2aac54f49e4bbe1e65a90e8c5ec7e4c63961db8afb4",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/edit_v1_2.py",
+      "before": "07f5a59e54cd020c879af936fbe293fb8d540977b197cd9323c07d226ebc6648",
+      "after": "07f5a59e54cd020c879af936fbe293fb8d540977b197cd9323c07d226ebc6648",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/specifications-candidate.kicad_sch",
+      "before": "7efd6a06e2ac45a553e7731665950c98c9a680dd36da6db584a826dc016e9494",
+      "after": "7efd6a06e2ac45a553e7731665950c98c9a680dd36da6db584a826dc016e9494",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/digital-decision-evidence.md",
+      "before": "251ff746334abfce9b6b6d7b8ca21ab7efda50df30e2a70ea5defb04c53a266a",
+      "after": "251ff746334abfce9b6b6d7b8ca21ab7efda50df30e2a70ea5defb04c53a266a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/ground-scope-edit-log.json",
+      "before": "34703df3abe4dba63362573e379fea6b6b31cd2d920caafa511eb9bff855b991",
+      "after": "34703df3abe4dba63362573e379fea6b6b31cd2d920caafa511eb9bff855b991",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/pre-edit-hashes.json",
+      "before": "a0ebfa178fad8b34d926c236b722a4f9a3a6cec3b1f3c20888f612ed53c7207a",
+      "after": "a0ebfa178fad8b34d926c236b722a4f9a3a6cec3b1f3c20888f612ed53c7207a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-erc.json",
+      "before": "d13bf075450aa65159ee232fefda173879028bc86f8480b06289c13c5d9763c5",
+      "after": "d13bf075450aa65159ee232fefda173879028bc86f8480b06289c13c5d9763c5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-validation.json",
+      "before": "a2d405a0d117896ddb12c8a2d55620cdb833632ab67c7cfcc6ab7733396b8a13",
+      "after": "a2d405a0d117896ddb12c8a2d55620cdb833632ab67c7cfcc6ab7733396b8a13",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/initial-cli-log.json",
+      "before": "d815a81eab26943807868742ba8fe65d6decab649cdebbaff21060f52b1a0a5b",
+      "after": "d815a81eab26943807868742ba8fe65d6decab649cdebbaff21060f52b1a0a5b",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-first-cli-log.json",
+      "before": "be2ee970f336b47099f43e01915d50a694ccc9cfdf220d69722a8e36b3bca80c",
+      "after": "be2ee970f336b47099f43e01915d50a694ccc9cfdf220d69722a8e36b3bca80c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-cli-log.json",
+      "before": "bf184617394458a0341904df171602eb1004de3ff2965fad963591aa6762a073",
+      "after": "bf184617394458a0341904df171602eb1004de3ff2965fad963591aa6762a073",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-first-validation.json",
+      "before": "60f5e696bdba804daa7259bbe962217cd3d21cf89d346d50f6a12d66cefa5b46",
+      "after": "60f5e696bdba804daa7259bbe962217cd3d21cf89d346d50f6a12d66cefa5b46",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/initial-erc.json",
+      "before": "8451f222aaa7caba5ef6fc6ab21461e44e3fe8d1c1fe44d47c360828a332614a",
+      "after": "8451f222aaa7caba5ef6fc6ab21461e44e3fe8d1c1fe44d47c360828a332614a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/independent-final-analog-review.md",
+      "before": "27f21d7b3651aa37ba8ae9464a18f09c290baaace38bfad378f6777c622b8c05",
+      "after": "27f21d7b3651aa37ba8ae9464a18f09c290baaace38bfad378f6777c622b8c05",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-connectivity.json",
+      "before": "b87ec25adf3c008c3aa059eaa4b6800de4dbe25714ab81eb5df636f24be70aa8",
+      "after": "b87ec25adf3c008c3aa059eaa4b6800de4dbe25714ab81eb5df636f24be70aa8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/independent-final-power-review.md",
+      "before": "797317b1a9eceef662357d2f93688cf617dc5646324c45b9a402c788a668184f",
+      "after": "797317b1a9eceef662357d2f93688cf617dc5646324c45b9a402c788a668184f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/created-file-manifest.txt",
+      "before": "614c1b7c3e15d3b338fbcf6d25dda4f6475119e16580590175c58493ebf9bfa9",
+      "after": "614c1b7c3e15d3b338fbcf6d25dda4f6475119e16580590175c58493ebf9bfa9",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/validate_v1_2.py",
+      "before": "d7f7577d62e2cd9ed03446fac0331bef6e5b62bc71b033a49b5416974bec48b7",
+      "after": "d7f7577d62e2cd9ed03446fac0331bef6e5b62bc71b033a49b5416974bec48b7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/initial-netlist.xml",
+      "before": "7a5a1d9e6d083c6c5821e3703dfdf9426e39640997cd156fe0bf456346f28137",
+      "after": "7a5a1d9e6d083c6c5821e3703dfdf9426e39640997cd156fe0bf456346f28137",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-first-erc.json",
+      "before": "b0ba7ee5efa6c6baef306d40c162201d6ce2cbe6062f005acedbf70817f258b3",
+      "after": "b0ba7ee5efa6c6baef306d40c162201d6ce2cbe6062f005acedbf70817f258b3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/ground-scope-candidate-netlist.xml",
+      "before": "e866f8533048c8688878cb46393c4e18d6ddf444585d4885170e38c3ab6fdf0c",
+      "after": "e866f8533048c8688878cb46393c4e18d6ddf444585d4885170e38c3ab6fdf0c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-erc.json",
+      "before": "fa900a4f59ca978217dc623d5308ea88c56e9416cbc1469ba5cedad49640de76",
+      "after": "fa900a4f59ca978217dc623d5308ea88c56e9416cbc1469ba5cedad49640de76",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/mcp-operation-log.json",
+      "before": "db56b1955c7d9924caa2ddfe950272351573a2a5576a070350ae539bc13e9963",
+      "after": "db56b1955c7d9924caa2ddfe950272351573a2a5576a070350ae539bc13e9963",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/new-controls-view.png",
+      "before": "2b39288440ce2f8c0f2213732be6caf46c22a47023b6bd091ca2d676c86194df",
+      "after": "2b39288440ce2f8c0f2213732be6caf46c22a47023b6bd091ca2d676c86194df",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-connectivity.json",
+      "before": "f6e6df41db171962a1b09d04e05a74423fd3de41e11e51cfb33a3fc360a7dac9",
+      "after": "f6e6df41db171962a1b09d04e05a74423fd3de41e11e51cfb33a3fc360a7dac9",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-first-netlist.xml",
+      "before": "b028449bee46548c0dcc7ffc966704f983d4b67f64a3843375135e0bf4f47146",
+      "after": "b028449bee46548c0dcc7ffc966704f983d4b67f64a3843375135e0bf4f47146",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/independent-final-digital-review.md",
+      "before": "0f10c5f41d685c1c8d75b4b011018b03d371d8c69468bc9bb2d2d0066ae9ea5d",
+      "after": "0f10c5f41d685c1c8d75b4b011018b03d371d8c69468bc9bb2d2d0066ae9ea5d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/configuration-check.json",
+      "before": "a0fbc5ede9906fa978eb4a24ce0f4270aed915cb0dbb0dc7a4f3fb1baa3e8d9b",
+      "after": "a0fbc5ede9906fa978eb4a24ce0f4270aed915cb0dbb0dc7a4f3fb1baa3e8d9b",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-file-integrity.json",
+      "before": "1e9a800e6f9fd194e4a813a366d966ecee62eb1960dc2a48c6b4e71224380c1d",
+      "after": "1e9a800e6f9fd194e4a813a366d966ecee62eb1960dc2a48c6b4e71224380c1d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-first-validation.json",
+      "before": "5a6e63beedd7c33df55680c0449c3f765b7b71aeb1593d8a5abf6dbad0d32934",
+      "after": "5a6e63beedd7c33df55680c0449c3f765b7b71aeb1593d8a5abf6dbad0d32934",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/specifications-candidate-netlist.xml",
+      "before": "6097aa78cfe2c0e1d8cab88e0932a1bdf1316e1f61c815e6bdeb3f2fbeeeba6c",
+      "after": "6097aa78cfe2c0e1d8cab88e0932a1bdf1316e1f61c815e6bdeb3f2fbeeeba6c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/ground-scope-candidate.kicad_sch",
+      "before": "a4b067833757aecacc0c5503c1b863bda055c1e76f2cd3de972e276b74239b0d",
+      "after": "a4b067833757aecacc0c5503c1b863bda055c1e76f2cd3de972e276b74239b0d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-first-connectivity.json",
+      "before": "f75a4d8a94a33cc017ffb80020f4ee4aa3ce3fd7eb5c0962f20c072a3a7872c8",
+      "after": "f75a4d8a94a33cc017ffb80020f4ee4aa3ce3fd7eb5c0962f20c072a3a7872c8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/render-log.json",
+      "before": "6fdb6e8228594f6743058d7deb061b8dc3a20f500b354ab6c4ac7f541e9b1087",
+      "after": "6fdb6e8228594f6743058d7deb061b8dc3a20f500b354ab6c4ac7f541e9b1087",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/analog-decision-evidence.md",
+      "before": "2d6fc3c65043b53e298ff17921572b0bb188b0758d694ec064318291e5dcc6b2",
+      "after": "2d6fc3c65043b53e298ff17921572b0bb188b0758d694ec064318291e5dcc6b2",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/after-hardware-netlist.xml",
+      "before": "0fc3a3edec666e3b1c7d4d04dae25f811b62c107cb9571d6d95a369df990fcf0",
+      "after": "0fc3a3edec666e3b1c7d4d04dae25f811b62c107cb9571d6d95a369df990fcf0",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/render-pdf.m",
+      "before": "de59753cb07b330e42031f73726a7e0c2d1056a16664cf1564fe2f82844e8d89",
+      "after": "de59753cb07b330e42031f73726a7e0c2d1056a16664cf1564fe2f82844e8d89",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/hardware-candidate.kicad_sch",
+      "before": "4593aa72c936d6e7b59c67a12132e4037795fb3f5fa4698faf569dbf8bf731b1",
+      "after": "4593aa72c936d6e7b59c67a12132e4037795fb3f5fa4698faf569dbf8bf731b1",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-netlist.xml",
+      "before": "b7259f146fdcd87fa9a245c18484b1d68a350c542bc523589a5f772e5b82b7a8",
+      "after": "b7259f146fdcd87fa9a245c18484b1d68a350c542bc523589a5f772e5b82b7a8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/baseline/open-semg-16-v1.2.kicad_sch",
+      "before": "bcec60ec36124c524afe030a5bbedafa21928f56ddaa2e3326cc475a497d4c64",
+      "after": "bcec60ec36124c524afe030a5bbedafa21928f56ddaa2e3326cc475a497d4c64",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/baseline/open-semg-16-v1.2.kicad_pro",
+      "before": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "after": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/final-svg/open-semg-16-v1.2.svg",
+      "before": "e83fabcdf49cf63e9eec040dde2ba78783878d61ad7cb7403f8902d00385299a",
+      "after": "e83fabcdf49cf63e9eec040dde2ba78783878d61ad7cb7403f8902d00385299a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.1/.codex/config.toml",
+      "before": "6456c701f8dcbbbbe2c2982577b0836372f488289e539b121ae154c4c76e97cb",
+      "after": "6456c701f8dcbbbbe2c2982577b0836372f488289e539b121ae154c4c76e97cb",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/audit-checks.json",
+      "before": "dc5d63994e98ed73a9ec8bdf9e737b59a24d8004425e7240f9eb2b9959137923",
+      "after": "dc5d63994e98ed73a9ec8bdf9e737b59a24d8004425e7240f9eb2b9959137923",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-connectivity.json",
+      "before": "a03e740d9c77e61c0e88083064e4819d3a219cd0ef4e251d767d8c56421fa999",
+      "after": "a03e740d9c77e61c0e88083064e4819d3a219cd0ef4e251d767d8c56421fa999",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-netlist.xml",
+      "before": "532a15f5880c1eb2850c8739261b21571a7008bde6355188c13c0a7ac68e8919",
+      "after": "532a15f5880c1eb2850c8739261b21571a7008bde6355188c13c0a7ac68e8919",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-connectivity.txt",
+      "before": "de9dc9917796d2eaad4f98aa1ec1dcc14cfcb5594b13fa9762b1e86a855c2010",
+      "after": "de9dc9917796d2eaad4f98aa1ec1dcc14cfcb5594b13fa9762b1e86a855c2010",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-erc.json",
+      "before": "a996fd78b250d73c3fe0cd9e338e1feee6043c78a0e8cdd03cfa60414092e719",
+      "after": "a996fd78b250d73c3fe0cd9e338e1feee6043c78a0e8cdd03cfa60414092e719",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/audit-file-manifest.txt",
+      "before": "258041c6cc1404e85311e8a06f37ace105473fe8735dd9ce099e6ba43344aeb3",
+      "after": "258041c6cc1404e85311e8a06f37ace105473fe8735dd9ce099e6ba43344aeb3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-netlist.xml",
+      "before": "6281d1315b21912c13d27d2666a7dbb24e9a129010f60423cf0111946102b166",
+      "after": "6281d1315b21912c13d27d2666a7dbb24e9a129010f60423cf0111946102b166",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-erc.json",
+      "before": "993b173c8bd63e9075ad67a89ba301347dd628a8c227e9e3fc2e57f23d0c9bbf",
+      "after": "993b173c8bd63e9075ad67a89ba301347dd628a8c227e9e3fc2e57f23d0c9bbf",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-connectivity.json",
+      "before": "a03e740d9c77e61c0e88083064e4819d3a219cd0ef4e251d767d8c56421fa999",
+      "after": "a03e740d9c77e61c0e88083064e4819d3a219cd0ef4e251d767d8c56421fa999",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/audit-checks.py",
+      "before": "aaff0ecea40e990cce87a2e456eea350de24216f17e7619443e1d1a4b2881af0",
+      "after": "aaff0ecea40e990cce87a2e456eea350de24216f17e7619443e1d1a4b2881af0",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/current-schematic-inventory.json",
+      "before": "5ff26a46e774c60c3c208a808d1947b1a96d701c16f15fa352fd6342ef9940b5",
+      "after": "5ff26a46e774c60c3c208a808d1947b1a96d701c16f15fa352fd6342ef9940b5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/digital-devkit-v1.1-lfs-pointer.txt",
+      "before": "7c361902d3c9300c5b01f93eb178583326689b09f8c26d31ddecb56118030dc5",
+      "after": "7c361902d3c9300c5b01f93eb178583326689b09f8c26d31ddecb56118030dc5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/independent-review-checkpoint.md",
+      "before": "cc3a5fb3657b35a6ddc809ab4248ec8feb6676d3655b8a214d4602346379ff48",
+      "after": "cc3a5fb3657b35a6ddc809ab4248ec8feb6676d3655b8a214d4602346379ff48",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/baseline-hashes.json",
+      "before": "8ffea6eb8e9ccb0cb72fe4888cf0254846e12781ea98a00d734224370684e268",
+      "after": "8ffea6eb8e9ccb0cb72fe4888cf0254846e12781ea98a00d734224370684e268",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/extract-pdf.m",
+      "before": "d0b0d841e612a4d0668ade390d3cc13bdca8169d146e766a262c272ddb6ef5d5",
+      "after": "d0b0d841e612a4d0668ade390d3cc13bdca8169d146e766a262c272ddb6ef5d5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-hashes.json",
+      "before": "74507234df70c519bf1f33896a2aeff7bdfdcf2e6cd91d541b9424db38d310f3",
+      "after": "74507234df70c519bf1f33896a2aeff7bdfdcf2e6cd91d541b9424db38d310f3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/design-integrity-verification.json",
+      "before": "d06c88fcaed7a4bc4dfdff1b91844513056bfea598639cc33adfbe2e1bc7d986",
+      "after": "d06c88fcaed7a4bc4dfdff1b91844513056bfea598639cc33adfbe2e1bc7d986",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/open-semg-16-v1.kicad_pro",
+      "before": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "after": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/dry_electrode.kicad_sym",
+      "before": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "after": "8db60df27961ab04735d7af9b6f30bc3fb81457f26e09b30e621c0b281134aae",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/open-semg-16-v1.kicad_sch",
+      "before": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+      "after": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/ref_electrode.kicad_sym",
+      "before": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "after": "042154b13c7dd14c611aed7995a464965a99570dc204634bd6bff77658402568",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/open-semg-16-v1.kicad_prl",
+      "before": "cca6d32cca9f76950e1c0a517e2c36d755cef9c2304780f99660f5a22e6019e1",
+      "after": "cca6d32cca9f76950e1c0a517e2c36d755cef9c2304780f99660f5a22e6019e1",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/reference-input/sym-lib-table",
+      "before": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "after": "15355709fbc8a4ffb655c0f8695c708fb28b035ff1bf708fb42dccacccc4a6b7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/schematic-svg/open-semg-16-v1.svg",
+      "before": "c72ed3968140d1cec0ab91482a0c63c10db44e5c3d1e1260d8894d03f415d940",
+      "after": "c72ed3968140d1cec0ab91482a0c63c10db44e5c3d1e1260d8894d03f415d940",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SLAA412.txt",
+      "before": "aad6dbe6718f1fb5a4890a7a664f62c7bc246285072cb84ef07b7968e92cf47c",
+      "after": "aad6dbe6718f1fb5a4890a7a664f62c7bc246285072cb84ef07b7968e92cf47c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/ADS1298-EVM.txt",
+      "before": "b85a413c0338354cd3caf307af3b79477f66171694b1e9b949fd3791839a2d52",
+      "after": "b85a413c0338354cd3caf307af3b79477f66171694b1e9b949fd3791839a2d52",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/ADS1298.txt",
+      "before": "eb683c29a9f67ed12b503e24e7937d9f3e24a45c332b35fbc116fe25b56ee65f",
+      "after": "eb683c29a9f67ed12b503e24e7937d9f3e24a45c332b35fbc116fe25b56ee65f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA196.txt",
+      "before": "2b925c13909f4ecd08fb5097e541b18b4578a28d23021a2f1fa46f91b9e61ce8",
+      "after": "2b925c13909f4ecd08fb5097e541b18b4578a28d23021a2f1fa46f91b9e61ce8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SLAA414.txt",
+      "before": "c09766c65afe7217e6c6d49765b7c2ba166d5e24a3ed5a8b90954f2eb8689db6",
+      "after": "c09766c65afe7217e6c6d49765b7c2ba166d5e24a3ed5a8b90954f2eb8689db6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA230.txt",
+      "before": "969b761e399b2dbbb896870ecc8ee6b04c4d5e4a9b0d09177d414d7a7570f1d0",
+      "after": "969b761e399b2dbbb896870ecc8ee6b04c4d5e4a9b0d09177d414d7a7570f1d0",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA185.txt",
+      "before": "6cac95ac4674b2eb81e888d38226cd59f9c03dc14503dff7d0ead522d0247eaf",
+      "after": "6cac95ac4674b2eb81e888d38226cd59f9c03dc14503dff7d0ead522d0247eaf",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SLYY192.txt",
+      "before": "312f986f2d45e6cf2a5f2e798854761927cf6626b2f0ab00d3dc8e60bec74e15",
+      "after": "312f986f2d45e6cf2a5f2e798854761927cf6626b2f0ab00d3dc8e60bec74e15",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/TLV755P.txt",
+      "before": "4346c02a2381e0c1f6ab74a9d2260da45019d01e59a98bdcab81673b7effe12c",
+      "after": "4346c02a2381e0c1f6ab74a9d2260da45019d01e59a98bdcab81673b7effe12c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA188.txt",
+      "before": "d923c3ecac4412ec3355b5e6a483ed86394a4a2f6b08dc4cfbb9dfb939d127e4",
+      "after": "d923c3ecac4412ec3355b5e6a483ed86394a4a2f6b08dc4cfbb9dfb939d127e4",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/ESP32-S3-WROOM-1.txt",
+      "before": "913c8b985ae15a6d649df348264a6a46ccb338ac0319fcc90a527083cff9f91b",
+      "after": "913c8b985ae15a6d649df348264a6a46ccb338ac0319fcc90a527083cff9f91b",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/SBAA160.txt",
+      "before": "33c8188bd97080a169f177ab8f35f22de3346263a09093827674498905a8a291",
+      "after": "33c8188bd97080a169f177ab8f35f22de3346263a09093827674498905a8a291",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1/diagnostics/pdf-text/LP2985.txt",
+      "before": "02678e23fe81d198ccdf6922a4ef6037fbca8de91847886b7f07d9cd1a0516cf",
+      "after": "02678e23fe81d198ccdf6922a4ef6037fbca8de91847886b7f07d9cd1a0516cf",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/clock-edit-log.json",
+      "before": "887fbc1d3736454f6d165a404f1bbd8960bd298d419cef2637da43e414fa4389",
+      "after": "887fbc1d3736454f6d165a404f1bbd8960bd298d419cef2637da43e414fa4389",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/final-schematic.pdf",
+      "before": "43ea5bbccbbe472bb6372f74551fd70fac16e3fc345036dd308044545d648602",
+      "after": "43ea5bbccbbe472bb6372f74551fd70fac16e3fc345036dd308044545d648602",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/after-power-netlist.xml",
+      "before": "9f3e23fc7d722aa4074ccecfb54198b981cd203b2a86dc463f5595a34044ebb2",
+      "after": "9f3e23fc7d722aa4074ccecfb54198b981cd203b2a86dc463f5595a34044ebb2",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/probes-view.png",
+      "before": "68efaee991858885f267fbd69f6fe8d4a3f936cc170155282baba21827261ace",
+      "after": "68efaee991858885f267fbd69f6fe8d4a3f936cc170155282baba21827261ace",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/after-clock-netlist.xml",
+      "before": "451177a72cf8d9bd4f37ef03c5f6f6bd0f6c3eba7cafa15d6f3a917b9362f364",
+      "after": "451177a72cf8d9bd4f37ef03c5f6f6bd0f6c3eba7cafa15d6f3a917b9362f364",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/power-edit-log.json",
+      "before": "17767c421884f28a31fe97121566fc7889943a19139b90670bedf222fba295ad",
+      "after": "17767c421884f28a31fe97121566fc7889943a19139b90670bedf222fba295ad",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/after-power-erc.json",
+      "before": "97c917cc75c933ffa6524196cd70a23538935eef0c5ce50acb3bac90c9bc8927",
+      "after": "97c917cc75c933ffa6524196cd70a23538935eef0c5ce50acb3bac90c9bc8927",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/pre-edit-hashes.json",
+      "before": "6879868408d57b1b3832bb9d6647773c009b7c55c108d404488cd10c4fb1b4a0",
+      "after": "6879868408d57b1b3832bb9d6647773c009b7c55c108d404488cd10c4fb1b4a0",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/controls-view.png",
+      "before": "9fcc5a2275d5905a6bb236ebcf2ec22a20d9bd0bdb40093ff0a1cfb20b81446f",
+      "after": "9fcc5a2275d5905a6bb236ebcf2ec22a20d9bd0bdb40093ff0a1cfb20b81446f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/power-view.png",
+      "before": "63fcf6341b7c405cea84ce81fba62dc1c472bf5bd23063b0b1ddb77f73bc90d7",
+      "after": "63fcf6341b7c405cea84ce81fba62dc1c472bf5bd23063b0b1ddb77f73bc90d7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/initial-erc.json",
+      "before": "5848f433ce78938b3d2f8b1d53e9585e884af19e1cf8bce4ad3e1f919b29819b",
+      "after": "5848f433ce78938b3d2f8b1d53e9585e884af19e1cf8bce4ad3e1f919b29819b",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/annotation-edit-log.json",
+      "before": "3a33d3f68a9c6e350e3372bfd583fa672f14bbf3e8af5794535fa03a2bb4eecc",
+      "after": "3a33d3f68a9c6e350e3372bfd583fa672f14bbf3e8af5794535fa03a2bb4eecc",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/created-file-manifest.txt",
+      "before": "81190e655ff929d26c69b04fc8424bcbd2cfb684b7e6726b0fdcf660c41fb79d",
+      "after": "81190e655ff929d26c69b04fc8424bcbd2cfb684b7e6726b0fdcf660c41fb79d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/controls_probes-edit-log.json",
+      "before": "a8b3eead5f4b91b316dc235fe33ed79a455f76cd6a316e49b08e71c7d2cb9675",
+      "after": "a8b3eead5f4b91b316dc235fe33ed79a455f76cd6a316e49b08e71c7d2cb9675",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/validation-results.json",
+      "before": "c979481920fa6a327598800337d0a4aea79dafc0cc3d1a363b19df61ce4ced45",
+      "after": "c979481920fa6a327598800337d0a4aea79dafc0cc3d1a363b19df61ce4ced45",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/initial-netlist.xml",
+      "before": "e10f631b29a85048836caf09d7ea526f069bc6fd7003ddf5bec96c9b7e4caea3",
+      "after": "e10f631b29a85048836caf09d7ea526f069bc6fd7003ddf5bec96c9b7e4caea3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/initial-v2.kicad_sch",
+      "before": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+      "after": "82295c991bd8b2489c7392b99434aaa4e75e802dbd0d63e46895fe14de1a7cc7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/implement_v2.py",
+      "before": "40b6034d025931a3111dd87a7cc7b29fc010a58e2060a60170028950a449973f",
+      "after": "40b6034d025931a3111dd87a7cc7b29fc010a58e2060a60170028950a449973f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/schematic_tools.py",
+      "before": "284efd8e96a3fdd30e875600ac7d664ce6d6ad280d184de19e018a5142181104",
+      "after": "284efd8e96a3fdd30e875600ac7d664ce6d6ad280d184de19e018a5142181104",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/final-erc.json",
+      "before": "a18100dba6837eada38bf8a2b354fe1a8ec00698c74576c1311af4d2081d3ef1",
+      "after": "a18100dba6837eada38bf8a2b354fe1a8ec00698c74576c1311af4d2081d3ef1",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/final-connectivity.json",
+      "before": "8b1453dace1082f51bdc757a23b23353f4623f51b9cbfc590f734ebab8a654b8",
+      "after": "8b1453dace1082f51bdc757a23b23353f4623f51b9cbfc590f734ebab8a654b8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/v1.1-migration-netlist.xml",
+      "before": "bdc9906b677ba005f8064065815bfc94c7ef07e1649103bd0faca4173b80e44c",
+      "after": "bdc9906b677ba005f8064065815bfc94c7ef07e1649103bd0faca4173b80e44c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/v1.1-migration-erc.json",
+      "before": "ef4b37ce3820fe0d1e1fcabfad8dc7a980bfde90b7c2d03d837aa80da112fcdb",
+      "after": "ef4b37ce3820fe0d1e1fcabfad8dc7a980bfde90b7c2d03d837aa80da112fcdb",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/v1-hashes-before-verification.txt",
+      "before": "6b8e3f02e4b893d190edf21b3ffadd9cd8f2a59c3e054eaf9f6830c3594688dd",
+      "after": "6b8e3f02e4b893d190edf21b3ffadd9cd8f2a59c3e054eaf9f6830c3594688dd",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/initial-geometry.json",
+      "before": "b66d90e86703db8aa2206aa5a7a9533b7e9c6304161ec330e37cc388324a50d5",
+      "after": "b66d90e86703db8aa2206aa5a7a9533b7e9c6304161ec330e37cc388324a50d5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/extract-pdf.m",
+      "before": "28b587f837d3895dd91f53c7491cd82953b2c438886cbb2a0dc94180da8d8f3f",
+      "after": "28b587f837d3895dd91f53c7491cd82953b2c438886cbb2a0dc94180da8d8f3f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/render-pdf.m",
+      "before": "6636e6bf38dc4ffdb8a4e039a943ed048d4f3fa97b6da25f7df5bce20665917e",
+      "after": "6636e6bf38dc4ffdb8a4e039a943ed048d4f3fa97b6da25f7df5bce20665917e",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/final-netlist.xml",
+      "before": "98bca38bda994ad04e7663faefaa3293510a942503141132e6039ad1f8edb1e3",
+      "after": "98bca38bda994ad04e7663faefaa3293510a942503141132e6039ad1f8edb1e3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/verify_v2.py",
+      "before": "06cdb3b3e3f65539fa5bb8a3f0284e21475570613a47676cddea5e127dc2f202",
+      "after": "06cdb3b3e3f65539fa5bb8a3f0284e21475570613a47676cddea5e127dc2f202",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/after-clock-erc.json",
+      "before": "0c6fe724c6fbe9103334ad2f8945e61415449c3dbd352e021dde9e6a02ad71de",
+      "after": "0c6fe724c6fbe9103334ad2f8945e61415449c3dbd352e021dde9e6a02ad71de",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/reference-view.png",
+      "before": "de723297f597c80485fe4da8ef78fd497c01fdf42bd11711ad956cd75b86793b",
+      "after": "de723297f597c80485fe4da8ef78fd497c01fdf42bd11711ad956cd75b86793b",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/pdf-text/ADS1298.txt",
+      "before": "eb683c29a9f67ed12b503e24e7937d9f3e24a45c332b35fbc116fe25b56ee65f",
+      "after": "eb683c29a9f67ed12b503e24e7937d9f3e24a45c332b35fbc116fe25b56ee65f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/pdf-text/TLV755P.txt",
+      "before": "4346c02a2381e0c1f6ab74a9d2260da45019d01e59a98bdcab81673b7effe12c",
+      "after": "4346c02a2381e0c1f6ab74a9d2260da45019d01e59a98bdcab81673b7effe12c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.1/diagnostics/pdf-text/LP2985.txt",
+      "before": "02678e23fe81d198ccdf6922a4ef6037fbca8de91847886b7f07d9cd1a0516cf",
+      "after": "02678e23fe81d198ccdf6922a4ef6037fbca8de91847886b7f07d9cd1a0516cf",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/.codex/config.toml",
+      "before": "ec509e4a3d05678e5411773448652c204b0dd45b9f728d68a91384fdde282eb3",
+      "after": "ec509e4a3d05678e5411773448652c204b0dd45b9f728d68a91384fdde282eb3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/.DS_Store",
+      "before": "ede2b472a03a8c05d67701e5b2a2ae27527a8ee82eef485cb90fbfb894bf793d",
+      "after": "ede2b472a03a8c05d67701e5b2a2ae27527a8ee82eef485cb90fbfb894bf793d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/Wearable sEMG Report.pdf",
+      "before": "8c1b1c82c358e77be5ac216073f9d172f00d33e88b744e7e2e066d2b21422032",
+      "after": "8c1b1c82c358e77be5ac216073f9d172f00d33e88b744e7e2e066d2b21422032",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/.DS_Store",
+      "before": "e379cb3089dedd34f881ba8d551949126184a8ee98c8db5009d654bf64c35678",
+      "after": "e379cb3089dedd34f881ba8d551949126184a8ee98c8db5009d654bf64c35678",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/INDEX.md",
+      "before": "3c1a1a9f41b73aab0014d3cc8ec281d1fba20ce0635516441df2638c522dabe4",
+      "after": "3c1a1a9f41b73aab0014d3cc8ec281d1fba20ce0635516441df2638c522dabe4",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/latest_run.json",
+      "before": "fe9521dc20264c6e55bee693908cae8694ce02ab6e3763924c6ec3d346df8f5e",
+      "after": "fe9521dc20264c6e55bee693908cae8694ce02ab6e3763924c6ec3d346df8f5e",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/.DS_Store",
+      "before": "bb96739175738fd1ae78ab9d19a045067364559524ebff5357f93652c35e67f8",
+      "after": "bb96739175738fd1ae78ab9d19a045067364559524ebff5357f93652c35e67f8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/.DS_Store",
+      "before": "bb96739175738fd1ae78ab9d19a045067364559524ebff5357f93652c35e67f8",
+      "after": "bb96739175738fd1ae78ab9d19a045067364559524ebff5357f93652c35e67f8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/reference-designs/ADS1298-EVM.pdf",
+      "before": "b6448165a8b73808e1a3703ab4899f033c85f6b522219bd6157f35a14e2e9f9f",
+      "after": "b6448165a8b73808e1a3703ab4899f033c85f6b522219bd6157f35a14e2e9f9f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA196.pdf",
+      "before": "5afc294103ca3eef4ddf47b89b02680773cfdc8c034305e59c645302d4a39c6f",
+      "after": "5afc294103ca3eef4ddf47b89b02680773cfdc8c034305e59c645302d4a39c6f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SLAA412.pdf",
+      "before": "aa897d4b8b0b4806bdf2b84034d0bed75bf50bd3b4562ad404b8fd493fd09c4c",
+      "after": "aa897d4b8b0b4806bdf2b84034d0bed75bf50bd3b4562ad404b8fd493fd09c4c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA230.pdf",
+      "before": "8860bdd74cd6d75cdd4059d1e4570d97df64c81af655e2360d197202daec8ba3",
+      "after": "8860bdd74cd6d75cdd4059d1e4570d97df64c81af655e2360d197202daec8ba3",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA185.pdf",
+      "before": "fc062c457ed96ffcca0cdfac9c8fd6e76b27b372a8ee26da494182f94a4ca725",
+      "after": "fc062c457ed96ffcca0cdfac9c8fd6e76b27b372a8ee26da494182f94a4ca725",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SLYY192.pdf",
+      "before": "feab1491626868699a1fe0c07a692da68c3e957a389fc7bc5178224f80d19d95",
+      "after": "feab1491626868699a1fe0c07a692da68c3e957a389fc7bc5178224f80d19d95",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SLAA414.pdf",
+      "before": "61f0dcb862e7093873c8d3a65659dcbd2624f9a61a869235a49acfe575001b0c",
+      "after": "61f0dcb862e7093873c8d3a65659dcbd2624f9a61a869235a49acfe575001b0c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA160.pdf",
+      "before": "57721dc5d8d17fa146cd68cc15bebdbea7bacf7b6e9ab3fde0b079d295b01e46",
+      "after": "57721dc5d8d17fa146cd68cc15bebdbea7bacf7b6e9ab3fde0b079d295b01e46",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/ti-app-notes/SBAA188.pdf",
+      "before": "688e2ea858aaf60961026f84dc96030a67400c2b6aaca466e484e8f1389141de",
+      "after": "688e2ea858aaf60961026f84dc96030a67400c2b6aaca466e484e8f1389141de",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/components/ADS1298.pdf",
+      "before": "196711636c6e84edc10bf4c2d2fd76f8732d44dbd4ff92a6ba0eb3b28111cab6",
+      "after": "196711636c6e84edc10bf4c2d2fd76f8732d44dbd4ff92a6ba0eb3b28111cab6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/components/ESP32-S3-WROOM-1.pdf",
+      "before": "27d71971da07c280c6068d08c74720d1a25b8f20cf8494dc1765bdd28d40d435",
+      "after": "27d71971da07c280c6068d08c74720d1a25b8f20cf8494dc1765bdd28d40d435",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/components/LP2985.pdf",
+      "before": "29a9758cb28a12c1990cb8dba96cb792554906f00fe625aa310bc6cd6ea3f26f",
+      "after": "29a9758cb28a12c1990cb8dba96cb792554906f00fe625aa310bc6cd6ea3f26f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/originals/components/TLV755P.pdf",
+      "before": "96e2706d4b13656d2d550fdbb5be9861c56b058822109bb39a906d4ad1beb019",
+      "after": "96e2706d4b13656d2d550fdbb5be9861c56b058822109bb39a906d4ad1beb019",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/reference-designs/ADS1298-EVM_llamaparse.md",
+      "before": "7718d020b4a4dad234536486e2a39cd852337de6f6c3382fc6c4a3fe41df37d6",
+      "after": "7718d020b4a4dad234536486e2a39cd852337de6f6c3382fc6c4a3fe41df37d6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/reference-designs/ADS1298-EVM_llamaparse.json",
+      "before": "915b83866cea2d21be5189211e9873811574d899f76703823e09c13d3fd91d76",
+      "after": "915b83866cea2d21be5189211e9873811574d899f76703823e09c13d3fd91d76",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA160_llamaparse.json",
+      "before": "351cfe0f9e39ef762bf0af7c8151f0c72f6f2fe6cecec7afc85813b59cbd67f6",
+      "after": "351cfe0f9e39ef762bf0af7c8151f0c72f6f2fe6cecec7afc85813b59cbd67f6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA188_llamaparse.md",
+      "before": "47de970804d81e4234374dfbc36617e3fd89815aa3619920241b5145495ff189",
+      "after": "47de970804d81e4234374dfbc36617e3fd89815aa3619920241b5145495ff189",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA230_llamaparse.json",
+      "before": "9d305f1fda951b59326784465ae66e24aafa3d9e4ea031c2643125c59d3ccbbc",
+      "after": "9d305f1fda951b59326784465ae66e24aafa3d9e4ea031c2643125c59d3ccbbc",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/.DS_Store",
+      "before": "5b6e941da19fe69bd90428dd4b6cd660d04529df2787eb2a245575f5ff4e1bde",
+      "after": "5b6e941da19fe69bd90428dd4b6cd660d04529df2787eb2a245575f5ff4e1bde",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLAA414_llamaparse.json",
+      "before": "f858d333fb5507c827e3b1b74703c2ec9da4baa37c085e309d1aa7cfdd599b29",
+      "after": "f858d333fb5507c827e3b1b74703c2ec9da4baa37c085e309d1aa7cfdd599b29",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLYY192_llamaparse.json",
+      "before": "ebf0d3f352b59c037944b61b04b106981bb34d8717d565b61d728376672b6d17",
+      "after": "ebf0d3f352b59c037944b61b04b106981bb34d8717d565b61d728376672b6d17",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLAA414_llamaparse.md",
+      "before": "90a52babfaa86003800f5f992c52e909cbd62bbd813cdf6d50ddd176e594bd50",
+      "after": "90a52babfaa86003800f5f992c52e909cbd62bbd813cdf6d50ddd176e594bd50",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA188_llamaparse.json",
+      "before": "39186e25f8495feb5620c59343ddca0ae24973a3e29c106e0eeea705d2e7c15e",
+      "after": "39186e25f8495feb5620c59343ddca0ae24973a3e29c106e0eeea705d2e7c15e",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA185_llamaparse.md",
+      "before": "7c85c5334053c00fcae97a4639073c61bf386c18de2c7d0425e2068c634a1f1d",
+      "after": "7c85c5334053c00fcae97a4639073c61bf386c18de2c7d0425e2068c634a1f1d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA196_llamaparse.md",
+      "before": "933d7ed5f833a40cabfba2686cea359cb468c28994d169a9f8477bc05fb96e38",
+      "after": "933d7ed5f833a40cabfba2686cea359cb468c28994d169a9f8477bc05fb96e38",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA230_llamaparse.md",
+      "before": "82bb7843d7b3cb103616f75108412ee3a4f2eb4d0fdb0ac382c743738d6e27a0",
+      "after": "82bb7843d7b3cb103616f75108412ee3a4f2eb4d0fdb0ac382c743738d6e27a0",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLAA412_llamaparse.json",
+      "before": "50803bb923579b8bd16673c598cd74e2a2a0aec7534c23a63900e776410cf19a",
+      "after": "50803bb923579b8bd16673c598cd74e2a2a0aec7534c23a63900e776410cf19a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA196_llamaparse.json",
+      "before": "6f96a8adabc406759594027426f23168d9a0a090ffe225cea873be14029ba1b0",
+      "after": "6f96a8adabc406759594027426f23168d9a0a090ffe225cea873be14029ba1b0",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA160_llamaparse.md",
+      "before": "63789a72e6f387345520c422414963276b8b566c7ab2a46f2c436c4fcca57e11",
+      "after": "63789a72e6f387345520c422414963276b8b566c7ab2a46f2c436c4fcca57e11",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLAA412_llamaparse.md",
+      "before": "d67af03f35643afb8a356f2f63f0a5edbb4c9c0eaeff722382e20f76ff03f216",
+      "after": "d67af03f35643afb8a356f2f63f0a5edbb4c9c0eaeff722382e20f76ff03f216",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SBAA185_llamaparse.json",
+      "before": "04fca379592352ae3ef95f8bb0e9adf5acfcb4d7ac174255645c7ad0e39055e1",
+      "after": "04fca379592352ae3ef95f8bb0e9adf5acfcb4d7ac174255645c7ad0e39055e1",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/ti-app-notes/SLYY192_llamaparse.md",
+      "before": "01528319df9f25826f02d737fb6b9f523ca5fe077d77a96c32118334db9c045d",
+      "after": "01528319df9f25826f02d737fb6b9f523ca5fe077d77a96c32118334db9c045d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/.DS_Store",
+      "before": "d43c9ee520d13d178679e761b2e02508886988b4528a399777138238735229a0",
+      "after": "d43c9ee520d13d178679e761b2e02508886988b4528a399777138238735229a0",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/LP2985_llamaparse.md",
+      "before": "2bef63bbe02a560885ad969acb624d8288447672a0bef6be79001f2fd30add36",
+      "after": "2bef63bbe02a560885ad969acb624d8288447672a0bef6be79001f2fd30add36",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ESP32-S3-WROOM-1_llamaparse.json",
+      "before": "80739ecf91d44dfa368238f52b256dfc38c20b7c77f6b3cd061129670b6cdc33",
+      "after": "80739ecf91d44dfa368238f52b256dfc38c20b7c77f6b3cd061129670b6cdc33",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ADS1298_llamaparse.json",
+      "before": "4d859220748afa19a17604e1e25ca1a19176e33e6b14900788dd6d1961764da7",
+      "after": "4d859220748afa19a17604e1e25ca1a19176e33e6b14900788dd6d1961764da7",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ESP32-S3-WROOM-1_llamaparse.md",
+      "before": "712d2899ee1671015ddb11e9af6fbe5036b9c68cd6b74cf2549bb56931f9a951",
+      "after": "712d2899ee1671015ddb11e9af6fbe5036b9c68cd6b74cf2549bb56931f9a951",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ADS1298_llamaparse.md",
+      "before": "02a9c4d18f7757b775b3b94a043e45fdf8a4248863a0a38d425ea64b85e063b8",
+      "after": "02a9c4d18f7757b775b3b94a043e45fdf8a4248863a0a38d425ea64b85e063b8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/TLV755P_llamaparse.json",
+      "before": "0f409e500d0f2aeb6aa286b5a8d6f375d0a12131fc1da83b527e5cea6a1e6eb6",
+      "after": "0f409e500d0f2aeb6aa286b5a8d6f375d0a12131fc1da83b527e5cea6a1e6eb6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/ADS1298_docling.md",
+      "before": "baaa96f2e761b9a0472a155b0f04d3b794eaa1f0320db5cc588ededd116877ba",
+      "after": "baaa96f2e761b9a0472a155b0f04d3b794eaa1f0320db5cc588ededd116877ba",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/LP2985_llamaparse.json",
+      "before": "5ab8a4bf2dd1c97c77cf53b85c2f5602b5b37f49bbd3d49c9d95e64cd586f56c",
+      "after": "5ab8a4bf2dd1c97c77cf53b85c2f5602b5b37f49bbd3d49c9d95e64cd586f56c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/processed/components/TLV755P_llamaparse.md",
+      "before": "cfbf5a1f4f73ad0e9fd1b448565cca684053a2b5b00c61184f3314f0fce70269",
+      "after": "cfbf5a1f4f73ad0e9fd1b448565cca684053a2b5b00c61184f3314f0fce70269",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/reference-designs/ADS1298-EVM.json",
+      "before": "ae326315d8e10ce80ad565289f7b46e5f2115ae597b1af321ec5fd72f3f6926d",
+      "after": "ae326315d8e10ce80ad565289f7b46e5f2115ae597b1af321ec5fd72f3f6926d",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/reference-designs/ADS1298-EVM_llamaparse.json",
+      "before": "5e27ba52c16a9db3399cb297d8b78bd9140baebd203b2478313a87b838df7202",
+      "after": "5e27ba52c16a9db3399cb297d8b78bd9140baebd203b2478313a87b838df7202",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA160_llamaparse.json",
+      "before": "e29354f1e97db2ecc10ef755e4fcd03deee9098eb626f3159ad86a1b878dfa6a",
+      "after": "e29354f1e97db2ecc10ef755e4fcd03deee9098eb626f3159ad86a1b878dfa6a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA185.json",
+      "before": "963a745d585da05f36c7ee8a103ae19a7a3312edacf9bae895db3109f22baff6",
+      "after": "963a745d585da05f36c7ee8a103ae19a7a3312edacf9bae895db3109f22baff6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA230_llamaparse.json",
+      "before": "096ad8a1df3e5b0a0389bc32e7f25b943cfa1e4a2271d0f39b56d0dcf2e250e8",
+      "after": "096ad8a1df3e5b0a0389bc32e7f25b943cfa1e4a2271d0f39b56d0dcf2e250e8",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLAA414_llamaparse.json",
+      "before": "161acc3afd9a8f299b951b273fd305f5e189b343c621df074f7196e845fb4553",
+      "after": "161acc3afd9a8f299b951b273fd305f5e189b343c621df074f7196e845fb4553",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLYY192_llamaparse.json",
+      "before": "06c4ffdf58024827a5cee0f93b4f7638e4032a21d242e23d5d2eac8e930234ac",
+      "after": "06c4ffdf58024827a5cee0f93b4f7638e4032a21d242e23d5d2eac8e930234ac",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA188.json",
+      "before": "b4d44c33fe37f9778952146cc31ff92fdbd5556778d79688c4f083eb9aa89b3c",
+      "after": "b4d44c33fe37f9778952146cc31ff92fdbd5556778d79688c4f083eb9aa89b3c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA188_llamaparse.json",
+      "before": "ba7b7bef714928e564c4477e6734fba45f894b61fc959324c05eb0a55beb3fd0",
+      "after": "ba7b7bef714928e564c4477e6734fba45f894b61fc959324c05eb0a55beb3fd0",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA160.json",
+      "before": "87519e93fbec7509a773447c33e24e22a3c14f60aeaf330b1c16bebe159f73da",
+      "after": "87519e93fbec7509a773447c33e24e22a3c14f60aeaf330b1c16bebe159f73da",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLAA412_llamaparse.json",
+      "before": "cea0f5cccd14df0d600cb717a1deea73cd036265f9b999444802586d466a5b41",
+      "after": "cea0f5cccd14df0d600cb717a1deea73cd036265f9b999444802586d466a5b41",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA196_llamaparse.json",
+      "before": "52d69337567029ed34b58f7741a061d580a03a56a89147974b6e16d74655e66f",
+      "after": "52d69337567029ed34b58f7741a061d580a03a56a89147974b6e16d74655e66f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLYY192.json",
+      "before": "c741aaa6bceb506cc6f6a786a2bc1e53875f8995e4f2d7e632b10629ac879c02",
+      "after": "c741aaa6bceb506cc6f6a786a2bc1e53875f8995e4f2d7e632b10629ac879c02",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA230.json",
+      "before": "6646723b171c4ccf40b77a87aed5500a6d70d1a3b180136dfbce522ae5f7c752",
+      "after": "6646723b171c4ccf40b77a87aed5500a6d70d1a3b180136dfbce522ae5f7c752",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA185_llamaparse.json",
+      "before": "fe19e7820e894d7a2b07f430aa5b4d720d4921bbb7213808a95cdeef8e7e81bc",
+      "after": "fe19e7820e894d7a2b07f430aa5b4d720d4921bbb7213808a95cdeef8e7e81bc",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLAA414.json",
+      "before": "b4f198ab951b1580b2a2ac4d1ec23c16bd0708279c26319c55398a41ee27b404",
+      "after": "b4f198ab951b1580b2a2ac4d1ec23c16bd0708279c26319c55398a41ee27b404",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SBAA196.json",
+      "before": "0374a8b7985d503cb778d704ed7e1b60189dea21bd6ce26d5ba90b4c41d8c7c9",
+      "after": "0374a8b7985d503cb778d704ed7e1b60189dea21bd6ce26d5ba90b4c41d8c7c9",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/ti-app-notes/SLAA412.json",
+      "before": "8820ad4db70a9842dc7e88bc18b5515aa902203b228c4f10a64f59b00bc80ca6",
+      "after": "8820ad4db70a9842dc7e88bc18b5515aa902203b228c4f10a64f59b00bc80ca6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/ADS1298.json",
+      "before": "f3e2a84aa8d158d2968c9af89713f4fa809671c5f044c233b6c9db1cfa704cdf",
+      "after": "f3e2a84aa8d158d2968c9af89713f4fa809671c5f044c233b6c9db1cfa704cdf",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/TLV755P.json",
+      "before": "e27733e689f581fcb8ecb1ac1239fdbe711a17dead79812f37cbc468a173a98a",
+      "after": "e27733e689f581fcb8ecb1ac1239fdbe711a17dead79812f37cbc468a173a98a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/ESP32-S3-WROOM-1.json",
+      "before": "2bea7abb831c0980600c1d9291886d71a67ce8f20bd158c995125e27b6dd279f",
+      "after": "2bea7abb831c0980600c1d9291886d71a67ce8f20bd158c995125e27b6dd279f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/ESP32-S3-WROOM-1_llamaparse.json",
+      "before": "d1fe6148d1ad9df7188ed867aa7249c1228f7200f9d55e453f1750e85571ead5",
+      "after": "d1fe6148d1ad9df7188ed867aa7249c1228f7200f9d55e453f1750e85571ead5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/ADS1298_llamaparse.json",
+      "before": "aeedebc28b0f6cb1eb09bd20e5c214124ed9f2bc20a38ff40d2a4ce54408fb36",
+      "after": "aeedebc28b0f6cb1eb09bd20e5c214124ed9f2bc20a38ff40d2a4ce54408fb36",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/TLV755P_llamaparse.json",
+      "before": "4dd8bf586515e4ce9e1b99da88614e12e7c62b99b61f5a8e8292c5d76111e316",
+      "after": "4dd8bf586515e4ce9e1b99da88614e12e7c62b99b61f5a8e8292c5d76111e316",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/LP2985_llamaparse.json",
+      "before": "e747c64133b8459a7150e39a87bfa5fbcb0676da8ad88c1e67eb205468cf000a",
+      "after": "e747c64133b8459a7150e39a87bfa5fbcb0676da8ad88c1e67eb205468cf000a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/docs/datasheets/metadata/components/LP2985.json",
+      "before": "daee4bbdd12fbe818ca3a205bb1b32cd4d1df795fbb11d832a7f6535a256af56",
+      "after": "daee4bbdd12fbe818ca3a205bb1b32cd4d1df795fbb11d832a7f6535a256af56",
+      "unchanged": true
+    }
+  ]
+}

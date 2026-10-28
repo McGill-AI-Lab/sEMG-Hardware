@@ -1,0 +1,10 @@
+{
+  "data_HIGH_margin_V": 0.48251184,
+  "data_LOW_margin_V": 0.48251184,
+  "disabled_input_max_V": 0.4828,
+  "disabled_input_VIL_min_V": 0.58251184,
+  "allow_HIGH_load_A": 9.551288439955107e-05,
+  "allow_LOW_bound_V": 0.6544800000000001,
+  "allow_VIL_max_V": 0.8,
+  "PRE_min_headroom_V": 0.8914744646706585
+}

@@ -1,0 +1,41 @@
+{
+  "V1.2": {
+    "physical_count": 133,
+    "by_reference": {
+      "BT": 1,
+      "C": 57,
+      "E": 16,
+      "R": 38,
+      "TP": 16,
+      "U": 5
+    },
+    "unassigned_footprints": 128
+  },
+  "V1.3": {
+    "physical_count": 204,
+    "by_reference": {
+      "BT": 1,
+      "C": 79,
+      "E": 16,
+      "F": 1,
+      "J": 1,
+      "JP": 1,
+      "L": 2,
+      "Q": 2,
+      "R": 68,
+      "TP": 16,
+      "U": 17
+    },
+    "unassigned_footprints": 121
+  },
+  "V1.4": {
+    "physical_count": 117,
+    "by_reference": {
+      "C": 58,
+      "E": 16,
+      "R": 40,
+      "U": 3
+    },
+    "unassigned_footprints": 114
+  }
+}

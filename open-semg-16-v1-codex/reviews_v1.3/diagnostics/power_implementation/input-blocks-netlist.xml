@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.3/diagnostics/power_implementation/input-blocks-candidate.kicad_sch</source>
+    <date>2026-10-27T21:35:08</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>input-blocks-candidate.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="F1">
+      <value>1.5A FAST</value>
+      <footprint>Fuse:Fuse_1206_3216Metric</footprint>
+      <datasheet>https://www.littelfuse.com/assetdocs/littelfuse_fuse_466_datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f</datasheet>
+      <fields>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="MPN">046601.5NR</field>
+        <field name="Rating">1.5A, 63VAC/DC, 1206; 50A interrupt rating; derate for continuous current and temperature</field>
+        <field name="Purpose">Secondary board-input protection; not a wearer-current limiter or substitute for protected cell</field>
+        <field name="Cold resistance">0.046ohm nominal at25C</field>
+        <field name="Melting I2t">0.1103A2s nominal</field>
+        <field name="Footprint">Fuse:Fuse_1206_3216Metric</field>
+        <field name="Datasheet">https://www.littelfuse.com/assetdocs/littelfuse_fuse_466_datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="Manufacturer" value="Littelfuse"/>
+      <property name="MPN" value="046601.5NR"/>
+      <property name="Rating" value="1.5A, 63VAC/DC, 1206; 50A interrupt rating; derate for continuous current and temperature"/>
+      <property name="Purpose" value="Secondary board-input protection; not a wearer-current limiter or substitute for protected cell"/>
+      <property name="Cold resistance" value="0.046ohm nominal at25C"/>
+      <property name="Melting I2t" value="0.1103A2s nominal"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/input-blocks-candidate.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f066f89-39ce-412d-b11f-a74eb202bf8f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J17">
+      <value>B2B-PH-K-S(LF)(SN)</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">JST</field>
+        <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
+        <field name="Purpose">Protected 1S pack input; pin1 positive, pin2 return. Unplug pack for OFF.</field>
+        <field name="Pack requirement">4.20V maximum; &gt;=1.5A discharge capability; cell protection cutoff &gt;=3.0V; compatible off-body charger</field>
+        <field name="Mating harness">PHR-2 housing, SPH-002T-P0.5S contacts, AWG24; verify pack cable pin polarity</field>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
+      <property name="Purpose" value="Protected 1S pack input; pin1 positive, pin2 return. Unplug pack for OFF."/>
+      <property name="Pack requirement" value="4.20V maximum; &gt;=1.5A discharge capability; cell protection cutoff &gt;=3.0V; compatible off-body charger"/>
+      <property name="Mating harness" value="PHR-2 housing, SPH-002T-P0.5S contacts, AWG24; verify pack cable pin polarity"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/input-blocks-candidate.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2417664-b102-41dc-8871-0e5d475afa38</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP1">
+      <value>INHIBIT (OPEN=RUN)</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.samtec.com/products/tsw-102-07-g-s</datasheet>
+      <fields>
+        <field name="Manufacturer">Samtec</field>
+        <field name="MPN">TSW-102-07-G-S</field>
+        <field name="Assembly">Fit header, no shunt for RUN; short only for service inhibit</field>
+        <field name="Purpose">MAIN_ENABLE to AGND inhibits converter. Not galvanic isolation; unplug pack for OFF.</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet">https://www.samtec.com/products/tsw-102-07-g-s</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Jumper" part="Jumper_2_Open" description="Jumper, 2-pole, open"/>
+      <property name="Manufacturer" value="Samtec"/>
+      <property name="MPN" value="TSW-102-07-G-S"/>
+      <property name="Assembly" value="Fit header, no shunt for RUN; short only for service inhibit"/>
+      <property name="Purpose" value="MAIN_ENABLE to AGND inhibits converter. Not galvanic isolation; unplug pack for OFF."/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/input-blocks-candidate.kicad_sch"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
+      <property name="ki_fp_filters" value="Jumper* TestPoint*2Pads* TestPoint*Bridge*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ac6a308-c9ea-4b55-af5c-f3afa6a9f713</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>AO3401A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.aosmd.com/res/data_sheets/AO3401A.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Alpha &amp; Omega Semiconductor</field>
+        <field name="MPN">AO3401A</field>
+        <field name="Purpose">Reverse-polarity P-MOS: D3=fused input, S2=protected output; not reverse-current blocking</field>
+        <field name="RDS_on">85mOhm max atVGS=-2.5V, TJ25C; qualify hot condition</field>
+        <field name="Limits">VDS=-30V; VGS=+/-12V</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.aosmd.com/res/data_sheets/AO3401A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_Power" part="AO3401A" description="AO3401A P-channel MOSFET; physical pins 1=G, 2=S, 3=D"/>
+      <property name="Manufacturer" value="Alpha &amp; Omega Semiconductor"/>
+      <property name="MPN" value="AO3401A"/>
+      <property name="Purpose" value="Reverse-polarity P-MOS: D3=fused input, S2=protected output; not reverse-current blocking"/>
+      <property name="RDS_on" value="85mOhm max atVGS=-2.5V, TJ25C; qualify hot condition"/>
+      <property name="Limits" value="VDS=-30V; VGS=+/-12V"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/input-blocks-candidate.kicad_sch"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cfd3936d-b5c0-47ae-b475-0c66c555d63e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R52">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">RC0603FR-07100KL</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power">0.1W</field>
+        <field name="Purpose">Q1 gate pull-down</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="0.1W"/>
+      <property name="Purpose" value="Q1 gate pull-down"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_implementation/input-blocks-candidate.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95e4dcc8-5762-48b8-af12-6cf03ae7987b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="Jumper_2_Open">
+      <description>Jumper, 2-pole, open</description>
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_2_Open</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Jumper, 2-pole, open</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="V13_Power" part="AO3401A">
+      <description>AO3401A P-channel MOSFET; physical pins 1=G, 2=S, 3=D</description>
+      <docs>https://www.aosmd.com/res/data_sheets/AO3401A.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3401A</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.aosmd.com/res/data_sheets/AO3401A.pdf</field>
+        <field name="Description">AO3401A P-channel MOSFET; physical pins 1=G, 2=S, 3=D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>${KICAD10_SYMBOL_DIR}/Jumper.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.7V" class="Default">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J17" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+    </net>
+    <net code="2" name="AGND" class="Default">
+      <node ref="J17" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="B_2" pintype="passive"/>
+      <node ref="R52" pin="2" pintype="passive"/>
+    </net>
+    <net code="3" name="BAT_FUSED" class="Default">
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="4" name="MAIN_ENABLE" class="Default">
+      <node ref="JP1" pin="1" pinfunction="A_1" pintype="passive"/>
+    </net>
+    <net code="5" name="Q1_GATE" class="Default">
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R52" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="SW_BAT_PROT" class="Default">
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+    </net>
+  </nets>
+</export>

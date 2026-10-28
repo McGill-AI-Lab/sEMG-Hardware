@@ -4355,24 +4355,96 @@
 		(uuid "fc75bf92-7f65-4f64-ad5e-0bf0d50c49af")
 	)
 	(no_connect
+		(at 562.61 101.6)
+		(uuid "01efff49-34fa-4c6b-8e25-70dbd293ba25")
+	)
+	(no_connect
+		(at 562.61 66.04)
+		(uuid "072a2ade-2ca7-4921-a61b-72c8724aa239")
+	)
+	(no_connect
+		(at 562.61 124.46)
+		(uuid "0c14e60f-730f-48df-9d79-9d9ebe14c656")
+	)
+	(no_connect
+		(at 562.61 121.92)
+		(uuid "0e395b66-29b7-4aaa-8323-998cf9536ac1")
+	)
+	(no_connect
+		(at 562.61 109.22)
+		(uuid "143a1146-88d7-43df-9d0b-7821a09d904d")
+	)
+	(no_connect
+		(at 562.61 99.06)
+		(uuid "248b5d78-6c70-4ae5-8290-1ed37e4e4067")
+	)
+	(no_connect
 		(at 195.58 106.68)
 		(uuid "280b166c-bdcb-43ef-8d57-cddf92bc5477")
+	)
+	(no_connect
+		(at 562.61 104.14)
+		(uuid "2f68e639-79a5-43e8-b662-7f121c124759")
+	)
+	(no_connect
+		(at 562.61 63.5)
+		(uuid "3f57997f-3458-476d-b48c-7aed40d53bfe")
+	)
+	(no_connect
+		(at 511.81 53.34)
+		(uuid "401c3299-eabd-4bce-8a17-8ddba69a2bb3")
+	)
+	(no_connect
+		(at 511.81 66.04)
+		(uuid "47e07411-09fc-48c1-96c6-6fffb8deb8aa")
 	)
 	(no_connect
 		(at 195.58 116.84)
 		(uuid "55a24eab-2a3b-4a2d-9fda-1d86c7cc9fd2")
 	)
 	(no_connect
+		(at 511.81 63.5)
+		(uuid "572f55cd-2535-4d71-b7ab-649f2d69a3a6")
+	)
+	(no_connect
 		(at 422.91 163.83)
 		(uuid "5a577ad9-ce29-47e4-b9d4-724d2f25bc93")
+	)
+	(no_connect
+		(at 511.81 68.58)
+		(uuid "66a6087b-b0b8-4480-a8ae-60bb5dd87cb0")
+	)
+	(no_connect
+		(at 562.61 114.3)
+		(uuid "679f5376-5b0d-4d6c-a7d7-1a4222972215")
 	)
 	(no_connect
 		(at 422.91 107.95)
 		(uuid "70303dd1-ede6-4c7b-b276-04dc4ec575ae")
 	)
 	(no_connect
+		(at 562.61 111.76)
+		(uuid "7b520eb1-e59f-4a96-841c-7aa350a3551a")
+	)
+	(no_connect
+		(at 562.61 119.38)
+		(uuid "8295287b-4d4f-4753-ac66-a2baffc17f30")
+	)
+	(no_connect
+		(at 562.61 45.72)
+		(uuid "8754a857-f666-42f3-9edf-cbc598fc9ff0")
+	)
+	(no_connect
 		(at 422.91 113.03)
 		(uuid "950d84cf-cb98-4353-b57c-e09208e2674e")
+	)
+	(no_connect
+		(at 562.61 53.34)
+		(uuid "99c464ef-b381-4196-a647-aaa4bdbd64bb")
+	)
+	(no_connect
+		(at 562.61 116.84)
+		(uuid "a2d7d9cb-1d1c-496c-acaf-01820df99eeb")
 	)
 	(no_connect
 		(at 422.91 115.57)
@@ -4383,12 +4455,52 @@
 		(uuid "ab45880e-758f-4ef7-8848-fe7c295a322c")
 	)
 	(no_connect
+		(at 562.61 60.96)
+		(uuid "b0bb0b9d-3017-4a98-911d-3632367ea241")
+	)
+	(no_connect
 		(at 422.91 105.41)
 		(uuid "b8371b51-ab8c-4af7-b684-6c8574964b6c")
 	)
 	(no_connect
+		(at 511.81 43.18)
+		(uuid "c275c019-9d06-49a7-9c14-d00b2f20441e")
+	)
+	(no_connect
+		(at 562.61 50.8)
+		(uuid "cbcc3660-ed22-4515-b7e1-2c8f3c0e5cf2")
+	)
+	(no_connect
+		(at 511.81 50.8)
+		(uuid "ce0d7bb6-c3fc-486f-a9d9-3111c1bf7d02")
+	)
+	(no_connect
+		(at 511.81 60.96)
+		(uuid "d1f8de4a-17b6-4bc1-89a6-67c1a0192d67")
+	)
+	(no_connect
 		(at 195.58 109.22)
 		(uuid "d51f5501-79aa-4a0e-9cf1-4bf6262d3087")
+	)
+	(no_connect
+		(at 562.61 43.18)
+		(uuid "e1fa6d3e-0faa-410a-b73e-2ba15b6b44d1")
+	)
+	(no_connect
+		(at 562.61 68.58)
+		(uuid "e4d75476-9809-4827-b52a-b3681d02e4dd")
+	)
+	(no_connect
+		(at 562.61 106.68)
+		(uuid "ec9f4f55-3cda-406f-ae95-14be204e090c")
+	)
+	(no_connect
+		(at 562.61 73.66)
+		(uuid "f06a9b92-1547-41d3-8fde-42d6bcac68c6")
+	)
+	(no_connect
+		(at 562.61 71.12)
+		(uuid "fa2257ed-46f5-45f5-850e-321b9adc0c8a")
 	)
 	(wire
 		(pts
@@ -5342,6 +5454,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 266.7) (xy 144.78 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4027eb24-b93d-4d0c-af52-f636361aef47")
+	)
+	(wire
+		(pts
 			(xy 364.49 189.23) (xy 364.49 186.69)
 		)
 		(stroke
@@ -5862,6 +5984,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 267.97) (xy 147.32 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "653a4a0f-2c7c-4e8d-8c25-690b442ae274")
+	)
+	(wire
+		(pts
 			(xy 276.86 66.04) (xy 283.21 66.04)
 		)
 		(stroke
@@ -6009,6 +6141,16 @@
 			(type default)
 		)
 		(uuid "70214cdc-27ae-488e-bfe4-96722162c1fa")
+	)
+	(wire
+		(pts
+			(xy 144.78 267.97) (xy 147.32 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70d54e49-4654-40ca-9f96-60f38576a46f")
 	)
 	(wire
 		(pts
@@ -8519,6 +8661,16 @@
 			(justify right bottom)
 		)
 		(uuid "69b2e9de-1056-4310-b1f9-03ed9daad5da")
+	)
+	(label "AVDD"
+		(at 144.78 266.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a893c56-53dc-4676-98fe-d5c227459d3a")
 	)
 	(label "DVDD"
 		(at 209.55 160.02 180)
@@ -17010,6 +17162,7 @@
 		)
 		(property "Value" "+3.3V"
 			(at 147.32 264.16 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

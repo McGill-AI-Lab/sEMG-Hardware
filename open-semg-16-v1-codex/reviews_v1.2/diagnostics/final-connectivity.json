@@ -1,0 +1,4714 @@
+{
+  "components": {
+    "BT1": {
+      "value": "Battery",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "Battery",
+        "description": "Multiple-cell battery"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Multiple-cell battery"
+      },
+      "pins": {
+        "1": "+3.7V",
+        "2": "AGND"
+      }
+    },
+    "C1": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN1P)"
+      }
+    },
+    "C2": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN1N)"
+      }
+    },
+    "C3": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN2P)"
+      }
+    },
+    "C4": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN2N)"
+      }
+    },
+    "C5": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN3P)"
+      }
+    },
+    "C6": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C7": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C8": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C9": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C10": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN3N)"
+      }
+    },
+    "C11": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN4P)"
+      }
+    },
+    "C12": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN4N)"
+      }
+    },
+    "C13": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN5P)"
+      }
+    },
+    "C14": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN5N)"
+      }
+    },
+    "C15": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN6P)"
+      }
+    },
+    "C16": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN6N)"
+      }
+    },
+    "C17": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN7P)"
+      }
+    },
+    "C18": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN7N)"
+      }
+    },
+    "C19": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VREFP_ADC1",
+        "2": "AGND"
+      }
+    },
+    "C20": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VREFP_ADC1",
+        "2": "AGND"
+      }
+    },
+    "C21": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN8P)"
+      }
+    },
+    "C22": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U1-IN8N)"
+      }
+    },
+    "C23": {
+      "value": "22uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VCAP1_ADC1",
+        "2": "AGND"
+      }
+    },
+    "C24": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VCAP2_ADC1",
+        "2": "AGND"
+      }
+    },
+    "C25": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Voltage rating": ">=10 V",
+        "Qualification": "F14: qualify selected 1uF part at VCAP3 bias (~5.2V at 3.3V AVDD), including DC bias, tolerance and temperature",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VCAP3_ADC1",
+        "2": "AGND"
+      }
+    },
+    "C26": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VCAP4_ADC1",
+        "2": "AGND"
+      }
+    },
+    "C27": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN1P)"
+      }
+    },
+    "C28": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN1N)"
+      }
+    },
+    "C29": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN2P)"
+      }
+    },
+    "C30": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN2N)"
+      }
+    },
+    "C31": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN3P)"
+      }
+    },
+    "C32": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C33": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C34": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C35": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C36": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN3N)"
+      }
+    },
+    "C37": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN4P)"
+      }
+    },
+    "C38": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN4N)"
+      }
+    },
+    "C39": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN5P)"
+      }
+    },
+    "C40": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN5N)"
+      }
+    },
+    "C41": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN6P)"
+      }
+    },
+    "C42": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN6N)"
+      }
+    },
+    "C43": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN7P)"
+      }
+    },
+    "C44": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN7N)"
+      }
+    },
+    "C45": {
+      "value": "0.1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VREFP_ADC2",
+        "2": "AGND"
+      }
+    },
+    "C46": {
+      "value": "10uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VREFP_ADC2",
+        "2": "AGND"
+      }
+    },
+    "C47": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN8P)"
+      }
+    },
+    "C48": {
+      "value": "620pF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U2-IN8N)"
+      }
+    },
+    "C49": {
+      "value": "22uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VCAP1_ADC2",
+        "2": "AGND"
+      }
+    },
+    "C50": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VCAP2_ADC2",
+        "2": "AGND"
+      }
+    },
+    "C51": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Voltage rating": ">=10 V",
+        "Qualification": "F14: qualify selected 1uF part at VCAP3 bias (~5.2V at 3.3V AVDD), including DC bias, tolerance and temperature",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VCAP3_ADC2",
+        "2": "AGND"
+      }
+    },
+    "C52": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "/VCAP4_ADC2",
+        "2": "AGND"
+      }
+    },
+    "C53": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.7V",
+        "2": "AGND"
+      }
+    },
+    "C54": {
+      "value": "2.2uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "C55": {
+      "value": "10nF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Leakage current": "<100 nA at operating bias and temperature",
+        "Qualification": "F14: LP2985 section 7.1.3; retain 10nF BP bypass; exact MPN pending",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "2": "AGND",
+        "1": "Net-(U4-BP)"
+      }
+    },
+    "C56": {
+      "value": "1uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.7V",
+        "2": "AGND"
+      }
+    },
+    "C57": {
+      "value": "200uF",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "C",
+        "description": "Unpolarized capacitor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Unpolarized capacitor"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "AGND"
+      }
+    },
+    "E1": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E1-Pin_1)",
+        "2": "Net-(E1-Pin_2)"
+      }
+    },
+    "E2": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E2-Pin_1)",
+        "2": "Net-(E2-Pin_2)"
+      }
+    },
+    "E3": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E3-Pin_1)",
+        "2": "Net-(E3-Pin_2)"
+      }
+    },
+    "E4": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E4-Pin_1)",
+        "2": "Net-(E4-Pin_2)"
+      }
+    },
+    "E5": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E5-Pin_1)",
+        "2": "Net-(E5-Pin_2)"
+      }
+    },
+    "E6": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E6-Pin_1)",
+        "2": "Net-(E6-Pin_2)"
+      }
+    },
+    "E7": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E7-Pin_1)",
+        "2": "Net-(E7-Pin_2)"
+      }
+    },
+    "E8": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E8-Pin_1)",
+        "2": "Net-(E8-Pin_2)"
+      }
+    },
+    "E9": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E9-Pin_1)",
+        "2": "Net-(E9-Pin_2)"
+      }
+    },
+    "E10": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E10-Pin_1)",
+        "2": "Net-(E10-Pin_2)"
+      }
+    },
+    "E11": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E11-Pin_1)",
+        "2": "Net-(E11-Pin_2)"
+      }
+    },
+    "E12": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E12-Pin_1)",
+        "2": "Net-(E12-Pin_2)"
+      }
+    },
+    "E13": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E13-Pin_1)",
+        "2": "Net-(E13-Pin_2)"
+      }
+    },
+    "E14": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E14-Pin_1)",
+        "2": "Net-(E14-Pin_2)"
+      }
+    },
+    "E15": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E15-Pin_1)",
+        "2": "Net-(E15-Pin_2)"
+      }
+    },
+    "E16": {
+      "value": "Electrodes",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "Conn_01x02_Pin",
+        "description": "Generic connector, single row, 01x02, script generated"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Generic connector, single row, 01x02, script generated"
+      },
+      "pins": {
+        "1": "Net-(E16-Pin_1)",
+        "2": "Net-(E16-Pin_2)"
+      }
+    },
+    "R1": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E1-Pin_1)",
+        "2": "Net-(U1-IN1P)"
+      }
+    },
+    "R2": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E1-Pin_2)",
+        "2": "Net-(U1-IN1N)"
+      }
+    },
+    "R3": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E2-Pin_1)",
+        "2": "Net-(U1-IN2P)"
+      }
+    },
+    "R4": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E2-Pin_2)",
+        "2": "Net-(U1-IN2N)"
+      }
+    },
+    "R5": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E3-Pin_1)",
+        "2": "Net-(U1-IN3P)"
+      }
+    },
+    "R6": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E3-Pin_2)",
+        "2": "Net-(U1-IN3N)"
+      }
+    },
+    "R7": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E4-Pin_1)",
+        "2": "Net-(U1-IN4P)"
+      }
+    },
+    "R8": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E4-Pin_2)",
+        "2": "Net-(U1-IN4N)"
+      }
+    },
+    "R9": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E5-Pin_1)",
+        "2": "Net-(U1-IN5P)"
+      }
+    },
+    "R10": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E5-Pin_2)",
+        "2": "Net-(U1-IN5N)"
+      }
+    },
+    "R11": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E6-Pin_1)",
+        "2": "Net-(U1-IN6P)"
+      }
+    },
+    "R12": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E6-Pin_2)",
+        "2": "Net-(U1-IN6N)"
+      }
+    },
+    "R13": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E7-Pin_1)",
+        "2": "Net-(U1-IN7P)"
+      }
+    },
+    "R14": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E7-Pin_2)",
+        "2": "Net-(U1-IN7N)"
+      }
+    },
+    "R15": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E8-Pin_1)",
+        "2": "Net-(U1-IN8P)"
+      }
+    },
+    "R16": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E8-Pin_2)",
+        "2": "Net-(U1-IN8N)"
+      }
+    },
+    "R17": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E9-Pin_1)",
+        "2": "Net-(U2-IN1P)"
+      }
+    },
+    "R18": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E9-Pin_2)",
+        "2": "Net-(U2-IN1N)"
+      }
+    },
+    "R19": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E10-Pin_1)",
+        "2": "Net-(U2-IN2P)"
+      }
+    },
+    "R20": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E10-Pin_2)",
+        "2": "Net-(U2-IN2N)"
+      }
+    },
+    "R21": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E11-Pin_1)",
+        "2": "Net-(U2-IN3P)"
+      }
+    },
+    "R22": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E11-Pin_2)",
+        "2": "Net-(U2-IN3N)"
+      }
+    },
+    "R23": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E12-Pin_1)",
+        "2": "Net-(U2-IN4P)"
+      }
+    },
+    "R24": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E12-Pin_2)",
+        "2": "Net-(U2-IN4N)"
+      }
+    },
+    "R25": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E13-Pin_1)",
+        "2": "Net-(U2-IN5P)"
+      }
+    },
+    "R26": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E13-Pin_2)",
+        "2": "Net-(U2-IN5N)"
+      }
+    },
+    "R27": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E14-Pin_1)",
+        "2": "Net-(U2-IN6P)"
+      }
+    },
+    "R28": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E14-Pin_2)",
+        "2": "Net-(U2-IN6N)"
+      }
+    },
+    "R29": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E15-Pin_1)",
+        "2": "Net-(U2-IN7P)"
+      }
+    },
+    "R30": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E15-Pin_2)",
+        "2": "Net-(U2-IN7N)"
+      }
+    },
+    "R31": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E16-Pin_1)",
+        "2": "Net-(U2-IN8P)"
+      }
+    },
+    "R32": {
+      "value": "2K\u03a9",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": "Resistor"
+      },
+      "pins": {
+        "1": "Net-(E16-Pin_2)",
+        "2": "Net-(U2-IN8N)"
+      }
+    },
+    "R33": {
+      "value": "10k",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/START",
+        "2": "AGND"
+      }
+    },
+    "R34": {
+      "value": "10k",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/RESET",
+        "2": "AGND"
+      }
+    },
+    "R35": {
+      "value": "10k",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/PWDN",
+        "2": "AGND"
+      }
+    },
+    "R36": {
+      "value": "10k",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Purpose": "F09: DIN/MOSI low default while MCU high impedance",
+        "Rated power": ">=0.1 W; verify temperature derating",
+        "Tolerance": "1%",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/MOSI",
+        "2": "AGND"
+      }
+    },
+    "R37": {
+      "value": "10k",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Purpose": "F09: SCLK low default while MCU high impedance",
+        "Rated power": ">=0.1 W; verify temperature derating",
+        "Tolerance": "1%",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/SCLK",
+        "2": "AGND"
+      }
+    },
+    "R38": {
+      "value": "0",
+      "footprint": null,
+      "libsource": {
+        "lib": "Device",
+        "part": "R",
+        "description": "Resistor"
+      },
+      "fields": {
+        "Purpose": "F05: fitted removable development OFF strap; remove only after power architecture redesign",
+        "Rated power": ">=0.1 W; verify temperature derating",
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/EN",
+        "2": "AGND"
+      }
+    },
+    "TP1": {
+      "value": "ADC_CLK",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "ADC_CLK"
+      }
+    },
+    "TP2": {
+      "value": "DRDY_ADC1",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/DRDY_ADC1"
+      }
+    },
+    "TP3": {
+      "value": "DRDY_ADC2",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/DRDY_ADC2"
+      }
+    },
+    "TP4": {
+      "value": "3V3",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "+3.3V"
+      }
+    },
+    "TP5": {
+      "value": "BAT",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "+3.7V"
+      }
+    },
+    "TP6": {
+      "value": "AGND",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "AGND"
+      }
+    },
+    "TP7": {
+      "value": "VREFP_ADC1",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VREFP_ADC1"
+      }
+    },
+    "TP8": {
+      "value": "VCAP1_ADC1",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VCAP1_ADC1"
+      }
+    },
+    "TP9": {
+      "value": "VCAP2_ADC1",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VCAP2_ADC1"
+      }
+    },
+    "TP10": {
+      "value": "VCAP3_ADC1",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VCAP3_ADC1"
+      }
+    },
+    "TP11": {
+      "value": "VCAP4_ADC1",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VCAP4_ADC1"
+      }
+    },
+    "TP12": {
+      "value": "VREFP_ADC2",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VREFP_ADC2"
+      }
+    },
+    "TP13": {
+      "value": "VCAP1_ADC2",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VCAP1_ADC2"
+      }
+    },
+    "TP14": {
+      "value": "VCAP2_ADC2",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VCAP2_ADC2"
+      }
+    },
+    "TP15": {
+      "value": "VCAP3_ADC2",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VCAP3_ADC2"
+      }
+    },
+    "TP16": {
+      "value": "VCAP4_ADC2",
+      "footprint": null,
+      "libsource": {
+        "lib": "Connector",
+        "part": "TestPoint",
+        "description": "test point"
+      },
+      "fields": {
+        "Footprint": null,
+        "Datasheet": null,
+        "Description": null
+      },
+      "pins": {
+        "1": "/VCAP4_ADC2"
+      }
+    },
+    "U1": {
+      "value": "ADS1298xPAG",
+      "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "libsource": {
+        "lib": "Analog_ADC",
+        "part": "ADS1298xPAG",
+        "description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+      },
+      "fields": {
+        "Footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/ads1298.pdf",
+        "Description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+      },
+      "pins": {
+        "17": "+3.3V",
+        "19": "+3.3V",
+        "18": "+3.3V",
+        "21": "+3.3V",
+        "22": "+3.3V",
+        "56": "+3.3V",
+        "54": "+3.3V",
+        "48": "+3.3V",
+        "52": "+3.3V",
+        "62": "+3.3V",
+        "50": "+3.3V",
+        "59": "+3.3V",
+        "39": "/CS_ADC1",
+        "47": "/DRDY_ADC1",
+        "43": "/MISO",
+        "34": "/MOSI",
+        "35": "/PWDN",
+        "36": "/RESET",
+        "40": "/SCLK",
+        "38": "/START",
+        "28": "/VCAP1_ADC1",
+        "30": "/VCAP2_ADC1",
+        "55": "/VCAP3_ADC1",
+        "26": "/VCAP4_ADC1",
+        "24": "/VREFP_ADC1",
+        "37": "ADC_CLK",
+        "41": "AGND",
+        "45": "AGND",
+        "51": "AGND",
+        "25": "AGND",
+        "31": "AGND",
+        "42": "AGND",
+        "32": "AGND",
+        "49": "AGND",
+        "57": "AGND",
+        "33": "AGND",
+        "58": "AGND",
+        "46": "AGND",
+        "23": "AGND",
+        "53": "AGND",
+        "20": "AGND",
+        "44": "AGND",
+        "15": "Net-(U1-IN1N)",
+        "16": "Net-(U1-IN1P)",
+        "13": "Net-(U1-IN2N)",
+        "14": "Net-(U1-IN2P)",
+        "11": "Net-(U1-IN3N)",
+        "12": "Net-(U1-IN3P)",
+        "9": "Net-(U1-IN4N)",
+        "10": "Net-(U1-IN4P)",
+        "7": "Net-(U1-IN5N)",
+        "8": "Net-(U1-IN5P)",
+        "5": "Net-(U1-IN6N)",
+        "6": "Net-(U1-IN6P)",
+        "3": "Net-(U1-IN7N)",
+        "4": "Net-(U1-IN7P)",
+        "1": "Net-(U1-IN8N)",
+        "2": "Net-(U1-IN8P)",
+        "27": "unconnected-(U1-NC-Pad27)",
+        "29": "unconnected-(U1-NC-Pad29)",
+        "61": "unconnected-(U1-RLDINV-Pad61)",
+        "63": "unconnected-(U1-RLDOUT-Pad63)",
+        "60": "unconnected-(U1-RLDREF-Pad60)",
+        "64": "unconnected-(U1-WCT-Pad64)"
+      }
+    },
+    "U2": {
+      "value": "ADS1298xPAG",
+      "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+      "libsource": {
+        "lib": "Analog_ADC",
+        "part": "ADS1298xPAG",
+        "description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+      },
+      "fields": {
+        "Footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/ads1298.pdf",
+        "Description": "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+      },
+      "pins": {
+        "21": "+3.3V",
+        "22": "+3.3V",
+        "56": "+3.3V",
+        "54": "+3.3V",
+        "48": "+3.3V",
+        "62": "+3.3V",
+        "50": "+3.3V",
+        "59": "+3.3V",
+        "17": "+3.3V",
+        "19": "+3.3V",
+        "18": "+3.3V",
+        "39": "/CS_ADC2",
+        "47": "/DRDY_ADC2",
+        "43": "/MISO",
+        "34": "/MOSI",
+        "35": "/PWDN",
+        "36": "/RESET",
+        "40": "/SCLK",
+        "38": "/START",
+        "28": "/VCAP1_ADC2",
+        "30": "/VCAP2_ADC2",
+        "55": "/VCAP3_ADC2",
+        "26": "/VCAP4_ADC2",
+        "24": "/VREFP_ADC2",
+        "37": "ADC_CLK",
+        "52": "AGND",
+        "20": "AGND",
+        "44": "AGND",
+        "46": "AGND",
+        "23": "AGND",
+        "53": "AGND",
+        "41": "AGND",
+        "45": "AGND",
+        "25": "AGND",
+        "31": "AGND",
+        "42": "AGND",
+        "49": "AGND",
+        "33": "AGND",
+        "51": "AGND",
+        "58": "AGND",
+        "32": "AGND",
+        "57": "AGND",
+        "15": "Net-(U2-IN1N)",
+        "16": "Net-(U2-IN1P)",
+        "13": "Net-(U2-IN2N)",
+        "14": "Net-(U2-IN2P)",
+        "11": "Net-(U2-IN3N)",
+        "12": "Net-(U2-IN3P)",
+        "9": "Net-(U2-IN4N)",
+        "10": "Net-(U2-IN4P)",
+        "7": "Net-(U2-IN5N)",
+        "8": "Net-(U2-IN5P)",
+        "5": "Net-(U2-IN6N)",
+        "6": "Net-(U2-IN6P)",
+        "3": "Net-(U2-IN7N)",
+        "4": "Net-(U2-IN7P)",
+        "1": "Net-(U2-IN8N)",
+        "2": "Net-(U2-IN8P)",
+        "27": "unconnected-(U2-NC-Pad27)",
+        "29": "unconnected-(U2-NC-Pad29)",
+        "61": "unconnected-(U2-RLDINV-Pad61)",
+        "63": "unconnected-(U2-RLDOUT-Pad63)",
+        "60": "unconnected-(U2-RLDREF-Pad60)",
+        "64": "unconnected-(U2-WCT-Pad64)"
+      }
+    },
+    "U3": {
+      "value": "ESP32-S3-DevKitC",
+      "footprint": "PCM_Espressif:ESP32-S3-DevKitC",
+      "libsource": {
+        "lib": "PCM_Espressif",
+        "part": "ESP32-S3-DevKitC",
+        "description": "ESP32-S3-DevKitC"
+      },
+      "fields": {
+        "Footprint": "PCM_Espressif:ESP32-S3-DevKitC",
+        "Datasheet": null,
+        "Description": "ESP32-S3-DevKitC"
+      },
+      "pins": {
+        "1": "+3.3V",
+        "2": "+3.3V",
+        "21": "+5V",
+        "16": "/CS_ADC1",
+        "20": "/CS_ADC2",
+        "15": "/DRDY_ADC1",
+        "19": "/MISO",
+        "17": "/MOSI",
+        "7": "/PWDN",
+        "6": "/RESET",
+        "18": "/SCLK",
+        "12": "/START",
+        "44": "AGND",
+        "22": "AGND",
+        "24": "AGND",
+        "23": "AGND",
+        "3": "unconnected-(U3-CHIP_PU-Pad3)",
+        "31": "unconnected-(U3-GPIO0-Pad31)",
+        "41": "unconnected-(U3-GPIO1/ADC1_CH0-Pad41)",
+        "40": "unconnected-(U3-GPIO2/ADC1_CH1-Pad40)",
+        "13": "unconnected-(U3-GPIO3/ADC1_CH2-Pad13)",
+        "4": "unconnected-(U3-GPIO4/ADC1_CH3-Pad4)",
+        "5": "unconnected-(U3-GPIO5/ADC1_CH4-Pad5)",
+        "8": "unconnected-(U3-GPIO15/ADC2_CH4/32K_P-Pad8)",
+        "9": "unconnected-(U3-GPIO16/ADC2_CH5/32K_N-Pad9)",
+        "10": "unconnected-(U3-GPIO17/ADC2_CH6-Pad10)",
+        "11": "unconnected-(U3-GPIO18/ADC2_CH7-Pad11)",
+        "25": "unconnected-(U3-GPIO19/USB_D--Pad25)",
+        "26": "unconnected-(U3-GPIO20/USB_D+-Pad26)",
+        "27": "unconnected-(U3-GPIO21-Pad27)",
+        "32": "unconnected-(U3-GPIO35-Pad32)",
+        "33": "unconnected-(U3-GPIO36-Pad33)",
+        "34": "unconnected-(U3-GPIO37-Pad34)",
+        "35": "unconnected-(U3-GPIO38-Pad35)",
+        "36": "unconnected-(U3-GPIO39/MTCK-Pad36)",
+        "37": "unconnected-(U3-GPIO40/MTDO-Pad37)",
+        "38": "unconnected-(U3-GPIO41/MTDI-Pad38)",
+        "39": "unconnected-(U3-GPIO42/MTMS-Pad39)",
+        "43": "unconnected-(U3-GPIO43/U0TXD-Pad43)",
+        "42": "unconnected-(U3-GPIO44/U0RXD-Pad42)",
+        "30": "unconnected-(U3-GPIO45-Pad30)",
+        "14": "unconnected-(U3-GPIO46-Pad14)",
+        "28": "unconnected-(U3-GPIO47-Pad28)",
+        "29": "unconnected-(U3-GPIO48-Pad29)"
+      }
+    },
+    "U4": {
+      "value": "LP2985-3.3",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "libsource": {
+        "lib": "Regulator_Linear",
+        "part": "LP2985-3.3",
+        "description": "150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5"
+      },
+      "fields": {
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/lp2985.pdf",
+        "Description": "150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5"
+      },
+      "pins": {
+        "5": "+3.3V",
+        "1": "+3.7V",
+        "3": "/EN",
+        "2": "AGND",
+        "4": "Net-(U4-BP)"
+      }
+    },
+    "U5": {
+      "value": "TLV75533PDBV",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "libsource": {
+        "lib": "Regulator_Linear",
+        "part": "TLV75533PDBV",
+        "description": "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+      },
+      "fields": {
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+        "Datasheet": "http://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+        "Description": "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+      },
+      "pins": {
+        "5": "+3.3V",
+        "1": "+3.7V",
+        "3": "/EN",
+        "2": "AGND",
+        "4": "unconnected-(U5-NC-Pad4)"
+      }
+    }
+  },
+  "nets": {
+    "+3.3V": [
+      [
+        "C32",
+        "1"
+      ],
+      [
+        "C33",
+        "1"
+      ],
+      [
+        "C34",
+        "1"
+      ],
+      [
+        "C35",
+        "1"
+      ],
+      [
+        "C54",
+        "1"
+      ],
+      [
+        "C57",
+        "1"
+      ],
+      [
+        "C6",
+        "1"
+      ],
+      [
+        "C7",
+        "1"
+      ],
+      [
+        "C8",
+        "1"
+      ],
+      [
+        "C9",
+        "1"
+      ],
+      [
+        "TP4",
+        "1"
+      ],
+      [
+        "U1",
+        "17"
+      ],
+      [
+        "U1",
+        "18"
+      ],
+      [
+        "U1",
+        "19"
+      ],
+      [
+        "U1",
+        "21"
+      ],
+      [
+        "U1",
+        "22"
+      ],
+      [
+        "U1",
+        "48"
+      ],
+      [
+        "U1",
+        "50"
+      ],
+      [
+        "U1",
+        "52"
+      ],
+      [
+        "U1",
+        "54"
+      ],
+      [
+        "U1",
+        "56"
+      ],
+      [
+        "U1",
+        "59"
+      ],
+      [
+        "U1",
+        "62"
+      ],
+      [
+        "U2",
+        "17"
+      ],
+      [
+        "U2",
+        "18"
+      ],
+      [
+        "U2",
+        "19"
+      ],
+      [
+        "U2",
+        "21"
+      ],
+      [
+        "U2",
+        "22"
+      ],
+      [
+        "U2",
+        "48"
+      ],
+      [
+        "U2",
+        "50"
+      ],
+      [
+        "U2",
+        "54"
+      ],
+      [
+        "U2",
+        "56"
+      ],
+      [
+        "U2",
+        "59"
+      ],
+      [
+        "U2",
+        "62"
+      ],
+      [
+        "U3",
+        "1"
+      ],
+      [
+        "U3",
+        "2"
+      ],
+      [
+        "U4",
+        "5"
+      ],
+      [
+        "U5",
+        "5"
+      ]
+    ],
+    "+3.7V": [
+      [
+        "BT1",
+        "1"
+      ],
+      [
+        "C53",
+        "1"
+      ],
+      [
+        "C56",
+        "1"
+      ],
+      [
+        "TP5",
+        "1"
+      ],
+      [
+        "U4",
+        "1"
+      ],
+      [
+        "U5",
+        "1"
+      ]
+    ],
+    "+5V": [
+      [
+        "U3",
+        "21"
+      ]
+    ],
+    "/CS_ADC1": [
+      [
+        "U1",
+        "39"
+      ],
+      [
+        "U3",
+        "16"
+      ]
+    ],
+    "/CS_ADC2": [
+      [
+        "U2",
+        "39"
+      ],
+      [
+        "U3",
+        "20"
+      ]
+    ],
+    "/DRDY_ADC1": [
+      [
+        "TP2",
+        "1"
+      ],
+      [
+        "U1",
+        "47"
+      ],
+      [
+        "U3",
+        "15"
+      ]
+    ],
+    "/DRDY_ADC2": [
+      [
+        "TP3",
+        "1"
+      ],
+      [
+        "U2",
+        "47"
+      ]
+    ],
+    "/EN": [
+      [
+        "R38",
+        "1"
+      ],
+      [
+        "U4",
+        "3"
+      ],
+      [
+        "U5",
+        "3"
+      ]
+    ],
+    "/MISO": [
+      [
+        "U1",
+        "43"
+      ],
+      [
+        "U2",
+        "43"
+      ],
+      [
+        "U3",
+        "19"
+      ]
+    ],
+    "/MOSI": [
+      [
+        "R36",
+        "1"
+      ],
+      [
+        "U1",
+        "34"
+      ],
+      [
+        "U2",
+        "34"
+      ],
+      [
+        "U3",
+        "17"
+      ]
+    ],
+    "/PWDN": [
+      [
+        "R35",
+        "1"
+      ],
+      [
+        "U1",
+        "35"
+      ],
+      [
+        "U2",
+        "35"
+      ],
+      [
+        "U3",
+        "7"
+      ]
+    ],
+    "/RESET": [
+      [
+        "R34",
+        "1"
+      ],
+      [
+        "U1",
+        "36"
+      ],
+      [
+        "U2",
+        "36"
+      ],
+      [
+        "U3",
+        "6"
+      ]
+    ],
+    "/SCLK": [
+      [
+        "R37",
+        "1"
+      ],
+      [
+        "U1",
+        "40"
+      ],
+      [
+        "U2",
+        "40"
+      ],
+      [
+        "U3",
+        "18"
+      ]
+    ],
+    "/START": [
+      [
+        "R33",
+        "1"
+      ],
+      [
+        "U1",
+        "38"
+      ],
+      [
+        "U2",
+        "38"
+      ],
+      [
+        "U3",
+        "12"
+      ]
+    ],
+    "/VCAP1_ADC1": [
+      [
+        "C23",
+        "1"
+      ],
+      [
+        "TP8",
+        "1"
+      ],
+      [
+        "U1",
+        "28"
+      ]
+    ],
+    "/VCAP1_ADC2": [
+      [
+        "C49",
+        "1"
+      ],
+      [
+        "TP13",
+        "1"
+      ],
+      [
+        "U2",
+        "28"
+      ]
+    ],
+    "/VCAP2_ADC1": [
+      [
+        "C24",
+        "1"
+      ],
+      [
+        "TP9",
+        "1"
+      ],
+      [
+        "U1",
+        "30"
+      ]
+    ],
+    "/VCAP2_ADC2": [
+      [
+        "C50",
+        "1"
+      ],
+      [
+        "TP14",
+        "1"
+      ],
+      [
+        "U2",
+        "30"
+      ]
+    ],
+    "/VCAP3_ADC1": [
+      [
+        "C25",
+        "1"
+      ],
+      [
+        "TP10",
+        "1"
+      ],
+      [
+        "U1",
+        "55"
+      ]
+    ],
+    "/VCAP3_ADC2": [
+      [
+        "C51",
+        "1"
+      ],
+      [
+        "TP15",
+        "1"
+      ],
+      [
+        "U2",
+        "55"
+      ]
+    ],
+    "/VCAP4_ADC1": [
+      [
+        "C26",
+        "1"
+      ],
+      [
+        "TP11",
+        "1"
+      ],
+      [
+        "U1",
+        "26"
+      ]
+    ],
+    "/VCAP4_ADC2": [
+      [
+        "C52",
+        "1"
+      ],
+      [
+        "TP16",
+        "1"
+      ],
+      [
+        "U2",
+        "26"
+      ]
+    ],
+    "/VREFP_ADC1": [
+      [
+        "C19",
+        "1"
+      ],
+      [
+        "C20",
+        "1"
+      ],
+      [
+        "TP7",
+        "1"
+      ],
+      [
+        "U1",
+        "24"
+      ]
+    ],
+    "/VREFP_ADC2": [
+      [
+        "C45",
+        "1"
+      ],
+      [
+        "C46",
+        "1"
+      ],
+      [
+        "TP12",
+        "1"
+      ],
+      [
+        "U2",
+        "24"
+      ]
+    ],
+    "ADC_CLK": [
+      [
+        "TP1",
+        "1"
+      ],
+      [
+        "U1",
+        "37"
+      ],
+      [
+        "U2",
+        "37"
+      ]
+    ],
+    "AGND": [
+      [
+        "BT1",
+        "2"
+      ],
+      [
+        "C1",
+        "2"
+      ],
+      [
+        "C10",
+        "2"
+      ],
+      [
+        "C11",
+        "2"
+      ],
+      [
+        "C12",
+        "2"
+      ],
+      [
+        "C13",
+        "2"
+      ],
+      [
+        "C14",
+        "2"
+      ],
+      [
+        "C15",
+        "2"
+      ],
+      [
+        "C16",
+        "2"
+      ],
+      [
+        "C17",
+        "2"
+      ],
+      [
+        "C18",
+        "2"
+      ],
+      [
+        "C19",
+        "2"
+      ],
+      [
+        "C2",
+        "2"
+      ],
+      [
+        "C20",
+        "2"
+      ],
+      [
+        "C21",
+        "2"
+      ],
+      [
+        "C22",
+        "2"
+      ],
+      [
+        "C23",
+        "2"
+      ],
+      [
+        "C24",
+        "2"
+      ],
+      [
+        "C25",
+        "2"
+      ],
+      [
+        "C26",
+        "2"
+      ],
+      [
+        "C27",
+        "2"
+      ],
+      [
+        "C28",
+        "2"
+      ],
+      [
+        "C29",
+        "2"
+      ],
+      [
+        "C3",
+        "2"
+      ],
+      [
+        "C30",
+        "2"
+      ],
+      [
+        "C31",
+        "2"
+      ],
+      [
+        "C32",
+        "2"
+      ],
+      [
+        "C33",
+        "2"
+      ],
+      [
+        "C34",
+        "2"
+      ],
+      [
+        "C35",
+        "2"
+      ],
+      [
+        "C36",
+        "2"
+      ],
+      [
+        "C37",
+        "2"
+      ],
+      [
+        "C38",
+        "2"
+      ],
+      [
+        "C39",
+        "2"
+      ],
+      [
+        "C4",
+        "2"
+      ],
+      [
+        "C40",
+        "2"
+      ],
+      [
+        "C41",
+        "2"
+      ],
+      [
+        "C42",
+        "2"
+      ],
+      [
+        "C43",
+        "2"
+      ],
+      [
+        "C44",
+        "2"
+      ],
+      [
+        "C45",
+        "2"
+      ],
+      [
+        "C46",
+        "2"
+      ],
+      [
+        "C47",
+        "2"
+      ],
+      [
+        "C48",
+        "2"
+      ],
+      [
+        "C49",
+        "2"
+      ],
+      [
+        "C5",
+        "2"
+      ],
+      [
+        "C50",
+        "2"
+      ],
+      [
+        "C51",
+        "2"
+      ],
+      [
+        "C52",
+        "2"
+      ],
+      [
+        "C53",
+        "2"
+      ],
+      [
+        "C54",
+        "2"
+      ],
+      [
+        "C55",
+        "2"
+      ],
+      [
+        "C56",
+        "2"
+      ],
+      [
+        "C57",
+        "2"
+      ],
+      [
+        "C6",
+        "2"
+      ],
+      [
+        "C7",
+        "2"
+      ],
+      [
+        "C8",
+        "2"
+      ],
+      [
+        "C9",
+        "2"
+      ],
+      [
+        "R33",
+        "2"
+      ],
+      [
+        "R34",
+        "2"
+      ],
+      [
+        "R35",
+        "2"
+      ],
+      [
+        "R36",
+        "2"
+      ],
+      [
+        "R37",
+        "2"
+      ],
+      [
+        "R38",
+        "2"
+      ],
+      [
+        "TP6",
+        "1"
+      ],
+      [
+        "U1",
+        "20"
+      ],
+      [
+        "U1",
+        "23"
+      ],
+      [
+        "U1",
+        "25"
+      ],
+      [
+        "U1",
+        "31"
+      ],
+      [
+        "U1",
+        "32"
+      ],
+      [
+        "U1",
+        "33"
+      ],
+      [
+        "U1",
+        "41"
+      ],
+      [
+        "U1",
+        "42"
+      ],
+      [
+        "U1",
+        "44"
+      ],
+      [
+        "U1",
+        "45"
+      ],
+      [
+        "U1",
+        "46"
+      ],
+      [
+        "U1",
+        "49"
+      ],
+      [
+        "U1",
+        "51"
+      ],
+      [
+        "U1",
+        "53"
+      ],
+      [
+        "U1",
+        "57"
+      ],
+      [
+        "U1",
+        "58"
+      ],
+      [
+        "U2",
+        "20"
+      ],
+      [
+        "U2",
+        "23"
+      ],
+      [
+        "U2",
+        "25"
+      ],
+      [
+        "U2",
+        "31"
+      ],
+      [
+        "U2",
+        "32"
+      ],
+      [
+        "U2",
+        "33"
+      ],
+      [
+        "U2",
+        "41"
+      ],
+      [
+        "U2",
+        "42"
+      ],
+      [
+        "U2",
+        "44"
+      ],
+      [
+        "U2",
+        "45"
+      ],
+      [
+        "U2",
+        "46"
+      ],
+      [
+        "U2",
+        "49"
+      ],
+      [
+        "U2",
+        "51"
+      ],
+      [
+        "U2",
+        "52"
+      ],
+      [
+        "U2",
+        "53"
+      ],
+      [
+        "U2",
+        "57"
+      ],
+      [
+        "U2",
+        "58"
+      ],
+      [
+        "U3",
+        "22"
+      ],
+      [
+        "U3",
+        "23"
+      ],
+      [
+        "U3",
+        "24"
+      ],
+      [
+        "U3",
+        "44"
+      ],
+      [
+        "U4",
+        "2"
+      ],
+      [
+        "U5",
+        "2"
+      ]
+    ],
+    "Net-(E1-Pin_1)": [
+      [
+        "E1",
+        "1"
+      ],
+      [
+        "R1",
+        "1"
+      ]
+    ],
+    "Net-(E1-Pin_2)": [
+      [
+        "E1",
+        "2"
+      ],
+      [
+        "R2",
+        "1"
+      ]
+    ],
+    "Net-(E2-Pin_1)": [
+      [
+        "E2",
+        "1"
+      ],
+      [
+        "R3",
+        "1"
+      ]
+    ],
+    "Net-(E2-Pin_2)": [
+      [
+        "E2",
+        "2"
+      ],
+      [
+        "R4",
+        "1"
+      ]
+    ],
+    "Net-(E3-Pin_1)": [
+      [
+        "E3",
+        "1"
+      ],
+      [
+        "R5",
+        "1"
+      ]
+    ],
+    "Net-(E3-Pin_2)": [
+      [
+        "E3",
+        "2"
+      ],
+      [
+        "R6",
+        "1"
+      ]
+    ],
+    "Net-(E4-Pin_1)": [
+      [
+        "E4",
+        "1"
+      ],
+      [
+        "R7",
+        "1"
+      ]
+    ],
+    "Net-(E4-Pin_2)": [
+      [
+        "E4",
+        "2"
+      ],
+      [
+        "R8",
+        "1"
+      ]
+    ],
+    "Net-(E5-Pin_1)": [
+      [
+        "E5",
+        "1"
+      ],
+      [
+        "R9",
+        "1"
+      ]
+    ],
+    "Net-(E5-Pin_2)": [
+      [
+        "E5",
+        "2"
+      ],
+      [
+        "R10",
+        "1"
+      ]
+    ],
+    "Net-(E6-Pin_1)": [
+      [
+        "E6",
+        "1"
+      ],
+      [
+        "R11",
+        "1"
+      ]
+    ],
+    "Net-(E6-Pin_2)": [
+      [
+        "E6",
+        "2"
+      ],
+      [
+        "R12",
+        "1"
+      ]
+    ],
+    "Net-(E7-Pin_1)": [
+      [
+        "E7",
+        "1"
+      ],
+      [
+        "R13",
+        "1"
+      ]
+    ],
+    "Net-(E7-Pin_2)": [
+      [
+        "E7",
+        "2"
+      ],
+      [
+        "R14",
+        "1"
+      ]
+    ],
+    "Net-(E8-Pin_1)": [
+      [
+        "E8",
+        "1"
+      ],
+      [
+        "R15",
+        "1"
+      ]
+    ],
+    "Net-(E8-Pin_2)": [
+      [
+        "E8",
+        "2"
+      ],
+      [
+        "R16",
+        "1"
+      ]
+    ],
+    "Net-(E9-Pin_1)": [
+      [
+        "E9",
+        "1"
+      ],
+      [
+        "R17",
+        "1"
+      ]
+    ],
+    "Net-(E9-Pin_2)": [
+      [
+        "E9",
+        "2"
+      ],
+      [
+        "R18",
+        "1"
+      ]
+    ],
+    "Net-(E10-Pin_1)": [
+      [
+        "E10",
+        "1"
+      ],
+      [
+        "R19",
+        "1"
+      ]
+    ],
+    "Net-(E10-Pin_2)": [
+      [
+        "E10",
+        "2"
+      ],
+      [
+        "R20",
+        "1"
+      ]
+    ],
+    "Net-(E11-Pin_1)": [
+      [
+        "E11",
+        "1"
+      ],
+      [
+        "R21",
+        "1"
+      ]
+    ],
+    "Net-(E11-Pin_2)": [
+      [
+        "E11",
+        "2"
+      ],
+      [
+        "R22",
+        "1"
+      ]
+    ],
+    "Net-(E12-Pin_1)": [
+      [
+        "E12",
+        "1"
+      ],
+      [
+        "R23",
+        "1"
+      ]
+    ],
+    "Net-(E12-Pin_2)": [
+      [
+        "E12",
+        "2"
+      ],
+      [
+        "R24",
+        "1"
+      ]
+    ],
+    "Net-(E13-Pin_1)": [
+      [
+        "E13",
+        "1"
+      ],
+      [
+        "R25",
+        "1"
+      ]
+    ],
+    "Net-(E13-Pin_2)": [
+      [
+        "E13",
+        "2"
+      ],
+      [
+        "R26",
+        "1"
+      ]
+    ],
+    "Net-(E14-Pin_1)": [
+      [
+        "E14",
+        "1"
+      ],
+      [
+        "R27",
+        "1"
+      ]
+    ],
+    "Net-(E14-Pin_2)": [
+      [
+        "E14",
+        "2"
+      ],
+      [
+        "R28",
+        "1"
+      ]
+    ],
+    "Net-(E15-Pin_1)": [
+      [
+        "E15",
+        "1"
+      ],
+      [
+        "R29",
+        "1"
+      ]
+    ],
+    "Net-(E15-Pin_2)": [
+      [
+        "E15",
+        "2"
+      ],
+      [
+        "R30",
+        "1"
+      ]
+    ],
+    "Net-(E16-Pin_1)": [
+      [
+        "E16",
+        "1"
+      ],
+      [
+        "R31",
+        "1"
+      ]
+    ],
+    "Net-(E16-Pin_2)": [
+      [
+        "E16",
+        "2"
+      ],
+      [
+        "R32",
+        "1"
+      ]
+    ],
+    "Net-(U1-IN1N)": [
+      [
+        "C2",
+        "1"
+      ],
+      [
+        "R2",
+        "2"
+      ],
+      [
+        "U1",
+        "15"
+      ]
+    ],
+    "Net-(U1-IN1P)": [
+      [
+        "C1",
+        "1"
+      ],
+      [
+        "R1",
+        "2"
+      ],
+      [
+        "U1",
+        "16"
+      ]
+    ],
+    "Net-(U1-IN2N)": [
+      [
+        "C4",
+        "1"
+      ],
+      [
+        "R4",
+        "2"
+      ],
+      [
+        "U1",
+        "13"
+      ]
+    ],
+    "Net-(U1-IN2P)": [
+      [
+        "C3",
+        "1"
+      ],
+      [
+        "R3",
+        "2"
+      ],
+      [
+        "U1",
+        "14"
+      ]
+    ],
+    "Net-(U1-IN3N)": [
+      [
+        "C10",
+        "1"
+      ],
+      [
+        "R6",
+        "2"
+      ],
+      [
+        "U1",
+        "11"
+      ]
+    ],
+    "Net-(U1-IN3P)": [
+      [
+        "C5",
+        "1"
+      ],
+      [
+        "R5",
+        "2"
+      ],
+      [
+        "U1",
+        "12"
+      ]
+    ],
+    "Net-(U1-IN4N)": [
+      [
+        "C12",
+        "1"
+      ],
+      [
+        "R8",
+        "2"
+      ],
+      [
+        "U1",
+        "9"
+      ]
+    ],
+    "Net-(U1-IN4P)": [
+      [
+        "C11",
+        "1"
+      ],
+      [
+        "R7",
+        "2"
+      ],
+      [
+        "U1",
+        "10"
+      ]
+    ],
+    "Net-(U1-IN5N)": [
+      [
+        "C14",
+        "1"
+      ],
+      [
+        "R10",
+        "2"
+      ],
+      [
+        "U1",
+        "7"
+      ]
+    ],
+    "Net-(U1-IN5P)": [
+      [
+        "C13",
+        "1"
+      ],
+      [
+        "R9",
+        "2"
+      ],
+      [
+        "U1",
+        "8"
+      ]
+    ],
+    "Net-(U1-IN6N)": [
+      [
+        "C16",
+        "1"
+      ],
+      [
+        "R12",
+        "2"
+      ],
+      [
+        "U1",
+        "5"
+      ]
+    ],
+    "Net-(U1-IN6P)": [
+      [
+        "C15",
+        "1"
+      ],
+      [
+        "R11",
+        "2"
+      ],
+      [
+        "U1",
+        "6"
+      ]
+    ],
+    "Net-(U1-IN7N)": [
+      [
+        "C18",
+        "1"
+      ],
+      [
+        "R14",
+        "2"
+      ],
+      [
+        "U1",
+        "3"
+      ]
+    ],
+    "Net-(U1-IN7P)": [
+      [
+        "C17",
+        "1"
+      ],
+      [
+        "R13",
+        "2"
+      ],
+      [
+        "U1",
+        "4"
+      ]
+    ],
+    "Net-(U1-IN8N)": [
+      [
+        "C22",
+        "1"
+      ],
+      [
+        "R16",
+        "2"
+      ],
+      [
+        "U1",
+        "1"
+      ]
+    ],
+    "Net-(U1-IN8P)": [
+      [
+        "C21",
+        "1"
+      ],
+      [
+        "R15",
+        "2"
+      ],
+      [
+        "U1",
+        "2"
+      ]
+    ],
+    "Net-(U2-IN1N)": [
+      [
+        "C28",
+        "1"
+      ],
+      [
+        "R18",
+        "2"
+      ],
+      [
+        "U2",
+        "15"
+      ]
+    ],
+    "Net-(U2-IN1P)": [
+      [
+        "C27",
+        "1"
+      ],
+      [
+        "R17",
+        "2"
+      ],
+      [
+        "U2",
+        "16"
+      ]
+    ],
+    "Net-(U2-IN2N)": [
+      [
+        "C30",
+        "1"
+      ],
+      [
+        "R20",
+        "2"
+      ],
+      [
+        "U2",
+        "13"
+      ]
+    ],
+    "Net-(U2-IN2P)": [
+      [
+        "C29",
+        "1"
+      ],
+      [
+        "R19",
+        "2"
+      ],
+      [
+        "U2",
+        "14"
+      ]
+    ],
+    "Net-(U2-IN3N)": [
+      [
+        "C36",
+        "1"
+      ],
+      [
+        "R22",
+        "2"
+      ],
+      [
+        "U2",
+        "11"
+      ]
+    ],
+    "Net-(U2-IN3P)": [
+      [
+        "C31",
+        "1"
+      ],
+      [
+        "R21",
+        "2"
+      ],
+      [
+        "U2",
+        "12"
+      ]
+    ],
+    "Net-(U2-IN4N)": [
+      [
+        "C38",
+        "1"
+      ],
+      [
+        "R24",
+        "2"
+      ],
+      [
+        "U2",
+        "9"
+      ]
+    ],
+    "Net-(U2-IN4P)": [
+      [
+        "C37",
+        "1"
+      ],
+      [
+        "R23",
+        "2"
+      ],
+      [
+        "U2",
+        "10"
+      ]
+    ],
+    "Net-(U2-IN5N)": [
+      [
+        "C40",
+        "1"
+      ],
+      [
+        "R26",
+        "2"
+      ],
+      [
+        "U2",
+        "7"
+      ]
+    ],
+    "Net-(U2-IN5P)": [
+      [
+        "C39",
+        "1"
+      ],
+      [
+        "R25",
+        "2"
+      ],
+      [
+        "U2",
+        "8"
+      ]
+    ],
+    "Net-(U2-IN6N)": [
+      [
+        "C42",
+        "1"
+      ],
+      [
+        "R28",
+        "2"
+      ],
+      [
+        "U2",
+        "5"
+      ]
+    ],
+    "Net-(U2-IN6P)": [
+      [
+        "C41",
+        "1"
+      ],
+      [
+        "R27",
+        "2"
+      ],
+      [
+        "U2",
+        "6"
+      ]
+    ],
+    "Net-(U2-IN7N)": [
+      [
+        "C44",
+        "1"
+      ],
+      [
+        "R30",
+        "2"
+      ],
+      [
+        "U2",
+        "3"
+      ]
+    ],
+    "Net-(U2-IN7P)": [
+      [
+        "C43",
+        "1"
+      ],
+      [
+        "R29",
+        "2"
+      ],
+      [
+        "U2",
+        "4"
+      ]
+    ],
+    "Net-(U2-IN8N)": [
+      [
+        "C48",
+        "1"
+      ],
+      [
+        "R32",
+        "2"
+      ],
+      [
+        "U2",
+        "1"
+      ]
+    ],
+    "Net-(U2-IN8P)": [
+      [
+        "C47",
+        "1"
+      ],
+      [
+        "R31",
+        "2"
+      ],
+      [
+        "U2",
+        "2"
+      ]
+    ],
+    "Net-(U4-BP)": [
+      [
+        "C55",
+        "1"
+      ],
+      [
+        "U4",
+        "4"
+      ]
+    ],
+    "unconnected-(U1-NC-Pad27)": [
+      [
+        "U1",
+        "27"
+      ]
+    ],
+    "unconnected-(U1-NC-Pad29)": [
+      [
+        "U1",
+        "29"
+      ]
+    ],
+    "unconnected-(U1-RLDINV-Pad61)": [
+      [
+        "U1",
+        "61"
+      ]
+    ],
+    "unconnected-(U1-RLDOUT-Pad63)": [
+      [
+        "U1",
+        "63"
+      ]
+    ],
+    "unconnected-(U1-RLDREF-Pad60)": [
+      [
+        "U1",
+        "60"
+      ]
+    ],
+    "unconnected-(U1-WCT-Pad64)": [
+      [
+        "U1",
+        "64"
+      ]
+    ],
+    "unconnected-(U2-NC-Pad27)": [
+      [
+        "U2",
+        "27"
+      ]
+    ],
+    "unconnected-(U2-NC-Pad29)": [
+      [
+        "U2",
+        "29"
+      ]
+    ],
+    "unconnected-(U2-RLDINV-Pad61)": [
+      [
+        "U2",
+        "61"
+      ]
+    ],
+    "unconnected-(U2-RLDOUT-Pad63)": [
+      [
+        "U2",
+        "63"
+      ]
+    ],
+    "unconnected-(U2-RLDREF-Pad60)": [
+      [
+        "U2",
+        "60"
+      ]
+    ],
+    "unconnected-(U2-WCT-Pad64)": [
+      [
+        "U2",
+        "64"
+      ]
+    ],
+    "unconnected-(U3-CHIP_PU-Pad3)": [
+      [
+        "U3",
+        "3"
+      ]
+    ],
+    "unconnected-(U3-GPIO0-Pad31)": [
+      [
+        "U3",
+        "31"
+      ]
+    ],
+    "unconnected-(U3-GPIO1/ADC1_CH0-Pad41)": [
+      [
+        "U3",
+        "41"
+      ]
+    ],
+    "unconnected-(U3-GPIO2/ADC1_CH1-Pad40)": [
+      [
+        "U3",
+        "40"
+      ]
+    ],
+    "unconnected-(U3-GPIO3/ADC1_CH2-Pad13)": [
+      [
+        "U3",
+        "13"
+      ]
+    ],
+    "unconnected-(U3-GPIO4/ADC1_CH3-Pad4)": [
+      [
+        "U3",
+        "4"
+      ]
+    ],
+    "unconnected-(U3-GPIO5/ADC1_CH4-Pad5)": [
+      [
+        "U3",
+        "5"
+      ]
+    ],
+    "unconnected-(U3-GPIO15/ADC2_CH4/32K_P-Pad8)": [
+      [
+        "U3",
+        "8"
+      ]
+    ],
+    "unconnected-(U3-GPIO16/ADC2_CH5/32K_N-Pad9)": [
+      [
+        "U3",
+        "9"
+      ]
+    ],
+    "unconnected-(U3-GPIO17/ADC2_CH6-Pad10)": [
+      [
+        "U3",
+        "10"
+      ]
+    ],
+    "unconnected-(U3-GPIO18/ADC2_CH7-Pad11)": [
+      [
+        "U3",
+        "11"
+      ]
+    ],
+    "unconnected-(U3-GPIO19/USB_D--Pad25)": [
+      [
+        "U3",
+        "25"
+      ]
+    ],
+    "unconnected-(U3-GPIO20/USB_D+-Pad26)": [
+      [
+        "U3",
+        "26"
+      ]
+    ],
+    "unconnected-(U3-GPIO21-Pad27)": [
+      [
+        "U3",
+        "27"
+      ]
+    ],
+    "unconnected-(U3-GPIO35-Pad32)": [
+      [
+        "U3",
+        "32"
+      ]
+    ],
+    "unconnected-(U3-GPIO36-Pad33)": [
+      [
+        "U3",
+        "33"
+      ]
+    ],
+    "unconnected-(U3-GPIO37-Pad34)": [
+      [
+        "U3",
+        "34"
+      ]
+    ],
+    "unconnected-(U3-GPIO38-Pad35)": [
+      [
+        "U3",
+        "35"
+      ]
+    ],
+    "unconnected-(U3-GPIO39/MTCK-Pad36)": [
+      [
+        "U3",
+        "36"
+      ]
+    ],
+    "unconnected-(U3-GPIO40/MTDO-Pad37)": [
+      [
+        "U3",
+        "37"
+      ]
+    ],
+    "unconnected-(U3-GPIO41/MTDI-Pad38)": [
+      [
+        "U3",
+        "38"
+      ]
+    ],
+    "unconnected-(U3-GPIO42/MTMS-Pad39)": [
+      [
+        "U3",
+        "39"
+      ]
+    ],
+    "unconnected-(U3-GPIO43/U0TXD-Pad43)": [
+      [
+        "U3",
+        "43"
+      ]
+    ],
+    "unconnected-(U3-GPIO44/U0RXD-Pad42)": [
+      [
+        "U3",
+        "42"
+      ]
+    ],
+    "unconnected-(U3-GPIO45-Pad30)": [
+      [
+        "U3",
+        "30"
+      ]
+    ],
+    "unconnected-(U3-GPIO46-Pad14)": [
+      [
+        "U3",
+        "14"
+      ]
+    ],
+    "unconnected-(U3-GPIO47-Pad28)": [
+      [
+        "U3",
+        "28"
+      ]
+    ],
+    "unconnected-(U3-GPIO48-Pad29)": [
+      [
+        "U3",
+        "29"
+      ]
+    ],
+    "unconnected-(U5-NC-Pad4)": [
+      [
+        "U5",
+        "4"
+      ]
+    ]
+  }
+}

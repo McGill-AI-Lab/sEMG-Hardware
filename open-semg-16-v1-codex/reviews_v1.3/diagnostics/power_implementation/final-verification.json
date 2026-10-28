@@ -1,0 +1,16 @@
+{
+  "stage": "final",
+  "passed": true,
+  "assertions": 966,
+  "errors": [],
+  "components": 204,
+  "nets": 180,
+  "channel_mappings_passed": 16,
+  "ERC": {
+    "errors": 5,
+    "warnings": 4
+  },
+  "independent_regulator_outputs_separate": true,
+  "original_SPI_protocol_preserved": true,
+  "raw_DOUTs_isolated_before_shared_MISO": true
+}

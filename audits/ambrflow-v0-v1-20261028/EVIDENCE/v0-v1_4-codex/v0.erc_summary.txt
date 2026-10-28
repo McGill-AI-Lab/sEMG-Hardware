@@ -1,0 +1,63 @@
+62 ERC messages; {'power_pin_not_driven': 4, 'pin_not_connected': 34, 'pin_not_driven': 3, 'pin_to_pin': 1, 'unconnected_wire_endpoint': 18, 'multiple_net_names': 1, 'lib_symbol_mismatch': 1}
+error | Input Power pin not driven by any Output Power pins | Symbol #PWR031 Pin 1 [Power input, Line]
+error | Input Power pin not driven by any Output Power pins | Symbol #PWR02 Pin 1 [Power input, Line]
+error | Pin not connected | Symbol U2 Pin 64 [WCT, Output, Line]
+error | Pin not connected | Symbol U2 Pin 63 [RLDOUT, Output, Line]
+error | Pin not connected | Symbol U2 Pin 62 [RLDIN, Input, Line]
+error | Input pin not driven by any Output pins | Symbol U2 Pin 62 [RLDIN, Input, Line]
+error | Pin not connected | Symbol U2 Pin 47 [~{DRDY}, Output, Line]
+error | Pin not connected | Symbol U1 Pin 64 [WCT, Output, Line]
+error | Pin not connected | Symbol U1 Pin 62 [RLDIN, Input, Line]
+error | Input pin not driven by any Output pins | Symbol U1 Pin 62 [RLDIN, Input, Line]
+error | Input Power pin not driven by any Output Power pins | Symbol #PWR01 Pin 1 [Power input, Line]
+error | Input Power pin not driven by any Output Power pins | Symbol #PWR050 Pin 1 [Power input, Line]
+error | Pin not connected | Symbol U6 Pin 27 [IO0, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 39 [IO1, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 38 [IO2, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 15 [IO3, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 4 [IO4, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 17 [IO9, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 18 [IO10, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 22 [IO14, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 8 [IO15, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 9 [IO16, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 37 [TXD0, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 36 [RXD0, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 10 [IO17, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 11 [IO18, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 13 [USB_D-, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 14 [USB_D+, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 28 [IO35, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 29 [IO36, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 30 [IO37, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 31 [IO38, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 32 [IO39, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 33 [IO40, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 34 [IO41, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 35 [IO42, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 26 [IO45, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 16 [IO46, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 24 [IO47, Bidirectional, Line]
+error | Pin not connected | Symbol U6 Pin 25 [IO48, Bidirectional, Line]
+error | Input pin not driven by any Output pins | Symbol U4 Pin 3 [ON/~{OFF}, Input, Line]
+error | Pins of type Power output and Power output are connected | Symbol U4 Pin 5 [VOUT, Power output, Line]; Symbol U7 Pin 5 [OUT, Power output, Line]
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Both AGND and GND are attached to the same items; AGND will be used in the netlist | Symbol #PWR09 Pin 1 [Power input, Line]; Symbol #PWR038 Pin 1 [Power input, Line]
+warning | Unconnected wire endpoint | Horizontal Wire, length 1.27 mm
+warning | Symbol 'Battery' doesn't match copy in library 'Device' | Symbol BT1 [Battery]
+warning | Unconnected wire endpoint | Vertical Wire, length 3.81 mm

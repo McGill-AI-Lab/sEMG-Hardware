@@ -1,0 +1,34 @@
+{
+  "tool": "sch_plan_from_spec",
+  "spec": {
+    "title": "V1.2 F05/F09: connect prepared R36 DIN, R37 SCLK, R38 development OFF strap",
+    "components": [],
+    "labels": [
+      {
+        "text": "MOSI",
+        "x": 180.34,
+        "y": 302.26
+      },
+      {
+        "text": "SCLK",
+        "x": 205.74,
+        "y": 302.26
+      },
+      {
+        "text": "EN",
+        "x": 231.14,
+        "y": 302.26
+      },
+      {
+        "text": "AGND",
+        "x": 180.34,
+        "y": 322.58
+      }
+    ]
+  },
+  "response": {
+    "isError": true,
+    "text": "MCP tool call requires approval, but approval policy is never"
+  },
+  "result": "Runtime rejected before plan was created; no preview/apply/verify/rollback call attempted. Controlled fallback authorized by user used instead."
+}

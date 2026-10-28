@@ -1,0 +1,696 @@
+{
+  "phase": "specifications",
+  "method": "source-span patch; strict parse, unique UUID/reference checks, native KiCad candidate export, atomic replace",
+  "source": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "before_sha256": "a4b067833757aecacc0c5503c1b863bda055c1e76f2cd3de972e276b74239b0d",
+  "after_sha256": "7efd6a06e2ac45a553e7731665950c98c9a680dd36da6db584a826dc016e9494",
+  "changes": [
+    {
+      "finding": "F12/F14",
+      "reference": "C1",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C2",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C3",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C4",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C5",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C10",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C11",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C12",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C13",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C14",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C15",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C16",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C17",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C18",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C21",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C22",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C27",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C28",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C29",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C30",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C31",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C36",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C37",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C38",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C39",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C40",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C41",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C42",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C43",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C44",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C47",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "C48",
+      "fields_added": {
+        "Dielectric": "C0G/NP0",
+        "Tolerance": "1%",
+        "Qualification": "F12/F14: matched input RC; component requirements only, electrode CMRR unverified"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R1",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R2",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R3",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R4",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R5",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R6",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R7",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R8",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R9",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R10",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R11",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R12",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R13",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R14",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R15",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R16",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R17",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R18",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R19",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R20",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R21",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R22",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R23",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R24",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R25",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R26",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R27",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R28",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R29",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R30",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R31",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F12/F14",
+      "reference": "R32",
+      "fields_added": {
+        "Tolerance": "0.1%",
+        "Rated power": ">=0.1 W; verify temperature derating and fault pulses",
+        "Qualification": "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F14",
+      "reference": "C25",
+      "fields_added": {
+        "Voltage rating": ">=10 V",
+        "Qualification": "F14: qualify selected 1uF part at VCAP3 bias (~5.2V at 3.3V AVDD), including DC bias, tolerance and temperature"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F14",
+      "reference": "C51",
+      "fields_added": {
+        "Voltage rating": ">=10 V",
+        "Qualification": "F14: qualify selected 1uF part at VCAP3 bias (~5.2V at 3.3V AVDD), including DC bias, tolerance and temperature"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F14",
+      "reference": "C55",
+      "fields_added": {
+        "Leakage current": "<100 nA at operating bias and temperature",
+        "Qualification": "F14: LP2985 section 7.1.3; retain 10nF BP bypass; exact MPN pending"
+      },
+      "value_and_connections": "unchanged"
+    },
+    {
+      "finding": "F05/F09/F18",
+      "change": "replace stale V2/floating-EN note with actual V1.2 partial-correction state"
+    }
+  ],
+  "candidate_validation": {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/specifications-candidate-netlist.xml",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/specifications-candidate.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+}

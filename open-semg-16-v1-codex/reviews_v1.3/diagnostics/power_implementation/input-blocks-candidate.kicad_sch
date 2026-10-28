@@ -1,0 +1,1025 @@
+(kicad_sch (version 20260306) (generator "eeschema") (uuid "c88205c8-1aed-44e3-ad78-34e40d563af8") (paper "A2")
+(lib_symbols
+(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:Fuse"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "F"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at -1.905 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "fuse"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "*Fuse*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Fuse_0_1"
+			(rectangle
+				(start -0.762 -2.54)
+				(end 0.762 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Fuse_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Jumper:Jumper_2_Open"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JP"
+			(at 0 2.794 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 0 -2.286 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Jumper SPST"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Jumper_2_Open_0_0"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Jumper_2_Open_0_1"
+			(arc
+				(start -1.524 1.27)
+				(mid 0 1.778)
+				(end 1.524 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Jumper_2_Open_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "V13_Power:AO3401A"
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Q"
+			(at 5.08 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3401A"
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 5.08 -1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.aosmd.com/res/data_sheets/AO3401A.pdf"
+			(at 5.08 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "AO3401A P-channel MOSFET; physical pins 1=G, 2=S, 3=D"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "P-Channel MOSFET"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "AO3401A_0_1"
+			(polyline
+				(pts
+					(xy 0.254 1.905) (xy 0.254 -1.905)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.254 0) (xy -2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 2.286) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 0.508) (xy 0.762 -0.508)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.27) (xy 0.762 -2.286)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 1.651 0)
+				(radius 2.794)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy 2.54 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 2.54 -1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "AO3401A_1_1"
+			(pin input line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -5.08 90)
+				(length 2.54)
+				(name "S"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 5.08 270)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 63.5 373.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c2417664-b102-41dc-8871-0e5d475afa38")
+(property "Reference" "J17" (at 71.5 369.38 0) (effects (font (size 1 1))))
+(property "Value" "B2B-PH-K-S(LF)(SN)" (at 71.5 372.38 0) (effects (font (size 1 1))))
+(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" (at 63.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf" (at 63.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Manufacturer" "JST" (at 63.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "B2B-PH-K-S(LF)(SN)" (at 63.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Purpose" "Protected 1S pack input; pin1 positive, pin2 return. Unplug pack for OFF." (at 63.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Pack requirement" "4.20V maximum; >=1.5A discharge capability; cell protection cutoff >=3.0V; compatible off-body charger" (at 63.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Mating harness" "PHR-2 housing, SPH-002T-P0.5S contacts, AWG24; verify pack cable pin polarity" (at 63.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(pin "1" (uuid "f9303ab9-1ba3-4a11-b0bb-8e5f24e36f8e"))
+(pin "2" (uuid "77b484df-9c7b-4785-864a-666e498848eb"))
+(instances (project "input-blocks-candidate" (path "/c88205c8-1aed-44e3-ad78-34e40d563af8" (reference "J17") (unit 1)))))
+(symbol (lib_id "Device:Fuse") (at 120.65 373.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2f066f89-39ce-412d-b11f-a74eb202bf8f")
+(property "Reference" "F1" (at 128.65 369.38 0) (effects (font (size 1 1))))
+(property "Value" "1.5A FAST" (at 128.65 372.38 0) (effects (font (size 1 1))))
+(property "Footprint" "Fuse:Fuse_1206_3216Metric" (at 120.65 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse_fuse_466_datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f" (at 120.65 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Manufacturer" "Littelfuse" (at 120.65 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "046601.5NR" (at 120.65 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Rating" "1.5A, 63VAC/DC, 1206; 50A interrupt rating; derate for continuous current and temperature" (at 120.65 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Purpose" "Secondary board-input protection; not a wearer-current limiter or substitute for protected cell" (at 120.65 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Cold resistance" "0.046ohm nominal at25C" (at 120.65 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Melting I2t" "0.1103A2s nominal" (at 120.65 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(pin "1" (uuid "29d41a8c-c7fa-496d-b60b-feab01f2b42e"))
+(pin "2" (uuid "0988635d-2838-4e8c-b52f-89f20ea299a5"))
+(instances (project "input-blocks-candidate" (path "/c88205c8-1aed-44e3-ad78-34e40d563af8" (reference "F1") (unit 1)))))
+(symbol (lib_id "V13_Power:AO3401A") (at 190.5 373.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "cfd3936d-b5c0-47ae-b475-0c66c555d63e")
+(property "Reference" "Q1" (at 198.5 369.38 0) (effects (font (size 1 1))))
+(property "Value" "AO3401A" (at 198.5 372.38 0) (effects (font (size 1 1))))
+(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 190.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Datasheet" "https://www.aosmd.com/res/data_sheets/AO3401A.pdf" (at 190.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Manufacturer" "Alpha & Omega Semiconductor" (at 190.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "AO3401A" (at 190.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Purpose" "Reverse-polarity P-MOS: D3=fused input, S2=protected output; not reverse-current blocking" (at 190.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "RDS_on" "85mOhm max atVGS=-2.5V, TJ25C; qualify hot condition" (at 190.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Limits" "VDS=-30V; VGS=+/-12V" (at 190.5 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(pin "1" (uuid "93f9b5f1-7545-478d-9847-4882be232080"))
+(pin "2" (uuid "3d5f508a-3ad5-4868-a473-bef7b933a639"))
+(pin "3" (uuid "67d6272c-f0ec-47cb-9db2-95ae40544989"))
+(instances (project "input-blocks-candidate" (path "/c88205c8-1aed-44e3-ad78-34e40d563af8" (reference "Q1") (unit 1)))))
+(symbol (lib_id "Device:R") (at 245.11 373.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "95e4dcc8-5762-48b8-af12-6cf03ae7987b")
+(property "Reference" "R52" (at 253.11 369.38 0) (effects (font (size 1 1))))
+(property "Value" "100k" (at 253.11 372.38 0) (effects (font (size 1 1))))
+(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 245.11 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Datasheet" "" (at 245.11 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Manufacturer" "Yageo" (at 245.11 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "RC0603FR-07100KL" (at 245.11 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 245.11 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Power" "0.1W" (at 245.11 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Purpose" "Q1 gate pull-down" (at 245.11 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(pin "1" (uuid "792150d0-9b1e-4a5d-8859-bafbaa1a7ead"))
+(pin "2" (uuid "65565d30-d389-480d-ab79-59d76ef62d01"))
+(instances (project "input-blocks-candidate" (path "/c88205c8-1aed-44e3-ad78-34e40d563af8" (reference "R52") (unit 1)))))
+(symbol (lib_id "Jumper:Jumper_2_Open") (at 340.36 373.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4ac6a308-c9ea-4b55-af5c-f3afa6a9f713")
+(property "Reference" "JP1" (at 348.36 369.38 0) (effects (font (size 1 1))))
+(property "Value" "INHIBIT (OPEN=RUN)" (at 348.36 372.38 0) (effects (font (size 1 1))))
+(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 340.36 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Datasheet" "https://www.samtec.com/products/tsw-102-07-g-s" (at 340.36 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Manufacturer" "Samtec" (at 340.36 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TSW-102-07-G-S" (at 340.36 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "Fit header, no shunt for RUN; short only for service inhibit" (at 340.36 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(property "Purpose" "MAIN_ENABLE to AGND inhibits converter. Not galvanic isolation; unplug pack for OFF." (at 340.36 373.38 0) (effects (font (size 1 1)) (hide yes)))
+(pin "1" (uuid "d1080a3a-fdc4-432f-9e61-291c4994b374"))
+(pin "2" (uuid "78656211-85bd-41a2-a872-b77063804b69"))
+(instances (project "input-blocks-candidate" (path "/c88205c8-1aed-44e3-ad78-34e40d563af8" (reference "JP1") (unit 1)))))
+(wire (pts (xy 58.42 373.38) (xy 54.61 373.38)) (stroke (width 0) (type default)) (uuid "26e95edd-7b8d-4ac8-ba7f-9150a2e396f2"))
+(global_label "+3.7V" (shape input) (at 54.61 373.38 0) (effects (font (size 1 1)) (justify left)) (uuid "c0f85f29-ea4f-46f9-9f76-21eaf432d204") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 54.61 373.38 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 58.42 375.92) (xy 54.61 375.92)) (stroke (width 0) (type default)) (uuid "19727cea-25df-40b8-a738-8f0feab4bca9"))
+(global_label "AGND" (shape input) (at 54.61 375.92 0) (effects (font (size 1 1)) (justify left)) (uuid "b4d27d31-798c-4e7d-a283-fc76606b1809") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 54.61 375.92 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 120.65 369.57) (xy 120.65 365.76)) (stroke (width 0) (type default)) (uuid "d1d65710-f377-42a9-907c-d8b1c4f58f89"))
+(global_label "+3.7V" (shape input) (at 120.65 365.76 0) (effects (font (size 1 1)) (justify left)) (uuid "a89e7818-d366-4df6-adbd-7e6e6ade35de") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 120.65 365.76 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 120.65 377.19) (xy 120.65 381)) (stroke (width 0) (type default)) (uuid "a667acd1-9855-485e-b8e9-25e3f7e8be72"))
+(global_label "BAT_FUSED" (shape input) (at 120.65 381 0) (effects (font (size 1 1)) (justify left)) (uuid "3f34c2e4-40db-4c67-bbae-4f0358f9f106") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 120.65 381 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 185.42 373.38) (xy 181.61 373.38)) (stroke (width 0) (type default)) (uuid "a7a0068a-2e88-4170-b20e-2025ada84377"))
+(global_label "Q1_GATE" (shape input) (at 181.61 373.38 0) (effects (font (size 1 1)) (justify left)) (uuid "2299c1a0-404e-4ae1-afec-9fcf1e922bd7") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 181.61 373.38 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 193.04 378.46) (xy 193.04 382.27)) (stroke (width 0) (type default)) (uuid "c1064e93-ad72-4978-b7dd-b7ea913cdfc4"))
+(global_label "SW_BAT_PROT" (shape input) (at 193.04 382.27 0) (effects (font (size 1 1)) (justify left)) (uuid "112b024c-1882-4040-9100-86cbf2581e23") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 193.04 382.27 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 193.04 368.3) (xy 193.04 364.49)) (stroke (width 0) (type default)) (uuid "dcb44be1-0c66-401c-a287-bc59f322fbe6"))
+(global_label "BAT_FUSED" (shape input) (at 193.04 364.49 0) (effects (font (size 1 1)) (justify left)) (uuid "37d99626-0bc7-424d-82a8-8fbfa6506198") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 193.04 364.49 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 245.11 369.57) (xy 245.11 365.76)) (stroke (width 0) (type default)) (uuid "068ff236-5bec-4e8b-86d0-dfc63dfc2e7a"))
+(global_label "Q1_GATE" (shape input) (at 245.11 365.76 0) (effects (font (size 1 1)) (justify left)) (uuid "044db6d7-1a02-430b-9abf-837ae20dbc41") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 245.11 365.76 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 245.11 377.19) (xy 245.11 381)) (stroke (width 0) (type default)) (uuid "b23f86d8-14a5-41b1-b4f0-a1401e7f3b4b"))
+(global_label "AGND" (shape input) (at 245.11 381 0) (effects (font (size 1 1)) (justify left)) (uuid "5482166b-f51f-42b5-925d-ed58d634c327") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 245.11 381 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 335.28 373.38) (xy 331.47 373.38)) (stroke (width 0) (type default)) (uuid "ea588a8b-8cd8-4ecf-aa17-deefd8d3fd5a"))
+(global_label "MAIN_ENABLE" (shape input) (at 331.47 373.38 0) (effects (font (size 1 1)) (justify left)) (uuid "e36f7a96-6f75-45d9-9bf8-ad2b9842dde5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 331.47 373.38 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 345.44 373.38) (xy 349.25 373.38)) (stroke (width 0) (type default)) (uuid "0ae74610-50df-416f-bb2a-35ac7c80f5a7"))
+(global_label "AGND" (shape input) (at 349.25 373.38 0) (effects (font (size 1 1)) (justify left)) (uuid "0e29f9f2-9758-42f0-8e8b-c20b7c4386d9") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 349.25 373.38 0) (effects (font (size 1 1)) (hide yes))))
+(text "BATTERY ENTRY - specified external protected1S pack; unplug pack for OFF" (at 50 357.5 0) (effects (font (size 1.2 1.2)) (justify left)) (uuid "08d5f4e5-85cd-47ec-b8c4-91be87c82855"))
+(text "J17: pin1 POSITIVE, pin2 RETURN. Verify cable polarity; no universal Li-Po connector polarity." (at 50 388.5 0) (effects (font (size 1 1)) (justify left)) (uuid "c4923b00-fa11-49b8-acef-54a72022d466"))
+(text "F1/Q1 add secondary input and polarity protection; Q1 does not block reverse current. No USB/charging while worn." (at 50 392 0) (effects (font (size 1 1)) (justify left)) (uuid "4f4379d6-fe28-490b-8bbd-8a9bc30ad20e"))
+(text "JP1 normally OPEN. Short for service inhibit only; disconnect battery and unseat DevKit before USB service." (at 50 395.5 0) (effects (font (size 1 1)) (justify left)) (uuid "e39357cf-3f03-40ac-9058-ed910eeb799a"))
+(embedded_fonts no))

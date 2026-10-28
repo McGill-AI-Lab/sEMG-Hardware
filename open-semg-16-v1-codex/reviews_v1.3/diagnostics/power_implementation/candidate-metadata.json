@@ -1,0 +1,28 @@
+{
+  "local_libraries": [
+    "V13_Power",
+    "Power_Impl"
+  ],
+  "new_definitions": [
+    "Device:L",
+    "Regulator_Linear:LT3042xMSE",
+    "V13_Power:TPS63802DLAR",
+    "Connector_Generic:Conn_01x02",
+    "Device:Fuse",
+    "Jumper:Jumper_2_Open",
+    "V13_Power:AO3401A",
+    "Power_Impl:SN74AXC8T245PWR",
+    "Power_Impl:74LVC1G125GW",
+    "Power_Impl:74LVC1G157GW",
+    "Power_Impl:SN74LVC1G132DCKR",
+    "Power_Impl:SN74HCS20PWR",
+    "Power_Impl:AO3400A",
+    "Power_Impl:74LVC2G32DP",
+    "Power_Impl:SN74LVC541APWR",
+    "Power_Impl:TPS3808G01DBVR",
+    "Power_Impl:R_Verified",
+    "Power_Impl:C_Verified",
+    "Device:C_Polarized"
+  ],
+  "candidate_only": true
+}

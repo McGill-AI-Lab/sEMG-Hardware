@@ -1,0 +1,42 @@
+{
+  "active_project": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_pro",
+  "active_schematic": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "baseline": "baseline/open-semg-16-v1.2.kicad_sch",
+  "edits": [
+    {
+      "finding": "F05",
+      "action": "Add fitted removable R38=0 ohm from existing EN to AGND as development OFF strap; retain F04 unresolved, no rail activation or supply isolation claimed"
+    },
+    {
+      "finding": "F09",
+      "action": "Add R36/R37 10k 1% from existing MOSI/SCLK to AGND; keep CS/full sequencing unresolved"
+    },
+    {
+      "finding": "F12/F14",
+      "action": "Add input RC tolerance/dielectric and resistor power requirement fields; preserve all nominal values/topology"
+    },
+    {
+      "finding": "F14",
+      "action": "Add C25/C51 >=10V and bias-capacitance qualification fields, C55 <100nA leakage requirement; preserve values and connections"
+    },
+    {
+      "finding": "F05/F09/F18",
+      "action": "Update obsolete partial-correction schematic note; add visible requirement notes"
+    }
+  ],
+  "method": {
+    "unsupported_components_and_fields": "controlled source-span edits, strict parse and native KiCad candidate netlist validation, atomic replace",
+    "supported_labels": "MCP plan creation rejected before dispatch (approval_policy=never); controlled source-span fallback created MOSI, SCLK, EN local labels and one global AGND label.",
+    "verification": "Native KiCad CLI export/ERC, source/UUID checks and exhaustive pin/net preservation; no MCP verify call after failed plan creation."
+  },
+  "unchanged_requirements": [
+    "16 input mappings and nominal RC values",
+    "independent ADC reference and VCAP networks",
+    "sampling configuration",
+    "master/slave clock topology",
+    "CS and shared DOUT topology",
+    "RLD/WCT disconnections",
+    "project ERC settings"
+  ],
+  "diagnostic_storage": "All retained diagnostics in reviews_v1.2; unused MCP artifact redirection removed after blocked call."
+}

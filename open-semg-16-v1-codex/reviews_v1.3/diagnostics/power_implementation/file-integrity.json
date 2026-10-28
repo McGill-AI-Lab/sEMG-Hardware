@@ -1,0 +1,18 @@
+{
+  "preexisting_files_checked": 242,
+  "changed_preexisting_files": [
+    "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.3/open-semg-16-v1.3.kicad_sch",
+    "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.3/sym-lib-table",
+    "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.3/power_architecture.md"
+  ],
+  "unexpected_changes": [],
+  "historical_revisions_and_reports_unchanged": true,
+  "project_ERC_settings_unchanged": true,
+  "all_16_channels_preserved": true,
+  "final_verification_assertions": 966,
+  "source_sha256": "516164c320a42462d6e68c4c1b25feca16c7d9a19b73104b110e7338e395795e",
+  "new_active_libraries": [
+    "V13_Power.kicad_sym",
+    "Power_Impl.kicad_sym"
+  ]
+}

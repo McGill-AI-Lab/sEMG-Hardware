@@ -1,0 +1,11 @@
+{
+  "historical_files_checked": 340,
+  "historical_trees_unchanged": true,
+  "final_matches_reviewed_candidate": true,
+  "project_settings_unchanged": true,
+  "changed_deliverables": {
+    "v1.4/open-semg-16-v1.4.kicad_sch": "fb72b5d0f8b13881cd5f9c8b4799a6cfc728c55d94ecdfb2634d8328bdf38b1d",
+    "README.md": "a7630cb3204ab3047b5bdff4e679c26a4e0565ce4e3eebde3ca508dc77835382",
+    "reviews_v1.4/implementation.md": "b28e3c3e0670d732f3da54e8d38cb92d0c558f04e88d33dbb3bae0720b4b724c"
+  }
+}

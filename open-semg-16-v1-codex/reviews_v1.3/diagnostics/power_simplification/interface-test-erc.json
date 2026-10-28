@@ -1,0 +1,562 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T23:09:55",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/240ade95-63db-4882-95be-8d01c1806f6c",
+            "violations": [
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 2 [1A1, Input, Line]",
+                            "pos": {
+                                "x": 594.36,
+                                "y": 90.17
+                            },
+                            "uuid": "1cb90f29-8ae1-5542-92a6-8b66a62adba8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 4 [1A2, Input, Line]",
+                            "pos": {
+                                "x": 594.36,
+                                "y": 92.71
+                            },
+                            "uuid": "0d28b412-d218-5500-bc0c-13fae5b217c2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 6 [1A3, Input, Line]",
+                            "pos": {
+                                "x": 594.36,
+                                "y": 95.25
+                            },
+                            "uuid": "3587b3a5-96ba-50cd-84af-51c7655582e8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 8 [1A4, Input, Line]",
+                            "pos": {
+                                "x": 594.36,
+                                "y": 97.79
+                            },
+                            "uuid": "db947a0b-849c-5f3e-98ca-7533315156c7"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 11 [2A1, Input, Line]",
+                            "pos": {
+                                "x": 594.36,
+                                "y": 100.33
+                            },
+                            "uuid": "cf794032-7dd2-503f-ae1c-06c6d54c1ba1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 10 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 594.36,
+                                "y": 113.03
+                            },
+                            "uuid": "97be8f32-53f9-52d5-9673-33ea0d774292"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 20 [VCC, Power input, Line]",
+                            "pos": {
+                                "x": 645.16,
+                                "y": 90.17
+                            },
+                            "uuid": "280fa555-9596-5cb4-9a62-010bd1fbf0c8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'MCU_MOSI'",
+                            "pos": {
+                                "x": 586.74,
+                                "y": 90.17
+                            },
+                            "uuid": "d639ab94-d586-5fd6-bd12-1f6fae975b54"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'MCU_SCLK'",
+                            "pos": {
+                                "x": 586.74,
+                                "y": 92.71
+                            },
+                            "uuid": "e1e557ec-b528-54be-8761-89938268bd29"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'MCU_START'",
+                            "pos": {
+                                "x": 586.74,
+                                "y": 95.25
+                            },
+                            "uuid": "408d6a36-7d0b-5b65-a0b9-681250b1ab64"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'MCU_RESET'",
+                            "pos": {
+                                "x": 586.74,
+                                "y": 97.79
+                            },
+                            "uuid": "8897965f-0815-585b-9546-6ac0687012cc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'MCU_PWDN'",
+                            "pos": {
+                                "x": 586.74,
+                                "y": 100.33
+                            },
+                            "uuid": "d8b133ff-2d45-514b-a35a-6c7481a6c1f4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'DOUT_ADC2'",
+                            "pos": {
+                                "x": 594.36,
+                                "y": 255.27
+                            },
+                            "uuid": "673366c5-51bf-5c90-94af-1e48ff2acb7b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol R70 [R_Verified]",
+                            "pos": {
+                                "x": 609.6,
+                                "y": 219.71
+                            },
+                            "uuid": "1fdbbc4c-b9b0-5cfb-91d0-d2f35ee0ab88"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol R73 [R_Verified]",
+                            "pos": {
+                                "x": 609.6,
+                                "y": 255.27
+                            },
+                            "uuid": "89357249-21e7-5e7e-9134-f5ee7bb2f770"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol R76 [R_Verified]",
+                            "pos": {
+                                "x": 609.6,
+                                "y": 289.56
+                            },
+                            "uuid": "a6e88751-4ae8-5d5b-bcfe-5472fbfbdfd7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol C60 [C_Verified]",
+                            "pos": {
+                                "x": 609.6,
+                                "y": 330.2
+                            },
+                            "uuid": "768fdb45-4b02-5950-8122-ead23d31b127"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol U7 [SN74LVC244APWR]",
+                            "pos": {
+                                "x": 619.76,
+                                "y": 100.33
+                            },
+                            "uuid": "bc828b96-0d32-5d61-9728-39ebea627161"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'MOSI'",
+                            "pos": {
+                                "x": 652.78,
+                                "y": 92.71
+                            },
+                            "uuid": "9af47531-c028-5e5b-99df-8c9ffab150cb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'SCLK'",
+                            "pos": {
+                                "x": 652.78,
+                                "y": 95.25
+                            },
+                            "uuid": "3a63fc99-4735-570f-b1a3-2fd141b0426a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'START'",
+                            "pos": {
+                                "x": 652.78,
+                                "y": 97.79
+                            },
+                            "uuid": "cf986b0a-eb40-579a-a8a8-4d75871bf43d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'RESET'",
+                            "pos": {
+                                "x": 652.78,
+                                "y": 100.33
+                            },
+                            "uuid": "4dc5bf48-215b-52b4-92ac-5fd72c38f07b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'PWDN'",
+                            "pos": {
+                                "x": 652.78,
+                                "y": 102.87
+                            },
+                            "uuid": "8f8b29b0-209a-5b35-b7f8-046ef5ecf555"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'CS_ADC1'",
+                            "pos": {
+                                "x": 652.78,
+                                "y": 105.41
+                            },
+                            "uuid": "ba1c5bc2-c3f3-5609-9d11-8b3e19254d7a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'CS_ADC2'",
+                            "pos": {
+                                "x": 652.78,
+                                "y": 107.95
+                            },
+                            "uuid": "1bf343d0-1b6b-548f-bce8-e983b11ea9a5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol R71 [R_Verified]",
+                            "pos": {
+                                "x": 754.38,
+                                "y": 219.71
+                            },
+                            "uuid": "35ab3ef5-774a-5fe1-9414-f7fcb51189a0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol R74 [R_Verified]",
+                            "pos": {
+                                "x": 754.38,
+                                "y": 255.27
+                            },
+                            "uuid": "cf24382e-909d-5cba-92d4-c02164d23584"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol R77 [R_Verified]",
+                            "pos": {
+                                "x": 754.38,
+                                "y": 289.56
+                            },
+                            "uuid": "f7150f8b-19aa-5f53-b295-ae08a6bc4900"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol C61 [C_Verified]",
+                            "pos": {
+                                "x": 754.38,
+                                "y": 330.2
+                            },
+                            "uuid": "10df38ad-759c-528c-8ccb-50446420f88b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'MISO'",
+                            "pos": {
+                                "x": 769.62,
+                                "y": 255.27
+                            },
+                            "uuid": "8c7f4bca-0e8c-56cf-96c1-e597941812de"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol U8 [74LVC2G125DP]",
+                            "pos": {
+                                "x": 820.42,
+                                "y": 100.33
+                            },
+                            "uuid": "98e9d484-36b9-579c-b80a-98537b62a547"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'DOUT_ADC1'",
+                            "pos": {
+                                "x": 885.19,
+                                "y": 219.71
+                            },
+                            "uuid": "f10655ae-c8fd-5d48-96b8-9b413c580e75"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol R72 [R_Verified]",
+                            "pos": {
+                                "x": 900.43,
+                                "y": 219.71
+                            },
+                            "uuid": "8e224eb9-f6e5-5e6b-96f4-0ad37552bdf3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_SimpleActive'",
+                    "items": [
+                        {
+                            "description": "Symbol R75 [R_Verified]",
+                            "pos": {
+                                "x": 900.43,
+                                "y": 255.27
+                            },
+                            "uuid": "859fd41b-cb75-5262-b057-0e6bd32727e4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'MCU_DRDY'",
+                            "pos": {
+                                "x": 915.67,
+                                "y": 255.27
+                            },
+                            "uuid": "6e30ce87-748d-59c9-b682-5bc250ed102f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                }
+            ]
+        }
+    ],
+    "source": "interface-test.kicad_sch"
+}

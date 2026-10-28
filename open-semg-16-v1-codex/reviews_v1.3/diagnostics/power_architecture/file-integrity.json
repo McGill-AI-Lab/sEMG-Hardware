@@ -1,0 +1,14 @@
+{
+  "checked_preexisting_files": 220,
+  "changed_or_missing": [],
+  "all_unchanged": true,
+  "schematic_sha256": "b3883ddd2dfdb390c51a26fbb244d63bf6de07b96a650d60917d0490fe5f1023",
+  "project_sha256": "dadf14b131c0e799c01831d1e8449fe32a07f413d62e6aa33f9607435a8634f7",
+  "source_edits": 0,
+  "report_local_links_valid": true,
+  "all_16_channel_mappings_pass": true,
+  "erc": {
+    "errors": 7,
+    "warnings": 4
+  }
+}

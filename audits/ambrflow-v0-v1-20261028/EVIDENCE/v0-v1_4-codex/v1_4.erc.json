@@ -1,0 +1,151 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T17:18:02",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/240ade95-63db-4882-95be-8d01c1806f6c",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 19 [AVDD, Power input, Line]",
+                            "pos": {
+                                "x": 234.95,
+                                "y": 88.9
+                            },
+                            "uuid": "464f5bf9-f6dd-4134-8fd7-74c7fb7a0b89"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 20 [AVSS, Power input, Line]",
+                            "pos": {
+                                "x": 234.95,
+                                "y": 175.26
+                            },
+                            "uuid": "422575d8-cf28-40b3-a0d8-093169139d5d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pins of type Output and Output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 43 [DOUT, Output, Line]",
+                            "pos": {
+                                "x": 257.81,
+                                "y": 139.7
+                            },
+                            "uuid": "a804e879-7924-4735-86f4-5aa8ba00f675"
+                        },
+                        {
+                            "description": "Symbol U2 Pin 43 [DOUT, Output, Line]",
+                            "pos": {
+                                "x": 547.37,
+                                "y": 139.7
+                            },
+                            "uuid": "38cbf10d-4065-4bb5-a23b-2fdeb250f324"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 3 [CHIP_PU, Input, Line]",
+                            "pos": {
+                                "x": 704.85,
+                                "y": 74.93
+                            },
+                            "uuid": "cfa969c5-8e37-47bf-a045-3c017c96281a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 3 [CHIP_PU, Input, Line]",
+                            "pos": {
+                                "x": 704.85,
+                                "y": 74.93
+                            },
+                            "uuid": "cfa969c5-8e37-47bf-a045-3c017c96281a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 21 [5V, Power input, Line]",
+                            "pos": {
+                                "x": 728.98,
+                                "y": 69.85
+                            },
+                            "uuid": "53b6faf5-14d3-4c0f-bfb0-fcc9694579da"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 21 [5V, Power input, Line]",
+                            "pos": {
+                                "x": 728.98,
+                                "y": 69.85
+                            },
+                            "uuid": "53b6faf5-14d3-4c0f-bfb0-fcc9694579da"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        }
+    ],
+    "source": "open-semg-16-v1.4.kicad_sch"
+}

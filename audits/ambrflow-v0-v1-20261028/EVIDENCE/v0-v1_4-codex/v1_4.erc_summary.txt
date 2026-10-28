@@ -1,0 +1,8 @@
+7 ERC messages; {'power_pin_not_driven': 3, 'pin_to_pin': 1, 'pin_not_connected': 2, 'pin_not_driven': 1}
+error | Input Power pin not driven by any Output Power pins | Symbol U1 Pin 19 [AVDD, Power input, Line]
+error | Input Power pin not driven by any Output Power pins | Symbol U1 Pin 20 [AVSS, Power input, Line]
+error | Pins of type Output and Output are connected | Symbol U1 Pin 43 [DOUT, Output, Line]; Symbol U2 Pin 43 [DOUT, Output, Line]
+error | Pin not connected | Symbol U3 Pin 3 [CHIP_PU, Input, Line]
+error | Input pin not driven by any Output pins | Symbol U3 Pin 3 [CHIP_PU, Input, Line]
+error | Pin not connected | Symbol U3 Pin 21 [5V, Power input, Line]
+error | Input Power pin not driven by any Output Power pins | Symbol U3 Pin 21 [5V, Power input, Line]

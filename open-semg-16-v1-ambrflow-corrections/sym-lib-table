@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ESP32-S3-DEVKITC-1-N8R2")(type "KiCad")(uri "/Users/karenchen/Downloads/ESP32-S3-DEVKITC-1-N8R2/ESP32-S3-DEVKITC-1-N8R2.kicad_sym")(options "")(descr ""))
+)

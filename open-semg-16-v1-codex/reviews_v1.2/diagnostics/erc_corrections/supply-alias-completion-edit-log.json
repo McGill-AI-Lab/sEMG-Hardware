@@ -1,0 +1,69 @@
+{
+  "phase": "supply-alias-completion",
+  "target": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "method": "controlled KiCad-aware source-span edits; strict parse, unique UUID/reference checks, native candidate netlist validation, atomic replace",
+  "before_sha256": "0da646beb5cbe8e0f3bc1edddb1a6f393110b1e6f7fe659d4286de4a7e298da6",
+  "after_sha256": "c70cce6a7f7677ccb413ca9a73af67c5e9f39819fecc1eee2636885cd3ec2529",
+  "changes": [
+    {
+      "finding": "F19; preserve F02",
+      "operation": "normalize additional DVDD alias on same common +3.3V rail",
+      "uuid": "3be50cba-7e40-47bb-8d96-339bceed5caa",
+      "at_mm": [
+        "193.04",
+        "85.09",
+        "0"
+      ],
+      "reason": "initial alias diagnostic reported AVDD only; after AVDD consolidation native ERC exposed remaining DVDD name"
+    },
+    {
+      "finding": "F19; preserve F02",
+      "operation": "normalize additional DVDD alias on same common +3.3V rail",
+      "uuid": "75fc8b9d-1b77-49f1-bb82-13b6eff87138",
+      "at_mm": [
+        "209.55",
+        "160.02",
+        "180"
+      ],
+      "reason": "initial alias diagnostic reported AVDD only; after AVDD consolidation native ERC exposed remaining DVDD name"
+    },
+    {
+      "finding": "F19; preserve F02",
+      "operation": "normalize additional DVDD alias on same common +3.3V rail",
+      "uuid": "96726343-f5a2-426c-a935-6769c922104b",
+      "at_mm": [
+        "420.37",
+        "83.82",
+        "0"
+      ],
+      "reason": "initial alias diagnostic reported AVDD only; after AVDD consolidation native ERC exposed remaining DVDD name"
+    },
+    {
+      "finding": "F19; preserve F02",
+      "operation": "normalize additional DVDD alias on same common +3.3V rail",
+      "uuid": "a495d871-c532-473d-aa7f-0b108779b50c",
+      "at_mm": [
+        "539.75",
+        "38.1",
+        "0"
+      ],
+      "reason": "initial alias diagnostic reported AVDD only; after AVDD consolidation native ERC exposed remaining DVDD name"
+    }
+  ],
+  "candidate_cli": {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/supply-alias-completion-candidate-netlist.xml",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/supply-alias-completion-candidate.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+}

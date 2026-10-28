@@ -1,0 +1,12 @@
+{
+  "source": "render-pdf.m",
+  "input": "final-schematic.pdf",
+  "sdk": "/Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk",
+  "outputs": [
+    "power-view.png",
+    "mcu-nc-view.png",
+    "supply-alias-view.png"
+  ],
+  "inspection": "Inspected isolatedU4/C54,26NCs and protectedunflaggedpins,CSretentionand8supplylabelscopes; compacted oneCLKSEL label to avoidSTART textcollision.",
+  "temporary_binary": "removed after rendering"
+}

@@ -1525,7 +1525,41 @@
 					)
 				)
 			)
-			(property "ki_keywords" "batt voltage-source cell"
+			
+(property "Sim.Device" "V"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+(property "Sim.Type" "DC"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+(property "Sim.Pins" "1=+ 2=-"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+(property "ki_keywords" "batt voltage-source cell"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4801,16 +4835,7 @@
 		)
 		(uuid "1341efb4-7784-462b-a80d-1c0033f8612b")
 	)
-	(wire
-		(pts
-			(xy 66.04 144.78) (xy 67.31 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13c6d5b3-2529-4363-adf9-c4bf92ed6b75")
-	)
+	
 	(wire
 		(pts
 			(xy 53.34 198.12) (xy 59.69 198.12)
@@ -4891,16 +4916,7 @@
 		)
 		(uuid "19172f74-0228-4196-b4a9-6fd0f64c610b")
 	)
-	(wire
-		(pts
-			(xy 66.04 187.96) (xy 67.31 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1944fad2-2fdc-4b3d-bc63-86c9cadeb58c")
-	)
+	
 	(wire
 		(pts
 			(xy 309.88 151.13) (xy 387.35 151.13)
@@ -5293,7 +5309,7 @@
 	)
 	(wire
 		(pts
-			(xy 562.61 96.52) (xy 576.58 96.52)
+			(xy 562.61 96.52) (xy 568.96 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6201,16 +6217,7 @@
 		)
 		(uuid "75b06b11-0b6d-4c9f-80cb-4b2a3824183f")
 	)
-	(wire
-		(pts
-			(xy 66.04 166.37) (xy 67.31 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7629d020-a15b-4a11-a0da-525dc621807c")
-	)
+	
 	(wire
 		(pts
 			(xy 44.45 39.37) (xy 49.53 39.37)
@@ -6381,16 +6388,7 @@
 		)
 		(uuid "7d735ff9-3afa-4f08-9ff6-fd934a429df7")
 	)
-	(wire
-		(pts
-			(xy 289.56 97.79) (xy 290.83 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ecfa58c-ad63-49c8-a47a-781baca645b6")
-	)
+	
 	(wire
 		(pts
 			(xy 95.25 269.24) (xy 107.95 269.24)
@@ -6541,16 +6539,7 @@
 		)
 		(uuid "88c054a9-2fe3-4604-b057-63324086bd4f")
 	)
-	(wire
-		(pts
-			(xy 289.56 35.56) (xy 290.83 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8928b8b2-a15b-4448-9ee8-2288aad4981d")
-	)
+	
 	(wire
 		(pts
 			(xy 422.91 110.49) (xy 427.99 110.49)
@@ -6681,16 +6670,7 @@
 		)
 		(uuid "91490a44-435d-4a2f-9aa0-fdfffa4e2c3a")
 	)
-	(wire
-		(pts
-			(xy 293.37 186.69) (xy 294.64 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "917266e2-ea46-48be-8937-e23d14e2e70e")
-	)
+	
 	(wire
 		(pts
 			(xy 53.34 172.72) (xy 53.34 176.53)
@@ -6701,16 +6681,7 @@
 		)
 		(uuid "91b62255-2211-441b-9858-fe352d951705")
 	)
-	(wire
-		(pts
-			(xy 194.31 109.22) (xy 195.58 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "921c1c3f-7201-4f7d-b96d-27f51fc32b80")
-	)
+	
 	(wire
 		(pts
 			(xy 177.8 187.96) (xy 177.8 191.77)
@@ -6911,16 +6882,7 @@
 		)
 		(uuid "9a9b4b10-98c2-422e-bc18-4e9bf2b46fea")
 	)
-	(wire
-		(pts
-			(xy 289.56 55.88) (xy 290.83 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bb1d07d-9b6b-4b89-b88f-7bd033c17f63")
-	)
+	
 	(wire
 		(pts
 			(xy 425.45 128.27) (xy 425.45 130.81)
@@ -7041,16 +7003,7 @@
 		)
 		(uuid "a1798aa4-1fbe-42f7-823b-2b96f00a8902")
 	)
-	(wire
-		(pts
-			(xy 62.23 57.15) (xy 63.5 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1d6f88d-0e8a-413e-a213-337d5f4dfb8c")
-	)
+	
 	(wire
 		(pts
 			(xy 323.85 198.12) (xy 323.85 166.37)
@@ -7171,16 +7124,7 @@
 		)
 		(uuid "a72fa34b-8937-4e8e-b754-9513286195fc")
 	)
-	(wire
-		(pts
-			(xy 293.37 143.51) (xy 294.64 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a88e4c81-bd1e-4997-b072-fb203d08f059")
-	)
+	
 	(wire
 		(pts
 			(xy 400.05 190.5) (xy 405.13 190.5)
@@ -7351,16 +7295,7 @@
 		)
 		(uuid "b5855d21-f5d6-4739-8ec3-06cc069b6129")
 	)
-	(wire
-		(pts
-			(xy 289.56 118.11) (xy 290.83 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6acd6a4-9497-49d0-8aa5-178ccdce006e")
-	)
+	
 	(wire
 		(pts
 			(xy 91.44 121.92) (xy 160.02 121.92)
@@ -7371,26 +7306,8 @@
 		)
 		(uuid "b804a805-97e7-4845-a07b-63ea2c084b24")
 	)
-	(wire
-		(pts
-			(xy 293.37 165.1) (xy 294.64 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8457160-69b9-41fc-8320-2b8cf245d5cd")
-	)
-	(wire
-		(pts
-			(xy 421.64 107.95) (xy 422.91 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b88d0700-d107-4800-a4a8-d3b91c190de7")
-	)
+	
+	
 	(wire
 		(pts
 			(xy 63.5 109.22) (xy 66.04 109.22)
@@ -7401,16 +7318,7 @@
 		)
 		(uuid "b9e496f0-c0b0-4b82-b75c-f04f14775eda")
 	)
-	(wire
-		(pts
-			(xy 62.23 78.74) (xy 63.5 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9ec5222-9de5-4232-ac72-616ed32d16fa")
-	)
+	
 	(wire
 		(pts
 			(xy 562.61 78.74) (xy 576.58 78.74)
@@ -7821,16 +7729,7 @@
 		)
 		(uuid "d49baa57-db7c-42bd-88a9-545785e4c7b8")
 	)
-	(wire
-		(pts
-			(xy 62.23 119.38) (xy 63.5 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5e72200-7740-47f6-bcd1-166d3890ab1a")
-	)
+	
 	(wire
 		(pts
 			(xy 95.25 199.39) (xy 96.52 199.39)
@@ -7861,16 +7760,7 @@
 		)
 		(uuid "d7154a7d-1ff3-46f0-bce3-f6d947588811")
 	)
-	(wire
-		(pts
-			(xy 289.56 77.47) (xy 290.83 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7e9643c-0720-4f66-9307-e79118aac293")
-	)
+	
 	(wire
 		(pts
 			(xy 307.34 158.75) (xy 307.34 165.1)
@@ -8111,16 +8001,7 @@
 		)
 		(uuid "e803a2e5-d675-47d0-870b-5222631b4ff2")
 	)
-	(wire
-		(pts
-			(xy 62.23 36.83) (xy 63.5 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8554e5f-764e-4ed9-b3b5-af17444eaea4")
-	)
+	
 	(wire
 		(pts
 			(xy 323.85 55.88) (xy 293.37 55.88)
@@ -8461,16 +8342,7 @@
 		)
 		(uuid "fea991cc-eed9-4432-8071-5156740cf16b")
 	)
-	(wire
-		(pts
-			(xy 62.23 99.06) (xy 63.5 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fed4f893-2155-4132-a14d-83d66da5026f")
-	)
+	
 	(wire
 		(pts
 			(xy 271.78 38.1) (xy 276.86 38.1)
@@ -8491,16 +8363,7 @@
 		)
 		(uuid "ff9b0018-1025-4d2c-a5ca-0b192670fa0a")
 	)
-	(label "AVDD"
-		(at 160.02 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "066ca9c8-7bd4-4f0b-92e4-56350bd7253c")
-	)
+	(global_label "+3.3V" (shape input) (at 160.02 85.09 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "066ca9c8-7bd4-4f0b-92e4-56350bd7253c"))
 	(label "MOSI"
 		(at 209.55 147.32 180)
 		(effects
@@ -8581,16 +8444,7 @@
 		)
 		(uuid "33cfdda7-208b-4ac7-88bf-8c06b8537511")
 	)
-	(label "AVDD"
-		(at 201.93 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3589528b-9c95-40c8-a912-f86516f6c24c")
-	)
+	(global_label "+3.3V" (shape input) (at 201.93 116.84 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3589528b-9c95-40c8-a912-f86516f6c24c"))
 	(label "MOSI"
 		(at 436.88 146.05 180)
 		(effects
@@ -8601,16 +8455,7 @@
 		)
 		(uuid "39932021-73b6-43a2-899f-66224b90d333")
 	)
-	(label "DVDD"
-		(at 193.04 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3be50cba-7e40-47bb-8d96-339bceed5caa")
-	)
+	(global_label "+3.3V" (shape input) (at 193.04 85.09 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3be50cba-7e40-47bb-8d96-339bceed5caa"))
 	(label "MOSI"
 		(at 576.58 88.9 180)
 		(effects
@@ -8641,26 +8486,8 @@
 		)
 		(uuid "69b2e9de-1056-4310-b1f9-03ed9daad5da")
 	)
-	(label "DVDD"
-		(at 209.55 160.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "75fc8b9d-1b77-49f1-bb82-13b6eff87138")
-	)
-	(label "AVDD"
-		(at 387.35 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "792ff479-7cd1-49c0-b4af-14b86c12e8f8")
-	)
+	(global_label "+3.3V" (shape input) (at 209.55 160.02 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "75fc8b9d-1b77-49f1-bb82-13b6eff87138"))
+	(global_label "+3.3V" (shape input) (at 387.35 83.82 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "792ff479-7cd1-49c0-b4af-14b86c12e8f8"))
 	(label "PWDN"
 		(at 209.55 167.64 180)
 		(effects
@@ -8681,16 +8508,7 @@
 		)
 		(uuid "7ebfdaae-49c8-4d4d-8c39-b2f5ca7088b4")
 	)
-	(label "DVDD"
-		(at 420.37 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "96726343-f5a2-426c-a935-6769c922104b")
-	)
+	(global_label "+3.3V" (shape input) (at 420.37 83.82 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "96726343-f5a2-426c-a935-6769c922104b"))
 	(label "DRDY_ADC1"
 		(at 576.58 83.82 180)
 		(effects
@@ -8731,16 +8549,7 @@
 		)
 		(uuid "a159d54c-1321-4965-bae1-da25f9937833")
 	)
-	(label "DVDD"
-		(at 539.75 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a495d871-c532-473d-aa7f-0b108779b50c")
-	)
+	(global_label "+3.3V" (shape input) (at 539.75 38.1 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a495d871-c532-473d-aa7f-0b108779b50c"))
 	(label "EN"
 		(at 104.14 271.78 0)
 		(effects
@@ -8751,16 +8560,7 @@
 		)
 		(uuid "b064e83b-c0ab-4f56-a93a-c05ee516b2f4")
 	)
-	(label "AVDD"
-		(at 429.26 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd298a1f-5ec1-4f2d-a055-09b58728a7c2")
-	)
+	(global_label "+3.3V" (shape input) (at 429.26 115.57 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "bd298a1f-5ec1-4f2d-a055-09b58728a7c2"))
 	(label "START"
 		(at 209.55 162.56 180)
 		(effects
@@ -8960,7 +8760,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 293.37 59.69 0)
@@ -9042,7 +8846,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 59.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 66.04 40.64 0)
@@ -9124,7 +8932,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 100.33 313.69 0)
@@ -9377,7 +9189,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 92.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 430.53 132.08 0)
@@ -9534,7 +9350,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 290.83 196.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 290.83 196.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 290.83 196.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 293.37 41.91 0)
@@ -9557,7 +9377,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 43.434 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9690,7 +9510,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 290.83 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 290.83 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 290.83 186.69 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 429.26 88.9 0)
@@ -9932,7 +9756,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 222.25 142.24 0)
@@ -10254,7 +10082,10 @@
 				)
 			)
 		)
-	)
+	
+(property "Leakage current" "<100 nA at operating bias and temperature" (at 134.62 275.59 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F14: LP2985 section 7.1.3; retain 10nF BP bypass; exact MPN pending" (at 134.62 275.59 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 66.04 113.03 0)
@@ -10336,7 +10167,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 113.03 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 118.11 208.28 0)
@@ -10418,7 +10253,10 @@
 				)
 			)
 		)
-	)
+	
+(property "Voltage rating" ">=10 V" (at 118.11 208.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F14: qualify selected 1uF part at VCAP3 bias (~5.2V at 3.3V AVDD), including DC bias, tolerance and temperature" (at 118.11 208.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 287.02 97.79 90)
@@ -10497,7 +10335,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 97.79 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 38.1 119.38 0)
@@ -10656,7 +10498,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 87.63 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 87.63 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 87.63 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 69.85 158.75 0)
@@ -10738,7 +10584,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 69.85 158.75 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 69.85 158.75 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 69.85 158.75 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 293.37 135.89 0)
@@ -10761,7 +10611,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 137.414 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10894,7 +10744,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 63.5 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 63.5 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 63.5 154.94 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 66.04 133.35 0)
@@ -10976,7 +10830,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 100.33 317.5 0)
@@ -10999,7 +10857,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 100.3299 321.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11211,7 +11069,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 290.83 143.51 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 290.83 143.51 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 290.83 143.51 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:VDD")
 		(at 36.83 307.34 0)
@@ -11470,7 +11332,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 300.99 184.404 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11681,7 +11543,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 78.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 78.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 78.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 38.1 191.77 0)
@@ -11784,7 +11650,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 300.99 162.814 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11861,7 +11727,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 411.988 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11939,7 +11805,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 115.824 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12150,7 +12016,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:VDD")
 		(at 535.94 27.94 0)
@@ -12309,7 +12179,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 297.18 147.32 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 297.18 147.32 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 297.18 147.32 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 69.85 151.13 0)
@@ -12332,7 +12206,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 73.66 152.654 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12468,7 +12342,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 111.76 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 111.76 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 111.76 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 63.5 187.96 90)
@@ -12547,7 +12425,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 63.5 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 63.5 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 63.5 187.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 107.95 209.55 0)
@@ -12726,7 +12608,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 300.99 172.974 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13173,7 +13055,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 134.6199 283.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13409,7 +13291,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 73.914 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13486,7 +13368,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 73.66 207.264 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13563,7 +13445,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 300.99 205.994 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13720,7 +13602,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 96.774 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13856,7 +13738,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 297.18 179.07 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 297.18 179.07 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 297.18 179.07 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 287.02 35.56 90)
@@ -13935,7 +13821,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 35.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 35.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 35.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 66.04 53.34 0)
@@ -13958,7 +13848,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 54.864 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14094,7 +13984,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 123.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 63.5 166.37 90)
@@ -14173,7 +14067,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 63.5 166.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 63.5 166.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 63.5 166.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 59.69 109.22 90)
@@ -14252,7 +14150,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 59.69 99.06 90)
@@ -14331,7 +14233,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 99.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 265.43 147.32 0)
@@ -14514,7 +14420,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 48.26 272.288 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14591,7 +14497,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14745,7 +14651,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 147.3199 280.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14823,7 +14729,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 95.504 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14956,7 +14862,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 128.27 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 66.04 105.41 0)
@@ -14979,7 +14889,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 106.934 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15677,7 +15587,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 69.85 180.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 69.85 180.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 69.85 180.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 287.02 118.11 90)
@@ -15756,7 +15670,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 118.11 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 118.11 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 118.11 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 166.37 90.17 0)
@@ -15920,7 +15838,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 69.85 170.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 69.85 170.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 69.85 170.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 297.18 149.86 0)
@@ -15943,7 +15865,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 300.99 151.384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16020,7 +15942,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 119.888 283.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16234,7 +16156,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 458.47 140.97 0)
@@ -16335,7 +16261,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 53.594 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16494,7 +16420,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 38.608 321.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16628,7 +16554,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 290.83 175.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 290.83 175.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 290.83 175.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 66.04 60.96 0)
@@ -16710,7 +16640,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 60.96 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 293.37 49.53 0)
@@ -16792,7 +16726,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 49.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 49.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 49.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 293.37 62.23 0)
@@ -16815,7 +16753,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16970,7 +16908,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 65.024 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17106,84 +17044,12 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 147.32 269.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "899e2864-2071-420a-97ee-909270af09ae")
-		(property "Reference" "#PWR069"
-			(at 147.32 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 147.32 264.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 147.32 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3fe35474-37bc-494c-ab43-df3f68f9aac3")
-		)
-		(instances
-			(project "open-semg-16-v1"
-				(path "/240ade95-63db-4882-95be-8d01c1806f6c"
-					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 69.85 148.59 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 69.85 148.59 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 69.85 148.59 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
+	(label "LP2985_OUT_DISABLED" (at 147.32 269.24 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1c53f626-e449-4a8b-96fd-5ccf3f43c0a0"))
 	(symbol
 		(lib_id "Device:R")
 		(at 287.02 45.72 90)
@@ -17262,7 +17128,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 45.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 45.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 45.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 417.83 88.9 0)
@@ -17508,7 +17378,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 297.18 157.48 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 297.18 157.48 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 297.18 157.48 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:VDDA")
 		(at 154.94 86.36 0)
@@ -17668,7 +17542,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Regulator_Linear:TLV75533PDBV")
 		(at 121.92 312.42 0)
@@ -17781,7 +17659,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 44.704 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17999,7 +17877,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 69.85 191.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 69.85 191.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 69.85 191.77 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 382.27 92.71 0)
@@ -18237,7 +18119,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:VDD")
 		(at 135.89 309.88 0)
@@ -18415,7 +18301,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 184.658 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18493,7 +18379,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 73.66 164.084 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18629,7 +18515,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 59.69 46.99 90)
@@ -18708,7 +18598,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 46.99 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 46.99 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 46.99 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Analog_ADC:ADS1298xPAG")
 		(at 405.13 143.51 0)
@@ -19300,7 +19194,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 297.18 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 297.18 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 297.18 168.91 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 200.66 177.8 0)
@@ -19479,7 +19377,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 85.344 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19556,7 +19454,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 75.184 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19689,7 +19587,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 427.99 176.53 0)
@@ -19790,7 +19692,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 73.66 174.244 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20000,7 +19902,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 63.5 144.78 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 63.5 144.78 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 63.5 144.78 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 63.5 198.12 90)
@@ -20079,7 +19985,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 63.5 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 63.5 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 63.5 198.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 542.29 137.16 0)
@@ -20825,7 +20735,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 290.83 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 290.83 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 290.83 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 293.37 69.85 0)
@@ -20907,7 +20821,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 69.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 69.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 69.85 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 335.28 204.47 0)
@@ -21071,7 +20989,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 266.7 35.56 0)
@@ -21307,7 +21229,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 129.54 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 129.54 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 129.54 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 400.05 190.5 0)
@@ -21644,7 +21570,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 125.984 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21799,7 +21725,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 95.2499 280.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21877,7 +21803,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 297.18 105.664 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22035,7 +21961,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 300.99 194.564 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22171,7 +22097,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 290.83 153.67 90)
@@ -22250,7 +22180,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 290.83 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 290.83 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 290.83 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 287.02 77.47 90)
@@ -22329,7 +22263,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 77.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 77.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 77.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 66.04 125.73 0)
@@ -22352,7 +22290,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 127.254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22488,7 +22426,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 293.37 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 293.37 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 293.37 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 190.5 90.17 0)
@@ -22593,7 +22535,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 123.698 323.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22671,7 +22613,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 73.66 195.834 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22804,7 +22746,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 59.69 57.15 90)
@@ -22883,7 +22829,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 57.15 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 57.15 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 57.15 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 69.85 184.15 0)
@@ -22906,7 +22856,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 73.66 185.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22983,7 +22933,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23119,7 +23069,10 @@
 				)
 			)
 		)
-	)
+	
+(property "Voltage rating" ">=10 V" (at 345.44 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F14: qualify selected 1uF part at VCAP3 bias (~5.2V at 3.3V AVDD), including DC bias, tolerance and temperature" (at 345.44 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 297.18 200.66 0)
@@ -23201,7 +23154,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 297.18 200.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 297.18 200.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 297.18 200.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 135.89 317.5 0)
@@ -23224,7 +23181,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 135.8899 321.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23439,7 +23396,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 69.85 201.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 69.85 201.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 69.85 201.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 393.7 88.9 0)
@@ -23600,7 +23561,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 63.5 176.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 63.5 176.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 63.5 176.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 364.49 182.88 0)
@@ -23761,7 +23726,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 287.02 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 287.02 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 287.02 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 265.43 55.88 0)
@@ -23923,7 +23892,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 297.18 190.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 297.18 190.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 297.18 190.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 66.04 115.57 0)
@@ -23946,7 +23919,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "AGND"
 			(at 69.85 117.094 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24079,7 +24052,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 67.31 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 59.69 119.38 90)
@@ -24158,7 +24135,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 119.38 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 119.38 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 119.38 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 66.04 102.87 0)
@@ -24240,7 +24221,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Dielectric" "C0G/NP0" (at 66.04 102.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Tolerance" "1%" (at 66.04 102.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: matched input RC; component requirements only, electrode CMRR unverified" (at 66.04 102.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 38.1 170.18 0)
@@ -24558,7 +24543,11 @@
 				)
 			)
 		)
-	)
+	
+(property "Tolerance" "0.1%" (at 59.69 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Rated power" ">=0.1 W; verify temperature derating and fault pulses" (at 59.69 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "Qualification" "F12/F14: preserve 2k input topology; resistor rating does not establish wearer protection" (at 59.69 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+)
 	(sheet_instances
 		(path "/"
 			(page "1")
@@ -24797,5 +24786,75 @@
 	(wire (pts (xy 565.15 254) (xy 565.15 256.54)) (stroke (width 0) (type default)) (uuid "aa880afc-4c50-4c8c-8df2-098b0e8513ea"))
 	(label "VCAP4_ADC2" (at 565.15 256.54 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cb4aff1d-d22e-4ead-b359-86ae974e13f2"))
 	(text "F21: probe access only; test-pad footprints/layout pending" (at 477.52 170.18 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "2dd79df7-eeff-4bd6-89f2-7617dbcc4f96"))
-	(text "V2 PARTIAL CORRECTIONS - NOT READY FOR POWER-UP OR WEARER USE\nF04/F05: parallel LDO outputs and floating EN remain; power architecture requires approval.\nF06/F18: restore U1 CLK_EN after RESET; allow U2 clock/POR; configure both before shared START.\nF09: START/RESET/PWDN biased low while MCU is high-Z; CS defaults and full sequencing remain unresolved.\nEnable/settle 2.4V reference; verify gain/rate; keep PACE/RLD/WCT and RLD rerouting off.\nF07/F08: protected body bias and wearer protection remain unimplemented." (at 266.7 269.24 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "9955ee5c-33dd-4040-9300-2eabd5a7b23f"))
+	(text "V1.2 PARTIAL CORRECTIONS - NOT READY FOR POWER-UP OR WEARER USE\nF04: U4/C54 isolated from main rail. F05: R38 holds both LDOs OFF; operating power unqualified.\nF06/F18: restore U1 CLK_EN after RESET; allow U2 clock/POR; configure before shared START.\nF09: START/RESET/PWDN plus DIN/SCLK have pulldowns; CS/full sequencing unresolved.\nEnable/settle 2.4V reference; verify gain/rate; keep PACE/RLD/WCT and RLD rerouting off.\nF07/F08: protected body bias and wearer protection remain unimplemented." (at 266.7 269.24 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "36641f03-0935-496c-b896-3f1fdd73edb7"))
+
+(symbol (lib_id "Device:R") (at 180.34 312.42 0) (unit 1)
+            (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8dbb2c46-a409-473e-8b7c-12ebb3dcc2cf")
+            (property "Reference" "R36" (at 182.88 309.88 0) (effects (font (size 1.27 1.27)) (justify left)))
+            (property "Value" "10k" (at 182.88 312.42 0) (effects (font (size 1.27 1.27)) (justify left)))
+            (property "Footprint" "" (at 180.34 312.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 180.34 312.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+            (property "Purpose" "F09: DIN/MOSI low default while MCU high impedance" (at 180.34 312.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Rated power" ">=0.1 W; verify temperature derating" (at 180.34 312.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Tolerance" "1%" (at 180.34 312.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+            (pin "1" (uuid "e0c92cb0-aab0-46f2-a043-c7971a3e2548")) (pin "2" (uuid "8bf88079-ba18-4995-91cf-bf151056c476"))
+            (instances (project "open-semg-16-v1.2" (path "/240ade95-63db-4882-95be-8d01c1806f6c" (reference "R36") (unit 1)))))
+(wire (pts (xy 180.34 302.26) (xy 180.34 308.61)) (stroke (width 0) (type default)) (uuid "69fe6996-b19e-4820-b7db-f3675ff560fa"))
+(wire (pts (xy 180.34 316.23) (xy 180.34 322.58)) (stroke (width 0) (type default)) (uuid "9cd7a6cc-8438-4048-a886-9ab36e22b3e2"))
+(symbol (lib_id "Device:R") (at 205.74 312.42 0) (unit 1)
+            (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0bec55f2-57c7-4e6e-852f-b078705372f9")
+            (property "Reference" "R37" (at 208.28 309.88 0) (effects (font (size 1.27 1.27)) (justify left)))
+            (property "Value" "10k" (at 208.28 312.42 0) (effects (font (size 1.27 1.27)) (justify left)))
+            (property "Footprint" "" (at 205.74 312.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 205.74 312.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+            (property "Purpose" "F09: SCLK low default while MCU high impedance" (at 205.74 312.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Rated power" ">=0.1 W; verify temperature derating" (at 205.74 312.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Tolerance" "1%" (at 205.74 312.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+            (pin "1" (uuid "17287026-2a20-4b2b-9319-dcdf3d4d708e")) (pin "2" (uuid "60ae91e6-6d66-4056-9e3e-4b20216e37de"))
+            (instances (project "open-semg-16-v1.2" (path "/240ade95-63db-4882-95be-8d01c1806f6c" (reference "R37") (unit 1)))))
+(wire (pts (xy 205.74 302.26) (xy 205.74 308.61)) (stroke (width 0) (type default)) (uuid "f5346370-eb55-441d-886e-762d96f2f949"))
+(wire (pts (xy 205.74 316.23) (xy 205.74 322.58)) (stroke (width 0) (type default)) (uuid "581b5755-127f-4a2c-adeb-10e8355c5c7d"))
+(symbol (lib_id "Device:R") (at 231.14 312.42 0) (unit 1)
+            (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ed037320-2473-49d6-93c8-a5a4236d8612")
+            (property "Reference" "R38" (at 233.68 309.88 0) (effects (font (size 1.27 1.27)) (justify left)))
+            (property "Value" "0" (at 233.68 312.42 0) (effects (font (size 1.27 1.27)) (justify left)))
+            (property "Footprint" "" (at 231.14 312.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 231.14 312.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+            (property "Purpose" "F05: fitted removable development OFF strap; remove only after power architecture redesign" (at 231.14 312.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Rated power" ">=0.1 W; verify temperature derating" (at 231.14 312.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
+            (pin "1" (uuid "17db8bf7-ea3e-4ea3-8e6a-3539133d6274")) (pin "2" (uuid "7caca94b-fb37-4c2d-bdfa-b1fdfea755ce"))
+            (instances (project "open-semg-16-v1.2" (path "/240ade95-63db-4882-95be-8d01c1806f6c" (reference "R38") (unit 1)))))
+(wire (pts (xy 231.14 302.26) (xy 231.14 308.61)) (stroke (width 0) (type default)) (uuid "e5573417-6666-45ee-bc68-d987fd230545"))
+(wire (pts (xy 231.14 316.23) (xy 231.14 322.58)) (stroke (width 0) (type default)) (uuid "74388d83-4e1a-49ca-8f61-e8a7da3d3c6b"))
+(wire (pts (xy 180.34 322.58) (xy 205.74 322.58)) (stroke (width 0) (type default)) (uuid "b8391e35-3948-4400-88d9-faefd3ca1f5c"))
+(wire (pts (xy 205.74 322.58) (xy 231.14 322.58)) (stroke (width 0) (type default)) (uuid "a4c57393-c0d0-45c9-bc94-65d0cc605125"))
+(junction (at 205.74 322.58) (diameter 0) (color 0 0 0 0) (uuid "24800bb4-7a08-40c2-b89d-d6d7179b9943"))
+(label "MOSI" (at 180.34 302.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1b880ad9-a3db-4240-be9d-1a81e4d9ca80"))
+(label "SCLK" (at 205.74 302.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8a4cfaca-a1e5-4de1-bee0-546c3995a658"))
+(label "EN" (at 231.14 302.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "134cfb80-c7db-40e1-abda-2497c1e72d1b"))
+(global_label "AGND" (shape input) (at 180.34 322.58 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "97e7afa6-b155-454c-aa48-94c447edf5b6"))
+(text "V1.2 F09: R36/R37 bias DIN and SCLK low; CS / full sequencing unresolved.\nF05: R38 = 0R FITTED: both LDOs held OFF. No functional enable source.\nKeep R38 fitted until functional EN, F13/F15/F16/F17 qualification is complete.\nUSB / external +3.3V can still backfeed the rail; OFF strap is not isolation." (at 171.45 330.2 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "04f61b6a-15e5-4d36-bc35-6d04d76031d4"))
+
+(text "V1.2 F12/F14 - PROCUREMENT REQUIREMENTS (not qualified installed parts)\nR1-R32: 2k unchanged; 0.1%, >=0.1W, derating/pulse review required.\nAll 32 input 620pF caps: C0G/NP0, 1%; electrode impedance/CMRR still unverified.\nC25/C51 VCAP3: 1uF unchanged, >=10V; qualify capacitance at ~5.2V DC.\nC55 BP: 10nF unchanged; leakage <100nA at operating bias/temperature.\nNo MPN, footprint, physical performance or wearer-safety qualification is implied." (at 266.7 302.26 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "765b1a59-7d94-4d95-828b-f26584901a39"))
+
+(text "F04: U4 output isolated with C54; no system load.\nBoth LDOs remain OFF. Qualify LP silicon/C54 before enable." (at 75 287.02 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "bedf62a3-9c81-4c30-b485-0f034b55e6eb"))
+
+(no_connect (at 511.81 50.8) (uuid "005568c3-a093-4aad-9895-66820163b617"))
+(no_connect (at 511.81 53.34) (uuid "2eaa6fec-8efc-4bf7-8634-9d6bf6b88b0b"))
+(no_connect (at 511.81 60.96) (uuid "f3374efa-fc59-45e5-ac1c-e093a64e7812"))
+(no_connect (at 511.81 63.5) (uuid "e2a93457-abd4-46cf-8365-ba8e6f99d299"))
+(no_connect (at 511.81 66.04) (uuid "786dd66d-57c1-4423-8a75-f6d3db73a113"))
+(no_connect (at 511.81 68.58) (uuid "320c5176-b669-4be7-8c20-19af3ddf3299"))
+(no_connect (at 562.61 43.18) (uuid "acc1c8d3-01b2-48cf-853e-7ad91e02913d"))
+(no_connect (at 562.61 45.72) (uuid "a2136587-0274-4152-8d18-4c0f68a44297"))
+(no_connect (at 562.61 50.8) (uuid "adc73fa3-fd21-4ddd-a6a5-55071a3293cb"))
+(no_connect (at 562.61 53.34) (uuid "6cd226e8-2882-4162-a568-bdb86d5b246c"))
+(no_connect (at 562.61 60.96) (uuid "adfc9d2e-4ad1-49f0-a32f-b946f868799f"))
+(no_connect (at 562.61 63.5) (uuid "acf88517-9be1-4649-8bad-19ccba012c4b"))
+(no_connect (at 562.61 66.04) (uuid "79551241-3fcc-4ef9-a202-bb9b63f27eed"))
+(no_connect (at 562.61 71.12) (uuid "a0bc7fb2-9376-43f9-9453-68a37d61c47b"))
+(no_connect (at 562.61 73.66) (uuid "d7158f60-a0d9-4e57-bf80-d48116bd4d83"))
+(no_connect (at 562.61 99.06) (uuid "51f45d35-0adb-4257-b856-8ab978029dc6"))
+(no_connect (at 562.61 101.6) (uuid "3f551da2-ed74-47a1-b20e-d1a129a74a4a"))
+(no_connect (at 562.61 104.14) (uuid "0eb1e856-e21f-4532-b8ed-cad9e532b06b"))
+(no_connect (at 562.61 106.68) (uuid "f75ba201-fa98-45a6-b98c-07be8824f48c"))
+(no_connect (at 562.61 109.22) (uuid "ac8dff60-8bbc-4c29-bdbb-f8b8a5d44ae0"))
+(no_connect (at 562.61 111.76) (uuid "fa36cfbc-bd74-4da0-be1d-132c0b451ec1"))
+(no_connect (at 562.61 114.3) (uuid "5bb6a921-35d2-4f48-ad29-2d23acfec1df"))
+(no_connect (at 562.61 116.84) (uuid "79d72a07-73cf-4a4c-ae0a-6539a5e79329"))
+(no_connect (at 562.61 119.38) (uuid "23a91c4d-1937-44c2-9840-fcc060452ccc"))
+(no_connect (at 562.61 121.92) (uuid "dc9a7496-f042-4dae-bfe7-ef0185af6e41"))
+(no_connect (at 562.61 124.46) (uuid "9c177f68-7caf-4133-a054-65b6115171ae"))
 )

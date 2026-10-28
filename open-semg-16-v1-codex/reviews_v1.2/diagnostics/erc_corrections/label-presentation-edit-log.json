@@ -1,0 +1,37 @@
+{
+  "phase": "label-presentation",
+  "target": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "method": "controlled KiCad-aware source-span edits; strict parse, unique UUID/reference checks, native candidate netlist validation, atomic replace",
+  "before_sha256": "c70cce6a7f7677ccb413ca9a73af67c5e9f39819fecc1eee2636885cd3ec2529",
+  "after_sha256": "202b2b320076c5e802f55e6ed566ae640cb948c6544777b9d51b11222e371208",
+  "changes": [
+    {
+      "finding": "F19",
+      "operation": "rotate compact CLKSEL supply-label presentation away from START text; attachment and net unchanged",
+      "uuid": "75fc8b9d-1b77-49f1-bb82-13b6eff87138",
+      "anchor_mm": [
+        209.55,
+        160.02
+      ],
+      "angle_before": 180,
+      "angle_after": 0,
+      "font_mm": 1.0
+    }
+  ],
+  "candidate_cli": {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/label-presentation-candidate-netlist.xml",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/label-presentation-candidate.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+}

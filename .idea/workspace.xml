@@ -5,49 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ceff1ca-2ff1-4ca3-baff-66ea612983a7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/.codex/config.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/open-semg-16-v1.kicad_prl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/open-semg-16-v1.kicad_pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/open-semg-16-v1.kicad_sch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/analog-notes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/baseline-hashes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-connectivity.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-connectivity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-erc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-netlist.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/current-schematic-inventory.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/design-integrity-verification.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/digital-devkit-v1.1-lfs-pointer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/extract-pdf.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/independent-review-checkpoint.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/ADS1298-EVM.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/ADS1298.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/ESP32-S3-WROOM-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/LP2985.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA160.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA185.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA188.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA196.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SBAA230.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SLAA412.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SLAA414.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/SLYY192.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/pdf-text/TLV755P.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-connectivity.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-erc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-hashes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/dry_electrode.kicad_sym" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/open-semg-16-v1.kicad_prl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/open-semg-16-v1.kicad_pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/open-semg-16-v1.kicad_sch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/ref_electrode.kicad_sym" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-input/sym-lib-table" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/reference-netlist.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/diagnostics/schematic-svg/open-semg-16-v1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/digital-notes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/hardware-audit.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/reviews/power-notes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-semg-16-v1/open-semg-16-v1.kicad_sch" beforeDir="false" afterPath="$PROJECT_DIR$/open-semg-16-v1/open-semg-16-v1.kicad_sch" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="384" />
+    <option name="cachedIndexableFilesCount" value="664" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,25 +33,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/Admin/Downloads/CS_Games_Poker_2026",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Downloads/CS_Games_Poker_2026&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\PycharmProjects\AI-Projects\sEMG-Hardware\3D-prints\Imperial-Osman" />
@@ -114,7 +75,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1793138251747</updated>
-      <workItem from="1793138341151" duration="4517000" />
+      <workItem from="1793138341151" duration="4680000" />
+      <workItem from="1793152324441" duration="418000" />
+      <workItem from="1793221758987" duration="657000" />
     </task>
     <servers />
   </component>

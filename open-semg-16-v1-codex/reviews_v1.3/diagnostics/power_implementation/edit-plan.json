@@ -1,0 +1,439 @@
+{
+  "target": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.3/open-semg-16-v1.3.kicad_sch",
+  "changes": [
+    {
+      "object": "symbol",
+      "uuid": "578dfbf0-0159-4593-8ea5-3a5ae8742e53",
+      "change": "Remove obsolete disabled LDO/EN branch: #PWR071"
+    },
+    {
+      "object": "symbol",
+      "uuid": "04b5fb4d-0b30-406a-9831-7386598ccb37",
+      "change": "Remove obsolete disabled LDO/EN branch: C56"
+    },
+    {
+      "object": "symbol",
+      "uuid": "3d50c866-465a-4ca6-99ed-7d251f84a21f",
+      "change": "Remove obsolete disabled LDO/EN branch: #PWR073"
+    },
+    {
+      "object": "symbol",
+      "uuid": "dd280da1-ff99-4813-ae61-df3f2f8b4158",
+      "change": "Remove obsolete disabled LDO/EN branch: #PWR070"
+    },
+    {
+      "object": "symbol",
+      "uuid": "91c4eb9a-3a59-4332-bd97-9723934fd04c",
+      "change": "Remove obsolete disabled LDO/EN branch: U5"
+    },
+    {
+      "object": "symbol",
+      "uuid": "65473043-453a-4062-8120-c9f42995094d",
+      "change": "Remove obsolete disabled LDO/EN branch: C54"
+    },
+    {
+      "object": "symbol",
+      "uuid": "3a47066a-33c6-4641-93a8-49d8cd2d741b",
+      "change": "Remove obsolete disabled LDO/EN branch: C53"
+    },
+    {
+      "object": "symbol",
+      "uuid": "187e80c6-030f-429d-9b2b-6217240ef059",
+      "change": "Remove obsolete disabled LDO/EN branch: C55"
+    },
+    {
+      "object": "symbol",
+      "uuid": "b7f490ad-00a8-4f41-a38c-d4eb98d2ca83",
+      "change": "Remove obsolete disabled LDO/EN branch: #PWR068"
+    },
+    {
+      "object": "symbol",
+      "uuid": "1ee8f480-e7c6-4665-bed1-8071a0bd2f70",
+      "change": "Remove obsolete disabled LDO/EN branch: #PWR078"
+    },
+    {
+      "object": "symbol",
+      "uuid": "ed037320-2473-49d6-93c8-a5a4236d8612",
+      "change": "Remove obsolete disabled LDO/EN branch: R38"
+    },
+    {
+      "object": "symbol",
+      "uuid": "e9f29f15-359e-4b40-9dfe-29631fd34add",
+      "change": "Remove obsolete disabled LDO/EN branch: #PWR080"
+    },
+    {
+      "object": "symbol",
+      "uuid": "570e1db3-c667-47c9-9d6f-a9a19cd781a2",
+      "change": "Remove obsolete disabled LDO/EN branch: #PWR075"
+    },
+    {
+      "object": "symbol",
+      "uuid": "6956fad7-2c85-44ed-b2ff-463c90e33268",
+      "change": "Remove obsolete disabled LDO/EN branch: #PWR072"
+    },
+    {
+      "object": "symbol",
+      "uuid": "05db309e-1eaa-4b34-8096-08e5a341ee47",
+      "change": "Remove obsolete disabled LDO/EN branch: U4"
+    },
+    {
+      "object": "wire",
+      "uuid": "0fa8ad1f-11b9-406c-aaad-b7ce3554c2fd",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "300edfde-544f-4231-ae44-59c83be0fc9a",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "7f288e14-b76a-476e-9241-30ad1bb17df2",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "b245ac01-92c0-4dfe-a6b2-e6378d66c07e",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "b45f1363-5760-4117-8a39-e214e470fb27",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "c5ef53ec-957b-44ad-b1a3-ef0f543c4055",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "d3cf05f1-5831-4c8a-a31f-e94018152f0d",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "e5573417-6666-45ee-bc68-d987fd230545",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "74388d83-4e1a-49ca-8f61-e8a7da3d3c6b",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "wire",
+      "uuid": "b8391e35-3948-4400-88d9-faefd3ca1f5c",
+      "change": "Separate DIN/SCLK switched-bias returns"
+    },
+    {
+      "object": "wire",
+      "uuid": "a4c57393-c0d0-45c9-bc94-65d0cc605125",
+      "change": "Remove wire belonging only to obsolete LDO/EN branch"
+    },
+    {
+      "object": "junction",
+      "uuid": "10f96f6d-1309-4247-880d-8e659a64ff02",
+      "change": "Remove obsolete power-branch junction"
+    },
+    {
+      "object": "junction",
+      "uuid": "1e6f2a88-43b0-4393-a224-18f883544034",
+      "change": "Remove obsolete power-branch junction"
+    },
+    {
+      "object": "junction",
+      "uuid": "51f76ded-ce2f-4a23-a207-618eb21785fe",
+      "change": "Remove obsolete power-branch junction"
+    },
+    {
+      "object": "junction",
+      "uuid": "6e7aee77-83bc-4b96-8728-da3c8e20f3b6",
+      "change": "Remove obsolete power-branch junction"
+    },
+    {
+      "object": "junction",
+      "uuid": "24800bb4-7a08-40c2-b89d-d6d7179b9943",
+      "change": "Separate switched-bias returns"
+    },
+    {
+      "object": "symbol",
+      "uuid": "99117087-c42f-43b3-a49b-6d55d41789a9",
+      "change": "Connect individual existing10k bias to active clamp, not fixed ground"
+    },
+    {
+      "object": "symbol",
+      "uuid": "b593c569-10e9-4c66-ac7c-55ba38a03fd5",
+      "change": "Connect individual existing10k bias to active clamp, not fixed ground"
+    },
+    {
+      "object": "symbol",
+      "uuid": "3c5c303d-faca-46da-b28d-1411d1f0b11f",
+      "change": "Connect individual existing10k bias to active clamp, not fixed ground"
+    },
+    {
+      "object": "global_label",
+      "uuid": "97e7afa6-b155-454c-aa48-94c447edf5b6",
+      "change": "Switch DIN low bias"
+    },
+    {
+      "object": "no_connect",
+      "uuid": "a0bc7fb2-9376-43f9-9453-68a37d61c47b",
+      "change": "Remove old U5 NC, or connect GPIO4 as explicit MCU_READY"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Assign existing supply symbol to MAIN_3V3"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Assign existing supply symbol to AFE_2V98"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Assign existing supply symbol to AFE_2V98"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Assign existing supply symbol to MAIN_3V3"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Assign existing supply symbol to AFE_2V98"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Assign existing supply symbol to AFE_2V98"
+    },
+    {
+      "object": "global_label",
+      "uuid": "066ca9c8-7bd4-4f0b-92e4-56350bd7253c",
+      "change": "Assign existing supply label to AFE_2V98"
+    },
+    {
+      "object": "global_label",
+      "uuid": "3589528b-9c95-40c8-a912-f86516f6c24c",
+      "change": "Assign existing supply label to AFE_2V98"
+    },
+    {
+      "object": "global_label",
+      "uuid": "3be50cba-7e40-47bb-8d96-339bceed5caa",
+      "change": "Assign existing supply label to AFE_2V98"
+    },
+    {
+      "object": "global_label",
+      "uuid": "75fc8b9d-1b77-49f1-bb82-13b6eff87138",
+      "change": "Assign existing supply label to AFE_2V98"
+    },
+    {
+      "object": "global_label",
+      "uuid": "792ff479-7cd1-49c0-b4af-14b86c12e8f8",
+      "change": "Assign existing supply label to AFE_2V98"
+    },
+    {
+      "object": "global_label",
+      "uuid": "96726343-f5a2-426c-a935-6769c922104b",
+      "change": "Assign existing supply label to AFE_2V98"
+    },
+    {
+      "object": "global_label",
+      "uuid": "a495d871-c532-473d-aa7f-0b108779b50c",
+      "change": "Assign existing supply label to MAIN_3V3"
+    },
+    {
+      "object": "global_label",
+      "uuid": "bd298a1f-5ec1-4f2d-a055-09b58728a7c2",
+      "change": "Assign existing supply label to AFE_2V98"
+    },
+    {
+      "object": "global_label",
+      "uuid": "8b21c772-a7e2-49e8-be88-8f0bc106d537",
+      "change": "Assign existing supply label to MAIN_3V3"
+    },
+    {
+      "object": "label",
+      "uuid": "1d9ec97c-48a0-45d9-b5e3-167ca3af7b83",
+      "change": "Separate MCU control side from receiver-powered buffer"
+    },
+    {
+      "object": "label",
+      "uuid": "2bfeeceb-3671-4b3e-a6d6-e5478dcde644",
+      "change": "Separate DOUT source before shared-MISO tri-state isolation"
+    },
+    {
+      "object": "label",
+      "uuid": "33cfdda7-208b-4ac7-88bf-8c06b8537511",
+      "change": "Remove obsolete regulator label"
+    },
+    {
+      "object": "label",
+      "uuid": "490e9f03-bf8d-492b-bceb-d305160cb71a",
+      "change": "Separate MCU control side from receiver-powered buffer"
+    },
+    {
+      "object": "label",
+      "uuid": "4ce54cb8-2346-466c-ba05-11a3d577e23a",
+      "change": "Separate MCU control side from receiver-powered buffer"
+    },
+    {
+      "object": "label",
+      "uuid": "9b2c9b12-6e3a-4de4-9ad8-503e773b4913",
+      "change": "Separate MCU control side from receiver-powered buffer"
+    },
+    {
+      "object": "label",
+      "uuid": "9e57f1c5-705d-4b0a-8b4c-34ea9ad2cd90",
+      "change": "Separate MCU control side from receiver-powered buffer"
+    },
+    {
+      "object": "label",
+      "uuid": "a159d54c-1321-4965-bae1-da25f9937833",
+      "change": "Separate MCU control side from receiver-powered buffer"
+    },
+    {
+      "object": "label",
+      "uuid": "b064e83b-c0ab-4f56-a93a-c05ee516b2f4",
+      "change": "Remove obsolete regulator label"
+    },
+    {
+      "object": "label",
+      "uuid": "d735ea0c-7aa0-4b43-9b4d-1927781ba544",
+      "change": "Separate DOUT source before shared-MISO tri-state isolation"
+    },
+    {
+      "object": "label",
+      "uuid": "d887ac77-89b2-48c7-9619-3d28720ae222",
+      "change": "Separate MCU control side from receiver-powered buffer"
+    },
+    {
+      "object": "label",
+      "uuid": "f775580c-f47c-4bc7-a9f8-15143a81985e",
+      "change": "Separate MCU control side from receiver-powered buffer"
+    },
+    {
+      "object": "label",
+      "uuid": "1c53f626-e449-4a8b-96fd-5ccf3f43c0a0",
+      "change": "Remove obsolete regulator label"
+    },
+    {
+      "object": "label",
+      "uuid": "134cfb80-c7db-40e1-abda-2497c1e72d1b",
+      "change": "Remove obsolete regulator label"
+    },
+    {
+      "object": "text_box",
+      "uuid": "5e856d29-b497-43d7-b14e-e1a85acb6f7c",
+      "change": "Remove obsolete LDO box"
+    },
+    {
+      "object": "text_box",
+      "uuid": "be285b6e-ac76-4d72-947f-bbe18e7a2bbb",
+      "change": "Remove obsolete LDO box"
+    },
+    {
+      "object": "text",
+      "uuid": "36641f03-0935-496c-b896-3f1fdd73edb7",
+      "change": "Replace obsolete power summary with current architecture and limits"
+    },
+    {
+      "object": "text",
+      "uuid": "04f61b6a-15e5-4d36-bc35-6d04d76031d4",
+      "change": "Replace stale R38 note"
+    },
+    {
+      "object": "text",
+      "uuid": "765b1a59-7d94-4d95-828b-f26584901a39",
+      "change": "Retain input passive requirements; remove obsolete BP requirement"
+    },
+    {
+      "object": "text",
+      "uuid": "bedf62a3-9c81-4c30-b485-0f034b55e6eb",
+      "change": "Remove superseded isolated-LDO annotation"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Specify switched-bias resistor footprint"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Specify switched-bias resistor footprint"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Specify switched-bias resistor footprint"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Specify switched-bias resistor footprint"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Specify switched-bias resistor footprint"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Identify main test rail"
+    },
+    {
+      "object": "lib_id",
+      "uuid": null,
+      "change": "Show selected bulk capacitor polarity explicitly"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Select specified MAIN bulk capacitor: Value"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Select specified MAIN bulk capacitor: Footprint"
+    },
+    {
+      "object": "property",
+      "uuid": null,
+      "change": "Select specified MAIN bulk capacitor: Datasheet"
+    },
+    {
+      "object": "paper",
+      "uuid": null,
+      "change": "Expand sheet for explicit new power/interface blocks; original channels stay in place"
+    },
+    {
+      "object": "comment",
+      "uuid": null,
+      "change": "Update revision title"
+    }
+  ],
+  "removed_references": [
+    "#PWR068",
+    "#PWR070",
+    "#PWR071",
+    "#PWR072",
+    "#PWR073",
+    "#PWR075",
+    "#PWR078",
+    "#PWR080",
+    "C53",
+    "C54",
+    "C55",
+    "C56",
+    "R38",
+    "U4",
+    "U5"
+  ],
+  "source_hash": "b3883ddd2dfdb390c51a26fbb244d63bf6de07b96a650d60917d0490fe5f1023",
+  "candidate_hash": "516164c320a42462d6e68c4c1b25feca16c7d9a19b73104b110e7338e395795e"
+}

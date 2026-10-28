@@ -1,0 +1,775 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T21:36:41",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/240ade95-63db-4882-95be-8d01c1806f6c",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR074 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 36.83,
+                                "y": 307.34
+                            },
+                            "uuid": "ae26fcbc-4fcc-4e2f-91a8-576e607ae49a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 66.04,
+                                "y": 43.18
+                            },
+                            "uuid": "b7896f6d-cdbb-4979-8766-b73a29a4a88c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 10 [VIN, Power input, Line]",
+                            "pos": {
+                                "x": 106.68,
+                                "y": 441.96
+                            },
+                            "uuid": "9c1b1478-9c76-5ba0-bf81-3f010beec750"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR063 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 535.94,
+                                "y": 27.94
+                            },
+                            "uuid": "3fa1685c-0ed0-4d29-a1de-00eaa0c3700e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 13 [GPIO3/ADC1_CH2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 562.61,
+                                "y": 68.58
+                            },
+                            "uuid": "810351da-8113-4a08-bf3b-96eeeeea5f0e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_Power'",
+                    "items": [
+                        {
+                            "description": "Symbol U6 [TPS63802DLAR]",
+                            "pos": {
+                                "x": 119.38,
+                                "y": 449.58
+                            },
+                            "uuid": "71475f53-e570-554d-8a14-94acebfa3000"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_Power'",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [AO3401A]",
+                            "pos": {
+                                "x": 190.5,
+                                "y": 373.38
+                            },
+                            "uuid": "c15a9c2a-35f3-46ae-8451-0bf4b499737f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Local and global labels have same name",
+                    "items": [
+                        {
+                            "description": "Global Label 'SW_BAT_PROT'",
+                            "pos": {
+                                "x": 193.04,
+                                "y": 382.27
+                            },
+                            "uuid": "e7f7c2d0-2ede-4733-8abd-80775d946334"
+                        },
+                        {
+                            "description": "Label 'SW_BAT_PROT'",
+                            "pos": {
+                                "x": 284.48,
+                                "y": 452.12
+                            },
+                            "uuid": "21aa980f-7a2b-501c-ae83-237afb61f735"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "same_local_global_label"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 195.58,
+                                "y": 121.92
+                            },
+                            "uuid": "b2a93068-aa80-4aec-ba64-11e021b26d31"
+                        },
+                        {
+                            "description": "Symbol U8 Pin 10 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 309.88,
+                                "y": 588.01
+                            },
+                            "uuid": "83bb1d75-fe88-5b1f-81c3-7ab128b5f2f3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 195.58,
+                                "y": 124.46
+                            },
+                            "uuid": "dfe0ee43-f77c-4980-aeb6-83c6ee313096"
+                        },
+                        {
+                            "description": "Symbol U8 Pin 10 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 309.88,
+                                "y": 588.01
+                            },
+                            "uuid": "83bb1d75-fe88-5b1f-81c3-7ab128b5f2f3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_Power'",
+                    "items": [
+                        {
+                            "description": "Symbol U7 [TPS63802DLAR]",
+                            "pos": {
+                                "x": 299.72,
+                                "y": 449.58
+                            },
+                            "uuid": "4ab4eb71-6950-5f52-8a1e-053cb98e772c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Local and global labels have same name",
+                    "items": [
+                        {
+                            "description": "Global Label 'MAIN_ENABLE'",
+                            "pos": {
+                                "x": 331.47,
+                                "y": 373.38
+                            },
+                            "uuid": "296087f2-0aff-49b3-adaf-dd5cbd4c0bbe"
+                        },
+                        {
+                            "description": "Label 'MAIN_ENABLE'",
+                            "pos": {
+                                "x": 104.14,
+                                "y": 447.04
+                            },
+                            "uuid": "150a1b4a-3900-53f4-a5ba-88dfdb896a40"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "same_local_global_label"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 422.91,
+                                "y": 120.65
+                            },
+                            "uuid": "d51af41d-e08a-4bb5-b997-5ec080c5b364"
+                        },
+                        {
+                            "description": "Symbol U8 Pin 10 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 309.88,
+                                "y": 588.01
+                            },
+                            "uuid": "83bb1d75-fe88-5b1f-81c3-7ab128b5f2f3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 422.91,
+                                "y": 123.19
+                            },
+                            "uuid": "5174a6bf-688a-47ed-8972-27129b0243ef"
+                        },
+                        {
+                            "description": "Symbol U8 Pin 10 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 309.88,
+                                "y": 588.01
+                            },
+                            "uuid": "83bb1d75-fe88-5b1f-81c3-7ab128b5f2f3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R70 [R_Verified]",
+                            "pos": {
+                                "x": 549.91,
+                                "y": 454.66
+                            },
+                            "uuid": "0846dbb3-ee42-5264-8298-a770e7a20d70"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R74 [R_Verified]",
+                            "pos": {
+                                "x": 549.91,
+                                "y": 480.06
+                            },
+                            "uuid": "cd5b86d7-63f1-54c2-b11b-078873c4bc32"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R78 [R_Verified]",
+                            "pos": {
+                                "x": 549.91,
+                                "y": 505.46
+                            },
+                            "uuid": "3ebed9ba-5e71-5193-88be-bf3ebee3c2c0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R82 [R_Verified]",
+                            "pos": {
+                                "x": 549.91,
+                                "y": 529.59
+                            },
+                            "uuid": "cd4a6af2-c83d-5f88-81b6-334da6d105f0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C91 [C_Verified]",
+                            "pos": {
+                                "x": 549.91,
+                                "y": 554.99
+                            },
+                            "uuid": "77372115-943e-5eef-9e34-fb9a28a1634f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C95 [C_Verified]",
+                            "pos": {
+                                "x": 549.91,
+                                "y": 580.39
+                            },
+                            "uuid": "cdb3966a-54bc-5472-9710-d0d52eaca576"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol U9 [SN74AXC8T245PWR]",
+                            "pos": {
+                                "x": 599.44,
+                                "y": 299.72
+                            },
+                            "uuid": "320fd195-bbcd-5372-a6a0-ea327f73f5fd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol U13 [SN74LVC1G132DCKR]",
+                            "pos": {
+                                "x": 599.44,
+                                "y": 379.73
+                            },
+                            "uuid": "ab1377ec-5ea8-5ef3-b093-b8d8da2f3b51"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R71 [R_Verified]",
+                            "pos": {
+                                "x": 689.61,
+                                "y": 454.66
+                            },
+                            "uuid": "04639ab2-76dc-5918-b50b-7162420b213b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R75 [R_Verified]",
+                            "pos": {
+                                "x": 689.61,
+                                "y": 480.06
+                            },
+                            "uuid": "bc0f8d13-f055-50ed-b068-2891a2fcc7a0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R79 [R_Verified]",
+                            "pos": {
+                                "x": 689.61,
+                                "y": 505.46
+                            },
+                            "uuid": "e2e4362b-8f01-596c-b6b5-678b9eb567ff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R83 [R_Verified]",
+                            "pos": {
+                                "x": 689.61,
+                                "y": 529.59
+                            },
+                            "uuid": "166d6db8-cbfb-5733-ac5f-9d3a8530450d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C92 [C_Verified]",
+                            "pos": {
+                                "x": 689.61,
+                                "y": 554.99
+                            },
+                            "uuid": "7e0ecaea-eeed-5a25-8d00-3850ad072e08"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C96 [C_Verified]",
+                            "pos": {
+                                "x": 689.61,
+                                "y": 580.39
+                            },
+                            "uuid": "4ffd4c88-d191-56bd-8229-72c253b7578c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol U10 [74LVC1G125GW]",
+                            "pos": {
+                                "x": 759.46,
+                                "y": 279.4
+                            },
+                            "uuid": "c807ab01-e666-5822-b88a-15c07696ab70"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol U11 [74LVC1G125GW]",
+                            "pos": {
+                                "x": 759.46,
+                                "y": 330.2
+                            },
+                            "uuid": "c7c9eaab-fc13-501d-be27-865d852a41dc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol U14 [74LVC2G32DP]",
+                            "pos": {
+                                "x": 759.46,
+                                "y": 389.89
+                            },
+                            "uuid": "e4f41b3e-9a01-5beb-b88e-b5c653879be3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R72 [R_Verified]",
+                            "pos": {
+                                "x": 830.58,
+                                "y": 454.66
+                            },
+                            "uuid": "b78fa497-9049-59a4-8723-11df006a1d64"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R76 [R_Verified]",
+                            "pos": {
+                                "x": 830.58,
+                                "y": 480.06
+                            },
+                            "uuid": "83317f79-60f5-5039-96bc-39533b683eb2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R80 [R_Verified]",
+                            "pos": {
+                                "x": 830.58,
+                                "y": 505.46
+                            },
+                            "uuid": "a41b3f95-8317-5aca-88a2-d1f175e4982e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R84 [R_Verified]",
+                            "pos": {
+                                "x": 830.58,
+                                "y": 529.59
+                            },
+                            "uuid": "d9f6bb63-c538-5f60-a917-5284c6d460e5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C93 [C_Verified]",
+                            "pos": {
+                                "x": 830.58,
+                                "y": 554.99
+                            },
+                            "uuid": "0ae70992-ba2d-5d46-bd52-ddf8f9d8b09b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C97 [C_Verified]",
+                            "pos": {
+                                "x": 830.58,
+                                "y": 580.39
+                            },
+                            "uuid": "0d46433f-f308-57bb-aa5e-820f1c3b2b43"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol U12 [74LVC1G157GW]",
+                            "pos": {
+                                "x": 919.48,
+                                "y": 279.4
+                            },
+                            "uuid": "0bcaf75f-30f3-5d0a-b5d3-4bd5338463ec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol U15 [TPS3808G01DBVR]",
+                            "pos": {
+                                "x": 939.8,
+                                "y": 369.57
+                            },
+                            "uuid": "5d4ee564-fa3e-5ed7-8f0a-50fc45ebf28c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol U16 [TPS3808G01DBVR]",
+                            "pos": {
+                                "x": 939.8,
+                                "y": 430.53
+                            },
+                            "uuid": "77c70bd3-60c3-5ab2-8be2-50d19539570c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R73 [R_Verified]",
+                            "pos": {
+                                "x": 970.28,
+                                "y": 454.66
+                            },
+                            "uuid": "4fe8eb96-17c8-5f9a-bbc5-47bfe2a8883a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R77 [R_Verified]",
+                            "pos": {
+                                "x": 970.28,
+                                "y": 480.06
+                            },
+                            "uuid": "f106e77a-b438-52ac-8fbe-cb784d7b446e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol R81 [R_Verified]",
+                            "pos": {
+                                "x": 970.28,
+                                "y": 505.46
+                            },
+                            "uuid": "6983446d-ae29-57e2-886a-970fc6358881"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C90 [C_Verified]",
+                            "pos": {
+                                "x": 970.28,
+                                "y": 529.59
+                            },
+                            "uuid": "c4b11728-fde9-50de-80b8-1a285369eb8c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C94 [C_Verified]",
+                            "pos": {
+                                "x": 970.28,
+                                "y": 554.99
+                            },
+                            "uuid": "92e67824-6c8f-5940-b385-c38ac0f33a12"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Power_Impl'",
+                    "items": [
+                        {
+                            "description": "Symbol C98 [C_Verified]",
+                            "pos": {
+                                "x": 970.28,
+                                "y": 580.39
+                            },
+                            "uuid": "6fc7957a-5065-52e4-b90c-aebb4b2b12e6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "power-candidate.kicad_sch"
+}

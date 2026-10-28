@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch</source>
+    <date>2026-10-27T23:09:54</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>interface-test.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C60">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">U7 local bypass; effective capacitance and placement required</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="C_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="U7 local bypass; effective capacitance and placement required"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>768fdb45-4b02-5950-8122-ead23d31b127</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C61">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">U8 local bypass; effective capacitance and placement required</field>
+        <field name="Voltage rating">&gt;=10V</field>
+        <field name="Dielectric">X7R or qualified C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="C_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="U8 local bypass; effective capacitance and placement required"/>
+      <property name="Voltage rating" value="&gt;=10V"/>
+      <property name="Dielectric" value="X7R or qualified C0G"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>10df38ad-759c-528c-8ccb-50446420f88b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">Defined CS1 input LOW through MCU boot</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="R_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="Defined CS1 input LOW through MCU boot"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1fdbbc4c-b9b0-5cfb-91d0-d2f35ee0ab88</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R71">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">Defined CS2 input LOW through MCU boot</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="R_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="Defined CS2 input LOW through MCU boot"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>35ab3ef5-774a-5fe1-9414-f7fcb51189a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R72">
+      <value>3.6k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">Limit possible startup DOUT contention; retain logical shared bus</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="R_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="Limit possible startup DOUT contention; retain logical shared bus"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e224eb9-f6e5-5e6b-96f4-0ad37552bdf3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R73">
+      <value>3.6k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">Limit possible startup DOUT contention; retain logical shared bus</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="R_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="Limit possible startup DOUT contention; retain logical shared bus"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89357249-21e7-5e7e-9134-f5ee7bb2f770</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R74">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">Limit return-buffer versus MCU LOW glitch current; actual waveform/current qualification required</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="R_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="Limit return-buffer versus MCU LOW glitch current; actual waveform/current qualification required"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf24382e-909d-5cba-92d4-c02164d23584</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R75">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">Limit return-buffer versus MCU LOW glitch current; actual waveform/current qualification required</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="R_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="Limit return-buffer versus MCU LOW glitch current; actual waveform/current qualification required"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>859fd41b-cb75-5262-b057-0e6bd32727e4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R76">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">Defined MISO_RAW when both ADCs deselected</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="R_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="Defined MISO_RAW when both ADCs deselected"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6e88751-4ae8-5d5b-bcfe-5472fbfbdfd7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R77">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">TBD</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Purpose">Defined raw DRDY during startup</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power rating">&gt;=0.1W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="R_Verified" description=""/>
+      <property name="MPN" value="TBD"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Purpose" value="Defined raw DRDY during startup"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power rating" value="&gt;=0.1W"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7150f8b-19aa-5f53-b295-ae08a6bc4900</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>SN74LVC244APWR</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf</datasheet>
+      <fields>
+        <field name="MPN">SN74LVC244APWR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Purpose">Seven forward controls; OEs grounded; input pulldowns on MCU side; unused input low/output NC</field>
+        <field name="Footprint">Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="SN74LVC244APWR" description=""/>
+      <property name="MPN" value="SN74LVC244APWR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Purpose" value="Seven forward controls; OEs grounded; input pulldowns on MCU side; unused input low/output NC"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc828b96-0d32-5d61-9728-39ebea627161</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="17"/>
+            <pin num="19"/>
+            <pin num="10"/>
+            <pin num="20"/>
+            <pin num="18"/>
+            <pin num="16"/>
+            <pin num="14"/>
+            <pin num="12"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>74LVC2G125DP</value>
+      <footprint>Package_SO:TSSOP-8_3x3mm_P0.65mm</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74LVC2G125.pdf</datasheet>
+      <fields>
+        <field name="MPN">74LVC2G125DP</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Purpose">Shared-MISO and DRDY regeneration; all domains on MAIN; both OEs grounded; exact Nexperia output pin map</field>
+        <field name="Footprint">Package_SO:TSSOP-8_3x3mm_P0.65mm</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74LVC2G125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="V13_SimpleActive" part="74LVC2G125DP" description=""/>
+      <property name="MPN" value="74LVC2G125DP"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="Purpose" value="Shared-MISO and DRDY regeneration; all domains on MAIN; both OEs grounded; exact Nexperia output pin map"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="../reviews_v1.3/diagnostics/power_simplification/interface-test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98e9d484-36b9-579c-b80a-98537b62a547</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="6"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="V13_SimpleActive" part="74LVC2G125DP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC2G125DP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="~1OE" type="input"/>
+        <pin num="2" name="1A" type="input"/>
+        <pin num="3" name="2Y" type="tri_state"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="1Y" type="tri_state"/>
+        <pin num="7" name="~2OE" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="V13_SimpleActive" part="C_Verified">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Verified</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="V13_SimpleActive" part="R_Verified">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Verified</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="V13_SimpleActive" part="SN74LVC244APWR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC244APWR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="~1OE" type="input"/>
+        <pin num="2" name="1A1" type="input"/>
+        <pin num="3" name="2Y4" type="tri_state"/>
+        <pin num="4" name="1A2" type="input"/>
+        <pin num="5" name="2Y3" type="tri_state"/>
+        <pin num="6" name="1A3" type="input"/>
+        <pin num="7" name="2Y2" type="tri_state"/>
+        <pin num="8" name="1A4" type="input"/>
+        <pin num="9" name="2Y1" type="tri_state"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="2A1" type="input"/>
+        <pin num="12" name="1Y4" type="tri_state"/>
+        <pin num="13" name="2A2" type="input"/>
+        <pin num="14" name="1Y3" type="tri_state"/>
+        <pin num="15" name="2A3" type="input"/>
+        <pin num="16" name="1Y2" type="tri_state"/>
+        <pin num="17" name="2A4" type="input"/>
+        <pin num="18" name="1Y1" type="tri_state"/>
+        <pin num="19" name="~2OE" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="1" name="/AGND" class="Default">
+      <node ref="C60" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C61" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R70" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R71" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R76" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R77" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="~1OE_1" pintype="input"/>
+      <node ref="U7" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U7" pin="17" pinfunction="2A4_17" pintype="input"/>
+      <node ref="U7" pin="19" pinfunction="~2OE_19" pintype="input"/>
+      <node ref="U8" pin="1" pinfunction="~1OE_1" pintype="input"/>
+      <node ref="U8" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U8" pin="7" pinfunction="~2OE_7" pintype="input"/>
+    </net>
+    <net code="2" name="/CS_ADC1" class="Default">
+      <node ref="U7" pin="7" pinfunction="2Y2_7" pintype="tri_state"/>
+    </net>
+    <net code="3" name="/CS_ADC2" class="Default">
+      <node ref="U7" pin="5" pinfunction="2Y3_5" pintype="tri_state"/>
+    </net>
+    <net code="4" name="/DOUT_ADC1" class="Default">
+      <node ref="R72" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="5" name="/DOUT_ADC2" class="Default">
+      <node ref="R73" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="6" name="/DRDY_ADC1" class="Default">
+      <node ref="R77" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="5" pinfunction="2A_5" pintype="input"/>
+    </net>
+    <net code="7" name="/DRDY_DRV" class="Default">
+      <node ref="R75" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="2Y_3" pintype="tri_state"/>
+    </net>
+    <net code="8" name="/MAIN_3V3" class="Default">
+      <node ref="C60" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C61" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U7" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+      <node ref="U8" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+    </net>
+    <net code="9" name="/MCU_CS1" class="Default">
+      <node ref="R70" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U7" pin="13" pinfunction="2A2_13" pintype="input"/>
+    </net>
+    <net code="10" name="/MCU_CS2" class="Default">
+      <node ref="R71" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U7" pin="15" pinfunction="2A3_15" pintype="input"/>
+    </net>
+    <net code="11" name="/MCU_DRDY" class="Default">
+      <node ref="R75" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="12" name="/MCU_MOSI" class="Default">
+      <node ref="U7" pin="2" pinfunction="1A1_2" pintype="input"/>
+    </net>
+    <net code="13" name="/MCU_PWDN" class="Default">
+      <node ref="U7" pin="11" pinfunction="2A1_11" pintype="input"/>
+    </net>
+    <net code="14" name="/MCU_RESET" class="Default">
+      <node ref="U7" pin="8" pinfunction="1A4_8" pintype="input"/>
+    </net>
+    <net code="15" name="/MCU_SCLK" class="Default">
+      <node ref="U7" pin="4" pinfunction="1A2_4" pintype="input"/>
+    </net>
+    <net code="16" name="/MCU_START" class="Default">
+      <node ref="U7" pin="6" pinfunction="1A3_6" pintype="input"/>
+    </net>
+    <net code="17" name="/MISO" class="Default">
+      <node ref="R74" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="18" name="/MISO_DRV" class="Default">
+      <node ref="R74" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="6" pinfunction="1Y_6" pintype="tri_state"/>
+    </net>
+    <net code="19" name="/MISO_RAW" class="Default">
+      <node ref="R72" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R73" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R76" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="1A_2" pintype="input"/>
+    </net>
+    <net code="20" name="/MOSI" class="Default">
+      <node ref="U7" pin="18" pinfunction="1Y1_18" pintype="tri_state"/>
+    </net>
+    <net code="21" name="/PWDN" class="Default">
+      <node ref="U7" pin="9" pinfunction="2Y1_9" pintype="tri_state"/>
+    </net>
+    <net code="22" name="/RESET" class="Default">
+      <node ref="U7" pin="12" pinfunction="1Y4_12" pintype="tri_state"/>
+    </net>
+    <net code="23" name="/SCLK" class="Default">
+      <node ref="U7" pin="16" pinfunction="1Y2_16" pintype="tri_state"/>
+    </net>
+    <net code="24" name="/START" class="Default">
+      <node ref="U7" pin="14" pinfunction="1Y3_14" pintype="tri_state"/>
+    </net>
+    <net code="25" name="unconnected-(U7-2Y4-Pad3)" class="Default">
+      <node ref="U7" pin="3" pinfunction="2Y4_3" pintype="tri_state+no_connect"/>
+    </net>
+  </nets>
+</export>

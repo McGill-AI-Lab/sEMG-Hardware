@@ -1,0 +1,56 @@
+{
+  "phase": "power",
+  "target": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "method": "controlled KiCad-aware source-span edits; strict parse, unique UUID/reference checks, native candidate netlist validation, atomic replace",
+  "before_sha256": "7efd6a06e2ac45a553e7731665950c98c9a680dd36da6db584a826dc016e9494",
+  "after_sha256": "e6bfbaab6fe24641208de2a8872147295532d70cfc0ede0f43374eec9acff20f",
+  "changes": [
+    {
+      "finding": "F04",
+      "removed_global_supply_symbol": "#PWR069",
+      "removed_symbol_uuid": "899e2864-2071-420a-97ee-909270af09ae",
+      "added_local_label_uuid": "1c53f626-e449-4a8b-96fd-5ccf3f43c0a0",
+      "at_mm": [
+        147.32,
+        269.24
+      ],
+      "before": "U4.5 and C54.1 directly on common +3.3V",
+      "after": "U4.5 and C54.1 alone on /LP2985_OUT_DISABLED; U5.5 remains on main +3.3V; both EN held OFF by unchanged R38",
+      "consequence": "main nominal C 242.6\u2192240.4uF; local C54 remains2.2uF; no operating-source or stability qualification"
+    },
+    {
+      "finding": "F04/F05",
+      "annotation_uuid": "36641f03-0935-496c-b896-3f1fdd73edb7",
+      "change": "replace stale parallel-output statement with actual isolated/development-OFF state"
+    },
+    {
+      "finding": "F04/F05",
+      "annotation_uuid": "04f61b6a-15e5-4d36-bc35-6d04d76031d4",
+      "change": "retain OFF inhibit; remove obsolete open-F04 wording"
+    },
+    {
+      "finding": "F04/F13",
+      "change": "add local isolated-output/qualification annotation",
+      "at_mm": [
+        75,
+        287.02
+      ]
+    }
+  ],
+  "candidate_cli": {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/power-candidate-netlist.xml",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/power-candidate.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+}

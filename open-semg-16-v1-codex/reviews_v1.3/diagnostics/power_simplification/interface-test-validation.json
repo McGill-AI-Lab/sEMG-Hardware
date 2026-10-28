@@ -1,0 +1,15 @@
+{
+  "components": 12,
+  "mapped_pin_checks": 47,
+  "errors": [],
+  "erc_types": {
+    "pin_not_driven": 5,
+    "power_pin_not_driven": 2,
+    "isolated_pin_label": 16,
+    "lib_symbol_issues": 12
+  },
+  "output_pins": {
+    "U7": "MOSI",
+    "U8": "MISO_DRV"
+  }
+}

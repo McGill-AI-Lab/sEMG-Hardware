@@ -1,0 +1,310 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T21:34:19",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/240ade95-63db-4882-95be-8d01c1806f6c",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 66.04,
+                                "y": 43.18
+                            },
+                            "uuid": "b7896f6d-cdbb-4979-8766-b73a29a4a88c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR068 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 95.25,
+                                "y": 269.24
+                            },
+                            "uuid": "65299478-57c1-477c-9211-c345cd2d6218"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 10 [VIN, Power input, Line]",
+                            "pos": {
+                                "x": 106.68,
+                                "y": 441.96
+                            },
+                            "uuid": "9c1b1478-9c76-5ba0-bf81-3f010beec750"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pins of type Output and Output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 43 [DOUT, Output, Line]",
+                            "pos": {
+                                "x": 195.58,
+                                "y": 152.4
+                            },
+                            "uuid": "a804e879-7924-4735-86f4-5aa8ba00f675"
+                        },
+                        {
+                            "description": "Symbol U2 Pin 43 [DOUT, Output, Line]",
+                            "pos": {
+                                "x": 422.91,
+                                "y": 151.13
+                            },
+                            "uuid": "38cbf10d-4065-4bb5-a23b-2fdeb250f324"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 3 [CHIP_PU, Input, Line]",
+                            "pos": {
+                                "x": 511.81,
+                                "y": 43.18
+                            },
+                            "uuid": "cfa969c5-8e37-47bf-a045-3c017c96281a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 3 [CHIP_PU, Input, Line]",
+                            "pos": {
+                                "x": 511.81,
+                                "y": 43.18
+                            },
+                            "uuid": "cfa969c5-8e37-47bf-a045-3c017c96281a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR063 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 535.94,
+                                "y": 27.94
+                            },
+                            "uuid": "3fa1685c-0ed0-4d29-a1de-00eaa0c3700e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 13 [GPIO3/ADC1_CH2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 562.61,
+                                "y": 68.58
+                            },
+                            "uuid": "810351da-8113-4a08-bf3b-96eeeeea5f0e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Local and global labels have same name",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR02 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 66.04,
+                                "y": 53.34
+                            },
+                            "uuid": "09cab068-d52a-44d3-bdf7-cc1f51590af5"
+                        },
+                        {
+                            "description": "Label 'AGND'",
+                            "pos": {
+                                "x": 297.18,
+                                "y": 464.82
+                            },
+                            "uuid": "0591eb7d-1f48-59de-8c94-b22c531f7f01"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "same_local_global_label"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_Power'",
+                    "items": [
+                        {
+                            "description": "Symbol U6 [TPS63802DLAR]",
+                            "pos": {
+                                "x": 119.38,
+                                "y": 449.58
+                            },
+                            "uuid": "71475f53-e570-554d-8a14-94acebfa3000"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 195.58,
+                                "y": 121.92
+                            },
+                            "uuid": "b2a93068-aa80-4aec-ba64-11e021b26d31"
+                        },
+                        {
+                            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 129.54,
+                                "y": 309.88
+                            },
+                            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 195.58,
+                                "y": 124.46
+                            },
+                            "uuid": "dfe0ee43-f77c-4980-aeb6-83c6ee313096"
+                        },
+                        {
+                            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 129.54,
+                                "y": 309.88
+                            },
+                            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_Power'",
+                    "items": [
+                        {
+                            "description": "Symbol U7 [TPS63802DLAR]",
+                            "pos": {
+                                "x": 299.72,
+                                "y": 449.58
+                            },
+                            "uuid": "4ab4eb71-6950-5f52-8a1e-053cb98e772c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 17 [TESTP_PACE_OUT1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 422.91,
+                                "y": 120.65
+                            },
+                            "uuid": "d51af41d-e08a-4bb5-b997-5ec080c5b364"
+                        },
+                        {
+                            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 129.54,
+                                "y": 309.88
+                            },
+                            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 18 [TESTP_PACE_OUT2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 422.91,
+                                "y": 123.19
+                            },
+                            "uuid": "5174a6bf-688a-47ed-8972-27129b0243ef"
+                        },
+                        {
+                            "description": "Symbol U5 Pin 5 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 129.54,
+                                "y": 309.88
+                            },
+                            "uuid": "9c8398c4-090c-4e7a-8d13-dcc86bb5565a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        }
+    ],
+    "source": "power-blocks-preview.kicad_sch"
+}

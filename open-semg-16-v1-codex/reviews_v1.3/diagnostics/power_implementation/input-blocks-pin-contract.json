@@ -1,0 +1,103 @@
+{
+  "pin_map": {
+    "J17": {
+      "1": "+3.7V",
+      "2": "AGND"
+    },
+    "F1": {
+      "1": "+3.7V",
+      "2": "BAT_FUSED"
+    },
+    "Q1": {
+      "1": "Q1_GATE",
+      "2": "SW_BAT_PROT",
+      "3": "BAT_FUSED"
+    },
+    "R52": {
+      "1": "Q1_GATE",
+      "2": "AGND"
+    },
+    "JP1": {
+      "1": "MAIN_ENABLE",
+      "2": "AGND"
+    }
+  },
+  "pin_coordinates": {
+    "J17": {
+      "1": [
+        58.42,
+        373.38
+      ],
+      "2": [
+        58.42,
+        375.92
+      ]
+    },
+    "F1": {
+      "1": [
+        120.65,
+        369.57
+      ],
+      "2": [
+        120.65,
+        377.19
+      ]
+    },
+    "Q1": {
+      "1": [
+        185.42,
+        373.38
+      ],
+      "2": [
+        193.04,
+        378.46
+      ],
+      "3": [
+        193.04,
+        368.3
+      ]
+    },
+    "R52": {
+      "1": [
+        245.11,
+        369.57
+      ],
+      "2": [
+        245.11,
+        377.19
+      ]
+    },
+    "JP1": {
+      "1": [
+        335.28,
+        373.38
+      ],
+      "2": [
+        345.44,
+        373.38
+      ]
+    }
+  },
+  "references": {
+    "J17": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "F1": "https://www.littelfuse.com/assetdocs/littelfuse_fuse_466_datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f",
+    "Q1": "https://www.aosmd.com/res/data_sheets/AO3401A.pdf",
+    "C57": "https://industrial.panasonic.com/ww/products/pt/os-con/models/6SVP220M"
+  },
+  "bulk_c57_recommendation": {
+    "manufacturer": "Panasonic",
+    "mpn": "6SVP220M",
+    "value": "220uF",
+    "voltage": "6.3V",
+    "tolerance": "+/-20%",
+    "esr": "25mOhm max at 100kHz",
+    "ripple_current": "3.7Arms at 100kHz, 105C",
+    "leakage_current_max": "277uA",
+    "temperature": "-55 to +105C",
+    "diameter_mm": 10.0,
+    "height_mm": 7.9,
+    "footprint_candidate": "Capacitor_SMD:CP_Elec_10x7.9",
+    "source": "https://industrial.panasonic.com/ww/products/pt/os-con/models/6SVP220M",
+    "qualification": "Polarized: positive to MAIN, negative AGND. Verify land pattern and converter startup with full tolerance network."
+  }
+}

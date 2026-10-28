@@ -1,0 +1,533 @@
+{
+  "phase": "unused",
+  "target": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "method": "controlled KiCad-aware source-span edits; strict parse, unique UUID/reference checks, native candidate netlist validation, atomic replace",
+  "before_sha256": "e6bfbaab6fe24641208de2a8872147295532d70cfc0ede0f43374eec9acff20f",
+  "after_sha256": "ba9629e78815ca8c96abb9eceaf660f1581658b9570082da840ccf2f2c5f881e",
+  "changes": [
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 8,
+      "name": "GPIO15/ADC2_CH4/32K_P",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        50.8
+      ],
+      "pin_uuid": "c7fe87fa-2f10-4e56-9051-aeceb5f4602b",
+      "marker_uuid": "005568c3-a093-4aad-9895-66820163b617",
+      "verification": "Optional32k RTC crystal terminal; ADC timebase and carrier require no RTC crystal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 9,
+      "name": "GPIO16/ADC2_CH5/32K_N",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        53.34
+      ],
+      "pin_uuid": "8bb9b256-c392-44af-bfa4-09054b34d0a7",
+      "marker_uuid": "2eaa6fec-8efc-4bf7-8634-9d6bf6b88b0b",
+      "verification": "Optional32k RTC crystal terminal; no carrier RTC crystal requirement",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 36,
+      "name": "GPIO39/MTCK",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        60.96
+      ],
+      "pin_uuid": "2128f0e8-66fd-46f4-ba85-acf025c5b7cf",
+      "marker_uuid": "f3374efa-fc59-45e5-ac1c-e093a64e7812",
+      "verification": "Optional external JTAG header unused; internal JTAG policy retained",
+      "sources": [
+        "D1",
+        "D2"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 37,
+      "name": "GPIO40/MTDO",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        63.5
+      ],
+      "pin_uuid": "571dad94-66a7-4e67-a30e-274a75cd4444",
+      "marker_uuid": "e2a93457-abd4-46cf-8365-ba8e6f99d299",
+      "verification": "Optional external JTAG header unused; internal JTAG policy retained",
+      "sources": [
+        "D1",
+        "D2"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 38,
+      "name": "GPIO41/MTDI",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        66.04
+      ],
+      "pin_uuid": "67b54cb9-47f7-429f-86bf-e2a4540d044f",
+      "marker_uuid": "786dd66d-57c1-4423-8a75-f6d3db73a113",
+      "verification": "Optional external JTAG header unused; internal JTAG policy retained",
+      "sources": [
+        "D1",
+        "D2"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 39,
+      "name": "GPIO42/MTMS",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        68.58
+      ],
+      "pin_uuid": "28b07b49-2e3b-4f16-9059-48baaabbe63d",
+      "marker_uuid": "320c5176-b669-4be7-8c20-19af3ddf3299",
+      "verification": "Optional external JTAG header unused; internal JTAG policy retained",
+      "sources": [
+        "D1",
+        "D2"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 43,
+      "name": "GPIO43/U0TXD",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        43.18
+      ],
+      "pin_uuid": "8f0de143-24a2-4cf6-82f6-77b68d9dccf3",
+      "marker_uuid": "acc1c8d3-01b2-48cf-853e-7ad91e02913d",
+      "verification": "UART TX already serves onboard USB-UART; external carrier branch unused",
+      "sources": [
+        "D2",
+        "D3"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 42,
+      "name": "GPIO44/U0RXD",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        45.72
+      ],
+      "pin_uuid": "6b5bb64b-0a3b-4969-bc23-3e5d90a5f588",
+      "marker_uuid": "a2136587-0274-4152-8d18-4c0f68a44297",
+      "verification": "UART RX already serves onboard USB-UART; external carrier branch unused",
+      "sources": [
+        "D2",
+        "D3"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 26,
+      "name": "GPIO20/USB_D+",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        50.8
+      ],
+      "pin_uuid": "24b9956c-0093-480e-bf6e-3c202986e453",
+      "marker_uuid": "adc73fa3-fd21-4ddd-a6a5-55071a3293cb",
+      "verification": "Onboard USB D+ intact; external carrier branch unused, power policy stillunresolved",
+      "sources": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 25,
+      "name": "GPIO19/USB_D-",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        53.34
+      ],
+      "pin_uuid": "0fb67ce2-47a8-4ea4-8e65-9aec3f990419",
+      "marker_uuid": "6cd226e8-2882-4162-a568-bdb86d5b246c",
+      "verification": "Onboard USB D- intact; external carrier branch unused, power policy stillunresolved",
+      "sources": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 31,
+      "name": "GPIO0",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        60.96
+      ],
+      "pin_uuid": "6889afaf-5d7f-4314-a13c-b142ace68a25",
+      "marker_uuid": "adfc9d2e-4ad1-49f0-a32f-b946f868799f",
+      "verification": "GPIO0 internal pullup and DevKit boot/programming circuits retained; no external carrier boot control",
+      "sources": [
+        "D1",
+        "D3"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 41,
+      "name": "GPIO1/ADC1_CH0",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        63.5
+      ],
+      "pin_uuid": "01c982f1-204d-4a47-ae93-ca21543eda82",
+      "marker_uuid": "acf88517-9be1-4649-8bad-19ccba012c4b",
+      "verification": "Optional GPIO1; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 40,
+      "name": "GPIO2/ADC1_CH1",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        66.04
+      ],
+      "pin_uuid": "0605c299-2d2b-40ac-a74f-924d39c69476",
+      "marker_uuid": "79551241-3fcc-4ef9-a202-bb9b63f27eed",
+      "verification": "Optional GPIO2; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 4,
+      "name": "GPIO4/ADC1_CH3",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        71.12
+      ],
+      "pin_uuid": "bc5f3d45-c62f-45b0-9e17-3cc02c3ce904",
+      "marker_uuid": "a0bc7fb2-9376-43f9-9453-68a37d61c47b",
+      "verification": "Optional GPIO4; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 5,
+      "name": "GPIO5/ADC1_CH4",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        73.66
+      ],
+      "pin_uuid": "e24ff256-1407-4452-8b62-3796e883c65d",
+      "marker_uuid": "d7158f60-a0d9-4e57-bf80-d48116bd4d83",
+      "verification": "Optional GPIO5; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 10,
+      "name": "GPIO17/ADC2_CH6",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        99.06
+      ],
+      "pin_uuid": "dafc3c56-e60a-4c8a-976d-8ddd6a369fe7",
+      "marker_uuid": "51f45d35-0adb-4257-b856-8ab978029dc6",
+      "verification": "Optional GPIO17/UART1; no carrier use",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 11,
+      "name": "GPIO18/ADC2_CH7",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        101.6
+      ],
+      "pin_uuid": "31c584f3-6db0-446c-8ab6-d6b7279d63f3",
+      "marker_uuid": "3f551da2-ed74-47a1-b20e-d1a129a74a4a",
+      "verification": "Optional GPIO18/UART1; no carrier use",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 27,
+      "name": "GPIO21",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        104.14
+      ],
+      "pin_uuid": "36304e0b-1d68-481f-94c6-02ea6862afd0",
+      "marker_uuid": "0eb1e856-e21f-4532-b8ed-cad9e532b06b",
+      "verification": "Optional GPIO21; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 32,
+      "name": "GPIO35",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        106.68
+      ],
+      "pin_uuid": "d18b7919-c2ee-400f-acb0-078f68386a32",
+      "marker_uuid": "f75ba201-fa98-45a6-b98c-07be8824f48c",
+      "verification": "GPIO35 may serve internal octal memory; keep external carrier branch unrouted",
+      "sources": [
+        "D1",
+        "D2"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 33,
+      "name": "GPIO36",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        109.22
+      ],
+      "pin_uuid": "b0c1911a-52aa-44fe-9881-4f8e7abadddf",
+      "marker_uuid": "ac8dff60-8bbc-4c29-bdbb-f8b8a5d44ae0",
+      "verification": "GPIO36 may serve internal octal memory; keep external carrier branch unrouted",
+      "sources": [
+        "D1",
+        "D2"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 34,
+      "name": "GPIO37",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        111.76
+      ],
+      "pin_uuid": "2efdaa0d-fb86-4275-b912-9c8071aec0d4",
+      "marker_uuid": "fa36cfbc-bd74-4da0-be1d-132c0b451ec1",
+      "verification": "GPIO37 may serve internal octal memory; keep external carrier branch unrouted",
+      "sources": [
+        "D1",
+        "D2"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 35,
+      "name": "GPIO38",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        114.3
+      ],
+      "pin_uuid": "29b85401-be1e-47de-9737-c20fda741df7",
+      "marker_uuid": "5bb6a921-35d2-4f48-ad29-2d23acfec1df",
+      "verification": "GPIO38 drives onboard RGB on DevKitv1.1; carrier branch unused",
+      "sources": [
+        "D2",
+        "D3"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 30,
+      "name": "GPIO45",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        116.84
+      ],
+      "pin_uuid": "797d7d25-675e-4474-9bf3-85f68873e5dc",
+      "marker_uuid": "79d72a07-73cf-4a4c-ae0a-6539a5e79329",
+      "verification": "GPIO45 memory-voltage strap internal pulldown/eFuse configuration retained; no carrier drive",
+      "sources": [
+        "D1",
+        "D2"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 14,
+      "name": "GPIO46",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        119.38
+      ],
+      "pin_uuid": "0868d39f-2c75-409e-9e48-0b160740f239",
+      "marker_uuid": "23a91c4d-1937-44c2-9840-fcc060452ccc",
+      "verification": "GPIO46 boot/ROM strap internal pulldown retained with existing DevKit GPIO0 circuitry",
+      "sources": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 28,
+      "name": "GPIO47",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        121.92
+      ],
+      "pin_uuid": "edea7cb7-c3e8-4dc8-9bc8-14e6716c3785",
+      "marker_uuid": "dc9a7496-f042-4dae-bfe7-ef0185af6e41",
+      "verification": "Optional GPIO47 unallocated; leave external pin unrouted, including 1.8V variants",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    },
+    {
+      "finding": "F19",
+      "reference": "U3",
+      "pin": 29,
+      "name": "GPIO48",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        124.46
+      ],
+      "pin_uuid": "8f307098-1866-4a3e-926d-d4024adc4b70",
+      "marker_uuid": "9c177f68-7caf-4133-a054-65b6115171ae",
+      "verification": "GPIO48 may drive onboard RGB on initial DevKit; no external carrier connection, including 1.8V variants",
+      "sources": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "meaning": "unused external carrier terminal; no change to DevKit internal circuits or MCU firmware"
+    }
+  ],
+  "candidate_cli": {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/unused-candidate-netlist.xml",
+      "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/reviews_v1.2/diagnostics/erc_corrections/unused-candidate.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "phase": "cleanup preparation",
+  "result": "Strict cache structural assertion stopped preparation before any design write.",
+  "cause": "Sim fields had been staged after ki_keywords rather than before it.",
+  "correction": "Insertion point now matches installed library property order; exact structural assertion retained.",
+  "active_design": "Still exactly the validated unused stage when correction made."
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "../reviews_v1.4/diagnostics/final-netlist.xml",
+      "open-semg-16-v1.4.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  },
+  {
+    "argv": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "-o",
+      "../reviews_v1.4/diagnostics/final-erc.json",
+      "open-semg-16-v1.4.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Found 7 violations\nSaved ERC Report to ../reviews_v1.4/diagnostics/final-erc.json\n",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+]

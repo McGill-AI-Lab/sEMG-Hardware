@@ -1,0 +1,82 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T21:35:09",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/c88205c8-1aed-44e3-ad78-34e40d563af8",
+            "violations": [
+                {
+                    "description": "The current configuration does not include the symbol library 'V13_Power'",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [AO3401A]",
+                            "pos": {
+                                "x": 190.5,
+                                "y": 373.38
+                            },
+                            "uuid": "cfd3936d-b5c0-47ae-b475-0c66c555d63e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'SW_BAT_PROT'",
+                            "pos": {
+                                "x": 193.04,
+                                "y": 382.27
+                            },
+                            "uuid": "112b024c-1882-4040-9100-86cbf2581e23"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'MAIN_ENABLE'",
+                            "pos": {
+                                "x": 331.47,
+                                "y": 373.38
+                            },
+                            "uuid": "e36f7a96-6f75-45d9-9bf8-ad2b9842dde5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                }
+            ]
+        }
+    ],
+    "source": "input-blocks-candidate.kicad_sch"
+}

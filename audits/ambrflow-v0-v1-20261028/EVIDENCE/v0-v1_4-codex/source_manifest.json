@@ -1,0 +1,12 @@
+{
+  "v0": {
+    "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/Archive/electronics-archive/open-semg-16-electronics-v0/open-semg-16.kicad_sch",
+    "sha256": "ad5f19ce05a73e35f01ba557b6a179b8b295885b82691a24148f20949f3bcf31",
+    "bytes": 418262
+  },
+  "v1_4": {
+    "path": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.4/open-semg-16-v1.4.kicad_sch",
+    "sha256": "fb72b5d0f8b13881cd5f9c8b4799a6cfc728c55d94ecdfb2634d8328bdf38b1d",
+    "bytes": 330430
+  }
+}

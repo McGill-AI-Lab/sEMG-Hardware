@@ -1,0 +1,539 @@
+{
+  "project": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_pro",
+  "schematic": "/Users/home/Documents/Projects/Hardware/sEMG-Hardware/open-semg-16-v1-codex/v1.2/open-semg-16-v1.2.kicad_sch",
+  "mcp": "Live project verified build/write; exposed plans insert labels only. Required symbol removal,NC placement,wire trimming,cache andscope edits unsupported; previous runtime plan rejection approval_policy=never retained in earlier report. Use authorized atomic source-span fallback; no retry.",
+  "phases": [
+    "power",
+    "unused",
+    "cleanup"
+  ],
+  "F04_decision": "Remove #PWR069 globalmainrail connection and name U4/C54-only branch LP2985_OUT_DISABLED; keep R38fitted. Fix direct LDO output sharing only; do not enable or qualify operating source.",
+  "cleanup_decision": "Remove18redundanttails;trimCSwireonlybeyondlabel;preserve8functionalAVDD/DVDDanchorsasglobal+3.3V;normalize43GNDnamesAGND;reconcile3BatterycacheSimfields.",
+  "gpio3_efuse_status": "Unknown / needs checking",
+  "unused_pin_decisions": [
+    {
+      "reference": "U3",
+      "pin": 8,
+      "name": "GPIO15/ADC2_CH4/32K_P",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        50.8
+      ],
+      "pin_uuid": "c7fe87fa-2f10-4e56-9051-aeceb5f4602b",
+      "approved": true,
+      "verification": "Optional32k RTC crystal terminal; ADC timebase and carrier require no RTC crystal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 9,
+      "name": "GPIO16/ADC2_CH5/32K_N",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        53.34
+      ],
+      "pin_uuid": "8bb9b256-c392-44af-bfa4-09054b34d0a7",
+      "approved": true,
+      "verification": "Optional32k RTC crystal terminal; no carrier RTC crystal requirement",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 36,
+      "name": "GPIO39/MTCK",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        60.96
+      ],
+      "pin_uuid": "2128f0e8-66fd-46f4-ba85-acf025c5b7cf",
+      "approved": true,
+      "verification": "Optional external JTAG header unused; internal JTAG policy retained",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 37,
+      "name": "GPIO40/MTDO",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        63.5
+      ],
+      "pin_uuid": "571dad94-66a7-4e67-a30e-274a75cd4444",
+      "approved": true,
+      "verification": "Optional external JTAG header unused; internal JTAG policy retained",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 38,
+      "name": "GPIO41/MTDI",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        66.04
+      ],
+      "pin_uuid": "67b54cb9-47f7-429f-86bf-e2a4540d044f",
+      "approved": true,
+      "verification": "Optional external JTAG header unused; internal JTAG policy retained",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 39,
+      "name": "GPIO42/MTMS",
+      "type": "bidirectional",
+      "xy": [
+        511.81,
+        68.58
+      ],
+      "pin_uuid": "28b07b49-2e3b-4f16-9059-48baaabbe63d",
+      "approved": true,
+      "verification": "Optional external JTAG header unused; internal JTAG policy retained",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 43,
+      "name": "GPIO43/U0TXD",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        43.18
+      ],
+      "pin_uuid": "8f0de143-24a2-4cf6-82f6-77b68d9dccf3",
+      "approved": true,
+      "verification": "UART TX already serves onboard USB-UART; external carrier branch unused",
+      "sources": [
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 42,
+      "name": "GPIO44/U0RXD",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        45.72
+      ],
+      "pin_uuid": "6b5bb64b-0a3b-4969-bc23-3e5d90a5f588",
+      "approved": true,
+      "verification": "UART RX already serves onboard USB-UART; external carrier branch unused",
+      "sources": [
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 26,
+      "name": "GPIO20/USB_D+",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        50.8
+      ],
+      "pin_uuid": "24b9956c-0093-480e-bf6e-3c202986e453",
+      "approved": true,
+      "verification": "Onboard USB D+ intact; external carrier branch unused, power policy stillunresolved",
+      "sources": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 25,
+      "name": "GPIO19/USB_D-",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        53.34
+      ],
+      "pin_uuid": "0fb67ce2-47a8-4ea4-8e65-9aec3f990419",
+      "approved": true,
+      "verification": "Onboard USB D- intact; external carrier branch unused, power policy stillunresolved",
+      "sources": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 31,
+      "name": "GPIO0",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        60.96
+      ],
+      "pin_uuid": "6889afaf-5d7f-4314-a13c-b142ace68a25",
+      "approved": true,
+      "verification": "GPIO0 internal pullup and DevKit boot/programming circuits retained; no external carrier boot control",
+      "sources": [
+        "D1",
+        "D3"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 41,
+      "name": "GPIO1/ADC1_CH0",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        63.5
+      ],
+      "pin_uuid": "01c982f1-204d-4a47-ae93-ca21543eda82",
+      "approved": true,
+      "verification": "Optional GPIO1; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 40,
+      "name": "GPIO2/ADC1_CH1",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        66.04
+      ],
+      "pin_uuid": "0605c299-2d2b-40ac-a74f-924d39c69476",
+      "approved": true,
+      "verification": "Optional GPIO2; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 4,
+      "name": "GPIO4/ADC1_CH3",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        71.12
+      ],
+      "pin_uuid": "bc5f3d45-c62f-45b0-9e17-3cc02c3ce904",
+      "approved": true,
+      "verification": "Optional GPIO4; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 5,
+      "name": "GPIO5/ADC1_CH4",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        73.66
+      ],
+      "pin_uuid": "e24ff256-1407-4452-8b62-3796e883c65d",
+      "approved": true,
+      "verification": "Optional GPIO5; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 10,
+      "name": "GPIO17/ADC2_CH6",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        99.06
+      ],
+      "pin_uuid": "dafc3c56-e60a-4c8a-976d-8ddd6a369fe7",
+      "approved": true,
+      "verification": "Optional GPIO17/UART1; no carrier use",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 11,
+      "name": "GPIO18/ADC2_CH7",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        101.6
+      ],
+      "pin_uuid": "31c584f3-6db0-446c-8ab6-d6b7279d63f3",
+      "approved": true,
+      "verification": "Optional GPIO18/UART1; no carrier use",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 27,
+      "name": "GPIO21",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        104.14
+      ],
+      "pin_uuid": "36304e0b-1d68-481f-94c6-02ea6862afd0",
+      "approved": true,
+      "verification": "Optional GPIO21; no allocated carrier signal",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 32,
+      "name": "GPIO35",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        106.68
+      ],
+      "pin_uuid": "d18b7919-c2ee-400f-acb0-078f68386a32",
+      "approved": true,
+      "verification": "GPIO35 may serve internal octal memory; keep external carrier branch unrouted",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 33,
+      "name": "GPIO36",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        109.22
+      ],
+      "pin_uuid": "b0c1911a-52aa-44fe-9881-4f8e7abadddf",
+      "approved": true,
+      "verification": "GPIO36 may serve internal octal memory; keep external carrier branch unrouted",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 34,
+      "name": "GPIO37",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        111.76
+      ],
+      "pin_uuid": "2efdaa0d-fb86-4275-b912-9c8071aec0d4",
+      "approved": true,
+      "verification": "GPIO37 may serve internal octal memory; keep external carrier branch unrouted",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 35,
+      "name": "GPIO38",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        114.3
+      ],
+      "pin_uuid": "29b85401-be1e-47de-9737-c20fda741df7",
+      "approved": true,
+      "verification": "GPIO38 drives onboard RGB on DevKitv1.1; carrier branch unused",
+      "sources": [
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 30,
+      "name": "GPIO45",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        116.84
+      ],
+      "pin_uuid": "797d7d25-675e-4474-9bf3-85f68873e5dc",
+      "approved": true,
+      "verification": "GPIO45 memory-voltage strap internal pulldown/eFuse configuration retained; no carrier drive",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 14,
+      "name": "GPIO46",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        119.38
+      ],
+      "pin_uuid": "0868d39f-2c75-409e-9e48-0b160740f239",
+      "approved": true,
+      "verification": "GPIO46 boot/ROM strap internal pulldown retained with existing DevKit GPIO0 circuitry",
+      "sources": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 28,
+      "name": "GPIO47",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        121.92
+      ],
+      "pin_uuid": "edea7cb7-c3e8-4dc8-9bc8-14e6716c3785",
+      "approved": true,
+      "verification": "Optional GPIO47 unallocated; leave external pin unrouted, including 1.8V variants",
+      "sources": [
+        "D1",
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 29,
+      "name": "GPIO48",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        124.46
+      ],
+      "pin_uuid": "8f307098-1866-4a3e-926d-d4024adc4b70",
+      "approved": true,
+      "verification": "GPIO48 may drive onboard RGB on initial DevKit; no external carrier connection, including 1.8V variants",
+      "sources": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "reference": "U3",
+      "pin": 13,
+      "name": "GPIO3/ADC1_CH2",
+      "type": "bidirectional",
+      "xy": [
+        562.61,
+        68.58
+      ],
+      "pin_uuid": "810351da-8113-4a08-bf3b-96eeeeea5f0e",
+      "approved": false,
+      "verification": "User reports STRAP_JTAG_SEL unknown; D1section4.4/Table4-5 requires defined GPIO3 for strap-selected JTAG. Preserve report and add no NC pending provisioning evidence.",
+      "sources": [
+        "D1",
+        "D2"
+      ]
+    }
+  ],
+  "sources": {
+    "D1": {
+      "title": "ESP32-S3-WROOM-1/-1U datasheet v1.8",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "locations": "Table3-1 pp11\u201312; Tables4-1/4-3/4-4/4-5 pp13\u201316"
+    },
+    "D2": {
+      "title": "DevKitC-1 v1.1 guide",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html",
+      "locations": "J1/J3 headers; hardware revision details"
+    },
+    "D3": {
+      "title": "DevKitC-1 v1.1 schematic",
+      "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf",
+      "locations": "p2"
+    },
+    "D4": {
+      "title": "ESP32-S3 hardware schematic checklist",
+      "url": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html#gpio",
+      "locations": "GPIO and optional RTC-clock sections"
+    }
+  },
+  "preserve": [
+    "all16P/Nmappings,nominalinputRC",
+    "ADCrefs/VCAP/control/testnodes",
+    "DOUT/auxvalidtiesandpowerpinmodel",
+    "CHIP_PUand5V evidencefindings",
+    "GPIO3 pendingeFuseevidence",
+    "allprojectERCsettingsseverityexclusions",
+    "allpre-existingreviewdocuments"
+  ],
+  "expected_erc": {
+    "initial": {
+      "error": 34,
+      "warning": 26
+    },
+    "power": {
+      "error": 33,
+      "warning": 26
+    },
+    "unused": {
+      "error": 7,
+      "warning": 26
+    },
+    "final": {
+      "error": 7,
+      "warning": 4
+    }
+  },
+  "firmware_obligation": "Manage genuinely unused high-impedance GPIO states as manufacturer recommends; do not blanket-reset USB/UART/memory/strap/RGB roles. No firmware implemented.",
+  "additional_alias_evidence": "First cleanup native ERC exposed DVDD as another name on the same original +3.3V rail after AVDD alias removal. Preserve allfourDVDDanchorUUIDs/positions and netpartitions."
+}
