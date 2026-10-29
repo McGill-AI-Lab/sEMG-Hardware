@@ -1,7 +1,6 @@
 emg2pose_dataset_mini/
 emg2pose_dataset_mini.tar
 Images/
-docs/
 single_dataset.txt
 few_shot.txt
 AGENTS.md
