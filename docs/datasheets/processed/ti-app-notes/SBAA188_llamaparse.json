@@ -1,0 +1,3223 @@
+{
+  "document_id": "SBAA188",
+  "source_pdf": "docs/datasheets/originals/ti-app-notes/SBAA188.pdf",
+  "tier": "agentic_plus",
+  "sha256": "688e2ea858aaf60961026f84dc96030a67400c2b6aaca466e484e8f1389141de",
+  "pages": 11,
+  "tables_detected": 5,
+  "items_pages": [
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "[www.ti.com](http://www.ti.com) Table of Contents",
+              "value": "www.ti.com Table of Contents",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 33.32,
+                  "confidence": 0.938,
+                  "end_index": 31,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 6.0,
+                  "w": 61.42,
+                  "x": 496.58,
+                  "y": 33.22,
+                  "confidence": 0.938,
+                  "end_index": 48,
+                  "label": "header",
+                  "start_index": 32
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "www.ti.com Table of Contents",
+          "bbox": [
+            {
+              "h": 6.0,
+              "w": 503.98,
+              "x": 54.02,
+              "y": 33.22
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 3,
+          "md": "### *Application Note*",
+          "value": "Application Note",
+          "bbox": [
+            {
+              "h": 12.95,
+              "w": 102.61,
+              "x": 55.69,
+              "y": 51.76,
+              "confidence": 0.813,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 1,
+          "md": "# ***Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier***",
+          "value": "Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier",
+          "bbox": [
+            {
+              "h": 38.45,
+              "w": 484.58,
+              "x": 57.32,
+              "y": 68.98,
+              "confidence": 1.0,
+              "end_index": 74,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "icon: Texas Instruments",
+          "md": "![icon: Texas Instruments](page_1_image_1_v2.jpg)",
+          "url": "page_1_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 22.18,
+              "w": 173.81,
+              "x": 385.56,
+              "y": 127.51,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "*Venkatesh Acharya* *High-Performance Analog*",
+          "value": "Venkatesh Acharya High-Performance Analog",
+          "bbox": [
+            {
+              "h": 9.36,
+              "w": 84.8,
+              "x": 57.93,
+              "y": 169.06,
+              "confidence": 0.906,
+              "end_index": 20,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 9.46,
+              "w": 114.7,
+              "x": 440.67,
+              "y": 168.94,
+              "confidence": 0.906,
+              "end_index": 44,
+              "label": "text",
+              "start_index": 21
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **Abstract**",
+          "value": "Abstract",
+          "bbox": [
+            {
+              "h": 8.86,
+              "w": 49.28,
+              "x": 280.91,
+              "y": 187.38,
+              "confidence": 0.581,
+              "end_index": 14,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "This article discusses the need to improve common-mode rejection (CMR) in electrocardiogram (ECG) subsystem applications. Several different techniques to improve CMR while also considering both patient and operator safety are presented. This report also reviews the implementation of the right-leg drive (RLD) loop technique to improve CMR using the ADS129x family of analog-to-digital converters (including the ADS1298/96/94 and the ADS1198/96/94) and the corresponding performance results.",
+          "value": "This article discusses the need to improve common-mode rejection (CMR) in electrocardiogram (ECG) subsystem applications. Several different techniques to improve CMR while also considering both patient and operator safety are presented. This report also reviews the implementation of the right-leg drive (RLD) loop technique to improve CMR using the ADS129x family of analog-to-digital converters (including the ADS1298/96/94 and the ADS1198/96/94) and the corresponding performance results.",
+          "bbox": [
+            {
+              "h": 57.98,
+              "w": 471.24,
+              "x": 55.69,
+              "y": 207.34,
+              "confidence": 1.0,
+              "end_index": 490,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"1 Introduction.............................................................................................................................................................................\",\"2\"\n\"2 Common-Mode to Differential Signal Conversion...............................................................................................................\",\"3\"\n\"3 Techniques to Improve Common-Mode Rejection..............................................................................................................\",\"4\"\n\"4 Closed-Loop RLD system......................................................................................................................................................\",\"5\"\n\"5 The Effect of Lead-Off Disconnection in an RLD System...................................................................................................\",\"6\"\n\"6 Improving CMR Using the RLD Amplifier with the ADS1298..............................................................................................\",\"7\"\n\"7 Conclusion............................................................................................................................................................................\",\"10\"\n\"8 References............................................................................................................................................................................\",\"10\"\n\"9 Revision History...................................................................................................................................................................\",\"10\"",
+          "html": "<table>\n  <caption>Table of Contents</caption>\n    <tr>\n      <td><b><b>1 Introduction</b></b>.............................................................................................................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td><b><b>2 Common</b>-<b>Mode to Differential Signal Conversion</b></b>...............................................................................................................</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td><b><b>3 Techniques to Improve Common-Mode Rejection</b></b>..............................................................................................................</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td><b><b>4 Closed-Loop RLD system</b></b>......................................................................................................................................................</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td><b><b>5 The Effect of Lead</b>-<b>Off Disconnection in an RLD System</b></b>...................................................................................................</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td><b><b>6 Improving CMR Using the RLD Amplifier with the ADS1298</b></b>..............................................................................................</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td><b><b>7 Conclusion</b></b>............................................................................................................................................................................</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td><b><b>8 References</b></b>............................................................................................................................................................................</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td><b><b>9 Revision History</b></b>...................................................................................................................................................................</td>\n      <td>10</td>\n    </tr>\n</table>",
+          "md": "### Table of Contents\n\n| ****1 Introduction****............................................................................................................................................................................. | 2  |\n| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- |\n| ****2 Common**-**Mode to Differential Signal Conversion****...............................................................................................................                          | 3  |\n| ****3 Techniques to Improve Common-Mode Rejection****..............................................................................................................                                 | 4  |\n| ****4 Closed-Loop RLD system****......................................................................................................................................................              | 5  |\n| ****5 The Effect of Lead**-**Off Disconnection in an RLD System****...................................................................................................                              | 6  |\n| ****6 Improving CMR Using the RLD Amplifier with the ADS1298****..............................................................................................                                      | 7  |\n| ****7 Conclusion****............................................................................................................................................................................    | 10 |\n| ****8 References****............................................................................................................................................................................    | 10 |\n| ****9 Revision History****...................................................................................................................................................................       | 10 |",
+          "rows": [
+            [
+              "1 Introduction.............................................................................................................................................................................",
+              "2"
+            ],
+            [
+              "2 Common-Mode to Differential Signal Conversion...............................................................................................................",
+              "3"
+            ],
+            [
+              "3 Techniques to Improve Common-Mode Rejection..............................................................................................................",
+              "4"
+            ],
+            [
+              "4 Closed-Loop RLD system......................................................................................................................................................",
+              "5"
+            ],
+            [
+              "5 The Effect of Lead-Off Disconnection in an RLD System...................................................................................................",
+              "6"
+            ],
+            [
+              "6 Improving CMR Using the RLD Amplifier with the ADS1298..............................................................................................",
+              "7"
+            ],
+            [
+              "7 Conclusion............................................................................................................................................................................",
+              "10"
+            ],
+            [
+              "8 References............................................................................................................................................................................",
+              "10"
+            ],
+            [
+              "9 Revision History...................................................................................................................................................................",
+              "10"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 94.85,
+              "w": 498.09,
+              "x": 56.86,
+              "y": 322.67,
+              "confidence": 0.9,
+              "end_index": 2071,
+              "label": "table",
+              "start_index": 23
+            },
+            {
+              "h": 9.0,
+              "w": 99.63,
+              "x": 256.03,
+              "y": 308.64,
+              "confidence": 0.844,
+              "end_index": 20,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, image, paragraph_title, reference, footer] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"Figure 1-1. Typical ECG System.................................................................................................................................................\",\"2\"\n\"Figure 2-1. Understanding the Effect of Common-Mode Rejection Mismatch.............................................................................\",\"3\"\n\"Figure 3-1. Applying the Common-Mode Voltage at the Patient’s Body Using RP......................................................................\",\"4\"\n\"Figure 3-2. Technique to Improve CMR with a Large Protection Resistor...................................................................................\",\"5\"\n\"Figure 4-1. Improving CMRR by Completing RLD Feedback Loop.............................................................................................\",\"6\"\n\"Figure 5-1. Analog Front-End of an RLD Subsystem with Lead-Off Currents to Monitor Electrode Snugness...........................\",\"6\"\n\"Figure 6-1. Test Setup with ADS1298EVM with Protection Circuitry Elements...........................................................................\",\"7\"\n\"Figure 6-2. Measurement Setup Using ADS1298EVM................................................................................................................\",\"8\"\n\"Figure 6-3. Output Spectrum Comparison...................................................................................................................................\",\"9\"",
+          "html": "<table>\n  <caption>**List of Figures**</caption>\n    <tr>\n      <td>Figure 1-1. Typical ECG System.................................................................................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Figure 2-1. Understanding the Effect of Common-Mode Rejection Mismatch.............................................................................</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Figure 3-1. Applying the Common-Mode Voltage at the Patient’s Body Using R<sub>P</sub>......................................................................</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Figure 3-2. Technique to Improve CMR with a Large Protection Resistor...................................................................................</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Figure 4-1. Improving CMRR by Completing RLD Feedback Loop.............................................................................................</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Figure 5-1. Analog Front-End of an RLD Subsystem with Lead-Off Currents to Monitor Electrode Snugness...........................</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Figure 6-1. Test Setup with ADS1298EVM with Protection Circuitry Elements...........................................................................</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Figure 6-2. Measurement Setup Using ADS1298EVM................................................................................................................</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Figure 6-3. Output Spectrum Comparison...................................................................................................................................</td>\n      <td>9</td>\n    </tr>\n</table>",
+          "md": "### **List of Figures**\n\n| Figure 1-1. Typical ECG System................................................................................................................................................. | 2 |\n| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |\n| Figure 2-1. Understanding the Effect of Common-Mode Rejection Mismatch.............................................................................                             | 3 |\n| Figure 3-1. Applying the Common-Mode Voltage at the Patient’s Body Using RP......................................................................                               | 4 |\n| Figure 3-2. Technique to Improve CMR with a Large Protection Resistor...................................................................................                        | 5 |\n| Figure 4-1. Improving CMRR by Completing RLD Feedback Loop.............................................................................................                         | 6 |\n| Figure 5-1. Analog Front-End of an RLD Subsystem with Lead-Off Currents to Monitor Electrode Snugness...........................                                                | 6 |\n| Figure 6-1. Test Setup with ADS1298EVM with Protection Circuitry Elements...........................................................................                            | 7 |\n| Figure 6-2. Measurement Setup Using ADS1298EVM................................................................................................................                  | 8 |\n| Figure 6-3. Output Spectrum Comparison...................................................................................................................................       | 9 |",
+          "rows": [
+            [
+              "Figure 1-1. Typical ECG System.................................................................................................................................................",
+              "2"
+            ],
+            [
+              "Figure 2-1. Understanding the Effect of Common-Mode Rejection Mismatch.............................................................................",
+              "3"
+            ],
+            [
+              "Figure 3-1. Applying the Common-Mode Voltage at the Patient’s Body Using RP......................................................................",
+              "4"
+            ],
+            [
+              "Figure 3-2. Technique to Improve CMR with a Large Protection Resistor...................................................................................",
+              "5"
+            ],
+            [
+              "Figure 4-1. Improving CMRR by Completing RLD Feedback Loop.............................................................................................",
+              "6"
+            ],
+            [
+              "Figure 5-1. Analog Front-End of an RLD Subsystem with Lead-Off Currents to Monitor Electrode Snugness...........................",
+              "6"
+            ],
+            [
+              "Figure 6-1. Test Setup with ADS1298EVM with Protection Circuitry Elements...........................................................................",
+              "7"
+            ],
+            [
+              "Figure 6-2. Measurement Setup Using ADS1298EVM................................................................................................................",
+              "8"
+            ],
+            [
+              "Figure 6-3. Output Spectrum Comparison...................................................................................................................................",
+              "9"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 94.93,
+              "w": 497.52,
+              "x": 57.43,
+              "y": 445.19,
+              "confidence": 0.9,
+              "end_index": 1863,
+              "label": "table",
+              "start_index": 25
+            },
+            {
+              "h": 11.37,
+              "w": 81.18,
+              "x": 265.59,
+              "y": 431.24,
+              "confidence": 0.644,
+              "end_index": 22,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, image, paragraph_title, reference, footer] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 2,
+          "md": "## **Trademarks**",
+          "value": "Trademarks",
+          "bbox": [
+            {
+              "h": 8.86,
+              "w": 66.54,
+              "x": 56.94,
+              "y": 545.98,
+              "confidence": 0.581,
+              "end_index": 16,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "All trademarks are the property of their respective owners.",
+          "value": "All trademarks are the property of their respective owners.",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 256.89,
+              "x": 55.69,
+              "y": 560.94,
+              "confidence": 1.0,
+              "end_index": 58,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026 <u>Submit Document Feedback</u> *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* 1\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n<u>Submit Document Feedback</u> Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier 1\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 13.66,
+                  "w": 168.22,
+                  "x": 54.32,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 76,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 23.44,
+                  "w": 327.65,
+                  "x": 229.07,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 194,
+                  "label": "footer",
+                  "start_index": 77
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n<u>Submit Document Feedback</u> *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* 1\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 502.4,
+              "x": 54.32,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 1,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Introduction*",
+              "value": "Introduction",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 41.12,
+                  "x": 54.46,
+                  "y": 33.32,
+                  "confidence": 0.581,
+                  "end_index": 13,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_2_image_2_v2.jpg)",
+              "url": "page_2_image_2_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.92,
+                  "x": 460.84,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)",
+              "value": "\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 33.32,
+                  "confidence": 0.844,
+                  "end_index": 30,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Introduction*\n\n![logo: Texas Instruments](page_2_image_2_v2.jpg)\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 34.85,
+              "w": 504.3,
+              "x": 54.46,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **1 Introduction**",
+          "value": "1 Introduction",
+          "bbox": [
+            {
+              "h": 8.89,
+              "w": 78.24,
+              "x": 57.64,
+              "y": 54.4,
+              "confidence": 0.813,
+              "end_index": 19,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Common-mode rejection, or CMR, is one of the most important performance parameters for ECG system applications. International standards set by organizations such as the Association for the Advancement of Medical Instrumentation (AAMI), the International Electrotechnical Commission (IEC), and various medical authorities of different countries specify the test methodology that must be followed in order to use most ECG systems.",
+          "value": "Common-mode rejection, or CMR, is one of the most important performance parameters for ECG system applications. International standards set by organizations such as the Association for the Advancement of Medical Instrumentation (AAMI), the International Electrotechnical Commission (IEC), and various medical authorities of different countries specify the test methodology that must be followed in order to use most ECG systems.",
+          "bbox": [
+            {
+              "h": 57.48,
+              "w": 482.09,
+              "x": 55.69,
+              "y": 74.39,
+              "confidence": 1.0,
+              "end_index": 427,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "In an ECG system, a large amount of electromagnetic interference (EMI) is coupled to the patient’s body through the skin. EMI can also couple to the ECG system through coupling capacitors $C_2$ and $C_T$ as shown in Figure 1-1. Furthermore, It can be coupled to the system through a power coupling capacitor, $C_C$, and in some cases through the long ECG signal measuring cables and protection circuitry that are usually located in front of the ECG system. There can also be coupling from the ac power supplies through coupling capacitor $C_{CB}$ to the cable. Capacitance $C_B$ is coupled between ac ground and the ground of the ECG subsystem. The value of the entire system CMR depends on the capacitance value of $C_B$. By comparison, in the case of a perfectly isolated system where there is no coupling between the grounds, the system would exhibit very high CMR.",
+          "value": "In an ECG system, a large amount of electromagnetic interference (EMI) is coupled to the patient’s body through the skin. EMI can also couple to the ECG system through coupling capacitors $C_2$ and $C_T$ as shown in Figure 1-1. Furthermore, It can be coupled to the system through a power coupling capacitor, $C_C$, and in some cases through the long ECG signal measuring cables and protection circuitry that are usually located in front of the ECG system. There can also be coupling from the ac power supplies through coupling capacitor $C_{CB}$ to the cable. Capacitance $C_B$ is coupled between ac ground and the ground of the ECG subsystem. The value of the entire system CMR depends on the capacitance value of $C_B$. By comparison, in the case of a perfectly isolated system where there is no coupling between the grounds, the system would exhibit very high CMR.",
+          "bbox": [
+            {
+              "h": 94.04,
+              "w": 497.6,
+              "x": 55.69,
+              "y": 140.39,
+              "confidence": 1.0,
+              "end_index": 867,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "There are also several frequencies of interest, depending on the location and the country of operation. The primary source of interference is the ac main that generally operates at 50 Hz (Europe and Asia) or 60 Hz (US). Apart from these two frequencies, Eastern European railway traction power networks use distributed single-phase ac power at 16⅔ Hz. A frequency of 25 Hz is used for the Austrian railway.",
+          "value": "There are also several frequencies of interest, depending on the location and the country of operation. The primary source of interference is the ac main that generally operates at 50 Hz (Europe and Asia) or 60 Hz (US). Apart from these two frequencies, Eastern European railway traction power networks use distributed single-phase ac power at 16⅔ Hz. A frequency of 25 Hz is used for the Austrian railway.",
+          "bbox": [
+            {
+              "h": 46.69,
+              "w": 471.4,
+              "x": 55.69,
+              "y": 242.39,
+              "confidence": 1.0,
+              "end_index": 405,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    subgraph \" \"\n        direction TB\n        AC((\"~\"))\n        AC_Label[\"120/240 V<sub>AC</sub><br/>50 Hz/60 Hz\"]\n        AC --- AC_Label\n    end\n\n    TopLine --- C2[\"C<sub>2</sub>\"]\n    C2 --- Person(( ))\n    \n    Person --- ECG_Leads[\"ECG Leads\"]\n    ECG_Leads -.-> Cables[\"Cables\"]\n    Cables --- Isolated_ECG[\"Isolated ECG Subsystem\"]\n\n    TopLine --- CCB1[\"C<sub>CB</sub>\"]\n    CCB1 -.-> Cables\n    \n    TopLine --- CCB2[\"C<sub>CB</sub>\"]\n    CCB2 -.-> Cables\n\n    TopLine --- CC[\"C<sub>C</sub>\"]\n    CC --- Isolated_ECG\n\n    Person --- CT[\"C<sub>T</sub>\"]\n    CT --- Ground1[ ]\n    \n    BottomLine --- CB[\"C<sub>B</sub>\"]\n    CB --- Ground2[ ]\n\n    AC --- TopLine\n    AC --- BottomLine\n    \n    style Person fill:#000,stroke:#000\n    style Isolated_ECG stroke:#000,fill:none\n    style AC fill:none,stroke:#000\n    style AC_Label stroke:none,fill:none\n    style Ground1 fill:none,stroke:none\n    style Ground2 fill:none,stroke:none\n```",
+          "value": "graph LR\n    subgraph \" \"\n        direction TB\n        AC((\"~\"))\n        AC_Label[\"120/240 V<sub>AC</sub><br/>50 Hz/60 Hz\"]\n        AC --- AC_Label\n    end\n\n    TopLine --- C2[\"C<sub>2</sub>\"]\n    C2 --- Person(( ))\n    \n    Person --- ECG_Leads[\"ECG Leads\"]\n    ECG_Leads -.-> Cables[\"Cables\"]\n    Cables --- Isolated_ECG[\"Isolated ECG Subsystem\"]\n\n    TopLine --- CCB1[\"C<sub>CB</sub>\"]\n    CCB1 -.-> Cables\n    \n    TopLine --- CCB2[\"C<sub>CB</sub>\"]\n    CCB2 -.-> Cables\n\n    TopLine --- CC[\"C<sub>C</sub>\"]\n    CC --- Isolated_ECG\n\n    Person --- CT[\"C<sub>T</sub>\"]\n    CT --- Ground1[ ]\n    \n    BottomLine --- CB[\"C<sub>B</sub>\"]\n    CB --- Ground2[ ]\n\n    AC --- TopLine\n    AC --- BottomLine\n    \n    style Person fill:#000,stroke:#000\n    style Isolated_ECG stroke:#000,fill:none\n    style AC fill:none,stroke:#000\n    style AC_Label stroke:none,fill:none\n    style Ground1 fill:none,stroke:none\n    style Ground2 fill:none,stroke:none",
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "caption": "illustration: human figure",
+          "md": "![illustration: human figure](page_2_image_1_v2.jpg)",
+          "url": "page_2_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 216.21,
+              "w": 392.29,
+              "x": 109.55,
+              "y": 296.21,
+              "confidence": 0.9,
+              "end_index": 51,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "**Figure 1-1. Typical ECG System**",
+          "value": "Figure 1-1. Typical ECG System",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 150.17,
+              "x": 230.11,
+              "y": 521.51,
+              "confidence": 0.906,
+              "end_index": 33,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "2 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* SBAA188B – JULY 2011 – REVISED OCTOBER 2026",
+              "value": "2 Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n",
+              "bbox": [
+                {
+                  "h": 7.79,
+                  "w": 248.91,
+                  "x": 54.2,
+                  "y": 752.28,
+                  "confidence": 1.0,
+                  "end_index": 71,
+                  "label": "text",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.26,
+                  "w": 168.22,
+                  "x": 389.45,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 114,
+                  "label": "text",
+                  "start_index": 72
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "[<span style=\"color:#0000ff\">*Submit Document Feedback*</span>](https://www.ti.com)",
+              "text": "<span style=\"color:#0000ff\">Submit Document Feedback</span>",
+              "url": "https://www.ti.com",
+              "bbox": [
+                {
+                  "h": 8.0,
+                  "w": 40.45,
+                  "x": 517.55,
+                  "y": 32.83,
+                  "confidence": 1.0,
+                  "end_index": 82,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "link"
+            },
+            {
+              "md": "Copyright © 2026 Texas Instruments Incorporated",
+              "value": "\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 6.64,
+                  "w": 153.7,
+                  "x": 229.07,
+                  "y": 770.24,
+                  "confidence": 0.906,
+                  "end_index": 46,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "2 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n[*Submit Document Feedback*](https://www.ti.com)\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 744.05,
+              "w": 503.8,
+              "x": 54.2,
+              "y": 32.83
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 2,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_3_image_2_v2.jpg)",
+              "url": "page_3_image_2_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 4.75,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)\n*Common-Mode to Differential Signal Conversion*",
+              "value": "\nwww.ti.com\nCommon-Mode to Differential Signal Conversion",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 33.32,
+                  "confidence": 1.0,
+                  "end_index": 31,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 9.0,
+                  "w": 170.66,
+                  "x": 387.1,
+                  "y": 31.89,
+                  "confidence": 1.0,
+                  "end_index": 78,
+                  "label": "header",
+                  "start_index": 32
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_3_image_2_v2.jpg)\nwww.ti.com\n*Common-Mode to Differential Signal Conversion*",
+          "bbox": [
+            {
+              "h": 36.14,
+              "w": 504.52,
+              "x": 53.24,
+              "y": 4.75
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **2 Common-Mode to Differential Signal Conversion**",
+          "value": "2 Common-Mode to Differential Signal Conversion",
+          "bbox": [
+            {
+              "h": 11.38,
+              "w": 286.89,
+              "x": 55.69,
+              "y": 54.29,
+              "confidence": 0.969,
+              "end_index": 52,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Common-mode to differential mode conversion is a result of the combination of mismatches in electrode impedances, cable impedances (distributed RC impedance), and onboard protection circuitry (typically including resistors, capacitors, and diodes) at the input of the programmable gain amplifiers. For simplicity, consider a non-isolated (that is, the ac ground and system ground are shorted) ECG subsystem with a simple RC filter in the signal path as shown in Figure 2-1.",
+          "value": "Common-mode to differential mode conversion is a result of the combination of mismatches in electrode impedances, cable impedances (distributed RC impedance), and onboard protection circuitry (typically including resistors, capacitors, and diodes) at the input of the programmable gain amplifiers. For simplicity, consider a non-isolated (that is, the ac ground and system ground are shorted) ECG subsystem with a simple RC filter in the signal path as shown in Figure 2-1.",
+          "bbox": [
+            {
+              "h": 57.87,
+              "w": 494.41,
+              "x": 55.69,
+              "y": 74.39,
+              "confidence": 1.0,
+              "end_index": 472,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "drawing: Schematic diagram of an ECG subsystem showing common-mode signal paths and RC filters",
+          "md": "![drawing: Schematic diagram of an ECG subsystem showing common-mode signal paths and RC filters](page_3_image_1_v2.jpg)",
+          "url": "page_3_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 169.49,
+              "w": 306.0,
+              "x": 152.39,
+              "y": 139.39,
+              "confidence": 0.9,
+              "end_index": 119,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "**Figure 2-1. Understanding the Effect of Common-Mode Rejection Mismatch**",
+          "value": "Figure 2-1. Understanding the Effect of Common-Mode Rejection Mismatch",
+          "bbox": [
+            {
+              "h": 10.36,
+              "w": 355.28,
+              "x": 128.39,
+              "y": 319.11,
+              "confidence": 1.0,
+              "end_index": 73,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "For an ac signal V<sub>S</sub>, the value of the signal that appears at the patient’s body is given by Equation 1:",
+          "value": "For an ac signal V<sub>S</sub>, the value of the signal that appears at the patient’s body is given by Equation 1:",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 442.44,
+              "x": 55.69,
+              "y": 341.11,
+              "confidence": 1.0,
+              "end_index": 113,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$V_P = \\frac{Z_G}{Z_G + \\frac{1}{sC_2}} \\cdot V_S \\tag{1}$$",
+          "value": "$$V_P = \\frac{Z_G}{Z_G + \\frac{1}{sC_2}} \\cdot V_S \\tag{1}$$",
+          "bbox": [
+            {
+              "h": 27.72,
+              "w": 444.93,
+              "x": 92.41,
+              "y": 362.74,
+              "confidence": 0.9,
+              "end_index": 59,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Where Z<sub>G</sub> is the effective impedance from the patient’s body to ground. Z<sub>G</sub> is approximately equal to:",
+          "value": "Where Z<sub>G</sub> is the effective impedance from the patient’s body to ground. Z<sub>G</sub> is approximately equal to:",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 445.58,
+              "x": 55.08,
+              "y": 405.2,
+              "confidence": 1.0,
+              "end_index": 121,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$Z_G \\approx \\left[ \\left( \\frac{1}{sC_T} \\right) \\parallel \\left( \\frac{~~1 + sRC~~}{~~s2C~~} \\right) \\right] \\tag{2}$$",
+          "value": "$$Z_G \\approx \\left[ \\left( \\frac{1}{sC_T} \\right) \\parallel \\left( \\frac{~~1 + sRC~~}{~~s2C~~} \\right) \\right] \\tag{2}$$",
+          "bbox": [
+            {
+              "h": 19.0,
+              "w": 445.54,
+              "x": 91.8,
+              "y": 426.1,
+              "confidence": 0.9,
+              "end_index": 120,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "This signal V<sub>P</sub> is a common-mode signal to the system. If the values of R and C modeled in the differential signal are perfectly matched, then the system exhibits a very large CMR. If we assume the mismatch of $\\delta R$ and $\\delta C$ in resistor R and capacitor C, respectively, the CMR of the entire system can be approximated to Equation 3.",
+          "value": "This signal V<sub>P</sub> is a common-mode signal to the system. If the values of R and C modeled in the differential signal are perfectly matched, then the system exhibits a very large CMR. If we assume the mismatch of $\\delta R$ and $\\delta C$ in resistor R and capacitor C, respectively, the CMR of the entire system can be approximated to Equation 3.",
+          "bbox": [
+            {
+              "h": 33.85,
+              "w": 497.56,
+              "x": 55.69,
+              "y": 459.57,
+              "confidence": 0.983,
+              "end_index": 353,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$CMR = 20\\log\\left( \\frac{\\delta R}{R} + \\frac{\\delta C}{C} \\right) + 20\\log\\left( \\frac{f}{f_c} \\right) \\tag{3}$$",
+          "value": "$$CMR = 20\\log\\left( \\frac{\\delta R}{R} + \\frac{\\delta C}{C} \\right) + 20\\log\\left( \\frac{f}{f_c} \\right) \\tag{3}$$",
+          "bbox": [
+            {
+              "h": 18.21,
+              "w": 444.93,
+              "x": 92.41,
+              "y": 505.3,
+              "confidence": 0.9,
+              "end_index": 114,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "where f<sub>C</sub> is the –3-dB frequency of the RC filter.",
+          "value": "where f<sub>C</sub> is the –3-dB frequency of the RC filter.",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 209.92,
+              "x": 55.69,
+              "y": 538.43,
+              "confidence": 1.0,
+              "end_index": 59,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "If 1% precision external components are used and the bandwidth of the RC filter is approximately 6 kHz, the system then has only 74 dB of CMR at 60 Hz. In the real world, the front-end of the ECG does not contain only first-order RC filters; it includes electrodes, cables, and second- or third-order RC filters. Considering all of these components, mismatch can easily accumulate, and thus contribute up to 20% or more of the signal. This degree of mismatch degrades the CMR of the system to less than 60 dB at 60 Hz. Therefore, it is necessary to consider different techniques to improve CMR.",
+          "value": "If 1% precision external components are used and the bandwidth of the RC filter is approximately 6 kHz, the system then has only 74 dB of CMR at 60 Hz. In the real world, the front-end of the ECG does not contain only first-order RC filters; it includes electrodes, cables, and second- or third-order RC filters. Considering all of these components, mismatch can easily accumulate, and thus contribute up to 20% or more of the signal. This degree of mismatch degrades the CMR of the system to less than 60 dB at 60 Hz. Therefore, it is necessary to consider different techniques to improve CMR.",
+          "bbox": [
+            {
+              "h": 69.37,
+              "w": 496.35,
+              "x": 55.69,
+              "y": 556.43,
+              "confidence": 1.0,
+              "end_index": 593,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "It should be noted that there is a tradeoff when choosing the bandwidth of the antialiasing filter to be located in front of the modulator. Considering the mismatch between the discrete components, it is better to select the large bandwidth; at the same time, the upper limit of the bandwidth is determined by the sampling frequency of the modulator.",
+          "value": "It should be noted that there is a tradeoff when choosing the bandwidth of the antialiasing filter to be located in front of the modulator. Considering the mismatch between the discrete components, it is better to select the large bandwidth; at the same time, the upper limit of the bandwidth is determined by the sampling frequency of the modulator.",
+          "bbox": [
+            {
+              "h": 43.5,
+              "w": 499.16,
+              "x": 55.69,
+              "y": 634.43,
+              "confidence": 1.0,
+              "end_index": 349,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n*Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier*\n3 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\nImproving Common-Mode Rejection Using the Right-Leg Drive Amplifier\n3\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 13.66,
+                  "w": 168.22,
+                  "x": 54.32,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 43,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 23.44,
+                  "w": 328.61,
+                  "x": 229.07,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 224,
+                  "label": "footer",
+                  "start_index": 44
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n*Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier*\n3\n*Submit Document Feedback*\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 503.36,
+              "x": 54.32,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 3,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Techniques to Improve Common-Mode Rejection*",
+              "value": "Techniques to Improve Common-Mode Rejection",
+              "bbox": [
+                {
+                  "h": 7.57,
+                  "w": 172.32,
+                  "x": 55.0,
+                  "y": 33.22,
+                  "confidence": 0.938,
+                  "end_index": 44,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_4_image_2_v2.jpg)",
+              "url": "page_4_image_2_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.92,
+                  "x": 460.84,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)",
+              "value": "\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 33.32,
+                  "confidence": 0.844,
+                  "end_index": 30,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Techniques to Improve Common-Mode Rejection*\n\n![logo: Texas Instruments](page_4_image_2_v2.jpg)\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 35.25,
+              "w": 503.76,
+              "x": 55.0,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# 3 Techniques to Improve Common-Mode Rejection",
+          "value": "3 Techniques to Improve Common-Mode Rejection",
+          "bbox": [
+            {
+              "h": 12.24,
+              "w": 287.22,
+              "x": 57.15,
+              "y": 54.29,
+              "confidence": 0.969,
+              "end_index": 46,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "In Section 2 we saw that as a consequence of mismatch in both external and internal components in the signal path, there is degradation in CMR performance. There are many different techniques to improve CMR performance, however. Four common techniques are:",
+          "value": "In Section 2 we saw that as a consequence of mismatch in both external and internal components in the signal path, there is degradation in CMR performance. There are many different techniques to improve CMR performance, however. Four common techniques are:",
+          "bbox": [
+            {
+              "h": 34.11,
+              "w": 479.22,
+              "x": 55.69,
+              "y": 74.39,
+              "confidence": 1.0,
+              "end_index": 255,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## 1. **Faraday Shield**",
+          "value": "1. Faraday Shield",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 87.12,
+              "x": 57.79,
+              "y": 116.39,
+              "confidence": 0.844,
+              "end_index": 23,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "A Faraday shield is used to cover the ECG front-end and reduces the degree of power-supply interference that enters the system. It also protects the device and components from environmental interference.",
+          "value": "A Faraday shield is used to cover the ECG front-end and reduces the degree of power-supply interference that enters the system. It also protects the device and components from environmental interference.",
+          "bbox": [
+            {
+              "h": 21.48,
+              "w": 469.67,
+              "x": 73.44,
+              "y": 134.39,
+              "confidence": 1.0,
+              "end_index": 202,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## 2. **Isolation Capacitance**",
+          "value": "2. Isolation Capacitance",
+          "bbox": [
+            {
+              "h": 9.35,
+              "w": 121.16,
+              "x": 55.69,
+              "y": 158.39,
+              "confidence": 0.844,
+              "end_index": 30,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Improving the isolation between the device ground and the patient ground helps to improve the system CMR. For most portable instruments that use batteries, CMR is likely to be very high. Most typical test methodologies to measure CMR, however, specify the minimum isolation capacitance $C_B$ at which the system must pass the required CMR specification.",
+          "value": "Improving the isolation between the device ground and the patient ground helps to improve the system CMR. For most portable instruments that use batteries, CMR is likely to be very high. Most typical test methodologies to measure CMR, however, specify the minimum isolation capacitance $C_B$ at which the system must pass the required CMR specification.",
+          "bbox": [
+            {
+              "h": 46.83,
+              "w": 453.33,
+              "x": 73.44,
+              "y": 176.51,
+              "confidence": 1.0,
+              "end_index": 352,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## 3. **Post-Conversion Processing**",
+          "value": "3. Post-Conversion Processing",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 154.78,
+              "x": 55.69,
+              "y": 224.39,
+              "confidence": 0.875,
+              "end_index": 35,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "There is a possibility that a residual common-mode signal can be removed from the input after the conversion using finite-impulse response (FIR) adaptive filters. There are also some cases where the common-mode voltage is subtracted digitally. Moreover, there is a possibility of using a notch filter at a frequency of 50 Hz or 60 Hz in the digital domain. However, one must be very careful with such operations so that real-world signals are not compromised with this type of filtering. One must ensure that phase information is not skewed because of the filtering operation. It is worth noting here that most of the standards require that this post-processing be turned off while testing the system CMR.",
+          "value": "There is a possibility that a residual common-mode signal can be removed from the input after the conversion using finite-impulse response (FIR) adaptive filters. There are also some cases where the common-mode voltage is subtracted digitally. Moreover, there is a possibility of using a notch filter at a frequency of 50 Hz or 60 Hz in the digital domain. However, one must be very careful with such operations so that real-world signals are not compromised with this type of filtering. One must ensure that phase information is not skewed because of the filtering operation. It is worth noting here that most of the standards require that this post-processing be turned off while testing the system CMR.",
+          "bbox": [
+            {
+              "h": 82.33,
+              "w": 480.82,
+              "x": 73.44,
+              "y": 242.39,
+              "confidence": 1.0,
+              "end_index": 704,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## 4. **Driving the Common-Mode Voltage through a Resistor**",
+          "value": "4. Driving the Common-Mode Voltage through a Resistor",
+          "bbox": [
+            {
+              "h": 10.21,
+              "w": 276.46,
+              "x": 55.69,
+              "y": 326.39,
+              "confidence": 1.0,
+              "end_index": 59,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "With this technique, a low-resistance $R_P$ is used to drive the patient’s body (see Ref. 1). Figure 3-1 illustrates this technique; it also shows the models of the electrodes and cable using passive elements.",
+          "value": "With this technique, a low-resistance $R_P$ is used to drive the patient’s body (see Ref. 1). Figure 3-1 illustrates this technique; it also shows the models of the electrodes and cable using passive elements.",
+          "bbox": [
+            {
+              "h": 22.31,
+              "w": 480.06,
+              "x": 73.44,
+              "y": 344.39,
+              "confidence": 1.0,
+              "end_index": 208,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    subgraph Patient_Model [\" \"]\n        direction TB\n        Person[\"![icon: human figure](page_4_image_3_v2.jpg)\"]\n        VS((\"~\"))\n        VS_Label[\"V<sub>S</sub><br/>60 Hz\"] --- VS\n        VS --- C2[\"C<sub>2</sub>\"]\n        C2 --- Person\n        VS --- Ground1[\" \"]\n        \n        Person --- CT[\"C<sub>T</sub>\"]\n        CT --- CB[\"C<sub>B</sub>\"]\n        CB --- Ground2[\" \"]\n    end\n\n    subgraph Electrode_Section [\"Electrode\"]\n        direction TB\n        E1[\"C<sub>E</sub> || R<sub>E</sub>\"]\n        E2[\"C<sub>E</sub> || R<sub>E</sub>\"]\n        E3[\"C<sub>E</sub> || R<sub>E</sub>\"]\n    end\n\n    subgraph Cable_Section [\"Cable\"]\n        direction TB\n        C1[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n        C2_Cable[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n        C3[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n    end\n\n    Person -- \"Left-Arm Drive\" --> E1\n    Person -- \"Right-Arm Drive\" --> E2\n    Person -- \"Right-Leg Drive\" --> E3\n\n    E1 --- C1\n    E2 --- C2_Cable\n    E3 --- C3\n\n    C1 --- Out1((\" \"))\n    C2_Cable --- Out2((\" \"))\n    C3 --- RP[\"R<sub>P</sub>\"] --- VREF((\"V<sub>REF</sub>\"))\n\n    Out1 & Out2 -- \"To ADC\" --> ADC[ ]\n```",
+          "value": "graph LR\n    subgraph Patient_Model [\" \"]\n        direction TB\n        Person[\"![icon: human figure](page_4_image_3_v2.jpg)\"]\n        VS((\"~\"))\n        VS_Label[\"V<sub>S</sub><br/>60 Hz\"] --- VS\n        VS --- C2[\"C<sub>2</sub>\"]\n        C2 --- Person\n        VS --- Ground1[\" \"]\n        \n        Person --- CT[\"C<sub>T</sub>\"]\n        CT --- CB[\"C<sub>B</sub>\"]\n        CB --- Ground2[\" \"]\n    end\n\n    subgraph Electrode_Section [\"Electrode\"]\n        direction TB\n        E1[\"C<sub>E</sub> || R<sub>E</sub>\"]\n        E2[\"C<sub>E</sub> || R<sub>E</sub>\"]\n        E3[\"C<sub>E</sub> || R<sub>E</sub>\"]\n    end\n\n    subgraph Cable_Section [\"Cable\"]\n        direction TB\n        C1[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n        C2_Cable[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n        C3[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n    end\n\n    Person -- \"Left-Arm Drive\" --> E1\n    Person -- \"Right-Arm Drive\" --> E2\n    Person -- \"Right-Leg Drive\" --> E3\n\n    E1 --- C1\n    E2 --- C2_Cable\n    E3 --- C3\n\n    C1 --- Out1((\" \"))\n    C2_Cable --- Out2((\" \"))\n    C3 --- RP[\"R<sub>P</sub>\"] --- VREF((\"V<sub>REF</sub>\"))\n\n    Out1 & Out2 -- \"To ADC\" --> ADC[ ]",
+          "bbox": [
+            {
+              "h": 5.3,
+              "w": 17.71,
+              "x": 385.96,
+              "y": 380.5,
+              "confidence": 0.1,
+              "end_index": 1204,
+              "label": "code",
+              "start_index": 0
+            },
+            {
+              "h": 234.34,
+              "w": 385.05,
+              "x": 112.94,
+              "y": 379.38,
+              "confidence": 0.9,
+              "end_index": 133,
+              "label": "image",
+              "start_index": 90
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Diagram Components:**",
+          "value": "Diagram Components:",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "**Patient Model:**",
+              "value": "Patient Model:",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "A human figure icon represents the patient.",
+                  "value": "A human figure icon represents the patient.",
+                  "type": "text"
+                },
+                {
+                  "md": "An AC voltage source ($V_S$, 60 Hz) is connected to the patient's head through capacitor $C_2$.",
+                  "value": "An AC voltage source ($V_S$, 60 Hz) is connected to the patient's head through capacitor $C_2$.",
+                  "type": "text"
+                },
+                {
+                  "md": "The patient is connected to ground through capacitors $C_T$ and $C_B$.",
+                  "value": "The patient is connected to ground through capacitors $C_T$ and $C_B$.",
+                  "type": "text"
+                }
+              ],
+              "md": "* A human figure icon represents the patient.\n* An AC voltage source ($V_S$, 60 Hz) is connected to the patient's head through capacitor $C_2$.\n* The patient is connected to ground through capacitors $C_T$ and $C_B$.",
+              "ordered": false,
+              "type": "list"
+            },
+            {
+              "md": "**Electrode Models:**",
+              "value": "Electrode Models:",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "Three identical electrode models for Left-Arm Drive, Right-Arm Drive, and Right-Leg Drive.",
+                  "value": "Three identical electrode models for Left-Arm Drive, Right-Arm Drive, and Right-Leg Drive.",
+                  "bbox": [
+                    {
+                      "h": 229.93,
+                      "w": 384.95,
+                      "x": 113.22,
+                      "y": 379.37,
+                      "confidence": 0.777,
+                      "end_index": 89,
+                      "label": "text",
+                      "start_index": 0
+                    }
+                  ],
+                  "type": "text"
+                },
+                {
+                  "md": "Each electrode consists of a parallel combination of a capacitor ($C_E$) and a resistor ($R_E$).",
+                  "value": "Each electrode consists of a parallel combination of a capacitor ($C_E$) and a resistor ($R_E$).",
+                  "type": "text"
+                }
+              ],
+              "md": "* Three identical electrode models for Left-Arm Drive, Right-Arm Drive, and Right-Leg Drive.\n* Each electrode consists of a parallel combination of a capacitor ($C_E$) and a resistor ($R_E$).",
+              "ordered": false,
+              "bbox": [
+                {
+                  "h": 229.93,
+                  "w": 384.95,
+                  "x": 113.22,
+                  "y": 379.37,
+                  "confidence": 0.777,
+                  "label": "list"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "md": "**Cable Models:**",
+              "value": "Cable Models:",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "Three identical cable models.",
+                  "value": "Three identical cable models.",
+                  "type": "text"
+                },
+                {
+                  "md": "Each cable consists of a series resistor ($R_{CB}$) with shunt capacitors ($C_{CB}$) to ground on both sides.",
+                  "value": "Each cable consists of a series resistor ($R_{CB}$) with shunt capacitors ($C_{CB}$) to ground on both sides.",
+                  "type": "text"
+                }
+              ],
+              "md": "* Three identical cable models.\n* Each cable consists of a series resistor ($R_{CB}$) with shunt capacitors ($C_{CB}$) to ground on both sides.",
+              "ordered": false,
+              "type": "list"
+            },
+            {
+              "md": "**Connections:**",
+              "value": "Connections:",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "The Left-Arm and Right-Arm signals pass through the electrode and cable models to the ADC.",
+                  "value": "The Left-Arm and Right-Arm signals pass through the electrode and cable models to the ADC.",
+                  "type": "text"
+                },
+                {
+                  "md": "The Right-Leg Drive signal passes through its electrode and cable model, then through a protection resistor ($R_P$) to a reference voltage ($V_{REF}$).",
+                  "value": "The Right-Leg Drive signal passes through its electrode and cable model, then through a protection resistor ($R_P$) to a reference voltage ($V_{REF}$).",
+                  "type": "text"
+                }
+              ],
+              "md": "* The Left-Arm and Right-Arm signals pass through the electrode and cable models to the ADC.\n* The Right-Leg Drive signal passes through its electrode and cable model, then through a protection resistor ($R_P$) to a reference voltage ($V_{REF}$).",
+              "ordered": false,
+              "type": "list"
+            }
+          ],
+          "md": "* **Patient Model:**\n  * A human figure icon represents the patient.\n  * An AC voltage source ($V_S$, 60 Hz) is connected to the patient's head through capacitor $C_2$.\n  * The patient is connected to ground through capacitors $C_T$ and $C_B$.\n* **Electrode Models:**\n  * Three identical electrode models for Left-Arm Drive, Right-Arm Drive, and Right-Leg Drive.\n  * Each electrode consists of a parallel combination of a capacitor ($C_E$) and a resistor ($R_E$).\n* **Cable Models:**\n  * Three identical cable models.\n  * Each cable consists of a series resistor ($R_{CB}$) with shunt capacitors ($C_{CB}$) to ground on both sides.\n* **Connections:**\n  * The Left-Arm and Right-Arm signals pass through the electrode and cable models to the ADC.\n  * The Right-Leg Drive signal passes through its electrode and cable model, then through a protection resistor ($R_P$) to a reference voltage ($V_{REF}$).",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 229.93,
+              "w": 384.95,
+              "x": 113.22,
+              "y": 379.37,
+              "confidence": 0.777,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "md": "**Figure 3-1. Applying the Common-Mode Voltage at the Patient’s Body Using $R_P$**",
+          "value": "Figure 3-1. Applying the Common-Mode Voltage at the Patient’s Body Using $R_P$",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 374.77,
+              "x": 118.12,
+              "y": 619.51,
+              "confidence": 1.0,
+              "end_index": 81,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "4 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier*\nSBAA188B – JULY 2011 – REVISED OCTOBER 2026 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "4 Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier\nSBAA188B – JULY 2011 – REVISED OCTOBER 2026\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.44,
+                  "w": 504.28,
+                  "x": 54.09,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 224,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "4 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier*\nSBAA188B – JULY 2011 – REVISED OCTOBER 2026\n*Submit Document Feedback*\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 504.28,
+              "x": 54.09,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 4,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_5_image_2_v2.jpg)",
+              "url": "page_5_image_2_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.06,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)\n*Closed-Loop RLD system*",
+              "value": "\nwww.ti.com\nClosed-Loop RLD system",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 33.32,
+                  "confidence": 0.969,
+                  "end_index": 31,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 7.59,
+                  "w": 90.24,
+                  "x": 467.58,
+                  "y": 33.22,
+                  "confidence": 0.969,
+                  "end_index": 55,
+                  "label": "header",
+                  "start_index": 32
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_5_image_2_v2.jpg)\nwww.ti.com\n*Closed-Loop RLD system*",
+          "bbox": [
+            {
+              "h": 35.27,
+              "w": 504.58,
+              "x": 53.24,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "Intuitively, the resistor that drives the potential comes in parallel with Z<sub>G</sub> (refer to Section 2), and thus a larger attenuation is achieved. When the value of the resistor used to drive the potential of the body is reduced, CMR of the entire system improves. In the case of a fault condition where the patient’s body is accidentally connected to the system ground, it also provides the path for the current from the reference node V<sub>REF</sub> through the resistor R<sub>P</sub>. In accordance with IEC standards (Ref. 2), a maximum of 50 μA *single-fault condition* current is recommended. Depending on the value of the power-supply voltage used for the system, the value of the protection resistor R<sub>P</sub> is chosen. In a system with V<sub>S</sub> = 5 V, the minimum value of the resistor needed is 100 kΩ; if a 3-V power supply is used, a 60-kΩ resistor can limit the single fault current to safe current.",
+          "value": "Intuitively, the resistor that drives the potential comes in parallel with Z<sub>G</sub> (refer to Section 2), and thus a larger attenuation is achieved. When the value of the resistor used to drive the potential of the body is reduced, CMR of the entire system improves. In the case of a fault condition where the patient’s body is accidentally connected to the system ground, it also provides the path for the current from the reference node V<sub>REF</sub> through the resistor R<sub>P</sub>. In accordance with IEC standards (Ref. 2), a maximum of 50 μA single-fault condition current is recommended. Depending on the value of the power-supply voltage used for the system, the value of the protection resistor R<sub>P</sub> is chosen. In a system with V<sub>S</sub> = 5 V, the minimum value of the resistor needed is 100 kΩ; if a 3-V power supply is used, a 60-kΩ resistor can limit the single fault current to safe current.",
+          "bbox": [
+            {
+              "h": 94.28,
+              "w": 493.89,
+              "x": 55.69,
+              "y": 56.99,
+              "confidence": 1.0,
+              "end_index": 929,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The system CMR can be further improved by incorporating the portion of the protection resistor R<sub>P2</sub> inside the operational amplifier, as shown in Figure 3-2. The sum of the protection resistors R<sub>P1</sub> and R<sub>P2</sub> is equal to the resistor R<sub>P</sub>. In this case, only R<sub>P1</sub> comes in parallel with Z<sub>G</sub>, attenuating the common-mode signal further. But during a single fault condition, both resistors limit the fault current. This added advantage is available at the cost of reduced swing at the output of the operational amplifier because of a voltage drop across resistor R<sub>P2</sub>. Usually, however, under normal operating conditions, the current at this path is less than 1 μA, making this concern trivial.",
+          "value": "The system CMR can be further improved by incorporating the portion of the protection resistor R<sub>P2</sub> inside the operational amplifier, as shown in Figure 3-2. The sum of the protection resistors R<sub>P1</sub> and R<sub>P2</sub> is equal to the resistor R<sub>P</sub>. In this case, only R<sub>P1</sub> comes in parallel with Z<sub>G</sub>, attenuating the common-mode signal further. But during a single fault condition, both resistors limit the fault current. This added advantage is available at the cost of reduced swing at the output of the operational amplifier because of a voltage drop across resistor R<sub>P2</sub>. Usually, however, under normal operating conditions, the current at this path is less than 1 μA, making this concern trivial.",
+          "bbox": [
+            {
+              "h": 79.5,
+              "w": 484.98,
+              "x": 55.69,
+              "y": 158.99,
+              "confidence": 1.0,
+              "end_index": 759,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    RL[RL]\n    subgraph Electrode\n        direction LR\n        E1(( )) --- CE[\"C<sub>E</sub>\"] --- E2(( ))\n        E1 --- RE[\"R<sub>E</sub>\"] --- E2\n    end\n    subgraph Cable\n        direction LR\n        C1(( )) --- RCB[\"R<sub>CB</sub>\"] --- C2(( ))\n        C1 --- CCB1[\"C<sub>CB</sub>\"] --- G1[Ground]\n        C2 --- CCB2[\"C<sub>CB</sub>\"] --- G2[Ground]\n    end\n    RP1[\"R<sub>P1</sub>\"]\n    RP2[\"R<sub>P2</sub>\"]\n    OPAMP{{\" \"}}\n    VREF[\"V<sub>REF</sub>\"]\n\n    RL <--- E1\n    E2 --- C1\n    C2 --- RP1\n    RP1 --- N1(( ))\n    N1 --- RP2\n    RP2 --- OPAMP_OUT(( ))\n    OPAMP_OUT --- OPAMP\n    N1 --- FEEDBACK[ ] --- OPAMP_NEG[\"-\"]\n    OPAMP_NEG --- OPAMP\n    VREF --- OPAMP_POS[\"+\"]\n    OPAMP_POS --- OPAMP\n\n    style Electrode fill:none,stroke-dasharray: 5 5\n    style Cable fill:none,stroke-dasharray: 5 5\n    style FEEDBACK height:0px,width:0px\n    style OPAMP_OUT height:0px,width:0px\n    style OPAMP_NEG height:0px,width:0px\n    style OPAMP_POS height:0px,width:0px\n    style G1 fill:none,stroke:none\n    style G2 fill:none,stroke:none\n```",
+          "value": "graph LR\n    RL[RL]\n    subgraph Electrode\n        direction LR\n        E1(( )) --- CE[\"C<sub>E</sub>\"] --- E2(( ))\n        E1 --- RE[\"R<sub>E</sub>\"] --- E2\n    end\n    subgraph Cable\n        direction LR\n        C1(( )) --- RCB[\"R<sub>CB</sub>\"] --- C2(( ))\n        C1 --- CCB1[\"C<sub>CB</sub>\"] --- G1[Ground]\n        C2 --- CCB2[\"C<sub>CB</sub>\"] --- G2[Ground]\n    end\n    RP1[\"R<sub>P1</sub>\"]\n    RP2[\"R<sub>P2</sub>\"]\n    OPAMP{{\" \"}}\n    VREF[\"V<sub>REF</sub>\"]\n\n    RL <--- E1\n    E2 --- C1\n    C2 --- RP1\n    RP1 --- N1(( ))\n    N1 --- RP2\n    RP2 --- OPAMP_OUT(( ))\n    OPAMP_OUT --- OPAMP\n    N1 --- FEEDBACK[ ] --- OPAMP_NEG[\"-\"]\n    OPAMP_NEG --- OPAMP\n    VREF --- OPAMP_POS[\"+\"]\n    OPAMP_POS --- OPAMP\n\n    style Electrode fill:none,stroke-dasharray: 5 5\n    style Cable fill:none,stroke-dasharray: 5 5\n    style FEEDBACK height:0px,width:0px\n    style OPAMP_OUT height:0px,width:0px\n    style OPAMP_NEG height:0px,width:0px\n    style OPAMP_POS height:0px,width:0px\n    style G1 fill:none,stroke:none\n    style G2 fill:none,stroke:none",
+          "bbox": [
+            {
+              "h": 103.76,
+              "w": 312.73,
+              "x": 149.33,
+              "y": 247.1,
+              "confidence": 0.5,
+              "end_index": 1067,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Figure 3-2. Technique to Improve CMR with a Large Protection Resistor**",
+          "value": "Figure 3-2. Technique to Improve CMR with a Large Protection Resistor",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 337.6,
+              "x": 137.64,
+              "y": 360.11,
+              "confidence": 1.0,
+              "end_index": 72,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## 4 Closed-Loop RLD system",
+          "value": "4 Closed-Loop RLD system",
+          "bbox": [
+            {
+              "h": 11.37,
+              "w": 156.26,
+              "x": 55.69,
+              "y": 382.41,
+              "confidence": 0.906,
+              "end_index": 26,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "CMR can be further improved by sensing the input common-mode voltage at the programmable gain amplifier (PGA) outputs and amplifying the difference using the right-leg drive (RLD) amplifier as Figure 4-1 shows. This feedback loop improves CMR by an amount equal to (1 + A), where *A* is the closed-loop gain of the feedback loop. The value of the closed-loop gain depends on the values of the feedback resistor R<sub>F</sub>, feedback capacitance C<sub>F</sub>, and PGA output common-mode sensing resistor R<sub>CM</sub>.",
+          "value": "CMR can be further improved by sensing the input common-mode voltage at the programmable gain amplifier (PGA) outputs and amplifying the difference using the right-leg drive (RLD) amplifier as Figure 4-1 shows. This feedback loop improves CMR by an amount equal to (1 + A), where A is the closed-loop gain of the feedback loop. The value of the closed-loop gain depends on the values of the feedback resistor R<sub>F</sub>, feedback capacitance C<sub>F</sub>, and PGA output common-mode sensing resistor R<sub>CM</sub>.",
+          "bbox": [
+            {
+              "h": 57.48,
+              "w": 486.97,
+              "x": 55.69,
+              "y": 402.51,
+              "confidence": 1.0,
+              "end_index": 520,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Quantitatively, the value of the closed-loop gain A at a given frequency f is equal to Equation 4:",
+          "value": "Quantitatively, the value of the closed-loop gain A at a given frequency f is equal to Equation 4:",
+          "bbox": [
+            {
+              "h": 9.87,
+              "w": 419.09,
+              "x": 55.69,
+              "y": 468.5,
+              "confidence": 1.0,
+              "end_index": 97,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$A = 2 \\cdot \\frac{Z_F}{R_{CM}} \\tag{4}$$",
+          "value": "$$A = 2 \\cdot \\frac{Z_F}{R_{CM}} \\tag{4}$$",
+          "bbox": [
+            {
+              "h": 17.92,
+              "w": 445.76,
+              "x": 91.19,
+              "y": 491.63,
+              "confidence": 0.4,
+              "end_index": 41,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "where:",
+          "value": "where:",
+          "bbox": [
+            {
+              "h": 7.38,
+              "w": 29.99,
+              "x": 55.69,
+              "y": 524.67,
+              "confidence": 0.675,
+              "end_index": 5,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$Z_F = \\frac{R_F}{1 + sR_FC_F} \\tag{5}$$",
+          "value": "$$Z_F = \\frac{R_F}{1 + sR_FC_F} \\tag{5}$$",
+          "bbox": [
+            {
+              "h": 19.01,
+              "w": 445.76,
+              "x": 91.19,
+              "y": 546.48,
+              "confidence": 0.6,
+              "end_index": 40,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Stability is the major concern in this RLD technique. Note that the protection resistor and the cable impedance form a low-pass filter. Depending on the model of the cable, this pole can be as small as 2 kHz because of the protection resistor and cable. Therefore, capacitor C<sub>P</sub> is introduced such that it introduces the zero in the RLD path. Closed-loop bandwidth can be controlled by using capacitor C<sub>F</sub> which is connected across feedback resistor R<sub>F</sub>; see Figure 4-1.",
+          "value": "Stability is the major concern in this RLD technique. Note that the protection resistor and the cable impedance form a low-pass filter. Depending on the model of the cable, this pole can be as small as 2 kHz because of the protection resistor and cable. Therefore, capacitor C<sub>P</sub> is introduced such that it introduces the zero in the RLD path. Closed-loop bandwidth can be controlled by using capacitor C<sub>F</sub> which is connected across feedback resistor R<sub>F</sub>; see Figure 4-1.",
+          "bbox": [
+            {
+              "h": 57.48,
+              "w": 490.25,
+              "x": 55.69,
+              "y": 580.65,
+              "confidence": 1.0,
+              "end_index": 499,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The closed-loop bandwidth of the RLD loop is approximately equal to:",
+          "value": "The closed-loop bandwidth of the RLD loop is approximately equal to:",
+          "bbox": [
+            {
+              "h": 9.92,
+              "w": 308.04,
+              "x": 55.69,
+              "y": 646.65,
+              "confidence": 1.0,
+              "end_index": 67,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$f_{BW} = \\frac{1}{2\\pi R_FC_F} \\tag{6}$$",
+          "value": "$$f_{BW} = \\frac{1}{2\\pi R_FC_F} \\tag{6}$$",
+          "bbox": [
+            {
+              "h": 17.42,
+              "w": 446.15,
+              "x": 91.8,
+              "y": 668.45,
+              "confidence": 0.6,
+              "end_index": 41,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n*Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier*\n5 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\nImproving Common-Mode Rejection Using the Right-Leg Drive Amplifier\n5\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 13.66,
+                  "w": 168.22,
+                  "x": 54.32,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 43,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 23.44,
+                  "w": 328.65,
+                  "x": 229.07,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 224,
+                  "label": "footer",
+                  "start_index": 44
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n*Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier*\n5\n*Submit Document Feedback*\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 503.4,
+              "x": 54.32,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 5,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*The Effect of Lead-Off Disconnection in an RLD System*",
+              "value": "The Effect of Lead-Off Disconnection in an RLD System",
+              "bbox": [
+                {
+                  "h": 7.58,
+                  "w": 196.7,
+                  "x": 55.0,
+                  "y": 33.22,
+                  "confidence": 1.0,
+                  "end_index": 54,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_6_image_3_v2.jpg)",
+              "url": "page_6_image_3_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.92,
+                  "x": 460.84,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)",
+              "value": "\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 33.32,
+                  "confidence": 0.844,
+                  "end_index": 30,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*The Effect of Lead-Off Disconnection in an RLD System*\n\n![logo: Texas Instruments](page_6_image_3_v2.jpg)\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 35.26,
+              "w": 503.76,
+              "x": 55.0,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "image: human figure icon",
+          "md": "![image: human figure icon](page_6_image_4_v2.jpg)",
+          "url": "page_6_image_4_v2.jpg",
+          "bbox": [
+            {
+              "h": 227.88,
+              "w": 501.85,
+              "x": 54.81,
+              "y": 48.87,
+              "confidence": 0.9,
+              "end_index": 49,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    subgraph \"Power Source\"\n        VS((\"V<sub>S</sub><br/>60 Hz\")) --- C2[\"C<sub>2</sub>\"]\n        VS --- GND1[Ground]\n    end\n\n    C2 --- Human[\"Human Body\"]\n    \n    subgraph \"Electrode\"\n        direction TB\n        E1[\"C<sub>E</sub> // R<sub>E</sub>\"]\n        E2[\"C<sub>E</sub> // R<sub>E</sub>\"]\n        E3[\"C<sub>E</sub> // R<sub>E</sub>\"]\n    end\n\n    subgraph \"Cable\"\n        direction TB\n        CB1[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n        CB2[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n        CB3[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n    end\n\n    Human ---|\"Left-Arm Drive\"| E1\n    Human ---|\"Right-Arm Drive\"| E2\n    Human ---|\"Right-Leg Drive\"| E3\n\n    E1 --- CB1\n    E2 --- CB2\n    E3 --- CB3\n\n    CB1 --- INA_P1[\"+\"]\n    CB2 --- INA_P2[\"+\"]\n\n    subgraph \"Instrumentation Amplifier & Common Mode\"\n        direction TB\n        AMP1[\"Op-Amp 1\"]\n        AMP2[\"Op-Amp 2\"]\n        RCM1[\"R<sub>CM</sub>\"]\n        RCM2[\"R<sub>CM</sub>\"]\n    end\n\n    INA_P1 --- AMP1\n    INA_P2 --- AMP2\n    \n    AMP1 --- RCM1\n    AMP2 --- RCM2\n    RCM1 --- CM_NODE(( ))\n    RCM2 --- CM_NODE\n    CM_NODE ---|\"To ADC\"| ADC[ ]\n    CM_NODE ---|\"δI<sub>CM</sub>\"| RLD_IN\n\n    subgraph \"RLD Circuit\"\n        RLD_IN --- CF[\"C<sub>F</sub> // R<sub>F</sub>\"]\n        RLD_IN --- RLD_AMP[\"Op-Amp\"]\n        VREF[\"V<sub>REF</sub>\"] --- RLD_AMP\n        RLD_AMP --- RP_CP[\"R<sub>P</sub> // C<sub>P</sub>\"]\n    end\n\n    RP_CP --- CB3\n\n    subgraph \"Body Capacitance\"\n        Human --- CT[\"C<sub>T</sub>\"]\n        CT --- CB_CAP[\"C<sub>B</sub>\"]\n        CB_CAP --- GND2[Ground]\n    end\n```",
+          "value": "graph LR\n    subgraph \"Power Source\"\n        VS((\"V<sub>S</sub><br/>60 Hz\")) --- C2[\"C<sub>2</sub>\"]\n        VS --- GND1[Ground]\n    end\n\n    C2 --- Human[\"Human Body\"]\n    \n    subgraph \"Electrode\"\n        direction TB\n        E1[\"C<sub>E</sub> // R<sub>E</sub>\"]\n        E2[\"C<sub>E</sub> // R<sub>E</sub>\"]\n        E3[\"C<sub>E</sub> // R<sub>E</sub>\"]\n    end\n\n    subgraph \"Cable\"\n        direction TB\n        CB1[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n        CB2[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n        CB3[\"C<sub>CB</sub> - R<sub>CB</sub> - C<sub>CB</sub>\"]\n    end\n\n    Human ---|\"Left-Arm Drive\"| E1\n    Human ---|\"Right-Arm Drive\"| E2\n    Human ---|\"Right-Leg Drive\"| E3\n\n    E1 --- CB1\n    E2 --- CB2\n    E3 --- CB3\n\n    CB1 --- INA_P1[\"+\"]\n    CB2 --- INA_P2[\"+\"]\n\n    subgraph \"Instrumentation Amplifier & Common Mode\"\n        direction TB\n        AMP1[\"Op-Amp 1\"]\n        AMP2[\"Op-Amp 2\"]\n        RCM1[\"R<sub>CM</sub>\"]\n        RCM2[\"R<sub>CM</sub>\"]\n    end\n\n    INA_P1 --- AMP1\n    INA_P2 --- AMP2\n    \n    AMP1 --- RCM1\n    AMP2 --- RCM2\n    RCM1 --- CM_NODE(( ))\n    RCM2 --- CM_NODE\n    CM_NODE ---|\"To ADC\"| ADC[ ]\n    CM_NODE ---|\"δI<sub>CM</sub>\"| RLD_IN\n\n    subgraph \"RLD Circuit\"\n        RLD_IN --- CF[\"C<sub>F</sub> // R<sub>F</sub>\"]\n        RLD_IN --- RLD_AMP[\"Op-Amp\"]\n        VREF[\"V<sub>REF</sub>\"] --- RLD_AMP\n        RLD_AMP --- RP_CP[\"R<sub>P</sub> // C<sub>P</sub>\"]\n    end\n\n    RP_CP --- CB3\n\n    subgraph \"Body Capacitance\"\n        Human --- CT[\"C<sub>T</sub>\"]\n        CT --- CB_CAP[\"C<sub>B</sub>\"]\n        CB_CAP --- GND2[Ground]\n    end",
+          "bbox": [
+            {
+              "h": 217.8,
+              "w": 271.12,
+              "x": 169.52,
+              "y": 370.66,
+              "confidence": 0.3,
+              "end_index": 1625,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Figure 4-1. Improving CMRR by Completing RLD Feedback Loop**",
+          "value": "Figure 4-1. Improving CMRR by Completing RLD Feedback Loop",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 306.32,
+              "x": 152.39,
+              "y": 287.02,
+              "confidence": 0.8,
+              "end_index": 61,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# 5 **The Effect of Lead-Off Disconnection in an RLD System**",
+          "value": "5 The Effect of Lead-Off Disconnection in an RLD System",
+          "bbox": [
+            {
+              "h": 11.38,
+              "w": 325.41,
+              "x": 57.22,
+              "y": 309.32,
+              "confidence": 1.0,
+              "end_index": 60,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "ECG subsystems usually include lead-off currents as shown in Figure 5-1 to monitor the connectivity of the electrode with the skin. When an electrode is loose or not connected to the skin, the lead-off current drives the electrode potential to either of the rails, either ground or at supply voltage.",
+          "value": "ECG subsystems usually include lead-off currents as shown in Figure 5-1 to monitor the connectivity of the electrode with the skin. When an electrode is loose or not connected to the skin, the lead-off current drives the electrode potential to either of the rails, either ground or at supply voltage.",
+          "bbox": [
+            {
+              "h": 34.11,
+              "w": 486.79,
+              "x": 55.69,
+              "y": 329.42,
+              "confidence": 1.0,
+              "end_index": 299,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    subgraph Input_Stage [\" \"]\n        direction LR\n        VDD[\"V<sub>DD</sub>\"] --- ILEAD1(( ))\n        ILEAD1 -- \"I<sub>LEAD</sub>\" --> Node1(( ))\n        Node1 --- Cable1(( ))\n        Cable1 -.- Cable_Label[\"Cable\"]\n        \n        GND1[ ] --- ILEAD2(( ))\n        ILEAD2 -- \"I<sub>LEAD</sub>\" --> Node2(( ))\n        Node2 --- Cable2(( ))\n        Cable2 -.- Cable_Label\n        \n        Node1 --- Amp1_Pos[\"+\"]\n        Node2 --- Amp2_Pos[\"+\"]\n        \n        subgraph Amps [\" \"]\n            direction TB\n            Amp1{{\" \"}}\n            Amp2{{\" \"}}\n        end\n        \n        Amp1_Pos --- Amp1\n        Amp2_Pos --- Amp2\n        \n        Amp1 --- Amp1_Neg[\"-\"]\n        Amp2 --- Amp2_Neg[\"-\"]\n        Amp1_Neg --- Amp2_Neg\n    end\n\n    subgraph Output_Network [\" \"]\n        direction TB\n        R1[ ] --- R2[ ]\n        R2 --- R3[ ]\n        R3 --- R4[ ]\n        \n        Amp1 --- R1\n        Amp1_Neg --- R2\n        Amp2_Neg --- R3\n        Amp2 --- R4\n        \n        Node_Out1(( )) --- R1\n        Node_Out2(( )) --- R4\n        \n        Node_Out1 --- ADC_Out1(( ))\n        Node_Out2 --- ADC_Out2(( ))\n        \n        ADC_Out1 --- RCM1[R<sub>CM</sub>]\n        RCM1 --- Node_CM(( ))\n        Node_CM --- RCM2[R<sub>CM</sub>]\n        RCM2 --- ADC_Out2\n        \n        ADC_Out1 --- ADC_Label[\"To ADC\"]\n        ADC_Out2 --- ADC_Label\n    end\n\n    subgraph RLD_Circuit [\" \"]\n        direction LR\n        Node_CM -- \"&delta;I<sub>CM</sub>\" --> Node_FB(( ))\n        \n        Node_FB --- CF[C<sub>F</sub>]\n        Node_FB --- RF[R<sub>F</sub>]\n        Node_FB --- RLD_Amp_Neg[\"-\"]\n        \n        RLD_Amp{{\" \"}}\n        RLD_Amp_Neg --- RLD_Amp\n        RLD_Amp_Pos[\"+\"] --- RLD_Amp\n        VREF[\"V<sub>REF</sub>\"] --- RLD_Amp_Pos\n        \n        CF --- RLD_Out(( ))\n        RF --- RLD_Out\n        RLD_Amp --- RLD_Out\n        \n        RLD_Out --- Node_RP(( ))\n        Node_RP --- CP[C<sub>P</sub>]\n        Node_RP --- RP[R<sub>P</sub>]\n        \n        CP --- Electrode_Out(( ))\n        RP --- Electrode_Out\n        Electrode_Out --> Electrode_Label[\"To Electrode\"]\n    end\n```",
+          "value": "graph LR\n    subgraph Input_Stage [\" \"]\n        direction LR\n        VDD[\"V<sub>DD</sub>\"] --- ILEAD1(( ))\n        ILEAD1 -- \"I<sub>LEAD</sub>\" --> Node1(( ))\n        Node1 --- Cable1(( ))\n        Cable1 -.- Cable_Label[\"Cable\"]\n        \n        GND1[ ] --- ILEAD2(( ))\n        ILEAD2 -- \"I<sub>LEAD</sub>\" --> Node2(( ))\n        Node2 --- Cable2(( ))\n        Cable2 -.- Cable_Label\n        \n        Node1 --- Amp1_Pos[\"+\"]\n        Node2 --- Amp2_Pos[\"+\"]\n        \n        subgraph Amps [\" \"]\n            direction TB\n            Amp1{{\" \"}}\n            Amp2{{\" \"}}\n        end\n        \n        Amp1_Pos --- Amp1\n        Amp2_Pos --- Amp2\n        \n        Amp1 --- Amp1_Neg[\"-\"]\n        Amp2 --- Amp2_Neg[\"-\"]\n        Amp1_Neg --- Amp2_Neg\n    end\n\n    subgraph Output_Network [\" \"]\n        direction TB\n        R1[ ] --- R2[ ]\n        R2 --- R3[ ]\n        R3 --- R4[ ]\n        \n        Amp1 --- R1\n        Amp1_Neg --- R2\n        Amp2_Neg --- R3\n        Amp2 --- R4\n        \n        Node_Out1(( )) --- R1\n        Node_Out2(( )) --- R4\n        \n        Node_Out1 --- ADC_Out1(( ))\n        Node_Out2 --- ADC_Out2(( ))\n        \n        ADC_Out1 --- RCM1[R<sub>CM</sub>]\n        RCM1 --- Node_CM(( ))\n        Node_CM --- RCM2[R<sub>CM</sub>]\n        RCM2 --- ADC_Out2\n        \n        ADC_Out1 --- ADC_Label[\"To ADC\"]\n        ADC_Out2 --- ADC_Label\n    end\n\n    subgraph RLD_Circuit [\" \"]\n        direction LR\n        Node_CM -- \"&delta;I<sub>CM</sub>\" --> Node_FB(( ))\n        \n        Node_FB --- CF[C<sub>F</sub>]\n        Node_FB --- RF[R<sub>F</sub>]\n        Node_FB --- RLD_Amp_Neg[\"-\"]\n        \n        RLD_Amp{{\" \"}}\n        RLD_Amp_Neg --- RLD_Amp\n        RLD_Amp_Pos[\"+\"] --- RLD_Amp\n        VREF[\"V<sub>REF</sub>\"] --- RLD_Amp_Pos\n        \n        CF --- RLD_Out(( ))\n        RF --- RLD_Out\n        RLD_Amp --- RLD_Out\n        \n        RLD_Out --- Node_RP(( ))\n        Node_RP --- CP[C<sub>P</sub>]\n        Node_RP --- RP[R<sub>P</sub>]\n        \n        CP --- Electrode_Out(( ))\n        RP --- Electrode_Out\n        Electrode_Out --> Electrode_Label[\"To Electrode\"]\n    end",
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Figure 5-1. Analog Front-End of an RLD Subsystem with Lead-Off Currents to Monitor Electrode Snugness**",
+          "value": "Figure 5-1. Analog Front-End of an RLD Subsystem with Lead-Off Currents to Monitor Electrode Snugness",
+          "bbox": [
+            {
+              "h": 22.18,
+              "w": 455.44,
+              "x": 77.72,
+              "y": 599.54,
+              "confidence": 1.0,
+              "end_index": 104,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "6 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier*\nSBAA188B – JULY 2011 – REVISED OCTOBER 2026 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "6 Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier\nSBAA188B – JULY 2011 – REVISED OCTOBER 2026\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.44,
+                  "w": 504.1,
+                  "x": 54.27,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 224,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "6 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier*\nSBAA188B – JULY 2011 – REVISED OCTOBER 2026\n*Submit Document Feedback*\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 504.1,
+              "x": 54.27,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 6,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_7_image_2_v2.jpg)",
+              "url": "page_7_image_2_v2.jpg",
+              "bbox": [
+                {
+                  "h": 25.35,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Improving CMR Using the RLD Amplifier with the ADS1298*",
+              "value": "\nwww.ti.com Improving CMR Using the RLD Amplifier with the ADS1298",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 33.32,
+                  "confidence": 1.0,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 7.57,
+                  "w": 209.0,
+                  "x": 349.04,
+                  "y": 33.22,
+                  "confidence": 1.0,
+                  "end_index": 87,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_7_image_2_v2.jpg)\nwww.ti.com *Improving CMR Using the RLD Amplifier with the ADS1298*",
+          "bbox": [
+            {
+              "h": 35.25,
+              "w": 504.8,
+              "x": 53.24,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "Consider a situation when the right arm (RA) electrode is open and the left arm (LA) electrode is snug. In this case, the output common-mode of the PGA is driven away from the reference voltage, which causes the RLD feedback loop to fail. This situation can lead to the common-mode voltage of the patient’s body being driven to either of the rails, where it could also hit the rails and subsequently stop the PGA from working altogether. Therefore, one should be very careful when using this RLD feedback technique in cases where there is a high chance of having an electrode lose contact or become disconnected from the patient. Whenever this technique is used, one should continuously monitor the status of the electrode connection; in case of failure, the RLD closed loop should be open. This configuration can be achieved by placing the switch in the path between the PGA output common-mode averaging point and the inverting input terminal of the RLD amplifier. In cases where the RLD feedback technique cannot be used at all as a result of practical limitations, CMR can be further improved by using a splitting resistor technique.",
+          "value": "Consider a situation when the right arm (RA) electrode is open and the left arm (LA) electrode is snug. In this case, the output common-mode of the PGA is driven away from the reference voltage, which causes the RLD feedback loop to fail. This situation can lead to the common-mode voltage of the patient’s body being driven to either of the rails, where it could also hit the rails and subsequently stop the PGA from working altogether. Therefore, one should be very careful when using this RLD feedback technique in cases where there is a high chance of having an electrode lose contact or become disconnected from the patient. Whenever this technique is used, one should continuously monitor the status of the electrode connection; in case of failure, the RLD closed loop should be open. This configuration can be achieved by placing the switch in the path between the PGA output common-mode averaging point and the inverting input terminal of the RLD amplifier. In cases where the RLD feedback technique cannot be used at all as a result of practical limitations, CMR can be further improved by using a splitting resistor technique.",
+          "bbox": [
+            {
+              "h": 129.92,
+              "w": 492.47,
+              "x": 55.69,
+              "y": 56.99,
+              "confidence": 1.0,
+              "end_index": 1135,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **6 Improving CMR Using the RLD Amplifier with the ADS1298**",
+          "value": "6 Improving CMR Using the RLD Amplifier with the ADS1298",
+          "bbox": [
+            {
+              "h": 12.21,
+              "w": 344.27,
+              "x": 57.2,
+              "y": 195.29,
+              "confidence": 1.0,
+              "end_index": 62,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "The test setup used to measure the CMR of the ADS1298-based ECG subsystem discussed in the ADS1298ECGFE-PDK User's Guide (see Ref. 3) is shown in Figure 6-1. A snapshot of the measurement setup is also provided; see Figure 6-2. A 20-V peak‐to‐peak sine wave was used as the excitation signal. The value of coupling capacitors $C_2$ and $C_T$ (from the ac main) are equal to 100 pF. 220 pF is value of capacitor $C_B$ that connects the ac ground and the EVM board ground. Electrodes are modeled using resistor R and capacitor C connected in parallel as illustrated. Values of R and C are 51 kΩ and 47 nF, respectively.",
+          "value": "The test setup used to measure the CMR of the ADS1298-based ECG subsystem discussed in the ADS1298ECGFE-PDK User's Guide (see Ref. 3) is shown in Figure 6-1. A snapshot of the measurement setup is also provided; see Figure 6-2. A 20-V peak‐to‐peak sine wave was used as the excitation signal. The value of coupling capacitors $C_2$ and $C_T$ (from the ac main) are equal to 100 pF. 220 pF is value of capacitor $C_B$ that connects the ac ground and the EVM board ground. Electrodes are modeled using resistor R and capacitor C connected in parallel as illustrated. Values of R and C are 51 kΩ and 47 nF, respectively.",
+          "bbox": [
+            {
+              "h": 69.48,
+              "w": 492.79,
+              "x": 55.08,
+              "y": 215.39,
+              "confidence": 1.0,
+              "end_index": 616,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    subgraph \"External Circuitry\"\n        direction LR\n        Source((\"20 V<sub>PP</sub><br/>60 Hz\")) --- C2[\"C<sub>2</sub><br/>100 pF\"]\n        Source --- C1[\"C<sub>1</sub><br/>100 pF\"]\n        C1 --- Ground1[ ]\n        C2 --- CB[\"C<sub>B</sub><br/>220 pF\"]\n        CB --- Ground2[ ]\n\n        C2 --- RA_Block\n        subgraph RA_Block [\"Right-Arm Drive\"]\n            direction TB\n            S1_sw[/\"S<sub>1</sub>\"\\] --- R_ra[\"R\"]\n            R_ra --- C_ra[\"C\"]\n        end\n\n        C2 --- LA_Block\n        subgraph LA_Block [\"Left-Arm Drive\"]\n            direction TB\n            S2_sw[/\"S<sub>2</sub>\"\\] --- R_la[\"R\"]\n            R_la --- C_la[\"C\"]\n        end\n\n        C2 --- RL_Block\n        subgraph RL_Block [\"Right-Leg Drive\"]\n            direction TB\n            R_rl[\"R\"] --- CP[\"C<sub>P</sub>\"]\n            C_rl[\"C\"] --- RP[\"R<sub>P</sub>\"]\n        end\n        \n        Note[\"R = 51 kΩ<br/>C = 47 nF\"]\n    end\n\n    RA_Block --- PC[\"Patient Cable\"]\n    LA_Block --- PC\n    RL_Block --- PC\n\n    subgraph ADS1298EVM [\"ADS1298EVM\"]\n        direction TB\n        PC --- Filter1\n        subgraph Filter1 [\" \"]\n            direction LR\n            R1a[\"22 kΩ\"] --- R1b[\"10 kΩ\"]\n            R1a --- C1a[\"47 nF\"] --- G1[ ]\n            R1b --- C1b[\"47 nF\"] --- G2[ ]\n        end\n\n        PC --- Filter2\n        subgraph Filter2 [\" \"]\n            direction LR\n            R2a[\"22 kΩ\"] --- R2b[\"10 kΩ\"]\n            R2a --- C2a[\"47 nF\"] --- G3[ ]\n            R2b --- C2b[\"47 nF\"] --- G4[ ]\n        end\n\n        PC --- Filter3\n        subgraph Filter3 [\" \"]\n            direction LR\n            R3a[\"22 kΩ\"] --- R3b[\"10 kΩ\"]\n            R3a --- C3a[\"47 nF\"] --- G5[ ]\n            R3b --- C3b[\"47 nF\"] --- G6[ ]\n        end\n\n        subgraph ADS1298_Chip [\"ADS1298\"]\n            direction TB\n            VCM[\"V<sub>CM</sub>\"]\n            CH3_8[\"Ch3 to Ch 8\"]\n            CH2[\"Ch2\"]\n            CH1[\"Ch1\"]\n            CLK[\"2.048 MHz CLK\"] --> ADS_Body[\"ADS1298\"]\n            ADS_Body --- SPI[\"SPI CNTL\"]\n            SPI --- Micro[\"To Microcontroller\"]\n            RLDOUT[\"RLDOUT\"]\n            RLDINV[\"RLDINV\"]\n        end\n\n        Filter1 --- CH1\n        Filter2 --- CH2\n        Filter3 --- RL_Feedback[\" \"]\n        \n        RL_Feedback --- RLDOUT\n        RL_Feedback --- RLDINV\n        \n        subgraph RLD_Filter [\" \"]\n            direction LR\n            RF[\"R<sub>F</sub><br/>670 kΩ\"]\n            CF[\"C<sub>F</sub><br/>1.8 nF\"]\n        end\n        RLDOUT --- RLD_Filter --- RLDINV\n    end\n```",
+          "value": "graph LR\n    subgraph \"External Circuitry\"\n        direction LR\n        Source((\"20 V<sub>PP</sub><br/>60 Hz\")) --- C2[\"C<sub>2</sub><br/>100 pF\"]\n        Source --- C1[\"C<sub>1</sub><br/>100 pF\"]\n        C1 --- Ground1[ ]\n        C2 --- CB[\"C<sub>B</sub><br/>220 pF\"]\n        CB --- Ground2[ ]\n\n        C2 --- RA_Block\n        subgraph RA_Block [\"Right-Arm Drive\"]\n            direction TB\n            S1_sw[/\"S<sub>1</sub>\"\\] --- R_ra[\"R\"]\n            R_ra --- C_ra[\"C\"]\n        end\n\n        C2 --- LA_Block\n        subgraph LA_Block [\"Left-Arm Drive\"]\n            direction TB\n            S2_sw[/\"S<sub>2</sub>\"\\] --- R_la[\"R\"]\n            R_la --- C_la[\"C\"]\n        end\n\n        C2 --- RL_Block\n        subgraph RL_Block [\"Right-Leg Drive\"]\n            direction TB\n            R_rl[\"R\"] --- CP[\"C<sub>P</sub>\"]\n            C_rl[\"C\"] --- RP[\"R<sub>P</sub>\"]\n        end\n        \n        Note[\"R = 51 kΩ<br/>C = 47 nF\"]\n    end\n\n    RA_Block --- PC[\"Patient Cable\"]\n    LA_Block --- PC\n    RL_Block --- PC\n\n    subgraph ADS1298EVM [\"ADS1298EVM\"]\n        direction TB\n        PC --- Filter1\n        subgraph Filter1 [\" \"]\n            direction LR\n            R1a[\"22 kΩ\"] --- R1b[\"10 kΩ\"]\n            R1a --- C1a[\"47 nF\"] --- G1[ ]\n            R1b --- C1b[\"47 nF\"] --- G2[ ]\n        end\n\n        PC --- Filter2\n        subgraph Filter2 [\" \"]\n            direction LR\n            R2a[\"22 kΩ\"] --- R2b[\"10 kΩ\"]\n            R2a --- C2a[\"47 nF\"] --- G3[ ]\n            R2b --- C2b[\"47 nF\"] --- G4[ ]\n        end\n\n        PC --- Filter3\n        subgraph Filter3 [\" \"]\n            direction LR\n            R3a[\"22 kΩ\"] --- R3b[\"10 kΩ\"]\n            R3a --- C3a[\"47 nF\"] --- G5[ ]\n            R3b --- C3b[\"47 nF\"] --- G6[ ]\n        end\n\n        subgraph ADS1298_Chip [\"ADS1298\"]\n            direction TB\n            VCM[\"V<sub>CM</sub>\"]\n            CH3_8[\"Ch3 to Ch 8\"]\n            CH2[\"Ch2\"]\n            CH1[\"Ch1\"]\n            CLK[\"2.048 MHz CLK\"] --> ADS_Body[\"ADS1298\"]\n            ADS_Body --- SPI[\"SPI CNTL\"]\n            SPI --- Micro[\"To Microcontroller\"]\n            RLDOUT[\"RLDOUT\"]\n            RLDINV[\"RLDINV\"]\n        end\n\n        Filter1 --- CH1\n        Filter2 --- CH2\n        Filter3 --- RL_Feedback[\" \"]\n        \n        RL_Feedback --- RLDOUT\n        RL_Feedback --- RLDINV\n        \n        subgraph RLD_Filter [\" \"]\n            direction LR\n            RF[\"R<sub>F</sub><br/>670 kΩ\"]\n            CF[\"C<sub>F</sub><br/>1.8 nF\"]\n        end\n        RLDOUT --- RLD_Filter --- RLDINV\n    end",
+          "bbox": [
+            {
+              "h": 13.49,
+              "w": 18.37,
+              "x": 57.44,
+              "y": 385.2,
+              "confidence": 0.1,
+              "end_index": 2511,
+              "label": "code",
+              "start_index": 0
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Figure 6-1. Test Setup with **ADS1298EVM** with Protection Circuitry Elements**",
+          "value": "Figure 6-1. Test Setup with ADS1298EVM with Protection Circuitry Elements",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 359.24,
+              "x": 126.51,
+              "y": 684.48,
+              "confidence": 1.0,
+              "end_index": 80,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026 <u>Submit Document Feedback</u>\n*Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* 7\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n<u>Submit Document Feedback</u>\nImproving Common-Mode Rejection Using the Right-Leg Drive Amplifier 7\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 13.66,
+                  "w": 168.22,
+                  "x": 54.32,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 75,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 23.44,
+                  "w": 328.61,
+                  "x": 229.07,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 194,
+                  "label": "footer",
+                  "start_index": 76
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n<u>Submit Document Feedback</u>\n*Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* 7\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 503.36,
+              "x": 54.32,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 7,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Improving CMR Using the RLD Amplifier with the ADS1298*",
+              "value": "Improving CMR Using the RLD Amplifier with the ADS1298",
+              "bbox": [
+                {
+                  "h": 7.57,
+                  "w": 209.0,
+                  "x": 54.46,
+                  "y": 33.22,
+                  "confidence": 1.0,
+                  "end_index": 55,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_8_image_2_v2.jpg)",
+              "url": "page_8_image_2_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.92,
+                  "x": 460.84,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)",
+              "value": "\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 33.32,
+                  "confidence": 0.844,
+                  "end_index": 30,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Improving CMR Using the RLD Amplifier with the ADS1298*\n\n![logo: Texas Instruments](page_8_image_2_v2.jpg)\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 35.25,
+              "w": 504.3,
+              "x": 54.46,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "The standard ECG cable is used in this experiment. This cable includes a 10-kΩ protective resistance. The cable is followed by the onboard protection RC filter. The values of the components used to implement the filter are presented. All measurement results are noted with $S_1$ = open and $S_2$ = closed. This configuration corresponds to complete mismatch in the signal differential path. In accordance with the AAMI and IEC standards (see Ref. 4 and Ref. 5), the system CMR in this complete mismatch condition should be at least 92 dB.",
+          "value": "The standard ECG cable is used in this experiment. This cable includes a 10-kΩ protective resistance. The cable is followed by the onboard protection RC filter. The values of the components used to implement the filter are presented. All measurement results are noted with $S_1$ = open and $S_2$ = closed. This configuration corresponds to complete mismatch in the signal differential path. In accordance with the AAMI and IEC standards (see Ref. 4 and Ref. 5), the system CMR in this complete mismatch condition should be at least 92 dB.",
+          "bbox": [
+            {
+              "h": 57.85,
+              "w": 499.47,
+              "x": 55.08,
+              "y": 56.99,
+              "confidence": 1.0,
+              "end_index": 537,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Table 6-1 compares the expected and measured CMR values for different values of the protection resistor $R_P$ with and without the RLD feedback loop. The value of $C_P$ is chosen such that zero as a result of $R_P$ and $C_P$ is approximately 60 Hz. Expected values are obtained by TINA SPICE using Spice modeling of the PGA and RLD amplifier in the ADS1298.",
+          "value": "Table 6-1 compares the expected and measured CMR values for different values of the protection resistor $R_P$ with and without the RLD feedback loop. The value of $C_P$ is chosen such that zero as a result of $R_P$ and $C_P$ is approximately 60 Hz. Expected values are obtained by TINA SPICE using Spice modeling of the PGA and RLD amplifier in the ADS1298.",
+          "bbox": [
+            {
+              "h": 45.37,
+              "w": 492.36,
+              "x": 55.69,
+              "y": 122.99,
+              "confidence": 1.0,
+              "end_index": 356,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"No RLD Feedback<br/>RP\",\"No RLD Feedback<br/>Measured VPP\",\"No RLD Feedback<br/>Measured CMR\"\n\"1 MΩ\",\"5.9 mVPP\",\"70.6\"\n\"100 kΩ\",\"1.7 mVPP\",\"81.1\"\n\"75 kΩ\",\"1.6 mVPP\",\"82.0\"\n\"50 kΩ\",\"1.36 mVPP\",\"83.3\"\n\"With RLD Feedback (1 MΩ || 1.5 nF)\",,\n\"1 MΩ\",\"N/A\",\"N/A\"\n\"100 kΩ\",\"0.43 mVPP\",\"93.3\"\n\"75 kΩ\",\"0.35 mVPP\",\"94.9\"\n\"50 kΩ\",\"0.316 mVPP\",\"96.0\"",
+          "html": "<table>\n  <caption>**Table 6-1. Summary of Measurement Results**</caption>\n  <thead>\n    <tr>\n      <th colspan=\"3\"><b>No RLD Feedback</b></th>\n    </tr>\n    <tr>\n      <th>R<sub>P</sub></th>\n      <th>Measured V<sub>PP</sub></th>\n      <th><b>Measured CMR</b></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1 MΩ</td>\n      <td>5.9 mV<sub>PP</sub></td>\n      <td>70.6</td>\n    </tr>\n    <tr>\n      <td>100 kΩ</td>\n      <td>1.7 mV<sub>PP</sub></td>\n      <td>81.1</td>\n    </tr>\n    <tr>\n      <td>75 kΩ</td>\n      <td>1.6 mV<sub>PP</sub></td>\n      <td>82.0</td>\n    </tr>\n    <tr>\n      <td>50 kΩ</td>\n      <td>1.36 mV<sub>PP</sub></td>\n      <td>83.3</td>\n    </tr>\n    <tr>\n      <th colspan=\"3\"><b>With RLD Feedback (1 MΩ || 1.5 nF)</b></th>\n    </tr>\n    <tr>\n      <td>1 MΩ</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>100 kΩ</td>\n      <td>0.43 mV<sub>PP</sub></td>\n      <td>93.3</td>\n    </tr>\n    <tr>\n      <td>75 kΩ</td>\n      <td>0.35 mV<sub>PP</sub></td>\n      <td>94.9</td>\n    </tr>\n    <tr>\n      <td>50 kΩ</td>\n      <td>0.316 mV<sub>PP</sub></td>\n      <td>96.0</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### **Table 6-1. Summary of Measurement Results**\n\n| No RLD Feedback<br/>RP                   | No RLD Feedback<br/>Measured VPP | No RLD Feedback<br/>Measured CMR |\n| ---------------------------------------- | -------------------------------- | -------------------------------- |\n| 1 MΩ                                     | 5.9 mVPP                         | 70.6                             |\n| 100 kΩ                                   | 1.7 mVPP                         | 81.1                             |\n| 75 kΩ                                    | 1.6 mVPP                         | 82.0                             |\n| 50 kΩ                                    | 1.36 mVPP                        | 83.3                             |\n| **With RLD Feedback (1 MΩ \\|\\| 1.5 nF)** |                                  |                                  |\n| 1 MΩ                                     | N/A                              | N/A                              |\n| 100 kΩ                                   | 0.43 mVPP                        | 93.3                             |\n| 75 kΩ                                    | 0.35 mVPP                        | 94.9                             |\n| 50 kΩ                                    | 0.316 mVPP                       | 96.0                             |",
+          "rows": [
+            [
+              "No RLD Feedback<br/>RP",
+              "No RLD Feedback<br/>Measured VPP",
+              "No RLD Feedback<br/>Measured CMR"
+            ],
+            [
+              "1 MΩ",
+              "5.9 mVPP",
+              "70.6"
+            ],
+            [
+              "100 kΩ",
+              "1.7 mVPP",
+              "81.1"
+            ],
+            [
+              "75 kΩ",
+              "1.6 mVPP",
+              "82.0"
+            ],
+            [
+              "50 kΩ",
+              "1.36 mVPP",
+              "83.3"
+            ],
+            [
+              "With RLD Feedback (1 MΩ || 1.5 nF)",
+              "",
+              ""
+            ],
+            [
+              "1 MΩ",
+              "N/A",
+              "N/A"
+            ],
+            [
+              "100 kΩ",
+              "0.43 mVPP",
+              "93.3"
+            ],
+            [
+              "75 kΩ",
+              "0.35 mVPP",
+              "94.9"
+            ],
+            [
+              "50 kΩ",
+              "0.316 mVPP",
+              "96.0"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 142.56,
+              "w": 377.61,
+              "x": 116.89,
+              "y": 186.12,
+              "confidence": 0.9,
+              "end_index": 1314,
+              "label": "table",
+              "start_index": 51
+            },
+            {
+              "h": 9.48,
+              "w": 211.41,
+              "x": 200.16,
+              "y": 176.99,
+              "confidence": 0.969,
+              "end_index": 48,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "caption": "photo: Measurement Setup Using ADS1298EVM",
+          "md": "![photo: Measurement Setup Using ADS1298EVM](page_8_image_1_v2.jpg)",
+          "url": "page_8_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 253.44,
+              "w": 333.54,
+              "x": 138.92,
+              "y": 380.16,
+              "confidence": 0.9,
+              "end_index": 66,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "**Figure 6-2. Measurement Setup Using ADS1298EVM**",
+          "value": "Figure 6-2. Measurement Setup Using ADS1298EVM",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 245.28,
+              "x": 183.37,
+              "y": 644.54,
+              "confidence": 0.969,
+              "end_index": 49,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "8 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* SBAA188B – JULY 2011 – REVISED OCTOBER 2026 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "8 Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.44,
+                  "w": 504.08,
+                  "x": 54.29,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 224,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "8 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n*Submit Document Feedback*\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 504.08,
+              "x": 54.29,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 8,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_9_image_1_v2.jpg)",
+              "url": "page_9_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Improving CMR Using the RLD Amplifier with the ADS1298*",
+              "value": "\nwww.ti.com Improving CMR Using the RLD Amplifier with the ADS1298",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 33.32,
+                  "confidence": 1.0,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 7.57,
+                  "w": 209.0,
+                  "x": 349.04,
+                  "y": 33.22,
+                  "confidence": 1.0,
+                  "end_index": 87,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_9_image_1_v2.jpg)\nwww.ti.com *Improving CMR Using the RLD Amplifier with the ADS1298*",
+          "bbox": [
+            {
+              "h": 35.25,
+              "w": 504.8,
+              "x": 53.24,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "Figure 6-3 presents the CMR of the ECG subsystem at three different conditions:",
+          "value": "Figure 6-3 presents the CMR of the ECG subsystem at three different conditions:",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 357.87,
+              "x": 55.69,
+              "y": 56.99,
+              "confidence": 1.0,
+              "end_index": 78,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "**(a)** RP = 1 MΩ",
+              "value": "(a) RP = 1 MΩ",
+              "bbox": [
+                {
+                  "h": 9.75,
+                  "w": 75.58,
+                  "x": 57.22,
+                  "y": 74.99,
+                  "confidence": 0.3,
+                  "end_index": 16,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "**(b)** RP = 100 kΩ",
+              "value": "(b) RP = 100 kΩ",
+              "bbox": [
+                {
+                  "h": 9.63,
+                  "w": 85.82,
+                  "x": 55.69,
+                  "y": 86.99,
+                  "confidence": 0.3,
+                  "end_index": 18,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "**(c)** RP = 100 kΩ with RLD feedback",
+              "value": "(c) RP = 100 kΩ with RLD feedback",
+              "bbox": [
+                {
+                  "h": 7.5,
+                  "w": 117.51,
+                  "x": 110.58,
+                  "y": 98.99,
+                  "confidence": 0.762,
+                  "end_index": 36,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "* **(a)** RP = 1 MΩ\n* **(b)** RP = 100 kΩ\n* **(c)** RP = 100 kΩ with RLD feedback",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 21.63,
+              "w": 85.82,
+              "x": 55.69,
+              "y": 74.99,
+              "confidence": 0.3,
+              "label": "list"
+            },
+            {
+              "h": 7.5,
+              "w": 117.51,
+              "x": 110.58,
+              "y": 98.99,
+              "confidence": 0.3,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "csv": "\"Panel\",\"Condition\",\"Frequency (Hz)\",\"Peak Value (dB)\"\n\"(a)\",\"RP = 1 MΩ (No Feedback)\",\"60\",\"-70.6\"\n\"(b)\",\"RP = 100 kΩ (No Feedback)\",\"60\",\"-81.1\"\n\"(c)\",\"RP = 100 kΩ (with RLD Feedback)\",\"60\",\"-99.3\"",
+          "html": "<table>\n  <caption>Output Spectrum vs Frequency for Different R<sub>P</sub> and Feedback Conditions — Peak Values at 60 Hz</caption>\n  <thead>\n    <tr>\n      <th>Panel</th>\n      <th>Condition</th>\n      <th>Frequency (Hz)</th>\n      <th>Peak Value (dB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>(a)</th>\n      <td>R<sub>P</sub> = 1 MΩ (No Feedback)</td>\n      <td>60</td>\n      <td>-70.6</td>\n    </tr>\n    <tr>\n      <th>(b)</th>\n      <td>R<sub>P</sub> = 100 kΩ (No Feedback)</td>\n      <td>60</td>\n      <td>-81.1</td>\n    </tr>\n    <tr>\n      <th>(c)</th>\n      <td>R<sub>P</sub> = 100 kΩ (with RLD Feedback)</td>\n      <td>60</td>\n      <td>-99.3</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Output Spectrum vs Frequency for Different RP and Feedback Conditions — Peak Values at 60 Hz\n\n| Panel | Condition                       | Frequency (Hz) | Peak Value (dB) |\n| ----- | ------------------------------- | -------------- | --------------- |\n| (a)   | RP = 1 MΩ (No Feedback)         | 60             | -70.6           |\n| (b)   | RP = 100 kΩ (No Feedback)       | 60             | -81.1           |\n| (c)   | RP = 100 kΩ (with RLD Feedback) | 60             | -99.3           |",
+          "rows": [
+            [
+              "Panel",
+              "Condition",
+              "Frequency (Hz)",
+              "Peak Value (dB)"
+            ],
+            [
+              "(a)",
+              "RP = 1 MΩ (No Feedback)",
+              "60",
+              "-70.6"
+            ],
+            [
+              "(b)",
+              "RP = 100 kΩ (No Feedback)",
+              "60",
+              "-81.1"
+            ],
+            [
+              "(c)",
+              "RP = 100 kΩ (with RLD Feedback)",
+              "60",
+              "-99.3"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 399.16,
+              "w": 559.98,
+              "x": 24.48,
+              "y": 121.18,
+              "confidence": 0.9,
+              "end_index": 491,
+              "label": "chart",
+              "start_index": 98
+            },
+            {
+              "h": 9.48,
+              "w": 22.89,
+              "x": 74.87,
+              "y": 98.99,
+              "confidence": 0.1,
+              "end_index": 95,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, header, footer, caption, image, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 3,
+          "md": "### **Figure 6-3. Output Spectrum Comparison**",
+          "value": "Figure 6-3. Output Spectrum Comparison",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 194.72,
+              "x": 208.67,
+              "y": 529.04,
+              "confidence": 0.938,
+              "end_index": 45,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "An inverting gain configuration is achieved using the RLD amplifier available in the ADS1298. In this experiment, the values of RF and CF used are 1 MΩ and 1.5 nF, respectively. The closed-loop gain of the RLD loop depends on the number of channels that are used to detect the common-mode voltage. In this experiment, only one channel is used to sense the common potential of the input. For the given feedback resistor, as the number of channels used to measure the common-mode potential increases, the gain also increases accordingly. The nominal value of R<sub>CM</sub> used in the ADS1298 is equal to 220 kΩ. The closed-loop bandwidth is approximately 106 Hz.",
+          "value": "An inverting gain configuration is achieved using the RLD amplifier available in the ADS1298. In this experiment, the values of RF and CF used are 1 MΩ and 1.5 nF, respectively. The closed-loop gain of the RLD loop depends on the number of channels that are used to detect the common-mode voltage. In this experiment, only one channel is used to sense the common potential of the input. For the given feedback resistor, as the number of channels used to measure the common-mode potential increases, the gain also increases accordingly. The nominal value of R<sub>CM</sub> used in the ADS1298 is equal to 220 kΩ. The closed-loop bandwidth is approximately 106 Hz.",
+          "bbox": [
+            {
+              "h": 79.39,
+              "w": 497.72,
+              "x": 55.69,
+              "y": 551.04,
+              "confidence": 0.991,
+              "end_index": 661,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The ADS1298 provides the option to monitor the value of electrode potential through the lead-off feature. It also supports digital control, which can be used to turn on or turn off averaging of the PGA outputs. These two options can be used efficiently to ensure that whenever there is a loose contact or disconnection of the electrode, the RLD feedback is opened to avoid the railing of the bias potential at the patient’s body.",
+          "value": "The ADS1298 provides the option to monitor the value of electrode potential through the lead-off feature. It also supports digital control, which can be used to turn on or turn off averaging of the PGA outputs. These two options can be used efficiently to ensure that whenever there is a loose contact or disconnection of the electrode, the RLD feedback is opened to avoid the railing of the bias potential at the patient’s body.",
+          "bbox": [
+            {
+              "h": 45.48,
+              "w": 471.77,
+              "x": 55.69,
+              "y": 641.04,
+              "confidence": 1.0,
+              "end_index": 428,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* 9 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026 Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier 9\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.44,
+                  "w": 503.37,
+                  "x": 54.32,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 224,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA188B – JULY 2011 – REVISED OCTOBER 2026 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* 9\n*Submit Document Feedback*\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 503.37,
+              "x": 54.32,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 9,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Conclusion*",
+              "value": "Conclusion",
+              "bbox": [
+                {
+                  "h": 6.0,
+                  "w": 38.62,
+                  "x": 54.73,
+                  "y": 33.22,
+                  "confidence": 0.581,
+                  "end_index": 11,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_10_image_1_v2.jpg)",
+              "url": "page_10_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.3,
+                  "x": 460.84,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 49,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)",
+              "value": "\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 33.32,
+                  "confidence": 0.844,
+                  "end_index": 30,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Conclusion*\n\n![logo: Texas Instruments](page_10_image_1_v2.jpg)\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 34.85,
+              "w": 503.41,
+              "x": 54.73,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **7 Conclusion**",
+          "value": "7 Conclusion",
+          "bbox": [
+            {
+              "h": 9.0,
+              "w": 74.03,
+              "x": 57.2,
+              "y": 54.29,
+              "confidence": 0.813,
+              "end_index": 17,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "This application report explains in detail several techniques to improve the common-mode rejection of an ECG system using a RLD amplifier. Measurement results using the ADS1298EVM board were also presented.",
+          "value": "This application report explains in detail several techniques to improve the common-mode rejection of an ECG system using a RLD amplifier. Measurement results using the ADS1298EVM board were also presented.",
+          "bbox": [
+            {
+              "h": 22.23,
+              "w": 487.23,
+              "x": 55.69,
+              "y": 74.39,
+              "confidence": 1.0,
+              "end_index": 205,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# **8 References**",
+          "value": "8 References",
+          "bbox": [
+            {
+              "h": 9.01,
+              "w": 73.63,
+              "x": 57.18,
+              "y": 104.69,
+              "confidence": 0.813,
+              "end_index": 17,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "items": [
+            {
+              "md": "Winter, B.B. and Webster, J.G. (1983). *Driven-right-leg circuit design*. IEEE Transactions on Biomedical Engineering, Vol 30, No 1. Pp. 62 - 66.",
+              "value": "Winter, B.B. and Webster, J.G. (1983). Driven-right-leg circuit design. IEEE Transactions on Biomedical Engineering, Vol 30, No 1. Pp. 62 - 66.",
+              "bbox": [
+                {
+                  "h": 21.48,
+                  "w": 471.67,
+                  "x": 57.78,
+                  "y": 124.79,
+                  "confidence": 1.0,
+                  "end_index": 144,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "Safe current limits for electromedical apparatus. ANSI/AAMI ES1-1993.",
+              "value": "Safe current limits for electromedical apparatus. ANSI/AAMI ES1-1993.",
+              "bbox": [
+                {
+                  "h": 9.37,
+                  "w": 332.98,
+                  "x": 55.69,
+                  "y": 148.79,
+                  "confidence": 1.0,
+                  "end_index": 68,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "ADS1298ECG-FE Demonstration Kit user guide. Literature number SBAU171A.",
+              "value": "ADS1298ECG-FE Demonstration Kit user guide. Literature number SBAU171A.",
+              "bbox": [
+                {
+                  "h": 9.48,
+                  "w": 370.8,
+                  "x": 55.69,
+                  "y": 160.79,
+                  "confidence": 1.0,
+                  "end_index": 70,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "American National Standard ANSI/AAMI EC11:1991/(R)2001/(R)2007.",
+              "value": "American National Standard ANSI/AAMI EC11:1991/(R)2001/(R)2007.",
+              "bbox": [
+                {
+                  "h": 10.16,
+                  "w": 328.65,
+                  "x": 55.69,
+                  "y": 172.79,
+                  "confidence": 1.0,
+                  "end_index": 62,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "International Standard IEC 60601-2-27.",
+              "value": "International Standard IEC 60601-2-27.",
+              "bbox": [
+                {
+                  "h": 7.5,
+                  "w": 190.99,
+                  "x": 57.11,
+                  "y": 184.79,
+                  "confidence": 0.938,
+                  "end_index": 37,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "1. Winter, B.B. and Webster, J.G. (1983). *Driven-right-leg circuit design*. IEEE Transactions on Biomedical Engineering, Vol 30, No 1. Pp. 62 - 66.\n2. Safe current limits for electromedical apparatus. ANSI/AAMI ES1-1993.\n3. ADS1298ECG-FE Demonstration Kit user guide. Literature number SBAU171A.\n4. American National Standard ANSI/AAMI EC11:1991/(R)2001/(R)2007.\n5. International Standard IEC 60601-2-27.",
+          "ordered": true,
+          "bbox": [
+            {
+              "h": 67.5,
+              "w": 473.76,
+              "x": 55.69,
+              "y": 124.79,
+              "confidence": 0.938,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "level": 1,
+          "md": "# **9 Revision History**",
+          "value": "9 Revision History",
+          "bbox": [
+            {
+              "h": 11.26,
+              "w": 104.49,
+              "x": 57.08,
+              "y": 217.2,
+              "confidence": 0.844,
+              "end_index": 23,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "NOTE: Page numbers for previous revisions may differ from page numbers in the current version.",
+          "value": "NOTE: Page numbers for previous revisions may differ from page numbers in the current version.",
+          "bbox": [
+            {
+              "h": 9.49,
+              "w": 430.67,
+              "x": 55.69,
+              "y": 232.18,
+              "confidence": 1.0,
+              "end_index": 93,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Changes from Revision A (May 2015) to Revision B (October 2026)\",\"Page\"\n\"• Updated the numbering format for tables, figures, and cross-references throughout the document................\",\"1\"",
+          "html": "<table>\n  <thead>\n    <tr>\n      <th><b>Changes from Revision A (May 2015) to Revision B (October 2026)</b></th>\n      <th>Page</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>• Updated the numbering format for tables, figures, and cross-references throughout the document................</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Changes from Revision A (May 2015) to Revision B (October 2026)                                                  | Page |\n| ---------------------------------------------------------------------------------------------------------------- | ---- |\n| • Updated the numbering format for tables, figures, and cross-references throughout the document................ | 1    |",
+          "rows": [
+            [
+              "Changes from Revision A (May 2015) to Revision B (October 2026)",
+              "Page"
+            ],
+            [
+              "• Updated the numbering format for tables, figures, and cross-references throughout the document................",
+              "1"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 23.48,
+              "w": 497.78,
+              "x": 57.16,
+              "y": 256.19,
+              "confidence": 0.9,
+              "end_index": 370,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "items": [
+            {
+              "md": "10 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* SBAA188B – JULY 2011 – REVISED OCTOBER 2026 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "value": "10 Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2026 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.44,
+                  "w": 503.61,
+                  "x": 54.76,
+                  "y": 753.44,
+                  "confidence": 1.0,
+                  "end_index": 225,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "10 *Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier* SBAA188B – JULY 2011 – REVISED OCTOBER 2026\n*Submit Document Feedback*\nCopyright © 2026 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.44,
+              "w": 503.61,
+              "x": 54.76,
+              "y": 753.44
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 10,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "level": 2,
+          "md": "## **IMPORTANT NOTICE AND DISCLAIMER**",
+          "value": "IMPORTANT NOTICE AND DISCLAIMER",
+          "bbox": [
+            {
+              "h": 9.01,
+              "w": 225.57,
+              "x": 193.6,
+              "y": 76.79,
+              "confidence": 0.875,
+              "end_index": 37,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.",
+          "value": "TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.",
+          "bbox": [
+            {
+              "h": 44.41,
+              "w": 483.48,
+              "x": 58.69,
+              "y": 93.59,
+              "confidence": 1.0,
+              "end_index": 450,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable standards, and any other safety, security, regulatory or other requirements.",
+          "value": "These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable standards, and any other safety, security, regulatory or other requirements.",
+          "bbox": [
+            {
+              "h": 26.79,
+              "w": 489.18,
+              "x": 58.88,
+              "y": 145.59,
+              "confidence": 1.0,
+              "end_index": 357,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.",
+          "value": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.",
+          "bbox": [
+            {
+              "h": 36.39,
+              "w": 494.2,
+              "x": 58.88,
+              "y": 178.39,
+              "confidence": 1.0,
+              "end_index": 562,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI’s products are provided subject to <u>TI’s Terms of Sale, TI’s General Quality Guidelines,</u> or other applicable terms available either on <u>ti.com</u> or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products are standard, catalog, general purpose devices.",
+          "value": "TI’s products are provided subject to <u>TI’s Terms of Sale, TI’s General Quality Guidelines,</u> or other applicable terms available either on <u>ti.com</u> or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products are standard, catalog, general purpose devices.",
+          "bbox": [
+            {
+              "h": 36.39,
+              "w": 489.81,
+              "x": 58.72,
+              "y": 220.79,
+              "confidence": 1.0,
+              "end_index": 478,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI objects to and rejects any additional or different terms you may propose.",
+          "value": "TI objects to and rejects any additional or different terms you may propose.",
+          "bbox": [
+            {
+              "h": 7.59,
+              "w": 260.68,
+              "x": 58.88,
+              "y": 263.19,
+              "confidence": 1.0,
+              "end_index": 75,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Copyright © 2026, Texas Instruments Incorporated",
+          "value": "Copyright © 2026, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 7.58,
+              "w": 177.89,
+              "x": 216.87,
+              "y": 300.59,
+              "confidence": 0.906,
+              "end_index": 47,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Last updated 10/2025",
+          "value": "Last updated 10/2025",
+          "bbox": [
+            {
+              "h": 7.5,
+              "w": 76.48,
+              "x": 267.89,
+              "y": 315.39,
+              "confidence": 0.875,
+              "end_index": 19,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 11,
+      "page_width": 612.0,
+      "success": true
+    }
+  ]
+}

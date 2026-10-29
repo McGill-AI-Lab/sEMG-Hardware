@@ -1,0 +1,2239 @@
+{
+  "document_id": "SBAA185",
+  "source_pdf": "docs/datasheets/originals/ti-app-notes/SBAA185.pdf",
+  "tier": "agentic_plus",
+  "sha256": "fc062c457ed96ffcca0cdfac9c8fd6e76b27b372a8ee26da494182f94a4ca725",
+  "pages": 6,
+  "tables_detected": 3,
+  "items_pages": [
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_1_image_1_v2.jpg)",
+              "url": "page_1_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 38.01,
+                  "w": 155.45,
+                  "x": 53.24,
+                  "y": 74.45,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "*Application Report*\n*SBAA185—May 2011*",
+              "value": "Application Report\nSBAA185—May 2011",
+              "bbox": [
+                {
+                  "h": 25.47,
+                  "w": 115.74,
+                  "x": 443.5,
+                  "y": 77.65,
+                  "confidence": 0.906,
+                  "end_index": 38,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_1_image_1_v2.jpg)\n\n\n*Application Report*\n*SBAA185—May 2011*",
+          "bbox": [
+            {
+              "h": 38.01,
+              "w": 506.0,
+              "x": 53.24,
+              "y": 74.45
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **Thermal Noise Analysis in ECG Applications**",
+          "value": "Thermal Noise Analysis in ECG Applications",
+          "bbox": [
+            {
+              "h": 17.49,
+              "w": 381.07,
+              "x": 177.42,
+              "y": 129.03,
+              "confidence": 0.938,
+              "end_index": 47,
+              "label": "doc_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "*Jack Li*                                                                    *High-Performance Analog*",
+          "value": "Jack Li                                                                    High-Performance Analog",
+          "bbox": [
+            {
+              "h": 9.47,
+              "w": 503.93,
+              "x": 54.47,
+              "y": 155.62,
+              "confidence": 0.906,
+              "end_index": 101,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **ABSTRACT**",
+          "value": "ABSTRACT",
+          "bbox": [
+            {
+              "h": 7.55,
+              "w": 54.66,
+              "x": 293.7,
+              "y": 187.73,
+              "confidence": 0.581,
+              "end_index": 14,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "This article discusses the thermal noise source of electrocardiogram (ECG) applications based on the <u>ADS1298</u> and <u>ADS1298R</u> family of multichannel, simultaneous sampling, 24-bit, delta-sigma (ΔΣ) analog-to-digital converters (ADCs). This report offers several observations on identifying the major sources of thermal noise in an ECG system, and recommends a method to improve thermal noise performance.",
+          "value": "This article discusses the thermal noise source of electrocardiogram (ECG) applications based on the <u>ADS1298</u> and <u>ADS1298R</u> family of multichannel, simultaneous sampling, 24-bit, delta-sigma (ΔΣ) analog-to-digital converters (ADCs). This report offers several observations on identifying the major sources of thermal noise in an ECG system, and recommends a method to improve thermal noise performance.",
+          "bbox": [
+            {
+              "h": 53.43,
+              "w": 474.72,
+              "x": 82.62,
+              "y": 204.73,
+              "confidence": 1.0,
+              "end_index": 413,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 3,
+          "md": "### **Contents**",
+          "value": "Contents",
+          "bbox": [
+            {
+              "h": 6.8,
+              "w": 38.27,
+              "x": 301.9,
+              "y": 285.57,
+              "confidence": 0.581,
+              "end_index": 15,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"1\",\"Introduction ..................................................................................................................\",\"1\"\n\"2\",\"Noise in ECG Signal Path .................................................................................................\",\"2\"\n\"3\",\"Summary .....................................................................................................................\",\"5\"\n\"4\",\"References ...................................................................................................................\",\"5\"",
+          "html": "<table>\n    <tr>\n      <td>1</td>\n      <td>Introduction ..................................................................................................................</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Noise in ECG Signal Path .................................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Summary .....................................................................................................................</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>References ...................................................................................................................</td>\n      <td>5</td>\n    </tr>\n</table>",
+          "md": "| 1 | Introduction .................................................................................................................. | 1 |\n| - | ------------------------------------------------------------------------------------------------------------------------------- | - |\n| 2 | Noise in ECG Signal Path .................................................................................................      | 2 |\n| 3 | Summary .....................................................................................................................   | 5 |\n| 4 | References ...................................................................................................................  | 5 |",
+          "rows": [
+            [
+              "1",
+              "Introduction ..................................................................................................................",
+              "1"
+            ],
+            [
+              "2",
+              "Noise in ECG Signal Path .................................................................................................",
+              "2"
+            ],
+            [
+              "3",
+              "Summary .....................................................................................................................",
+              "5"
+            ],
+            [
+              "4",
+              "References ...................................................................................................................",
+              "5"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 44.07,
+              "w": 473.2,
+              "x": 84.23,
+              "y": 295.19,
+              "confidence": 0.9,
+              "end_index": 698,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, image, paragraph_title, footer, doc_title, reference] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 2,
+          "md": "## **1 Introduction**",
+          "value": "1 Introduction",
+          "bbox": [
+            {
+              "h": 8.12,
+              "w": 92.6,
+              "x": 54.76,
+              "y": 364.23,
+              "confidence": 0.613,
+              "end_index": 20,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "The Association for the Advancement of Medical Instrumentation (AAMI) specifications allow 30-μV<sub>PP</sub> noise at 150-Hz bandwidth during a 10-second recording. The primary sources of thermal noise in an ECG system are generally caused by either resistors or amplifiers. This stochastic noise is specified as *root-mean-square (RMS) noise*, and is proportional to the square root of the noise bandwidth.",
+          "value": "The Association for the Advancement of Medical Instrumentation (AAMI) specifications allow 30-μV<sub>PP</sub> noise at 150-Hz bandwidth during a 10-second recording. The primary sources of thermal noise in an ECG system are generally caused by either resistors or amplifiers. This stochastic noise is specified as root-mean-square (RMS) noise, and is proportional to the square root of the noise bandwidth.",
+          "bbox": [
+            {
+              "h": 42.39,
+              "w": 458.3,
+              "x": 83.23,
+              "y": 381.97,
+              "confidence": 0.995,
+              "end_index": 407,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Considering that the bulk of the system noise is Gaussian in nature, computed as RMS but specified by AAMI as peak-to-peak, we must develop a scale factor that gives us a confidence level that the peak-to-peak noise will not exceed 30 μV in any 10-second recording (5000 samples at 500 Hz). That level of confidence (1 part in 5000) equates to approximately 8σ. RMS is, by definition, 1σ, so we must have an RMS noise level approximately 1/8 the AAMI peak-to-peak specification, or 3.75-μV<sub>RMS</sub>.",
+          "value": "Considering that the bulk of the system noise is Gaussian in nature, computed as RMS but specified by AAMI as peak-to-peak, we must develop a scale factor that gives us a confidence level that the peak-to-peak noise will not exceed 30 μV in any 10-second recording (5000 samples at 500 Hz). That level of confidence (1 part in 5000) equates to approximately 8σ. RMS is, by definition, 1σ, so we must have an RMS noise level approximately 1/8 the AAMI peak-to-peak specification, or 3.75-μV<sub>RMS</sub>.",
+          "bbox": [
+            {
+              "h": 53.5,
+              "w": 461.33,
+              "x": 82.62,
+              "y": 431.93,
+              "confidence": 0.985,
+              "end_index": 503,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "All trademarks are the property of their respective owners.",
+              "value": "All trademarks are the property of their respective owners.",
+              "bbox": [
+                {
+                  "h": 7.53,
+                  "w": 207.23,
+                  "x": 55.69,
+                  "y": 733.78,
+                  "confidence": 1.0,
+                  "end_index": 58,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "SBAA185—May 2011 \\*Thermal Noise Analysis in ECG Applications\\* 1 \\*Submit Documentation Feedback\\*",
+              "value": "SBAA185—May 2011 *Thermal Noise Analysis in ECG Applications* 1 *Submit Documentation Feedback*",
+              "bbox": [
+                {
+                  "h": 15.36,
+                  "w": 501.98,
+                  "x": 54.39,
+                  "y": 751.18,
+                  "confidence": 1.0,
+                  "end_index": 98,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "Copyright © 2011, Texas Instruments Incorporated",
+              "value": "Copyright © 2011, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 6.7,
+                  "w": 157.33,
+                  "x": 227.21,
+                  "y": 767.93,
+                  "confidence": 0.906,
+                  "end_index": 47,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "All trademarks are the property of their respective owners.\n<hr>\nSBAA185—May 2011                                     *Thermal Noise Analysis in ECG Applications*          1\n*Submit Documentation Feedback*\n\nCopyright © 2011, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 40.85,
+              "w": 501.98,
+              "x": 54.39,
+              "y": 733.78
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 1,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Noise in ECG Signal Path*\n[www.ti.com](http://www.ti.com)",
+              "value": "Noise in ECG Signal Path\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 8.6,
+                  "w": 103.29,
+                  "x": 54.68,
+                  "y": 57.77,
+                  "confidence": 1.0,
+                  "end_index": 26,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.86,
+                  "w": 44.29,
+                  "x": 513.11,
+                  "y": 58.66,
+                  "confidence": 1.0,
+                  "end_index": 57,
+                  "label": "header",
+                  "start_index": 27
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Noise in ECG Signal Path*\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 8.6,
+              "w": 502.72,
+              "x": 54.68,
+              "y": 57.77
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_2_image_2_v2.jpg)",
+          "url": "page_2_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 22.97,
+              "w": 94.25,
+              "x": 463.28,
+              "y": 11.88,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "level": 1,
+          "md": "# **2 Noise in ECG Signal Path**",
+          "value": "2 Noise in ECG Signal Path",
+          "bbox": [
+            {
+              "h": 10.48,
+              "w": 163.59,
+              "x": 53.24,
+              "y": 76.89,
+              "confidence": 0.938,
+              "end_index": 31,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "There are three components of the system noise. Each source is analyzed a bit differently. Figure 1 illustrates the ECG signal path based on the ADS1298/98R.",
+          "value": "There are three components of the system noise. Each source is analyzed a bit differently. Figure 1 illustrates the ECG signal path based on the ADS1298/98R.",
+          "bbox": [
+            {
+              "h": 20.47,
+              "w": 441.41,
+              "x": 83.23,
+              "y": 94.82,
+              "confidence": 1.0,
+              "end_index": 156,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    Human[\"![icon: human figure](page_2_image_4_v2.jpg)\"]\n    PC[\"Protection Circuit\"]\n    AFE[\"ADS1298/ADS1298R Analog Front-End\"]\n    MCU[\"MCU with Display\"]\n\n    Human -.->|\"ECG Leads\"| PC\n    Human -.-> PC\n    Human -.-> PC\n    PC --> AFE\n    AFE --> MCU\n```",
+          "value": "graph LR\n    Human[\"![icon: human figure](page_2_image_4_v2.jpg)\"]\n    PC[\"Protection Circuit\"]\n    AFE[\"ADS1298/ADS1298R Analog Front-End\"]\n    MCU[\"MCU with Display\"]\n\n    Human -.->|\"ECG Leads\"| PC\n    Human -.-> PC\n    Human -.-> PC\n    PC --> AFE\n    AFE --> MCU",
+          "bbox": [
+            {
+              "h": 49.04,
+              "w": 353.97,
+              "x": 161.79,
+              "y": 144.24,
+              "confidence": 0.695,
+              "end_index": 281,
+              "label": "code",
+              "start_index": 0
+            },
+            {
+              "h": 158.77,
+              "w": 460.09,
+              "x": 74.62,
+              "y": 123.88,
+              "confidence": 0.9,
+              "end_index": 74,
+              "label": "image",
+              "start_index": 31
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Figure 1. ECG Signal Path Based on ADS1298/98R**",
+          "value": "Figure 1. ECG Signal Path Based on ADS1298/98R",
+          "bbox": [
+            {
+              "h": 9.53,
+              "w": 238.74,
+              "x": 186.76,
+              "y": 272.73,
+              "confidence": 1.0,
+              "end_index": 49,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The primary noise sources are the 10-kΩ defibrillation protection resistors embedded in the patient block.",
+          "value": "The primary noise sources are the 10-kΩ defibrillation protection resistors embedded in the patient block.",
+          "bbox": [
+            {
+              "h": 9.52,
+              "w": 466.71,
+              "x": 83.23,
+              "y": 298.71,
+              "confidence": 0.978,
+              "end_index": 105,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **2.1 *AAMI Signal Source (51 kΩ||47 nF)***",
+          "value": "2.1 AAMI Signal Source (51 kΩ||47 nF)",
+          "bbox": [
+            {
+              "h": 11.15,
+              "w": 210.92,
+              "x": 54.28,
+              "y": 323.87,
+              "confidence": 0.961,
+              "end_index": 45,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "The AAMI specification calls for a source impedance of 51 kΩ in parallel with 47 nF. For more information, refer to the skin electrode contact model in Figure 1 as well as Figure 59 in the <u>ADS1298/98R product data sheet.</u> Figure 2 shows the block diagram of the ADS1298/98R analog front-end circuit.",
+          "value": "The AAMI specification calls for a source impedance of 51 kΩ in parallel with 47 nF. For more information, refer to the skin electrode contact model in Figure 1 as well as Figure 59 in the <u>ADS1298/98R product data sheet.</u> Figure 2 shows the block diagram of the ADS1298/98R analog front-end circuit.",
+          "bbox": [
+            {
+              "h": 31.58,
+              "w": 473.69,
+              "x": 83.23,
+              "y": 341.71,
+              "confidence": 0.994,
+              "end_index": 304,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "ADS129x",
+          "value": "ADS129x",
+          "bbox": [
+            {
+              "h": 5.31,
+              "w": 30.38,
+              "x": 422.36,
+              "y": 383.18,
+              "confidence": 0.475,
+              "end_index": 6,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "drawing: Analog Front-End Input Circuit schematic showing the signal path from the patient through skin model, protection resistors, EMI filter, and into the ADS129x PGA and comparators.",
+          "md": "![drawing: Analog Front-End Input Circuit schematic showing the signal path from the patient through skin model, protection resistors, EMI filter, and into the ADS129x PGA and comparators.](page_2_image_3_v2.jpg)",
+          "url": "page_2_image_3_v2.jpg",
+          "bbox": [
+            {
+              "h": 268.58,
+              "w": 437.7,
+              "x": 86.88,
+              "y": 383.68,
+              "confidence": 0.9,
+              "end_index": 211,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "**Figure 2. Analog Front-End Input Circuit**",
+          "value": "Figure 2. Analog Front-End Input Circuit",
+          "type": "text"
+        },
+        {
+          "md": "The schematic diagram illustrates the following components and connections:",
+          "value": "The schematic diagram illustrates the following components and connections:",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "**Patient Interface:**",
+              "value": "Patient Interface:",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "**Patient** connection point.",
+                  "value": "Patient connection point.",
+                  "type": "text"
+                },
+                {
+                  "md": "**Skin, Electrode Contact Model:** Consists of parallel RC networks (51kΩ resistor and 47nF capacitor) for two signal lines and the RLD line.",
+                  "value": "Skin, Electrode Contact Model: Consists of parallel RC networks (51kΩ resistor and 47nF capacitor) for two signal lines and the RLD line.",
+                  "type": "text"
+                },
+                {
+                  "md": "**Patient Protection Resistor:** 100kΩ resistors in series with each line.",
+                  "value": "Patient Protection Resistor: 100kΩ resistors in series with each line.",
+                  "bbox": [
+                    {
+                      "h": 23.14,
+                      "w": 30.48,
+                      "x": 184.05,
+                      "y": 403.91,
+                      "confidence": 0.655,
+                      "end_index": 73,
+                      "label": "text",
+                      "start_index": 0
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "md": "* **Patient** connection point.\n* **Skin, Electrode Contact Model:** Consists of parallel RC networks (51kΩ resistor and 47nF capacitor) for two signal lines and the RLD line.\n* **Patient Protection Resistor:** 100kΩ resistors in series with each line.",
+              "ordered": false,
+              "bbox": [
+                {
+                  "h": 23.14,
+                  "w": 30.48,
+                  "x": 184.05,
+                  "y": 403.91,
+                  "confidence": 0.655,
+                  "label": "list"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "md": "**Signal Processing:**",
+              "value": "Signal Processing:",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "**EMI Filter:** Block processing the differential signal lines.",
+                  "value": "EMI Filter: Block processing the differential signal lines.",
+                  "type": "text"
+                },
+                {
+                  "md": "**ADS129x Internal Components:**",
+                  "value": "ADS129x Internal Components:",
+                  "type": "text"
+                },
+                {
+                  "items": [
+                    {
+                      "md": "**PGA (Programmable Gain Amplifier):** Receives $V_{INP}$ and $V_{INN}$ signals, outputting to the ADC.",
+                      "value": "PGA (Programmable Gain Amplifier): Receives $V_{INP}$ and $V_{INN}$ signals, outputting to the ADC.",
+                      "type": "text"
+                    },
+                    {
+                      "md": "**Comparators:** Two comparators (indicated by the Z symbol) monitoring the input lines, outputting `LOFF_STATP` and `LOFF_STATN`.",
+                      "value": "Comparators: Two comparators (indicated by the Z symbol) monitoring the input lines, outputting LOFF_STATP and LOFF_STATN.",
+                      "type": "text"
+                    },
+                    {
+                      "md": "**4-Bit DAC:** Controlled by `COMP_TH[2:0]`, providing reference levels to the comparators.",
+                      "value": "4-Bit DAC: Controlled by COMP_TH[2:0], providing reference levels to the comparators.",
+                      "bbox": [
+                        {
+                          "h": 14.17,
+                          "w": 93.2,
+                          "x": 425.64,
+                          "y": 587.25,
+                          "confidence": 0.713,
+                          "end_index": 90,
+                          "label": "text",
+                          "start_index": 0
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "md": "* **PGA (Programmable Gain Amplifier):** Receives $V_{INP}$ and $V_{INN}$ signals, outputting to the ADC.\n* **Comparators:** Two comparators (indicated by the Z symbol) monitoring the input lines, outputting `LOFF_STATP` and `LOFF_STATN`.\n* **4-Bit DAC:** Controlled by `COMP_TH[2:0]`, providing reference levels to the comparators.",
+                  "ordered": false,
+                  "bbox": [
+                    {
+                      "h": 14.17,
+                      "w": 93.2,
+                      "x": 425.64,
+                      "y": 587.25,
+                      "confidence": 0.713,
+                      "label": "list"
+                    }
+                  ],
+                  "type": "list"
+                }
+              ],
+              "md": "* **EMI Filter:** Block processing the differential signal lines.\n* **ADS129x Internal Components:**\n  * **PGA (Programmable Gain Amplifier):** Receives $V_{INP}$ and $V_{INN}$ signals, outputting to the ADC.\n  * **Comparators:** Two comparators (indicated by the Z symbol) monitoring the input lines, outputting `LOFF_STATP` and `LOFF_STATN`.\n  * **4-Bit DAC:** Controlled by `COMP_TH[2:0]`, providing reference levels to the comparators.",
+              "ordered": false,
+              "bbox": [
+                {
+                  "h": 14.17,
+                  "w": 93.2,
+                  "x": 425.64,
+                  "y": 587.25,
+                  "confidence": 0.713,
+                  "label": "list"
+                }
+              ],
+              "type": "list"
+            },
+            {
+              "md": "**RLD OUT:** Right Leg Drive output connected through the protection and skin model stages.",
+              "value": "RLD OUT: Right Leg Drive output connected through the protection and skin model stages.",
+              "type": "text"
+            }
+          ],
+          "md": "* **Patient Interface:**\n  * **Patient** connection point.\n  * **Skin, Electrode Contact Model:** Consists of parallel RC networks (51kΩ resistor and 47nF capacitor) for two signal lines and the RLD line.\n  * **Patient Protection Resistor:** 100kΩ resistors in series with each line.\n* **Signal Processing:**\n  * **EMI Filter:** Block processing the differential signal lines.\n  * **ADS129x Internal Components:**\n    * **PGA (Programmable Gain Amplifier):** Receives $V_{INP}$ and $V_{INN}$ signals, outputting to the ADC.\n    * **Comparators:** Two comparators (indicated by the Z symbol) monitoring the input lines, outputting `LOFF_STATP` and `LOFF_STATN`.\n    * **4-Bit DAC:** Controlled by `COMP_TH[2:0]`, providing reference levels to the comparators.\n* **RLD OUT:** Right Leg Drive output connected through the protection and skin model stages.",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 23.14,
+              "w": 30.48,
+              "x": 184.05,
+              "y": 403.91,
+              "confidence": 0.655,
+              "label": "list"
+            },
+            {
+              "h": 14.17,
+              "w": 93.2,
+              "x": 425.64,
+              "y": 587.25,
+              "confidence": 0.655,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "items": [
+            {
+              "md": "2 *Thermal Noise Analysis in ECG Applications*\nSBAA185– May 2011 <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span>\nCopyright © 2011, Texas Instruments Incorporated",
+              "value": "2 Thermal Noise Analysis in ECG Applications\nSBAA185– May 2011\n<span style=\"color:#0000ff\">Submit Documentation Feedback</span>\nCopyright © 2011, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.45,
+                  "w": 504.52,
+                  "x": 54.21,
+                  "y": 751.18,
+                  "confidence": 1.0,
+                  "end_index": 179,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "2 *Thermal Noise Analysis in ECG Applications*\nSBAA185– May 2011\n*Submit Documentation Feedback*\nCopyright © 2011, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.45,
+              "w": 504.52,
+              "x": 54.21,
+              "y": 751.18
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 2,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Noise in ECG Signal Path*",
+              "value": "www.ti.com Noise in ECG Signal Path",
+              "bbox": [
+                {
+                  "h": 5.86,
+                  "w": 44.29,
+                  "x": 54.12,
+                  "y": 58.66,
+                  "confidence": 1.0,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 8.6,
+                  "w": 103.29,
+                  "x": 454.78,
+                  "y": 57.77,
+                  "confidence": 1.0,
+                  "end_index": 57,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "www.ti.com *Noise in ECG Signal Path*",
+          "bbox": [
+            {
+              "h": 8.6,
+              "w": 503.95,
+              "x": 54.12,
+              "y": 57.77
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_3_image_2_v2.jpg)",
+          "url": "page_3_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 22.97,
+              "w": 93.64,
+              "x": 55.08,
+              "y": 11.88,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "Thermal noise is produced by a random motion of charges. The RMS open-circuit voltage ($e$) across a resistor ($R$) is given by Equation 1.",
+          "value": "Thermal noise is produced by a random motion of charges. The RMS open-circuit voltage ($e$) across a resistor ($R$) is given by Equation 1.",
+          "bbox": [
+            {
+              "h": 20.56,
+              "w": 455.31,
+              "x": 83.23,
+              "y": 76.73,
+              "confidence": 1.0,
+              "end_index": 138,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$e^2 = 4kTR\\Delta f \\eqno(1)$$",
+          "value": "$$e^2 = 4kTR\\Delta f \\eqno(1)$$",
+          "bbox": [
+            {
+              "h": 10.28,
+              "w": 448.64,
+              "x": 108.4,
+              "y": 103.88,
+              "confidence": 0.6,
+              "end_index": 30,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "where:",
+          "value": "where:",
+          "bbox": [
+            {
+              "h": 7.32,
+              "w": 30.22,
+              "x": 97.92,
+              "y": 121.92,
+              "confidence": 0.581,
+              "end_index": 5,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "$k$ is temperature (Kelvins)",
+              "value": "$k$ is temperature (Kelvins)",
+              "bbox": [
+                {
+                  "h": 9.39,
+                  "w": 127.81,
+                  "x": 84.53,
+                  "y": 135.17,
+                  "confidence": 0.875,
+                  "end_index": 27,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "$R$ is resistance ($\\Omega$)",
+              "value": "$R$ is resistance ($\\Omega$)",
+              "bbox": [
+                {
+                  "h": 9.45,
+                  "w": 98.22,
+                  "x": 83.23,
+                  "y": 148.51,
+                  "confidence": 0.844,
+                  "end_index": 27,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "$\\Delta f$ is frequency (Hz)",
+              "value": "$\\Delta f$ is frequency (Hz)",
+              "bbox": [
+                {
+                  "h": 9.46,
+                  "w": 102.18,
+                  "x": 84.53,
+                  "y": 161.97,
+                  "confidence": 0.875,
+                  "end_index": 27,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "$k$ is Boltzmann’s constant ($1.38 \\times 10^{-23}$ joule/Kelvins)",
+              "value": "$k$ is Boltzmann’s constant ($1.38 \\times 10^{-23}$ joule/Kelvins)",
+              "bbox": [
+                {
+                  "h": 10.31,
+                  "w": 227.05,
+                  "x": 83.23,
+                  "y": 174.48,
+                  "confidence": 0.968,
+                  "end_index": 65,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "$e$ is voltage ($V_{\\text{RMS}}$)",
+              "value": "$e$ is voltage ($V_{\\text{RMS}}$)",
+              "bbox": [
+                {
+                  "h": 9.52,
+                  "w": 94.45,
+                  "x": 84.53,
+                  "y": 188.77,
+                  "confidence": 0.906,
+                  "end_index": 32,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "* $k$ is temperature (Kelvins)\n* $R$ is resistance ($\\Omega$)\n* $\\Delta f$ is frequency (Hz)\n* $k$ is Boltzmann’s constant ($1.38 \\times 10^{-23}$ joule/Kelvins)\n* $e$ is voltage ($V_{\\text{RMS}}$)",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 63.12,
+              "w": 227.05,
+              "x": 83.23,
+              "y": 135.17,
+              "confidence": 0.844,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "level": 3,
+          "md": "### ***Example 1. Noise in RC Network***",
+          "value": "Example 1. Noise in RC Network",
+          "bbox": [
+            {
+              "h": 9.43,
+              "w": 154.86,
+              "x": 84.76,
+              "y": 205.73,
+              "confidence": 0.938,
+              "end_index": 39,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "As an example of noise source determination, calculate the noise in a RC network. Figure 3 shows a typical RC network.",
+          "value": "As an example of noise source determination, calculate the noise in a RC network. Figure 3 shows a typical RC network.",
+          "bbox": [
+            {
+              "h": 20.5,
+              "w": 448.92,
+              "x": 82.62,
+              "y": 222.73,
+              "confidence": 1.0,
+              "end_index": 117,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "drawing: schematic of an RC network",
+          "md": "![drawing: schematic of an RC network](page_3_image_1_v2.jpg)",
+          "url": "page_3_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 83.16,
+              "w": 52.02,
+              "x": 280.3,
+              "y": 251.06,
+              "confidence": 0.9,
+              "end_index": 60,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "**Figure 3. Calculating Noise in an RC Network**",
+          "value": "Figure 3. Calculating Noise in an RC Network",
+          "bbox": [
+            {
+              "h": 10.29,
+              "w": 216.06,
+              "x": 197.68,
+              "y": 343.73,
+              "confidence": 1.0,
+              "end_index": 47,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The parallel RC network impedance ($Z$) is given by Equation 2:",
+          "value": "The parallel RC network impedance ($Z$) is given by Equation 2:",
+          "bbox": [
+            {
+              "h": 9.56,
+              "w": 279.88,
+              "x": 83.23,
+              "y": 369.73,
+              "confidence": 1.0,
+              "end_index": 62,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$Z = R \\parallel \\left( \\frac{1}{j\\omega C} \\right) = \\frac{R}{1 + j\\omega RC} = \\frac{R}{1 + (\\omega RC)^2} - j \\frac{\\omega R^2 C}{1 + (\\omega RC)^2} \\eqno(2)$$",
+          "value": "$$Z = R \\parallel \\left( \\frac{1}{j\\omega C} \\right) = \\frac{R}{1 + j\\omega RC} = \\frac{R}{1 + (\\omega RC)^2} - j \\frac{\\omega R^2 C}{1 + (\\omega RC)^2} \\eqno(2)$$",
+          "bbox": [
+            {
+              "h": 28.96,
+              "w": 450.43,
+              "x": 107.71,
+              "y": 382.09,
+              "confidence": 0.6,
+              "end_index": 162,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Given that $\\omega = 2\\pi f$, the total open-circuit noise voltage is shown in Equation 3:",
+          "value": "Given that $\\omega = 2\\pi f$, the total open-circuit noise voltage is shown in Equation 3:",
+          "bbox": [
+            {
+              "h": 9.56,
+              "w": 348.58,
+              "x": 83.23,
+              "y": 418.73,
+              "confidence": 1.0,
+              "end_index": 89,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$\n\\begin{aligned}\n\\overline{v_t^2} &= \\int_0^\\infty 4kTR\\text{e}(Z)df = \\int_0^\\infty \\frac{4kTR}{1 + (2\\pi fRC)^2} df \\\\\n&= \\frac{2kT}{\\pi C} \\int_0^\\infty \\frac{dx}{1 + x^2} = \\frac{2kT}{\\pi C} [\\tan^{-1}x]_0^\\infty = \\frac{kT}{C}\n\\end{aligned}\n\\eqno(3)\n$$",
+          "value": "$$\n\\begin{aligned}\n\\overline{v_t^2} &= \\int_0^\\infty 4kTR\\text{e}(Z)df = \\int_0^\\infty \\frac{4kTR}{1 + (2\\pi fRC)^2} df \\\\\n&= \\frac{2kT}{\\pi C} \\int_0^\\infty \\frac{dx}{1 + x^2} = \\frac{2kT}{\\pi C} [\\tan^{-1}x]_0^\\infty = \\frac{kT}{C}\n\\end{aligned}\n\\eqno(3)\n$$",
+          "bbox": [
+            {
+              "h": 71.04,
+              "w": 449.82,
+              "x": 108.32,
+              "y": 430.65,
+              "confidence": 0.6,
+              "end_index": 258,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Note that $R$ has dropped out of Equation 3, so $e^2$ is independent of $R$. At room temperature, the thermal noise of a 47-nF capacitor is approximately 295.8 $\\text{nV}_{\\text{RMS}}$ (with $T = 298$ Kelvins, or approximately $+25$ ºC). This noise source occurs twice: once on the measured input and again on the reference ($\\text{R}_{\\text{A}}$). The noise voltage across a capacitor depends only upon temperature and capacitance. The RMS sum of two such sources is approximately 418.32 $\\text{nV}_{\\text{RMS}}$.",
+          "value": "Note that $R$ has dropped out of Equation 3, so $e^2$ is independent of $R$. At room temperature, the thermal noise of a 47-nF capacitor is approximately 295.8 $\\text{nV}_{\\text{RMS}}$ (with $T = 298$ Kelvins, or approximately $+25$ ºC). This noise source occurs twice: once on the measured input and again on the reference ($\\text{R}_{\\text{A}}$). The noise voltage across a capacitor depends only upon temperature and capacitance. The RMS sum of two such sources is approximately 418.32 $\\text{nV}_{\\text{RMS}}$.",
+          "bbox": [
+            {
+              "h": 54.35,
+              "w": 466.96,
+              "x": 82.62,
+              "y": 507.88,
+              "confidence": 0.996,
+              "end_index": 513,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA185– May 2011 *Thermal Noise Analysis in ECG Applications* 3 <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span>\nCopyright © 2011, Texas Instruments Incorporated",
+              "value": "SBAA185– May 2011 Thermal Noise Analysis in ECG Applications 3\n<span style=\"color:#0000ff\">Submit Documentation Feedback</span>\nCopyright © 2011, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.45,
+                  "w": 503.28,
+                  "x": 54.39,
+                  "y": 751.18,
+                  "confidence": 1.0,
+                  "end_index": 179,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA185– May 2011 *Thermal Noise Analysis in ECG Applications* 3\n*Submit Documentation Feedback*\nCopyright © 2011, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.45,
+              "w": 503.28,
+              "x": 54.39,
+              "y": 751.18
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 3,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Noise in ECG Signal Path*\n[www.ti.com](http://www.ti.com)",
+              "value": "Noise in ECG Signal Path\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 8.6,
+                  "w": 103.29,
+                  "x": 54.68,
+                  "y": 57.77,
+                  "confidence": 1.0,
+                  "end_index": 26,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.86,
+                  "w": 44.29,
+                  "x": 513.11,
+                  "y": 58.66,
+                  "confidence": 1.0,
+                  "end_index": 57,
+                  "label": "header",
+                  "start_index": 27
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Noise in ECG Signal Path*\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 8.6,
+              "w": 502.72,
+              "x": 54.68,
+              "y": 57.77
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_4_image_2_v2.jpg)",
+          "url": "page_4_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 22.97,
+              "w": 94.25,
+              "x": 463.28,
+              "y": 11.88,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "level": 2,
+          "md": "## 2.2   *Thermal Noise from Protection Resistor*",
+          "value": "2.2   Thermal Noise from Protection Resistor",
+          "bbox": [
+            {
+              "h": 8.15,
+              "w": 240.55,
+              "x": 53.24,
+              "y": 76.0,
+              "confidence": 0.938,
+              "end_index": 48,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "There are 22-kΩ and 10-kΩ current limiting resistors from the electrode to the input of the ADS1298. Here, we calculate the thermal noise for all components in the ECG signal path. Figure 4 illustrates the protection architecture of a defibrillator, for example.",
+          "value": "There are 22-kΩ and 10-kΩ current limiting resistors from the electrode to the input of the ADS1298. Here, we calculate the thermal noise for all components in the ECG signal path. Figure 4 illustrates the protection architecture of a defibrillator, for example.",
+          "bbox": [
+            {
+              "h": 31.45,
+              "w": 474.91,
+              "x": 82.62,
+              "y": 93.71,
+              "confidence": 0.984,
+              "end_index": 261,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    subgraph DP7 [\"Defibrillator Protection (DP7)\"]\n        direction LR\n        IN(( )) --- R48[\"R48 22 kΩ\"]\n        R48 --- N1\n        N1 --- R49[\"R49 10 kΩ\"]\n        R49 --- N2\n        N2 --- OUT(( ))\n\n        N1 --- C1[\"C1\"]\n        C1 --- GND\n        \n        N1 --- D87[\"D87 NEON\"]\n        D87 --- GND\n\n        N2 --- C2[\"C2\"]\n        C2 --- GND\n\n        VCC_NEG[\"-2.5 VCC\"] --- D13[\"D13 5.1 V\"]\n        D13 --- N2\n        N2 --- D14[\"D14 5.1 V\"]\n        D14 --- VCC_POS[\"+2.5 VCC\"]\n\n        GND(( ))\n    end\n\n    style DP7 fill:none,stroke-dasharray: 5 5\n```",
+          "value": "graph LR\n    subgraph DP7 [\"Defibrillator Protection (DP7)\"]\n        direction LR\n        IN(( )) --- R48[\"R48 22 kΩ\"]\n        R48 --- N1\n        N1 --- R49[\"R49 10 kΩ\"]\n        R49 --- N2\n        N2 --- OUT(( ))\n\n        N1 --- C1[\"C1\"]\n        C1 --- GND\n        \n        N1 --- D87[\"D87 NEON\"]\n        D87 --- GND\n\n        N2 --- C2[\"C2\"]\n        C2 --- GND\n\n        VCC_NEG[\"-2.5 VCC\"] --- D13[\"D13 5.1 V\"]\n        D13 --- N2\n        N2 --- D14[\"D14 5.1 V\"]\n        D14 --- VCC_POS[\"+2.5 VCC\"]\n\n        GND(( ))\n    end\n\n    style DP7 fill:none,stroke-dasharray: 5 5",
+          "bbox": [
+            {
+              "h": 222.55,
+              "w": 222.77,
+              "x": 194.0,
+              "y": 133.06,
+              "confidence": 0.5,
+              "end_index": 584,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Figure 4. Defibrillation Protection Part**",
+          "value": "Figure 4. Defibrillation Protection Part",
+          "bbox": [
+            {
+              "h": 10.37,
+              "w": 180.32,
+              "x": 216.26,
+              "y": 365.83,
+              "confidence": 0.906,
+              "end_index": 43,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The noise units are nV/√Hz. Using Equation 1 we obtain the following data:",
+          "value": "The noise units are nV/√Hz. Using Equation 1 we obtain the following data:",
+          "bbox": [
+            {
+              "h": 11.46,
+              "w": 333.66,
+              "x": 83.23,
+              "y": 389.83,
+              "confidence": 1.0,
+              "end_index": 73,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "•  32-kΩ input resistance (R<sub>A</sub>): (4 nV/√Hz/ kΩ at +25°C) = 22.94 nV/√Hz",
+          "value": "•  32-kΩ input resistance (R<sub>A</sub>): (4 nV/√Hz/ kΩ at +25°C) = 22.94 nV/√Hz",
+          "bbox": [
+            {
+              "h": 11.33,
+              "w": 324.36,
+              "x": 83.23,
+              "y": 404.43,
+              "confidence": 0.959,
+              "end_index": 80,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The protection circuit (R48, C1, R49, and C2) is also used as a second-order low-pass filter for anti-aliasing and radio frequency interference (RFI). Furthermore, the patient protection resistor value is limited by the maximum current under the fault conditions specified by AAMI/IEC.",
+          "value": "The protection circuit (R48, C1, R49, and C2) is also used as a second-order low-pass filter for anti-aliasing and radio frequency interference (RFI). Furthermore, the patient protection resistor value is limited by the maximum current under the fault conditions specified by AAMI/IEC.",
+          "bbox": [
+            {
+              "h": 31.5,
+              "w": 461.45,
+              "x": 83.23,
+              "y": 423.33,
+              "confidence": 1.0,
+              "end_index": 284,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## 2.3  *ADS1298/98R Noise*",
+          "value": "2.3  ADS1298/98R Noise",
+          "bbox": [
+            {
+              "h": 8.31,
+              "w": 134.83,
+              "x": 54.28,
+              "y": 470.49,
+              "confidence": 0.906,
+              "end_index": 26,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Based on the information provided in the <u>ADS1298/98R product data sheet,</u> the noise measurement is taken with an internal reference, which includes the internal reference output noise. If we use a low-noise external reference, such as the <u>REF5025,</u> we can achieve better noise performance with a low gain setting. (The 2.5-V reference of the REF5025 output noise is 7.5 μV<sub>PP</sub> at 0.1 Hz to 10 Hz; higher frequency noise is filtered by the reference output capacitor.) A minimum of 1000 consecutive readings are then used to calculate the RMS and peak-to-peak noise for each reading.",
+          "value": "Based on the information provided in the <u>ADS1298/98R product data sheet,</u> the noise measurement is taken with an internal reference, which includes the internal reference output noise. If we use a low-noise external reference, such as the <u>REF5025,</u> we can achieve better noise performance with a low gain setting. (The 2.5-V reference of the REF5025 output noise is 7.5 μV<sub>PP</sub> at 0.1 Hz to 10 Hz; higher frequency noise is filtered by the reference output capacitor.) A minimum of 1000 consecutive readings are then used to calculate the RMS and peak-to-peak noise for each reading.",
+          "bbox": [
+            {
+              "h": 64.56,
+              "w": 468.18,
+              "x": 83.23,
+              "y": 488.33,
+              "confidence": 0.997,
+              "end_index": 602,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"DR Bits ofCONFIG1Register\",\"Output DataRate (SPS)\",\"–3dBBandwidth(Hz)\",\"PGAGain = 1\",\"PGAGain = 2\",\"PGAGain = 3\",\"PGAGain = 4\",\"PGAGain = 6\",\"PGAGain = 8\",\"PGAGain = 12\"\n\"000\",\"32000\",\"8398\",\"335/3553\",\"168/1701\",\"112/1100\",\"85/823\",\"58/529\",\"42.5/378\",\"28.6/248\"\n\"001\",\"16000\",\"4193\",\"56/613\",\"28/295\",\"18.8/188\",\"14.3/143\",\"9.7/94\",\"7.4/69\",\"5.2/44.3\"\n\"010\",\"8000\",\"2096\",\"12.4/111\",\"6.5/54\",\"4.5/37.9\",\"3.5/29.7\",\"2.6/21.7\",\"2.2/17.8\",\"1.8/13.8\"\n\"011\",\"4000\",\"1048\",\"6.1/44.8\",\"3.2/23.3\",\"2.4/17.1\",\"1.9/14.0\",\"1.5/11.1\",\"1.3/9.7\",\"1.2/8.5\"\n\"100\",\"2000\",\"524\",\"4.1/27.8\",\"2.2/15.4\",\"1.6/11.0\",\"1.3/9.1\",\"1.1/7.3\",\"1.0/6.5\",\"0.9/6.0\"\n\"101\",\"1000\",\"262\",\"2.9/19.0\",\"1.6/10.1\",\"1.2/7.5\",\"1.0/6.2\",\"0.8/5.0\",\"0.7/4.6\",\"0.6/4.1\"\n\"110\",\"500\",\"131\",\"2.1/12.5\",\"1.1/6.8\",\"0.9/5.1\",\"0.7/4.3\",\"0.6/3.5\",\"0.5/3.1\",\"0.5/2.9\"",
+          "html": "<table>\n  <caption>\n    <b>Table 1. ADS1298/ADS1298R Input-Referred Noise (μV<sub>RMS</sub>/μV<sub>PP</sub>) in High-Resolution Mode<br />\n    3-V Analog Supply and 2.4-V Reference<sup>(1)</sup></b>\n  </caption>\n  <thead>\n    <tr>\n      <th><b>DR Bits of</b><br />CONFIG1<br />Register</th>\n      <th>Output Data<br />Rate (SPS)</th>\n      <th>–<b>3dB</b><br />Bandwidth<br />(Hz)</th>\n      <th>PGA<br />Gain = 1</th>\n      <th>PGA<br />Gain = 2</th>\n      <th>PGA<br />Gain = 3</th>\n      <th>PGA<br />Gain = 4</th>\n      <th>PGA<br />Gain = 6</th>\n      <th>PGA<br />Gain = 8</th>\n      <th>PGA<br />Gain = 12</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>000</td>\n      <td>32000</td>\n      <td>8398</td>\n      <td>335/3553</td>\n      <td>168/1701</td>\n      <td>112/1100</td>\n      <td>85/823</td>\n      <td>58/529</td>\n      <td>42.5/378</td>\n      <td>28.6/248</td>\n    </tr>\n    <tr>\n      <td>001</td>\n      <td>16000</td>\n      <td>4193</td>\n      <td>56/613</td>\n      <td>28/295</td>\n      <td>18.8/188</td>\n      <td>14.3/143</td>\n      <td>9.7/94</td>\n      <td>7.4/69</td>\n      <td>5.2/44.3</td>\n    </tr>\n    <tr>\n      <td>010</td>\n      <td>8000</td>\n      <td>2096</td>\n      <td>12.4/111</td>\n      <td>6.5/54</td>\n      <td>4.5/37.9</td>\n      <td>3.5/29.7</td>\n      <td>2.6/21.7</td>\n      <td>2.2/17.8</td>\n      <td>1.8/13.8</td>\n    </tr>\n    <tr>\n      <td>011</td>\n      <td>4000</td>\n      <td>1048</td>\n      <td>6.1/44.8</td>\n      <td>3.2/23.3</td>\n      <td>2.4/17.1</td>\n      <td>1.9/14.0</td>\n      <td>1.5/11.1</td>\n      <td>1.3/9.7</td>\n      <td>1.2/8.5</td>\n    </tr>\n    <tr>\n      <td>100</td>\n      <td>2000</td>\n      <td>524</td>\n      <td>4.1/27.8</td>\n      <td>2.2/15.4</td>\n      <td>1.6/11.0</td>\n      <td>1.3/9.1</td>\n      <td>1.1/7.3</td>\n      <td>1.0/6.5</td>\n      <td>0.9/6.0</td>\n    </tr>\n    <tr>\n      <td>101</td>\n      <td>1000</td>\n      <td>262</td>\n      <td>2.9/19.0</td>\n      <td>1.6/10.1</td>\n      <td>1.2/7.5</td>\n      <td>1.0/6.2</td>\n      <td>0.8/5.0</td>\n      <td>0.7/4.6</td>\n      <td>0.6/4.1</td>\n    </tr>\n    <tr>\n      <td>110</td>\n      <td>500</td>\n      <td>131</td>\n      <td>2.1/12.5</td>\n      <td>1.1/6.8</td>\n      <td>0.9/5.1</td>\n      <td>0.7/4.3</td>\n      <td>0.6/3.5</td>\n      <td>0.5/3.1</td>\n      <td>0.5/2.9</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Table 1. ADS1298/ADS1298R Input-Referred Noise (μVRMS/μVPP) in High-Resolution Mode\n\n    3-V Analog Supply and 2.4-V Reference(1)\n\n| DR Bits ofCONFIG1Register | Output DataRate (SPS) | –3dBBandwidth(Hz) | PGAGain = 1 | PGAGain = 2 | PGAGain = 3 | PGAGain = 4 | PGAGain = 6 | PGAGain = 8 | PGAGain = 12 |\n| ------------------------- | --------------------- | ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ------------ |\n| 000                       | 32000                 | 8398              | 335/3553    | 168/1701    | 112/1100    | 85/823      | 58/529      | 42.5/378    | 28.6/248     |\n| 001                       | 16000                 | 4193              | 56/613      | 28/295      | 18.8/188    | 14.3/143    | 9.7/94      | 7.4/69      | 5.2/44.3     |\n| 010                       | 8000                  | 2096              | 12.4/111    | 6.5/54      | 4.5/37.9    | 3.5/29.7    | 2.6/21.7    | 2.2/17.8    | 1.8/13.8     |\n| 011                       | 4000                  | 1048              | 6.1/44.8    | 3.2/23.3    | 2.4/17.1    | 1.9/14.0    | 1.5/11.1    | 1.3/9.7     | 1.2/8.5      |\n| 100                       | 2000                  | 524               | 4.1/27.8    | 2.2/15.4    | 1.6/11.0    | 1.3/9.1     | 1.1/7.3     | 1.0/6.5     | 0.9/6.0      |\n| 101                       | 1000                  | 262               | 2.9/19.0    | 1.6/10.1    | 1.2/7.5     | 1.0/6.2     | 0.8/5.0     | 0.7/4.6     | 0.6/4.1      |\n| 110                       | 500                   | 131               | 2.1/12.5    | 1.1/6.8     | 0.9/5.1     | 0.7/4.3     | 0.6/3.5     | 0.5/3.1     | 0.5/2.9      |",
+          "rows": [
+            [
+              "DR Bits ofCONFIG1Register",
+              "Output DataRate (SPS)",
+              "–3dBBandwidth(Hz)",
+              "PGAGain = 1",
+              "PGAGain = 2",
+              "PGAGain = 3",
+              "PGAGain = 4",
+              "PGAGain = 6",
+              "PGAGain = 8",
+              "PGAGain = 12"
+            ],
+            [
+              "000",
+              "32000",
+              "8398",
+              "335/3553",
+              "168/1701",
+              "112/1100",
+              "85/823",
+              "58/529",
+              "42.5/378",
+              "28.6/248"
+            ],
+            [
+              "001",
+              "16000",
+              "4193",
+              "56/613",
+              "28/295",
+              "18.8/188",
+              "14.3/143",
+              "9.7/94",
+              "7.4/69",
+              "5.2/44.3"
+            ],
+            [
+              "010",
+              "8000",
+              "2096",
+              "12.4/111",
+              "6.5/54",
+              "4.5/37.9",
+              "3.5/29.7",
+              "2.6/21.7",
+              "2.2/17.8",
+              "1.8/13.8"
+            ],
+            [
+              "011",
+              "4000",
+              "1048",
+              "6.1/44.8",
+              "3.2/23.3",
+              "2.4/17.1",
+              "1.9/14.0",
+              "1.5/11.1",
+              "1.3/9.7",
+              "1.2/8.5"
+            ],
+            [
+              "100",
+              "2000",
+              "524",
+              "4.1/27.8",
+              "2.2/15.4",
+              "1.6/11.0",
+              "1.3/9.1",
+              "1.1/7.3",
+              "1.0/6.5",
+              "0.9/6.0"
+            ],
+            [
+              "101",
+              "1000",
+              "262",
+              "2.9/19.0",
+              "1.6/10.1",
+              "1.2/7.5",
+              "1.0/6.2",
+              "0.8/5.0",
+              "0.7/4.6",
+              "0.6/4.1"
+            ],
+            [
+              "110",
+              "500",
+              "131",
+              "2.1/12.5",
+              "1.1/6.8",
+              "0.9/5.1",
+              "0.7/4.3",
+              "0.6/3.5",
+              "0.5/3.1",
+              "0.5/2.9"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 115.63,
+              "w": 476.14,
+              "x": 82.62,
+              "y": 588.46,
+              "confidence": 0.9,
+              "end_index": 1690,
+              "label": "table",
+              "start_index": 135
+            },
+            {
+              "h": 9.53,
+              "w": 419.23,
+              "x": 111.14,
+              "y": 565.33,
+              "confidence": 0.946,
+              "end_index": 86,
+              "label": "caption",
+              "start_index": 0
+            },
+            {
+              "h": 10.56,
+              "w": 192.92,
+              "x": 223.27,
+              "y": 574.3,
+              "confidence": 1.0,
+              "end_index": 132,
+              "label": "caption",
+              "start_index": 93
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "<sup>(1)</sup> At least 1000 consecutive readings were used to calculate the RMS and peak-to-peak noise values in this table.",
+          "value": "<sup>(1)</sup> At least 1000 consecutive readings were used to calculate the RMS and peak-to-peak noise values in this table.",
+          "bbox": [
+            {
+              "h": 8.62,
+              "w": 414.32,
+              "x": 82.62,
+              "y": 706.44,
+              "confidence": 1.0,
+              "end_index": 124,
+              "label": "footnote",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "4    *Thermal Noise Analysis in ECG Applications*\nSBAA185– May 2011 <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span>\nCopyright © 2011, Texas Instruments Incorporated",
+              "value": "4    Thermal Noise Analysis in ECG Applications\nSBAA185– May 2011\n<span style=\"color:#0000ff\">Submit Documentation Feedback</span>\nCopyright © 2011, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 27.65,
+                  "w": 504.53,
+                  "x": 54.2,
+                  "y": 751.18,
+                  "confidence": 1.0,
+                  "end_index": 182,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "4    *Thermal Noise Analysis in ECG Applications*\nSBAA185– May 2011\n*Submit Documentation Feedback*\nCopyright © 2011, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 27.65,
+              "w": 504.53,
+              "x": 54.2,
+              "y": 751.18
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 4,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "logo: Texas Instruments | [www.ti.com](http://www.ti.com) *Summary*",
+              "value": "logo: Texas Instruments | www.ti.com Summary",
+              "bbox": [
+                {
+                  "h": 53.31,
+                  "w": 504.4,
+                  "x": 54.0,
+                  "y": 13.53,
+                  "confidence": 0.5,
+                  "end_index": 66,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "logo: Texas Instruments | www.ti.com *Summary*",
+          "bbox": [
+            {
+              "h": 53.31,
+              "w": 504.4,
+              "x": 54.0,
+              "y": 13.53
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "We can see that the RTI noise of the ADS1298/98R is specified as 1.1 $\\mu V_{RMS}$ when the PGA gain = 6 and the data rate is 2 kSPS. For simple calculation, presuming that the internal filter is a single-pole filter, the noise bandwidth is $\\pi/2$ times the $-3$-dB bandwidth; in this case, that value is approximately 822.68 Hz.",
+          "value": "We can see that the RTI noise of the ADS1298/98R is specified as 1.1 $\\mu V_{RMS}$ when the PGA gain = 6 and the data rate is 2 kSPS. For simple calculation, presuming that the internal filter is a single-pole filter, the noise bandwidth is $\\pi/2$ times the $-3$-dB bandwidth; in this case, that value is approximately 822.68 Hz.",
+          "bbox": [
+            {
+              "h": 31.5,
+              "w": 470.41,
+              "x": 82.62,
+              "y": 76.73,
+              "confidence": 1.0,
+              "end_index": 329,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Now, we combine the noise from the AAMI source noise, the protection resistors, and the ADS1298/98R:",
+          "value": "Now, we combine the noise from the AAMI source noise, the protection resistors, and the ADS1298/98R:",
+          "bbox": [
+            {
+              "h": 9.43,
+              "w": 460.8,
+              "x": 84.76,
+              "y": 115.73,
+              "confidence": 1.0,
+              "end_index": 99,
+              "label": "key-value-region",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "AAMI source noise: 418.32 n$V_{RMS}$",
+              "value": "AAMI source noise: 418.32 n$V_{RMS}$",
+              "bbox": [
+                {
+                  "h": 9.29,
+                  "w": 148.81,
+                  "x": 99.14,
+                  "y": 129.32,
+                  "confidence": 1.0,
+                  "end_index": 35,
+                  "label": "key-value-region",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "Protection resistors: 0.93 $\\mu V_{RMS}$ (= $22.94nV/\\sqrt{Hz} \\times \\sqrt{822.68  Hz} \\times \\sqrt{2}$)",
+              "value": "Protection resistors: 0.93 $\\mu V_{RMS}$ (= $22.94nV/\\sqrt{Hz} \\times \\sqrt{822.68  Hz} \\times \\sqrt{2}$)",
+              "bbox": [
+                {
+                  "h": 11.38,
+                  "w": 299.94,
+                  "x": 99.86,
+                  "y": 140.63,
+                  "confidence": 1.0,
+                  "end_index": 104,
+                  "label": "key-value-region",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "RTI noise of ADS1298/98R: 1.1 $\\mu V_{RMS}$",
+              "value": "RTI noise of ADS1298/98R: 1.1 $\\mu V_{RMS}$",
+              "bbox": [
+                {
+                  "h": 9.48,
+                  "w": 168.47,
+                  "x": 99.88,
+                  "y": 155.93,
+                  "confidence": 1.0,
+                  "end_index": 42,
+                  "label": "key-value-region",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "Total noise: 1.5 $\\mu V_{RMS}$",
+              "value": "Total noise: 1.5 $\\mu V_{RMS}$",
+              "bbox": [
+                {
+                  "h": 9.29,
+                  "w": 97.01,
+                  "x": 99.14,
+                  "y": 169.52,
+                  "confidence": 0.938,
+                  "end_index": 29,
+                  "label": "key-value-region",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "* AAMI source noise: 418.32 n$V_{RMS}$\n* Protection resistors: 0.93 $\\mu V_{RMS}$ (= $22.94nV/\\sqrt{Hz} \\times \\sqrt{822.68  Hz} \\times \\sqrt{2}$)\n* RTI noise of ADS1298/98R: 1.1 $\\mu V_{RMS}$\n* Total noise: 1.5 $\\mu V_{RMS}$",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 49.49,
+              "w": 300.66,
+              "x": 99.14,
+              "y": 129.32,
+              "confidence": 0.938,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "md": "Using our 8$\\times$ conversion factor from RMS to peak-to-peak (explained in Section 1), this total noise is then 12 $\\mu V_{PP}$, which is much less than the 30 $\\mu V_{PP}$.",
+          "value": "Using our 8$\\times$ conversion factor from RMS to peak-to-peak (explained in Section 1), this total noise is then 12 $\\mu V_{PP}$, which is much less than the 30 $\\mu V_{PP}$.",
+          "bbox": [
+            {
+              "h": 20.37,
+              "w": 469.41,
+              "x": 83.23,
+              "y": 186.33,
+              "confidence": 1.0,
+              "end_index": 174,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **3 Summary**",
+          "value": "3 Summary",
+          "bbox": [
+            {
+              "h": 10.45,
+              "w": 80.62,
+              "x": 53.24,
+              "y": 223.49,
+              "confidence": 0.813,
+              "end_index": 15,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "We can see from this report that we can optimize the protection resistor and reduce the noise bandwidth to achieve better noise performance. The noise factors discussed here only concern the thermal noise of the system, and do not include quantization noise or non-thermal sources (such as digital crosstalk, power-supply noise, and so forth). For electrosurgical interference (ESI), which is not addressed in this report, see Ref 5.",
+          "value": "We can see from this report that we can optimize the protection resistor and reduce the noise bandwidth to achieve better noise performance. The noise factors discussed here only concern the thermal noise of the system, and do not include quantization noise or non-thermal sources (such as digital crosstalk, power-supply noise, and so forth). For electrosurgical interference (ESI), which is not addressed in this report, see Ref 5.",
+          "bbox": [
+            {
+              "h": 53.34,
+              "w": 466.96,
+              "x": 82.62,
+              "y": 241.42,
+              "confidence": 1.0,
+              "end_index": 432,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **4 References**",
+          "value": "4 References",
+          "bbox": [
+            {
+              "h": 8.14,
+              "w": 89.58,
+              "x": 53.24,
+              "y": 311.6,
+              "confidence": 0.813,
+              "end_index": 18,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "items": [
+            {
+              "md": "ANSI/AAMI EC11:1991/®2001, Diagnostic Electrocardiographic Devices.",
+              "value": "ANSI/AAMI EC11:1991/®2001, Diagnostic Electrocardiographic Devices.",
+              "bbox": [
+                {
+                  "h": 9.58,
+                  "w": 336.9,
+                  "x": 85.01,
+                  "y": 326.91,
+                  "confidence": 1.0,
+                  "end_index": 66,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "Chinese Standard: YY 1079-2008, Electrocardiographic Monitors.",
+              "value": "Chinese Standard: YY 1079-2008, Electrocardiographic Monitors.",
+              "bbox": [
+                {
+                  "h": 9.56,
+                  "w": 306.03,
+                  "x": 83.23,
+                  "y": 340.33,
+                  "confidence": 0.969,
+                  "end_index": 61,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "Markandey, V. (2009, revised 2010). ECG Implementation on the TMS320VC5505 DSP Medical Development Kit (MDK). Application report. Literature number <u>SPRAB36B</u>.",
+              "value": "Markandey, V. (2009, revised 2010). ECG Implementation on the TMS320VC5505 DSP Medical Development Kit (MDK). Application report. Literature number <u>SPRAB36B</u>.",
+              "bbox": [
+                {
+                  "h": 20.43,
+                  "w": 443.7,
+                  "x": 83.23,
+                  "y": 353.73,
+                  "confidence": 1.0,
+                  "end_index": 163,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "ADS1298 Product data sheet. Literature number <u>SBAS459G</u>.",
+              "value": "ADS1298 Product data sheet. Literature number <u>SBAS459G</u>.",
+              "bbox": [
+                {
+                  "h": 7.55,
+                  "w": 287.64,
+                  "x": 82.62,
+                  "y": 378.13,
+                  "confidence": 0.969,
+                  "end_index": 61,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "Yelderman, M., Widrow, B., Cioffi, J., Hesler, E., and Leddy, J.E. (1983). ECG enhancement by adaptive cancellation of electrosurgical interference. IEEE Transactions on Biomedical Engineering, Vol. BME-30, No. 7, July 1983.",
+              "value": "Yelderman, M., Widrow, B., Cioffi, J., Hesler, E., and Leddy, J.E. (1983). ECG enhancement by adaptive cancellation of electrosurgical interference. IEEE Transactions on Biomedical Engineering, Vol. BME-30, No. 7, July 1983.",
+              "bbox": [
+                {
+                  "h": 31.5,
+                  "w": 457.67,
+                  "x": 82.62,
+                  "y": 391.53,
+                  "confidence": 1.0,
+                  "end_index": 223,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "1. ANSI/AAMI EC11:1991/®2001, Diagnostic Electrocardiographic Devices.\n2. Chinese Standard: YY 1079-2008, Electrocardiographic Monitors.\n3. Markandey, V. (2009, revised 2010). ECG Implementation on the TMS320VC5505 DSP Medical Development Kit (MDK). Application report. Literature number <u>SPRAB36B</u>.\n4. ADS1298 Product data sheet. Literature number <u>SBAS459G</u>.\n5. Yelderman, M., Widrow, B., Cioffi, J., Hesler, E., and Leddy, J.E. (1983). ECG enhancement by adaptive cancellation of electrosurgical interference. IEEE Transactions on Biomedical Engineering, Vol. BME-30, No. 7, July 1983.",
+          "ordered": true,
+          "bbox": [
+            {
+              "h": 96.12,
+              "w": 457.67,
+              "x": 82.62,
+              "y": 326.91,
+              "confidence": 0.969,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA185–May 2011 *Thermal Noise Analysis in ECG Applications* 5 | <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span> Copyright © 2011, Texas Instruments Incorporated",
+              "value": "SBAA185–May 2011 Thermal Noise Analysis in ECG Applications 5 | <span style=\"color:#0000ff\">Submit Documentation Feedback</span> Copyright © 2011, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.33,
+                  "w": 503.23,
+                  "x": 54.39,
+                  "y": 751.3,
+                  "confidence": 1.0,
+                  "end_index": 180,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA185–May 2011 *Thermal Noise Analysis in ECG Applications* 5 | *Submit Documentation Feedback* Copyright © 2011, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.33,
+              "w": 503.23,
+              "x": 54.39,
+              "y": 751.3
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 5,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "level": 1,
+          "md": "# **IMPORTANT NOTICE**",
+          "value": "IMPORTANT NOTICE",
+          "bbox": [
+            {
+              "h": 7.55,
+              "w": 99.12,
+              "x": 271.44,
+              "y": 76.73,
+              "confidence": 0.813,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Texas Instruments Incorporated and its subsidiaries (TI) reserve the right to make corrections, modifications, enhancements, improvements, and other changes to its products and services at any time and to discontinue any product or service without notice. Customers should obtain the latest relevant information before placing orders and should verify that such information is current and complete. All products are sold subject to TI’s terms and conditions of sale supplied at the time of order acknowledgment.",
+          "value": "Texas Instruments Incorporated and its subsidiaries (TI) reserve the right to make corrections, modifications, enhancements, improvements, and other changes to its products and services at any time and to discontinue any product or service without notice. Customers should obtain the latest relevant information before placing orders and should verify that such information is current and complete. All products are sold subject to TI’s terms and conditions of sale supplied at the time of order acknowledgment.",
+          "bbox": [
+            {
+              "h": 35.06,
+              "w": 500.01,
+              "x": 55.69,
+              "y": 94.04,
+              "confidence": 1.0,
+              "end_index": 510,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI warrants performance of its hardware products to the specifications applicable at the time of sale in accordance with TI’s standard warranty. Testing and other quality control techniques are used to the extent TI deems necessary to support this warranty. Except where mandated by government requirements, testing of all parameters of each product is not necessarily performed.",
+          "value": "TI warrants performance of its hardware products to the specifications applicable at the time of sale in accordance with TI’s standard warranty. Testing and other quality control techniques are used to the extent TI deems necessary to support this warranty. Except where mandated by government requirements, testing of all parameters of each product is not necessarily performed.",
+          "bbox": [
+            {
+              "h": 25.58,
+              "w": 487.77,
+              "x": 55.69,
+              "y": 133.68,
+              "confidence": 1.0,
+              "end_index": 378,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI assumes no liability for applications assistance or customer product design. Customers are responsible for their products and applications using TI components. To minimize the risks associated with customer products and applications, customers should provide adequate design and operating safeguards.",
+          "value": "TI assumes no liability for applications assistance or customer product design. Customers are responsible for their products and applications using TI components. To minimize the risks associated with customer products and applications, customers should provide adequate design and operating safeguards.",
+          "bbox": [
+            {
+              "h": 25.88,
+              "w": 483.48,
+              "x": 55.69,
+              "y": 164.2,
+              "confidence": 1.0,
+              "end_index": 302,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI does not warrant or represent that any license, either express or implied, is granted under any TI patent right, copyright, mask work right, or other TI intellectual property right relating to any combination, machine, or process in which TI products or services are used. Information published by TI regarding third-party products or services does not constitute a license from TI to use such products or services or a warranty or endorsement thereof. Use of such information may require a license from a third party under the patents or other intellectual property of the third party, or a license from TI under the patents or other intellectual property of TI.",
+          "value": "TI does not warrant or represent that any license, either express or implied, is granted under any TI patent right, copyright, mask work right, or other TI intellectual property right relating to any combination, machine, or process in which TI products or services are used. Information published by TI regarding third-party products or services does not constitute a license from TI to use such products or services or a warranty or endorsement thereof. Use of such information may require a license from a third party under the patents or other intellectual property of the third party, or a license from TI under the patents or other intellectual property of TI.",
+          "bbox": [
+            {
+              "h": 44.22,
+              "w": 498.78,
+              "x": 55.69,
+              "y": 194.96,
+              "confidence": 1.0,
+              "end_index": 665,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Reproduction of TI information in TI data books or data sheets is permissible only if reproduction is without alteration and is accompanied by all associated warranties, conditions, limitations, and notices. Reproduction of this information with alteration is an unfair and deceptive business practice. TI is not responsible or liable for such altered documentation. Information of third parties may be subject to additional restrictions.",
+          "value": "Reproduction of TI information in TI data books or data sheets is permissible only if reproduction is without alteration and is accompanied by all associated warranties, conditions, limitations, and notices. Reproduction of this information with alteration is an unfair and deceptive business practice. TI is not responsible or liable for such altered documentation. Information of third parties may be subject to additional restrictions.",
+          "bbox": [
+            {
+              "h": 32.94,
+              "w": 491.44,
+              "x": 56.3,
+              "y": 243.48,
+              "confidence": 1.0,
+              "end_index": 437,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Resale of TI products or services with statements different from or beyond the parameters stated by TI for that product or service voids all express and any implied warranties for the associated TI product or service and is an unfair and deceptive business practice. TI is not responsible or liable for any such statements.",
+          "value": "Resale of TI products or services with statements different from or beyond the parameters stated by TI for that product or service voids all express and any implied warranties for the associated TI product or service and is an unfair and deceptive business practice. TI is not responsible or liable for any such statements.",
+          "bbox": [
+            {
+              "h": 25.8,
+              "w": 492.05,
+              "x": 56.3,
+              "y": 283.08,
+              "confidence": 1.0,
+              "end_index": 322,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI products are not authorized for use in safety-critical applications (such as life support) where a failure of the TI product would reasonably be expected to cause severe personal injury or death, unless officers of the parties have executed an agreement specifically governing such use. Buyers represent that they have all necessary expertise in the safety and regulatory ramifications of their applications, and acknowledge and agree that they are solely responsible for all legal, regulatory and safety-related requirements concerning their products and any use of TI products in such safety-critical applications, notwithstanding any applications-related information or support that may be provided by TI. Further, Buyers must fully indemnify TI and its representatives against any damages arising out of the use of TI products in such safety-critical applications.",
+          "value": "TI products are not authorized for use in safety-critical applications (such as life support) where a failure of the TI product would reasonably be expected to cause severe personal injury or death, unless officers of the parties have executed an agreement specifically governing such use. Buyers represent that they have all necessary expertise in the safety and regulatory ramifications of their applications, and acknowledge and agree that they are solely responsible for all legal, regulatory and safety-related requirements concerning their products and any use of TI products in such safety-critical applications, notwithstanding any applications-related information or support that may be provided by TI. Further, Buyers must fully indemnify TI and its representatives against any damages arising out of the use of TI products in such safety-critical applications.",
+          "bbox": [
+            {
+              "h": 61.57,
+              "w": 497.56,
+              "x": 56.3,
+              "y": 313.64,
+              "confidence": 1.0,
+              "end_index": 870,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI products are neither designed nor intended for use in military/aerospace applications or environments unless the TI products are specifically designated by TI as military-grade or \"enhanced plastic.\" Only products designated by TI as military-grade meet military specifications. Buyers acknowledge and agree that any such use of TI products which TI has not designated as military-grade is solely at the Buyer's risk, and that they are solely responsible for compliance with all legal and regulatory requirements in connection with such use.",
+          "value": "TI products are neither designed nor intended for use in military/aerospace applications or environments unless the TI products are specifically designated by TI as military-grade or \"enhanced plastic.\" Only products designated by TI as military-grade meet military specifications. Buyers acknowledge and agree that any such use of TI products which TI has not designated as military-grade is solely at the Buyer's risk, and that they are solely responsible for compliance with all legal and regulatory requirements in connection with such use.",
+          "bbox": [
+            {
+              "h": 34.66,
+              "w": 494.5,
+              "x": 56.3,
+              "y": 380.2,
+              "confidence": 1.0,
+              "end_index": 543,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI products are neither designed nor intended for use in automotive applications or environments unless the specific TI products are designated by TI as compliant with ISO/TS 16949 requirements. Buyers acknowledge and agree that, if they use any non-designated products in automotive applications, TI will not be responsible for any failure to meet such requirements.",
+          "value": "TI products are neither designed nor intended for use in automotive applications or environments unless the specific TI products are designated by TI as compliant with ISO/TS 16949 requirements. Buyers acknowledge and agree that, if they use any non-designated products in automotive applications, TI will not be responsible for any failure to meet such requirements.",
+          "bbox": [
+            {
+              "h": 26.81,
+              "w": 474.92,
+              "x": 56.3,
+              "y": 419.88,
+              "confidence": 1.0,
+              "end_index": 366,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Following are URLs where you can obtain information on other Texas Instruments products and application solutions:",
+          "value": "Following are URLs where you can obtain information on other Texas Instruments products and application solutions:",
+          "bbox": [
+            {
+              "h": 8.09,
+              "w": 419.22,
+              "x": 55.69,
+              "y": 450.48,
+              "confidence": 1.0,
+              "end_index": 113,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Products\",,\"Applications\",\n\"Audio\",\"www.ti.com/audio\",\"Communications and Telecom\",\"www.ti.com/communications\"\n\"Amplifiers\",\"amplifier.ti.com\",\"Computers and Peripherals\",\"www.ti.com/computers\"\n\"Data Converters\",\"dataconverter.ti.com\",\"Consumer Electronics\",\"www.ti.com/consumer-apps\"\n\"DLP® Products\",\"www.dlp.com\",\"Energy and Lighting\",\"www.ti.com/energy\"\n\"DSP\",\"dsp.ti.com\",\"Industrial\",\"www.ti.com/industrial\"\n\"Clocks and Timers\",\"www.ti.com/clocks\",\"Medical\",\"www.ti.com/medical\"\n\"Interface\",\"interface.ti.com\",\"Security\",\"www.ti.com/security\"\n\"Logic\",\"logic.ti.com\",\"Space, Avionics and Defense\",\"www.ti.com/space-avionics-defense\"\n\"Power Mgmt\",\"power.ti.com\",\"Transportation and<br/>Automotive\",\"www.ti.com/automotive\"\n\"Microcontrollers\",\"microcontroller.ti.com\",\"Video and Imaging\",\"www.ti.com/video\"\n\"RFID\",\"www.ti-rfid.com\",\"Wireless\",\"www.ti.com/wireless-apps\"\n\"RF/IF and ZigBee® Solutions\",\"www.ti.com/lprf\",,\n,\"TI E2E Community Home Page\",,\"e2e.ti.com\"",
+          "html": "<table>\n  <thead>\n    <tr>\n      <th><b>Products</b></th>\n      <th></th>\n      <th><b><b>Applications</b></b></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Audio</td>\n      <td><u>www.ti.com/audio</u></td>\n      <td>Communications and Telecom</td>\n      <td><u>www.ti.com/communications</u></td>\n    </tr>\n    <tr>\n      <td>Amplifiers</td>\n      <td><u>amplifier.ti.com</u></td>\n      <td>Computers and Peripherals</td>\n      <td><u>www.ti.com/computers</u></td>\n    </tr>\n    <tr>\n      <td>Data Converters</td>\n      <td><u>dataconverter.ti.com</u></td>\n      <td>Consumer Electronics</td>\n      <td><u>www.ti.com/consumer-apps</u></td>\n    </tr>\n    <tr>\n      <td>DLP® Products</td>\n      <td><u>www.dlp.com</u></td>\n      <td>Energy and Lighting</td>\n      <td><u>www.ti.com/energy</u></td>\n    </tr>\n    <tr>\n      <td>DSP</td>\n      <td><u>dsp.ti.com</u></td>\n      <td>Industrial</td>\n      <td><u>www.ti.com/industrial</u></td>\n    </tr>\n    <tr>\n      <td>Clocks and Timers</td>\n      <td><u>www.ti.com/clocks</u></td>\n      <td>Medical</td>\n      <td><u>www.ti.com/medical</u></td>\n    </tr>\n    <tr>\n      <td>Interface</td>\n      <td><u>interface.ti.com</u></td>\n      <td>Security</td>\n      <td><u>www.ti.com/security</u></td>\n    </tr>\n    <tr>\n      <td>Logic</td>\n      <td><u>logic.ti.com</u></td>\n      <td>Space, Avionics and Defense</td>\n      <td><u>www.ti.com/space-avionics-defense</u></td>\n    </tr>\n    <tr>\n      <td>Power Mgmt</td>\n      <td><u>power.ti.com</u></td>\n      <td>Transportation and<br />Automotive</td>\n      <td><u>www.ti.com/automotive</u></td>\n    </tr>\n    <tr>\n      <td>Microcontrollers</td>\n      <td><u>microcontroller.ti.com</u></td>\n      <td>Video and Imaging</td>\n      <td><u>www.ti.com/video</u></td>\n    </tr>\n    <tr>\n      <td>RFID</td>\n      <td><u>www.ti-rfid.com</u></td>\n      <td>Wireless</td>\n      <td><u>www.ti.com/wireless-apps</u></td>\n    </tr>\n    <tr>\n      <td>RF/IF and ZigBee® Solutions</td>\n      <td><u>www.ti.com/lprf</u></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td><b><b>TI E2E Community Home Page</b></b></td>\n      <td></td>\n      <td><u>e2e.ti.com</u></td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Products                    |                                    | Applications                      |                                      |\n| --------------------------- | ---------------------------------- | --------------------------------- | ------------------------------------ |\n| Audio                       | *www\\.ti.com/audio*                | Communications and Telecom        | *www\\.ti.com/communications*         |\n| Amplifiers                  | *amplifier.ti.com*                 | Computers and Peripherals         | *www\\.ti.com/computers*              |\n| Data Converters             | *dataconverter.ti.com*             | Consumer Electronics              | *www\\.ti.com/consumer-apps*          |\n| DLP® Products               | *www\\.dlp.com*                     | Energy and Lighting               | *www\\.ti.com/energy*                 |\n| DSP                         | *dsp.ti.com*                       | Industrial                        | *www\\.ti.com/industrial*             |\n| Clocks and Timers           | *www\\.ti.com/clocks*               | Medical                           | *www\\.ti.com/medical*                |\n| Interface                   | *interface.ti.com*                 | Security                          | *www\\.ti.com/security*               |\n| Logic                       | *logic.ti.com*                     | Space, Avionics and Defense       | *www\\.ti.com/space-avionics-defense* |\n| Power Mgmt                  | *power.ti.com*                     | Transportation and<br/>Automotive | *www\\.ti.com/automotive*             |\n| Microcontrollers            | *microcontroller.ti.com*           | Video and Imaging                 | *www\\.ti.com/video*                  |\n| RFID                        | *www\\.ti-rfid.com*                 | Wireless                          | *www\\.ti.com/wireless-apps*          |\n| RF/IF and ZigBee® Solutions | *www\\.ti.com/lprf*                 |                                   |                                      |\n|                             | ****TI E2E Community Home Page**** |                                   | *e2e.ti.com*                         |",
+          "rows": [
+            [
+              "Products",
+              "",
+              "Applications",
+              ""
+            ],
+            [
+              "Audio",
+              "www.ti.com/audio",
+              "Communications and Telecom",
+              "www.ti.com/communications"
+            ],
+            [
+              "Amplifiers",
+              "amplifier.ti.com",
+              "Computers and Peripherals",
+              "www.ti.com/computers"
+            ],
+            [
+              "Data Converters",
+              "dataconverter.ti.com",
+              "Consumer Electronics",
+              "www.ti.com/consumer-apps"
+            ],
+            [
+              "DLP® Products",
+              "www.dlp.com",
+              "Energy and Lighting",
+              "www.ti.com/energy"
+            ],
+            [
+              "DSP",
+              "dsp.ti.com",
+              "Industrial",
+              "www.ti.com/industrial"
+            ],
+            [
+              "Clocks and Timers",
+              "www.ti.com/clocks",
+              "Medical",
+              "www.ti.com/medical"
+            ],
+            [
+              "Interface",
+              "interface.ti.com",
+              "Security",
+              "www.ti.com/security"
+            ],
+            [
+              "Logic",
+              "logic.ti.com",
+              "Space, Avionics and Defense",
+              "www.ti.com/space-avionics-defense"
+            ],
+            [
+              "Power Mgmt",
+              "power.ti.com",
+              "Transportation and<br/>Automotive",
+              "www.ti.com/automotive"
+            ],
+            [
+              "Microcontrollers",
+              "microcontroller.ti.com",
+              "Video and Imaging",
+              "www.ti.com/video"
+            ],
+            [
+              "RFID",
+              "www.ti-rfid.com",
+              "Wireless",
+              "www.ti.com/wireless-apps"
+            ],
+            [
+              "RF/IF and ZigBee® Solutions",
+              "www.ti.com/lprf",
+              "",
+              ""
+            ],
+            [
+              "",
+              "TI E2E Community Home Page",
+              "",
+              "e2e.ti.com"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 180.33,
+              "w": 482.26,
+              "x": 55.08,
+              "y": 466.1,
+              "confidence": 0.9,
+              "end_index": 2158,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265\nCopyright © 2011, Texas Instruments Incorporated",
+          "value": "Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265\nCopyright © 2011, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 16.93,
+              "w": 295.77,
+              "x": 157.28,
+              "y": 663.4,
+              "confidence": 1.0,
+              "end_index": 127,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 6,
+      "page_width": 612.0,
+      "success": true
+    }
+  ]
+}

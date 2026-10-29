@@ -1,0 +1,2455 @@
+{
+  "document_id": "SLAA414",
+  "source_pdf": "docs/datasheets/originals/ti-app-notes/SLAA414.pdf",
+  "tier": "agentic_plus",
+  "sha256": "61f0dcb862e7093873c8d3a65659dcbd2624f9a61a869235a49acfe575001b0c",
+  "pages": 7,
+  "tables_detected": 8,
+  "items_pages": [
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_1_image_1_v2.jpg)",
+              "url": "page_1_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 38.01,
+                  "w": 155.45,
+                  "x": 53.24,
+                  "y": 74.45,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "*Application Report*\nSLAA414A—July 2009—Revised August 2017",
+              "value": "\nApplication Report\nSLAA414A—July 2009—Revised August 2017",
+              "bbox": [
+                {
+                  "h": 25.62,
+                  "w": 183.51,
+                  "x": 375.71,
+                  "y": 77.65,
+                  "confidence": 1.0,
+                  "end_index": 58,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_1_image_1_v2.jpg)\n*Application Report*\nSLAA414A—July 2009—Revised August 2017",
+          "bbox": [
+            {
+              "h": 38.01,
+              "w": 505.98,
+              "x": 53.24,
+              "y": 74.45
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **LDO PSRR Measurement Simplified**",
+          "value": "LDO PSRR Measurement Simplified",
+          "bbox": [
+            {
+              "h": 17.93,
+              "w": 306.34,
+              "x": 55.37,
+              "y": 121.97,
+              "confidence": 0.875,
+              "end_index": 36,
+              "label": "doc_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "*Sanjay Pithadia, Scot Lester, and Ankur Verma*\n*PMP - LP Linear Regulators*",
+          "value": "Sanjay Pithadia, Scot Lester, and Ankur Verma\nPMP - LP Linear Regulators",
+          "bbox": [
+            {
+              "h": 9.5,
+              "w": 367.43,
+              "x": 54.9,
+              "y": 168.33,
+              "confidence": 1.0,
+              "end_index": 47,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 9.37,
+              "w": 123.96,
+              "x": 430.96,
+              "y": 168.52,
+              "confidence": 1.0,
+              "end_index": 75,
+              "label": "text",
+              "start_index": 48
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **ABSTRACT**",
+          "value": "ABSTRACT",
+          "bbox": [
+            {
+              "h": 8.73,
+              "w": 54.64,
+              "x": 293.7,
+              "y": 193.25,
+              "confidence": 0.581,
+              "end_index": 14,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "This application report explains different methods of measuring the Power Supply Rejection Ratio (PSRR) of a Low-Dropout (LDO) regulator and includes the pros and cons of these measuring methods.",
+          "value": "This application report explains different methods of measuring the Power Supply Rejection Ratio (PSRR) of a Low-Dropout (LDO) regulator and includes the pros and cons of these measuring methods.",
+          "bbox": [
+            {
+              "h": 21.39,
+              "w": 473.69,
+              "x": 83.23,
+              "y": 210.67,
+              "confidence": 1.0,
+              "end_index": 194,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"1\",\"What is PSRR? ..............................................................................................................\",\"1\"\n\"2\",\"Measuring PSRR of LDO ...................................................................................................\",\"2\"\n\"3\",\"Measuring PSRR Using Oscilloscope.....................................................................................\",\"4\"\n\"4\",\"Implications of the LDO Noise .............................................................................................\",\"5\"",
+          "html": "<table>\n  <caption>**Contents**</caption>\n    <tr>\n      <td>1</td>\n      <td>What is PSRR? ..............................................................................................................</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Measuring PSRR of LDO ...................................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Measuring PSRR Using Oscilloscope.....................................................................................</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>Implications of the LDO Noise .............................................................................................</td>\n      <td>5</td>\n    </tr>\n</table>",
+          "md": "### **Contents**\n\n| 1 | What is PSRR? .............................................................................................................. | 1 |\n| - | ---------------------------------------------------------------------------------------------------------------------------- | - |\n| 2 | Measuring PSRR of LDO ...................................................................................................    | 2 |\n| 3 | Measuring PSRR Using Oscilloscope.....................................................................................       | 4 |\n| 4 | Implications of the LDO Noise .............................................................................................  | 5 |",
+          "rows": [
+            [
+              "1",
+              "What is PSRR? ..............................................................................................................",
+              "1"
+            ],
+            [
+              "2",
+              "Measuring PSRR of LDO ...................................................................................................",
+              "2"
+            ],
+            [
+              "3",
+              "Measuring PSRR Using Oscilloscope.....................................................................................",
+              "4"
+            ],
+            [
+              "4",
+              "Implications of the LDO Noise .............................................................................................",
+              "5"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 43.89,
+              "w": 473.26,
+              "x": 84.23,
+              "y": 270.67,
+              "confidence": 0.9,
+              "end_index": 701,
+              "label": "table",
+              "start_index": 18
+            },
+            {
+              "h": 6.8,
+              "w": 38.24,
+              "x": 301.9,
+              "y": 259.17,
+              "confidence": 0.581,
+              "end_index": 15,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, image, paragraph_title, footer, reference, doc_title, formula] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "3 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"1\",\"PSRR Graph of TPS717xx LDOs .........................................................................................\",\"2\"\n\"2\",\"Basic Method of Measuring PSRR of LDO...............................................................................\",\"2\"\n\"3\",\"Recommended Method of Measuring PSRR of LDO ...................................................................\",\"3\"\n\"4\",\"PSRR Measured With Recommended Method ..........................................................................\",\"4\"\n\"5\",\"Input and Output Waveforms for Measuring PSRR Using Oscilloscope .............................................\",\"5\"",
+          "html": "<table>\n  <caption>**List of Figures**</caption>\n    <tr>\n      <td>1</td>\n      <td>PSRR Graph of TPS717xx LDOs .........................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Basic Method of Measuring PSRR of LDO...............................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Recommended Method of Measuring PSRR of LDO ...................................................................</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>PSRR Measured With Recommended Method ..........................................................................</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>Input and Output Waveforms for Measuring PSRR Using Oscilloscope .............................................</td>\n      <td>5</td>\n    </tr>\n</table>",
+          "md": "### **List of Figures**\n\n| 1 | PSRR Graph of TPS717xx LDOs ......................................................................................... | 2 |\n| - | --------------------------------------------------------------------------------------------------------------------- | - |\n| 2 | Basic Method of Measuring PSRR of LDO...............................................................................  | 2 |\n| 3 | Recommended Method of Measuring PSRR of LDO ...................................................................       | 3 |\n| 4 | PSRR Measured With Recommended Method ..........................................................................      | 4 |\n| 5 | Input and Output Waveforms for Measuring PSRR Using Oscilloscope .............................................        | 5 |",
+          "rows": [
+            [
+              "1",
+              "PSRR Graph of TPS717xx LDOs .........................................................................................",
+              "2"
+            ],
+            [
+              "2",
+              "Basic Method of Measuring PSRR of LDO...............................................................................",
+              "2"
+            ],
+            [
+              "3",
+              "Recommended Method of Measuring PSRR of LDO ...................................................................",
+              "3"
+            ],
+            [
+              "4",
+              "PSRR Measured With Recommended Method ..........................................................................",
+              "4"
+            ],
+            [
+              "5",
+              "Input and Output Waveforms for Measuring PSRR Using Oscilloscope .............................................",
+              "5"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 63.0,
+              "w": 473.08,
+              "x": 84.23,
+              "y": 344.07,
+              "confidence": 0.9,
+              "end_index": 803,
+              "label": "table",
+              "start_index": 25
+            },
+            {
+              "h": 8.49,
+              "w": 61.52,
+              "x": 290.28,
+              "y": 328.46,
+              "confidence": 0.844,
+              "end_index": 22,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, image, paragraph_title, footer, reference, doc_title, formula] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "3 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "",
+          "html": "<table>\n  <caption>**List of Tables**</caption>\n</table>",
+          "md": "### **List of Tables**\n\n|   |\n| - |",
+          "rows": [],
+          "bbox": [
+            {
+              "h": 7.76,
+              "w": 57.35,
+              "x": 292.38,
+              "y": 419.76,
+              "confidence": 0.844,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, image, paragraph_title, footer, reference, doc_title, formula] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "3 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 2,
+          "md": "## **Trademarks**",
+          "value": "Trademarks",
+          "bbox": [
+            {
+              "h": 8.74,
+              "w": 62.69,
+              "x": 53.24,
+              "y": 435.6,
+              "confidence": 0.581,
+              "end_index": 16,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "All trademarks are the property of their respective owners.",
+          "value": "All trademarks are the property of their respective owners.",
+          "bbox": [
+            {
+              "h": 10.38,
+              "w": 258.96,
+              "x": 82.62,
+              "y": 450.65,
+              "confidence": 1.0,
+              "end_index": 58,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **1 What is PSRR?**",
+          "value": "1 What is PSRR?",
+          "bbox": [
+            {
+              "h": 9.22,
+              "w": 108.44,
+              "x": 54.76,
+              "y": 476.78,
+              "confidence": 0.875,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Power Supply Rejection Ratio or Power Supply Ripple Rejection (PSRR) is a measure of a circuit’s power supply’s rejection expressed as a log ratio of output noise to input noise. PSRR provides a measure of how well a circuit rejects ripple, of various frequencies, injected at its input. The ripple can be either from the input supply such as a 50Hz/60Hz supply ripple, switching ripple from a DC/DC converter, or ripple due to the sharing of an input supply between different circuit blocks on the board. In the case of LDOs, PSRR is a measure of the regulated output voltage ripple compared to the input voltage ripple over a wide frequency range (10Hz to 1MHz is common) and is expressed in decibels (dB). The PSRR is very critical parameter in many audio and RF applications.",
+          "value": "Power Supply Rejection Ratio or Power Supply Ripple Rejection (PSRR) is a measure of a circuit’s power supply’s rejection expressed as a log ratio of output noise to input noise. PSRR provides a measure of how well a circuit rejects ripple, of various frequencies, injected at its input. The ripple can be either from the input supply such as a 50Hz/60Hz supply ripple, switching ripple from a DC/DC converter, or ripple due to the sharing of an input supply between different circuit blocks on the board. In the case of LDOs, PSRR is a measure of the regulated output voltage ripple compared to the input voltage ripple over a wide frequency range (10Hz to 1MHz is common) and is expressed in decibels (dB). The PSRR is very critical parameter in many audio and RF applications.",
+          "bbox": [
+            {
+              "h": 87.91,
+              "w": 473.38,
+              "x": 82.62,
+              "y": 494.21,
+              "confidence": 1.0,
+              "end_index": 778,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The basic equation for PSRR is:",
+          "value": "The basic equation for PSRR is:",
+          "bbox": [
+            {
+              "h": 10.3,
+              "w": 143.23,
+              "x": 83.23,
+              "y": 588.46,
+              "confidence": 0.938,
+              "end_index": 30,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$PSRR = 20 \\log \\frac{\\text{Ripple}_{\\text{Input}}}{\\text{Ripple}_{\\text{Output}}}$$ (1)",
+          "value": "$$PSRR = 20 \\log \\frac{\\text{Ripple}_{\\text{Input}}}{\\text{Ripple}_{\\text{Output}}}$$ (1)",
+          "bbox": [
+            {
+              "h": 31.05,
+              "w": 445.56,
+              "x": 108.77,
+              "y": 602.7,
+              "confidence": 0.887,
+              "end_index": 88,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Historically LDOs have poor high frequency PSRR performance, but currently TI has LDOs with PSRR > 40dB at 5MHz. One important point regarding the PSRR graphs in TI LDO datasheet is that the PSRR axis is inverted (See Figure 1). The PSRR is calculated as rejection so it should be a negative number; however, the graph shows it as positive number so that a higher number denotes higher noise rejection.",
+          "value": "Historically LDOs have poor high frequency PSRR performance, but currently TI has LDOs with PSRR > 40dB at 5MHz. One important point regarding the PSRR graphs in TI LDO datasheet is that the PSRR axis is inverted (See Figure 1). The PSRR is calculated as rejection so it should be a negative number; however, the graph shows it as positive number so that a higher number denotes higher noise rejection.",
+          "bbox": [
+            {
+              "h": 43.95,
+              "w": 465.14,
+              "x": 82.62,
+              "y": 639.94,
+              "confidence": 1.0,
+              "end_index": 401,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SLAA414A—July 2009—Revised August 2017\n*LDO PSRR Measurement Simplified*\n1 <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span>\nCopyright © 2009–2017, Texas Instruments Incorporated",
+              "value": "SLAA414A—July 2009—Revised August 2017\nLDO PSRR Measurement Simplified\n1\n<span style=\"color:#0000ff\">Submit Documentation Feedback</span>\nCopyright © 2009–2017, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.33,
+                  "w": 474.28,
+                  "x": 54.39,
+                  "y": 751.3,
+                  "confidence": 0.982,
+                  "end_index": 194,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SLAA414A—July 2009—Revised August 2017\n*LDO PSRR Measurement Simplified*\n1\n*Submit Documentation Feedback*\nCopyright © 2009–2017, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.33,
+              "w": 474.28,
+              "x": 54.39,
+              "y": 751.3
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 1,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Measuring PSRR of LDO* [www.ti.com](http://www.ti.com)",
+              "value": "Measuring PSRR of LDO www.ti.com",
+              "bbox": [
+                {
+                  "h": 8.6,
+                  "w": 100.54,
+                  "x": 54.66,
+                  "y": 58.47,
+                  "confidence": 0.969,
+                  "end_index": 24,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.86,
+                  "w": 44.26,
+                  "x": 513.12,
+                  "y": 59.36,
+                  "confidence": 0.969,
+                  "end_index": 54,
+                  "label": "header",
+                  "start_index": 25
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Measuring PSRR of LDO* www.ti.com",
+          "bbox": [
+            {
+              "h": 8.6,
+              "w": 502.72,
+              "x": 54.66,
+              "y": 58.47
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_2_image_2_v2.jpg)",
+          "url": "page_2_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 22.97,
+              "w": 94.25,
+              "x": 463.28,
+              "y": 11.88,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "csv": "\"f - Frequency - Hz\",\"PSRR - dB<br/>10 mA\",\"PSRR - dB<br/>75 mA\",\"PSRR - dB<br/>150 mA\"\n\"10\",\"69\",\"71\",\"74\"\n\"100\",\"69\",\"71\",\"74\"\n\"1 k\",\"69\",\"71\",\"74\"\n\"10 k\",\"67\",\"69\",\"70\"\n\"100 k\",\"66\",\"68\",\"69\"\n\"200 k\",\"63\",\"66\",\"68\"\n\"300 k\",\"59\",\"62\",\"64\"\n\"400 k\",\"56\",\"58\",\"60\"\n\"500 k\",\"53\",\"55\",\"56\"\n\"600 k\",\"51\",\"52\",\"53\"\n\"700 k\",\"49\",\"50\",\"51\"\n\"800 k\",\"47\",\"48\",\"49\"\n\"900 k\",\"46\",\"47\",\"47\"\n\"1 M\",\"45\",\"46\",\"46\"\n\"2 M\",\"53\",\"45\",\"44\"\n\"3 M\",\"48\",\"42\",\"40\"\n\"4 M\",\"41\",\"36\",\"34\"\n\"5 M\",\"38\",\"32\",\"30\"\n\"6 M\",\"35\",\"30\",\"28\"\n\"7 M\",\"33\",\"28\",\"26\"\n\"8 M\",\"31\",\"27\",\"25\"\n\"9 M\",\"30\",\"26\",\"24\"\n\"10 M\",\"29\",\"25\",\"23\"",
+          "html": "<table>\n  <caption>Figure 1. PSRR Graph of TPS717xx LDOs; C<sub>OUT</sub> = 1 µF, C<sub>NR</sub> = 10 nF</caption>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">f - Frequency - Hz</th>\n      <th colspan=\"3\">PSRR - dB</th>\n    </tr>\n    <tr>\n      <th>10 mA</th>\n      <th>75 mA</th>\n      <th>150 mA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>10</th>\n      <td>69</td>\n      <td>71</td>\n      <td>74</td>\n    </tr>\n    <tr>\n      <th>100</th>\n      <td>69</td>\n      <td>71</td>\n      <td>74</td>\n    </tr>\n    <tr>\n      <th>1 k</th>\n      <td>69</td>\n      <td>71</td>\n      <td>74</td>\n    </tr>\n    <tr>\n      <th>10 k</th>\n      <td>67</td>\n      <td>69</td>\n      <td>70</td>\n    </tr>\n    <tr>\n      <th>100 k</th>\n      <td>66</td>\n      <td>68</td>\n      <td>69</td>\n    </tr>\n    <tr>\n      <th>200 k</th>\n      <td>63</td>\n      <td>66</td>\n      <td>68</td>\n    </tr>\n    <tr>\n      <th>300 k</th>\n      <td>59</td>\n      <td>62</td>\n      <td>64</td>\n    </tr>\n    <tr>\n      <th>400 k</th>\n      <td>56</td>\n      <td>58</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <th>500 k</th>\n      <td>53</td>\n      <td>55</td>\n      <td>56</td>\n    </tr>\n    <tr>\n      <th>600 k</th>\n      <td>51</td>\n      <td>52</td>\n      <td>53</td>\n    </tr>\n    <tr>\n      <th>700 k</th>\n      <td>49</td>\n      <td>50</td>\n      <td>51</td>\n    </tr>\n    <tr>\n      <th>800 k</th>\n      <td>47</td>\n      <td>48</td>\n      <td>49</td>\n    </tr>\n    <tr>\n      <th>900 k</th>\n      <td>46</td>\n      <td>47</td>\n      <td>47</td>\n    </tr>\n    <tr>\n      <th>1 M</th>\n      <td>45</td>\n      <td>46</td>\n      <td>46</td>\n    </tr>\n    <tr>\n      <th>2 M</th>\n      <td>53</td>\n      <td>45</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <th>3 M</th>\n      <td>48</td>\n      <td>42</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <th>4 M</th>\n      <td>41</td>\n      <td>36</td>\n      <td>34</td>\n    </tr>\n    <tr>\n      <th>5 M</th>\n      <td>38</td>\n      <td>32</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <th>6 M</th>\n      <td>35</td>\n      <td>30</td>\n      <td>28</td>\n    </tr>\n    <tr>\n      <th>7 M</th>\n      <td>33</td>\n      <td>28</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <th>8 M</th>\n      <td>31</td>\n      <td>27</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <th>9 M</th>\n      <td>30</td>\n      <td>26</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <th>10 M</th>\n      <td>29</td>\n      <td>25</td>\n      <td>23</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 1. PSRR Graph of TPS717xx LDOs; COUT = 1 µF, CNR = 10 nF\n\n| f - Frequency - Hz | PSRR - dB<br/>10 mA | PSRR - dB<br/>75 mA | PSRR - dB<br/>150 mA |\n| ------------------ | ------------------- | ------------------- | -------------------- |\n| 10                 | 69                  | 71                  | 74                   |\n| 100                | 69                  | 71                  | 74                   |\n| 1 k                | 69                  | 71                  | 74                   |\n| 10 k               | 67                  | 69                  | 70                   |\n| 100 k              | 66                  | 68                  | 69                   |\n| 200 k              | 63                  | 66                  | 68                   |\n| 300 k              | 59                  | 62                  | 64                   |\n| 400 k              | 56                  | 58                  | 60                   |\n| 500 k              | 53                  | 55                  | 56                   |\n| 600 k              | 51                  | 52                  | 53                   |\n| 700 k              | 49                  | 50                  | 51                   |\n| 800 k              | 47                  | 48                  | 49                   |\n| 900 k              | 46                  | 47                  | 47                   |\n| 1 M                | 45                  | 46                  | 46                   |\n| 2 M                | 53                  | 45                  | 44                   |\n| 3 M                | 48                  | 42                  | 40                   |\n| 4 M                | 41                  | 36                  | 34                   |\n| 5 M                | 38                  | 32                  | 30                   |\n| 6 M                | 35                  | 30                  | 28                   |\n| 7 M                | 33                  | 28                  | 26                   |\n| 8 M                | 31                  | 27                  | 25                   |\n| 9 M                | 30                  | 26                  | 24                   |\n| 10 M               | 29                  | 25                  | 23                   |",
+          "rows": [
+            [
+              "f - Frequency - Hz",
+              "PSRR - dB<br/>10 mA",
+              "PSRR - dB<br/>75 mA",
+              "PSRR - dB<br/>150 mA"
+            ],
+            [
+              "10",
+              "69",
+              "71",
+              "74"
+            ],
+            [
+              "100",
+              "69",
+              "71",
+              "74"
+            ],
+            [
+              "1 k",
+              "69",
+              "71",
+              "74"
+            ],
+            [
+              "10 k",
+              "67",
+              "69",
+              "70"
+            ],
+            [
+              "100 k",
+              "66",
+              "68",
+              "69"
+            ],
+            [
+              "200 k",
+              "63",
+              "66",
+              "68"
+            ],
+            [
+              "300 k",
+              "59",
+              "62",
+              "64"
+            ],
+            [
+              "400 k",
+              "56",
+              "58",
+              "60"
+            ],
+            [
+              "500 k",
+              "53",
+              "55",
+              "56"
+            ],
+            [
+              "600 k",
+              "51",
+              "52",
+              "53"
+            ],
+            [
+              "700 k",
+              "49",
+              "50",
+              "51"
+            ],
+            [
+              "800 k",
+              "47",
+              "48",
+              "49"
+            ],
+            [
+              "900 k",
+              "46",
+              "47",
+              "47"
+            ],
+            [
+              "1 M",
+              "45",
+              "46",
+              "46"
+            ],
+            [
+              "2 M",
+              "53",
+              "45",
+              "44"
+            ],
+            [
+              "3 M",
+              "48",
+              "42",
+              "40"
+            ],
+            [
+              "4 M",
+              "41",
+              "36",
+              "34"
+            ],
+            [
+              "5 M",
+              "38",
+              "32",
+              "30"
+            ],
+            [
+              "6 M",
+              "35",
+              "30",
+              "28"
+            ],
+            [
+              "7 M",
+              "33",
+              "28",
+              "26"
+            ],
+            [
+              "8 M",
+              "31",
+              "27",
+              "25"
+            ],
+            [
+              "9 M",
+              "30",
+              "26",
+              "24"
+            ],
+            [
+              "10 M",
+              "29",
+              "25",
+              "23"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 226.51,
+              "w": 274.79,
+              "x": 168.3,
+              "y": 83.95,
+              "confidence": 0.9,
+              "end_index": 2317,
+              "label": "chart",
+              "start_index": 69
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [chart, image, text, caption, paragraph_title, header, footer, formula] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 1. PSRR Graph of TPS717xx LDOs**",
+          "value": "Figure 1. PSRR Graph of TPS717xx LDOs",
+          "bbox": [
+            {
+              "h": 11.08,
+              "w": 196.2,
+              "x": 207.96,
+              "y": 299.38,
+              "confidence": 0.969,
+              "end_index": 40,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# 2 **Measuring PSRR of LDO**",
+          "value": "2 Measuring PSRR of LDO",
+          "bbox": [
+            {
+              "h": 11.26,
+              "w": 159.19,
+              "x": 53.24,
+              "y": 335.02,
+              "confidence": 0.906,
+              "end_index": 28,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "The following sections explain different methods of measuring the PSRR of an LDO.",
+          "value": "The following sections explain different methods of measuring the PSRR of an LDO.",
+          "bbox": [
+            {
+              "h": 11.09,
+              "w": 374.24,
+              "x": 83.23,
+              "y": 352.44,
+              "confidence": 1.0,
+              "end_index": 80,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "Measuring PSRR using LC summing node method:",
+              "value": "Measuring PSRR using LC summing node method:",
+              "bbox": [
+                {
+                  "h": 11.09,
+                  "w": 241.09,
+                  "x": 85.01,
+                  "y": 367.49,
+                  "confidence": 0.969,
+                  "end_index": 43,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "The basic method of measuring PSRR is shown in Figure 2. In this method, DC voltage and AC voltages are summed together and applied at the input of the LDO. **VDC** is the operating point bias voltage and **VAC** is the noise source used in the test. Capacitor C prevents **VAC** from shoring **VDC** and inductor L prevents **VDC** from shorting **VAC**. So L and C are used for isolating both the sources, **VDC** and **VAC**, from each other.",
+              "value": "The basic method of measuring PSRR is shown in Figure 2. In this method, DC voltage and AC voltages are summed together and applied at the input of the LDO. VDC is the operating point bias voltage and VAC is the noise source used in the test. Capacitor C prevents VAC from shoring VDC and inductor L prevents VDC from shorting VAC. So L and C are used for isolating both the sources, VDC and VAC, from each other.",
+              "bbox": [
+                {
+                  "h": 53.82,
+                  "w": 447.98,
+                  "x": 97.92,
+                  "y": 381.74,
+                  "confidence": 1.0,
+                  "end_index": 444,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "The L and C will create a high pass filter for **VAC** which will limit how low in frequency we can measure the PSRR. The 3dB point of this filter is determined by Equation 2. Frequencies below the 3dB point will start to be attenuated which will make measurements more difficult. The highest frequency that can be measured is determined by the self resonant frequencies of the L and C components.",
+              "value": "The L and C will create a high pass filter for VAC which will limit how low in frequency we can measure the PSRR. The 3dB point of this filter is determined by Equation 2. Frequencies below the 3dB point will start to be attenuated which will make measurements more difficult. The highest frequency that can be measured is determined by the self resonant frequencies of the L and C components.",
+              "bbox": [
+                {
+                  "h": 43.48,
+                  "w": 458.69,
+                  "x": 97.92,
+                  "y": 440.35,
+                  "confidence": 1.0,
+                  "end_index": 396,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "$$F_{min} = 1 / 2\\pi\\sqrt{LC}$$ (2)",
+              "value": "$$F_{min} = 1 / 2\\pi\\sqrt{LC}$$ (2)",
+              "bbox": [
+                {
+                  "h": 9.3,
+                  "w": 443.97,
+                  "x": 113.22,
+                  "y": 490.25,
+                  "confidence": 0.6,
+                  "end_index": 34,
+                  "label": "formula",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "A drawback to this method is that it works well only for mid-range frequencies (approximately 1 kHz to 500 kHz).",
+              "value": "A drawback to this method is that it works well only for mid-range frequencies (approximately 1 kHz to 500 kHz).",
+              "bbox": [
+                {
+                  "h": 21.55,
+                  "w": 454.72,
+                  "x": 97.92,
+                  "y": 503.71,
+                  "confidence": 1.0,
+                  "end_index": 111,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "1. Measuring PSRR using LC summing node method:\n\n   The basic method of measuring PSRR is shown in Figure 2. In this method, DC voltage and AC voltages are summed together and applied at the input of the LDO. **VDC** is the operating point bias voltage and **VAC** is the noise source used in the test. Capacitor C prevents **VAC** from shoring **VDC** and inductor L prevents **VDC** from shorting **VAC**. So L and C are used for isolating both the sources, **VDC** and **VAC**, from each other.\n\n   The L and C will create a high pass filter for **VAC** which will limit how low in frequency we can measure the PSRR. The 3dB point of this filter is determined by Equation 2. Frequencies below the 3dB point will start to be attenuated which will make measurements more difficult. The highest frequency that can be measured is determined by the self resonant frequencies of the L and C components.\n\n   $$F_{min} = 1 / 2\\pi\\sqrt{LC}$$ (2)\n\n   A drawback to this method is that it works well only for mid-range frequencies (approximately 1 kHz to 500 kHz).",
+          "ordered": true,
+          "bbox": [
+            {
+              "h": 157.77,
+              "w": 472.18,
+              "x": 85.01,
+              "y": 367.49,
+              "confidence": 0.6,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    subgraph LDO_Block [\"LDO\"]\n        direction TB\n        LDO_IN[\"V#quot;IN#quot;\"]\n        LDO_OUT[\"V#quot;OUT#quot;\"]\n        LDO_GND[\"GND\"]\n    end\n\n    VDC_POS[\"+\"] --- L[\"L\"]\n    L --- NODE1(( ))\n    VDC_NEG[\"VDC\"] --- GND_LINE(( ))\n\n    NODE1 --- C[\"C\"]\n    C --- VAC_POS[\"+\"]\n    VAC_POS --- VAC((~))\n    VAC --- GND_LINE\n\n    NODE1 --- NODE2(( ))\n    NODE2 --- CIN[\"C#quot;IN#quot;\"]\n    CIN --- GND_LINE\n\n    NODE2 --- LDO_IN\n    LDO_GND --- GND_LINE\n\n    LDO_OUT --- NODE3(( ))\n    NODE3 --- COUT[\"C#quot;OUT#quot;\"]\n    COUT --- GND_LINE\n\n    NODE3 --- LOAD[\"LOAD\"]\n    LOAD --- GND_LINE\n\n    %% Labels and Annotations\n    V_IN_LABEL[\"V#quot;IN#quot;\"] -.-> NODE2\n    V_OUT_LABEL[\"V#quot;OUT#quot;\"] -.-> NODE3\n    VAC_LABEL[\"VAC\"] --- VAC\n    \n    %% Ground symbol\n    GND_LINE --- GND_SYM[\"⏚\"]\n\n    style LDO_Block fill:#d9ead3,stroke:#000,stroke-width:2px\n    style LDO_IN fill:none,stroke:none\n    style LDO_OUT fill:none,stroke:none\n    style LDO_GND fill:none,stroke:none\n```",
+          "value": "graph LR\n    subgraph LDO_Block [\"LDO\"]\n        direction TB\n        LDO_IN[\"V#quot;IN#quot;\"]\n        LDO_OUT[\"V#quot;OUT#quot;\"]\n        LDO_GND[\"GND\"]\n    end\n\n    VDC_POS[\"+\"] --- L[\"L\"]\n    L --- NODE1(( ))\n    VDC_NEG[\"VDC\"] --- GND_LINE(( ))\n\n    NODE1 --- C[\"C\"]\n    C --- VAC_POS[\"+\"]\n    VAC_POS --- VAC((~))\n    VAC --- GND_LINE\n\n    NODE1 --- NODE2(( ))\n    NODE2 --- CIN[\"C#quot;IN#quot;\"]\n    CIN --- GND_LINE\n\n    NODE2 --- LDO_IN\n    LDO_GND --- GND_LINE\n\n    LDO_OUT --- NODE3(( ))\n    NODE3 --- COUT[\"C#quot;OUT#quot;\"]\n    COUT --- GND_LINE\n\n    NODE3 --- LOAD[\"LOAD\"]\n    LOAD --- GND_LINE\n\n    %% Labels and Annotations\n    V_IN_LABEL[\"V#quot;IN#quot;\"] -.-> NODE2\n    V_OUT_LABEL[\"V#quot;OUT#quot;\"] -.-> NODE3\n    VAC_LABEL[\"VAC\"] --- VAC\n    \n    %% Ground symbol\n    GND_LINE --- GND_SYM[\"⏚\"]\n\n    style LDO_Block fill:#d9ead3,stroke:#000,stroke-width:2px\n    style LDO_IN fill:none,stroke:none\n    style LDO_OUT fill:none,stroke:none\n    style LDO_GND fill:none,stroke:none",
+          "bbox": [
+            {
+              "h": 130.68,
+              "w": 313.95,
+              "x": 148.72,
+              "y": 533.81,
+              "confidence": 0.5,
+              "end_index": 1013,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "Figure 2. Basic Method of Measuring PSRR of LDO",
+          "value": "Figure 2. Basic Method of Measuring PSRR of LDO",
+          "bbox": [
+            {
+              "h": 9.97,
+              "w": 241.53,
+              "x": 185.26,
+              "y": 672.73,
+              "confidence": 1.0,
+              "end_index": 46,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "**Figure 2. Basic Method of Measuring PSRR of LDO**",
+          "value": "Figure 2. Basic Method of Measuring PSRR of LDO",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "Measuring PSRR using summing amplifier",
+              "value": "Measuring PSRR using summing amplifier",
+              "bbox": [
+                {
+                  "h": 10.29,
+                  "w": 204.36,
+                  "x": 83.23,
+                  "y": 692.21,
+                  "confidence": 0.906,
+                  "end_index": 37,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "To improve the measurement of PSRR, a recommended method is described using a high-bandwidth amplifier as summing node to inject the signals and provides the isolation between **VAC** and **VDC**. This method is tested and verified using TPS72715 LDO and THS3120 high-speed amplifier from Texas",
+              "value": "To improve the measurement of PSRR, a recommended method is described using a high-bandwidth amplifier as summing node to inject the signals and provides the isolation between VAC and VDC. This method is tested and verified using TPS72715 LDO and THS3120 high-speed amplifier from Texas",
+              "bbox": [
+                {
+                  "h": 32.48,
+                  "w": 459.31,
+                  "x": 97.92,
+                  "y": 706.46,
+                  "confidence": 1.0,
+                  "end_index": 293,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "2. Measuring PSRR using summing amplifier\n\n   To improve the measurement of PSRR, a recommended method is described using a high-bandwidth amplifier as summing node to inject the signals and provides the isolation between **VAC** and **VDC**. This method is tested and verified using TPS72715 LDO and THS3120 high-speed amplifier from Texas",
+          "ordered": true,
+          "bbox": [
+            {
+              "h": 46.73,
+              "w": 474.0,
+              "x": 83.23,
+              "y": 692.21,
+              "confidence": 0.906,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "items": [
+            {
+              "md": "2 *LDO PSRR Measurement Simplified* SLAA414A – July 2009 – Revised August 2017\nCopyright © 2009–2017, Texas Instruments Incorporated <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span>",
+              "value": "2 LDO PSRR Measurement Simplified SLAA414A – July 2009 – Revised August 2017\nCopyright © 2009–2017, Texas Instruments Incorporated <span style=\"color:#0000ff\">Submit Documentation Feedback</span>",
+              "bbox": [
+                {
+                  "h": 23.33,
+                  "w": 474.07,
+                  "x": 84.61,
+                  "y": 751.3,
+                  "confidence": 0.982,
+                  "end_index": 198,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "2 *LDO PSRR Measurement Simplified* SLAA414A – July 2009 – Revised August 2017\nCopyright © 2009–2017, Texas Instruments Incorporated *Submit Documentation Feedback*",
+          "bbox": [
+            {
+              "h": 23.33,
+              "w": 474.07,
+              "x": 84.61,
+              "y": 751.3
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 2,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Measuring PSRR of LDO*",
+              "value": "www.ti.com Measuring PSRR of LDO",
+              "bbox": [
+                {
+                  "h": 5.86,
+                  "w": 44.26,
+                  "x": 54.12,
+                  "y": 59.36,
+                  "confidence": 0.969,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 8.6,
+                  "w": 100.54,
+                  "x": 457.46,
+                  "y": 58.47,
+                  "confidence": 0.969,
+                  "end_index": 54,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "www.ti.com *Measuring PSRR of LDO*",
+          "bbox": [
+            {
+              "h": 8.6,
+              "w": 503.88,
+              "x": 54.12,
+              "y": 58.47
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_3_image_2_v2.jpg)",
+          "url": "page_3_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 22.97,
+              "w": 93.64,
+              "x": 55.08,
+              "y": 11.88,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "Instruments. The basic set-up is shown in Figure 3. The PSRR is measured with a no-load condition and the resulting measured PSRR graph corresponds with the datasheet graph of PSRR.",
+          "value": "Instruments. The basic set-up is shown in Figure 3. The PSRR is measured with a no-load condition and the resulting measured PSRR graph corresponds with the datasheet graph of PSRR.",
+          "bbox": [
+            {
+              "h": 21.39,
+              "w": 445.65,
+              "x": 97.92,
+              "y": 76.03,
+              "confidence": 1.0,
+              "end_index": 180,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Keep in mind the following while measuring the PSRR using this method:",
+          "value": "Keep in mind the following while measuring the PSRR using this method:",
+          "bbox": [
+            {
+              "h": 10.51,
+              "w": 323.62,
+              "x": 99.76,
+              "y": 101.38,
+              "confidence": 1.0,
+              "end_index": 69,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "a. The input capacitor of LDO should be removed before the measurement because this capacitor could cause the high-speed amplifier to go unstable.\nb. Vin and Vout should be measured with high-impedance probes (either scope or network analyzer) immediately at the Vin or Vout pins to minimize the set-up inductance effects.\nc. There test set-up should not have any long wires since this will add inductance and impact the results.\nd. While selecting the values of AC and DC inputs, the following conditions should be considered:\n$V_{AC} (max) + V_{DC} < V_{ABS} (max)$ of LDO\n$V_{DC} - V_{AC} > V_{UVLO}$ of LDO\nAlso, the best results will be obtained if:\n$V_{DC} - V_{AC} > V_{out} + V_{do} + 0.5$ where $V_{out}$ is the output voltage of the LDO and $V_{do}$ is the specified drop out voltage at the operating point.\ne. At very high frequencies, the response of the amplifier will start to attenuate the $V_{AC}$ signal that is applied to the LDO. At some point, the attenuated $V_{AC}$ will be too small to measure on the output of the LDO.\nf. As load current increases, the open-loop output impedance of LDO decreases (Since a MOSFET output impedance is inversely proportional to the drain current), thus lowering the gain. Increasing the load current also pushes the output pole to higher frequencies, which increases the feedback loop bandwidth. The net effect of increasing the load is therefore reduced PSRR at lower frequencies (because of reduced gain) along with increased PSRR at higher frequencies.",
+          "value": "a. The input capacitor of LDO should be removed before the measurement because this capacitor could cause the high-speed amplifier to go unstable.\nb. Vin and Vout should be measured with high-impedance probes (either scope or network analyzer) immediately at the Vin or Vout pins to minimize the set-up inductance effects.\nc. There test set-up should not have any long wires since this will add inductance and impact the results.\nd. While selecting the values of AC and DC inputs, the following conditions should be considered:\n$V_{AC} (max) + V_{DC} < V_{ABS} (max)$ of LDO\n$V_{DC} - V_{AC} > V_{UVLO}$ of LDO\nAlso, the best results will be obtained if:\n$V_{DC} - V_{AC} > V_{out} + V_{do} + 0.5$ where $V_{out}$ is the output voltage of the LDO and $V_{do}$ is the specified drop out voltage at the operating point.\ne. At very high frequencies, the response of the amplifier will start to attenuate the $V_{AC}$ signal that is applied to the LDO. At some point, the attenuated $V_{AC}$ will be too small to measure on the output of the LDO.\nf. As load current increases, the open-loop output impedance of LDO decreases (Since a MOSFET output impedance is inversely proportional to the drain current), thus lowering the gain. Increasing the load current also pushes the output pole to higher frequencies, which increases the feedback loop bandwidth. The net effect of increasing the load is therefore reduced PSRR at lower frequencies (because of reduced gain) along with increased PSRR at higher frequencies.",
+          "bbox": [
+            {
+              "h": 20.56,
+              "w": 438.63,
+              "x": 102.36,
+              "y": 116.93,
+              "confidence": 1.0,
+              "end_index": 146,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 20.46,
+              "w": 444.88,
+              "x": 102.58,
+              "y": 142.57,
+              "confidence": 1.0,
+              "end_index": 322,
+              "label": "text",
+              "start_index": 147
+            },
+            {
+              "h": 18.32,
+              "w": 433.35,
+              "x": 102.4,
+              "y": 168.32,
+              "confidence": 1.0,
+              "end_index": 429,
+              "label": "text",
+              "start_index": 323
+            },
+            {
+              "h": 9.56,
+              "w": 432.22,
+              "x": 102.35,
+              "y": 193.73,
+              "confidence": 1.0,
+              "end_index": 527,
+              "label": "text",
+              "start_index": 430
+            },
+            {
+              "h": 9.48,
+              "w": 175.35,
+              "x": 129.2,
+              "y": 208.33,
+              "confidence": 1.0,
+              "end_index": 574,
+              "label": "text",
+              "start_index": 528
+            },
+            {
+              "h": 9.48,
+              "w": 122.2,
+              "x": 129.2,
+              "y": 221.73,
+              "confidence": 1.0,
+              "end_index": 610,
+              "label": "text",
+              "start_index": 575
+            },
+            {
+              "h": 8.74,
+              "w": 173.97,
+              "x": 129.14,
+              "y": 235.22,
+              "confidence": 1.0,
+              "end_index": 654,
+              "label": "text",
+              "start_index": 611
+            },
+            {
+              "h": 20.56,
+              "w": 394.52,
+              "x": 129.2,
+              "y": 248.53,
+              "confidence": 1.0,
+              "end_index": 817,
+              "label": "text",
+              "start_index": 655
+            },
+            {
+              "h": 29.55,
+              "w": 449.59,
+              "x": 102.4,
+              "y": 274.13,
+              "confidence": 1.0,
+              "end_index": 1042,
+              "label": "text",
+              "start_index": 818
+            },
+            {
+              "h": 53.56,
+              "w": 448.9,
+              "x": 102.14,
+              "y": 310.73,
+              "confidence": 1.0,
+              "end_index": 1509,
+              "label": "text",
+              "start_index": 1043
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "High Impedance Adapters (Model # 41802A from **Agilent)**",
+          "value": "High Impedance Adapters (Model # 41802A from <span style=\"color:#010202\">Agilent)</span>",
+          "bbox": [
+            {
+              "h": 5.63,
+              "w": 45.15,
+              "x": 268.43,
+              "y": 375.22,
+              "confidence": 0.1,
+              "end_index": 91,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    subgraph NA [\"Network Analyzer (Model # 4395A from Agilent)\"]\n        direction TB\n        CH2[\"CH2\"]\n        CH1[\"CH1\"]\n        RF_OUT[\"RF out\"]\n        DC_OUT[\"DC out\"]\n    end\n\n    ADAPT2[\" \"]\n    ADAPT1[\" \"]\n\n    subgraph EVM [\"Built on THS3120 EVM\"]\n        direction LR\n        C1[\"100 µF\"]\n        R1[\"1 kΩ\"]\n        R2[\"100 Ω\"]\n        R_FB[\"1 kΩ\"]\n        AMP{{\"THS3120\"}}\n        FB_STAR[\"FB*\"]\n        \n        RF_OUT --- C1 --- R1 --- NODE1[\" \"]\n        DC_OUT --- NODE2[\" \"]\n        NODE1 --- R2 --- NODE2\n        NODE1 --- MINUS[\"-\"]\n        NODE2 --- PLUS[\"+\"]\n        \n        MINUS --- AMP\n        PLUS --- AMP\n        AMP --- OUT_NODE[\" \"]\n        OUT_NODE --- R_FB --- NODE1\n        OUT_NODE --- FB_STAR\n        \n        V_POS[\"+10 V\"] --- AMP\n        V_NEG[\"-10 V\"] --- AMP\n    end\n\n    DUT[\"DUT\"]\n    COUT[\"COUT\"]\n    RLOAD[\" \"]\n    GND[\" \"]\n\n    CH2 --- ADAPT2 --- COUT_NODE[\" \"]\n    CH1 --- ADAPT1 --- DUT_IN_NODE[\" \"]\n    \n    FB_STAR --- DUT_IN_NODE --- DUT\n    DUT --- COUT_NODE\n    COUT_NODE --- COUT --- GND_NODE[\" \"]\n    COUT_NODE --- RLOAD --- GND_NODE\n    DUT --- GND_NODE\n    GND_NODE --- GND\n```",
+          "value": "graph LR\n    subgraph NA [\"Network Analyzer (Model # 4395A from Agilent)\"]\n        direction TB\n        CH2[\"CH2\"]\n        CH1[\"CH1\"]\n        RF_OUT[\"RF out\"]\n        DC_OUT[\"DC out\"]\n    end\n\n    ADAPT2[\" \"]\n    ADAPT1[\" \"]\n\n    subgraph EVM [\"Built on THS3120 EVM\"]\n        direction LR\n        C1[\"100 µF\"]\n        R1[\"1 kΩ\"]\n        R2[\"100 Ω\"]\n        R_FB[\"1 kΩ\"]\n        AMP{{\"THS3120\"}}\n        FB_STAR[\"FB*\"]\n        \n        RF_OUT --- C1 --- R1 --- NODE1[\" \"]\n        DC_OUT --- NODE2[\" \"]\n        NODE1 --- R2 --- NODE2\n        NODE1 --- MINUS[\"-\"]\n        NODE2 --- PLUS[\"+\"]\n        \n        MINUS --- AMP\n        PLUS --- AMP\n        AMP --- OUT_NODE[\" \"]\n        OUT_NODE --- R_FB --- NODE1\n        OUT_NODE --- FB_STAR\n        \n        V_POS[\"+10 V\"] --- AMP\n        V_NEG[\"-10 V\"] --- AMP\n    end\n\n    DUT[\"DUT\"]\n    COUT[\"COUT\"]\n    RLOAD[\" \"]\n    GND[\" \"]\n\n    CH2 --- ADAPT2 --- COUT_NODE[\" \"]\n    CH1 --- ADAPT1 --- DUT_IN_NODE[\" \"]\n    \n    FB_STAR --- DUT_IN_NODE --- DUT\n    DUT --- COUT_NODE\n    COUT_NODE --- COUT --- GND_NODE[\" \"]\n    COUT_NODE --- RLOAD --- GND_NODE\n    DUT --- GND_NODE\n    GND_NODE --- GND",
+          "bbox": [
+            {
+              "h": 6.6,
+              "w": 16.16,
+              "x": 300.56,
+              "y": 440.22,
+              "confidence": 0.1,
+              "end_index": 1151,
+              "label": "code",
+              "start_index": 0
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Notes:**",
+          "value": "Notes:",
+          "bbox": [
+            {
+              "h": 5.84,
+              "w": 24.06,
+              "x": 171.64,
+              "y": 444.86,
+              "confidence": 0.1,
+              "end_index": 9,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "**FB\\*** $\\rightarrow$ Ferrite Bead having impedance of **10 $\\Omega$ @ <span style=\"color:#1f9591\">100</span> MHz**",
+              "value": "FB* $\\rightarrow$ Ferrite Bead having impedance of 10 $\\Omega$ @ <span style=\"color:#1f9591\">100</span> MHz",
+              "bbox": [
+                {
+                  "h": 10.81,
+                  "w": 44.35,
+                  "x": 279.15,
+                  "y": 538.4,
+                  "confidence": 0.1,
+                  "end_index": 115,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "The dashed box represents the circuit **Built on <span style=\"color:#010202\">THS3120</span> EVM**.",
+              "value": "The dashed box represents the circuit Built on <span style=\"color:#010202\">THS3120</span> EVM.",
+              "type": "text"
+            },
+            {
+              "md": "The high impedance adapters are Model # 41802A from Agilent.",
+              "value": "The high impedance adapters are Model # 41802A from Agilent.",
+              "type": "text"
+            }
+          ],
+          "md": "* **FB\\*** $\\rightarrow$ Ferrite Bead having impedance of **10 $\\Omega$ @ 100 MHz**\n* The dashed box represents the circuit **Built on THS3120 EVM**.\n* The high impedance adapters are Model # 41802A from Agilent.",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 10.81,
+              "w": 44.35,
+              "x": 279.15,
+              "y": 538.4,
+              "confidence": 0.1,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "md": "**Figure 3. Recommended Method of Measuring PSRR of LDO**",
+          "value": "Figure 3. Recommended Method of Measuring PSRR of LDO",
+          "bbox": [
+            {
+              "h": 11.09,
+              "w": 286.5,
+              "x": 162.76,
+              "y": 567.86,
+              "confidence": 1.0,
+              "end_index": 56,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Figure 4 shows the PSRR graph measured with this method.",
+          "value": "Figure 4 shows the PSRR graph measured with this method.",
+          "bbox": [
+            {
+              "h": 10.53,
+              "w": 268.63,
+              "x": 99.86,
+              "y": 587.66,
+              "confidence": 1.0,
+              "end_index": 55,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SLAA414A – July 2009 – Revised August 2017\n*LDO PSRR Measurement Simplified* 3 <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span>\nCopyright © 2009–2017, Texas Instruments Incorporated",
+              "value": "SLAA414A – July 2009 – Revised August 2017\nLDO PSRR Measurement Simplified 3\n<span style=\"color:#0000ff\">Submit Documentation Feedback</span>\nCopyright © 2009–2017, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.33,
+                  "w": 474.28,
+                  "x": 54.39,
+                  "y": 751.3,
+                  "confidence": 0.982,
+                  "end_index": 198,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SLAA414A – July 2009 – Revised August 2017\n*LDO PSRR Measurement Simplified* 3\n*Submit Documentation Feedback*\nCopyright © 2009–2017, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.33,
+              "w": 474.28,
+              "x": 54.39,
+              "y": 751.3
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 3,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Measuring PSRR Using Oscilloscope*\n[www.ti.com](http://www.ti.com)",
+              "value": "Measuring PSRR Using Oscilloscope\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 8.6,
+                  "w": 148.63,
+                  "x": 54.66,
+                  "y": 58.47,
+                  "confidence": 0.969,
+                  "end_index": 35,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.86,
+                  "w": 44.26,
+                  "x": 513.01,
+                  "y": 59.36,
+                  "confidence": 0.969,
+                  "end_index": 66,
+                  "label": "header",
+                  "start_index": 36
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Measuring PSRR Using Oscilloscope*\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 8.6,
+              "w": 502.61,
+              "x": 54.66,
+              "y": 58.47
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_4_image_1_v2.jpg)",
+          "url": "page_4_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 22.97,
+              "w": 94.25,
+              "x": 463.28,
+              "y": 11.88,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "csv": "\"Frequency\",\"PSRR (dB)\",\"Notes\"\n\"100 Hz\",\"-25\",\"START\"\n\"200 Hz\",\"-27\",\n\"300 Hz\",\"-28\",\n\"500 Hz\",\"-28\",\n\"1 kHz\",\"-31\",\"Marker 0: 1.000894 kHz, -31.164 dB (relative to 40 dB offset)\"\n\"2 kHz\",\"-33\",\n\"5 kHz\",\"-35\",\n\"10 kHz\",\"-33\",\n\"20 kHz\",\"-32\",\n\"50 kHz\",\"-31\",\n\"100 kHz\",\"-31\",\n\"200 kHz\",\"-31\",\n\"500 kHz\",\"-31\",\n\"1 MHz\",\"-32\",\n\"2 MHz\",\"-35\",\n\"5 MHz\",\"-45\",\n\"10 MHz\",\"-58\",\"STOP\"",
+          "html": "<table>\n  <caption>Figure 4. PSRR Measurement With DC Source ON — CH1 A/B log MAG; 10 dB/ REF 0 dB; IF BW 2 Hz; POWER -5 dBm; SWP 376.1 sec; START 100 Hz; STOP 10 MHz</caption>\n  <thead>\n    <tr>\n      <th>Frequency</th>\n      <th>PSRR (dB)</th>\n      <th>Notes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>100 Hz</th>\n      <td>-25</td>\n      <td>START</td>\n    </tr>\n    <tr>\n      <th>200 Hz</th>\n      <td>-27</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>300 Hz</th>\n      <td>-28</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>500 Hz</th>\n      <td>-28</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>1 kHz</th>\n      <td>-31</td>\n      <td>Marker 0: 1.000894 kHz, -31.164 dB (relative to 40 dB offset)</td>\n    </tr>\n    <tr>\n      <th>2 kHz</th>\n      <td>-33</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>5 kHz</th>\n      <td>-35</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>10 kHz</th>\n      <td>-33</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>20 kHz</th>\n      <td>-32</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>50 kHz</th>\n      <td>-31</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>100 kHz</th>\n      <td>-31</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>200 kHz</th>\n      <td>-31</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>500 kHz</th>\n      <td>-31</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>1 MHz</th>\n      <td>-32</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>2 MHz</th>\n      <td>-35</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>5 MHz</th>\n      <td>-45</td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>10 MHz</th>\n      <td>-58</td>\n      <td>STOP</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 4. PSRR Measurement With DC Source ON — CH1 A/B log MAG; 10 dB/ REF 0 dB; IF BW 2 Hz; POWER -5 dBm; SWP 376.1 sec; START 100 Hz; STOP 10 MHz\n\n| Frequency | PSRR (dB) | Notes                                                         |\n| --------- | --------- | ------------------------------------------------------------- |\n| 100 Hz    | -25       | START                                                         |\n| 200 Hz    | -27       |                                                               |\n| 300 Hz    | -28       |                                                               |\n| 500 Hz    | -28       |                                                               |\n| 1 kHz     | -31       | Marker 0: 1.000894 kHz, -31.164 dB (relative to 40 dB offset) |\n| 2 kHz     | -33       |                                                               |\n| 5 kHz     | -35       |                                                               |\n| 10 kHz    | -33       |                                                               |\n| 20 kHz    | -32       |                                                               |\n| 50 kHz    | -31       |                                                               |\n| 100 kHz   | -31       |                                                               |\n| 200 kHz   | -31       |                                                               |\n| 500 kHz   | -31       |                                                               |\n| 1 MHz     | -32       |                                                               |\n| 2 MHz     | -35       |                                                               |\n| 5 MHz     | -45       |                                                               |\n| 10 MHz    | -58       | STOP                                                          |",
+          "rows": [
+            [
+              "Frequency",
+              "PSRR (dB)",
+              "Notes"
+            ],
+            [
+              "100 Hz",
+              "-25",
+              "START"
+            ],
+            [
+              "200 Hz",
+              "-27",
+              ""
+            ],
+            [
+              "300 Hz",
+              "-28",
+              ""
+            ],
+            [
+              "500 Hz",
+              "-28",
+              ""
+            ],
+            [
+              "1 kHz",
+              "-31",
+              "Marker 0: 1.000894 kHz, -31.164 dB (relative to 40 dB offset)"
+            ],
+            [
+              "2 kHz",
+              "-33",
+              ""
+            ],
+            [
+              "5 kHz",
+              "-35",
+              ""
+            ],
+            [
+              "10 kHz",
+              "-33",
+              ""
+            ],
+            [
+              "20 kHz",
+              "-32",
+              ""
+            ],
+            [
+              "50 kHz",
+              "-31",
+              ""
+            ],
+            [
+              "100 kHz",
+              "-31",
+              ""
+            ],
+            [
+              "200 kHz",
+              "-31",
+              ""
+            ],
+            [
+              "500 kHz",
+              "-31",
+              ""
+            ],
+            [
+              "1 MHz",
+              "-32",
+              ""
+            ],
+            [
+              "2 MHz",
+              "-35",
+              ""
+            ],
+            [
+              "5 MHz",
+              "-45",
+              ""
+            ],
+            [
+              "10 MHz",
+              "-58",
+              "STOP"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 199.58,
+              "w": 260.72,
+              "x": 175.64,
+              "y": 82.37,
+              "confidence": 0.9,
+              "end_index": 1861,
+              "label": "chart",
+              "start_index": 153
+            },
+            {
+              "h": 4.95,
+              "w": 60.88,
+              "x": 177.19,
+              "y": 84.89,
+              "confidence": 0.92,
+              "end_index": 67,
+              "label": "paragraph_title",
+              "start_index": 0
+            },
+            {
+              "h": 4.95,
+              "w": 56.66,
+              "x": 269.75,
+              "y": 84.65,
+              "confidence": 0.92,
+              "end_index": 150,
+              "label": "paragraph_title",
+              "start_index": 68
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, caption, image, footer, paragraph_title, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "col 2 'Notes': 1/3 (33%) have interior whitespace",
+              "type": "possible_merged_columns"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 4. PSRR Measured With Recommended Method**",
+          "value": "Figure 4. PSRR Measured With Recommended Method",
+          "bbox": [
+            {
+              "h": 10.3,
+              "w": 258.71,
+              "x": 176.56,
+              "y": 289.08,
+              "confidence": 0.969,
+              "end_index": 50,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The THS3120 is suitable for measuring PSRR up to V<sub>DC</sub> = 5V, Frequency = 10MHz and I<sub>load</sub> = 400mA.",
+          "value": "The THS3120 is suitable for measuring PSRR up to V<sub>DC</sub> = 5V, Frequency = 10MHz and I<sub>load</sub> = 400mA.",
+          "bbox": [
+            {
+              "h": 10.31,
+              "w": 458.69,
+              "x": 97.92,
+              "y": 308.88,
+              "confidence": 1.0,
+              "end_index": 116,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# 3 **Measuring PSRR Using Oscilloscope**",
+          "value": "3 Measuring PSRR Using Oscilloscope",
+          "bbox": [
+            {
+              "h": 11.88,
+              "w": 224.71,
+              "x": 53.24,
+              "y": 335.02,
+              "confidence": 0.906,
+              "end_index": 40,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "If the user does not have a network analyzer then there is a simpler but more cumbersome method which uses a signal generator, DC source and oscilloscope to measure the PSRR. An AC signal from signal generator is applied along with DC signal at the input of the LDO, as shown in either of the afore mentioned methods, and the output of the LDO is measured on an oscilloscope at different V<sub>AC</sub> frequencies. The PSRR is calculated using the Equation 1 where Ripple<sub>(input)</sub> is the amplitude of the input AC signal and Ripple<sub>(output)</sub> is the amplitude of output signal. This is then repeated at different frequencies of V<sub>AC</sub> to generate a piecemeal graph of PSRR.",
+          "value": "If the user does not have a network analyzer then there is a simpler but more cumbersome method which uses a signal generator, DC source and oscilloscope to measure the PSRR. An AC signal from signal generator is applied along with DC signal at the input of the LDO, as shown in either of the afore mentioned methods, and the output of the LDO is measured on an oscilloscope at different V<sub>AC</sub> frequencies. The PSRR is calculated using the Equation 1 where Ripple<sub>(input)</sub> is the amplitude of the input AC signal and Ripple<sub>(output)</sub> is the amplitude of output signal. This is then repeated at different frequencies of V<sub>AC</sub> to generate a piecemeal graph of PSRR.",
+          "bbox": [
+            {
+              "h": 76.82,
+              "w": 469.8,
+              "x": 82.62,
+              "y": 352.44,
+              "confidence": 1.0,
+              "end_index": 698,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "This method can be used along with the set-ups described in the previous section. But this method is only good for LDOs with lower PSRR values due to resolution and sensitivity of oscilloscopes. Since most oscilloscopes can measure down to the millivolt range, the maximum range of PSRR that could realistically be measured using an oscilloscope is about 40dB–50dB.",
+          "value": "This method can be used along with the set-ups described in the previous section. But this method is only good for LDOs with lower PSRR values due to resolution and sensitivity of oscilloscopes. Since most oscilloscopes can measure down to the millivolt range, the maximum range of PSRR that could realistically be measured using an oscilloscope is about 40dB–50dB.",
+          "bbox": [
+            {
+              "h": 43.56,
+              "w": 473.08,
+              "x": 83.23,
+              "y": 435.6,
+              "confidence": 1.0,
+              "end_index": 364,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Using the TPS78101EVM from Texas Instruments, the PSRR is measured using signal generator and oscilloscope. The input and output waveforms are as shown in Figure 5:",
+          "value": "Using the TPS78101EVM from Texas Instruments, the PSRR is measured using signal generator and oscilloscope. The input and output waveforms are as shown in Figure 5:",
+          "bbox": [
+            {
+              "h": 21.39,
+              "w": 452.53,
+              "x": 83.23,
+              "y": 485.5,
+              "confidence": 1.0,
+              "end_index": 163,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Test conditions are:\na. V<sub>out</sub> = 3V\nb. I<sub>load</sub> = 150mA\nc. V<sub>AC</sub> = 1V (p-p) at 1kHz\nd. V<sub>DC</sub> = 4.3V dc",
+          "value": "Test conditions are:\na. V<sub>out</sub> = 3V\nb. I<sub>load</sub> = 150mA\nc. V<sub>AC</sub> = 1V (p-p) at 1kHz\nd. V<sub>DC</sub> = 4.3V dc",
+          "bbox": [
+            {
+              "h": 7.32,
+              "w": 83.05,
+              "x": 84.14,
+              "y": 514.42,
+              "confidence": 1.0,
+              "end_index": 20,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 7.36,
+              "w": 58.98,
+              "x": 84.36,
+              "y": 529.02,
+              "confidence": 1.0,
+              "end_index": 44,
+              "label": "text",
+              "start_index": 21
+            },
+            {
+              "h": 9.26,
+              "w": 71.7,
+              "x": 84.58,
+              "y": 543.62,
+              "confidence": 1.0,
+              "end_index": 72,
+              "label": "text",
+              "start_index": 45
+            },
+            {
+              "h": 9.43,
+              "w": 120.07,
+              "x": 84.4,
+              "y": 558.03,
+              "confidence": 1.0,
+              "end_index": 109,
+              "label": "text",
+              "start_index": 73
+            },
+            {
+              "h": 7.55,
+              "w": 81.49,
+              "x": 84.35,
+              "y": 572.63,
+              "confidence": 1.0,
+              "end_index": 136,
+              "label": "text",
+              "start_index": 110
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "4\n*LDO PSRR Measurement Simplified*\nSLAA414A – July 2009 – Revised August 2017 <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span>\nCopyright © 2009–2017, Texas Instruments Incorporated",
+              "value": "4\nLDO PSRR Measurement Simplified\nSLAA414A – July 2009 – Revised August 2017\n<span style=\"color:#0000ff\">Submit Documentation Feedback</span>\nCopyright © 2009–2017, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.33,
+                  "w": 474.07,
+                  "x": 84.61,
+                  "y": 751.3,
+                  "confidence": 0.982,
+                  "end_index": 198,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "4\n*LDO PSRR Measurement Simplified*\nSLAA414A – July 2009 – Revised August 2017\n*Submit Documentation Feedback*\nCopyright © 2009–2017, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.33,
+              "w": 474.07,
+              "x": 84.61,
+              "y": 751.3
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 4,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_5_image_1_v2.jpg)",
+              "url": "page_5_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 22.97,
+                  "w": 93.02,
+                  "x": 55.08,
+                  "y": 11.88,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Implications of the LDO Noise*",
+              "value": "www.ti.com Implications of the LDO Noise",
+              "bbox": [
+                {
+                  "h": 5.86,
+                  "w": 44.26,
+                  "x": 54.12,
+                  "y": 59.36,
+                  "confidence": 1.0,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 8.49,
+                  "w": 119.17,
+                  "x": 438.92,
+                  "y": 58.47,
+                  "confidence": 1.0,
+                  "end_index": 62,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_5_image_1_v2.jpg)\n\nwww.ti.com *Implications of the LDO Noise*",
+          "bbox": [
+            {
+              "h": 55.08,
+              "w": 503.97,
+              "x": 54.12,
+              "y": 11.88
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "csv": "\"Measure\",\"P1:freq(C2)\",\"P2:max(C2)\",\"P3:freq(C3)\",\"P4:max(C3)\",\"P5: - - -\",\"P6: - - -\"\n\"value\",\"1.00152231 kHz\",\"194 mV\",\"998.94112 Hz\",\"984 mV\",,\n\"status\",\"Warning\",\"OK\",\"OK\",\"OK\",,",
+          "html": "<table>\n  <caption>Figure 5. Input and Output Waveforms for Measuring PSRR Using Oscilloscope</caption>\n  <thead>\n    <tr>\n      <th>Measure</th>\n      <th>P1:freq(C2)</th>\n      <th>P2:max(C2)</th>\n      <th>P3:freq(C3)</th>\n      <th>P4:max(C3)</th>\n      <th>P5: - - -</th>\n      <th>P6: - - -</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>value</th>\n      <td>1.00152231 kHz</td>\n      <td>194 mV</td>\n      <td>998.94112 Hz</td>\n      <td>984 mV</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <th>status</th>\n      <td>Warning</td>\n      <td>OK</td>\n      <td>OK</td>\n      <td>OK</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 5. Input and Output Waveforms for Measuring PSRR Using Oscilloscope\n\n| Measure | P1:freq(C2)    | P2:max(C2) | P3:freq(C3)  | P4:max(C3) | P5: - - - | P6: - - - |\n| ------- | -------------- | ---------- | ------------ | ---------- | --------- | --------- |\n| value   | 1.00152231 kHz | 194 mV     | 998.94112 Hz | 984 mV     |           |           |\n| status  | Warning        | OK         | OK           | OK         |           |           |",
+          "rows": [
+            [
+              "Measure",
+              "P1:freq(C2)",
+              "P2:max(C2)",
+              "P3:freq(C3)",
+              "P4:max(C3)",
+              "P5: - - -",
+              "P6: - - -"
+            ],
+            [
+              "value",
+              "1.00152231 kHz",
+              "194 mV",
+              "998.94112 Hz",
+              "984 mV",
+              "",
+              ""
+            ],
+            [
+              "status",
+              "Warning",
+              "OK",
+              "OK",
+              "OK",
+              "",
+              ""
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 342.94,
+              "w": 435.14,
+              "x": 86.9,
+              "y": 84.74,
+              "confidence": 0.9,
+              "end_index": 454,
+              "label": "chart",
+              "start_index": 80
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "col 2 'P2:max(C2)' expects numeric, got 'OK' in row 2",
+              "type": "header_value_type_mismatch"
+            },
+            {
+              "details": "col 4 'P4:max(C3)' expects numeric, got 'OK' in row 2",
+              "type": "header_value_type_mismatch"
+            },
+            {
+              "details": "layout detected [text, chart, caption, image, header, footer, paragraph_title] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"Channel / Setting\",\"Vertical Scale\",\"Offset\",\"Coupling / Bandwidth\"\n\"C2 (Ripple(output))\",\"200 mV/div\",\"0.0 mV offset\",\"BwL AC1M\"\n\"C3 (Ripple(input))\",\"500 mV/div\",\"0 mV offset\",\"BwL AC1M\"\n\"Timebase & Trigger Settings\",,,\n\"Timebase\",\"0.00 ms; 1.00 ms/div; 2.00 MS; 200 MS/s\",,\n\"Trigger\",\"C1 DC; 3.00 V; Stop; Edge Positive\",,",
+          "html": "<table>\n  <caption>Oscilloscope Channel and Timebase Settings for Figure 5</caption>\n  <thead>\n    <tr>\n      <th>Channel / Setting</th>\n      <th>Vertical Scale</th>\n      <th>Offset</th>\n      <th>Coupling / Bandwidth</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>C2 (Ripple(output))</th>\n      <td>200 mV/div</td>\n      <td>0.0 mV offset</td>\n      <td>BwL AC1M</td>\n    </tr>\n    <tr>\n      <th>C3 (Ripple<sub>(input)</sub>)</th>\n      <td>500 mV/div</td>\n      <td>0 mV offset</td>\n      <td>BwL AC1M</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <th colspan=\"4\">Timebase &#x26; Trigger Settings</th>\n    </tr>\n    <tr>\n      <th>Timebase</th>\n      <td colspan=\"3\">0.00 ms; 1.00 ms/div; 2.00 MS; 200 MS/s</td>\n    </tr>\n    <tr>\n      <th>Trigger</th>\n      <td colspan=\"3\">C1 DC; 3.00 V; Stop; Edge Positive</td>\n    </tr>\n  </tfoot>\n</table>",
+          "md": "### Oscilloscope Channel and Timebase Settings for Figure 5\n\n| Channel / Setting           | Vertical Scale                          | Offset        | Coupling / Bandwidth |\n| --------------------------- | --------------------------------------- | ------------- | -------------------- |\n| C2 (Ripple(output))         | 200 mV/div                              | 0.0 mV offset | BwL AC1M             |\n| C3 (Ripple(input))          | 500 mV/div                              | 0 mV offset   | BwL AC1M             |\n| Timebase & Trigger Settings |                                         |               |                      |\n| Timebase                    | 0.00 ms; 1.00 ms/div; 2.00 MS; 200 MS/s |               |                      |\n| Trigger                     | C1 DC; 3.00 V; Stop; Edge Positive      |               |                      |",
+          "rows": [
+            [
+              "Channel / Setting",
+              "Vertical Scale",
+              "Offset",
+              "Coupling / Bandwidth"
+            ],
+            [
+              "C2 (Ripple(output))",
+              "200 mV/div",
+              "0.0 mV offset",
+              "BwL AC1M"
+            ],
+            [
+              "C3 (Ripple(input))",
+              "500 mV/div",
+              "0 mV offset",
+              "BwL AC1M"
+            ],
+            [
+              "Timebase & Trigger Settings",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Timebase",
+              "0.00 ms; 1.00 ms/div; 2.00 MS; 200 MS/s",
+              "",
+              ""
+            ],
+            [
+              "Trigger",
+              "C1 DC; 3.00 V; Stop; Edge Positive",
+              "",
+              ""
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 324.72,
+              "w": 434.52,
+              "x": 86.9,
+              "y": 84.74,
+              "confidence": 0.498,
+              "end_index": 850,
+              "label": "chart",
+              "start_index": 61
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, caption, image, header, footer, paragraph_title] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 5. Input and Output Waveforms for Measuring PSRR Using Oscilloscope**",
+          "value": "Figure 5. Input and Output Waveforms for Measuring PSRR Using Oscilloscope",
+          "bbox": [
+            {
+              "h": 10.58,
+              "w": 379.15,
+              "x": 115.67,
+              "y": 417.38,
+              "confidence": 0.8,
+              "end_index": 77,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "And the PSRR is calculated from waveforms in Figure 5 is:",
+          "value": "And the PSRR is calculated from waveforms in Figure 5 is:",
+          "bbox": [
+            {
+              "h": 10.37,
+              "w": 261.94,
+              "x": 82.62,
+              "y": 443.52,
+              "confidence": 1.0,
+              "end_index": 56,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$Ripple_{(input)} = 984\\text{ mV}$\n$Ripple_{(output)} = 194\\text{ mV}$\n$PSRR = 20\\text{ }log_{10}(Ripple_{(input)} / Ripple_{(output)}) = 20\\text{ }log_{10}(0.984 / 0.194) = 14.10\\text{dB}$ which closely matches the PSRR specified in the datasheet of TPS78101.",
+          "value": "$Ripple_{(input)} = 984\\text{ mV}$\n$Ripple_{(output)} = 194\\text{ mV}$\n$PSRR = 20\\text{ }log_{10}(Ripple_{(input)} / Ripple_{(output)}) = 20\\text{ }log_{10}(0.984 / 0.194) = 14.10\\text{dB}$ which closely matches the PSRR specified in the datasheet of TPS78101.",
+          "bbox": [
+            {
+              "h": 10.41,
+              "w": 90.73,
+              "x": 84.88,
+              "y": 461.42,
+              "confidence": 1.0,
+              "end_index": 34,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 10.41,
+              "w": 94.33,
+              "x": 84.88,
+              "y": 472.42,
+              "confidence": 1.0,
+              "end_index": 70,
+              "label": "text",
+              "start_index": 35
+            },
+            {
+              "h": 20.43,
+              "w": 462.34,
+              "x": 84.86,
+              "y": 483.23,
+              "confidence": 1.0,
+              "end_index": 259,
+              "label": "text",
+              "start_index": 71
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "This application report shows various methods to measure the PSRR of an LDO and also explains different aspects which need to be considered while measuring PSRR.",
+          "value": "This application report shows various methods to measure the PSRR of an LDO and also explains different aspects which need to be considered while measuring PSRR.",
+          "bbox": [
+            {
+              "h": 21.64,
+              "w": 437.68,
+              "x": 83.23,
+              "y": 510.05,
+              "confidence": 1.0,
+              "end_index": 160,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## 4 Implications of the LDO Noise",
+          "value": "4 Implications of the LDO Noise",
+          "bbox": [
+            {
+              "h": 11.39,
+              "w": 187.67,
+              "x": 53.24,
+              "y": 547.27,
+              "confidence": 0.938,
+              "end_index": 33,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Let us take an example of a DC-DC Converter with integrated LDOs (such as TPS57140-Q1).",
+          "value": "Let us take an example of a DC-DC Converter with integrated LDOs (such as TPS57140-Q1).",
+          "bbox": [
+            {
+              "h": 10.89,
+              "w": 416.91,
+              "x": 83.23,
+              "y": 564.7,
+              "confidence": 1.0,
+              "end_index": 86,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high frequency components. One of the example where its bad affect can be seen is when a a fast-falling input transient is applied at the input of the DC/DC converter. During the fast input falling edge, if the slew rate of the input is higher than a particular value, the internal LDO regulator of the device resets because of the power-supply rejection-ratio (PSRR) limitation. The fast transition corresponds to higher frequencies. The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high frequency components. For example, using the TPS57140-Q1 design simulation and bench test measurement, the resulting slew-rate value measured is 1.2 V/μs. If the slew rate is higher than this value, the device gets disabled and regenerates a soft start. Higher ESR of the input capacitor negatively affects the slew rate of the input voltage and the duration of this rate because of high current transient across the ESR according to ESR × C × dV/dt. Therefore, the use of a low-ESR ceramic capacitor is recommended.",
+          "value": "The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high frequency components. One of the example where its bad affect can be seen is when a a fast-falling input transient is applied at the input of the DC/DC converter. During the fast input falling edge, if the slew rate of the input is higher than a particular value, the internal LDO regulator of the device resets because of the power-supply rejection-ratio (PSRR) limitation. The fast transition corresponds to higher frequencies. The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high frequency components. For example, using the TPS57140-Q1 design simulation and bench test measurement, the resulting slew-rate value measured is 1.2 V/μs. If the slew rate is higher than this value, the device gets disabled and regenerates a soft start. Higher ESR of the input capacitor negatively affects the slew rate of the input voltage and the duration of this rate because of high current transient across the ESR according to ESR × C × dV/dt. Therefore, the use of a low-ESR ceramic capacitor is recommended.",
+          "bbox": [
+            {
+              "h": 120.37,
+              "w": 474.7,
+              "x": 82.62,
+              "y": 582.12,
+              "confidence": 0.998,
+              "end_index": 1159,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Refer to *Design Considerations for DC-DC Converters in Fast-Input Slew Rate Applications* (SLVA693) for more information",
+          "value": "Refer to Design Considerations for DC-DC Converters in Fast-Input Slew Rate Applications (SLVA693) for more information",
+          "bbox": [
+            {
+              "h": 19.5,
+              "w": 473.0,
+              "x": 83.23,
+              "y": 708.84,
+              "confidence": 1.0,
+              "end_index": 120,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SLAA414A – July 2009 – Revised August 2017 *LDO PSRR Measurement Simplified* 5 <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span>\nCopyright © 2009–2017, Texas Instruments Incorporated",
+              "value": "SLAA414A – July 2009 – Revised August 2017 LDO PSRR Measurement Simplified 5\n<span style=\"color:#0000ff\">Submit Documentation Feedback</span>\nCopyright © 2009–2017, Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 23.33,
+                  "w": 474.28,
+                  "x": 54.39,
+                  "y": 751.3,
+                  "confidence": 0.982,
+                  "end_index": 198,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SLAA414A – July 2009 – Revised August 2017 *LDO PSRR Measurement Simplified* 5\n*Submit Documentation Feedback*\nCopyright © 2009–2017, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 23.33,
+              "w": 474.28,
+              "x": 54.39,
+              "y": 751.3
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 5,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_6_image_1_v2.jpg)",
+              "url": "page_6_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 22.97,
+                  "w": 94.25,
+                  "x": 463.28,
+                  "y": 11.88,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "*Revision History* [82, 27, 94, 152] [www.ti.com](http://www.ti.com) [83, 887, 93, 973]",
+              "value": "Revision History [82, 27, 94, 152] www.ti.com [83, 887, 93, 973]",
+              "bbox": [
+                {
+                  "h": 8.38,
+                  "w": 502.59,
+                  "x": 54.79,
+                  "y": 58.64,
+                  "confidence": 0.685,
+                  "end_index": 86,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_6_image_1_v2.jpg)\n\n*Revision History* [82, 27, 94, 152] www.ti.com [83, 887, 93, 973]",
+          "bbox": [
+            {
+              "h": 55.14,
+              "w": 502.74,
+              "x": 54.79,
+              "y": 11.88
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **Revision History**",
+          "value": "Revision History",
+          "bbox": [
+            {
+              "h": 11.23,
+              "w": 85.95,
+              "x": 263.24,
+              "y": 87.12,
+              "confidence": 0.613,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "NOTE: Page numbers for previous revisions may differ from page numbers in the current version.",
+          "value": "NOTE: Page numbers for previous revisions may differ from page numbers in the current version.",
+          "bbox": [
+            {
+              "h": 9.99,
+              "w": 390.46,
+              "x": 53.24,
+              "y": 100.58,
+              "confidence": 1.0,
+              "end_index": 93,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Changes from Original (July 2009) to A Revision\",\"Page\"\n\"• Added Implications of the LDO Noise section ...........................................................................................................\",\"5\"",
+          "html": "<table>\n  <thead>\n    <tr>\n      <th><b>Changes from Original (July 2009) to A Revision</b></th>\n      <th>Page</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>• Added <i>Implications of the LDO Noise</i> section ...........................................................................................................</td>\n      <td>5</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Changes from Original (July 2009) to A Revision                                                                                                             | Page |\n| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |\n| • Added *Implications of the LDO Noise* section ........................................................................................................... | 5    |",
+          "rows": [
+            [
+              "Changes from Original (July 2009) to A Revision",
+              "Page"
+            ],
+            [
+              "• Added Implications of the LDO Noise section ...........................................................................................................",
+              "5"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 26.78,
+              "w": 503.49,
+              "x": 54.16,
+              "y": 123.97,
+              "confidence": 0.9,
+              "end_index": 499,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [image, footer, paragraph_title, header, text, reference] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "items": [
+            {
+              "md": "6 *Revision History* [946, 83, 957, 194] SLAA414A – July 2009 – Revised August 2017 [946, 667, 967, 974]\nCopyright © 2009–2017, Texas Instruments Incorporated [967, 332, 977, 668] <span style=\"color:#0000ff\">*Submit Documentation Feedback*</span> [958, 750, 968, 974]",
+              "value": "6 Revision History [946, 83, 957, 194] SLAA414A – July 2009 – Revised August 2017 [946, 667, 967, 974]\nCopyright © 2009–2017, Texas Instruments Incorporated [967, 332, 977, 668]\n<span style=\"color:#0000ff\">Submit Documentation Feedback</span> [958, 750, 968, 974]",
+              "bbox": [
+                {
+                  "h": 23.45,
+                  "w": 504.38,
+                  "x": 54.3,
+                  "y": 751.18,
+                  "confidence": 0.715,
+                  "end_index": 266,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "6 *Revision History* [946, 83, 957, 194] SLAA414A – July 2009 – Revised August 2017 [946, 667, 967, 974]\nCopyright © 2009–2017, Texas Instruments Incorporated [967, 332, 977, 668]\n*Submit Documentation Feedback* [958, 750, 968, 974]",
+          "bbox": [
+            {
+              "h": 23.45,
+              "w": 504.38,
+              "x": 54.3,
+              "y": 751.18
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 6,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "level": 2,
+          "md": "## **IMPORTANT NOTICE FOR TI DESIGN INFORMATION AND RESOURCES**",
+          "value": "IMPORTANT NOTICE FOR TI DESIGN INFORMATION AND RESOURCES",
+          "bbox": [
+            {
+              "h": 10.62,
+              "w": 342.72,
+              "x": 149.33,
+              "y": 73.66,
+              "confidence": 1.0,
+              "end_index": 62,
+              "label": "doc_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Texas Instruments Incorporated (“TI”) technical, application or other design advice, services or information, including, but not limited to, reference designs and materials relating to evaluation modules, (collectively, “TI Resources”) are intended to assist designers who are developing applications that incorporate TI products; by downloading, accessing or using any particular TI Resource in any way, you (individually or, if you are acting on behalf of a company, your company) agree to use it solely for this purpose and subject to the terms of this Notice.",
+          "value": "Texas Instruments Incorporated (“TI”) technical, application or other design advice, services or information, including, but not limited to, reference designs and materials relating to evaluation modules, (collectively, “TI Resources”) are intended to assist designers who are developing applications that incorporate TI products; by downloading, accessing or using any particular TI Resource in any way, you (individually or, if you are acting on behalf of a company, your company) agree to use it solely for this purpose and subject to the terms of this Notice.",
+          "bbox": [
+            {
+              "h": 41.98,
+              "w": 488.44,
+              "x": 57.11,
+              "y": 100.04,
+              "confidence": 1.0,
+              "end_index": 562,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI’s provision of TI Resources does not expand or otherwise alter TI’s applicable published warranties or warranty disclaimers for TI products, and no additional obligations or liabilities arise from TI providing such TI Resources. TI reserves the right to make corrections, enhancements, improvements and other changes to its TI Resources.",
+          "value": "TI’s provision of TI Resources does not expand or otherwise alter TI’s applicable published warranties or warranty disclaimers for TI products, and no additional obligations or liabilities arise from TI providing such TI Resources. TI reserves the right to make corrections, enhancements, improvements and other changes to its TI Resources.",
+          "bbox": [
+            {
+              "h": 25.58,
+              "w": 478.38,
+              "x": 57.11,
+              "y": 148.68,
+              "confidence": 1.0,
+              "end_index": 339,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "You understand and agree that you remain responsible for using your independent analysis, evaluation and judgment in designing your applications and that you have full and exclusive responsibility to assure the safety of your applications and compliance of your applications (and of all TI products used in or for your applications) with all applicable regulations, laws and other applicable requirements. You represent that, with respect to your applications, you have all the necessary expertise to create and implement safeguards that (1) anticipate dangerous consequences of failures, (2) monitor failures and their consequences, and (3) lessen the likelihood of failures that might cause harm and take appropriate actions. You agree that prior to using or distributing any applications that include TI products, you will thoroughly test such applications and the functionality of such TI products as used in such applications. TI has not conducted any testing other than that specifically described in the published documentation for a particular TI Resource.",
+          "value": "You understand and agree that you remain responsible for using your independent analysis, evaluation and judgment in designing your applications and that you have full and exclusive responsibility to assure the safety of your applications and compliance of your applications (and of all TI products used in or for your applications) with all applicable regulations, laws and other applicable requirements. You represent that, with respect to your applications, you have all the necessary expertise to create and implement safeguards that (1) anticipate dangerous consequences of failures, (2) monitor failures and their consequences, and (3) lessen the likelihood of failures that might cause harm and take appropriate actions. You agree that prior to using or distributing any applications that include TI products, you will thoroughly test such applications and the functionality of such TI products as used in such applications. TI has not conducted any testing other than that specifically described in the published documentation for a particular TI Resource.",
+          "bbox": [
+            {
+              "h": 70.58,
+              "w": 495.24,
+              "x": 57.11,
+              "y": 179.28,
+              "confidence": 1.0,
+              "end_index": 1063,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "You are authorized to use, copy and modify any individual TI Resource only in connection with the development of applications that include the TI product(s) identified in such TI Resource. NO OTHER LICENSE, EXPRESS OR IMPLIED, BY ESTOPPEL OR OTHERWISE TO ANY OTHER TI INTELLECTUAL PROPERTY RIGHT, AND NO LICENSE TO ANY TECHNOLOGY OR INTELLECTUAL PROPERTY RIGHT OF TI OR ANY THIRD PARTY IS GRANTED HEREIN, including but not limited to any patent right, copyright, mask work right, or other intellectual property right relating to any combination, machine, or process in which TI products or services are used. Information regarding or referencing third-party products or services does not constitute a license to use such products or services, or a warranty or endorsement thereof. Use of TI Resources may require a license from a third party under the patents or other intellectual property of the third party, or a license from TI under the patents or other intellectual property of TI.",
+          "value": "You are authorized to use, copy and modify any individual TI Resource only in connection with the development of applications that include the TI product(s) identified in such TI Resource. NO OTHER LICENSE, EXPRESS OR IMPLIED, BY ESTOPPEL OR OTHERWISE TO ANY OTHER TI INTELLECTUAL PROPERTY RIGHT, AND NO LICENSE TO ANY TECHNOLOGY OR INTELLECTUAL PROPERTY RIGHT OF TI OR ANY THIRD PARTY IS GRANTED HEREIN, including but not limited to any patent right, copyright, mask work right, or other intellectual property right relating to any combination, machine, or process in which TI products or services are used. Information regarding or referencing third-party products or services does not constitute a license to use such products or services, or a warranty or endorsement thereof. Use of TI Resources may require a license from a third party under the patents or other intellectual property of the third party, or a license from TI under the patents or other intellectual property of TI.",
+          "bbox": [
+            {
+              "h": 70.53,
+              "w": 494.48,
+              "x": 57.11,
+              "y": 254.88,
+              "confidence": 1.0,
+              "end_index": 986,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI RESOURCES ARE PROVIDED “AS IS” AND WITH ALL FAULTS. TI DISCLAIMS ALL OTHER WARRANTIES OR REPRESENTATIONS, EXPRESS OR IMPLIED, REGARDING TI RESOURCES OR USE THEREOF, INCLUDING BUT NOT LIMITED TO ACCURACY OR COMPLETENESS, TITLE, ANY EPIDEMIC FAILURE WARRANTY AND ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF ANY THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.",
+          "value": "TI RESOURCES ARE PROVIDED “AS IS” AND WITH ALL FAULTS. TI DISCLAIMS ALL OTHER WARRANTIES OR REPRESENTATIONS, EXPRESS OR IMPLIED, REGARDING TI RESOURCES OR USE THEREOF, INCLUDING BUT NOT LIMITED TO ACCURACY OR COMPLETENESS, TITLE, ANY EPIDEMIC FAILURE WARRANTY AND ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF ANY THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.",
+          "bbox": [
+            {
+              "h": 42.04,
+              "w": 492.33,
+              "x": 57.11,
+              "y": 330.4,
+              "confidence": 1.0,
+              "end_index": 409,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI SHALL NOT BE LIABLE FOR AND SHALL NOT DEFEND OR INDEMNIFY YOU AGAINST ANY CLAIM, INCLUDING BUT NOT LIMITED TO ANY INFRINGEMENT CLAIM THAT RELATES TO OR IS BASED ON ANY COMBINATION OF PRODUCTS EVEN IF DESCRIBED IN TI RESOURCES OR OTHERWISE. IN NO EVENT SHALL TI BE LIABLE FOR ANY ACTUAL, DIRECT, SPECIAL, COLLATERAL, INDIRECT, PUNITIVE, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES IN CONNECTION WITH OR ARISING OUT OF TI RESOURCES OR USE THEREOF, AND REGARDLESS OF WHETHER TI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+          "value": "TI SHALL NOT BE LIABLE FOR AND SHALL NOT DEFEND OR INDEMNIFY YOU AGAINST ANY CLAIM, INCLUDING BUT NOT LIMITED TO ANY INFRINGEMENT CLAIM THAT RELATES TO OR IS BASED ON ANY COMBINATION OF PRODUCTS EVEN IF DESCRIBED IN TI RESOURCES OR OTHERWISE. IN NO EVENT SHALL TI BE LIABLE FOR ANY ACTUAL, DIRECT, SPECIAL, COLLATERAL, INDIRECT, PUNITIVE, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES IN CONNECTION WITH OR ARISING OUT OF TI RESOURCES OR USE THEREOF, AND REGARDLESS OF WHETHER TI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+          "bbox": [
+            {
+              "h": 51.04,
+              "w": 472.29,
+              "x": 57.11,
+              "y": 379.0,
+              "confidence": 1.0,
+              "end_index": 532,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "You agree to fully indemnify TI and its representatives against any damages, costs, losses, and/or liabilities arising out of your non-compliance with the terms and provisions of this Notice.",
+          "value": "You agree to fully indemnify TI and its representatives against any damages, costs, losses, and/or liabilities arising out of your non-compliance with the terms and provisions of this Notice.",
+          "bbox": [
+            {
+              "h": 16.55,
+              "w": 462.12,
+              "x": 57.11,
+              "y": 436.6,
+              "confidence": 1.0,
+              "end_index": 190,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "This Notice applies to TI Resources. Additional terms apply to the use and purchase of certain types of materials, TI products and services. These include; without limitation, TI’s standard terms for semiconductor products <u>http://www.ti.com/sc/docs/stdterms.htm</u>), <u>evaluation modules</u>, and samples (<u>http://www.ti.com/sc/docs/sampterms.htm</u>).",
+          "value": "This Notice applies to TI Resources. Additional terms apply to the use and purchase of certain types of materials, TI products and services. These include; without limitation, TI’s standard terms for semiconductor products <u>http://www.ti.com/sc/docs/stdterms.htm</u>), <u>evaluation modules</u>, and samples (<u>http://www.ti.com/sc/docs/sampterms.htm</u>).",
+          "bbox": [
+            {
+              "h": 25.47,
+              "w": 491.77,
+              "x": 57.11,
+              "y": 458.28,
+              "confidence": 1.0,
+              "end_index": 358,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265\nCopyright © 2018, Texas Instruments Incorporated",
+          "value": "Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265\nCopyright © 2018, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 18.82,
+              "w": 295.64,
+              "x": 157.28,
+              "y": 502.13,
+              "confidence": 1.0,
+              "end_index": 127,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 7,
+      "page_width": 612.0,
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,3137 @@
+{
+  "document_id": "SBAA230",
+  "source_pdf": "docs/datasheets/originals/ti-app-notes/SBAA230.pdf",
+  "tier": "agentic_plus",
+  "sha256": "8860bdd74cd6d75cdd4059d1e4570d97df64c81af655e2360d197202daec8ba3",
+  "pages": 9,
+  "tables_detected": 10,
+  "items_pages": [
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "[www.ti.com](http://www.ti.com) Table of Contents",
+              "value": "www.ti.com Table of Contents",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 33.32,
+                  "confidence": 0.938,
+                  "end_index": 31,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 6.0,
+                  "w": 61.42,
+                  "x": 496.58,
+                  "y": 33.22,
+                  "confidence": 0.938,
+                  "end_index": 48,
+                  "label": "header",
+                  "start_index": 32
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "www.ti.com Table of Contents",
+          "bbox": [
+            {
+              "h": 6.0,
+              "w": 503.98,
+              "x": 54.02,
+              "y": 33.22
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "*Application Note*",
+          "value": "Application Note",
+          "bbox": [
+            {
+              "h": 12.95,
+              "w": 102.61,
+              "x": 55.69,
+              "y": 51.76,
+              "confidence": 0.813,
+              "end_index": 17,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# **Digital Filter Types in Delta-Sigma ADCs**",
+          "value": "Digital Filter Types in Delta-Sigma ADCs",
+          "bbox": [
+            {
+              "h": 17.07,
+              "w": 344.0,
+              "x": 57.47,
+              "y": 68.98,
+              "confidence": 0.969,
+              "end_index": 45,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "photo: Texas Instruments",
+          "md": "![photo: Texas Instruments](page_1_image_1_v2.jpg)",
+          "url": "page_1_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 22.17,
+              "w": 173.81,
+              "x": 385.56,
+              "y": 106.13,
+              "confidence": 0.9,
+              "end_index": 49,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "*Brian Pisani*",
+          "value": "Brian Pisani",
+          "bbox": [
+            {
+              "h": 7.38,
+              "w": 53.38,
+              "x": 57.12,
+              "y": 147.46,
+              "confidence": 0.813,
+              "end_index": 13,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 3,
+          "md": "### **ABSTRACT**",
+          "value": "ABSTRACT",
+          "bbox": [
+            {
+              "h": 7.51,
+              "w": 55.43,
+              "x": 277.85,
+              "y": 165.34,
+              "confidence": 0.581,
+              "end_index": 15,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "This application report discusses digital filters which are a ubiquitous feature in delta-sigma analog to digital converters (ADCs). Digital low-pass filters are essential to the functionality of a delta-sigma ADC, which relies on oversampling and noise shaping to push quantization noise out of band. There are variations between the types of digital filters used in delta-sigma ADCs that provide various benefits and drawbacks that orient them to different applications. The types of filters and the tradeoffs between them are discussed in this report.",
+          "value": "This application report discusses digital filters which are a ubiquitous feature in delta-sigma analog to digital converters (ADCs). Digital low-pass filters are essential to the functionality of a delta-sigma ADC, which relies on oversampling and noise shaping to push quantization noise out of band. There are variations between the types of digital filters used in delta-sigma ADCs that provide various benefits and drawbacks that orient them to different applications. The types of filters and the tradeoffs between them are discussed in this report.",
+          "bbox": [
+            {
+              "h": 57.48,
+              "w": 490.84,
+              "x": 55.69,
+              "y": 183.34,
+              "confidence": 1.0,
+              "end_index": 553,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"1 Introduction.............................................................................................................................................................................\",\"2\"\n\"2 Digital Filters in Delta-Sigma ADCs......................................................................................................................................\",\"2\"\n\"3 Sinc Filter.................................................................................................................................................................................\",\"4\"\n\"4 Wideband Filters.....................................................................................................................................................................\",\"6\"\n\"5 References..............................................................................................................................................................................\",\"8\"\n\"6 Revision History......................................................................................................................................................................\",\"8\"",
+          "html": "<table>\n  <caption><b>Table of Contents</b></caption>\n    <tr>\n      <td><b><b>1 Introduction</b></b>.............................................................................................................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td><b><b>2 Digital Filters in Delta-Sigma ADCs</b></b>......................................................................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td><b><b>3 Sinc Filter</b></b>.................................................................................................................................................................................</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td><b><b>4 Wideband Filters</b></b>.....................................................................................................................................................................</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td><b><b>5 References</b></b>..............................................................................................................................................................................</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td><b><b>6 Revision History</b></b>......................................................................................................................................................................</td>\n      <td>8</td>\n    </tr>\n</table>",
+          "md": "### Table of Contents\n\n| ****1 Introduction****.............................................................................................................................................................................    | 2 |\n| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | - |\n| ****2 Digital Filters in Delta-Sigma ADCs****......................................................................................................................................                    | 2 |\n| ****3 Sinc Filter****................................................................................................................................................................................. | 4 |\n| ****4 Wideband Filters****.....................................................................................................................................................................        | 6 |\n| ****5 References****..............................................................................................................................................................................     | 8 |\n| ****6 Revision History****......................................................................................................................................................................       | 8 |",
+          "rows": [
+            [
+              "1 Introduction.............................................................................................................................................................................",
+              "2"
+            ],
+            [
+              "2 Digital Filters in Delta-Sigma ADCs......................................................................................................................................",
+              "2"
+            ],
+            [
+              "3 Sinc Filter.................................................................................................................................................................................",
+              "4"
+            ],
+            [
+              "4 Wideband Filters.....................................................................................................................................................................",
+              "6"
+            ],
+            [
+              "5 References..............................................................................................................................................................................",
+              "8"
+            ],
+            [
+              "6 Revision History......................................................................................................................................................................",
+              "8"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 62.45,
+              "w": 498.04,
+              "x": 56.87,
+              "y": 298.67,
+              "confidence": 0.9,
+              "end_index": 1470,
+              "label": "table",
+              "start_index": 23
+            },
+            {
+              "h": 9.0,
+              "w": 99.63,
+              "x": 256.03,
+              "y": 284.64,
+              "confidence": 0.844,
+              "end_index": 20,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, paragraph_title, image, footer, reference] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"Figure 2-1. Spectrum of Delta-Sigma Quantization Noise and a Sinc Low-Pass Filter...............................................................\",\"2\"\n\"Figure 2-2. Wideband Filter Frequency Response......................................................................................................................\",\"3\"\n\"Figure 2-3. Sinc³ Frequency Response.......................................................................................................................................\",\"3\"\n\"Figure 3-1. Frequency Response of Sinc¹, Sinc³, and Sinc⁵ Digital Filters.................................................................................\",\"4\"\n\"Figure 3-2. Step Response for Sinc¹, Sinc³, and Sinc⁵ Digital Filters.........................................................................................\",\"5\"\n\"Figure 3-3. Magnitude Response of the ADS124S08 Digital Filter, fDR = 20 SPS.......................................................................\",\"5\"\n\"Figure 4-1. Magnitude Response for the ADS127L01 Wideband Filter up to fDR .......................................................................\",\"6\"\n\"Figure 4-2. Response of the ADS127L01 Wideband Filter to a Unit-Step Input..........................................................................\",\"7\"",
+          "html": "<table>\n  <caption><b>**List of Figures**</b></caption>\n    <tr>\n      <td>Figure 2-1. Spectrum of Delta-Sigma Quantization Noise and a Sinc Low-Pass Filter...............................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Figure 2-2. Wideband Filter Frequency Response......................................................................................................................</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Figure 2-3. Sinc<sup>3</sup> Frequency Response.......................................................................................................................................</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Figure 3-1. Frequency Response of Sinc<sup>1</sup>, Sinc<sup>3</sup>, and Sinc<sup>5</sup> Digital Filters.................................................................................</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Figure 3-2. Step Response for Sinc<sup>1</sup>, Sinc<sup>3</sup>, and Sinc<sup>5</sup> Digital Filters.........................................................................................</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Figure 3-3. Magnitude Response of the ADS124S08 Digital Filter, f<sub>DR</sub> = 20 SPS.......................................................................</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Figure 4-1. Magnitude Response for the ADS127L01 Wideband Filter up to f<sub>DR</sub> .......................................................................</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Figure 4-2. Response of the ADS127L01 Wideband Filter to a Unit-Step Input..........................................................................</td>\n      <td>7</td>\n    </tr>\n</table>",
+          "md": "### **List of Figures**\n\n| Figure 2-1. Spectrum of Delta-Sigma Quantization Noise and a Sinc Low-Pass Filter...............................................................                            | 2 |\n| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |\n| Figure 2-2. Wideband Filter Frequency Response......................................................................................................................        | 3 |\n| Figure 2-3. Sinc³ Frequency Response....................................................................................................................................... | 3 |\n| Figure 3-1. Frequency Response of Sinc¹, Sinc³, and Sinc⁵ Digital Filters.................................................................................                  | 4 |\n| Figure 3-2. Step Response for Sinc¹, Sinc³, and Sinc⁵ Digital Filters.........................................................................................              | 5 |\n| Figure 3-3. Magnitude Response of the ADS124S08 Digital Filter, fDR = 20 SPS.......................................................................                         | 5 |\n| Figure 4-1. Magnitude Response for the ADS127L01 Wideband Filter up to fDR .......................................................................                          | 6 |\n| Figure 4-2. Response of the ADS127L01 Wideband Filter to a Unit-Step Input..........................................................................                        | 7 |",
+          "rows": [
+            [
+              "Figure 2-1. Spectrum of Delta-Sigma Quantization Noise and a Sinc Low-Pass Filter...............................................................",
+              "2"
+            ],
+            [
+              "Figure 2-2. Wideband Filter Frequency Response......................................................................................................................",
+              "3"
+            ],
+            [
+              "Figure 2-3. Sinc³ Frequency Response.......................................................................................................................................",
+              "3"
+            ],
+            [
+              "Figure 3-1. Frequency Response of Sinc¹, Sinc³, and Sinc⁵ Digital Filters.................................................................................",
+              "4"
+            ],
+            [
+              "Figure 3-2. Step Response for Sinc¹, Sinc³, and Sinc⁵ Digital Filters.........................................................................................",
+              "5"
+            ],
+            [
+              "Figure 3-3. Magnitude Response of the ADS124S08 Digital Filter, fDR = 20 SPS.......................................................................",
+              "5"
+            ],
+            [
+              "Figure 4-1. Magnitude Response for the ADS127L01 Wideband Filter up to fDR .......................................................................",
+              "6"
+            ],
+            [
+              "Figure 4-2. Response of the ADS127L01 Wideband Filter to a Unit-Step Input..........................................................................",
+              "7"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 84.14,
+              "w": 497.52,
+              "x": 57.43,
+              "y": 388.78,
+              "confidence": 0.9,
+              "end_index": 1643,
+              "label": "table",
+              "start_index": 25
+            },
+            {
+              "h": 11.37,
+              "w": 81.18,
+              "x": 265.59,
+              "y": 374.84,
+              "confidence": 0.644,
+              "end_index": 22,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, paragraph_title, image, footer, reference] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 3,
+          "md": "### **Trademarks**",
+          "value": "Trademarks",
+          "bbox": [
+            {
+              "h": 8.86,
+              "w": 66.54,
+              "x": 56.94,
+              "y": 480.58,
+              "confidence": 0.581,
+              "end_index": 17,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "All trademarks are the property of their respective owners.",
+          "value": "All trademarks are the property of their respective owners.",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 256.89,
+              "x": 55.69,
+              "y": 494.34,
+              "confidence": 1.0,
+              "end_index": 58,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA230A – MAY 2017 – REVISED MARCH 2023 *Digital Filter Types in Delta-Sigma ADCs* 1 <u>Submit Document Feedback</u>\nCopyright © 2023 Texas Instruments Incorporated",
+              "value": "SBAA230A – MAY 2017 – REVISED MARCH 2023 Digital Filter Types in Delta-Sigma ADCs 1\n<u>Submit Document Feedback</u>\nCopyright © 2023 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 502.4,
+                  "x": 54.32,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 164,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA230A – MAY 2017 – REVISED MARCH 2023 *Digital Filter Types in Delta-Sigma ADCs* 1\n<u>Submit Document Feedback</u>\nCopyright © 2023 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 502.4,
+              "x": 54.32,
+              "y": 751.84
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 1,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Introduction*",
+              "value": "Introduction",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 41.12,
+                  "x": 54.46,
+                  "y": 33.32,
+                  "confidence": 0.581,
+                  "end_index": 13,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_2_image_1_v2.jpg)",
+              "url": "page_2_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.3,
+                  "x": 460.84,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)",
+              "value": "\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 33.32,
+                  "confidence": 0.844,
+                  "end_index": 30,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Introduction*\n\n![logo: Texas Instruments](page_2_image_1_v2.jpg)\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 34.85,
+              "w": 503.68,
+              "x": 54.46,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **1 Introduction**",
+          "value": "1 Introduction",
+          "bbox": [
+            {
+              "h": 8.89,
+              "w": 78.24,
+              "x": 57.64,
+              "y": 56.2,
+              "confidence": 0.813,
+              "end_index": 19,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Delta-sigma analog-to-digital converters (ADCs) are different from other types of data converters in that they typically integrate digital filters. The digital filter is crucial to how delta-sigma ADCs are able to obtain fine resolution across a variety of bandwidths. This application report discusses the motivation for including a digital filter in delta-sigma ADCs, the different types of digital filters, and the tradeoffs that exist between the various types of digital filters as they relate to different applications.",
+          "value": "Delta-sigma analog-to-digital converters (ADCs) are different from other types of data converters in that they typically integrate digital filters. The digital filter is crucial to how delta-sigma ADCs are able to obtain fine resolution across a variety of bandwidths. This application report discusses the motivation for including a digital filter in delta-sigma ADCs, the different types of digital filters, and the tradeoffs that exist between the various types of digital filters as they relate to different applications.",
+          "bbox": [
+            {
+              "h": 58.07,
+              "w": 490.51,
+              "x": 55.69,
+              "y": 74.99,
+              "confidence": 1.0,
+              "end_index": 524,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# **2 Digital Filters in Delta-Sigma ADCs**",
+          "value": "2 Digital Filters in Delta-Sigma ADCs",
+          "bbox": [
+            {
+              "h": 11.38,
+              "w": 207.84,
+              "x": 57.0,
+              "y": 140.09,
+              "confidence": 0.969,
+              "end_index": 42,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "To understand why the digital filter is an important aspect in delta-sigma analog-to-digital conversion, it is critical to have a basic understanding of a delta-sigma modulator. The modulator takes its input from a sample-and-hold circuit which will sample the ADC input at a rate (f<sub>MOD</sub>) many times faster than the ADC output data rate (f<sub>DR</sub>).",
+          "value": "To understand why the digital filter is an important aspect in delta-sigma analog-to-digital conversion, it is critical to have a basic understanding of a delta-sigma modulator. The modulator takes its input from a sample-and-hold circuit which will sample the ADC input at a rate (f<sub>MOD</sub>) many times faster than the ADC output data rate (f<sub>DR</sub>).",
+          "bbox": [
+            {
+              "h": 33.48,
+              "w": 496.62,
+              "x": 55.69,
+              "y": 158.99,
+              "confidence": 1.0,
+              "end_index": 363,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The modulator consists of at least one integrator and a low-resolution ADC which quantizes the integrator output voltage into just a few bits. The modulator converts the result of the low-resolution ADC back to analog and feeds it back to the modulator input where it is subtracted from the input voltage as a means of error correction. The result is a discrete-time feedback system which allows sampled input signals to pass at unity gain, but will shape quantization noise density to be lower at low frequency and higher at high frequency.",
+          "value": "The modulator consists of at least one integrator and a low-resolution ADC which quantizes the integrator output voltage into just a few bits. The modulator converts the result of the low-resolution ADC back to analog and feeds it back to the modulator input where it is subtracted from the input voltage as a means of error correction. The result is a discrete-time feedback system which allows sampled input signals to pass at unity gain, but will shape quantization noise density to be lower at low frequency and higher at high frequency.",
+          "bbox": [
+            {
+              "h": 57.99,
+              "w": 497.27,
+              "x": 55.69,
+              "y": 200.99,
+              "confidence": 1.0,
+              "end_index": 540,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "In order to reduce higher-frequency quantization noise, the modulator output is fed to the digital low-pass filter. Subsequently, the signal of interest passes through to the output of the digital filter, while much of the higher-frequency quantization noise is filtered out.",
+          "value": "In order to reduce higher-frequency quantization noise, the modulator output is fed to the digital low-pass filter. Subsequently, the signal of interest passes through to the output of the digital filter, while much of the higher-frequency quantization noise is filtered out.",
+          "bbox": [
+            {
+              "h": 33.48,
+              "w": 470.11,
+              "x": 55.69,
+              "y": 266.99,
+              "confidence": 1.0,
+              "end_index": 274,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Figure 2-1 shows quantization noise plotted with the response of a common type of low-pass digital filter found in delta-sigma ADCs called a sinc filter (its name stems from its sin(x) / x frequency response).",
+          "value": "Figure 2-1 shows quantization noise plotted with the response of a common type of low-pass digital filter found in delta-sigma ADCs called a sinc filter (its name stems from its sin(x) / x frequency response).",
+          "bbox": [
+            {
+              "h": 22.07,
+              "w": 498.88,
+              "x": 55.69,
+              "y": 308.99,
+              "confidence": 1.0,
+              "end_index": 208,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Frequency (fMOD)\",\"Digital filter response (dB)\",\"Modulator quantization noise (dB)\"\n\"0\",\"0\",\"-160\"\n\"0.025\",\"-10\",\"-110\"\n\"0.05\",\"-45\",\"-92\"\n\"0.0625\",\"-160\",\"-86\"\n\"0.075\",\"-85\",\"-81\"\n\"0.1\",\"-66\",\"-72\"\n\"0.125\",\"-160\",\"-66\"\n\"0.15\",\"-92\",\"-61\"\n\"0.165\",\"-87\",\"-59\"\n\"0.1875\",\"-160\",\"-56\"\n\"0.2\",\"-105\",\"-54\"\n\"0.22\",\"-100\",\"-52\"\n\"0.25\",\"-160\",\"-50\"\n\"0.275\",\"-109\",\"-48\"\n\"0.3\",\"-160\",\"-46\"\n\"0.325\",\"-115\",\"-45\"\n\"0.35\",\"-160\",\"-44\"\n\"0.375\",\"-119\",\"-43\"\n\"0.4\",\"-160\",\"-43\"\n\"0.425\",\"-122\",\"-42\"\n\"0.45\",\"-160\",\"-42\"\n\"0.475\",\"-124\",\"-42\"\n\"0.5\",\"-160\",\"-42\"",
+          "html": "<table>\n  <caption>**Figure 2-1. Spectrum of Delta-Sigma Quantization Noise and a Sinc Low-Pass Filter**; Magnitude (dB) vs Frequency (f<sub>MOD</sub>)</caption>\n  <thead>\n    <tr>\n      <th>Frequency (f<sub>MOD</sub>)</th>\n      <th>Digital filter response (dB)</th>\n      <th>Modulator quantization noise (dB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>0</td>\n      <td>-160</td>\n    </tr>\n    <tr>\n      <th>0.025</th>\n      <td>-10</td>\n      <td>-110</td>\n    </tr>\n    <tr>\n      <th>0.05</th>\n      <td>-45</td>\n      <td>-92</td>\n    </tr>\n    <tr>\n      <th>0.0625</th>\n      <td>-160</td>\n      <td>-86</td>\n    </tr>\n    <tr>\n      <th>0.075</th>\n      <td>-85</td>\n      <td>-81</td>\n    </tr>\n    <tr>\n      <th>0.1</th>\n      <td>-66</td>\n      <td>-72</td>\n    </tr>\n    <tr>\n      <th>0.125</th>\n      <td>-160</td>\n      <td>-66</td>\n    </tr>\n    <tr>\n      <th>0.15</th>\n      <td>-92</td>\n      <td>-61</td>\n    </tr>\n    <tr>\n      <th>0.165</th>\n      <td>-87</td>\n      <td>-59</td>\n    </tr>\n    <tr>\n      <th>0.1875</th>\n      <td>-160</td>\n      <td>-56</td>\n    </tr>\n    <tr>\n      <th>0.2</th>\n      <td>-105</td>\n      <td>-54</td>\n    </tr>\n    <tr>\n      <th>0.22</th>\n      <td>-100</td>\n      <td>-52</td>\n    </tr>\n    <tr>\n      <th>0.25</th>\n      <td>-160</td>\n      <td>-50</td>\n    </tr>\n    <tr>\n      <th>0.275</th>\n      <td>-109</td>\n      <td>-48</td>\n    </tr>\n    <tr>\n      <th>0.3</th>\n      <td>-160</td>\n      <td>-46</td>\n    </tr>\n    <tr>\n      <th>0.325</th>\n      <td>-115</td>\n      <td>-45</td>\n    </tr>\n    <tr>\n      <th>0.35</th>\n      <td>-160</td>\n      <td>-44</td>\n    </tr>\n    <tr>\n      <th>0.375</th>\n      <td>-119</td>\n      <td>-43</td>\n    </tr>\n    <tr>\n      <th>0.4</th>\n      <td>-160</td>\n      <td>-43</td>\n    </tr>\n    <tr>\n      <th>0.425</th>\n      <td>-122</td>\n      <td>-42</td>\n    </tr>\n    <tr>\n      <th>0.45</th>\n      <td>-160</td>\n      <td>-42</td>\n    </tr>\n    <tr>\n      <th>0.475</th>\n      <td>-124</td>\n      <td>-42</td>\n    </tr>\n    <tr>\n      <th>0.5</th>\n      <td>-160</td>\n      <td>-42</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### **Figure 2-1. Spectrum of Delta-Sigma Quantization Noise and a Sinc Low-Pass Filter**; Magnitude (dB) vs Frequency (fMOD)\n\n| Frequency (fMOD) | Digital filter response (dB) | Modulator quantization noise (dB) |\n| ---------------- | ---------------------------- | --------------------------------- |\n| 0                | 0                            | -160                              |\n| 0.025            | -10                          | -110                              |\n| 0.05             | -45                          | -92                               |\n| 0.0625           | -160                         | -86                               |\n| 0.075            | -85                          | -81                               |\n| 0.1              | -66                          | -72                               |\n| 0.125            | -160                         | -66                               |\n| 0.15             | -92                          | -61                               |\n| 0.165            | -87                          | -59                               |\n| 0.1875           | -160                         | -56                               |\n| 0.2              | -105                         | -54                               |\n| 0.22             | -100                         | -52                               |\n| 0.25             | -160                         | -50                               |\n| 0.275            | -109                         | -48                               |\n| 0.3              | -160                         | -46                               |\n| 0.325            | -115                         | -45                               |\n| 0.35             | -160                         | -44                               |\n| 0.375            | -119                         | -43                               |\n| 0.4              | -160                         | -43                               |\n| 0.425            | -122                         | -42                               |\n| 0.45             | -160                         | -42                               |\n| 0.475            | -124                         | -42                               |\n| 0.5              | -160                         | -42                               |",
+          "rows": [
+            [
+              "Frequency (fMOD)",
+              "Digital filter response (dB)",
+              "Modulator quantization noise (dB)"
+            ],
+            [
+              "0",
+              "0",
+              "-160"
+            ],
+            [
+              "0.025",
+              "-10",
+              "-110"
+            ],
+            [
+              "0.05",
+              "-45",
+              "-92"
+            ],
+            [
+              "0.0625",
+              "-160",
+              "-86"
+            ],
+            [
+              "0.075",
+              "-85",
+              "-81"
+            ],
+            [
+              "0.1",
+              "-66",
+              "-72"
+            ],
+            [
+              "0.125",
+              "-160",
+              "-66"
+            ],
+            [
+              "0.15",
+              "-92",
+              "-61"
+            ],
+            [
+              "0.165",
+              "-87",
+              "-59"
+            ],
+            [
+              "0.1875",
+              "-160",
+              "-56"
+            ],
+            [
+              "0.2",
+              "-105",
+              "-54"
+            ],
+            [
+              "0.22",
+              "-100",
+              "-52"
+            ],
+            [
+              "0.25",
+              "-160",
+              "-50"
+            ],
+            [
+              "0.275",
+              "-109",
+              "-48"
+            ],
+            [
+              "0.3",
+              "-160",
+              "-46"
+            ],
+            [
+              "0.325",
+              "-115",
+              "-45"
+            ],
+            [
+              "0.35",
+              "-160",
+              "-44"
+            ],
+            [
+              "0.375",
+              "-119",
+              "-43"
+            ],
+            [
+              "0.4",
+              "-160",
+              "-43"
+            ],
+            [
+              "0.425",
+              "-122",
+              "-42"
+            ],
+            [
+              "0.45",
+              "-160",
+              "-42"
+            ],
+            [
+              "0.475",
+              "-124",
+              "-42"
+            ],
+            [
+              "0.5",
+              "-160",
+              "-42"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 236.02,
+              "w": 452.27,
+              "x": 80.17,
+              "y": 337.39,
+              "confidence": 0.9,
+              "end_index": 2325,
+              "label": "chart",
+              "start_index": 127
+            },
+            {
+              "h": 9.48,
+              "w": 394.49,
+              "x": 109.2,
+              "y": 563.64,
+              "confidence": 0.747,
+              "end_index": 90,
+              "label": "paragraph_title",
+              "start_index": 0
+            },
+            {
+              "h": 44.98,
+              "w": 7.0,
+              "x": 81.05,
+              "y": 415.55,
+              "confidence": 0.747,
+              "end_index": 124,
+              "label": "paragraph_title",
+              "start_index": 91
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, paragraph_title, caption, footer, image, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "Sinc filters, while extremely common, are not the only types of digital low-pass filters associated with delta-sigma ~~ADCs. For example, some ADCs, like the ADS124S08, add an extra 50 Hz and 60 Hz~~ notch filter designed for applications with a lot of power-line interference. On the other hand, the ADS127L01 has a wide-bandwidth flat-passband digital filter designed for higher-frequency applications.",
+          "value": "Sinc filters, while extremely common, are not the only types of digital low-pass filters associated with delta-sigma ADCs. For example, some ADCs, like the ADS124S08, add an extra 50 Hz and 60 Hz notch filter designed for applications with a lot of power-line interference. On the other hand, the ADS127L01 has a wide-bandwidth flat-passband digital filter designed for higher-frequency applications.",
+          "bbox": [
+            {
+              "h": 46.38,
+              "w": 497.97,
+              "x": 55.69,
+              "y": 585.64,
+              "confidence": 1.0,
+              "end_index": 403,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The digital filters in delta-sigma ADCs serve another function – decimation. These filters decimate data which is output from the modulator at f<sub>MOD</sub> by a factor known as the oversampling ratio (OSR). The relationship between f<sub>DR</sub> and f<sub>MOD</sub> is f<sub>DR</sub> = f<sub>MOD</sub> / OSR. The OSR and filter type combined determine the output bandwidth of the digital filter and overall frequency response of the ADC. Large OSRs produce small filter bandwidths, which translates to very good noise performance, simplified anti-aliasing circuitry, and reduced digital interface speeds for the host controllers.",
+          "value": "The digital filters in delta-sigma ADCs serve another function – decimation. These filters decimate data which is output from the modulator at f<sub>MOD</sub> by a factor known as the oversampling ratio (OSR). The relationship between f<sub>DR</sub> and f<sub>MOD</sub> is f<sub>DR</sub> = f<sub>MOD</sub> / OSR. The OSR and filter type combined determine the output bandwidth of the digital filter and overall frequency response of the ADC. Large OSRs produce small filter bandwidths, which translates to very good noise performance, simplified anti-aliasing circuitry, and reduced digital interface speeds for the host controllers.",
+          "bbox": [
+            {
+              "h": 67.5,
+              "w": 493.4,
+              "x": 55.69,
+              "y": 639.64,
+              "confidence": 1.0,
+              "end_index": 632,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "2 *Digital Filter Types in Delta-Sigma ADCs* SBAA230A – MAY 2017 – REVISED MARCH 2023 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2023 Texas Instruments Incorporated",
+              "value": "2 Digital Filter Types in Delta-Sigma ADCs SBAA230A – MAY 2017 – REVISED MARCH 2023\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2023 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 504.17,
+                  "x": 54.2,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 194,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "2 *Digital Filter Types in Delta-Sigma ADCs* SBAA230A – MAY 2017 – REVISED MARCH 2023\n*Submit Document Feedback*\nCopyright © 2023 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 504.17,
+              "x": 54.2,
+              "y": 751.84
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 2,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Digital Filters in Delta-Sigma ADCs*",
+              "value": "Digital Filters in Delta-Sigma ADCs",
+              "bbox": [
+                {
+                  "h": 7.57,
+                  "w": 123.67,
+                  "x": 434.32,
+                  "y": 33.22,
+                  "confidence": 0.938,
+                  "end_index": 36,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Digital Filters in Delta-Sigma ADCs*",
+          "bbox": [
+            {
+              "h": 7.57,
+              "w": 123.67,
+              "x": 434.32,
+              "y": 33.22
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_3_image_1_v2.jpg)",
+          "url": "page_3_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 24.56,
+              "w": 97.31,
+              "x": 53.24,
+              "y": 5.54,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "[www.ti.com](http://www.ti.com)",
+          "value": "www.ti.com",
+          "bbox": [
+            {
+              "h": 5.9,
+              "w": 39.91,
+              "x": 54.02,
+              "y": 33.32,
+              "confidence": 0.844,
+              "end_index": 30,
+              "label": "header",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Most digital filters in delta-sigma ADCs have a finite impulse response (FIR). These filters are inherently stable and easy to design with linear phase responses. Figure 2-2 and Figure 2-3 plot the responses of two types of FIR filters in delta-sigma ADCs side by side. Figure 2-2 shows the wideband filter in the ADS127L01. Figure 2-3 is a classic third-order sinc response filter, or sinc<sup>3</sup> like that found in the ADS124S08.",
+          "value": "Most digital filters in delta-sigma ADCs have a finite impulse response (FIR). These filters are inherently stable and easy to design with linear phase responses. Figure 2-2 and Figure 2-3 plot the responses of two types of FIR filters in delta-sigma ADCs side by side. Figure 2-2 shows the wideband filter in the ADS127L01. Figure 2-3 is a classic third-order sinc response filter, or sinc<sup>3</sup> like that found in the ADS124S08.",
+          "bbox": [
+            {
+              "h": 45.37,
+              "w": 494.72,
+              "x": 55.08,
+              "y": 50.99,
+              "confidence": 1.0,
+              "end_index": 435,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Frequency (fDR)\",\"Magnitude (dB)\"\n\"0\",\"0\"\n\"0.1\",\"0\"\n\"0.2\",\"0\"\n\"0.3\",\"0\"\n\"0.4\",\"0\"\n\"0.45\",\"-10\"\n\"0.5\",\"-120\"\n\"0.6\",\"-120\"\n\"0.7\",\"-120\"\n\"0.8\",\"-120\"\n\"0.9\",\"-120\"\n\"1\",\"-120\"",
+          "html": "<table>\n  <caption>**Figure 2-2. Wideband Filter Frequency Response**</caption>\n  <thead>\n    <tr>\n      <th>Frequency (f<sub>DR</sub>)</th>\n      <th>Magnitude (dB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>0.1</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>0.2</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>0.3</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>0.4</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>0.45</th>\n      <td>-10</td>\n    </tr>\n    <tr>\n      <th>0.5</th>\n      <td>-120</td>\n    </tr>\n    <tr>\n      <th>0.6</th>\n      <td>-120</td>\n    </tr>\n    <tr>\n      <th>0.7</th>\n      <td>-120</td>\n    </tr>\n    <tr>\n      <th>0.8</th>\n      <td>-120</td>\n    </tr>\n    <tr>\n      <th>0.9</th>\n      <td>-120</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>-120</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### **Figure 2-2. Wideband Filter Frequency Response**\n\n| Frequency (fDR) | Magnitude (dB) |\n| --------------- | -------------- |\n| 0               | 0              |\n| 0.1             | 0              |\n| 0.2             | 0              |\n| 0.3             | 0              |\n| 0.4             | 0              |\n| 0.45            | -10            |\n| 0.5             | -120           |\n| 0.6             | -120           |\n| 0.7             | -120           |\n| 0.8             | -120           |\n| 0.9             | -120           |\n| 1               | -120           |",
+          "rows": [
+            [
+              "Frequency (fDR)",
+              "Magnitude (dB)"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0.1",
+              "0"
+            ],
+            [
+              "0.2",
+              "0"
+            ],
+            [
+              "0.3",
+              "0"
+            ],
+            [
+              "0.4",
+              "0"
+            ],
+            [
+              "0.45",
+              "-10"
+            ],
+            [
+              "0.5",
+              "-120"
+            ],
+            [
+              "0.6",
+              "-120"
+            ],
+            [
+              "0.7",
+              "-120"
+            ],
+            [
+              "0.8",
+              "-120"
+            ],
+            [
+              "0.9",
+              "-120"
+            ],
+            [
+              "1",
+              "-120"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 174.24,
+              "w": 246.64,
+              "x": 56.3,
+              "y": 107.71,
+              "confidence": 0.9,
+              "end_index": 572,
+              "label": "chart",
+              "start_index": 56
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, footer, header, image, caption, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"Frequency (fDR)\",\"Magnitude (dB)\"\n\"0.0\",\"0\"\n\"0.5\",\"-10\"\n\"1.0\",\"-140\"\n\"1.5\",\"-40\"\n\"2.0\",\"-140\"\n\"2.5\",\"-53\"\n\"3.0\",\"-140\"\n\"3.5\",\"-61\"\n\"4.0\",\"-140\"\n\"4.5\",\"-66\"\n\"5.0\",\"-140\"\n\"5.5\",\"-69\"\n\"6.0\",\"-140\"\n\"6.5\",\"-71\"\n\"7.0\",\"-140\"\n\"7.5\",\"-73\"\n\"8.0\",\"-140\"",
+          "html": "<table>\n  <caption>Figure 2-3. Sinc<sup>3</sup> Frequency Response</caption>\n  <thead>\n    <tr>\n      <th>Frequency (f<sub>DR</sub>)</th>\n      <th>Magnitude (dB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0.0</th>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>0.5</th>\n      <td>-10</td>\n    </tr>\n    <tr>\n      <th>1.0</th>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>1.5</th>\n      <td>-40</td>\n    </tr>\n    <tr>\n      <th>2.0</th>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>2.5</th>\n      <td>-53</td>\n    </tr>\n    <tr>\n      <th>3.0</th>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>3.5</th>\n      <td>-61</td>\n    </tr>\n    <tr>\n      <th>4.0</th>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>4.5</th>\n      <td>-66</td>\n    </tr>\n    <tr>\n      <th>5.0</th>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>5.5</th>\n      <td>-69</td>\n    </tr>\n    <tr>\n      <th>6.0</th>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>6.5</th>\n      <td>-71</td>\n    </tr>\n    <tr>\n      <th>7.0</th>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>7.5</th>\n      <td>-73</td>\n    </tr>\n    <tr>\n      <th>8.0</th>\n      <td>-140</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 2-3. Sinc3 Frequency Response\n\n| Frequency (fDR) | Magnitude (dB) |\n| --------------- | -------------- |\n| 0.0             | 0              |\n| 0.5             | -10            |\n| 1.0             | -140           |\n| 1.5             | -40            |\n| 2.0             | -140           |\n| 2.5             | -53            |\n| 3.0             | -140           |\n| 3.5             | -61            |\n| 4.0             | -140           |\n| 4.5             | -66            |\n| 5.0             | -140           |\n| 5.5             | -69            |\n| 6.0             | -140           |\n| 6.5             | -71            |\n| 7.0             | -140           |\n| 7.5             | -73            |\n| 8.0             | -140           |",
+          "rows": [
+            [
+              "Frequency (fDR)",
+              "Magnitude (dB)"
+            ],
+            [
+              "0.0",
+              "0"
+            ],
+            [
+              "0.5",
+              "-10"
+            ],
+            [
+              "1.0",
+              "-140"
+            ],
+            [
+              "1.5",
+              "-40"
+            ],
+            [
+              "2.0",
+              "-140"
+            ],
+            [
+              "2.5",
+              "-53"
+            ],
+            [
+              "3.0",
+              "-140"
+            ],
+            [
+              "3.5",
+              "-61"
+            ],
+            [
+              "4.0",
+              "-140"
+            ],
+            [
+              "4.5",
+              "-66"
+            ],
+            [
+              "5.0",
+              "-140"
+            ],
+            [
+              "5.5",
+              "-69"
+            ],
+            [
+              "6.0",
+              "-140"
+            ],
+            [
+              "6.5",
+              "-71"
+            ],
+            [
+              "7.0",
+              "-140"
+            ],
+            [
+              "7.5",
+              "-73"
+            ],
+            [
+              "8.0",
+              "-140"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 161.46,
+              "w": 246.63,
+              "x": 308.45,
+              "y": 107.71,
+              "confidence": 0.3,
+              "end_index": 743,
+              "label": "chart",
+              "start_index": 42
+            },
+            {
+              "h": 10.9,
+              "w": 181.44,
+              "x": 340.12,
+              "y": 270.48,
+              "confidence": 0.737,
+              "end_index": 39,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, footer, header, image, caption, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "The benefit of using a wideband filter for AC measurement applications is clear from its magnitude response. Its nearly 0-dB gain until right before the Nyquist bandwidth of the data rate (f<sub>DR</sub> / 2) ensures no signal power loss for frequencies in the passband. The steep transition band limits aliasing. The sinc<sup>3</sup> filter, on the other hand, attenuates signals to –3 dB at 0.262 x f<sub>DR</sub> and transitions slowly even after f<sub>DR</sub> / 2, which would enable more out-of-band noise to fold into the bandwidth of interest. Seemingly, the wideband FIR filter would be ideal for any application; however, this excellent frequency-domain performance comes at a price.",
+          "value": "The benefit of using a wideband filter for AC measurement applications is clear from its magnitude response. Its nearly 0-dB gain until right before the Nyquist bandwidth of the data rate (f<sub>DR</sub> / 2) ensures no signal power loss for frequencies in the passband. The steep transition band limits aliasing. The sinc<sup>3</sup> filter, on the other hand, attenuates signals to –3 dB at 0.262 x f<sub>DR</sub> and transitions slowly even after f<sub>DR</sub> / 2, which would enable more out-of-band noise to fold into the bandwidth of interest. Seemingly, the wideband FIR filter would be ideal for any application; however, this excellent frequency-domain performance comes at a price.",
+          "bbox": [
+            {
+              "h": 69.88,
+              "w": 499.5,
+              "x": 55.69,
+              "y": 303.15,
+              "confidence": 1.0,
+              "end_index": 692,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The trade-off between the wideband filter and the sinc filter is in the time domain. The wideband filter is a very high-order filter, meaning it takes a long time to settle to a final value upon receiving a step input. In the wideband filter of the ADS127L01, it will take 84 conversions to receive a settled output. A sinc<sup>3</sup> filter settles in three conversions after a step at the input, enabling quick cycling through multiple input channels. This trade-off between frequency response and latency exists for all FIR filters.",
+          "value": "The trade-off between the wideband filter and the sinc filter is in the time domain. The wideband filter is a very high-order filter, meaning it takes a long time to settle to a final value upon receiving a step input. In the wideband filter of the ADS127L01, it will take 84 conversions to receive a settled output. A sinc<sup>3</sup> filter settles in three conversions after a step at the input, enabling quick cycling through multiple input channels. This trade-off between frequency response and latency exists for all FIR filters.",
+          "bbox": [
+            {
+              "h": 57.48,
+              "w": 494.25,
+              "x": 55.08,
+              "y": 381.16,
+              "confidence": 1.0,
+              "end_index": 535,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA230A – MAY 2017 – REVISED MARCH 2023 *Digital Filter Types in Delta-Sigma ADCs* 3 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2023 Texas Instruments Incorporated",
+              "value": "SBAA230A – MAY 2017 – REVISED MARCH 2023 Digital Filter Types in Delta-Sigma ADCs 3\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2023 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 503.36,
+                  "x": 54.32,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 194,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA230A – MAY 2017 – REVISED MARCH 2023 *Digital Filter Types in Delta-Sigma ADCs* 3\n*Submit Document Feedback*\nCopyright © 2023 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 503.36,
+              "x": 54.32,
+              "y": 751.84
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 3,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Sinc Filter*",
+              "value": "Sinc Filter",
+              "bbox": [
+                {
+                  "h": 6.0,
+                  "w": 35.68,
+                  "x": 54.56,
+                  "y": 33.22,
+                  "confidence": 0.813,
+                  "end_index": 12,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Sinc Filter*",
+          "bbox": [
+            {
+              "h": 6.0,
+              "w": 35.68,
+              "x": 54.56,
+              "y": 33.22
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_4_image_1_v2.jpg)",
+          "url": "page_4_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 34.85,
+              "w": 97.3,
+              "x": 460.84,
+              "y": 5.54,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "level": 1,
+          "md": "# **3 Sinc Filter**",
+          "value": "3 Sinc Filter",
+          "bbox": [
+            {
+              "h": 9.01,
+              "w": 67.73,
+              "x": 57.15,
+              "y": 56.09,
+              "confidence": 0.844,
+              "end_index": 18,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "The name “sinc” comes from its frequency response, which takes the form of the sin(x) / x function. The reason the filter has this response is actually tied closely with why it is so often used in delta-sigma ADCs.",
+          "value": "The name “sinc” comes from its frequency response, which takes the form of the sin(x) / x function. The reason the filter has this response is actually tied closely with why it is so often used in delta-sigma ADCs.",
+          "bbox": [
+            {
+              "h": 21.48,
+              "w": 490.51,
+              "x": 55.69,
+              "y": 74.99,
+              "confidence": 1.0,
+              "end_index": 213,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The digital filter creates a digital output code by summing the modulator output over a certain number of modulator clock periods. The ratio of the modulator rate (f<sub>MOD</sub>) of the delta-sigma ADC to its output data rate (f<sub>DR</sub>) is the OSR. This is equivalent to taking a moving average of those samples over the sampling period. Taking the moving average in the time domain translates to a first-order sinc response in the frequency domain. The sinc response is equal to zero at integer multiples of the data rate, which appear as notches in the magnitude response plot of the filter.",
+          "value": "The digital filter creates a digital output code by summing the modulator output over a certain number of modulator clock periods. The ratio of the modulator rate (f<sub>MOD</sub>) of the delta-sigma ADC to its output data rate (f<sub>DR</sub>) is the OSR. This is equivalent to taking a moving average of those samples over the sampling period. Taking the moving average in the time domain translates to a first-order sinc response in the frequency domain. The sinc response is equal to zero at integer multiples of the data rate, which appear as notches in the magnitude response plot of the filter.",
+          "bbox": [
+            {
+              "h": 69.48,
+              "w": 493.27,
+              "x": 55.69,
+              "y": 104.99,
+              "confidence": 1.0,
+              "end_index": 600,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The amount of averaging increases when cascading multiple sinc filters in series, thus increasing the filter order. In the spectrum, this corresponds to a lower cutoff frequency and a higher stopband attenuation, which in turn reduces noise. Figure 3-1 shows the difference in the frequency responses of a first-order sinc filter (sinc<sup>1</sup>), three sinc filters in series (a third-order sinc, sinc<sup>3</sup>) and five sinc filters in series (sinc<sup>5</sup>).",
+          "value": "The amount of averaging increases when cascading multiple sinc filters in series, thus increasing the filter order. In the spectrum, this corresponds to a lower cutoff frequency and a higher stopband attenuation, which in turn reduces noise. Figure 3-1 shows the difference in the frequency responses of a first-order sinc filter (sinc<sup>1</sup>), three sinc filters in series (a third-order sinc, sinc<sup>3</sup>) and five sinc filters in series (sinc<sup>5</sup>).",
+          "bbox": [
+            {
+              "h": 45.9,
+              "w": 498.15,
+              "x": 55.69,
+              "y": 182.99,
+              "confidence": 1.0,
+              "end_index": 468,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Frequency (fDR)\",\"Magnitude (dB)<br/>Sinc¹\",\"Magnitude (dB)<br/>Sinc³\",\"Magnitude (dB)<br/>Sinc⁵\"\n\"0\",\"0\",\"0\",\"0\"\n\"0.5\",\"-4\",\"-12\",\"-20\"\n\"1\",\"-140\",\"-140\",\"-140\"\n\"1.5\",\"-13\",\"-40\",\"-66\"\n\"2\",\"-140\",\"-140\",\"-140\"\n\"2.5\",\"-18\",\"-53\",\"-88\"\n\"3\",\"-140\",\"-140\",\"-140\"\n\"3.5\",\"-21\",\"-61\",\"-101\"\n\"4\",\"-140\",\"-140\",\"-140\"\n\"4.5\",\"-23\",\"-66\",\"-110\"\n\"5\",\"-140\",\"-140\",\"-140\"\n\"5.5\",\"-25\",\"-69\",\"-115\"\n\"6\",\"-140\",\"-140\",\"-140\"\n\"6.5\",\"-26\",\"-72\",\"-119\"\n\"7\",\"-140\",\"-140\",\"-140\"\n\"7.5\",\"-27\",\"-73\",\"-121\"\n\"8\",\"-140\",\"-140\",\"-140\"",
+          "html": "<table>\n  <caption>Figure 3-1. Frequency Response of Sinc¹, Sinc³, and Sinc⁵ Digital Filters — Magnitude (dB) vs Frequency (f<sub>DR</sub>)</caption>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Frequency (f<sub>DR</sub>)</th>\n      <th colspan=\"3\">Magnitude (dB)</th>\n    </tr>\n    <tr>\n      <th>Sinc¹</th>\n      <th>Sinc³</th>\n      <th>Sinc⁵</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>0.5</th>\n      <td>-4</td>\n      <td>-12</td>\n      <td>-20</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>-140</td>\n      <td>-140</td>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>1.5</th>\n      <td>-13</td>\n      <td>-40</td>\n      <td>-66</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>-140</td>\n      <td>-140</td>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>2.5</th>\n      <td>-18</td>\n      <td>-53</td>\n      <td>-88</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>-140</td>\n      <td>-140</td>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>3.5</th>\n      <td>-21</td>\n      <td>-61</td>\n      <td>-101</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>-140</td>\n      <td>-140</td>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>4.5</th>\n      <td>-23</td>\n      <td>-66</td>\n      <td>-110</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>-140</td>\n      <td>-140</td>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>5.5</th>\n      <td>-25</td>\n      <td>-69</td>\n      <td>-115</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>-140</td>\n      <td>-140</td>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>6.5</th>\n      <td>-26</td>\n      <td>-72</td>\n      <td>-119</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>-140</td>\n      <td>-140</td>\n      <td>-140</td>\n    </tr>\n    <tr>\n      <th>7.5</th>\n      <td>-27</td>\n      <td>-73</td>\n      <td>-121</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>-140</td>\n      <td>-140</td>\n      <td>-140</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 3-1. Frequency Response of Sinc¹, Sinc³, and Sinc⁵ Digital Filters — Magnitude (dB) vs Frequency (fDR)\n\n| Frequency (fDR) | Magnitude (dB)<br/>Sinc¹ | Magnitude (dB)<br/>Sinc³ | Magnitude (dB)<br/>Sinc⁵ |\n| --------------- | ------------------------ | ------------------------ | ------------------------ |\n| 0               | 0                        | 0                        | 0                        |\n| 0.5             | -4                       | -12                      | -20                      |\n| 1               | -140                     | -140                     | -140                     |\n| 1.5             | -13                      | -40                      | -66                      |\n| 2               | -140                     | -140                     | -140                     |\n| 2.5             | -18                      | -53                      | -88                      |\n| 3               | -140                     | -140                     | -140                     |\n| 3.5             | -21                      | -61                      | -101                     |\n| 4               | -140                     | -140                     | -140                     |\n| 4.5             | -23                      | -66                      | -110                     |\n| 5               | -140                     | -140                     | -140                     |\n| 5.5             | -25                      | -69                      | -115                     |\n| 6               | -140                     | -140                     | -140                     |\n| 6.5             | -26                      | -72                      | -119                     |\n| 7               | -140                     | -140                     | -140                     |\n| 7.5             | -27                      | -73                      | -121                     |\n| 8               | -140                     | -140                     | -140                     |",
+          "rows": [
+            [
+              "Frequency (fDR)",
+              "Magnitude (dB)<br/>Sinc¹",
+              "Magnitude (dB)<br/>Sinc³",
+              "Magnitude (dB)<br/>Sinc⁵"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0.5",
+              "-4",
+              "-12",
+              "-20"
+            ],
+            [
+              "1",
+              "-140",
+              "-140",
+              "-140"
+            ],
+            [
+              "1.5",
+              "-13",
+              "-40",
+              "-66"
+            ],
+            [
+              "2",
+              "-140",
+              "-140",
+              "-140"
+            ],
+            [
+              "2.5",
+              "-18",
+              "-53",
+              "-88"
+            ],
+            [
+              "3",
+              "-140",
+              "-140",
+              "-140"
+            ],
+            [
+              "3.5",
+              "-21",
+              "-61",
+              "-101"
+            ],
+            [
+              "4",
+              "-140",
+              "-140",
+              "-140"
+            ],
+            [
+              "4.5",
+              "-23",
+              "-66",
+              "-110"
+            ],
+            [
+              "5",
+              "-140",
+              "-140",
+              "-140"
+            ],
+            [
+              "5.5",
+              "-25",
+              "-69",
+              "-115"
+            ],
+            [
+              "6",
+              "-140",
+              "-140",
+              "-140"
+            ],
+            [
+              "6.5",
+              "-26",
+              "-72",
+              "-119"
+            ],
+            [
+              "7",
+              "-140",
+              "-140",
+              "-140"
+            ],
+            [
+              "7.5",
+              "-27",
+              "-73",
+              "-121"
+            ],
+            [
+              "8",
+              "-140",
+              "-140",
+              "-140"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 215.43,
+              "w": 454.11,
+              "x": 80.17,
+              "y": 235.22,
+              "confidence": 0.9,
+              "end_index": 2032,
+              "label": "chart",
+              "start_index": 115
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, paragraph_title, caption, footer, image, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 3-1. Frequency Response of Sinc<sup>1</sup>, Sinc<sup>3</sup>, and Sinc<sup>5</sup> Digital Filters**",
+          "value": "Figure 3-1. Frequency Response of Sinc<sup>1</sup>, Sinc<sup>3</sup>, and Sinc<sup>5</sup> Digital Filters",
+          "bbox": [
+            {
+              "h": 10.89,
+              "w": 341.93,
+              "x": 135.17,
+              "y": 459.22,
+              "confidence": 1.0,
+              "end_index": 109,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Looking at these responses, there does not seem to be very much bandwidth in the digital-filter output, limiting the measurable signal content. This is not a drawback in certain low-bandwidth applications. Some precision sensor applications, like temperature and pressure sensors, do not require much bandwidth for measurement, but need a good low-pass filter to reject out-of-band noise. The sinc filter fits well into these applications.",
+          "value": "Looking at these responses, there does not seem to be very much bandwidth in the digital-filter output, limiting the measurable signal content. This is not a drawback in certain low-bandwidth applications. Some precision sensor applications, like temperature and pressure sensors, do not require much bandwidth for measurement, but need a good low-pass filter to reject out-of-band noise. The sinc filter fits well into these applications.",
+          "bbox": [
+            {
+              "h": 45.48,
+              "w": 487.23,
+              "x": 55.69,
+              "y": 482.63,
+              "confidence": 1.0,
+              "end_index": 438,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Given the application, it may be desirable to multiplex between multiple sensor inputs relatively quickly. To do this, the digital filter needs to respond to an input change and settle quickly. The sinc filter is ideal for this, too. Sinc filters offer much faster settling times relative to other digital filters with more finely tuned frequency responses. In many cases, these filters can be built to settle to a step input in a single conversion cycle.",
+          "value": "Given the application, it may be desirable to multiplex between multiple sensor inputs relatively quickly. To do this, the digital filter needs to respond to an input change and settle quickly. The sinc filter is ideal for this, too. Sinc filters offer much faster settling times relative to other digital filters with more finely tuned frequency responses. In many cases, these filters can be built to settle to a step input in a single conversion cycle.",
+          "bbox": [
+            {
+              "h": 45.48,
+              "w": 481.75,
+              "x": 55.69,
+              "y": 536.63,
+              "confidence": 1.0,
+              "end_index": 454,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Nevertheless, trade-offs exist even between the types of sinc filters. The higher order a sinc filter is, the longer it will take to settle – but with the bonus of better stop-band attenuation. Figure 3-2 shows how the sinc<sup>1</sup>, sinc<sup>3</sup> and sinc<sup>5</sup> filters respond to a unit step input. Note that the order of the sinc filter matches the number of samples it takes to settle to the input.",
+          "value": "Nevertheless, trade-offs exist even between the types of sinc filters. The higher order a sinc filter is, the longer it will take to settle – but with the bonus of better stop-band attenuation. Figure 3-2 shows how the sinc<sup>1</sup>, sinc<sup>3</sup> and sinc<sup>5</sup> filters respond to a unit step input. Note that the order of the sinc filter matches the number of samples it takes to settle to the input.",
+          "bbox": [
+            {
+              "h": 45.37,
+              "w": 496.68,
+              "x": 55.69,
+              "y": 590.63,
+              "confidence": 1.0,
+              "end_index": 413,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "4 *Digital Filter Types in Delta-Sigma ADCs* SBAA230A – MAY 2017 – REVISED MARCH 2023",
+              "value": "4 Digital Filter Types in Delta-Sigma ADCs SBAA230A – MAY 2017 – REVISED MARCH 2023\n",
+              "bbox": [
+                {
+                  "h": 6.64,
+                  "w": 150.62,
+                  "x": 54.09,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 44,
+                  "label": "text",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.26,
+                  "w": 157.97,
+                  "x": 399.7,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 84,
+                  "label": "text",
+                  "start_index": 45
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "[<span style=\"color:#0000ff\">*Submit Document Feedback*</span>](https://www.ti.com)",
+              "text": "<span style=\"color:#0000ff\">Submit Document Feedback</span>",
+              "url": "https://www.ti.com",
+              "bbox": [
+                {
+                  "h": 8.0,
+                  "w": 40.45,
+                  "x": 517.55,
+                  "y": 32.83,
+                  "confidence": 1.0,
+                  "end_index": 82,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "link"
+            },
+            {
+              "md": "Copyright © 2023 Texas Instruments Incorporated",
+              "value": "\nCopyright © 2023 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 6.64,
+                  "w": 153.7,
+                  "x": 229.07,
+                  "y": 770.24,
+                  "confidence": 0.906,
+                  "end_index": 46,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "4 *Digital Filter Types in Delta-Sigma ADCs* SBAA230A – MAY 2017 – REVISED MARCH 2023\n[*Submit Document Feedback*](https://www.ti.com)\nCopyright © 2023 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 744.05,
+              "w": 503.91,
+              "x": 54.09,
+              "y": 32.83
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 4,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_5_image_1_v2.jpg)",
+              "url": "page_5_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 23.76,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Sinc Filter*",
+              "value": "\nwww.ti.com Sinc Filter",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 33.32,
+                  "confidence": 0.906,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 6.0,
+                  "w": 35.68,
+                  "x": 523.0,
+                  "y": 33.22,
+                  "confidence": 0.906,
+                  "end_index": 44,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_5_image_1_v2.jpg)\nwww.ti.com *Sinc Filter*",
+          "bbox": [
+            {
+              "h": 33.68,
+              "w": 505.44,
+              "x": 53.24,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "csv": "\"Sample\",\"Input\",\"Sinc¹\",\"Sinc³\",\"Sinc⁵\"\n\"0\",\"0\",\"0\",\"0\",\"0\"\n\"1\",\"0\",\"0\",\"0\",\"0\"\n\"2\",\"0\",\"0\",\"0\",\"0\"\n\"3\",\"0\",\"0\",\"0\",\"0\"\n\"4\",\"0\",\"0\",\"0\",\"0\"\n\"5\",\"0\",\"0\",\"0\",\"0\"\n\"6\",\"0\",\"0\",\"0\",\"0\"\n\"7\",\"0\",\"0\",\"0\",\"0\"\n\"8\",\"0\",\"0\",\"0\",\"0\"\n\"9\",\"0\",\"0\",\"0\",\"0\"\n\"10\",\"0\",\"0\",\"0\",\"0\"\n\"11\",\"0\",\"0\",\"0\",\"0\"\n\"12\",\"0\",\"0\",\"0\",\"0\"\n\"13\",\"0\",\"0\",\"0\",\"0\"\n\"14\",\"0\",\"0\",\"0\",\"0\"\n\"15\",\"0\",\"0\",\"0\",\"0\"\n\"16\",\"1\",\"0\",\"0\",\"0\"\n\"17\",\"1\",\"1\",\"0.20\",\"0.02\"\n\"18\",\"1\",\"1\",\"0.86\",\"0.28\"\n\"19\",\"1\",\"1\",\"1\",\"0.83\"\n\"20\",\"1\",\"1\",\"1\",\"1\"\n\"21\",\"1\",\"1\",\"1\",\"1\"\n\"22\",\"1\",\"1\",\"1\",\"1\"\n\"23\",\"1\",\"1\",\"1\",\"1\"\n\"24\",\"1\",\"1\",\"1\",\"1\"\n\"25\",\"1\",\"1\",\"1\",\"1\"\n\"26\",\"1\",\"1\",\"1\",\"1\"\n\"27\",\"1\",\"1\",\"1\",\"1\"\n\"28\",\"1\",\"1\",\"1\",\"1\"\n\"29\",\"1\",\"1\",\"1\",\"1\"\n\"30\",\"1\",\"1\",\"1\",\"1\"",
+          "html": "<table>\n  <caption>Step Response of Sinc Filters — Normalized Amplitude vs. Sample</caption>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Input</th>\n      <th>Sinc<sup>1</sup></th>\n      <th>Sinc<sup>3</sup></th>\n      <th>Sinc<sup>5</sup></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>9</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>10</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>11</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>12</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>13</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>14</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>15</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>16</th>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>17</th>\n      <td>1</td>\n      <td>1</td>\n      <td>0.20</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <th>18</th>\n      <td>1</td>\n      <td>1</td>\n      <td>0.86</td>\n      <td>0.28</td>\n    </tr>\n    <tr>\n      <th>19</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0.83</td>\n    </tr>\n    <tr>\n      <th>20</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>21</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>22</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>23</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>24</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>25</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>26</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>27</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>28</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>29</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>30</th>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Step Response of Sinc Filters — Normalized Amplitude vs. Sample\n\n| Sample | Input | Sinc¹ | Sinc³ | Sinc⁵ |\n| ------ | ----- | ----- | ----- | ----- |\n| 0      | 0     | 0     | 0     | 0     |\n| 1      | 0     | 0     | 0     | 0     |\n| 2      | 0     | 0     | 0     | 0     |\n| 3      | 0     | 0     | 0     | 0     |\n| 4      | 0     | 0     | 0     | 0     |\n| 5      | 0     | 0     | 0     | 0     |\n| 6      | 0     | 0     | 0     | 0     |\n| 7      | 0     | 0     | 0     | 0     |\n| 8      | 0     | 0     | 0     | 0     |\n| 9      | 0     | 0     | 0     | 0     |\n| 10     | 0     | 0     | 0     | 0     |\n| 11     | 0     | 0     | 0     | 0     |\n| 12     | 0     | 0     | 0     | 0     |\n| 13     | 0     | 0     | 0     | 0     |\n| 14     | 0     | 0     | 0     | 0     |\n| 15     | 0     | 0     | 0     | 0     |\n| 16     | 1     | 0     | 0     | 0     |\n| 17     | 1     | 1     | 0.20  | 0.02  |\n| 18     | 1     | 1     | 0.86  | 0.28  |\n| 19     | 1     | 1     | 1     | 0.83  |\n| 20     | 1     | 1     | 1     | 1     |\n| 21     | 1     | 1     | 1     | 1     |\n| 22     | 1     | 1     | 1     | 1     |\n| 23     | 1     | 1     | 1     | 1     |\n| 24     | 1     | 1     | 1     | 1     |\n| 25     | 1     | 1     | 1     | 1     |\n| 26     | 1     | 1     | 1     | 1     |\n| 27     | 1     | 1     | 1     | 1     |\n| 28     | 1     | 1     | 1     | 1     |\n| 29     | 1     | 1     | 1     | 1     |\n| 30     | 1     | 1     | 1     | 1     |",
+          "rows": [
+            [
+              "Sample",
+              "Input",
+              "Sinc¹",
+              "Sinc³",
+              "Sinc⁵"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "4",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "7",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "8",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "9",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "10",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "11",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "12",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "13",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "14",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "15",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "16",
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "17",
+              "1",
+              "1",
+              "0.20",
+              "0.02"
+            ],
+            [
+              "18",
+              "1",
+              "1",
+              "0.86",
+              "0.28"
+            ],
+            [
+              "19",
+              "1",
+              "1",
+              "1",
+              "0.83"
+            ],
+            [
+              "20",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "21",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "22",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "23",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "24",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "25",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "26",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "27",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "28",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "29",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "30",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 217.01,
+              "w": 449.2,
+              "x": 81.4,
+              "y": 48.31,
+              "confidence": 0.9,
+              "end_index": 1486,
+              "label": "chart",
+              "start_index": 69
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, caption, footer, header, image] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 3-2. Step Response for Sinc<sup>1</sup>, Sinc<sup>3</sup>, and Sinc<sup>5</sup> Digital Filters**",
+          "value": "Figure 3-2. Step Response for Sinc<sup>1</sup>, Sinc<sup>3</sup>, and Sinc<sup>5</sup> Digital Filters",
+          "bbox": [
+            {
+              "h": 11.52,
+              "w": 316.92,
+              "x": 147.67,
+              "y": 273.6,
+              "confidence": 1.0,
+              "end_index": 105,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Some data converters have slightly modified sinc filters. In some industrial applications, power utility interference pollutes the environment of the equipment at 50 Hz or 60 Hz. A digital filter that has notches in its frequency response at 50 Hz or 60 Hz helps reject the utility frequency and maintain high system power-supply rejection (PSR).",
+          "value": "Some data converters have slightly modified sinc filters. In some industrial applications, power utility interference pollutes the environment of the equipment at 50 Hz or 60 Hz. A digital filter that has notches in its frequency response at 50 Hz or 60 Hz helps reject the utility frequency and maintain high system power-supply rejection (PSR).",
+          "bbox": [
+            {
+              "h": 45.92,
+              "w": 497.44,
+              "x": 55.69,
+              "y": 297.02,
+              "confidence": 1.0,
+              "end_index": 345,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "In many cases, these filters can be built to settle to a step input in a single conversion cycle. However, a filter that settles within a single cycle will not have as much out-of-band rejection as an unmodified higher-order sinc filter. Figure 3-3 shows the magnitude response of the digital filter on the ADS124S08 when the data rate is set to 20 SPS using the low-latency filter. Note that this filter simultaneously rejects both 50 Hz and 60 Hz. A normal sinc filter would require a data rate at some integer divisor of 10 SPS to achieve this, since filter notches would occur at multiples of 10 Hz.",
+          "value": "In many cases, these filters can be built to settle to a step input in a single conversion cycle. However, a filter that settles within a single cycle will not have as much out-of-band rejection as an unmodified higher-order sinc filter. Figure 3-3 shows the magnitude response of the digital filter on the ADS124S08 when the data rate is set to 20 SPS using the low-latency filter. Note that this filter simultaneously rejects both 50 Hz and 60 Hz. A normal sinc filter would require a data rate at some integer divisor of 10 SPS to achieve this, since filter notches would occur at multiples of 10 Hz.",
+          "bbox": [
+            {
+              "h": 69.37,
+              "w": 494.96,
+              "x": 55.69,
+              "y": 351.02,
+              "confidence": 1.0,
+              "end_index": 602,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Frequency (Hz)\",\"Magnitude (dB)\"\n\"0\",\"0\"\n\"10\",\"-2\"\n\"20\",\"-8\"\n\"30\",\"-18\"\n\"40\",\"-36\"\n\"50\",\"-140\"\n\"55\",\"-75\"\n\"60\",\"-140\"\n\"70\",\"-55\"\n\"80\",\"-36\"\n\"90\",\"-33\"\n\"100\",\"-115\"\n\"110\",\"-40\"\n\"120\",\"-112\"\n\"130\",\"-42\"\n\"140\",\"-50\"\n\"150\",\"-132\"\n\"155\",\"-76\"\n\"160\",\"-128\"\n\"170\",\"-52\"\n\"180\",\"-136\"\n\"185\",\"-74\"\n\"190\",\"-129\"\n\"200\",\"-74\"",
+          "html": "<table>\n  <caption>Figure 41. Detailed View of the Magnitude Response (20 SPS) — ADS124S08 digital filter; Frequency (Hz) vs Magnitude (dB)</caption>\n  <thead>\n    <tr>\n      <th>Frequency (Hz)</th>\n      <th>Magnitude (dB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><th>0</th><td>0</td></tr>\n    <tr><th>10</th><td>-2</td></tr>\n    <tr><th>20</th><td>-8</td></tr>\n    <tr><th>30</th><td>-18</td></tr>\n    <tr><th>40</th><td>-36</td></tr>\n    <tr><th>50</th><td>-140</td></tr>\n    <tr><th>55</th><td>-75</td></tr>\n    <tr><th>60</th><td>-140</td></tr>\n    <tr><th>70</th><td>-55</td></tr>\n    <tr><th>80</th><td>-36</td></tr>\n    <tr><th>90</th><td>-33</td></tr>\n    <tr><th>100</th><td>-115</td></tr>\n    <tr><th>110</th><td>-40</td></tr>\n    <tr><th>120</th><td>-112</td></tr>\n    <tr><th>130</th><td>-42</td></tr>\n    <tr><th>140</th><td>-50</td></tr>\n    <tr><th>150</th><td>-132</td></tr>\n    <tr><th>155</th><td>-76</td></tr>\n    <tr><th>160</th><td>-128</td></tr>\n    <tr><th>170</th><td>-52</td></tr>\n    <tr><th>180</th><td>-136</td></tr>\n    <tr><th>185</th><td>-74</td></tr>\n    <tr><th>190</th><td>-129</td></tr>\n    <tr><th>200</th><td>-74</td></tr>\n  </tbody>\n</table>",
+          "md": "### Figure 41. Detailed View of the Magnitude Response (20 SPS) — ADS124S08 digital filter; Frequency (Hz) vs Magnitude (dB)\n\n| Frequency (Hz) | Magnitude (dB) |\n| -------------- | -------------- |\n| 0              | 0              |\n| 10             | -2             |\n| 20             | -8             |\n| 30             | -18            |\n| 40             | -36            |\n| 50             | -140           |\n| 55             | -75            |\n| 60             | -140           |\n| 70             | -55            |\n| 80             | -36            |\n| 90             | -33            |\n| 100            | -115           |\n| 110            | -40            |\n| 120            | -112           |\n| 130            | -42            |\n| 140            | -50            |\n| 150            | -132           |\n| 155            | -76            |\n| 160            | -128           |\n| 170            | -52            |\n| 180            | -136           |\n| 185            | -74            |\n| 190            | -129           |\n| 200            | -74            |",
+          "rows": [
+            [
+              "Frequency (Hz)",
+              "Magnitude (dB)"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "10",
+              "-2"
+            ],
+            [
+              "20",
+              "-8"
+            ],
+            [
+              "30",
+              "-18"
+            ],
+            [
+              "40",
+              "-36"
+            ],
+            [
+              "50",
+              "-140"
+            ],
+            [
+              "55",
+              "-75"
+            ],
+            [
+              "60",
+              "-140"
+            ],
+            [
+              "70",
+              "-55"
+            ],
+            [
+              "80",
+              "-36"
+            ],
+            [
+              "90",
+              "-33"
+            ],
+            [
+              "100",
+              "-115"
+            ],
+            [
+              "110",
+              "-40"
+            ],
+            [
+              "120",
+              "-112"
+            ],
+            [
+              "130",
+              "-42"
+            ],
+            [
+              "140",
+              "-50"
+            ],
+            [
+              "150",
+              "-132"
+            ],
+            [
+              "155",
+              "-76"
+            ],
+            [
+              "160",
+              "-128"
+            ],
+            [
+              "170",
+              "-52"
+            ],
+            [
+              "180",
+              "-136"
+            ],
+            [
+              "185",
+              "-74"
+            ],
+            [
+              "190",
+              "-129"
+            ],
+            [
+              "200",
+              "-74"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 217.01,
+              "w": 454.11,
+              "x": 80.17,
+              "y": 426.89,
+              "confidence": 0.9,
+              "end_index": 1060,
+              "label": "chart",
+              "start_index": 126
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, caption, footer, header, image] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 3-3. Magnitude Response of the ADS124S08 Digital Filter, f<sub>DR</sub> = 20 SPS**",
+          "value": "Figure 3-3. Magnitude Response of the ADS124S08 Digital Filter, f<sub>DR</sub> = 20 SPS",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 367.38,
+              "x": 121.79,
+              "y": 652.66,
+              "confidence": 1.0,
+              "end_index": 90,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "In summary, the sinc filter is used as a basic low-pass filter in delta-sigma ADCs. Their reasonable stopband attenuation combined with their quick step response make them ideal for dc measurement applications, especially when multiplexing between several input signals.",
+          "value": "In summary, the sinc filter is used as a basic low-pass filter in delta-sigma ADCs. Their reasonable stopband attenuation combined with their quick step response make them ideal for dc measurement applications, especially when multiplexing between several input signals.",
+          "bbox": [
+            {
+              "h": 34.18,
+              "w": 478.05,
+              "x": 55.69,
+              "y": 674.66,
+              "confidence": 1.0,
+              "end_index": 269,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA230A – MAY 2017 – REVISED MARCH 2023 *Digital Filter Types in Delta-Sigma ADCs* 5\n*<u>Submit Document Feedback</u>*\nCopyright © 2023 Texas Instruments Incorporated",
+              "value": "SBAA230A – MAY 2017 – REVISED MARCH 2023 Digital Filter Types in Delta-Sigma ADCs 5\n<u>Submit Document Feedback</u>\nCopyright © 2023 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 503.4,
+                  "x": 54.32,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 166,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA230A – MAY 2017 – REVISED MARCH 2023 *Digital Filter Types in Delta-Sigma ADCs* 5\n*<u>Submit Document Feedback</u>*\nCopyright © 2023 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 503.4,
+              "x": 54.32,
+              "y": 751.84
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 5,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*Wideband Filters*",
+              "value": "Wideband Filters",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 58.95,
+                  "x": 55.0,
+                  "y": 33.32,
+                  "confidence": 0.813,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_6_image_1_v2.jpg)",
+              "url": "page_6_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.85,
+                  "w": 97.3,
+                  "x": 460.84,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)",
+              "value": "\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 33.32,
+                  "confidence": 0.844,
+                  "end_index": 30,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*Wideband Filters*\n\n![logo: Texas Instruments](page_6_image_1_v2.jpg)\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 34.85,
+              "w": 503.14,
+              "x": 55.0,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **4 Wideband Filters**",
+          "value": "4 Wideband Filters",
+          "bbox": [
+            {
+              "h": 8.89,
+              "w": 105.78,
+              "x": 56.92,
+              "y": 56.2,
+              "confidence": 0.844,
+              "end_index": 23,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Even though delta-sigma ADCs with sinc filters are a great fit for low-bandwidth applications, the delta-sigma architecture can also be used with great success in higher bandwidth applications as well. For example, precisely measuring audio or vibration signals can be done using delta-sigma ADCs. Test and measurement equipment that requires high bandwidth is another application well-suited for delta-sigma ADCs. For these applications, a wideband filter can be used as the integrated digital filter on a delta-sigma ADC.",
+          "value": "Even though delta-sigma ADCs with sinc filters are a great fit for low-bandwidth applications, the delta-sigma architecture can also be used with great success in higher bandwidth applications as well. For example, precisely measuring audio or vibration signals can be done using delta-sigma ADCs. Test and measurement equipment that requires high bandwidth is another application well-suited for delta-sigma ADCs. For these applications, a wideband filter can be used as the integrated digital filter on a delta-sigma ADC.",
+          "bbox": [
+            {
+              "h": 57.48,
+              "w": 480.22,
+              "x": 55.69,
+              "y": 74.99,
+              "confidence": 1.0,
+              "end_index": 522,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "AC applications require a wide passband with little attenuation or ripple, but still require the precision that comes standard with the oversampling topology of a delta-sigma ADC. That is why some ADCs are designed with a wide passband filter that has a steep transition band. The ADS127L01, a 24-bit delta-sigma ADC optimized for wide-bandwidth applications, has such a filter. Figure 4-1 shows the magnitude response of the filter up to the output data rate, f<sub>DR</sub>, of the ADC, which is 512 kHz. Note how steep the transition band of the filter is around f<sub>DR</sub> / 2 – the frequency where signals begin to alias into the passband. This serves to drastically limit unwanted signals or noise from folding over. The stopband magnitude never exceeds –116 dB until the response of the filter repeats around the modulator frequency, f<sub>MOD</sub>, of the ADC.",
+          "value": "AC applications require a wide passband with little attenuation or ripple, but still require the precision that comes standard with the oversampling topology of a delta-sigma ADC. That is why some ADCs are designed with a wide passband filter that has a steep transition band. The ADS127L01, a 24-bit delta-sigma ADC optimized for wide-bandwidth applications, has such a filter. Figure 4-1 shows the magnitude response of the filter up to the output data rate, f<sub>DR</sub>, of the ADC, which is 512 kHz. Note how steep the transition band of the filter is around f<sub>DR</sub> / 2 – the frequency where signals begin to alias into the passband. This serves to drastically limit unwanted signals or noise from folding over. The stopband magnitude never exceeds –116 dB until the response of the filter repeats around the modulator frequency, f<sub>MOD</sub>, of the ADC.",
+          "bbox": [
+            {
+              "h": 93.48,
+              "w": 495.83,
+              "x": 55.69,
+              "y": 140.99,
+              "confidence": 1.0,
+              "end_index": 872,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "**Figure 4-1. Magnitude Response for the ADS127L01 Wideband Filter up to f<sub>DR</sub>**",
+          "value": "Figure 4-1. Magnitude Response for the ADS127L01 Wideband Filter up to f<sub>DR</sub>",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 366.67,
+              "x": 123.01,
+              "y": 466.63,
+              "confidence": 0.8,
+              "end_index": 88,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Frequency (kHz)\",\"Magnitude (dB)\"\n\"0\",\"0\"\n\"32\",\"0\"\n\"64\",\"0\"\n\"96\",\"0\"\n\"128\",\"0\"\n\"160\",\"0\"\n\"192\",\"0\"\n\"224\",\"-2\"\n\"240\",\"-20\"\n\"248\",\"-60\"\n\"256\",\"-116\"\n\"288\",\"-116\"\n\"320\",\"-116\"\n\"352\",\"-116\"\n\"384\",\"-116\"\n\"416\",\"-116\"\n\"448\",\"-118\"\n\"480\",\"-120\"\n\"512\",\"-122\"",
+          "html": "<table>\n  <caption>Figure 11. Wideband Filter Response — Magnitude (dB) vs Frequency (kHz)</caption>\n  <thead>\n    <tr>\n      <th>Frequency (kHz)</th>\n      <th>Magnitude (dB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><th>0</th><td>0</td></tr>\n    <tr><th>32</th><td>0</td></tr>\n    <tr><th>64</th><td>0</td></tr>\n    <tr><th>96</th><td>0</td></tr>\n    <tr><th>128</th><td>0</td></tr>\n    <tr><th>160</th><td>0</td></tr>\n    <tr><th>192</th><td>0</td></tr>\n    <tr><th>224</th><td>-2</td></tr>\n    <tr><th>240</th><td>-20</td></tr>\n    <tr><th>248</th><td>-60</td></tr>\n    <tr><th>256</th><td>-116</td></tr>\n    <tr><th>288</th><td>-116</td></tr>\n    <tr><th>320</th><td>-116</td></tr>\n    <tr><th>352</th><td>-116</td></tr>\n    <tr><th>384</th><td>-116</td></tr>\n    <tr><th>416</th><td>-116</td></tr>\n    <tr><th>448</th><td>-118</td></tr>\n    <tr><th>480</th><td>-120</td></tr>\n    <tr><th>512</th><td>-122</td></tr>\n  </tbody>\n</table>",
+          "md": "### Figure 11. Wideband Filter Response — Magnitude (dB) vs Frequency (kHz)\n\n| Frequency (kHz) | Magnitude (dB) |\n| --------------- | -------------- |\n| 0               | 0              |\n| 32              | 0              |\n| 64              | 0              |\n| 96              | 0              |\n| 128             | 0              |\n| 160             | 0              |\n| 192             | 0              |\n| 224             | -2             |\n| 240             | -20            |\n| 248             | -60            |\n| 256             | -116           |\n| 288             | -116           |\n| 320             | -116           |\n| 352             | -116           |\n| 384             | -116           |\n| 416             | -116           |\n| 448             | -118           |\n| 480             | -120           |\n| 512             | -122           |",
+          "rows": [
+            [
+              "Frequency (kHz)",
+              "Magnitude (dB)"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "32",
+              "0"
+            ],
+            [
+              "64",
+              "0"
+            ],
+            [
+              "96",
+              "0"
+            ],
+            [
+              "128",
+              "0"
+            ],
+            [
+              "160",
+              "0"
+            ],
+            [
+              "192",
+              "0"
+            ],
+            [
+              "224",
+              "-2"
+            ],
+            [
+              "240",
+              "-20"
+            ],
+            [
+              "248",
+              "-60"
+            ],
+            [
+              "256",
+              "-116"
+            ],
+            [
+              "288",
+              "-116"
+            ],
+            [
+              "320",
+              "-116"
+            ],
+            [
+              "352",
+              "-116"
+            ],
+            [
+              "384",
+              "-116"
+            ],
+            [
+              "416",
+              "-116"
+            ],
+            [
+              "448",
+              "-118"
+            ],
+            [
+              "480",
+              "-120"
+            ],
+            [
+              "512",
+              "-122"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 214.63,
+              "w": 451.66,
+              "x": 79.56,
+              "y": 241.56,
+              "confidence": 0.9,
+              "end_index": 852,
+              "label": "chart",
+              "start_index": 77
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, paragraph_title, caption, footer, image, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "For higher-bandwidth applications, the sinc filter is less adequate for a few reasons. First, the frequency response rolls off early and droops at relatively low frequencies. This limits the usable signal bandwidth. On the other hand, the wideband filter remains almost perfectly flat until around f<sub>DR</sub> / 2, maximizing the usable signal bandwidth for any given data rate.",
+          "value": "For higher-bandwidth applications, the sinc filter is less adequate for a few reasons. First, the frequency response rolls off early and droops at relatively low frequencies. This limits the usable signal bandwidth. On the other hand, the wideband filter remains almost perfectly flat until around f<sub>DR</sub> / 2, maximizing the usable signal bandwidth for any given data rate.",
+          "bbox": [
+            {
+              "h": 45.97,
+              "w": 497.49,
+              "x": 55.69,
+              "y": 488.63,
+              "confidence": 1.0,
+              "end_index": 380,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Second, aliasing is more of a concern for AC applications. The sinc filter is not ideal because it does not attenuate sufficiently at half the output data rate, f<sub>DR</sub> / 2, of the ADC. Alternatively, the wideband filter features exceptional stopband attenuation, which minimizes aliasing.",
+          "value": "Second, aliasing is more of a concern for AC applications. The sinc filter is not ideal because it does not attenuate sufficiently at half the output data rate, f<sub>DR</sub> / 2, of the ADC. Alternatively, the wideband filter features exceptional stopband attenuation, which minimizes aliasing.",
+          "bbox": [
+            {
+              "h": 33.95,
+              "w": 483.57,
+              "x": 55.69,
+              "y": 542.63,
+              "confidence": 1.0,
+              "end_index": 295,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "For ADCs without integrated digital filters, options are limited for achieving such a steep anti-aliasing response. High-order analog anti-aliasing filters with steep roll-offs are notoriously difficult to design and are subject to component tolerances and temperature. Alternatively, it is possible to oversample the converter and digitally filter in the processor, but this comes at the cost of instruction cycles, which may be scarce in high-speed applications. A wideband filter in a delta-sigma ADC truly solves this problem with its built-in “oversample, low-pass filter, then decimate” topology.",
+          "value": "For ADCs without integrated digital filters, options are limited for achieving such a steep anti-aliasing response. High-order analog anti-aliasing filters with steep roll-offs are notoriously difficult to design and are subject to component tolerances and temperature. Alternatively, it is possible to oversample the converter and digitally filter in the processor, but this comes at the cost of instruction cycles, which may be scarce in high-speed applications. A wideband filter in a delta-sigma ADC truly solves this problem with its built-in “oversample, low-pass filter, then decimate” topology.",
+          "bbox": [
+            {
+              "h": 69.48,
+              "w": 490.21,
+              "x": 55.69,
+              "y": 584.63,
+              "confidence": 1.0,
+              "end_index": 601,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "There is a trade-off with all digital filters where superb frequency-domain performance is achieved in exchange for longer settling times. After applying a step function to the input, the digital filter of the ADS127L01 requires 84 output sample periods to settle to the final output. For this reason, wideband filters are not ideal for applications that cycle between multiple-signal source inputs.",
+          "value": "There is a trade-off with all digital filters where superb frequency-domain performance is achieved in exchange for longer settling times. After applying a step function to the input, the digital filter of the ADS127L01 requires 84 output sample periods to settle to the final output. For this reason, wideband filters are not ideal for applications that cycle between multiple-signal source inputs.",
+          "bbox": [
+            {
+              "h": 45.48,
+              "w": 498.62,
+              "x": 55.08,
+              "y": 662.63,
+              "confidence": 1.0,
+              "end_index": 398,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "6 *Digital Filter Types in Delta-Sigma ADCs* SBAA230A – MAY 2017 – REVISED MARCH 2023\nCopyright © 2023 Texas Instruments Incorporated <span style=\"color:#0000ff\">*Submit Document Feedback*</span>",
+              "value": "6 Digital Filter Types in Delta-Sigma ADCs SBAA230A – MAY 2017 – REVISED MARCH 2023\nCopyright © 2023 Texas Instruments Incorporated <span style=\"color:#0000ff\">Submit Document Feedback</span>",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 504.1,
+                  "x": 54.27,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 194,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "6 *Digital Filter Types in Delta-Sigma ADCs* SBAA230A – MAY 2017 – REVISED MARCH 2023\nCopyright © 2023 Texas Instruments Incorporated *Submit Document Feedback*",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 504.1,
+              "x": 54.27,
+              "y": 751.84
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 6,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_7_image_1_v2.jpg)",
+              "url": "page_7_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 24.56,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 5.54,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Wideband Filters*",
+              "value": "\nwww.ti.com Wideband Filters",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 33.32,
+                  "confidence": 0.906,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.9,
+                  "w": 58.95,
+                  "x": 499.05,
+                  "y": 33.32,
+                  "confidence": 0.906,
+                  "end_index": 49,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_7_image_1_v2.jpg)\nwww.ti.com *Wideband Filters*",
+          "bbox": [
+            {
+              "h": 33.68,
+              "w": 504.76,
+              "x": 53.24,
+              "y": 5.54
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "Figure 4-2 shows the step response of the wideband filter of the ADS127L01.",
+          "value": "Figure 4-2 shows the step response of the wideband filter of the ADS127L01.",
+          "bbox": [
+            {
+              "h": 9.99,
+              "w": 341.5,
+              "x": 55.69,
+              "y": 50.99,
+              "confidence": 1.0,
+              "end_index": 74,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Sample\",\"Input (Normalized Amplitude)\",\"Output (Normalized Amplitude)\"\n\"0\",\"0.00\",\"0.00\"\n\"10\",\"0.00\",\"0.00\"\n\"20\",\"0.00\",\"0.00\"\n\"30\",\"0.00\",\"0.00\"\n\"40\",\"0.00\",\"0.00\"\n\"50\",\"0.00\",\"0.00\"\n\"55\",\"1.00\",\"0.00\"\n\"60\",\"1.00\",\"0.00\"\n\"70\",\"1.00\",\"0.00\"\n\"80\",\"1.00\",\"0.00\"\n\"90\",\"1.00\",\"0.03\"\n\"92\",\"1.00\",\"1.03\"\n\"100\",\"1.00\",\"1.00\"\n\"110\",\"1.00\",\"1.00\"\n\"120\",\"1.00\",\"1.00\"\n\"130\",\"1.00\",\"1.00\"\n\"140\",\"1.00\",\"1.00\"\n\"150\",\"1.00\",\"1.00\"",
+          "html": "<table>\n  <caption>Figure 11. Step Response of the Wideband Filter — Normalized Amplitude vs Sample; series: Input, Output</caption>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Input (Normalized Amplitude)</th>\n      <th>Output (Normalized Amplitude)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>10</th>\n      <td>0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>20</th>\n      <td>0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>30</th>\n      <td>0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>40</th>\n      <td>0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>50</th>\n      <td>0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>55</th>\n      <td>1.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>60</th>\n      <td>1.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>70</th>\n      <td>1.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>80</th>\n      <td>1.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <th>90</th>\n      <td>1.00</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <th>92</th>\n      <td>1.00</td>\n      <td>1.03</td>\n    </tr>\n    <tr>\n      <th>100</th>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <th>110</th>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <th>120</th>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <th>130</th>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <th>140</th>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <th>150</th>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 11. Step Response of the Wideband Filter — Normalized Amplitude vs Sample; series: Input, Output\n\n| Sample | Input (Normalized Amplitude) | Output (Normalized Amplitude) |\n| ------ | ---------------------------- | ----------------------------- |\n| 0      | 0.00                         | 0.00                          |\n| 10     | 0.00                         | 0.00                          |\n| 20     | 0.00                         | 0.00                          |\n| 30     | 0.00                         | 0.00                          |\n| 40     | 0.00                         | 0.00                          |\n| 50     | 0.00                         | 0.00                          |\n| 55     | 1.00                         | 0.00                          |\n| 60     | 1.00                         | 0.00                          |\n| 70     | 1.00                         | 0.00                          |\n| 80     | 1.00                         | 0.00                          |\n| 90     | 1.00                         | 0.03                          |\n| 92     | 1.00                         | 1.03                          |\n| 100    | 1.00                         | 1.00                          |\n| 110    | 1.00                         | 1.00                          |\n| 120    | 1.00                         | 1.00                          |\n| 130    | 1.00                         | 1.00                          |\n| 140    | 1.00                         | 1.00                          |\n| 150    | 1.00                         | 1.00                          |",
+          "rows": [
+            [
+              "Sample",
+              "Input (Normalized Amplitude)",
+              "Output (Normalized Amplitude)"
+            ],
+            [
+              "0",
+              "0.00",
+              "0.00"
+            ],
+            [
+              "10",
+              "0.00",
+              "0.00"
+            ],
+            [
+              "20",
+              "0.00",
+              "0.00"
+            ],
+            [
+              "30",
+              "0.00",
+              "0.00"
+            ],
+            [
+              "40",
+              "0.00",
+              "0.00"
+            ],
+            [
+              "50",
+              "0.00",
+              "0.00"
+            ],
+            [
+              "55",
+              "1.00",
+              "0.00"
+            ],
+            [
+              "60",
+              "1.00",
+              "0.00"
+            ],
+            [
+              "70",
+              "1.00",
+              "0.00"
+            ],
+            [
+              "80",
+              "1.00",
+              "0.00"
+            ],
+            [
+              "90",
+              "1.00",
+              "0.03"
+            ],
+            [
+              "92",
+              "1.00",
+              "1.03"
+            ],
+            [
+              "100",
+              "1.00",
+              "1.00"
+            ],
+            [
+              "110",
+              "1.00",
+              "1.00"
+            ],
+            [
+              "120",
+              "1.00",
+              "1.00"
+            ],
+            [
+              "130",
+              "1.00",
+              "1.00"
+            ],
+            [
+              "140",
+              "1.00",
+              "1.00"
+            ],
+            [
+              "150",
+              "1.00",
+              "1.00"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 216.22,
+              "w": 452.88,
+              "x": 80.17,
+              "y": 67.32,
+              "confidence": 0.9,
+              "end_index": 1587,
+              "label": "chart",
+              "start_index": 109
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, footer, caption, header, image] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 4-2. Response of the ADS127L01 Wideband Filter to a Unit-Step Input**",
+          "value": "Figure 4-2. Response of the ADS127L01 Wideband Filter to a Unit-Step Input",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 362.91,
+              "x": 124.24,
+              "y": 292.63,
+              "confidence": 1.0,
+              "end_index": 77,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The filter has a linear phase response, which means that its group delay (the delay due to phase shifting) will be constant across frequencies. For this filter, the group delay is 42 output data samples.",
+          "value": "The filter has a linear phase response, which means that its group delay (the delay due to phase shifting) will be constant across frequencies. For this filter, the group delay is 42 output data samples.",
+          "bbox": [
+            {
+              "h": 21.97,
+              "w": 494.71,
+              "x": 55.69,
+              "y": 314.63,
+              "confidence": 1.0,
+              "end_index": 202,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The wideband digital filter in delta-sigma ADCs provides an ideal functional block for wide-bandwidth, precision-measurement signal chains where no multiplexing between different signal sources is required. The flat passband with low ripple ensures that no in-band signal content is lost, and the steep transition and excellent stopband attenuation provide flexibility in environments where anti-aliasing is critical. In addition, the precision expected from a delta-sigma ADC can still be enjoyed.",
+          "value": "The wideband digital filter in delta-sigma ADCs provides an ideal functional block for wide-bandwidth, precision-measurement signal chains where no multiplexing between different signal sources is required. The flat passband with low ripple ensures that no in-band signal content is lost, and the steep transition and excellent stopband attenuation provide flexibility in environments where anti-aliasing is critical. In addition, the precision expected from a delta-sigma ADC can still be enjoyed.",
+          "bbox": [
+            {
+              "h": 57.48,
+              "w": 494.5,
+              "x": 55.69,
+              "y": 344.63,
+              "confidence": 1.0,
+              "end_index": 497,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SBAA230A – MAY 2017 – REVISED MARCH 2023 *Digital Filter Types in Delta-Sigma ADCs* 7 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2023 Texas Instruments Incorporated",
+              "value": "SBAA230A – MAY 2017 – REVISED MARCH 2023 Digital Filter Types in Delta-Sigma ADCs 7\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2023 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 503.36,
+                  "x": 54.32,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 194,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SBAA230A – MAY 2017 – REVISED MARCH 2023 *Digital Filter Types in Delta-Sigma ADCs* 7\n*Submit Document Feedback*\nCopyright © 2023 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 503.36,
+              "x": 54.32,
+              "y": 751.84
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 7,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "*References*",
+              "value": "References",
+              "bbox": [
+                {
+                  "h": 6.0,
+                  "w": 40.54,
+                  "x": 54.38,
+                  "y": 33.22,
+                  "confidence": 0.781,
+                  "end_index": 11,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_8_image_1_v2.jpg)",
+              "url": "page_8_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 34.05,
+                  "w": 97.3,
+                  "x": 460.84,
+                  "y": 6.34,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)",
+              "value": "\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 33.32,
+                  "confidence": 0.844,
+                  "end_index": 30,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "*References*\n\n![logo: Texas Instruments](page_8_image_1_v2.jpg)\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 34.05,
+              "w": 503.76,
+              "x": 54.38,
+              "y": 6.34
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **5 References**",
+          "value": "5 References",
+          "bbox": [
+            {
+              "h": 9.0,
+              "w": 73.6,
+              "x": 57.22,
+              "y": 56.09,
+              "confidence": 0.813,
+              "end_index": 17,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "items": [
+            {
+              "md": "ADS124S08 data sheet (SBAS660)",
+              "value": "ADS124S08 data sheet (SBAS660)",
+              "bbox": [
+                {
+                  "h": 9.48,
+                  "w": 170.44,
+                  "x": 57.22,
+                  "y": 74.99,
+                  "confidence": 0.875,
+                  "end_index": 29,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "ADS127L01 data sheet (SBAS607)",
+              "value": "ADS127L01 data sheet (SBAS607)",
+              "bbox": [
+                {
+                  "h": 9.48,
+                  "w": 170.44,
+                  "x": 57.22,
+                  "y": 86.99,
+                  "confidence": 0.875,
+                  "end_index": 29,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "* ADS124S08 data sheet (SBAS660)\n* ADS127L01 data sheet (SBAS607)",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 21.48,
+              "w": 170.44,
+              "x": 57.22,
+              "y": 74.99,
+              "confidence": 0.875,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "level": 1,
+          "md": "# **6 Revision History**",
+          "value": "6 Revision History",
+          "bbox": [
+            {
+              "h": 11.52,
+              "w": 104.37,
+              "x": 57.2,
+              "y": 115.2,
+              "confidence": 0.844,
+              "end_index": 23,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "NOTE: Page numbers for previous revisions may differ from page numbers in the current version.",
+          "value": "NOTE: Page numbers for previous revisions may differ from page numbers in the current version.",
+          "bbox": [
+            {
+              "h": 9.49,
+              "w": 430.67,
+              "x": 55.69,
+              "y": 128.98,
+              "confidence": 1.0,
+              "end_index": 93,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## **Changes from Revision \\* (May 2017) to Revision A (March 2023)** **Page**",
+          "value": "Changes from Revision * (May 2017) to Revision A (March 2023) Page",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 297.62,
+              "x": 57.16,
+              "y": 146.99,
+              "confidence": 0.968,
+              "end_index": 77,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "items": [
+            {
+              "md": "Updated the numbering format for tables, figures, and cross-references throughout the document................. 1",
+              "value": "Updated the numbering format for tables, figures, and cross-references throughout the document................. 1",
+              "bbox": [
+                {
+                  "h": 10.08,
+                  "w": 496.26,
+                  "x": 57.22,
+                  "y": 160.99,
+                  "confidence": 1.0,
+                  "end_index": 112,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "* Updated the numbering format for tables, figures, and cross-references throughout the document................. 1",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 10.08,
+              "w": 496.26,
+              "x": 57.22,
+              "y": 160.99,
+              "confidence": 1.0,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "items": [
+            {
+              "md": "8 *Digital Filter Types in Delta-Sigma ADCs* SBAA230A – MAY 2017 – REVISED MARCH 2023 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2023 Texas Instruments Incorporated",
+              "value": "8 Digital Filter Types in Delta-Sigma ADCs SBAA230A – MAY 2017 – REVISED MARCH 2023\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2023 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 504.08,
+                  "x": 54.29,
+                  "y": 751.84,
+                  "confidence": 1.0,
+                  "end_index": 194,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "8 *Digital Filter Types in Delta-Sigma ADCs* SBAA230A – MAY 2017 – REVISED MARCH 2023\n*Submit Document Feedback*\nCopyright © 2023 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 504.08,
+              "x": 54.29,
+              "y": 751.84
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 8,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "level": 2,
+          "md": "## **IMPORTANT NOTICE AND DISCLAIMER**",
+          "value": "IMPORTANT NOTICE AND DISCLAIMER",
+          "bbox": [
+            {
+              "h": 9.01,
+              "w": 225.57,
+              "x": 193.6,
+              "y": 78.59,
+              "confidence": 0.875,
+              "end_index": 37,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.",
+          "value": "TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.",
+          "bbox": [
+            {
+              "h": 44.4,
+              "w": 486.86,
+              "x": 57.53,
+              "y": 94.19,
+              "confidence": 1.0,
+              "end_index": 451,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable standards, and any other safety, security, regulatory or other requirements.",
+          "value": "These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable standards, and any other safety, security, regulatory or other requirements.",
+          "bbox": [
+            {
+              "h": 26.79,
+              "w": 490.53,
+              "x": 57.53,
+              "y": 146.19,
+              "confidence": 1.0,
+              "end_index": 357,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these resources.",
+          "value": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these resources.",
+          "bbox": [
+            {
+              "h": 44.4,
+              "w": 491.01,
+              "x": 56.92,
+              "y": 178.99,
+              "confidence": 1.0,
+              "end_index": 568,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI's products are provided subject to <mark>TI's Terms of Sale</mark> or other applicable terms available either on <mark>ti.com</mark> or provided in conjunction with such TI products. TI's provision of these resources does not expand or otherwise alter TI's applicable warranties or warranty disclaimers for TI products.",
+          "value": "TI's products are provided subject to <mark>TI's Terms of Sale</mark> or other applicable terms available either on <mark>ti.com</mark> or provided in conjunction with such TI products. TI's provision of these resources does not expand or otherwise alter TI's applicable warranties or warranty disclaimers for TI products.",
+          "bbox": [
+            {
+              "h": 26.7,
+              "w": 493.2,
+              "x": 57.53,
+              "y": 230.99,
+              "confidence": 1.0,
+              "end_index": 321,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI objects to and rejects any additional or different terms you may have proposed.",
+          "value": "TI objects to and rejects any additional or different terms you may have proposed.",
+          "bbox": [
+            {
+              "h": 7.6,
+              "w": 369.35,
+              "x": 58.88,
+              "y": 263.78,
+              "confidence": 1.0,
+              "end_index": 81,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265\nCopyright © 2023, Texas Instruments Incorporated",
+          "value": "Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265\nCopyright © 2023, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 18.38,
+              "w": 292.03,
+              "x": 157.9,
+              "y": 286.39,
+              "confidence": 1.0,
+              "end_index": 127,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 9,
+      "page_width": 612.0,
+      "success": true
+    }
+  ]
+}

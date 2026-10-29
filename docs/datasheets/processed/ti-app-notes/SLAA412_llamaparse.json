@@ -1,0 +1,2889 @@
+{
+  "document_id": "SLAA412",
+  "source_pdf": "docs/datasheets/originals/ti-app-notes/SLAA412.pdf",
+  "tier": "agentic_plus",
+  "sha256": "aa897d4b8b0b4806bdf2b84034d0bed75bf50bd3b4562ad404b8fd493fd09c4c",
+  "pages": 10,
+  "tables_detected": 9,
+  "items_pages": [
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "[www.ti.com](http://www.ti.com) ",
+              "value": "www.ti.com ",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 51.36,
+                  "confidence": 0.844,
+                  "end_index": 31,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "[Table of Contents](#zubh)",
+              "text": "Table of Contents",
+              "url": "#zubh",
+              "bbox": [
+                {
+                  "h": 6.0,
+                  "w": 61.42,
+                  "x": 496.58,
+                  "y": 51.26,
+                  "confidence": 0.644,
+                  "end_index": 25,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "link"
+            }
+          ],
+          "md": "www.ti.com [Table of Contents](#zubh)",
+          "bbox": [
+            {
+              "h": 6.0,
+              "w": 503.98,
+              "x": 54.02,
+              "y": 51.26
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "*Application Report*",
+          "value": "Application Report",
+          "bbox": [
+            {
+              "h": 12.95,
+              "w": 115.99,
+              "x": 55.69,
+              "y": 73.12,
+              "confidence": 0.813,
+              "end_index": 19,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# **LDO Noise Demystified**",
+          "value": "LDO Noise Demystified",
+          "bbox": [
+            {
+              "h": 17.06,
+              "w": 199.27,
+              "x": 57.51,
+              "y": 90.35,
+              "confidence": 0.844,
+              "end_index": 26,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_1_image_1_v2.jpg)",
+          "url": "page_1_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 26.14,
+              "w": 194.0,
+              "x": 323.75,
+              "y": 119.59,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "*Sanjay Pithadia and Ankur Verma* *PMP - LP Linear Regulators*",
+          "value": "Sanjay Pithadia and Ankur Verma PMP - LP Linear Regulators",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 148.7,
+              "x": 57.39,
+              "y": 167.39,
+              "confidence": 1.0,
+              "end_index": 34,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 9.34,
+              "w": 124.07,
+              "x": 431.23,
+              "y": 167.51,
+              "confidence": 1.0,
+              "end_index": 61,
+              "label": "text",
+              "start_index": 35
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 3,
+          "md": "### **ABSTRACT**",
+          "value": "ABSTRACT",
+          "bbox": [
+            {
+              "h": 7.51,
+              "w": 56.04,
+              "x": 277.24,
+              "y": 179.39,
+              "confidence": 0.581,
+              "end_index": 15,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "This application report explains the difference between noise and PSRR of an LDO. It also explains the different ways noise is specified in LDO datasheets and which specification should be used in the application. Finally it explains how LDO noise is reduced.",
+          "value": "This application report explains the difference between noise and PSRR of an LDO. It also explains the different ways noise is specified in LDO datasheets and which specification should be used in the application. Finally it explains how LDO noise is reduced.",
+          "bbox": [
+            {
+              "h": 33.88,
+              "w": 495.72,
+              "x": 55.69,
+              "y": 197.38,
+              "confidence": 1.0,
+              "end_index": 258,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"1 LDO Noise and PSRR.............................................................................................................................................................\",\"2\"\n\"2 LDO Noise Types....................................................................................................................................................................\",\"3\"\n\"3 Noise Specifications in LDO Data Sheets............................................................................................................................\",\"4\"\n\"4 Which Specification is for Your Application?......................................................................................................................\",\"5\"\n\"5 How to Reduce the LDO Noise?............................................................................................................................................\",\"8\"\n\"6 Implications of the LDO Noise...............................................................................................................................................\",\"9\"\n\"7 Revision History......................................................................................................................................................................\",\"9\"",
+          "html": "<table>\n  <caption>Table of Contents</caption>\n    <tr>\n      <td><b><b>1 LDO Noise and PSRR</b></b>.............................................................................................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td><b><b>2 LDO Noise Types</b></b>....................................................................................................................................................................</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td><b><b>3 Noise Specifications in LDO Data Sheets</b></b>............................................................................................................................</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td><b><b>4 Which Specification is for Your Application?</b></b>......................................................................................................................</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td><b><b>5 How to Reduce the LDO Noise?</b></b>............................................................................................................................................</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td><b><b>6 Implications of the LDO Noise</b></b>...............................................................................................................................................</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td><b><b>7 Revision History</b></b>......................................................................................................................................................................</td>\n      <td>9</td>\n    </tr>\n</table>",
+          "md": "### Table of Contents\n\n| ****1 LDO Noise and PSRR****.............................................................................................................................................................        | 2 |\n| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | - |\n| ****2 LDO Noise Types****....................................................................................................................................................................    | 3 |\n| ****3 Noise Specifications in LDO Data Sheets****............................................................................................................................                    | 4 |\n| ****4 Which Specification is for Your Application?****......................................................................................................................                     | 5 |\n| ****5 How to Reduce the LDO Noise?****............................................................................................................................................               | 8 |\n| ****6 Implications of the LDO Noise****...............................................................................................................................................           | 9 |\n| ****7 Revision History****...................................................................................................................................................................... | 9 |",
+          "rows": [
+            [
+              "1 LDO Noise and PSRR.............................................................................................................................................................",
+              "2"
+            ],
+            [
+              "2 LDO Noise Types....................................................................................................................................................................",
+              "3"
+            ],
+            [
+              "3 Noise Specifications in LDO Data Sheets............................................................................................................................",
+              "4"
+            ],
+            [
+              "4 Which Specification is for Your Application?......................................................................................................................",
+              "5"
+            ],
+            [
+              "5 How to Reduce the LDO Noise?............................................................................................................................................",
+              "8"
+            ],
+            [
+              "6 Implications of the LDO Noise...............................................................................................................................................",
+              "9"
+            ],
+            [
+              "7 Revision History......................................................................................................................................................................",
+              "9"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 73.33,
+              "w": 498.09,
+              "x": 56.86,
+              "y": 288.64,
+              "confidence": 0.9,
+              "end_index": 1629,
+              "label": "table",
+              "start_index": 23
+            },
+            {
+              "h": 9.0,
+              "w": 99.63,
+              "x": 256.03,
+              "y": 274.69,
+              "confidence": 0.644,
+              "end_index": 20,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [footer, text, reference, image, paragraph_title] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"Figure 1-1. PSRR and Noise in LDO...........................................................................................................................................\",\"2\"\n\"Figure 2-1. LDO Noise (types).....................................................................................................................................................\",\"3\"\n\"Figure 3-1. Noise Specified in Two Ways (for TPS717xx LDOs)................................................................................................\",\"4\"\n\"Figure 4-1. Transmit Mask and Sidebands Due to Noise............................................................................................................\",\"5\"\n\"Figure 4-2. Increase in VCO Noise Floor Due to LDO Noise......................................................................................................\",\"6\"\n\"Figure 4-3. LDO Noise Aliasing...................................................................................................................................................\",\"7\"",
+          "html": "<table>\n  <caption>**List of Figures**</caption>\n    <tr>\n      <td>Figure 1-1. PSRR and Noise in LDO...........................................................................................................................................</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Figure 2-1. LDO Noise (types).....................................................................................................................................................</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Figure 3-1. Noise Specified in Two Ways (for TPS717xx LDOs)................................................................................................</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Figure 4-1. Transmit Mask and Sidebands Due to Noise............................................................................................................</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Figure 4-2. Increase in VCO Noise Floor Due to LDO Noise......................................................................................................</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Figure 4-3. LDO Noise Aliasing...................................................................................................................................................</td>\n      <td>7</td>\n    </tr>\n</table>",
+          "md": "### **List of Figures**\n\n| Figure 1-1. PSRR and Noise in LDO...........................................................................................................................................       | 2 |\n| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |\n| Figure 2-1. LDO Noise (types)..................................................................................................................................................... | 3 |\n| Figure 3-1. Noise Specified in Two Ways (for TPS717xx LDOs)................................................................................................                        | 4 |\n| Figure 4-1. Transmit Mask and Sidebands Due to Noise............................................................................................................                   | 5 |\n| Figure 4-2. Increase in VCO Noise Floor Due to LDO Noise......................................................................................................                     | 6 |\n| Figure 4-3. LDO Noise Aliasing...................................................................................................................................................  | 7 |",
+          "rows": [
+            [
+              "Figure 1-1. PSRR and Noise in LDO...........................................................................................................................................",
+              "2"
+            ],
+            [
+              "Figure 2-1. LDO Noise (types).....................................................................................................................................................",
+              "3"
+            ],
+            [
+              "Figure 3-1. Noise Specified in Two Ways (for TPS717xx LDOs)................................................................................................",
+              "4"
+            ],
+            [
+              "Figure 4-1. Transmit Mask and Sidebands Due to Noise............................................................................................................",
+              "5"
+            ],
+            [
+              "Figure 4-2. Increase in VCO Noise Floor Due to LDO Noise......................................................................................................",
+              "6"
+            ],
+            [
+              "Figure 4-3. LDO Noise Aliasing...................................................................................................................................................",
+              "7"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 62.53,
+              "w": 497.52,
+              "x": 57.43,
+              "y": 389.64,
+              "confidence": 0.9,
+              "end_index": 1332,
+              "label": "table",
+              "start_index": 25
+            },
+            {
+              "h": 11.38,
+              "w": 81.18,
+              "x": 265.59,
+              "y": 375.69,
+              "confidence": 0.644,
+              "end_index": 22,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [footer, text, reference, image, paragraph_title] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 3,
+          "md": "### **Trademarks**",
+          "value": "Trademarks",
+          "bbox": [
+            {
+              "h": 8.86,
+              "w": 66.54,
+              "x": 56.94,
+              "y": 459.84,
+              "confidence": 0.581,
+              "end_index": 17,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "All other trademarks are the property of their respective owners.",
+          "value": "All other trademarks are the property of their respective owners.",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 282.75,
+              "x": 55.69,
+              "y": 473.59,
+              "confidence": 1.0,
+              "end_index": 64,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 *LDO Noise Demystified* 1 <u>Submit Document Feedback</u>\nCopyright © 2020 Texas Instruments Incorporated",
+              "value": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 LDO Noise Demystified 1\n<u>Submit Document Feedback</u>\nCopyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 502.4,
+                  "x": 54.32,
+                  "y": 741.04,
+                  "confidence": 1.0,
+                  "end_index": 147,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 *LDO Noise Demystified* 1\n<u>Submit Document Feedback</u>\nCopyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 502.4,
+              "x": 54.32,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 1,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_2_image_2_v2.jpg)",
+              "url": "page_2_image_2_v2.jpg",
+              "bbox": [
+                {
+                  "h": 23.76,
+                  "w": 97.92,
+                  "x": 460.84,
+                  "y": 15.05,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "*LDO Noise and PSRR*\n[www.ti.com](http://www.ti.com)",
+              "value": "LDO Noise and PSRR\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 6.0,
+                  "w": 78.87,
+                  "x": 54.32,
+                  "y": 51.26,
+                  "confidence": 0.969,
+                  "end_index": 20,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 51.36,
+                  "confidence": 0.969,
+                  "end_index": 51,
+                  "label": "header",
+                  "start_index": 21
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_2_image_2_v2.jpg)\n\n*LDO Noise and PSRR*\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 42.21,
+              "w": 504.44,
+              "x": 54.32,
+              "y": 15.05
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **1 LDO Noise and PSRR**",
+          "value": "1 LDO Noise and PSRR",
+          "bbox": [
+            {
+              "h": 9.01,
+              "w": 131.69,
+              "x": 57.64,
+              "y": 77.46,
+              "confidence": 0.906,
+              "end_index": 25,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Low dropout linear regulators (LDOs) are a simple way to regulate an output voltage that is powered from a higher voltage input. Though it is simple to operate, its self generated noise is most of the times confused with its Power Supply Rejection Ratio (PSRR). Many times the two are combined together and loosely called just “noise”. This is not correct. Noise is generated by the transistors and resistors in the LDO’s internal circuitry and by the external components. The type of noise may include thermal, flicker and shot noise. PSRR is a measure of circuit’s power supply rejection expressed as a ratio of output noise to noise at the power supply input. It provides a measure of how well a circuit rejects ripple at various frequencies injected from its input power supply. In the case of a LDO, it is a measure of the output ripple compared to the input ripple over a wide frequency range and is expressed in decibels (dB). The basic equation for PSRR is given in Equation 1:",
+          "value": "Low dropout linear regulators (LDOs) are a simple way to regulate an output voltage that is powered from a higher voltage input. Though it is simple to operate, its self generated noise is most of the times confused with its Power Supply Rejection Ratio (PSRR). Many times the two are combined together and loosely called just “noise”. This is not correct. Noise is generated by the transistors and resistors in the LDO’s internal circuitry and by the external components. The type of noise may include thermal, flicker and shot noise. PSRR is a measure of circuit’s power supply rejection expressed as a ratio of output noise to noise at the power supply input. It provides a measure of how well a circuit rejects ripple at various frequencies injected from its input power supply. In the case of a LDO, it is a measure of the output ripple compared to the input ripple over a wide frequency range and is expressed in decibels (dB). The basic equation for PSRR is given in Equation 1:",
+          "bbox": [
+            {
+              "h": 105.49,
+              "w": 501.23,
+              "x": 55.08,
+              "y": 96.35,
+              "confidence": 1.0,
+              "end_index": 984,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "$$PSRR = 20 \\log \\frac{\\text{Ripple}_{\\text{Input}}}{\\text{Ripple}_{\\text{Output}}} \\hfill (1)$$",
+          "value": "$$PSRR = 20 \\log \\frac{\\text{Ripple}_{\\text{Input}}}{\\text{Ripple}_{\\text{Output}}} \\hfill (1)$$",
+          "bbox": [
+            {
+              "h": 32.17,
+              "w": 462.94,
+              "x": 74.05,
+              "y": 214.63,
+              "confidence": 0.6,
+              "end_index": 95,
+              "label": "formula",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Figure 1-1 explains how noise and PSRR are different from each other. The noise is something which may be internal and external to the LDO whereas PSRR is an internal parameter of the LDO. LDO users generally concentrate on PSRR and not on the self-generated output noise. PSRR rejects noise coming from outside of LDO but there is always noise generated inside the LDO. So an LDO with high PSRR may not be better for noise rejection. The user should always think of both parameters.",
+          "value": "Figure 1-1 explains how noise and PSRR are different from each other. The noise is something which may be internal and external to the LDO whereas PSRR is an internal parameter of the LDO. LDO users generally concentrate on PSRR and not on the self-generated output noise. PSRR rejects noise coming from outside of LDO but there is always noise generated inside the LDO. So an LDO with high PSRR may not be better for noise rejection. The user should always think of both parameters.",
+          "bbox": [
+            {
+              "h": 57.48,
+              "w": 485.93,
+              "x": 55.69,
+              "y": 260.12,
+              "confidence": 1.0,
+              "end_index": 482,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "```mermaid\ngraph LR\n    DC[\"DC\"] --> SUM1((\"Σ\"))\n    EXT_NOISE[\"EXTERNAL NOISE\"] --> SUM1\n    \n    subgraph LDO [\"LDO\"]\n        direction LR\n        PSRR[\"PSRR\"]\n        SUM2((\"Σ\"))\n        PSRR --> SUM2\n        INT_NOISE[\"INTERNAL NOISE\"] --> SUM2\n    end\n    \n    SUM1 --> PSRR\n    SUM2 --> DC_NOISE[\"DC+ NOISE\"]\n```",
+          "value": "graph LR\n    DC[\"DC\"] --> SUM1((\"Σ\"))\n    EXT_NOISE[\"EXTERNAL NOISE\"] --> SUM1\n    \n    subgraph LDO [\"LDO\"]\n        direction LR\n        PSRR[\"PSRR\"]\n        SUM2((\"Σ\"))\n        PSRR --> SUM2\n        INT_NOISE[\"INTERNAL NOISE\"] --> SUM2\n    end\n    \n    SUM1 --> PSRR\n    SUM2 --> DC_NOISE[\"DC+ NOISE\"]",
+          "bbox": [
+            {
+              "h": 101.37,
+              "w": 257.65,
+              "x": 176.87,
+              "y": 327.1,
+              "confidence": 0.5,
+              "end_index": 317,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "language": "mermaid",
+          "type": "code"
+        },
+        {
+          "md": "**Figure 1-1. PSRR and Noise in LDO**",
+          "value": "Figure 1-1. PSRR and Noise in LDO",
+          "bbox": [
+            {
+              "h": 10.41,
+              "w": 166.12,
+              "x": 223.11,
+              "y": 440.24,
+              "confidence": 0.969,
+              "end_index": 36,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "2 *LDO Noise Demystified* SLAA412B – JUNE 2009 – REVISED AUGUST 2020 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "value": "2 LDO Noise Demystified SLAA412B – JUNE 2009 – REVISED AUGUST 2020\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 504.17,
+                  "x": 54.2,
+                  "y": 741.04,
+                  "confidence": 1.0,
+                  "end_index": 177,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "2 *LDO Noise Demystified* SLAA412B – JUNE 2009 – REVISED AUGUST 2020\n*Submit Document Feedback*\nCopyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 504.17,
+              "x": 54.2,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 2,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_3_image_1_v2.jpg)",
+              "url": "page_3_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 24.55,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 14.26,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com)\n*LDO Noise Types*",
+              "value": "www.ti.com\nLDO Noise Types",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 51.36,
+                  "confidence": 0.938,
+                  "end_index": 31,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 7.59,
+                  "w": 62.22,
+                  "x": 495.78,
+                  "y": 51.26,
+                  "confidence": 0.938,
+                  "end_index": 48,
+                  "label": "header",
+                  "start_index": 32
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_3_image_1_v2.jpg)\n\nwww.ti.com\n*LDO Noise Types*",
+          "bbox": [
+            {
+              "h": 44.59,
+              "w": 504.76,
+              "x": 53.24,
+              "y": 14.26
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 2,
+          "md": "## **2 LDO Noise Types**",
+          "value": "2 LDO Noise Types",
+          "bbox": [
+            {
+              "h": 11.37,
+              "w": 108.9,
+              "x": 55.69,
+              "y": 77.46,
+              "confidence": 0.875,
+              "end_index": 23,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Noise is purely physical phenomenon that occurs with transistors and resistors. Transistors generate shot noise and flicker noise. The resistive element of MOSFETs also generates thermal noise like resistors. Thermal and shot noise is truly random in nature and its power is flat over frequency. It remains flat up to the bandwidth of the amplifier. Flicker noise is the noise due to trapped charges at the gate of the MOSFET. It follows Poisson’s Distribution with 1/f roll-off in power versus frequency hence it is higher at low frequencies. This noise dominates until it becomes smaller than thermal noise. (See Figure 2-1)",
+          "value": "Noise is purely physical phenomenon that occurs with transistors and resistors. Transistors generate shot noise and flicker noise. The resistive element of MOSFETs also generates thermal noise like resistors. Thermal and shot noise is truly random in nature and its power is flat over frequency. It remains flat up to the bandwidth of the amplifier. Flicker noise is the noise due to trapped charges at the gate of the MOSFET. It follows Poisson’s Distribution with 1/f roll-off in power versus frequency hence it is higher at low frequencies. This noise dominates until it becomes smaller than thermal noise. (See Figure 2-1)",
+          "bbox": [
+            {
+              "h": 69.84,
+              "w": 497.56,
+              "x": 55.69,
+              "y": 96.48,
+              "confidence": 1.0,
+              "end_index": 625,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Noise Type\",\"Frequency Range\",\"Power Characteristic\",\"Notes\"\n\"Thermal / Shot\",\"Low to Mid Frequency\",\"Constant (Flat)\",\n,\"High Frequency\",\"Decreasing\",\"Roll-off due to limited amplifier BW\"\n\"Flicker\",\"Full Range\",\"Decreasing\",\"1/f noise characteristic\"\n\"Flicker+ Thermal\",\"Low Frequency\",\"Decreasing\",\"Dominated by Flicker noise\"\n,\"Mid Frequency\",\"Constant (Flat)\",\"Dominated by Thermal noise floor\"\n,\"High Frequency\",\"Decreasing\",\"Roll-off due to limited amplifier BW\"",
+          "html": "<table>\n  <caption>Noise Power Spectral Density — panels: Thermal / Shot, Flicker, Flicker+ Thermal; axes: power vs. Log(f)</caption>\n  <thead>\n    <tr>\n      <th>Noise Type</th>\n      <th>Frequency Range</th>\n      <th>Power Characteristic</th>\n      <th>Notes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th rowspan=\"2\">Thermal / Shot</th>\n      <td>Low to Mid Frequency</td>\n      <td>Constant (Flat)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>High Frequency</td>\n      <td>Decreasing</td>\n      <td>Roll-off due to limited amplifier BW</td>\n    </tr>\n    <tr>\n      <th>Flicker</th>\n      <td>Full Range</td>\n      <td>Decreasing</td>\n      <td>1/f noise characteristic</td>\n    </tr>\n    <tr>\n      <th rowspan=\"3\">Flicker+ Thermal</th>\n      <td>Low Frequency</td>\n      <td>Decreasing</td>\n      <td>Dominated by Flicker noise</td>\n    </tr>\n    <tr>\n      <td>Mid Frequency</td>\n      <td>Constant (Flat)</td>\n      <td>Dominated by Thermal noise floor</td>\n    </tr>\n    <tr>\n      <td>High Frequency</td>\n      <td>Decreasing</td>\n      <td>Roll-off due to limited amplifier BW</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Noise Power Spectral Density — panels: Thermal / Shot, Flicker, Flicker+ Thermal; axes: power vs. Log(f)\n\n| Noise Type       | Frequency Range      | Power Characteristic | Notes                                |\n| ---------------- | -------------------- | -------------------- | ------------------------------------ |\n| Thermal / Shot   | Low to Mid Frequency | Constant (Flat)      |                                      |\n|                  | High Frequency       | Decreasing           | Roll-off due to limited amplifier BW |\n| Flicker          | Full Range           | Decreasing           | 1/f noise characteristic             |\n| Flicker+ Thermal | Low Frequency        | Decreasing           | Dominated by Flicker noise           |\n|                  | Mid Frequency        | Constant (Flat)      | Dominated by Thermal noise floor     |\n|                  | High Frequency       | Decreasing           | Roll-off due to limited amplifier BW |",
+          "rows": [
+            [
+              "Noise Type",
+              "Frequency Range",
+              "Power Characteristic",
+              "Notes"
+            ],
+            [
+              "Thermal / Shot",
+              "Low to Mid Frequency",
+              "Constant (Flat)",
+              ""
+            ],
+            [
+              "",
+              "High Frequency",
+              "Decreasing",
+              "Roll-off due to limited amplifier BW"
+            ],
+            [
+              "Flicker",
+              "Full Range",
+              "Decreasing",
+              "1/f noise characteristic"
+            ],
+            [
+              "Flicker+ Thermal",
+              "Low Frequency",
+              "Decreasing",
+              "Dominated by Flicker noise"
+            ],
+            [
+              "",
+              "Mid Frequency",
+              "Constant (Flat)",
+              "Dominated by Thermal noise floor"
+            ],
+            [
+              "",
+              "High Frequency",
+              "Decreasing",
+              "Roll-off due to limited amplifier BW"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 82.37,
+              "w": 391.68,
+              "x": 109.55,
+              "y": 173.45,
+              "confidence": 0.9,
+              "end_index": 532,
+              "label": "chart",
+              "start_index": 110
+            },
+            {
+              "h": 11.88,
+              "w": 330.63,
+              "x": 133.88,
+              "y": 244.28,
+              "confidence": 0.467,
+              "end_index": 107,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, paragraph_title, footer, caption, image, header, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 2-1. LDO Noise (types)**",
+          "value": "Figure 2-1. LDO Noise (types)",
+          "bbox": [
+            {
+              "h": 10.14,
+              "w": 138.77,
+              "x": 236.72,
+              "y": 265.48,
+              "confidence": 0.938,
+              "end_index": 32,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020\n*LDO Noise Demystified* 3 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "value": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020\nLDO Noise Demystified 3\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 503.36,
+                  "x": 54.32,
+                  "y": 741.04,
+                  "confidence": 1.0,
+                  "end_index": 177,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020\n*LDO Noise Demystified* 3\n*Submit Document Feedback*\nCopyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 503.36,
+              "x": 54.32,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 3,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_4_image_1_v2.jpg)",
+              "url": "page_4_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 24.55,
+                  "w": 97.92,
+                  "x": 460.84,
+                  "y": 14.26,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "*Noise Specifications in LDO Data Sheets* [www.ti.com](http://www.ti.com)",
+              "value": "Noise Specifications in LDO Data Sheets www.ti.com",
+              "bbox": [
+                {
+                  "h": 7.5,
+                  "w": 145.01,
+                  "x": 54.39,
+                  "y": 51.26,
+                  "confidence": 1.0,
+                  "end_index": 42,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 51.36,
+                  "confidence": 1.0,
+                  "end_index": 72,
+                  "label": "header",
+                  "start_index": 43
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_4_image_1_v2.jpg)\n\n*Noise Specifications in LDO Data Sheets* www.ti.com",
+          "bbox": [
+            {
+              "h": 44.5,
+              "w": 504.37,
+              "x": 54.39,
+              "y": 14.26
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **3 Noise Specifications in LDO Data Sheets**",
+          "value": "3 Noise Specifications in LDO Data Sheets",
+          "bbox": [
+            {
+              "h": 11.22,
+              "w": 241.04,
+              "x": 57.15,
+              "y": 77.46,
+              "confidence": 0.969,
+              "end_index": 46,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Typically noise in an LDO is specified by datasheets in two fashions. One is “Total (Integrated) output noise – in μVrms”, which is RMS value of the spectral noise density integrated over a finite frequency range. The second method is to show a “Spectral Noise density curve – in $\\mu\\text{V}/\\sqrt{\\text{Hz}}$”, which is a plot of Noise density vs Frequency. Figure 3-1 shows both the specifications for TPS717xx series LDOs.",
+          "value": "Typically noise in an LDO is specified by datasheets in two fashions. One is “Total (Integrated) output noise – in μVrms”, which is RMS value of the spectral noise density integrated over a finite frequency range. The second method is to show a “Spectral Noise density curve – in $\\mu\\text{V}/\\sqrt{\\text{Hz}}$”, which is a plot of Noise density vs Frequency. Figure 3-1 shows both the specifications for TPS717xx series LDOs.",
+          "bbox": [
+            {
+              "h": 45.49,
+              "w": 493.27,
+              "x": 55.69,
+              "y": 96.35,
+              "confidence": 1.0,
+              "end_index": 425,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Frequency (Hz)\",\"Output Noise Density (µV/√Hz)<br/>IOUT = 10mA\",\"Output Noise Density (µV/√Hz)<br/>IOUT = 150mA\"\n\"100\",\"11.4\",\"11.4\"\n\"110\",\"10.0\",\"13.8\"\n\"120\",\"10.4\",\"10.4\"\n\"130\",\"11.2\",\"11.2\"\n\"140\",\"9.4\",\"9.4\"\n\"150\",\"10.0\",\"10.0\"\n\"200\",\"5.6\",\"6.4\"\n\"300\",\"3.8\",\"4.2\"\n\"400\",\"2.8\",\"3.0\"\n\"500\",\"2.2\",\"2.4\"\n\"600\",\"1.8\",\"2.0\"\n\"700\",\"1.6\",\"1.8\"\n\"800\",\"1.4\",\"1.6\"\n\"900\",\"1.2\",\"1.4\"\n\"1k\",\"1.0\",\"1.2\"\n\"2k\",\"0.6\",\"0.8\"\n\"3k\",\"0.4\",\"0.6\"\n\"4k\",\"0.3\",\"0.5\"\n\"5k\",\"0.3\",\"0.4\"\n\"10k\",\"0.2\",\"0.3\"\n\"20k\",\"0.2\",\"0.2\"\n\"50k\",\"0.1\",\"0.1\"\n\"100k\",\"0.1\",\"0.1\"",
+          "html": "<table>\n  <caption>OUTPUT SPECTRAL NOISE DENSITY vs OUTPUT CURRENT; C<sub>OUT</sub> = 1 µF, C<sub>NR</sub> = 10nF; Ultra-High PSRR: 70dB at 1kHz, 67dB at 100kHz and 45dB at **1MHz**; Low Noise: 30µA typical (100Hz to 100 kHz)</caption>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Frequency (Hz)</th>\n      <th colspan=\"2\">Output Noise Density (µV/√Hz)</th>\n    </tr>\n    <tr>\n      <th>I<sub>OUT</sub> = 10mA</th>\n      <th>I<sub>OUT</sub> = 150mA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>100</th>\n      <td>11.4</td>\n      <td>11.4</td>\n    </tr>\n    <tr>\n      <th>110</th>\n      <td>10.0</td>\n      <td>13.8</td>\n    </tr>\n    <tr>\n      <th>120</th>\n      <td>10.4</td>\n      <td>10.4</td>\n    </tr>\n    <tr>\n      <th>130</th>\n      <td>11.2</td>\n      <td>11.2</td>\n    </tr>\n    <tr>\n      <th>140</th>\n      <td>9.4</td>\n      <td>9.4</td>\n    </tr>\n    <tr>\n      <th>150</th>\n      <td>10.0</td>\n      <td>10.0</td>\n    </tr>\n    <tr>\n      <th>200</th>\n      <td>5.6</td>\n      <td>6.4</td>\n    </tr>\n    <tr>\n      <th>300</th>\n      <td>3.8</td>\n      <td>4.2</td>\n    </tr>\n    <tr>\n      <th>400</th>\n      <td>2.8</td>\n      <td>3.0</td>\n    </tr>\n    <tr>\n      <th>500</th>\n      <td>2.2</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <th>600</th>\n      <td>1.8</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <th>700</th>\n      <td>1.6</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <th>800</th>\n      <td>1.4</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <th>900</th>\n      <td>1.2</td>\n      <td>1.4</td>\n    </tr>\n    <tr>\n      <th>1k</th>\n      <td>1.0</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <th>2k</th>\n      <td>0.6</td>\n      <td>0.8</td>\n    </tr>\n    <tr>\n      <th>3k</th>\n      <td>0.4</td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <th>4k</th>\n      <td>0.3</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <th>5k</th>\n      <td>0.3</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <th>10k</th>\n      <td>0.2</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <th>20k</th>\n      <td>0.2</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <th>50k</th>\n      <td>0.1</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <th>100k</th>\n      <td>0.1</td>\n      <td>0.1</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### OUTPUT SPECTRAL NOISE DENSITY vs OUTPUT CURRENT; COUT = 1 µF, CNR = 10nF; Ultra-High PSRR: 70dB at 1kHz, 67dB at 100kHz and 45dB at **1MHz**; Low Noise: 30µA typical (100Hz to 100 kHz)\n\n| Frequency (Hz) | Output Noise Density (µV/√Hz)<br/>IOUT = 10mA | Output Noise Density (µV/√Hz)<br/>IOUT = 150mA |\n| -------------- | --------------------------------------------- | ---------------------------------------------- |\n| 100            | 11.4                                          | 11.4                                           |\n| 110            | 10.0                                          | 13.8                                           |\n| 120            | 10.4                                          | 10.4                                           |\n| 130            | 11.2                                          | 11.2                                           |\n| 140            | 9.4                                           | 9.4                                            |\n| 150            | 10.0                                          | 10.0                                           |\n| 200            | 5.6                                           | 6.4                                            |\n| 300            | 3.8                                           | 4.2                                            |\n| 400            | 2.8                                           | 3.0                                            |\n| 500            | 2.2                                           | 2.4                                            |\n| 600            | 1.8                                           | 2.0                                            |\n| 700            | 1.6                                           | 1.8                                            |\n| 800            | 1.4                                           | 1.6                                            |\n| 900            | 1.2                                           | 1.4                                            |\n| 1k             | 1.0                                           | 1.2                                            |\n| 2k             | 0.6                                           | 0.8                                            |\n| 3k             | 0.4                                           | 0.6                                            |\n| 4k             | 0.3                                           | 0.5                                            |\n| 5k             | 0.3                                           | 0.4                                            |\n| 10k            | 0.2                                           | 0.3                                            |\n| 20k            | 0.2                                           | 0.2                                            |\n| 50k            | 0.1                                           | 0.1                                            |\n| 100k           | 0.1                                           | 0.1                                            |",
+          "rows": [
+            [
+              "Frequency (Hz)",
+              "Output Noise Density (µV/√Hz)<br/>IOUT = 10mA",
+              "Output Noise Density (µV/√Hz)<br/>IOUT = 150mA"
+            ],
+            [
+              "100",
+              "11.4",
+              "11.4"
+            ],
+            [
+              "110",
+              "10.0",
+              "13.8"
+            ],
+            [
+              "120",
+              "10.4",
+              "10.4"
+            ],
+            [
+              "130",
+              "11.2",
+              "11.2"
+            ],
+            [
+              "140",
+              "9.4",
+              "9.4"
+            ],
+            [
+              "150",
+              "10.0",
+              "10.0"
+            ],
+            [
+              "200",
+              "5.6",
+              "6.4"
+            ],
+            [
+              "300",
+              "3.8",
+              "4.2"
+            ],
+            [
+              "400",
+              "2.8",
+              "3.0"
+            ],
+            [
+              "500",
+              "2.2",
+              "2.4"
+            ],
+            [
+              "600",
+              "1.8",
+              "2.0"
+            ],
+            [
+              "700",
+              "1.6",
+              "1.8"
+            ],
+            [
+              "800",
+              "1.4",
+              "1.6"
+            ],
+            [
+              "900",
+              "1.2",
+              "1.4"
+            ],
+            [
+              "1k",
+              "1.0",
+              "1.2"
+            ],
+            [
+              "2k",
+              "0.6",
+              "0.8"
+            ],
+            [
+              "3k",
+              "0.4",
+              "0.6"
+            ],
+            [
+              "4k",
+              "0.3",
+              "0.5"
+            ],
+            [
+              "5k",
+              "0.3",
+              "0.4"
+            ],
+            [
+              "10k",
+              "0.2",
+              "0.3"
+            ],
+            [
+              "20k",
+              "0.2",
+              "0.2"
+            ],
+            [
+              "50k",
+              "0.1",
+              "0.1"
+            ],
+            [
+              "100k",
+              "0.1",
+              "0.1"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 92.22,
+              "w": 81.46,
+              "x": 298.53,
+              "y": 227.43,
+              "confidence": 0.446,
+              "end_index": 3088,
+              "label": "chart",
+              "start_index": 190
+            },
+            {
+              "h": 3.79,
+              "w": 28.86,
+              "x": 442.85,
+              "y": 161.0,
+              "confidence": 0.1,
+              "end_index": 187,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, paragraph_title, caption, footer, image, header, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 3-1. Noise Specified in Two Ways (for TPS717xx LDOs)**",
+          "value": "Figure 3-1. Noise Specified in Two Ways (for TPS717xx LDOs)",
+          "bbox": [
+            {
+              "h": 10.17,
+              "w": 291.07,
+              "x": 160.59,
+              "y": 341.48,
+              "confidence": 1.0,
+              "end_index": 62,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Since the output noise voltage is specified by a single number, it is very useful for comparison purposes. When noise specifications of different LDOs are compared, it is imperative that the two regulators’ noise measurements be taken over the same frequency range and at the same output voltage and current values.",
+          "value": "Since the output noise voltage is specified by a single number, it is very useful for comparison purposes. When noise specifications of different LDOs are compared, it is imperative that the two regulators’ noise measurements be taken over the same frequency range and at the same output voltage and current values.",
+          "bbox": [
+            {
+              "h": 33.48,
+              "w": 500.62,
+              "x": 55.69,
+              "y": 363.48,
+              "confidence": 1.0,
+              "end_index": 314,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "4 *LDO Noise Demystified* SLAA412B – JUNE 2009 – REVISED AUGUST 2020 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "value": "4 LDO Noise Demystified SLAA412B – JUNE 2009 – REVISED AUGUST 2020\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 504.28,
+                  "x": 54.09,
+                  "y": 741.04,
+                  "confidence": 1.0,
+                  "end_index": 177,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "4 *LDO Noise Demystified* SLAA412B – JUNE 2009 – REVISED AUGUST 2020\n*Submit Document Feedback*\nCopyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 504.28,
+              "x": 54.09,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 4,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_5_image_1_v2.jpg)",
+              "url": "page_5_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 24.55,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 14.26,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Which Specification is for Your Application?*",
+              "value": "www.ti.com Which Specification is for Your Application?",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 51.36,
+                  "confidence": 1.0,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 7.5,
+                  "w": 149.45,
+                  "x": 405.14,
+                  "y": 51.26,
+                  "confidence": 1.0,
+                  "end_index": 77,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_5_image_1_v2.jpg)\n\nwww.ti.com *Which Specification is for Your Application?*",
+          "bbox": [
+            {
+              "h": 44.5,
+              "w": 501.35,
+              "x": 53.24,
+              "y": 14.26
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# **4 Which Specification is for Your Application?**",
+          "value": "4 Which Specification is for Your Application?",
+          "bbox": [
+            {
+              "h": 11.22,
+              "w": 263.16,
+              "x": 55.69,
+              "y": 77.46,
+              "confidence": 0.969,
+              "end_index": 51,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "The user should know which noise specification of the LDO is to be used in the application, because there are some application where the Spectral noise density is pertinent and some applications where total (integrated) noise can be used. The following examples explain this.",
+          "value": "The user should know which noise specification of the LDO is to be used in the application, because there are some application where the Spectral noise density is pertinent and some applications where total (integrated) noise can be used. The following examples explain this.",
+          "bbox": [
+            {
+              "h": 33.49,
+              "w": 487.15,
+              "x": 55.08,
+              "y": 96.35,
+              "confidence": 1.0,
+              "end_index": 274,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "Consider an RF system, where an LDO powers a Voltage Controlled Oscillator (VCO). VCO takes two input signals and mixes them together. If the two signals are sin(ω1t) and sin(ω2)t, then the result is two outputs sin((ω1–ω2)t), sin((ω1+ω2)t) and harmonics. The RF signal chain following the VCO is typically a band-pass system tuned for only one frequency, that means, only higher frequency remains after mixing. Most broadband applications have very tight regulation on the frequency spectrum and the power in each band. For any band, the spurious noise has to be controlled to meet what is called the “transmit mask”. This mask is very important for agency certification of the final product. Any humps in the noise floor at higher frequencies may cause the transmitted signal to be outside of the transmit mask and thus fail the certification testing.",
+              "value": "Consider an RF system, where an LDO powers a Voltage Controlled Oscillator (VCO). VCO takes two input signals and mixes them together. If the two signals are sin(ω1t) and sin(ω2)t, then the result is two outputs sin((ω1–ω2)t), sin((ω1+ω2)t) and harmonics. The RF signal chain following the VCO is typically a band-pass system tuned for only one frequency, that means, only higher frequency remains after mixing. Most broadband applications have very tight regulation on the frequency spectrum and the power in each band. For any band, the spurious noise has to be controlled to meet what is called the “transmit mask”. This mask is very important for agency certification of the final product. Any humps in the noise floor at higher frequencies may cause the transmitted signal to be outside of the transmit mask and thus fail the certification testing.",
+              "bbox": [
+                {
+                  "h": 93.49,
+                  "w": 498.86,
+                  "x": 55.69,
+                  "y": 138.35,
+                  "confidence": 1.0,
+                  "end_index": 852,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "1. Consider an RF system, where an LDO powers a Voltage Controlled Oscillator (VCO). VCO takes two input signals and mixes them together. If the two signals are sin(ω1t) and sin(ω2)t, then the result is two outputs sin((ω1–ω2)t), sin((ω1+ω2)t) and harmonics. The RF signal chain following the VCO is typically a band-pass system tuned for only one frequency, that means, only higher frequency remains after mixing. Most broadband applications have very tight regulation on the frequency spectrum and the power in each band. For any band, the spurious noise has to be controlled to meet what is called the “transmit mask”. This mask is very important for agency certification of the final product. Any humps in the noise floor at higher frequencies may cause the transmitted signal to be outside of the transmit mask and thus fail the certification testing.",
+          "ordered": true,
+          "bbox": [
+            {
+              "h": 93.49,
+              "w": 498.86,
+              "x": 55.69,
+              "y": 138.35,
+              "confidence": 1.0,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "md": "Now if the noise is present on the conductors that are supplying power or in the LDO output then that noise at a frequency, FR, gets mixed with the carrier frequency and produces two sidebands as shown in the Figure 4-1. If the noise is so high that the sideband produced due to noise is out of transmit mask then it results in failure of the system.",
+          "value": "Now if the noise is present on the conductors that are supplying power or in the LDO output then that noise at a frequency, FR, gets mixed with the carrier frequency and produces two sidebands as shown in the Figure 4-1. If the noise is so high that the sideband produced due to noise is out of transmit mask then it results in failure of the system.",
+          "bbox": [
+            {
+              "h": 45.49,
+              "w": 485.92,
+              "x": 69.16,
+              "y": 240.35,
+              "confidence": 1.0,
+              "end_index": 349,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Frequency Label\",\"Frequency (MHz)\",\"Amplitude (dBm)\",\"Series\"\n\"Fc - FR\",,\"-44\",\"Signal Peak\"\n\"Fc\",\"162.02487976\",\"33.49\",\"Signal Peak\"\n\"Fc + FR\",,\"-43\",\"Signal Peak\"\n\"Left Baseline\",,\"-37\",\"Mask\"\n\"Left Shoulder Bottom\",,\"-37\",\"Mask\"\n\"Left Shoulder Top\",,\"10\",\"Mask\"\n\"Transmit Channel Left\",,\"33\",\"Mask\"\n\"Transmit Channel Right\",,\"33\",\"Mask\"\n\"Right Shoulder Top\",,\"10\",\"Mask\"\n\"Right Shoulder Bottom\",,\"-37\",\"Mask\"\n\"Right Baseline\",,\"-37\",\"Mask\"",
+          "html": "<table>\n  <caption>Figure 5. Transmit Spectrum and Mask — Amplitude (dBm) vs Frequency (MHz)</caption>\n  <thead>\n    <tr>\n      <th>Frequency Label</th>\n      <th>Frequency (MHz)</th>\n      <th>Amplitude (dBm)</th>\n      <th>Series</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Fc - FR</th>\n      <td></td>\n      <td>-44</td>\n      <td>Signal Peak</td>\n    </tr>\n    <tr>\n      <th>Fc</th>\n      <td>162.02487976</td>\n      <td>33.49</td>\n      <td>Signal Peak</td>\n    </tr>\n    <tr>\n      <th>Fc + FR</th>\n      <td></td>\n      <td>-43</td>\n      <td>Signal Peak</td>\n    </tr>\n    <tr>\n      <th>Left Baseline</th>\n      <td></td>\n      <td>-37</td>\n      <td>Mask</td>\n    </tr>\n    <tr>\n      <th>Left Shoulder Bottom</th>\n      <td></td>\n      <td>-37</td>\n      <td>Mask</td>\n    </tr>\n    <tr>\n      <th>Left Shoulder Top</th>\n      <td></td>\n      <td>10</td>\n      <td>Mask</td>\n    </tr>\n    <tr>\n      <th>Transmit Channel Left</th>\n      <td></td>\n      <td>33</td>\n      <td>Mask</td>\n    </tr>\n    <tr>\n      <th>Transmit Channel Right</th>\n      <td></td>\n      <td>33</td>\n      <td>Mask</td>\n    </tr>\n    <tr>\n      <th>Right Shoulder Top</th>\n      <td></td>\n      <td>10</td>\n      <td>Mask</td>\n    </tr>\n    <tr>\n      <th>Right Shoulder Bottom</th>\n      <td></td>\n      <td>-37</td>\n      <td>Mask</td>\n    </tr>\n    <tr>\n      <th>Right Baseline</th>\n      <td></td>\n      <td>-37</td>\n      <td>Mask</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 5. Transmit Spectrum and Mask — Amplitude (dBm) vs Frequency (MHz)\n\n| Frequency Label        | Frequency (MHz) | Amplitude (dBm) | Series      |\n| ---------------------- | --------------- | --------------- | ----------- |\n| Fc - FR                |                 | -44             | Signal Peak |\n| Fc                     | 162.02487976    | 33.49           | Signal Peak |\n| Fc + FR                |                 | -43             | Signal Peak |\n| Left Baseline          |                 | -37             | Mask        |\n| Left Shoulder Bottom   |                 | -37             | Mask        |\n| Left Shoulder Top      |                 | 10              | Mask        |\n| Transmit Channel Left  |                 | 33              | Mask        |\n| Transmit Channel Right |                 | 33              | Mask        |\n| Right Shoulder Top     |                 | 10              | Mask        |\n| Right Shoulder Bottom  |                 | -37             | Mask        |\n| Right Baseline         |                 | -37             | Mask        |",
+          "rows": [
+            [
+              "Frequency Label",
+              "Frequency (MHz)",
+              "Amplitude (dBm)",
+              "Series"
+            ],
+            [
+              "Fc - FR",
+              "",
+              "-44",
+              "Signal Peak"
+            ],
+            [
+              "Fc",
+              "162.02487976",
+              "33.49",
+              "Signal Peak"
+            ],
+            [
+              "Fc + FR",
+              "",
+              "-43",
+              "Signal Peak"
+            ],
+            [
+              "Left Baseline",
+              "",
+              "-37",
+              "Mask"
+            ],
+            [
+              "Left Shoulder Bottom",
+              "",
+              "-37",
+              "Mask"
+            ],
+            [
+              "Left Shoulder Top",
+              "",
+              "10",
+              "Mask"
+            ],
+            [
+              "Transmit Channel Left",
+              "",
+              "33",
+              "Mask"
+            ],
+            [
+              "Transmit Channel Right",
+              "",
+              "33",
+              "Mask"
+            ],
+            [
+              "Right Shoulder Top",
+              "",
+              "10",
+              "Mask"
+            ],
+            [
+              "Right Shoulder Bottom",
+              "",
+              "-37",
+              "Mask"
+            ],
+            [
+              "Right Baseline",
+              "",
+              "-37",
+              "Mask"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 192.46,
+              "w": 267.44,
+              "x": 174.42,
+              "y": 294.62,
+              "confidence": 0.9,
+              "end_index": 1078,
+              "label": "chart",
+              "start_index": 79
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, paragraph_title, caption, image, footer, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 4-1. Transmit Mask and Sidebands Due to Noise**",
+          "value": "Figure 4-1. Transmit Mask and Sidebands Due to Noise",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 259.52,
+              "x": 176.43,
+              "y": 497.88,
+              "confidence": 1.0,
+              "end_index": 55,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Also, if we assume that the RF system is working at a frequency of 2.4GHz, then LDO noise contributes to the VCO noise spectrum both above and below 2.4GHz with up to bandwidth of LDO. The LDO noise shown in Figure 2-1 adds to the original VCO noise plot which increases the VCO noise floor level around the center frequency.",
+          "value": "Also, if we assume that the RF system is working at a frequency of 2.4GHz, then LDO noise contributes to the VCO noise spectrum both above and below 2.4GHz with up to bandwidth of LDO. The LDO noise shown in Figure 2-1 adds to the original VCO noise plot which increases the VCO noise floor level around the center frequency.",
+          "bbox": [
+            {
+              "h": 45.49,
+              "w": 483.73,
+              "x": 69.16,
+              "y": 519.87,
+              "confidence": 1.0,
+              "end_index": 324,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 *LDO Noise Demystified* 5 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "value": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 LDO Noise Demystified 5\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 503.4,
+                  "x": 54.32,
+                  "y": 741.04,
+                  "confidence": 1.0,
+                  "end_index": 177,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 *LDO Noise Demystified* 5\n*Submit Document Feedback*\nCopyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 503.4,
+              "x": 54.32,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 5,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_6_image_1_v2.jpg)",
+              "url": "page_6_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 24.55,
+                  "w": 97.92,
+                  "x": 460.84,
+                  "y": 14.26,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "*Which Specification is for Your Application?*\n[www.ti.com](http://www.ti.com)",
+              "value": "Which Specification is for Your Application?\nwww.ti.com",
+              "bbox": [
+                {
+                  "h": 7.5,
+                  "w": 149.45,
+                  "x": 55.0,
+                  "y": 51.26,
+                  "confidence": 1.0,
+                  "end_index": 46,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 517.58,
+                  "y": 51.36,
+                  "confidence": 1.0,
+                  "end_index": 77,
+                  "label": "header",
+                  "start_index": 47
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_6_image_1_v2.jpg)\n\n*Which Specification is for Your Application?*\nwww.ti.com",
+          "bbox": [
+            {
+              "h": 44.5,
+              "w": 503.76,
+              "x": 55.0,
+              "y": 14.26
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 3,
+          "md": "### VCO Phase noise spectrum",
+          "value": "VCO Phase noise spectrum",
+          "bbox": [
+            {
+              "h": 7.92,
+              "w": 77.71,
+              "x": 168.53,
+              "y": 87.61,
+              "confidence": 0.675,
+              "end_index": 27,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "line_chart: VCO phase noise spectrum",
+          "md": "![line_chart: VCO phase noise spectrum](page_6_image_2_v2.jpg)",
+          "url": "page_6_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 363.1,
+              "w": 391.06,
+              "x": 108.87,
+              "y": 70.6,
+              "confidence": 0.9,
+              "end_index": 61,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "**Legend:**",
+          "value": "Legend:",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "— VCO phase noise spectrum",
+              "value": "— VCO phase noise spectrum",
+              "bbox": [
+                {
+                  "h": 6.53,
+                  "w": 81.96,
+                  "x": 154.4,
+                  "y": 203.73,
+                  "confidence": 0.675,
+                  "end_index": 25,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "**Fc = 2.4GHz**",
+              "value": "Fc = 2.4GHz",
+              "bbox": [
+                {
+                  "h": 7.92,
+                  "w": 35.14,
+                  "x": 128.69,
+                  "y": 93.8,
+                  "confidence": 0.444,
+                  "end_index": 14,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "* — VCO phase noise spectrum\n* **Fc = 2.4GHz**",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 6.53,
+              "w": 81.96,
+              "x": 154.4,
+              "y": 203.73,
+              "confidence": 0.444,
+              "label": "list"
+            },
+            {
+              "h": 7.92,
+              "w": 35.14,
+              "x": 128.69,
+              "y": 93.8,
+              "confidence": 0.444,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "md": "**Axes:**",
+          "value": "Axes:",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "**Y-axis:** Noise",
+              "value": "Y-axis: Noise",
+              "type": "text"
+            },
+            {
+              "md": "**X-axis:** Freq -->",
+              "value": "X-axis: Freq -->",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "Labels: Fc- 10k, Fc- 1k, Fc- 100, Fc, Fc+ 100, Fc+ 1k, Fc+ 10k",
+                  "value": "Labels: Fc- 10k, Fc- 1k, Fc- 100, Fc, Fc+ 100, Fc+ 1k, Fc+ 10k",
+                  "type": "text"
+                }
+              ],
+              "md": "* Labels: Fc- 10k, Fc- 1k, Fc- 100, Fc, Fc+ 100, Fc+ 1k, Fc+ 10k",
+              "ordered": false,
+              "type": "list"
+            }
+          ],
+          "md": "* **Y-axis:** Noise\n* **X-axis:** Freq -->\n  * Labels: Fc- 10k, Fc- 1k, Fc- 100, Fc, Fc+ 100, Fc+ 1k, Fc+ 10k",
+          "ordered": false,
+          "type": "list"
+        },
+        {
+          "md": "**+**",
+          "value": "+",
+          "type": "text"
+        },
+        {
+          "level": 3,
+          "md": "### LDO noise spectrum (Flicker + Thermal)",
+          "value": "LDO noise spectrum (Flicker + Thermal)",
+          "bbox": [
+            {
+              "h": 8.41,
+              "w": 117.3,
+              "x": 345.22,
+              "y": 202.21,
+              "confidence": 0.706,
+              "end_index": 41,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "line_chart: LDO noise spectrum showing flicker and thermal noise components",
+          "md": "![line_chart: LDO noise spectrum showing flicker and thermal noise components](page_6_image_2_v2.jpg)",
+          "url": "page_6_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 363.1,
+              "w": 391.06,
+              "x": 108.87,
+              "y": 70.6,
+              "confidence": 0.9,
+              "end_index": 100,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "**Axes:**",
+          "value": "Axes:",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "**Y-axis:** Power",
+              "value": "Y-axis: Power",
+              "type": "text"
+            },
+            {
+              "md": "**X-axis:** Log(f)",
+              "value": "X-axis: Log(f)",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "Label: 0",
+                  "value": "Label: 0",
+                  "type": "text"
+                }
+              ],
+              "md": "* Label: 0",
+              "ordered": false,
+              "type": "list"
+            }
+          ],
+          "md": "* **Y-axis:** Power\n* **X-axis:** Log(f)\n  * Label: 0",
+          "ordered": false,
+          "type": "list"
+        },
+        {
+          "level": 3,
+          "md": "### Resultant spectrum",
+          "value": "Resultant spectrum",
+          "bbox": [
+            {
+              "h": 6.44,
+              "w": 57.91,
+              "x": 282.86,
+              "y": 426.19,
+              "confidence": 0.612,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "line_chart: Resultant spectrum combining VCO phase noise and LDO noise",
+          "md": "![line_chart: Resultant spectrum combining VCO phase noise and LDO noise](page_6_image_2_v2.jpg)",
+          "url": "page_6_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 363.1,
+              "w": 391.06,
+              "x": 108.87,
+              "y": 70.6,
+              "confidence": 0.9,
+              "end_index": 95,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "**Legend:**",
+          "value": "Legend:",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "— LDO noise + VCO phase noise",
+              "value": "— LDO noise + VCO phase noise",
+              "bbox": [
+                {
+                  "h": 15.59,
+                  "w": 77.95,
+                  "x": 280.39,
+                  "y": 220.27,
+                  "confidence": 0.875,
+                  "end_index": 28,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            },
+            {
+              "md": "**Fc = 2.4GHz**",
+              "value": "Fc = 2.4GHz",
+              "bbox": [
+                {
+                  "h": 4.7,
+                  "w": 25.99,
+                  "x": 245.74,
+                  "y": 276.21,
+                  "confidence": 0.644,
+                  "end_index": 14,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "* — LDO noise + VCO phase noise\n* **Fc = 2.4GHz**",
+          "ordered": false,
+          "bbox": [
+            {
+              "h": 15.59,
+              "w": 77.95,
+              "x": 280.39,
+              "y": 220.27,
+              "confidence": 0.644,
+              "label": "list"
+            },
+            {
+              "h": 4.7,
+              "w": 25.99,
+              "x": 245.74,
+              "y": 276.21,
+              "confidence": 0.644,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "md": "**Annotations:**",
+          "value": "Annotations:",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "Noise floor increased due to LDO noise (pointing to the green curve)",
+              "value": "Noise floor increased due to LDO noise (pointing to the green curve)",
+              "type": "text"
+            }
+          ],
+          "md": "* Noise floor increased due to LDO noise (pointing to the green curve)",
+          "ordered": false,
+          "type": "list"
+        },
+        {
+          "md": "**Axes:**",
+          "value": "Axes:",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "**Y-axis:** Noise",
+              "value": "Y-axis: Noise",
+              "type": "text"
+            },
+            {
+              "md": "**X-axis:** Freq -->",
+              "value": "X-axis: Freq -->",
+              "type": "text"
+            },
+            {
+              "items": [
+                {
+                  "md": "Labels: Fc- 10k, Fc- 1k, Fc- 100, Fc, Fc+ 100, Fc+ 1k, Fc+ 10k",
+                  "value": "Labels: Fc- 10k, Fc- 1k, Fc- 100, Fc, Fc+ 100, Fc+ 1k, Fc+ 10k",
+                  "type": "text"
+                }
+              ],
+              "md": "* Labels: Fc- 10k, Fc- 1k, Fc- 100, Fc, Fc+ 100, Fc+ 1k, Fc+ 10k",
+              "ordered": false,
+              "type": "list"
+            }
+          ],
+          "md": "* **Y-axis:** Noise\n* **X-axis:** Freq -->\n  * Labels: Fc- 10k, Fc- 1k, Fc- 100, Fc, Fc+ 100, Fc+ 1k, Fc+ 10k",
+          "ordered": false,
+          "type": "list"
+        },
+        {
+          "md": "**Figure 4-2. Increase in VCO Noise Floor Due to LDO Noise**",
+          "value": "Figure 4-2. Increase in VCO Noise Floor Due to LDO Noise",
+          "bbox": [
+            {
+              "h": 9.48,
+              "w": 275.76,
+              "x": 167.69,
+              "y": 443.93,
+              "confidence": 1.0,
+              "end_index": 59,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "So in this RF application the user should use Spectral Noise Density curve since the single noise number loses the frequency dependence and would not be an accurate representation of the final output.",
+          "value": "So in this RF application the user should use Spectral Noise Density curve since the single noise number loses the frequency dependence and would not be an accurate representation of the final output.",
+          "bbox": [
+            {
+              "h": 21.48,
+              "w": 465.31,
+              "x": 69.77,
+              "y": 465.93,
+              "confidence": 1.0,
+              "end_index": 199,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "Consider a system in which LDO is powering an ADC or DAC. Any sampled system causes the high frequency noise to fold to lower frequencies due to aliasing. For example, if the sampling frequency is 100kHz and the noise due to LDO is at 90kHz and 110kHz, 190kHz and 210kHz, etc., then all the noise will fold back to 10kHz which is the beat frequency. This will occur for any frequency of the output noise so that all of the LDO noise folds back to within the bandwidth of the sampling system. This is same as integrating all the noise from DC to bandwidth of the system and computing the total noise. This way, the performance of ADC/DAC suffers if the LDO total (integrated) noise is high. Figure 4-3 below shows how LDO noise aliasing takes place. First graph is for a system powered by ideal LDO, second is for a system powered by LDO with thermal noise that increases noise floor and third is for a system powered by LDO with noise at high frequency that aliases to lower frequency.",
+              "value": "Consider a system in which LDO is powering an ADC or DAC. Any sampled system causes the high frequency noise to fold to lower frequencies due to aliasing. For example, if the sampling frequency is 100kHz and the noise due to LDO is at 90kHz and 110kHz, 190kHz and 210kHz, etc., then all the noise will fold back to 10kHz which is the beat frequency. This will occur for any frequency of the output noise so that all of the LDO noise folds back to within the bandwidth of the sampling system. This is same as integrating all the noise from DC to bandwidth of the system and computing the total noise. This way, the performance of ADC/DAC suffers if the LDO total (integrated) noise is high. Figure 4-3 below shows how LDO noise aliasing takes place. First graph is for a system powered by ideal LDO, second is for a system powered by LDO with thermal noise that increases noise floor and third is for a system powered by LDO with noise at high frequency that aliases to lower frequency.",
+              "bbox": [
+                {
+                  "h": 117.48,
+                  "w": 498.78,
+                  "x": 55.69,
+                  "y": 491.42,
+                  "confidence": 1.0,
+                  "end_index": 984,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "2. Consider a system in which LDO is powering an ADC or DAC. Any sampled system causes the high frequency noise to fold to lower frequencies due to aliasing. For example, if the sampling frequency is 100kHz and the noise due to LDO is at 90kHz and 110kHz, 190kHz and 210kHz, etc., then all the noise will fold back to 10kHz which is the beat frequency. This will occur for any frequency of the output noise so that all of the LDO noise folds back to within the bandwidth of the sampling system. This is same as integrating all the noise from DC to bandwidth of the system and computing the total noise. This way, the performance of ADC/DAC suffers if the LDO total (integrated) noise is high. Figure 4-3 below shows how LDO noise aliasing takes place. First graph is for a system powered by ideal LDO, second is for a system powered by LDO with thermal noise that increases noise floor and third is for a system powered by LDO with noise at high frequency that aliases to lower frequency.",
+          "ordered": true,
+          "bbox": [
+            {
+              "h": 117.48,
+              "w": 498.78,
+              "x": 55.69,
+              "y": 491.42,
+              "confidence": 1.0,
+              "label": "list"
+            }
+          ],
+          "type": "list"
+        },
+        {
+          "items": [
+            {
+              "md": "6\n*LDO Noise Demystified*\nSLAA412B – JUNE 2009 – REVISED AUGUST 2020 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "value": "6\nLDO Noise Demystified\nSLAA412B – JUNE 2009 – REVISED AUGUST 2020\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 504.1,
+                  "x": 54.27,
+                  "y": 741.04,
+                  "confidence": 1.0,
+                  "end_index": 177,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "6\n*LDO Noise Demystified*\nSLAA412B – JUNE 2009 – REVISED AUGUST 2020\n*Submit Document Feedback*\nCopyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 504.1,
+              "x": 54.27,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 6,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "caption": "logo: Texas Instruments",
+              "md": "![logo: Texas Instruments](page_7_image_1_v2.jpg)",
+              "url": "page_7_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 24.55,
+                  "w": 97.31,
+                  "x": 53.24,
+                  "y": 14.26,
+                  "confidence": 0.9,
+                  "end_index": 48,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            },
+            {
+              "md": "[www.ti.com](http://www.ti.com) [space] *Which Specification is for Your Application?*",
+              "value": "www.ti.com [space] Which Specification is for Your Application?",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.02,
+                  "y": 51.36,
+                  "confidence": 0.965,
+                  "end_index": 40,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 7.5,
+                  "w": 149.45,
+                  "x": 405.14,
+                  "y": 51.26,
+                  "confidence": 0.965,
+                  "end_index": 85,
+                  "label": "header",
+                  "start_index": 41
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "![logo: Texas Instruments](page_7_image_1_v2.jpg)\n\nwww.ti.com [space] *Which Specification is for Your Application?*",
+          "bbox": [
+            {
+              "h": 44.5,
+              "w": 501.35,
+              "x": 53.24,
+              "y": 14.26
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "md": "<!--llamaparse-error ordinal=\"0\" mode=\"chart\" box_2d=\"[98,34,275,319]\" code=\"SPECIALIST_ERROR\"-->",
+          "value": "<!--llamaparse-error ordinal=\"0\" mode=\"chart\" box_2d=\"[98,34,275,319]\" code=\"SPECIALIST_ERROR\"-->",
+          "type": "text"
+        },
+        {
+          "csv": "\"Frequency (kHz)\",\"Left Panel: Level (dB)\",\"Middle Panel: Level (dB)\",\"Right Panel: Level (dB)\"\n\"0\",\"-132\",\"-121\",\"-131\"\n\"1\",\"-91\",\"-91\",\"-90\"\n\"2\",\"-134\",\"-122\",\"-132\"\n\"4\",\"-134\",\"-122\",\"-131\"\n\"6\",\"-134\",\"-122\",\"-130\"\n\"8\",\"-134\",\"-121\",\"-129\"\n\"10\",\"-134\",\"-122\",\"-128\"\n\"12\",\"-134\",\"-122\",\"-127\"\n\"14\",\"-133\",\"-121\",\"-126\"\n\"16\",\"-133\",\"-121\",\"-120\"",
+          "html": "<table>\n  <caption>Figure 4-3. LDO Noise Aliasing — Level (dB) vs Frequency (kHz)</caption>\n  <thead>\n    <tr>\n      <th>Frequency (kHz)</th>\n      <th>Left Panel: Level (dB)</th>\n      <th>Middle Panel: Level (dB)</th>\n      <th>Right Panel: Level (dB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>-132</td>\n      <td>-121</td>\n      <td>-131</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>-91</td>\n      <td>-91</td>\n      <td>-90</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>-134</td>\n      <td>-122</td>\n      <td>-132</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>-134</td>\n      <td>-122</td>\n      <td>-131</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>-134</td>\n      <td>-122</td>\n      <td>-130</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>-134</td>\n      <td>-121</td>\n      <td>-129</td>\n    </tr>\n    <tr>\n      <th>10</th>\n      <td>-134</td>\n      <td>-122</td>\n      <td>-128</td>\n    </tr>\n    <tr>\n      <th>12</th>\n      <td>-134</td>\n      <td>-122</td>\n      <td>-127</td>\n    </tr>\n    <tr>\n      <th>14</th>\n      <td>-133</td>\n      <td>-121</td>\n      <td>-126</td>\n    </tr>\n    <tr>\n      <th>16</th>\n      <td>-133</td>\n      <td>-121</td>\n      <td>-120</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 4-3. LDO Noise Aliasing — Level (dB) vs Frequency (kHz)\n\n| Frequency (kHz) | Left Panel: Level (dB) | Middle Panel: Level (dB) | Right Panel: Level (dB) |\n| --------------- | ---------------------- | ------------------------ | ----------------------- |\n| 0               | -132                   | -121                     | -131                    |\n| 1               | -91                    | -91                      | -90                     |\n| 2               | -134                   | -122                     | -132                    |\n| 4               | -134                   | -122                     | -131                    |\n| 6               | -134                   | -122                     | -130                    |\n| 8               | -134                   | -121                     | -129                    |\n| 10              | -134                   | -122                     | -128                    |\n| 12              | -134                   | -122                     | -127                    |\n| 14              | -133                   | -121                     | -126                    |\n| 16              | -133                   | -121                     | -120                    |",
+          "rows": [
+            [
+              "Frequency (kHz)",
+              "Left Panel: Level (dB)",
+              "Middle Panel: Level (dB)",
+              "Right Panel: Level (dB)"
+            ],
+            [
+              "0",
+              "-132",
+              "-121",
+              "-131"
+            ],
+            [
+              "1",
+              "-91",
+              "-91",
+              "-90"
+            ],
+            [
+              "2",
+              "-134",
+              "-122",
+              "-132"
+            ],
+            [
+              "4",
+              "-134",
+              "-122",
+              "-131"
+            ],
+            [
+              "6",
+              "-134",
+              "-122",
+              "-130"
+            ],
+            [
+              "8",
+              "-134",
+              "-121",
+              "-129"
+            ],
+            [
+              "10",
+              "-134",
+              "-122",
+              "-128"
+            ],
+            [
+              "12",
+              "-134",
+              "-122",
+              "-127"
+            ],
+            [
+              "14",
+              "-133",
+              "-121",
+              "-126"
+            ],
+            [
+              "16",
+              "-133",
+              "-121",
+              "-120"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 138.6,
+              "w": 152.39,
+              "x": 230.11,
+              "y": 72.07,
+              "confidence": 0.9,
+              "end_index": 1242,
+              "label": "chart",
+              "start_index": 68
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, image, footer, caption, header, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"Frequency (kHz)\",\"Level (dB)\"\n\"0\",\"-128\"\n\"1\",\"-90\"\n\"2\",\"-132\"\n\"3\",\"-132\"\n\"4\",\"-131\"\n\"5\",\"-131\"\n\"6\",\"-129\"\n\"7\",\"-129\"\n\"8\",\"-128\"\n\"9\",\"-128\"\n\"10\",\"-128\"\n\"11\",\"-127\"\n\"12\",\"-128\"\n\"13\",\"-127\"\n\"14\",\"-126\"\n\"15\",\"-122\"\n\"16\",\"-120\"",
+          "html": "<table>\n  <caption>Figure 4-3. LDO Noise Aliasing — Right Panel: Level (dB) vs Frequency (kHz)</caption>\n  <thead>\n    <tr>\n      <th>Frequency (kHz)</th>\n      <th>Level (dB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>-128</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>-90</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>-132</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>-132</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>-131</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>-131</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>-129</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>-129</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>-128</td>\n    </tr>\n    <tr>\n      <th>9</th>\n      <td>-128</td>\n    </tr>\n    <tr>\n      <th>10</th>\n      <td>-128</td>\n    </tr>\n    <tr>\n      <th>11</th>\n      <td>-127</td>\n    </tr>\n    <tr>\n      <th>12</th>\n      <td>-128</td>\n    </tr>\n    <tr>\n      <th>13</th>\n      <td>-127</td>\n    </tr>\n    <tr>\n      <th>14</th>\n      <td>-126</td>\n    </tr>\n    <tr>\n      <th>15</th>\n      <td>-122</td>\n    </tr>\n    <tr>\n      <th>16</th>\n      <td>-120</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "### Figure 4-3. LDO Noise Aliasing — Right Panel: Level (dB) vs Frequency (kHz)\n\n| Frequency (kHz) | Level (dB) |\n| --------------- | ---------- |\n| 0               | -128       |\n| 1               | -90        |\n| 2               | -132       |\n| 3               | -132       |\n| 4               | -131       |\n| 5               | -131       |\n| 6               | -129       |\n| 7               | -129       |\n| 8               | -128       |\n| 9               | -128       |\n| 10              | -128       |\n| 11              | -127       |\n| 12              | -128       |\n| 13              | -127       |\n| 14              | -126       |\n| 15              | -122       |\n| 16              | -120       |",
+          "rows": [
+            [
+              "Frequency (kHz)",
+              "Level (dB)"
+            ],
+            [
+              "0",
+              "-128"
+            ],
+            [
+              "1",
+              "-90"
+            ],
+            [
+              "2",
+              "-132"
+            ],
+            [
+              "3",
+              "-132"
+            ],
+            [
+              "4",
+              "-131"
+            ],
+            [
+              "5",
+              "-131"
+            ],
+            [
+              "6",
+              "-129"
+            ],
+            [
+              "7",
+              "-129"
+            ],
+            [
+              "8",
+              "-128"
+            ],
+            [
+              "9",
+              "-128"
+            ],
+            [
+              "10",
+              "-128"
+            ],
+            [
+              "11",
+              "-127"
+            ],
+            [
+              "12",
+              "-128"
+            ],
+            [
+              "13",
+              "-127"
+            ],
+            [
+              "14",
+              "-126"
+            ],
+            [
+              "15",
+              "-122"
+            ],
+            [
+              "16",
+              "-120"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 138.6,
+              "w": 154.22,
+              "x": 400.86,
+              "y": 72.07,
+              "confidence": 0.9,
+              "end_index": 706,
+              "label": "chart",
+              "start_index": 81
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, image, footer, caption, header, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "md": "**Figure 4-3. LDO Noise Aliasing**",
+          "value": "Figure 4-3. LDO Noise Aliasing",
+          "bbox": [
+            {
+              "h": 10.01,
+              "w": 144.77,
+              "x": 233.67,
+              "y": 221.25,
+              "confidence": 0.938,
+              "end_index": 33,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "So in this application, the user can use Total (Integrated) output noise since all of the noise will be folded in frequency and integrated by the system.",
+          "value": "So in this application, the user can use Total (Integrated) output noise since all of the noise will be folded in frequency and integrated by the system.",
+          "bbox": [
+            {
+              "h": 22.11,
+              "w": 473.08,
+              "x": 55.69,
+              "y": 239.25,
+              "confidence": 1.0,
+              "end_index": 152,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 [space] *LDO Noise Demystified* [space] 7 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "value": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 [space] LDO Noise Demystified [space] 7\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nCopyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 503.36,
+                  "x": 54.32,
+                  "y": 741.04,
+                  "confidence": 0.965,
+                  "end_index": 193,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 [space] *LDO Noise Demystified* [space] 7\n*Submit Document Feedback*\nCopyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 503.36,
+              "x": 54.32,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 7,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "logo: Texas Instruments | How to Reduce the LDO Noise? [www.ti.com](http://www.ti.com)",
+              "value": "logo: Texas Instruments | How to Reduce the LDO Noise? www.ti.com",
+              "bbox": [
+                {
+                  "h": 41.44,
+                  "w": 504.62,
+                  "x": 54.0,
+                  "y": 17.49,
+                  "confidence": 0.5,
+                  "end_index": 85,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "logo: Texas Instruments | How to Reduce the LDO Noise? www.ti.com",
+          "bbox": [
+            {
+              "h": 41.44,
+              "w": 504.62,
+              "x": 54.0,
+              "y": 17.49
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 2,
+          "md": "## **5 How to Reduce the LDO Noise?**",
+          "value": "5 How to Reduce the LDO Noise?",
+          "bbox": [
+            {
+              "h": 9.0,
+              "w": 188.96,
+              "x": 57.22,
+              "y": 77.46,
+              "confidence": 0.969,
+              "end_index": 36,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "The primary noise source in the LDO is the band gap. The noise in LDO can be reduced using two methods. The following discussion explains both the methods.",
+          "value": "The primary noise source in the LDO is the band gap. The noise in LDO can be reduced using two methods. The following discussion explains both the methods.",
+          "bbox": [
+            {
+              "h": 21.49,
+              "w": 500.62,
+              "x": 55.69,
+              "y": 96.35,
+              "confidence": 1.0,
+              "end_index": 154,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "One method to reduce the noise is by reducing the bandwidth of the LDO. This can be done by lowering the bandwidth of error amplifier inside the LDO. But if we reduce the bandwidth of error amplifier then it reduces the transient response of the LDO.",
+          "value": "One method to reduce the noise is by reducing the bandwidth of the LDO. This can be done by lowering the bandwidth of error amplifier inside the LDO. But if we reduce the bandwidth of error amplifier then it reduces the transient response of the LDO.",
+          "bbox": [
+            {
+              "h": 33.38,
+              "w": 493.59,
+              "x": 55.69,
+              "y": 126.35,
+              "confidence": 1.0,
+              "end_index": 249,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Another method is by using a low-pass filter (LPF). As we know, the most dominant source of noise in an LDO is the internal band gap. A LPF can be inserted between the band gap output and the input of the error amplifier. This reduced the band gap noise before it is gained up by the error amplifier. Typically this LPF is formed with a large internal resistor and an external capacitor. The cutoff frequency of this filter is set as low in frequency as possible to filter out nearly all of the noise coming from the band gap.",
+          "value": "Another method is by using a low-pass filter (LPF). As we know, the most dominant source of noise in an LDO is the internal band gap. A LPF can be inserted between the band gap output and the input of the error amplifier. This reduced the band gap noise before it is gained up by the error amplifier. Typically this LPF is formed with a large internal resistor and an external capacitor. The cutoff frequency of this filter is set as low in frequency as possible to filter out nearly all of the noise coming from the band gap.",
+          "bbox": [
+            {
+              "h": 58.16,
+              "w": 496.99,
+              "x": 55.08,
+              "y": 168.35,
+              "confidence": 1.0,
+              "end_index": 525,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "There is always the question “Why the huge power pass element (mostly FET), which takes up most of the total die area, is not a primary noise contributor?” the answer is the lack of gain. The primary noise source, the band gap, is connected to the input of the error amplifier and thus amplified by the gain of the error amplifier. As we know, the procedure to find the output noise is first refer each noise contributor to the op-amp input; so to find the noise from the pass FET you would first divide the noise contribution by the open-loop gain that exists between it and the error amplifier input. This gain is very large; therefore, the noise contribution from the pass FET is usually negligible.",
+          "value": "There is always the question “Why the huge power pass element (mostly FET), which takes up most of the total die area, is not a primary noise contributor?” the answer is the lack of gain. The primary noise source, the band gap, is connected to the input of the error amplifier and thus amplified by the gain of the error amplifier. As we know, the procedure to find the output noise is first refer each noise contributor to the op-amp input; so to find the noise from the pass FET you would first divide the noise contribution by the open-loop gain that exists between it and the error amplifier input. This gain is very large; therefore, the noise contribution from the pass FET is usually negligible.",
+          "bbox": [
+            {
+              "h": 82.44,
+              "w": 494.5,
+              "x": 55.69,
+              "y": 234.36,
+              "confidence": 1.0,
+              "end_index": 701,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "To summarize, the LDO noise and PSRR both are important specifications to be taken into account when selecting the LDO. There are two ways the LDO noise is specified, and the user should look for the appropriate specification for their application.",
+          "value": "To summarize, the LDO noise and PSRR both are important specifications to be taken into account when selecting the LDO. There are two ways the LDO noise is specified, and the user should look for the appropriate specification for their application.",
+          "bbox": [
+            {
+              "h": 33.38,
+              "w": 490.83,
+              "x": 55.69,
+              "y": 324.35,
+              "confidence": 1.0,
+              "end_index": 247,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "8 *LDO Noise Demystified* SLAA412B – JUNE 2009 – REVISED AUGUST 2020 | <span style=\"color:#0000ff\">Submit Document Feedback</span> | Copyright © 2020 Texas Instruments Incorporated",
+              "value": "8 LDO Noise Demystified SLAA412B – JUNE 2009 – REVISED AUGUST 2020 | <span style=\"color:#0000ff\">Submit Document Feedback</span> | Copyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 504.08,
+                  "x": 54.29,
+                  "y": 741.04,
+                  "confidence": 1.0,
+                  "end_index": 179,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "8 *LDO Noise Demystified* SLAA412B – JUNE 2009 – REVISED AUGUST 2020 | Submit Document Feedback | Copyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 504.08,
+              "x": 54.29,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 8,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "items": [
+            {
+              "md": "[www.ti.com](http://www.ti.com) *Implications of the LDO Noise*",
+              "value": "www.ti.com Implications of the LDO Noise",
+              "bbox": [
+                {
+                  "h": 5.9,
+                  "w": 39.91,
+                  "x": 54.03,
+                  "y": 51.36,
+                  "confidence": 1.0,
+                  "end_index": 32,
+                  "label": "header",
+                  "start_index": 0
+                },
+                {
+                  "h": 7.5,
+                  "w": 105.17,
+                  "x": 452.63,
+                  "y": 51.26,
+                  "confidence": 1.0,
+                  "end_index": 62,
+                  "label": "header",
+                  "start_index": 33
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "www.ti.com *Implications of the LDO Noise*",
+          "bbox": [
+            {
+              "h": 7.5,
+              "w": 503.77,
+              "x": 54.03,
+              "y": 51.26
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "caption": "logo: Texas Instruments",
+          "md": "![logo: Texas Instruments](page_9_image_1_v2.jpg)",
+          "url": "page_9_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 24.55,
+              "w": 97.31,
+              "x": 53.24,
+              "y": 14.26,
+              "confidence": 0.9,
+              "end_index": 48,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "level": 1,
+          "md": "# **6 Implications of the LDO Noise**",
+          "value": "6 Implications of the LDO Noise",
+          "bbox": [
+            {
+              "h": 11.22,
+              "w": 179.75,
+              "x": 57.2,
+              "y": 77.46,
+              "confidence": 0.938,
+              "end_index": 36,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "Let us take an example of a DC-DC Converter with integrated LDOs (such as TPS57140-Q1).",
+          "value": "Let us take an example of a DC-DC Converter with integrated LDOs (such as TPS57140-Q1).",
+          "bbox": [
+            {
+              "h": 9.49,
+              "w": 412.45,
+              "x": 57.42,
+              "y": 96.35,
+              "confidence": 1.0,
+              "end_index": 86,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high frequency components. One of the example where its bad affect can be seen is when a a fast-falling input transient is applied at the input of the DC/DC converter. During the fast input falling edge, if the slew rate of the input is higher than a particular value, the internal LDO regulator of the device resets because of the power-supply rejection-ratio (PSRR) limitation. The fast transition corresponds to higher frequencies. The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high frequency components. For example, using the TPS57140-Q1 design simulation and bench test measurement, the resulting slew-rate value measured is 1.2 V/μs. If the slew rate is higher than this value, the device gets disabled and regenerates a soft start. Higher ESR of the input capacitor negatively affects the slew rate of the input voltage and the duration of this rate because of high current transient across the ESR according to ESR × C × dV/dt. Therefore, the use of a low-ESR ceramic capacitor is recommended.",
+          "value": "The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high frequency components. One of the example where its bad affect can be seen is when a a fast-falling input transient is applied at the input of the DC/DC converter. During the fast input falling edge, if the slew rate of the input is higher than a particular value, the internal LDO regulator of the device resets because of the power-supply rejection-ratio (PSRR) limitation. The fast transition corresponds to higher frequencies. The bandgap noise that is internal to the LDO regulator becomes a limiting factor in the rejection of high frequency components. For example, using the TPS57140-Q1 design simulation and bench test measurement, the resulting slew-rate value measured is 1.2 V/μs. If the slew rate is higher than this value, the device gets disabled and regenerates a soft start. Higher ESR of the input capacitor negatively affects the slew rate of the input voltage and the duration of this rate because of high current transient across the ESR according to ESR × C × dV/dt. Therefore, the use of a low-ESR ceramic capacitor is recommended.",
+          "bbox": [
+            {
+              "h": 129.38,
+              "w": 496.89,
+              "x": 55.08,
+              "y": 114.35,
+              "confidence": 1.0,
+              "end_index": 1159,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Refer to *Design Considerations for DC-DC Converters in Fast-Input Slew Rate Applications* (SLVA693) for more information",
+          "value": "Refer to Design Considerations for DC-DC Converters in Fast-Input Slew Rate Applications (SLVA693) for more information",
+          "bbox": [
+            {
+              "h": 19.5,
+              "w": 494.31,
+              "x": 55.69,
+              "y": 252.36,
+              "confidence": 1.0,
+              "end_index": 120,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# **7 Revision History**",
+          "value": "7 Revision History",
+          "bbox": [
+            {
+              "h": 11.53,
+              "w": 105.88,
+              "x": 55.69,
+              "y": 292.6,
+              "confidence": 0.844,
+              "end_index": 23,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "NOTE: Page numbers for previous revisions may differ from page numbers in the current version.",
+          "value": "NOTE: Page numbers for previous revisions may differ from page numbers in the current version.",
+          "bbox": [
+            {
+              "h": 10.45,
+              "w": 430.67,
+              "x": 55.69,
+              "y": 306.35,
+              "confidence": 1.0,
+              "end_index": 93,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "csv": "\"Changes from Revision A (August 2017) to Revision B (August 2020)\",\"Page\"\n\"• Updated the numbering format for tables, figures and cross-references throughout the document...................\",\"2\"",
+          "html": "<table>\n  <thead>\n    <tr>\n      <th><strong><b>Changes from Revision A (August 2017) to Revision B (August 2020)</b></strong></th>\n      <th><strong>Page</strong></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>• Updated the numbering format for tables, figures and cross-references throughout the document...................</td>\n      <td>2</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Changes from Revision A (August 2017) to Revision B (August 2020)                                                  | Page |\n| ------------------------------------------------------------------------------------------------------------------ | ---- |\n| • Updated the numbering format for tables, figures and cross-references throughout the document................... | 2    |",
+          "rows": [
+            [
+              "Changes from Revision A (August 2017) to Revision B (August 2020)",
+              "Page"
+            ],
+            [
+              "• Updated the numbering format for tables, figures and cross-references throughout the document...................",
+              "2"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 23.48,
+              "w": 497.77,
+              "x": 57.17,
+              "y": 324.36,
+              "confidence": 0.9,
+              "end_index": 376,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, paragraph_title, footer, image, header, reference] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"Changes from Revision * (July 2009) to Revision A (August 2017)\",\"Page\"\n\"• Added Implications of the LDO Noise section....................................................................................................\",\"9\"",
+          "html": "<table>\n  <thead>\n    <tr>\n      <th><strong>Changes from Revision * (July 2009) to Revision A (August 2017)</strong></th>\n      <th><strong>Page</strong></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>• Added <i>Implications of the LDO Noise</i> section....................................................................................................</td>\n      <td>9</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Changes from Revision \\* (July 2009) to Revision A (August 2017)                                                                                    | Page |\n| --------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |\n| • Added *Implications of the LDO Noise* section.................................................................................................... | 9    |",
+          "rows": [
+            [
+              "Changes from Revision * (July 2009) to Revision A (August 2017)",
+              "Page"
+            ],
+            [
+              "• Added Implications of the LDO Noise section....................................................................................................",
+              "9"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 23.37,
+              "w": 497.78,
+              "x": 57.16,
+              "y": 363.11,
+              "confidence": 0.9,
+              "end_index": 475,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, paragraph_title, footer, image, header, reference] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "items": [
+            {
+              "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020 <span style=\"color:#0000ff\">*Submit Document Feedback*</span>\n*LDO Noise Demystified*\n9\nCopyright © 2020 Texas Instruments Incorporated",
+              "value": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020\n<span style=\"color:#0000ff\">Submit Document Feedback</span>\nLDO Noise Demystified\n9\nCopyright © 2020 Texas Instruments Incorporated",
+              "bbox": [
+                {
+                  "h": 25.04,
+                  "w": 503.37,
+                  "x": 54.32,
+                  "y": 741.04,
+                  "confidence": 1.0,
+                  "end_index": 177,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "SLAA412B – JUNE 2009 – REVISED AUGUST 2020\n*Submit Document Feedback*\n*LDO Noise Demystified*\n9\nCopyright © 2020 Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 25.04,
+              "w": 503.37,
+              "x": 54.32,
+              "y": 741.04
+            }
+          ],
+          "type": "footer"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 9,
+      "page_width": 612.0,
+      "success": true
+    },
+    {
+      "items": [
+        {
+          "level": 2,
+          "md": "## **IMPORTANT NOTICE AND DISCLAIMER**",
+          "value": "IMPORTANT NOTICE AND DISCLAIMER",
+          "bbox": [
+            {
+              "h": 9.01,
+              "w": 225.57,
+              "x": 193.6,
+              "y": 78.59,
+              "confidence": 0.875,
+              "end_index": 37,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.",
+          "value": "TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.",
+          "bbox": [
+            {
+              "h": 44.4,
+              "w": 486.87,
+              "x": 57.53,
+              "y": 94.19,
+              "confidence": 1.0,
+              "end_index": 451,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable standards, and any other safety, security, regulatory or other requirements.",
+          "value": "These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable standards, and any other safety, security, regulatory or other requirements.",
+          "bbox": [
+            {
+              "h": 26.79,
+              "w": 490.53,
+              "x": 57.53,
+              "y": 146.19,
+              "confidence": 1.0,
+              "end_index": 357,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these resources.",
+          "value": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these resources.",
+          "bbox": [
+            {
+              "h": 44.4,
+              "w": 491.01,
+              "x": 56.92,
+              "y": 178.99,
+              "confidence": 1.0,
+              "end_index": 568,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI's products are provided subject to <u>TI's Terms of Sale</u> or other applicable terms available either on <u>ti.com</u> or provided in conjunction with such TI products. TI's provision of these resources does not expand or otherwise alter TI's applicable warranties or warranty disclaimers for TI products.",
+          "value": "TI's products are provided subject to <u>TI's Terms of Sale</u> or other applicable terms available either on <u>ti.com</u> or provided in conjunction with such TI products. TI's provision of these resources does not expand or otherwise alter TI's applicable warranties or warranty disclaimers for TI products.",
+          "bbox": [
+            {
+              "h": 26.7,
+              "w": 493.18,
+              "x": 57.53,
+              "y": 230.99,
+              "confidence": 1.0,
+              "end_index": 309,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "TI objects to and rejects any additional or different terms you may have proposed.",
+          "value": "TI objects to and rejects any additional or different terms you may have proposed.",
+          "bbox": [
+            {
+              "h": 7.6,
+              "w": 369.34,
+              "x": 58.88,
+              "y": 263.78,
+              "confidence": 1.0,
+              "end_index": 81,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265\nCopyright © 2022, Texas Instruments Incorporated",
+          "value": "Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265\nCopyright © 2022, Texas Instruments Incorporated",
+          "bbox": [
+            {
+              "h": 18.38,
+              "w": 292.03,
+              "x": 157.9,
+              "y": 286.39,
+              "confidence": 1.0,
+              "end_index": 127,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        }
+      ],
+      "page_height": 792.0,
+      "page_number": 10,
+      "page_width": 612.0,
+      "success": true
+    }
+  ]
+}

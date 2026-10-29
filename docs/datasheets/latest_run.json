@@ -1,0 +1,84 @@
+{
+  "timestamp_utc": "2026-10-26T20:17:48.035968+00:00",
+  "results": {
+    "ADS1298": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/components/ADS1298.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/components/ADS1298/.convert-gdo_6ww4/result.md', '--url', 'https://www.ti.com/lit/ds/symlink/ads1298.pdf']' returned non-zero exit status 1."
+      ]
+    },
+    "LP2985": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/components/LP2985.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/components/LP2985/.convert-vcxgaik7/result.md', '--url', 'https://www.ti.com/lit/ds/symlink/lp2985.pdf']' returned non-zero exit status 1."
+      ]
+    },
+    "TLV755P": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/components/TLV755P.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/components/TLV755P/.convert-a3593ui7/result.md', '--url', 'https://www.ti.com/lit/ds/symlink/tlv755p.pdf']' returned non-zero exit status 1."
+      ]
+    },
+    "ESP32-S3-WROOM-1": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/components/ESP32-S3-WROOM-1.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/components/ESP32-S3-WROOM-1/.convert-fbwf0alr/result.md', '--url', 'https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf']' returned non-zero exit status 1."
+      ]
+    },
+    "SBAA188": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/ti-app-notes/SBAA188.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/ti-app-notes/SBAA188/.convert-vz3fp50f/result.md', '--url', 'https://www.ti.com/lit/pdf/SBAA188']' returned non-zero exit status 1."
+      ]
+    },
+    "SBAA185": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/ti-app-notes/SBAA185.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/ti-app-notes/SBAA185/.convert-468zcx9k/result.md', '--url', 'https://www.ti.com/lit/pdf/SBAA185']' returned non-zero exit status 1."
+      ]
+    },
+    "SBAA196": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/ti-app-notes/SBAA196.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/ti-app-notes/SBAA196/.convert-8b8p3oo5/result.md', '--url', 'https://www.ti.com/lit/pdf/SBAA196']' returned non-zero exit status 1."
+      ]
+    },
+    "SBAA160": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/ti-app-notes/SBAA160.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/ti-app-notes/SBAA160/.convert-5bb5hy61/result.md', '--url', 'https://www.ti.com/lit/pdf/SBAA160']' returned non-zero exit status 1."
+      ]
+    },
+    "SBAA230": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/ti-app-notes/SBAA230.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/ti-app-notes/SBAA230/.convert-psc0ax9h/result.md', '--url', 'https://www.ti.com/lit/pdf/SBAA230']' returned non-zero exit status 1."
+      ]
+    },
+    "SLYY192": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/ti-app-notes/SLYY192.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/ti-app-notes/SLYY192/.convert-w_cgkxo4/result.md', '--url', 'https://www.ti.com/lit/eb/slyy192a/slyy192a.pdf']' returned non-zero exit status 1."
+      ]
+    },
+    "SLAA412": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/ti-app-notes/SLAA412.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/ti-app-notes/SLAA412/.convert-puvd4kxy/result.md', '--url', 'https://www.ti.com/lit/an/slaa412b/slaa412b.pdf']' returned non-zero exit status 1."
+      ]
+    },
+    "SLAA414": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/ti-app-notes/SLAA414.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/ti-app-notes/SLAA414/.convert-9v4pxcek/result.md', '--url', 'https://www.ti.com/lit/an/slaa414a/slaa414a.pdf']' returned non-zero exit status 1."
+      ]
+    },
+    "ADS1298-EVM": {
+      "status": "partial failure",
+      "errors": [
+        "pymupdf4llm: Command '['uv', 'run', '--no-project', '--python', '3.12', '--with', 'pymupdf4llm', '--', 'python', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/semg-datasheet-pipeline/convert_worker.py', '--engine', 'pymupdf4llm', '--input', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/originals/reference-designs/ADS1298-EVM.pdf', '--output', '/Users/home/Documents/Projects/Hardware/sEMG-Hardware-Codex/docs/datasheets/processed/reference-designs/ADS1298-EVM/.convert-4lpf17hr/result.md', '--url', 'https://www.ti.com/lit/ug/sbau171d/sbau171d.pdf']' returned non-zero exit status 1."
+      ]
+    }
+  },
+  "failed_documents": 13
+}
