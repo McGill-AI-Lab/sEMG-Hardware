@@ -1,0 +1,2145 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d2d84174-b5e5-435c-badb-d6193cc86b40")
+	(paper "A3")
+	(title_block
+		(title "sEMG-8 front end: ADS1298 core")
+		(date "2026-11-02")
+		(rev "A")
+		(comment 1 "ambrflow design loop, engine e735a0e; spec semg8-ads1298 f30ae840439c")
+		(comment 2 "From vref-0066: TI ADS1298ECG-FE, SBAU171D sheet 2 (TI terms)")
+		(comment 3 "Footprints and MPNs: DigiKey BOM 2026-11-02"))
+	(lib_symbols
+		(symbol "Analog_ADC:ADS1298xPAG"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at -15.24 41.91 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "ADS1298xPAG" (at 6.35 41.91 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "Package_QFP:TQFP-64_10x10mm_P0.5mm"
+				(at 0 -53.34 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27) (italic yes))))
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ads1298.pdf"
+				(at 0 -55.88 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "ADS1298 Low-Power, 8-Channel, 24-Bit Analog Front-End for Biopotential Measurements, TQFP-64"
+				(at 0 -2.54 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "24bit ADC PGA SPI"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "TQFP*10x10mm*P0.5mm*"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(symbol "ADS1298xPAG_0_1"
+				(rectangle
+					(start -15.24 40.64)
+					(end 15.24 -40.64)
+					(stroke (width 0.254) (type default))
+					(fill (type background))))
+			(symbol "ADS1298xPAG_1_1"
+				(pin input line
+					(at -17.78 -17.78 0)
+					(length 2.54)
+					(name "IN8N" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 -15.24 0)
+					(length 2.54)
+					(name "IN8P" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 -10.16 0)
+					(length 2.54)
+					(name "IN7N" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 -7.62 0)
+					(length 2.54)
+					(name "IN7P" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 -2.54 0)
+					(length 2.54)
+					(name "IN6N" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 0 0)
+					(length 2.54)
+					(name "IN6P" (effects (font (size 1.27 1.27))))
+					(number "6" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 2.54)
+					(name "IN5N" (effects (font (size 1.27 1.27))))
+					(number "7" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 7.62 0)
+					(length 2.54)
+					(name "IN5P" (effects (font (size 1.27 1.27))))
+					(number "8" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 12.7 0)
+					(length 2.54)
+					(name "IN4N" (effects (font (size 1.27 1.27))))
+					(number "9" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 15.24 0)
+					(length 2.54)
+					(name "IN4P" (effects (font (size 1.27 1.27))))
+					(number "10" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 20.32 0)
+					(length 2.54)
+					(name "IN3N" (effects (font (size 1.27 1.27))))
+					(number "11" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 22.86 0)
+					(length 2.54)
+					(name "IN3P" (effects (font (size 1.27 1.27))))
+					(number "12" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 27.94 0)
+					(length 2.54)
+					(name "IN2N" (effects (font (size 1.27 1.27))))
+					(number "13" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 30.48 0)
+					(length 2.54)
+					(name "IN2P" (effects (font (size 1.27 1.27))))
+					(number "14" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 35.56 0)
+					(length 2.54)
+					(name "IN1N" (effects (font (size 1.27 1.27))))
+					(number "15" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -17.78 38.1 0)
+					(length 2.54)
+					(name "IN1P" (effects (font (size 1.27 1.27))))
+					(number "16" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 17.78 22.86 180)
+					(length 2.54)
+					(name "TESTP_PACE_OUT1" (effects (font (size 1.27 1.27))))
+					(number "17" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 17.78 20.32 180)
+					(length 2.54)
+					(name "TESTP_PACE_OUT2" (effects (font (size 1.27 1.27))))
+					(number "18" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at -5.08 43.18 270)
+					(length 2.54)
+					(name "AVDD" (effects (font (size 1.27 1.27))))
+					(number "19" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at -5.08 -43.18 90)
+					(length 2.54)
+					(name "AVSS" (effects (font (size 1.27 1.27))))
+					(number "20" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 43.18 270)
+					(length 2.54)
+					(hide yes)
+					(name "AVDD" (effects (font (size 1.27 1.27))))
+					(number "21" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 43.18 270)
+					(length 2.54)
+					(hide yes)
+					(name "AVDD" (effects (font (size 1.27 1.27))))
+					(number "22" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 -43.18 90)
+					(length 2.54)
+					(hide yes)
+					(name "AVSS" (effects (font (size 1.27 1.27))))
+					(number "23" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -17.78 -35.56 0)
+					(length 2.54)
+					(name "VREFP" (effects (font (size 1.27 1.27))))
+					(number "24" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -17.78 -38.1 0)
+					(length 2.54)
+					(name "VREFN" (effects (font (size 1.27 1.27))))
+					(number "25" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -17.78 -30.48 0)
+					(length 2.54)
+					(name "VCAP4" (effects (font (size 1.27 1.27))))
+					(number "26" (effects (font (size 1.27 1.27)))))
+				(pin no_connect line
+					(at 15.24 -35.56 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC" (effects (font (size 1.27 1.27))))
+					(number "27" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -17.78 -22.86 0)
+					(length 2.54)
+					(name "VCAP1" (effects (font (size 1.27 1.27))))
+					(number "28" (effects (font (size 1.27 1.27)))))
+				(pin no_connect line
+					(at 15.24 -38.1 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC" (effects (font (size 1.27 1.27))))
+					(number "29" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -17.78 -25.4 0)
+					(length 2.54)
+					(name "VCAP2" (effects (font (size 1.27 1.27))))
+					(number "30" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 -33.02 180)
+					(length 2.54)
+					(name "RESV1" (effects (font (size 1.27 1.27))))
+					(number "31" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 -43.18 90)
+					(length 2.54)
+					(hide yes)
+					(name "AVSS" (effects (font (size 1.27 1.27))))
+					(number "32" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 5.08 -43.18 90)
+					(length 2.54)
+					(name "DGND" (effects (font (size 1.27 1.27))))
+					(number "33" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 -2.54 180)
+					(length 2.54)
+					(name "DIN" (effects (font (size 1.27 1.27))))
+					(number "34" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 -22.86 180)
+					(length 2.54)
+					(name "~{PWDN}" (effects (font (size 1.27 1.27))))
+					(number "35" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 -25.4 180)
+					(length 2.54)
+					(name "~{RESET}" (effects (font (size 1.27 1.27))))
+					(number "36" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 17.78 -12.7 180)
+					(length 2.54)
+					(name "CLK" (effects (font (size 1.27 1.27))))
+					(number "37" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 -17.78 180)
+					(length 2.54)
+					(name "START" (effects (font (size 1.27 1.27))))
+					(number "38" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 -5.08 180)
+					(length 2.54)
+					(name "~{CS}" (effects (font (size 1.27 1.27))))
+					(number "39" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "SCLK" (effects (font (size 1.27 1.27))))
+					(number "40" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "DAISY_IN" (effects (font (size 1.27 1.27))))
+					(number "41" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 17.78 15.24 180)
+					(length 2.54)
+					(name "GPIO1" (effects (font (size 1.27 1.27))))
+					(number "42" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 17.78 -7.62 180)
+					(length 2.54)
+					(name "DOUT" (effects (font (size 1.27 1.27))))
+					(number "43" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 17.78 12.7 180)
+					(length 2.54)
+					(name "GPIO2" (effects (font (size 1.27 1.27))))
+					(number "44" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 17.78 10.16 180)
+					(length 2.54)
+					(name "GPIO3" (effects (font (size 1.27 1.27))))
+					(number "45" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 17.78 7.62 180)
+					(length 2.54)
+					(name "GPIO4" (effects (font (size 1.27 1.27))))
+					(number "46" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 17.78 -20.32 180)
+					(length 2.54)
+					(name "~{DRDY}" (effects (font (size 1.27 1.27))))
+					(number "47" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 5.08 43.18 270)
+					(length 2.54)
+					(name "DVDD" (effects (font (size 1.27 1.27))))
+					(number "48" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 -43.18 90)
+					(length 2.54)
+					(hide yes)
+					(name "DGND" (effects (font (size 1.27 1.27))))
+					(number "49" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 43.18 270)
+					(length 2.54)
+					(hide yes)
+					(name "DVDD" (effects (font (size 1.27 1.27))))
+					(number "50" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 -43.18 90)
+					(length 2.54)
+					(hide yes)
+					(name "DGND" (effects (font (size 1.27 1.27))))
+					(number "51" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 -15.24 180)
+					(length 2.54)
+					(name "CLKSEL" (effects (font (size 1.27 1.27))))
+					(number "52" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -43.18 90)
+					(length 2.54)
+					(name "AVSS1" (effects (font (size 1.27 1.27))))
+					(number "53" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 43.18 270)
+					(length 2.54)
+					(name "AVDD1" (effects (font (size 1.27 1.27))))
+					(number "54" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -17.78 -27.94 0)
+					(length 2.54)
+					(name "VCAP3" (effects (font (size 1.27 1.27))))
+					(number "55" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 43.18 270)
+					(length 2.54)
+					(hide yes)
+					(name "AVDD" (effects (font (size 1.27 1.27))))
+					(number "56" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 -43.18 90)
+					(length 2.54)
+					(hide yes)
+					(name "AVSS" (effects (font (size 1.27 1.27))))
+					(number "57" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 -43.18 90)
+					(length 2.54)
+					(hide yes)
+					(name "AVSS" (effects (font (size 1.27 1.27))))
+					(number "58" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 43.18 270)
+					(length 2.54)
+					(hide yes)
+					(name "AVDD" (effects (font (size 1.27 1.27))))
+					(number "59" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 27.94 180)
+					(length 2.54)
+					(name "RLDREF" (effects (font (size 1.27 1.27))))
+					(number "60" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 30.48 180)
+					(length 2.54)
+					(name "RLDINV" (effects (font (size 1.27 1.27))))
+					(number "61" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 17.78 33.02 180)
+					(length 2.54)
+					(name "RLDIN" (effects (font (size 1.27 1.27))))
+					(number "62" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 17.78 35.56 180)
+					(length 2.54)
+					(name "RLDOUT" (effects (font (size 1.27 1.27))))
+					(number "63" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 17.78 38.1 180)
+					(length 2.54)
+					(name "WCT" (effects (font (size 1.27 1.27))))
+					(number "64" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:C"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "C" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0.9652 -3.81 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "C_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "C_0_1"
+				(polyline
+					(pts (xy -2.032 0.762) (xy 2.032 0.762))
+					(stroke (width 0.508) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.032 -0.762) (xy 2.032 -0.762))
+					(stroke (width 0.508) (type default))
+					(fill (type none))))
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:R"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+			(property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at -1.778 0 90) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Resistor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "R res resistor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "R_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke (width 0.254) (type default))
+					(fill (type none))))
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no)))
+	(text "ADS1298, 8-channel 24-bit biopotential AFE (TQFP-64)"
+		(exclude_from_sim no)
+		(at 20.32 25.4 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "003f752b-61d3-42dd-84e6-9d86f5f7f253"))
+	(text "Analog supply bypass (AVDD = +3.3VA)"
+		(exclude_from_sim no)
+		(at 160.02 25.4 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "b0c9a0c7-9cfa-4029-b4d2-1cc08cf4eed6"))
+	(text "Digital supply bypass (DVDD = +3.3V)"
+		(exclude_from_sim no)
+		(at 160.02 49.784 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "eefc76a0-4fa4-42a0-ad56-8a89c3010746"))
+	(text "Reference (VREFP) and internal regulator capacitors (VCAP1 to VCAP4)"
+		(exclude_from_sim no)
+		(at 160.02 74.168 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "d3ce33b1-9406-46f5-81da-5a3a22f3c02c"))
+	(text "Right-leg drive and Wilson central terminal"
+		(exclude_from_sim no)
+		(at 160.02 112.776 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "01ecd69a-2570-4ac4-9b9f-0a96d03016f2"))
+	(text "Control pull-ups and DVDD load"
+		(exclude_from_sim no)
+		(at 160.02 151.384 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "c9771fcb-8e95-442c-95c5-cb80a99646cf"))
+	(text "TI ADS1298ECG-FE core: AVDD = +3.3VA (LP2985), DVDD = +3.3V (TLV75533), internal 2.4 V reference, right-leg drive out on ELEC_RL."
+		(exclude_from_sim no)
+		(at 20.32 173.736 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "8676f711-5541-43a7-9353-8bbfc620bb58"))
+	(text "Ports: the electrode inputs, ELEC_RL (reference electrode J1), CLK (2.048 MHz, Y1), SPI and control to the ESP32-S3; DAISY_IN and GPIO1 to 4 tied low and TESTP/TESTN_PACE_OUT tied to AVDD on the root sheet (the datasheet's ties for unused pins)."
+		(exclude_from_sim no)
+		(at 20.32 177.546 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "ecab481b-0618-4a02-9169-58aecbf44f96"))
+	(text "RLDREF is open as on TI's sheet: set CONFIG3.RLDREF_INT = 1. C20: TI's 0.01 uF, sourced as 9.1 nF C0G and re-simulated (passes)."
+		(exclude_from_sim no)
+		(at 20.32 181.356 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "21205691-5914-430b-be01-53f65870fe5d"))
+	(symbol
+		(lib_id "Analog_ADC:ADS1298xPAG")
+		(at 49.53 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "090a4ea8-c50e-48cd-aac0-0ef54cad82a2")
+		(property "Reference" "U1" (at 34.29 46.99 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "ADS1298IPAG"
+			(at 55.88 46.99 0)
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_QFP:TQFP-64_10x10mm_P0.5mm"
+			(at 49.53 88.9 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fads1294"
+			(at 49.53 88.9 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "ADS1298IPAGR" (at 49.53 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 49.53 88.9 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/ADS1298IPAGR/2596718"
+			(at 49.53 88.9 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, U1 · admission review"
+			(at 49.53 88.9 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "139e0604-1ace-485b-af4f-8a2c78190042"))
+		(pin "2" (uuid "e6afa87e-7596-466c-be91-759c968acc2a"))
+		(pin "3" (uuid "cd41b36a-f6cd-4cc2-b3ab-1ad1e89defd4"))
+		(pin "4" (uuid "e29c871f-5587-4d04-aab4-24862e07c114"))
+		(pin "5" (uuid "277a4b1d-20a2-471b-9324-6a40ed1e2169"))
+		(pin "6" (uuid "e34429ec-2e4e-465f-828c-a0071ef1a19f"))
+		(pin "7" (uuid "8a730e11-a073-4e40-8daa-6c2ec2582e79"))
+		(pin "8" (uuid "d959e780-bba1-4531-935f-d919c76c49d2"))
+		(pin "9" (uuid "e918c9c1-98e9-45d9-8bef-884210646b57"))
+		(pin "10" (uuid "64a85b61-1fd9-4d7a-a360-7040f09d4648"))
+		(pin "11" (uuid "570acfb0-bce7-42b3-985a-6d09819a1a4b"))
+		(pin "12" (uuid "5a896f15-48f6-4b04-b8aa-c41dc1a960b6"))
+		(pin "13" (uuid "5c20de72-62fc-46bf-8a8b-e976eb6a0ca1"))
+		(pin "14" (uuid "e7a2f5f1-200b-48d4-988f-ed39482fed47"))
+		(pin "15" (uuid "88635459-c80c-4c97-988e-133d87686ad0"))
+		(pin "16" (uuid "54ec6980-4968-4387-a875-542124d5973e"))
+		(pin "17" (uuid "1dbfa9c4-e2fc-411f-8be1-63b45406c24d"))
+		(pin "18" (uuid "6d2a5ae2-cfac-46ea-994b-e37943108eb1"))
+		(pin "19" (uuid "4f1fce07-21ed-46ed-8f05-f46e2dba0d75"))
+		(pin "20" (uuid "359fc8cf-d649-44f7-b36f-790af2052ba7"))
+		(pin "21" (uuid "c28e75ff-4aa1-4f6b-b384-b4c5ed52c567"))
+		(pin "22" (uuid "7f3fa0fa-26f8-4473-ad2b-c1dd7d414dc1"))
+		(pin "23" (uuid "cd858e42-12f3-494f-9ef6-c1e4858f1162"))
+		(pin "24" (uuid "319610e8-500f-420c-8aa5-e992b75daf92"))
+		(pin "25" (uuid "11b5b531-0b80-492a-a85d-70a9113cc3b3"))
+		(pin "26" (uuid "1ca6133e-c7de-4322-b087-e8e902c17e02"))
+		(pin "27" (uuid "6fd44c75-2dd7-4033-a746-c5734067067e"))
+		(pin "28" (uuid "4361d548-957e-4bbe-b8a0-2754ed32afc0"))
+		(pin "29" (uuid "a4427126-8269-498b-aa2f-62213fe8394e"))
+		(pin "30" (uuid "3091fd36-9de8-4381-9e6e-c56e5dfab3c6"))
+		(pin "31" (uuid "120ee378-f53b-4368-b506-323e804e180d"))
+		(pin "32" (uuid "6689b7c6-7b6a-4062-88c2-2b0d9a510853"))
+		(pin "33" (uuid "770896d5-aa61-4b6c-bd04-5ad4e4677453"))
+		(pin "34" (uuid "ee0c5e2b-9ed0-44fa-9bba-3e23dd02f158"))
+		(pin "35" (uuid "2380c90f-3177-44a5-b159-b440503cca5f"))
+		(pin "36" (uuid "cbe44010-7b52-4bf3-86c4-a1d6338c7869"))
+		(pin "37" (uuid "1920c286-8234-42f9-8ed9-bca5023a21ec"))
+		(pin "38" (uuid "82e86db8-62dd-4bcc-a13b-3ab5f851f229"))
+		(pin "39" (uuid "fa34bace-42e4-4e61-86ab-6cca043f0973"))
+		(pin "40" (uuid "86b8d827-0127-471f-b68f-28ae40b82ed6"))
+		(pin "41" (uuid "8e3d94fa-31f0-4192-aefd-58d93ff6c800"))
+		(pin "42" (uuid "044dc525-b6f6-4f55-ac83-9401f2d6a1c4"))
+		(pin "43" (uuid "4b877e4b-3a35-43f6-9854-9d7cee85dd4f"))
+		(pin "44" (uuid "6ab65244-b14f-418d-8c0c-aa2e612a79f0"))
+		(pin "45" (uuid "f10644d8-1eb4-489c-978d-d54374b724c4"))
+		(pin "46" (uuid "54530bf3-7de9-4eeb-a942-6a4504953c0a"))
+		(pin "47" (uuid "e7b8ef9f-edaf-4c54-b696-4c5f90419e6f"))
+		(pin "48" (uuid "a9b38234-f77d-4b93-85b2-b499378ed26e"))
+		(pin "49" (uuid "423dbbed-3e0e-4a3c-983c-8cb4e2c36fe5"))
+		(pin "50" (uuid "103a225e-e274-4a31-882a-9d9fb046badd"))
+		(pin "51" (uuid "91785962-dee9-4c69-b13c-85af63dd31af"))
+		(pin "52" (uuid "9c422738-da1b-40cf-b78a-9006933b18d1"))
+		(pin "53" (uuid "80f3c149-5c9f-40dd-a699-293768428cb2"))
+		(pin "54" (uuid "a73fcc2c-f410-4023-8155-27c6d1c2622a"))
+		(pin "55" (uuid "f04c5a59-bcdb-471e-b356-853ad80b3260"))
+		(pin "56" (uuid "5368413d-c17d-4b0a-81b9-73db782771a7"))
+		(pin "57" (uuid "df09fa1a-77ed-40e8-b77b-256ecfb3a8d6"))
+		(pin "58" (uuid "cfd1bb37-5d8a-4d11-9a10-34a8d4630b99"))
+		(pin "59" (uuid "4d5e5f92-c324-404d-9cea-9ce8b0c79edf"))
+		(pin "60" (uuid "db03b80e-6536-4860-b93e-d722aad2060d"))
+		(pin "61" (uuid "b921a8a7-7fdc-47ca-9bb7-3e0649e6d0cd"))
+		(pin "62" (uuid "adc4f700-a3ac-4ee6-b1df-97d20c7eb447"))
+		(pin "63" (uuid "247ca47a-0712-4597-ab3e-8d3f0c9ad2e0"))
+		(pin "64" (uuid "7cecff10-c588-4b5b-8a07-1120ce67f504"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "U1")
+					(unit 1)))))
+	(hierarchical_label "VIN8N"
+		(shape input)
+		(at 31.75 106.68 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "57028593-e10b-446e-86f4-6c1238039de1"))
+	(hierarchical_label "VIN8P"
+		(shape input)
+		(at 31.75 104.14 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "910578e2-8fdb-4b68-8e13-4367616fc95a"))
+	(hierarchical_label "VIN7N"
+		(shape input)
+		(at 31.75 99.06 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "802c28e9-5c82-4c4d-90f8-4e573c408352"))
+	(hierarchical_label "VIN7P"
+		(shape input)
+		(at 31.75 96.52 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "fba9f751-cd6d-431b-a51c-1cd50a3a404d"))
+	(hierarchical_label "VIN6N"
+		(shape input)
+		(at 31.75 91.44 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "cd9f0a2e-9a5c-49d9-8e29-ea9dfcad6d54"))
+	(hierarchical_label "VIN6P"
+		(shape input)
+		(at 31.75 88.9 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "d6639694-61eb-4857-af7f-fb692fd8f9da"))
+	(hierarchical_label "VIN5N"
+		(shape input)
+		(at 31.75 83.82 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "bb3a965e-29b8-4b82-8843-0696dc8715f4"))
+	(hierarchical_label "VIN5P"
+		(shape input)
+		(at 31.75 81.28 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8516466a-ce2e-4b35-9a6e-0669e6b2b801"))
+	(hierarchical_label "VIN4N"
+		(shape input)
+		(at 31.75 76.2 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "1e5ef852-e19a-418a-a201-9b8cf7790032"))
+	(hierarchical_label "VIN4P"
+		(shape input)
+		(at 31.75 73.66 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "1c00d0bd-8005-4c80-a915-968742b67c28"))
+	(hierarchical_label "VIN3N"
+		(shape input)
+		(at 31.75 68.58 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "40c889b7-10c6-491a-bd87-5a1584249b17"))
+	(hierarchical_label "VIN3P"
+		(shape input)
+		(at 31.75 66.04 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8a1fbc35-4958-4900-b22f-e5cf968b53d9"))
+	(hierarchical_label "VIN2N"
+		(shape input)
+		(at 31.75 60.96 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "1c36c033-ef79-422c-8f77-5a013840c9cf"))
+	(hierarchical_label "VIN2P"
+		(shape input)
+		(at 31.75 58.42 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e938b06a-c35f-44ba-a3d6-2f1dc077f1cd"))
+	(hierarchical_label "VIN1N"
+		(shape input)
+		(at 31.75 53.34 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "093abcf7-0d82-4977-ab7b-ca81a6c350ed"))
+	(hierarchical_label "VIN1P"
+		(shape input)
+		(at 31.75 50.8 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "b11b3be0-afbe-4d96-8a62-2f6a207ce0db"))
+	(hierarchical_label "PACEOUT1"
+		(shape passive)
+		(at 67.31 66.04 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "1ef0bec5-eaad-4c6f-b20b-992ca1ab2929"))
+	(hierarchical_label "PACEOUT2"
+		(shape passive)
+		(at 67.31 68.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "264d0e28-6495-4833-8f1e-d8be4c9f87f3"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 44.45 45.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "2887be52-fcd6-472c-af5c-a3a469c0bd22"))
+	(global_label "GND"
+		(shape passive)
+		(at 44.45 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e8e95df4-72d3-4e63-88af-16e4f4dd3eb5"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 44.45 45.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "68e21e95-356d-4931-be02-8b8a936c4920"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 44.45 45.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ce291527-0473-46d8-8306-32f09396fada"))
+	(global_label "GND"
+		(shape passive)
+		(at 44.45 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "d5bde810-d857-4a1d-aad0-1da9a4d9afd1"))
+	(label "BYP_VREFP"
+		(at 31.75 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "17b8d9a6-b45f-4af2-bb3c-6a3464557672"))
+	(global_label "GND"
+		(shape passive)
+		(at 31.75 127 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "d12e2419-3339-4068-b07c-4b80f1e3a456"))
+	(label "BYP_VCAP4"
+		(at 31.75 119.38 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "92e5f381-ca89-46a0-8fd4-2cc45e035525"))
+	(no_connect (at 64.77 124.46) (uuid "08c2bd73-a85b-4351-8850-59e467ec7297"))
+	(label "BYP_VCAP1"
+		(at 31.75 111.76 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "1522dbd6-9beb-48ae-bd87-a1aaba337025"))
+	(no_connect (at 64.77 127) (uuid "104b4faf-0c9f-4612-a78e-3ae9128a5b17"))
+	(label "BYP_VCAP2"
+		(at 31.75 114.3 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "7e6f4139-4acd-4f6b-96de-d8633f5da1f4"))
+	(global_label "GND"
+		(shape passive)
+		(at 67.31 121.92 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "4d004bd2-a1c1-44ab-8690-ba6d193447ac"))
+	(global_label "GND"
+		(shape passive)
+		(at 44.45 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "79fba6ed-a896-44b7-8cf9-a58932a3c203"))
+	(global_label "GND"
+		(shape passive)
+		(at 54.61 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "35c76759-5f70-475d-83dc-d1b6b490e832"))
+	(hierarchical_label "SPI_IN"
+		(shape input)
+		(at 67.31 91.44 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "8a0e763f-0ddc-4561-99ee-ac62042b251e"))
+	(hierarchical_label "PWDN"
+		(shape input)
+		(at 67.31 111.76 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "f6720e4f-f0cb-4075-81d2-74c6daed058f"))
+	(hierarchical_label "RESET"
+		(shape input)
+		(at 67.31 114.3 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "dfb2d006-ad9e-4f86-8712-234cab8e4ce8"))
+	(hierarchical_label "CLK"
+		(shape input)
+		(at 67.31 101.6 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "0b71cd76-6a42-49a7-9676-b01ddb0032d8"))
+	(hierarchical_label "SPI_START"
+		(shape input)
+		(at 67.31 106.68 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "77a53c79-58a7-41fd-a7b2-f3da0d9f35f5"))
+	(hierarchical_label "SPI_CS"
+		(shape input)
+		(at 67.31 93.98 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "11ebced3-6649-41ab-8f40-90529e03db76"))
+	(hierarchical_label "SPI_CLK"
+		(shape input)
+		(at 67.31 88.9 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "4f54d8ae-5704-4227-8e19-7244cd34493e"))
+	(hierarchical_label "DAISY_IN"
+		(shape input)
+		(at 67.31 86.36 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "7b3135ce-38cf-493b-a742-a5453b12fd08"))
+	(hierarchical_label "GPIO1"
+		(shape bidirectional)
+		(at 67.31 73.66 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "1f29a1dc-7d55-4f17-b518-bd8970117782"))
+	(hierarchical_label "SPI_OUT"
+		(shape output)
+		(at 67.31 96.52 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b399c337-4055-4efc-9ee6-fe5040f9c12c"))
+	(hierarchical_label "GPIO2"
+		(shape bidirectional)
+		(at 67.31 76.2 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b4ecd3b9-2865-4b14-b997-5e3f8808b4c9"))
+	(hierarchical_label "GPIO3"
+		(shape bidirectional)
+		(at 67.31 78.74 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "4a9289a3-c974-43c9-99e4-61eb596aed54"))
+	(hierarchical_label "GPIO4"
+		(shape bidirectional)
+		(at 67.31 81.28 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "19eacf07-6cf5-4218-9261-db7ea86306b5"))
+	(hierarchical_label "SPI_DRDY"
+		(shape output)
+		(at 67.31 109.22 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "e5c68ed7-906a-4c6a-908c-8ae61a72cfe1"))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 54.61 45.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "775302ab-ae5e-4cb2-bfd7-5249bf30a04c"))
+	(global_label "GND"
+		(shape passive)
+		(at 54.61 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "36c65192-0317-4c4a-a693-104094746801"))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 54.61 45.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "e01ab0a3-1b2c-4f40-b0fc-e6177faa71d3"))
+	(global_label "GND"
+		(shape passive)
+		(at 54.61 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "717df0c0-3073-499b-b00c-0d5b46c7acce"))
+	(global_label "GND"
+		(shape passive)
+		(at 67.31 104.14 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ce9a72ee-63ea-45f6-a08f-d6e2cd66e340"))
+	(global_label "GND"
+		(shape passive)
+		(at 49.53 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "5d94e0b9-bceb-416f-8197-8f65a7e11099"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 49.53 45.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "bdbf3037-d1f4-41e0-81f6-bcc6563802fd"))
+	(label "BYP_VCAP3"
+		(at 31.75 116.84 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "360ea954-b75f-452a-a7ec-921257f5e8d6"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 44.45 45.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "326c3d51-65a1-4f1f-9050-a5e61df94cb3"))
+	(global_label "GND"
+		(shape passive)
+		(at 44.45 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "48af578c-89b1-461f-8d26-956d3a45a6d2"))
+	(global_label "GND"
+		(shape passive)
+		(at 44.45 132.08 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "06d06104-419e-4aa3-b8da-d0e1f8f9cee7"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 44.45 45.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "c82294ce-0a6c-4026-85d1-5e95ce569ae8"))
+	(no_connect (at 67.31 60.96) (uuid "7d59dcf2-6454-4340-acbe-0434ed4a5013"))
+	(label "RLDINV"
+		(at 67.31 58.42 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "17320ca6-fef4-492d-99e4-9a274b2ce2fe"))
+	(label "ECG_RL"
+		(at 67.31 55.88 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "14eb418e-3bd7-461e-83c9-e01765b4e917"))
+	(label "RLDOUT"
+		(at 67.31 53.34 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5db8df0d-7f30-44bd-a417-7cacfb79b028"))
+	(label "WCT"
+		(at 67.31 50.8 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "be72eeeb-c506-4c28-91d0-ba970668fc64"))
+	(symbol
+		(lib_id "Device:C")
+		(at 173.99 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f779be2-d9cf-4409-b43d-f4f2ed75afb9")
+		(property "Reference" "C4" (at 173.99 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 173.99 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 173.99 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 173.99 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT" (at 173.99 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 173.99 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 173.99 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C4 · admission review"
+			(at 173.99 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "49bbdfb2-34ba-46ae-9a55-f432bfe9a28d"))
+		(pin "2" (uuid "8c5e7a26-3e16-4ec5-96bd-b191d44dfea2"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C4")
+					(unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 170.18 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "77f5d898-364a-416e-a8c7-d09ed183fd03"))
+	(global_label "GND"
+		(shape passive)
+		(at 177.8 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "eb572b05-d7d5-4183-bcce-3735557a113c"))
+	(symbol
+		(lib_id "Device:C")
+		(at 210.82 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "82b174e3-d3d0-46b3-b075-5789c84d8b28")
+		(property "Reference" "C6" (at 210.82 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 210.82 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 210.82 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 210.82 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT" (at 210.82 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 210.82 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 210.82 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C6 · admission review"
+			(at 210.82 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f862dd59-9f27-4014-b407-bab32360c5e6"))
+		(pin "2" (uuid "52547042-2d65-49aa-bd3c-f38a28fec230"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C6")
+					(unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 207.01 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9464fd4b-3827-45d0-980a-67186abd5fd3"))
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "2e41e9ce-1c7a-4960-890e-8e7fa30c4e56"))
+	(symbol
+		(lib_id "Device:C")
+		(at 247.65 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00ac0cb8-02b8-4753-ba12-70c430d600db")
+		(property "Reference" "C14" (at 247.65 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0.1uF" (at 247.65 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 247.65 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 247.65 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 247.65 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 247.65 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 247.65 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C14 · admission review"
+			(at 247.65 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "df87e93c-8792-4568-a74e-025529bae743"))
+		(pin "2" (uuid "7ea4b8bf-5ba3-4da6-9ff3-4ecad96c8bc3"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C14")
+					(unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 243.84 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "d9418c66-fe6f-4523-8665-7ecbb6f849d3"))
+	(global_label "GND"
+		(shape passive)
+		(at 251.46 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "9631da80-9353-4003-aa7f-10c167953e6f"))
+	(symbol
+		(lib_id "Device:C")
+		(at 284.48 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37b6063e-b32f-4bbd-9ea8-61105d83eab8")
+		(property "Reference" "C16" (at 284.48 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0.1uF" (at 284.48 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 284.48 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 284.48 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 284.48 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 284.48 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 284.48 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C16 · admission review"
+			(at 284.48 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "63c20964-2403-443b-ad00-86ecd726efaf"))
+		(pin "2" (uuid "5d5666dd-8594-43da-993f-8462712032b2"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C16")
+					(unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 280.67 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "596d8bd1-6a03-4c61-8485-aeeeebfbf82b"))
+	(global_label "GND"
+		(shape passive)
+		(at 288.29 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "1925dac5-1e26-4ea2-8592-61f7c6d143f4"))
+	(symbol
+		(lib_id "Device:C")
+		(at 321.31 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fe27ae0-9f37-40ba-b8cb-155f1cbdeb65")
+		(property "Reference" "C17" (at 321.31 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 321.31 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 321.31 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 321.31 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT" (at 321.31 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 321.31 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 321.31 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C17 · admission review"
+			(at 321.31 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e9ad2884-eb96-47de-8cae-2b0504947e36"))
+		(pin "2" (uuid "9d0297aa-8695-4565-9bae-3f5b87b80a69"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C17")
+					(unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 317.5 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "c4faed6f-e076-4c90-a9ca-f9aeba74addf"))
+	(global_label "GND"
+		(shape passive)
+		(at 325.12 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d987517e-4d33-4392-beef-f66b103c616c"))
+	(symbol
+		(lib_id "Device:C")
+		(at 358.14 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c87ce6e-a941-45b2-b7bf-bb71b0bc3057")
+		(property "Reference" "C18" (at 358.14 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0.1uF" (at 358.14 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 358.14 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 358.14 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 358.14 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 358.14 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 358.14 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C18 · admission review"
+			(at 358.14 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b74d3f8f-dd5e-4b43-a94b-8b0336fb9222"))
+		(pin "2" (uuid "a24397fa-5fc0-4831-8065-527ab8f35c24"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C18")
+					(unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 354.33 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "32520924-d6c4-42e5-9511-7b732b923b5c"))
+	(global_label "GND"
+		(shape passive)
+		(at 361.95 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "bdf26e49-0055-4008-b287-bd7f50bbfd6e"))
+	(symbol
+		(lib_id "Device:C")
+		(at 172.72 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "490fe486-ad15-4f19-bdb9-bbe41fe222d1")
+		(property "Reference" "C5" (at 172.72 58.42 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 172.72 66.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 172.72 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 172.72 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT"
+			(at 172.72 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 172.72 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 172.72 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C5 · admission review"
+			(at 172.72 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "300a6da7-d5c2-47b7-aa42-c3cae57f4054"))
+		(pin "2" (uuid "1604076e-5069-48ba-80cf-58623a3997d2"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C5")
+					(unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 168.91 62.23 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "03b1c7b8-4609-47cc-8865-810cdc2de7ac"))
+	(global_label "GND"
+		(shape passive)
+		(at 176.53 62.23 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6be653f5-6414-44d7-9c90-cde464dd6ebc"))
+	(symbol
+		(lib_id "Device:C")
+		(at 208.28 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98564dd1-9c68-4f4d-a992-d7a8e231744f")
+		(property "Reference" "C12" (at 208.28 58.42 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0.1uF" (at 208.28 66.04 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 208.28 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 208.28 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 208.28 62.23 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 208.28 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 208.28 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C12 · admission review"
+			(at 208.28 62.23 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "915f59f8-3398-4aa5-9a7c-de0581b803a1"))
+		(pin "2" (uuid "3e9ecc01-14e2-4dcd-8cea-af1ab5268a3b"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C12")
+					(unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 204.47 62.23 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "7a52d2f1-5548-4c86-a5ea-14959803bb6e"))
+	(global_label "GND"
+		(shape passive)
+		(at 212.09 62.23 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5e1b2ecc-c7f9-4c56-9747-d39eeb6408bc"))
+	(symbol
+		(lib_id "Device:C")
+		(at 175.26 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bedd3d93-08b5-418a-ab5a-36fb758780cc")
+		(property "Reference" "C10" (at 175.26 82.55 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10uF" (at 175.26 90.17 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 175.26 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/cx5r-KGM.pdf"
+			(at 175.26 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "0603ZD106MAT2A" (at 175.26 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 175.26 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kyocera-avx/0603ZD106MAT2A/3900648"
+			(at 175.26 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C10 · admission review"
+			(at 175.26 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d548ccea-7591-4e8b-ac78-4047ac68dfdc"))
+		(pin "2" (uuid "279a0ffa-e559-49a8-9623-d449f1518d37"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C10")
+					(unit 1)))))
+	(label "BYP_VREFP"
+		(at 171.45 86.36 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "142d3e85-dae2-45e4-92b3-2d1d666ec830"))
+	(global_label "GND"
+		(shape passive)
+		(at 179.07 86.36 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "7497ca4f-8df2-4c0c-80af-8ecb666aca64"))
+	(symbol
+		(lib_id "Device:C")
+		(at 213.36 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "184afa7f-d532-4df8-8a2c-adf60d355183")
+		(property "Reference" "C95" (at 213.36 82.55 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0.1uF" (at 213.36 90.17 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 213.36 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 213.36 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 213.36 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 213.36 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 213.36 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C95 · admission review"
+			(at 213.36 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7ce6fde3-14e2-4a73-b391-f757f9c7fce4"))
+		(pin "2" (uuid "d75dc0bc-7c4b-44bc-9510-c78614074be0"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C95")
+					(unit 1)))))
+	(label "BYP_VREFP"
+		(at 209.55 86.36 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e7646fe1-a968-404f-b268-344150246261"))
+	(global_label "GND"
+		(shape passive)
+		(at 217.17 86.36 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a4e244f6-0395-446b-a220-4543d124bcd2"))
+	(symbol
+		(lib_id "Device:C")
+		(at 251.46 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53cf27e1-15bd-41ca-a0c2-e04f5ba5a051")
+		(property "Reference" "C9" (at 251.46 82.55 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "22uF" (at 251.46 90.17 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 251.46 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 251.46 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R226M6R3NT"
+			(at 251.46 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 251.46 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R226M6R3NT/13909373"
+			(at 251.46 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C9 · admission review"
+			(at 251.46 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f65f524b-539e-4ee6-909b-b03477ab3d7f"))
+		(pin "2" (uuid "4ec905a0-8677-4b76-bbb1-fce7667d1ff8"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C9")
+					(unit 1)))))
+	(label "BYP_VCAP1"
+		(at 247.65 86.36 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "706460df-09e1-457e-9bf4-39b9ba50100c"))
+	(global_label "GND"
+		(shape passive)
+		(at 255.27 86.36 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "342a9091-913f-4d9e-adbf-383c6596ed9f"))
+	(symbol
+		(lib_id "Device:C")
+		(at 289.56 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "300316dd-a115-4cf3-a7f9-cb1e4a2014aa")
+		(property "Reference" "C2" (at 289.56 82.55 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 289.56 90.17 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 289.56 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 289.56 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT"
+			(at 289.56 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 289.56 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 289.56 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C2 · admission review"
+			(at 289.56 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f83fdaa4-618e-4825-8cce-f44ce15effc0"))
+		(pin "2" (uuid "ef6d00d6-5bb0-43fe-8c92-28739bf28d21"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C2")
+					(unit 1)))))
+	(label "BYP_VCAP2"
+		(at 285.75 86.36 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e3086461-5dbb-4712-9de9-59349321ec96"))
+	(global_label "GND"
+		(shape passive)
+		(at 293.37 86.36 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "61964dfc-d3f7-4a02-9c4b-7683857c95bd"))
+	(symbol
+		(lib_id "Device:C")
+		(at 327.66 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "771cd115-3c0e-4e80-89f9-ccfdc1d7283a")
+		(property "Reference" "C3" (at 327.66 82.55 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 327.66 90.17 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 327.66 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 327.66 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT"
+			(at 327.66 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 327.66 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 327.66 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C3 · admission review"
+			(at 327.66 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "bed3b97a-c032-4889-82a4-b99b602f4820"))
+		(pin "2" (uuid "fa33914d-1cfb-4b06-bbe3-8522d22c3a55"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C3")
+					(unit 1)))))
+	(label "BYP_VCAP3"
+		(at 323.85 86.36 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "59d63ae8-0532-4bac-b14b-e800cdccfe0f"))
+	(global_label "GND"
+		(shape passive)
+		(at 331.47 86.36 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "2a3ee5c3-392e-4a7d-9f18-ae39c644978b"))
+	(symbol
+		(lib_id "Device:C")
+		(at 365.76 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b82feb02-6a6b-496b-a69e-e681a92759cb")
+		(property "Reference" "C13" (at 365.76 82.55 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0.1uF" (at 365.76 90.17 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 365.76 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 365.76 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 365.76 86.36 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 365.76 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 365.76 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C13 · admission review"
+			(at 365.76 86.36 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "a16eaf36-4784-4bd6-bcfe-b1a6f7f283ba"))
+		(pin "2" (uuid "ae7a38db-55c3-4921-a08e-8f2c086760e8"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C13")
+					(unit 1)))))
+	(label "BYP_VCAP3"
+		(at 361.95 86.36 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "d9a34d96-fa13-4384-b873-5b0c14e08a0c"))
+	(global_label "GND"
+		(shape passive)
+		(at 369.57 86.36 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "26bc7a0c-544a-41be-845a-10ffa43a17c9"))
+	(symbol
+		(lib_id "Device:C")
+		(at 175.26 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "012a7846-cfe0-43fe-81e1-d58f0a2be69e")
+		(property "Reference" "C1" (at 175.26 96.52 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 175.26 104.14 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 175.26 100.33 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 175.26 100.33 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT"
+			(at 175.26 100.33 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 175.26 100.33 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 175.26 100.33 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C1 · admission review"
+			(at 175.26 100.33 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "2d2f3a84-efd0-49f2-a95c-a957a18ef50f"))
+		(pin "2" (uuid "f391fa7f-d162-4b26-8733-e35734b2060b"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C1")
+					(unit 1)))))
+	(label "BYP_VCAP4"
+		(at 171.45 100.33 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "fbf4bcb9-7599-46cf-ba72-050880ea2874"))
+	(global_label "GND"
+		(shape passive)
+		(at 179.07 100.33 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "018b7c2e-9dc0-42ee-8804-f30b717a4284"))
+	(symbol
+		(lib_id "Device:R")
+		(at 171.45 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9436fdf-a406-4146-bffd-2857559349a7")
+		(property "Reference" "R3" (at 171.45 121.92 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0" (at 171.45 127 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 171.45 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 171.45 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06J000CT" (at 171.45 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 171.45 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06J000CT/13570329"
+			(at 171.45 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, R3 · admission review"
+			(at 171.45 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "15fa3512-7ad4-4be5-aa3f-ea64d78a9b47"))
+		(pin "2" (uuid "f14eb17a-be9f-4db3-a4d2-35053a0bb809"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "R3")
+					(unit 1)))))
+	(label "ECG_RL"
+		(at 167.64 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "77dddd09-7913-4092-afa0-f073bb2b9639"))
+	(label "RLDOUT"
+		(at 175.26 124.46 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b7acfda7-e12b-4398-900d-28edfffeadcf"))
+	(symbol
+		(lib_id "Device:R")
+		(at 205.74 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f258a554-cf74-4fbd-91ac-8f21600b67aa")
+		(property "Reference" "R8" (at 205.74 121.92 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "392k" (at 205.74 127 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 205.74 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 205.74 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F3923CT" (at 205.74 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 205.74 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F3923CT/13569472"
+			(at 205.74 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, R8 · admission review"
+			(at 205.74 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "fe4ef491-d114-4c76-b6c8-b12d89175507"))
+		(pin "2" (uuid "a5a6afc0-301a-497e-9193-a6cd203d4f85"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "R8")
+					(unit 1)))))
+	(label "ECG_RL"
+		(at 201.93 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e8b928a0-5e3d-41bf-838f-36a0a830e71e"))
+	(label "RLDINV"
+		(at 209.55 124.46 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a168b0b2-eb98-4521-86d3-6a59241cef90"))
+	(symbol
+		(lib_id "Device:C")
+		(at 240.03 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f2f0509-f732-42f2-8fdf-fa36582e7e34")
+		(property "Reference" "C20" (at 240.03 120.65 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "9.1n" (at 240.03 128.27 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 240.03 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM1885C1H912JA01-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 240.03 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GRM1885C1H912JA01D"
+			(at 240.03 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Murata Electronics"
+			(at 240.03 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM1885C1H912JA01D/10693846"
+			(at 240.03 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C20 · admission review"
+			(at 240.03 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1bb9e6d1-0767-4d51-836c-6cdd5e69aa78"))
+		(pin "2" (uuid "c976e6f9-fadf-4b72-8519-e719b3f0d7de"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C20")
+					(unit 1)))))
+	(label "ECG_RL"
+		(at 236.22 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8f8ea35a-9b15-4793-a104-730ffd5c3819"))
+	(label "RLDINV"
+		(at 243.84 124.46 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "32a7984a-1b03-4707-b2c1-08cb9966645f"))
+	(symbol
+		(lib_id "Device:R")
+		(at 271.78 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c8f894f-9b44-44ce-9fa4-ef7ce421ec84")
+		(property "Reference" "R38" (at 271.78 121.92 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10k" (at 271.78 127 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 271.78 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 271.78 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1002CTD" (at 271.78 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 271.78 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1002CTD/13570470"
+			(at 271.78 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p52 schematic, R38 · admission review"
+			(at 271.78 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "860a8b61-b8e5-4755-a8b3-526672dc0a3c"))
+		(pin "2" (uuid "a3093ed6-a532-43d1-802c-94debefe8035"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "R38")
+					(unit 1)))))
+	(label "RLF"
+		(at 267.97 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e4f6deae-1c1a-4dd9-8c92-bd3073f41cfa"))
+	(label "ECG_RL"
+		(at 275.59 124.46 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6cacb7f1-7b4f-4fce-89a7-5bcc6c35eab8"))
+	(symbol
+		(lib_id "Device:R")
+		(at 309.88 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "632843a2-b48a-46c0-8173-72b17ff85f4b")
+		(property "Reference" "R37" (at 309.88 121.92 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "22.1k" (at 309.88 127 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 309.88 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 309.88 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F2212CT" (at 309.88 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 309.88 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F2212CT/13569955"
+			(at 309.88 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p52 schematic, R37 · admission review"
+			(at 309.88 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "6df87964-d8be-4577-9f17-cb5f43326e6b"))
+		(pin "2" (uuid "0834d572-7d25-45fb-bc1e-8957e56bc9de"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "R37")
+					(unit 1)))))
+	(hierarchical_label "ELEC_RL"
+		(shape bidirectional)
+		(at 306.07 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "16422cb7-4066-45c6-bd2f-e63f3bf75715"))
+	(label "RLF"
+		(at 313.69 124.46 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "74d2c232-0bac-416e-bf15-b489fa8671e8"))
+	(symbol
+		(lib_id "Device:C")
+		(at 344.17 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "055d9c27-09d9-42ac-927f-4a8d598b422b")
+		(property "Reference" "C31" (at 344.17 120.65 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "47pF" (at 344.17 128.27 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 344.17 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.darfon.com.tw/Content/Upload/files/ICM%20File/101%20MLCC%20Catalogue_General%20Purpose.pdf"
+			(at 344.17 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "C1608NP0470JFTS"
+			(at 344.17 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Darfon"
+			(at 344.17 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/darfon/C1608NP0470JFTS/15285443"
+			(at 344.17 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p52 schematic, C31 · admission review"
+			(at 344.17 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5b5de5a8-cc2d-465e-b33b-bd4bbce2f827"))
+		(pin "2" (uuid "faca3a34-a06e-4e0f-ad13-4680397679fa"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C31")
+					(unit 1)))))
+	(label "ECG_RL"
+		(at 340.36 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "badeadfb-19e5-47b7-825e-1dfbfc7bcfb6"))
+	(global_label "GND"
+		(shape passive)
+		(at 347.98 124.46 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "46c9066d-cad4-486f-b157-a16bb72d633d"))
+	(symbol
+		(lib_id "Device:C")
+		(at 375.92 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6267699-83ef-45d8-b72e-bee779d0eab0")
+		(property "Reference" "C92" (at 375.92 120.65 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "47pF" (at 375.92 128.27 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 375.92 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.darfon.com.tw/Content/Upload/files/ICM%20File/101%20MLCC%20Catalogue_General%20Purpose.pdf"
+			(at 375.92 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "C1608NP0470JFTS"
+			(at 375.92 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Darfon"
+			(at 375.92 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/darfon/C1608NP0470JFTS/15285443"
+			(at 375.92 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p52 schematic, C92 · admission review"
+			(at 375.92 124.46 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "25594c34-21a6-47ea-8124-ef9a59188dae"))
+		(pin "2" (uuid "1593d1d5-c5ce-4e26-af4c-bbde312edc27"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C92")
+					(unit 1)))))
+	(label "RLF"
+		(at 372.11 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "142494c2-e0ba-4093-9049-bbfaee7832ba"))
+	(global_label "GND"
+		(shape passive)
+		(at 379.73 124.46 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "81d1b9b0-c4c1-4267-ab4d-1ef2be556a12"))
+	(symbol
+		(lib_id "Device:C")
+		(at 168.91 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ddbea83-3247-46d1-9122-ac90069b257a")
+		(property "Reference" "C90" (at 168.91 135.89 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100pF" (at 168.91 143.51 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 168.91 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.darfon.com.tw/Content/Upload/files/ICM%20File/101%20MLCC%20Catalogue_General%20Purpose.pdf"
+			(at 168.91 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "C1608NP0101JGTS" (at 168.91 139.7 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Darfon" (at 168.91 139.7 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/darfon/C1608NP0101JGTS/15285299"
+			(at 168.91 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, C90 · admission review"
+			(at 168.91 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "768fc0af-f842-4068-b24e-a95e7c61e827"))
+		(pin "2" (uuid "874b8d95-bff2-49d0-b75e-7994abdc3882"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "C90")
+					(unit 1)))))
+	(label "WCT"
+		(at 165.1 139.7 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "1c28afa8-e4b8-44f3-8a4c-7bd168290414"))
+	(global_label "GND"
+		(shape passive)
+		(at 172.72 139.7 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "bdcb8d0e-0f6f-40e1-88d8-24cb9c27e5d1"))
+	(symbol
+		(lib_id "Device:R")
+		(at 172.72 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b685a5e7-0e61-4462-b989-6015a1c1b543")
+		(property "Reference" "R6" (at 172.72 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10k" (at 172.72 165.1 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 172.72 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 172.72 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1002CTD" (at 172.72 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 172.72 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1002CTD/13570470"
+			(at 172.72 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, R6 · admission review"
+			(at 172.72 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "fc694652-bc6f-4891-828e-0fc548d19396"))
+		(pin "2" (uuid "f30efbce-6321-411d-999c-6c0829316df3"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "R6")
+					(unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 168.91 162.56 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "455b3135-6e8e-4b1c-a2b1-1330c03c31a6"))
+	(hierarchical_label "RESET"
+		(shape input)
+		(at 176.53 162.56 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "72e19e48-dc68-4574-a555-7e9003c97a81"))
+	(symbol
+		(lib_id "Device:R")
+		(at 209.55 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b139796-8a78-47b5-aaf6-7e12b9a3542a")
+		(property "Reference" "R7" (at 209.55 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10k" (at 209.55 165.1 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 209.55 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 209.55 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1002CTD" (at 209.55 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 209.55 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1002CTD/13570470"
+			(at 209.55 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p53 schematic, R7 · admission review"
+			(at 209.55 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5a7c9c80-fe49-4b50-8324-a3c347f2cfb5"))
+		(pin "2" (uuid "34405197-286c-427e-ab68-fa5230c49e36"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "R7")
+					(unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 205.74 162.56 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "91769d35-b194-41b4-850c-0e6ab78fe20f"))
+	(hierarchical_label "PWDN"
+		(shape input)
+		(at 213.36 162.56 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b2c5e27f-9487-43b7-a046-ec57a4c68824"))
+	(symbol
+		(lib_id "Device:R")
+		(at 245.11 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca4e3b66-cf9a-4427-9a48-2151afd8eb68")
+		(property "Reference" "R67" (at 245.11 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10k" (at 245.11 165.1 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 245.11 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 245.11 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1002CTD" (at 245.11 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 245.11 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1002CTD/13570470"
+			(at 245.11 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: TI SBAU171D (ADS1298ECG-FE) p56 schematic, R67 · admission review"
+			(at 245.11 162.56 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "648e7c80-56ae-4286-9e28-7e918e39ea1c"))
+		(pin "2" (uuid "ec0e3194-d787-4737-8013-2a7ba66e2018"))
+		(instances
+			(project "semg8_B_ADS1298"
+				(path "/f3162fb5-01a9-42a8-aa3d-02b8b119ba0f/f6e9f604-c663-4d64-b461-f4f266603cdd"
+					(reference "R67")
+					(unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 241.3 162.56 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "5e7a685e-87ff-4673-b7f3-5dce98e9d6ad"))
+	(global_label "GND"
+		(shape passive)
+		(at 248.92 162.56 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a9d88b99-2550-4c25-9d10-1d122cbc54ce"))
+	(embedded_fonts no)
+)

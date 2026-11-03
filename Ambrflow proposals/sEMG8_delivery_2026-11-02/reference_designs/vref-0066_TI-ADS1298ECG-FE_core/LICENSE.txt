@@ -1,0 +1,16 @@
+ADS1298 8-channel 24-bit biopotential AFE core (TI ADS1298ECG-FE), direct channel inputs, unipolar 3 V (vref-0066)
+
+Redrawn as a KiCad sheet from a vendor document: the vendor's terms are its licence (licence class "vendor").
+
+Vendor:    Texas Instruments
+Document:  SBAU171 revision D, "ADS1298ECG-FE/ADS1198ECG-FE User's Guide"
+Issued:    May 2010, revised January 2016
+URL:       https://www.ti.com/lit/pdf/sbau171
+Section:   Appendix A schematics, sheet 2 of 5 (p53); the RL lead of sheet 1 (p52); R67 of sheet 5 (p56); Tables 1, 7, 8
+sha256:    b6448165a8b73808e1a3703ab4899f033c85f6b522219bd6157f35a14e2e9f9f (the PDF the redraw was read from, the copy in
+           github.com/McGill-AI-Lab/sEMG-Hardware docs/datasheets/originals/reference-designs/ADS1298-EVM.pdf)
+
+Terms, from the document's IMPORTANT NOTICE AND DISCLAIMER (p57):
+  "TI grants you permission to use these resources only for development of an application that uses the TI products described in the resource."
+
+So: the redrawn design stays licensed only while it uses the TI products the document describes (U1, the ADS1298).

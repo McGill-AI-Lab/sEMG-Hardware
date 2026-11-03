@@ -1,0 +1,1148 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b2c4a07c-b8f9-47a7-8131-72ac89a5e168")
+	(paper "A3")
+	(lib_symbols
+		(symbol "Amplifier_Operational:LM324"
+			(pin_names (offset 0.127))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at 0 5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "LM324" (at 0 -5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at -1.27 2.54 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+				(at 1.27 5.08 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_locked" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "quad opamp" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(symbol "LM324_1_1"
+				(polyline
+					(pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27))))))
+			(symbol "LM324_2_1"
+				(polyline
+					(pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "6" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "7" (effects (font (size 1.27 1.27))))))
+			(symbol "LM324_3_1"
+				(polyline
+					(pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "8" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "9" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "10" (effects (font (size 1.27 1.27))))))
+			(symbol "LM324_4_1"
+				(polyline
+					(pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "12" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "13" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "14" (effects (font (size 1.27 1.27))))))
+			(symbol "LM324_5_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-" (effects (font (size 1.27 1.27))))
+					(number "11" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:C"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "C" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0.9652 -3.81 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "C_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "C_0_1"
+				(polyline
+					(pts (xy -2.032 0.762) (xy 2.032 0.762))
+					(stroke (width 0.508) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.032 -0.762) (xy 2.032 -0.762))
+					(stroke (width 0.508) (type default))
+					(fill (type none))))
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:C_Polarized"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0.9652 -3.81 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "CP_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -1.778 2.286) (xy -0.762 2.286))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -1.27 2.794) (xy -1.27 1.778))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke (width 0) (type default))
+					(fill (type outline))))
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:R"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+			(property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at -1.778 0 90) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Resistor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "R res resistor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "R_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke (width 0.254) (type default))
+					(fill (type none))))
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Diode:BAT54S"
+			(pin_names (offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D" (at 2.54 -5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "BAT54S" (at -6.35 3.175 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 1.905 3.175 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27)) (justify left)))
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf"
+				(at -3.048 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "schottky diode" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "SOT?23*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "BAT54S_0_1"
+				(polyline
+					(pts (xy -4.445 1.27) (xy -4.445 -1.27) (xy -2.54 0) (xy -4.445 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline (pts (xy -3.81 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline
+					(pts (xy -3.175 -1.27) (xy -3.175 -1.016))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.54 1.27) (xy -1.905 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.54 -1.27) (xy -3.175 -1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.54 -1.27) (xy -2.54 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -1.905 1.27) (xy -1.905 1.016))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline (pts (xy -1.905 0) (xy 1.905 0)) (stroke (width 0) (type default)) (fill (type none)))
+				(circle (center 0 0) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline)))
+				(polyline (pts (xy 1.27 0) (xy 3.81 0)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline
+					(pts (xy 1.905 1.27) (xy 1.905 -1.27) (xy 3.81 0) (xy 1.905 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 3.175 -1.27) (xy 3.175 -1.016))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 3.81 1.27) (xy 4.445 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 3.81 -1.27) (xy 3.175 -1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 3.81 -1.27) (xy 3.81 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 4.445 1.27) (xy 4.445 1.016))
+					(stroke (width 0) (type default))
+					(fill (type none))))
+			(symbol "BAT54S_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "A" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "K" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 5.08)
+					(name "COM" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no)))
+	(text "Input: RFI filter and clamps to the rails"
+		(exclude_from_sim no)
+		(at 20.32 25.4 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "94b3129a-2d08-4668-8aa4-473ef5749a3c"))
+	(text "Instrumentation amplifier U1A / U1B: gain 1 + R8/R7 = 11; CMRR needs R5/R6 = R8/R7"
+		(exclude_from_sim no)
+		(at 20.32 60.47 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "b04ebc91-eb34-40a5-85e5-8cebb686c854"))
+	(text "Band-pass into the ADC, U1C: R3/C4 high-pass (4.0 Hz), R4/C5 low-pass (723 Hz), gain R4/R3 = 12.2"
+		(exclude_from_sim no)
+		(at 20.32 90.95 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "2ebbdf20-b9eb-414e-b314-a63699cdb2d6"))
+	(text "Mid-supply reference: R1/R2 divider (1.055 V), C2/C3 filter, U1D buffer"
+		(exclude_from_sim no)
+		(at 20.32 121.43 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "e091d605-b1ea-40e5-b35d-00260f4ba488"))
+	(text "Supply: U1 power pins and bypass"
+		(exclude_from_sim no)
+		(at 20.32 151.91 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "855de966-c537-48da-8206-9c3f81b72cf7"))
+	(text "Reference vref-0065 as admitted, with its own values, redrawn on KiCad library symbols; connectivity identical to the record in the design loop's references/vref-0065."
+		(exclude_from_sim no)
+		(at 20.32 199.27 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "272f68d6-5fca-4e32-b08f-6bf9cf3150e3"))
+	(symbol
+		(lib_id "Device:C")
+		(at 33.02 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ac9ba211-57db-4655-8208-8498b36fc1d3")
+		(property "Reference" "C1" (at 33.02 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1nF" (at 33.02 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 33.02 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 33.02 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C1 · admission review"
+			(at 33.02 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7ec270a6-f735-4815-b87f-08a8d96e1f1b"))
+		(pin "2" (uuid "fcaf66f5-359d-41f7-bd0d-033192564855"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C1") (unit 1)))))
+	(global_label "VINP"
+		(shape passive)
+		(at 29.21 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "d24b07db-6982-495a-8b71-7bc352df782b"))
+	(global_label "VINN"
+		(shape passive)
+		(at 36.83 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "12e2a244-1efd-4e02-8eb6-03d71344be79"))
+	(symbol
+		(lib_id "Diode:BAT54S")
+		(at 69.85 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53c30a15-d884-47c1-a3a7-e95f81b88d67")
+		(property "Reference" "D2" (at 72.39 41.91 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "BAT54S" (at 63.5 33.655 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 69.85 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 69.85 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, D2 · admission review"
+			(at 69.85 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "ae84c84d-875b-48ae-b9bf-990ad1eaca1d"))
+		(pin "2" (uuid "d39a2598-b6dd-4fc9-932b-b98ef11da3f3"))
+		(pin "3" (uuid "cd5ed31c-07b4-4ecd-a7bc-ba7d0ac05a10"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "D2") (unit 1)))))
+	(label "GND"
+		(at 62.23 36.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "4b6f2327-389c-4646-8211-487eb05202ed"))
+	(label "VCC"
+		(at 77.47 36.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5230765d-ebe9-45f6-bea1-4121f3aaffb5"))
+	(global_label "VINN"
+		(shape passive)
+		(at 69.85 41.91 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "2e6556a8-fa89-4ad6-97f6-515252d4944f"))
+	(symbol
+		(lib_id "Diode:BAT54S")
+		(at 106.68 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0d6d138-eea5-408c-a866-bd9a944d7e39")
+		(property "Reference" "D3" (at 109.22 41.91 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "BAT54S" (at 100.33 33.655 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 106.68 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 106.68 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, D3 · admission review"
+			(at 106.68 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "98ca3dd7-ad68-4a34-8c7f-2f01267088fd"))
+		(pin "2" (uuid "f0cc71b8-33ef-4fb2-b710-b57ff8afa523"))
+		(pin "3" (uuid "bcff278c-53fb-4d47-874b-328e8336e69d"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "D3") (unit 1)))))
+	(label "GND"
+		(at 99.06 36.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "dd0bc05e-d134-49bb-82d7-17faf83c98dd"))
+	(label "VCC"
+		(at 114.3 36.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d67103fd-232e-45d3-944a-a3bb4e0efbee"))
+	(global_label "VINP"
+		(shape passive)
+		(at 106.68 41.91 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "281a9c30-6068-4efd-b2c0-b682f4caab05"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 36.83 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07e4b858-0207-4e7a-9b55-46b1524d844a")
+		(property "Reference" "U1" (at 36.83 71.12 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "LM324" (at 36.83 81.28 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 36.83 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 36.83 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 36.83 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b75afe24-11ae-4ab7-96ea-add4e96250ab"))
+		(pin "2" (uuid "ce5d7136-9b61-4498-8d24-282333ad80f0"))
+		(pin "3" (uuid "709b0afe-43b0-49f8-b39b-a8efdea284dd"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "U1") (unit 1)))))
+	(label "INA1OUT"
+		(at 44.45 76.2 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "43eccb1d-0a1f-443f-93a8-7835fd89c4f7"))
+	(label "INA1N"
+		(at 29.21 78.74 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "72e0dc5e-c7c1-452d-bdf8-e2347c33fee6"))
+	(global_label "VINN"
+		(shape passive)
+		(at 29.21 73.66 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "b8de676d-3069-46d0-9d5b-f99136a64f57"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 81.28 76.2 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae137210-f685-4d31-8799-52d5c3a2a191")
+		(property "Reference" "U1" (at 81.28 71.12 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "LM324" (at 81.28 81.28 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 81.28 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 81.28 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 81.28 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "5" (uuid "da5e5a02-a8d0-4ab6-b9f1-2f79bff0e669"))
+		(pin "6" (uuid "4852f210-6675-479e-b1a5-0b5b7310e1b5"))
+		(pin "7" (uuid "128f9c1c-9e1d-425e-9a3a-95f30fb3804d"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "U1") (unit 2)))))
+	(global_label "VINP"
+		(shape passive)
+		(at 73.66 73.66 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "4b63a2f8-7890-408e-8658-d71c70c4ce4b"))
+	(label "INA2N"
+		(at 73.66 78.74 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "04ee157f-abcb-4305-a407-eb8c0a2d3123"))
+	(label "INAOUT"
+		(at 88.9 76.2 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d7b6d4f8-affe-42f4-ba4b-7e901fc7d92e"))
+	(symbol
+		(lib_id "Device:R")
+		(at 120.65 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4e1fcfb-0c0d-49e7-988b-67b08b62ef8b")
+		(property "Reference" "R5" (at 120.65 68.58 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "220k" (at 120.65 73.66 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 120.65 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 120.65 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R5 · admission review"
+			(at 120.65 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "280b8279-e238-46c1-a537-8d71751acb87"))
+		(pin "2" (uuid "0989c5aa-a2a9-4f6d-a034-36973226755b"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "R5") (unit 1)))))
+	(label "INA1N"
+		(at 116.84 71.12 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9c360e38-9794-482d-9f0d-52a81db12a81"))
+	(label "AMPREF"
+		(at 124.46 71.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "dd77e50d-af50-455d-83d7-26a8e8383e75"))
+	(symbol
+		(lib_id "Device:R")
+		(at 157.48 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ac4d6b0-093c-41e3-987e-2ab8067ad51f")
+		(property "Reference" "R6" (at 157.48 68.58 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "22k" (at 157.48 73.66 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 157.48 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 157.48 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R6 · admission review"
+			(at 157.48 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7339c90b-c1b0-4fe8-96dd-910889bed5d8"))
+		(pin "2" (uuid "00b03f05-74c5-4c6e-983a-4e00d22ea93a"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "R6") (unit 1)))))
+	(label "INA1OUT"
+		(at 153.67 71.12 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "c38110c5-c6f2-43fb-a303-f8ad83c8532a"))
+	(label "INA1N"
+		(at 161.29 71.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b1e4d578-da2d-44fb-a603-b373f6712543"))
+	(symbol
+		(lib_id "Device:R")
+		(at 191.77 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18a11e0d-1350-43d2-91de-4f5cf48b99ae")
+		(property "Reference" "R7" (at 191.77 68.58 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "22k" (at 191.77 73.66 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 191.77 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 191.77 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R7 · admission review"
+			(at 191.77 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "69891295-13c0-4bfa-931e-34f5910172b7"))
+		(pin "2" (uuid "9162af0f-da33-4daa-b814-7e3e879aae20"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "R7") (unit 1)))))
+	(label "INA2N"
+		(at 187.96 71.12 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "1a69aee7-fbbc-476a-a54a-67ec20824f7b"))
+	(label "INA1OUT"
+		(at 195.58 71.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "aa31fa37-57d8-413f-bdec-a45fec67992e"))
+	(symbol
+		(lib_id "Device:R")
+		(at 228.6 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e404424-5963-4cb6-8fc7-d396b1093684")
+		(property "Reference" "R8" (at 228.6 68.58 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "220k" (at 228.6 73.66 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 228.6 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 228.6 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R8 · admission review"
+			(at 228.6 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f3df5581-30f4-4c3b-b34b-39eca80a458c"))
+		(pin "2" (uuid "a7f54227-135b-4be7-99ac-4d5a02fba054"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "R8") (unit 1)))))
+	(label "INAOUT"
+		(at 224.79 71.12 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e7d1fb72-ab95-497c-9e46-0e18c50828e9"))
+	(label "INA2N"
+		(at 232.41 71.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "182055fc-8cf3-4ffe-867b-e1e85d56eb16"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 36.83 106.68 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "948a885d-e077-4686-801b-fe97fac24936")
+		(property "Reference" "U1" (at 36.83 101.6 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "LM324" (at 36.83 111.76 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 36.83 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 36.83 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 36.83 106.68 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "8" (uuid "2c82cf3c-3309-4249-9db9-195c09687451"))
+		(pin "9" (uuid "c96b78fa-0e41-41c4-b0ce-d5711190d883"))
+		(pin "10" (uuid "6f2e9b66-3f61-4e09-bf3e-2b93c66cd871"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "U1") (unit 3)))))
+	(label "BPFOUT"
+		(at 44.45 106.68 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "46095520-8697-4a47-9d3a-b6acba0cb8ad"))
+	(label "BPFN"
+		(at 29.21 109.22 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "94503841-2518-40d3-b513-b3e0340e2870"))
+	(label "AMPREF"
+		(at 29.21 104.14 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9b358277-8f91-494e-9c02-1bda0f9436f3"))
+	(symbol
+		(lib_id "Device:R")
+		(at 76.2 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f480a99-fddb-413d-9dd5-aea8c674d4c3")
+		(property "Reference" "R3" (at 76.2 99.06 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1k" (at 76.2 104.14 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 76.2 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 76.2 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R3 · admission review"
+			(at 76.2 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "03af71a7-4fa0-43f3-bd2e-bbc506183857"))
+		(pin "2" (uuid "3169f19f-e6f5-4c09-a5c9-45a677afa9d9"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "R3") (unit 1)))))
+	(label "BPFIN"
+		(at 72.39 101.6 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e3c6c7f7-0e50-484c-980e-8d820e832171"))
+	(label "INAOUT"
+		(at 80.01 101.6 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "60ad6c27-fda6-4d6a-b6b5-b79e18f92442"))
+	(symbol
+		(lib_id "Device:C")
+		(at 111.76 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c41e234-d2e4-470c-b311-1ccb31c8acf2")
+		(property "Reference" "C4" (at 111.76 99.06 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "2.2uF" (at 111.76 106.68 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 111.76 102.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 111.76 102.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C4 · admission review"
+			(at 111.76 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5579f258-dd70-4f6b-9dff-9bf90e7d8f7e"))
+		(pin "2" (uuid "658ef6f1-5b6d-4d0a-bc3c-a243c9a4462e"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C4") (unit 1)))))
+	(label "BPFIN"
+		(at 107.95 102.87 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "d5b4f27b-7642-4c31-aaa8-51204e8a2e14"))
+	(label "BPFN"
+		(at 115.57 102.87 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d4dfb66f-97f9-4aee-89d7-822b89bf89b7"))
+	(symbol
+		(lib_id "Device:R")
+		(at 147.32 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef5d7306-0024-41a1-85b2-50ee6262a5a5")
+		(property "Reference" "R4" (at 147.32 99.06 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "220k" (at 147.32 104.14 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 147.32 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 147.32 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R4 · admission review"
+			(at 147.32 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "6ed3b2a1-8770-4d9b-bdb0-b9af3b598615"))
+		(pin "2" (uuid "4cd655e4-4859-4223-b55e-b5367710591f"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "R4") (unit 1)))))
+	(label "BPFOUT"
+		(at 143.51 101.6 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "385ea0ce-ba97-4bb9-9687-ceccf4c64d2e"))
+	(label "BPFN"
+		(at 151.13 101.6 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "3816379c-7824-42e8-91eb-38b1b35744f7"))
+	(symbol
+		(lib_id "Device:C")
+		(at 181.61 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44385dcb-9c19-46d8-b1cb-7f8665a5e5ce")
+		(property "Reference" "C5" (at 181.61 99.06 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1nF" (at 181.61 106.68 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 181.61 102.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 181.61 102.87 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C5 · admission review"
+			(at 181.61 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b28d52ab-fcc5-4191-93b5-08dcacd0738f"))
+		(pin "2" (uuid "f115e293-5ae6-4c55-9336-fc6233d960e8"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C5") (unit 1)))))
+	(label "BPFN"
+		(at 177.8 102.87 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "b3f4421c-317c-4131-8a13-559c284ed65e"))
+	(label "BPFOUT"
+		(at 185.42 102.87 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "713a16a5-1add-471d-bdff-313a3a251212"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 36.83 137.16 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3a0bc6f-c37c-454d-b32c-4ca86ece979d")
+		(property "Reference" "U1" (at 36.83 132.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "LM324" (at 36.83 142.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 36.83 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 36.83 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 36.83 137.16 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "12" (uuid "673919e9-a903-4526-816f-a8561f0c97f7"))
+		(pin "13" (uuid "97560a1d-5e63-4723-a30a-d250a34e084a"))
+		(pin "14" (uuid "392d5cf2-e368-4f36-93e0-76fc9385f9e0"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "U1") (unit 4)))))
+	(label "REFDIV"
+		(at 29.21 134.62 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9296d0a9-a510-446a-955f-3c24bdddde42"))
+	(label "AMPREF"
+		(at 29.21 139.7 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "209c286c-dc22-4843-bac6-368c938b6630"))
+	(label "AMPREF"
+		(at 44.45 137.16 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "591cbd9a-2188-414c-ae1d-18234ea378c7"))
+	(symbol
+		(lib_id "Device:R")
+		(at 76.2 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53f1d8e4-24cf-4e66-aa7c-4ae730c1bc0d")
+		(property "Reference" "R1" (at 76.2 129.54 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1M" (at 76.2 134.62 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 76.2 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 76.2 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R1 · admission review"
+			(at 76.2 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "959a7d46-19f9-44fa-96fe-7d147598fe5d"))
+		(pin "2" (uuid "4c61c0f9-b7d6-4f7f-b848-e9ce379f1107"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "R1") (unit 1)))))
+	(label "REFDIV"
+		(at 72.39 132.08 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "c7d48aa9-0928-43fd-b5dd-7d7fbf7838ae"))
+	(label "VCC"
+		(at 80.01 132.08 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "99c9787f-9dec-44ae-8519-03d12790dbbc"))
+	(symbol
+		(lib_id "Device:R")
+		(at 109.22 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0192a93a-47eb-4382-af56-1a5e1092b076")
+		(property "Reference" "R2" (at 109.22 129.54 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1M" (at 109.22 134.62 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 109.22 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 109.22 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R2 · admission review"
+			(at 109.22 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d644e093-e6e7-468f-bef8-b9c324a90863"))
+		(pin "2" (uuid "95e1ea80-08e9-482a-a83c-c16f04ff3a66"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "R2") (unit 1)))))
+	(label "GND"
+		(at 105.41 132.08 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "6ae08baf-69b6-452e-b19e-fbb509de36a4"))
+	(label "REFDIV"
+		(at 113.03 132.08 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d17ee173-7163-4823-82b6-08c20a38ae1d"))
+	(symbol
+		(lib_id "Device:C")
+		(at 144.78 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "576bc572-fad3-44d9-9c89-9dab75ac54a1")
+		(property "Reference" "C2" (at 144.78 129.54 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 144.78 137.16 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 144.78 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 144.78 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C2 · admission review"
+			(at 144.78 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5deca0b9-6608-4689-9e71-2449762a90b2"))
+		(pin "2" (uuid "e86bae81-a3ba-4780-a504-5b8702a2e5fd"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C2") (unit 1)))))
+	(label "REFDIV"
+		(at 140.97 133.35 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "405fd643-43f6-47f2-91c1-ad13b89d2192"))
+	(label "VCC"
+		(at 148.59 133.35 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "9ca3f443-2a2f-4548-9516-63963894dc11"))
+	(symbol
+		(lib_id "Device:C")
+		(at 177.8 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e191456-9927-48b1-8839-ea6a9b4f9371")
+		(property "Reference" "C3" (at 177.8 129.54 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "2.2uF" (at 177.8 137.16 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 177.8 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 177.8 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C3 · admission review"
+			(at 177.8 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "323780ee-5a62-4c20-b26e-64310a1082eb"))
+		(pin "2" (uuid "76c38f8c-9974-4f55-829b-5661acbdf466"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C3") (unit 1)))))
+	(label "GND"
+		(at 173.99 133.35 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "388bdb43-2f90-44e6-8fb4-6a815818c503"))
+	(label "REFDIV"
+		(at 181.61 133.35 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ac6675e2-43d8-496b-a8c5-142308d5064a"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 22.86 175.26 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49470aa1-a5cf-4c02-a927-074bedd95b62")
+		(property "Reference" "U1" (at 22.86 170.18 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "LM324" (at 22.86 180.34 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 22.86 175.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 22.86 175.26 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 22.86 175.26 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "4" (uuid "3579ac4f-9364-40eb-a87e-f220d237fbe1"))
+		(pin "11" (uuid "6c072f32-0422-43ad-a3e6-eccd1baec074"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "U1") (unit 5)))))
+	(label "VCC"
+		(at 20.32 167.64 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ea7b3f4e-e007-492f-bb6a-a89d33379ca1"))
+	(label "GND"
+		(at 20.32 182.88 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9b378377-48e6-40bf-88d0-87f67be16e5e"))
+	(symbol
+		(lib_id "Device:C")
+		(at 55.88 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44bfa284-c823-42d6-af5e-d0153846602b")
+		(property "Reference" "C6" (at 55.88 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 55.88 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 55.88 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 55.88 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C6 · admission review"
+			(at 55.88 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5338c23c-b228-4708-88e6-e667b50b9517"))
+		(pin "2" (uuid "29e3a062-9225-4776-9823-5cb54a9c5f9f"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C6") (unit 1)))))
+	(label "GND"
+		(at 52.07 163.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "89b32f89-0e6a-485e-a8a8-0f812932853d"))
+	(label "VCC"
+		(at 59.69 163.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "fa4b4e5d-9d25-4f6a-82e5-c35e4fd6cd2b"))
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 88.9 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8fc224ab-1622-4b63-b541-b8edd5fc3dee")
+		(property "Reference" "C7" (at 88.9 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "2.2uF" (at 88.9 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 88.9 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 88.9 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C7 · admission review"
+			(at 88.9 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1dd497d1-77c1-4e19-baca-23da61e92ac9"))
+		(pin "2" (uuid "7cb299e7-f468-4157-8c55-2f089d8dc5dd"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C7") (unit 1)))))
+	(label "VCC"
+		(at 85.09 163.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9c68689e-4c71-4e75-8747-cd7da61b28ce"))
+	(label "GND"
+		(at 92.71 163.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d24bae7c-1df7-482b-af30-e99cedf7c06e"))
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff7519e1-49d4-4f1b-989b-6367f657d73b")
+		(property "Reference" "C8" (at 121.92 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 121.92 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 121.92 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 121.92 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C8 · admission review"
+			(at 121.92 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e42bdc95-4f24-400f-a857-1d35bfe03837"))
+		(pin "2" (uuid "6b801f54-e436-4c28-9a45-e6e5df1836a4"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C8") (unit 1)))))
+	(label "GND"
+		(at 118.11 163.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "b42722b4-c871-4f1f-9057-4648ee9ed27f"))
+	(label "VCC"
+		(at 125.73 163.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "19c7a719-f742-47cb-8431-4193b4d1b6b4"))
+	(symbol
+		(lib_id "Device:C")
+		(at 154.94 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f99b486-cd33-44dc-87bf-f766879910d4")
+		(property "Reference" "C9" (at 154.94 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 154.94 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 154.94 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 154.94 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C9 · admission review"
+			(at 154.94 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "dbcc241f-1509-494e-9e61-84ccc9e1dc8c"))
+		(pin "2" (uuid "c5f93bc7-89ee-4143-b4a8-f33ed2b22bfd"))
+		(instances
+			(project "vref-0065_Muscle-BioAmp-Patchy_channel"
+				(path "/b2c4a07c-b8f9-47a7-8131-72ac89a5e168" (reference "C9") (unit 1)))))
+	(label "GND"
+		(at 151.13 163.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "36cbf599-7ed0-43f7-91c5-add1e859ccb1"))
+	(label "VCC"
+		(at 158.75 163.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6c02d22f-d4e2-44d9-a73e-9a77e5c633b4"))
+	(sheet_instances (path "/" (page "1")))
+	(embedded_fonts no)
+)

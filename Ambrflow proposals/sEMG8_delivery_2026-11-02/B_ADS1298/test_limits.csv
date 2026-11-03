@@ -1,0 +1,20 @@
+ID,Test,Setup,Measure at,Unit,Spec min,Spec max,Expected nominal,Expected min,Expected max,Basis,Notes
+B-01,Analog supply,,AVDD to AVSS,V,3.25,3.35,3.3,,,spec (3.3 V ±1.5 %); TI SBAS459K (Aug 2015) allows 2.7–5.25 V,
+B-02,Digital supply,,DVDD to DGND,V,3.25,3.35,3.3,,,spec (3.3 V ±1.5 %); TI SBAS459K (Aug 2015) allows 1.65–3.6 V,
+B-03,Internal reference,"CONFIG3.VREF_4V = 0, reference buffer on",VREFP to VREFN (AVSS),V,2.3952,2.4048,2.4,,,"TI SBAS459K (Aug 2015): 2.4 V, accuracy ±0.2 %",drift 35 ppm/°C typ adds outside 25 °C
+B-04,Charge-pump rail,"powered, out of reset",VCAP3 to AVSS,V,,,5.2,,,TI SBAS459K (Aug 2015) pin table: internally generated AVDD + 1.9 V,no tolerance stated by TI
+B-05,Internal mid-supply,powered,VCAP2 to AVSS,V,,,1.65,,,TI SBAS459K (Aug 2015) 10.x: a buffered mid-supply voltage,no tolerance stated by TI
+B-06,Power-up: VCAP1 charged before RESET,from power-up,VCAP1 to AVSS,V,1.1,,,,,TI SBAS459K (Aug 2015) 11.1: issue RESET after tPOR and VCAP1 > 1.1 V,
+B-07,Control pull-ups,PWDN and RESET not driven,"PWDN, RESET",V,,,3.297,3.247,3.346,engine e735a0e nodal read (AVDD/DVDD ±1.5 %),
+B-08,Channel 1 input common mode,"electrodes on, REF electrode at 1.65 V","VIN1P, VIN1N",V,1.6,1.7,1.65,,,spec: electrode offset ±50 mV about 1.65 V,channels 2–8 as wired on the reference (1.5 V bias)
+B-09,Input-referred noise (production limit),"inputs shorted, gain 6, 500 SPS, HR mode, 256 points (0.5 s)","ADC codes, input-referred",µVpp,,7,4,,,"TI SBAS459K (Aug 2015) DC channel performance (AVDD 3 V, VREF 2.4 V)",
+B-10,Input-referred noise at sEMG data rate,"inputs shorted, HR mode, 2 kSPS (524 Hz bandwidth)",ADC codes,µVpp,,20,7.3 (gain 6); 6.0 (gain 12),,,TI SBAS459K (Aug 2015) Table 1 (typical); spec max: the client's 20 µV resolution,typical only: TI does not test this in production
+B-11,Common-mode rejection,"fCM = 50 Hz and 60 Hz, AVSS + 0.3 V to AVDD − 0.3 V",each channel,dB,105,,115,,,TI SBAS459K (Aug 2015) AC channel performance,
+B-12,Gain error,"excluding reference error, gain 6",each channel,% FS,-0.5,0.5,±0.2,,,TI SBAS459K (Aug 2015),
+B-13,AVDD current,"HR mode, RLD/WCT/pace amplifiers off",AVDD current,mA,,,2.75 (at 3 V),,,TI SBAS459K (Aug 2015) power supply (typical only; 3.1 mA at 5 V),
+B-14,DVDD current,HR mode,DVDD current,mA,,,0.5 (at 3 V),,,TI SBAS459K (Aug 2015),
+B-15,Power dissipation,"HR mode, all 8 channels",AVDD·IAVDD + DVDD·IDVDD,mW,,"9.5 (at AVDD 3 V, DVDD 1.8 V)","8.8 (at AVDD 3 V, DVDD 1.8 V); ≈ 10.7 at 3.3 V / 3.3 V",,,TI SBAS459K (Aug 2015); the 3.3 V / 3.3 V figure is estimated from the typical supply currents,
+B-20,ADS1298 master clock,powered,Y1 OUT (ADS1298 CLK),MHz,1.94,2.25,2.048,,,TI SBAS459K: external clock input frequency with CLKSEL = 0,
+B-21,Analog rail,,+3.3VA (U4 VOUT) to GND,V,3.25,3.35,3.3,,,spec (AVDD 3.3 V ±1.5 %),
+B-22,Digital rail,,+3.3V (U7 OUT) to GND,V,3.25,3.35,3.3,,,spec (DVDD 3.3 V ±1.5 %); ESP32-S3 3.0 to 3.6 V,
+B-23,SPI link,"after RESET, SDATAC then RREG ID",ADS1298 ID register,hex,,,0x92,,,TI SBAS459K register map (ADS1298 device ID),confirms SPI wiring and clock

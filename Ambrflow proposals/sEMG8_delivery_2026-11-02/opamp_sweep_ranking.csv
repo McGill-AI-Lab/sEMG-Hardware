@@ -1,0 +1,55 @@
+Rank,MPN,Manufacturer,Package,Status,"Iq per amp (µA, engine card typ)","Op-amp power, 8 ch at 3.3 V (mW)",Price @100 (USD),Best trade-off (Pareto),Loop rounds,Values changed from the LM324 design,Engine card,Check before use,DigiKey
+1,TLV9004IPWR,Texas Instruments,14-TSSOP,ranked,60,6.34,0.5131,yes,0,,TLV9001 / TLV9002 / TLV9004 (+S shutdown variants) (TI SBOS8,,https://www.digikey.com/en/products/detail/texas-instruments/TLV9004IPWR/9674912
+2,MCP6004-I/SL,Microchip Technology,14-SOIC,ranked,100,10.56,0.4,yes,0,,MCP6001/1R/1U/2/4 (Microchip DS20001733L); sibling MCP6L01/1,,https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061
+3,LMV324B-SR,3PEAK,14-SOP,ranked,105,11.09,0.0846,yes,0,,"LMV321 / LMV358 / LMV324 / LMV324S (TI SLOS263Y, Aug 2023)","made by 3PEAK, simulated on the card from ti.com",https://www.digikey.com/en/products/detail/3peak/LMV324B-SR/22228395
+4,LM324A-TR,3PEAK,14-TSSOP,ranked,175,18.48,0.0864,,0,,split of row 34: LM324(?![B\d])|LM224|LM124,"made by 3PEAK, simulated on the card from ti.com",https://www.digikey.com/en/products/detail/3peak/LM324A-TR/22228402
+5,MCP604-I/SL,Microchip Technology,14-SOIC,ranked,230,24.29,1.01,,1,R5 47k R6 4.7k,MCP601/1R/2/3/4 (Microchip DS21314G),,https://www.digikey.com/en/products/detail/microchip-technology/MCP604-I-SL/305937
+6,LM324BIRTER,Texas Instruments,16-WQFN (3x3),ranked,300,31.68,0.1249,,0,,split of row 34: LM358B|LM324B,16-WQFN (3x3): not the 14-pin quad pinout the schematic symbol carries,https://www.digikey.com/en/products/detail/texas-instruments/LM324BIRTER/27635190
+7,LM2902BIRTER,Texas Instruments,16-WQFN (3x3),ranked,300,31.68,0.1324,,0,,split of row 33: LM290[24]B,16-WQFN (3x3): not the 14-pin quad pinout the schematic symbol carries,https://www.digikey.com/en/products/detail/texas-instruments/LM2902BIRTER/27635220
+8,LM6134BIMX/NOPB,Texas Instruments,14-SOIC,ranked,360,38.02,3.2247,,1,R7 220 R8 2.2k,"LM6132 / LM6134 (TI SNOS751F, Jun 2026)",,https://www.digikey.com/en/products/detail/texas-instruments/LM6134BIMX-NOPB/334884
+9,TLV9064IRTER,Texas Instruments,16-WQFN (3x3),ranked,538,56.81,0.8499,,1,R7 220 R8 2.2k,"TLV9061 / TLV9062 / TLV9064 (+S) (TI SBOS839N, Jul 2026)",16-WQFN (3x3): not the 14-pin quad pinout the schematic symbol carries,https://www.digikey.com/en/products/detail/texas-instruments/TLV9064IRTER/9659619
+10,TLV274DTBR2G,onsemi,14-TSSOP,ranked,550,58.08,0.7446,,1,R5 47k R6 4.7k,"TLV271 / TLV272 / TLV274 (TI SLOS351E, Nov 2016)","made by onsemi, simulated on the card from ti.com",https://www.digikey.com/en/products/detail/onsemi/TLV274DTBR2G/13559941
+11,TLV2374IDR,Texas Instruments,14-SOIC,ranked,550,58.08,1.425,,1,R5 47k R6 4.7k,"TLV2370–TLV2375 (TI SLOS270F, Aug 2016)",,https://www.digikey.com/en/products/detail/texas-instruments/TLV2374IDR/390477
+12,OPA4991IDYYR,Texas Instruments,14-SOT-23-THIN,ranked,560,59.14,2.1775,,1,R5 22k R6 2.2k,"OPA991 / OPA2991 / OPA4991 (TI SBOS969F, Jan 2022)",,https://www.digikey.com/en/products/detail/texas-instruments/OPA4991IDYYR/18158638
+13,OPA4340EA/2K5,Texas Instruments,16-SSOP,ranked,750,79.20,4.6542,,1,R5 22k R6 2.2k,"OPA340 / OPA2340 / OPA4340 (TI SBOS073C, Aug 2016)",16-SSOP: not the 14-pin quad pinout the schematic symbol carries,https://www.digikey.com/en/products/detail/texas-instruments/OPA4340EA-2K5/301289
+14,MCP6024-E/ST,Microchip Technology,14-TSSOP,ranked,1000,105.60,1.97,,1,R7 220 R8 2.2k,MCP6021/1R/2/3/4 (Microchip DS20001685E),,https://www.digikey.com/en/products/detail/microchip-technology/MCP6024-E-ST/683231
+15,AD8608ARZ-REEL,Analog Devices Inc.,14-SOIC,ranked,1000,105.60,4.9866,,1,R7 220 R8 2.2k,AD8605 / AD8606 / AD8608 (ADI Rev. O),,https://www.digikey.com/en/products/detail/analog-devices-inc/AD8608ARZ-REEL/993836
+16,OPA1664AIPWR,Texas Instruments,14-TSSOP,ranked,1500,158.40,2.009,,2,R1 470k R5 4.7k R6 470,"OPA1662 / OPA1664 (TI SBOS489A, Dec 2024)",,https://www.digikey.com/en/products/detail/texas-instruments/OPA1664AIPWR/3674883
+17,AD8618ARUZ-REEL,Analog Devices Inc.,14-TSSOP,ranked,1700,179.52,6.369,,1,R7 220 R8 2.2k,AD8615 / AD8616 / AD8618 (ADI Rev. G),,https://www.digikey.com/en/products/detail/analog-devices-inc/AD8618ARUZ-REEL/993824
+18,TL974IDR,Texas Instruments,14-SOIC,ranked,2480,261.89,0.6093,,2,R1 560k R7 220 R8 2.2k,TL972,,https://www.digikey.com/en/products/detail/texas-instruments/TL974IDR/1560257
+,LMV324AIDR,Texas Instruments,14-SOIC,"passes, but its engine card lacks datasheet numbers: not ranked",70,7.39,0.226,,0,,LMV321A/LMV358A/LMV324A,,https://www.digikey.com/en/products/detail/texas-instruments/LMV324AIDR/9674909
+,LM2902A-TR,3PEAK,14-TSSOP,"passes, but its engine card lacks datasheet numbers: not ranked",175,18.48,0.0975,,0,,split of row 33: LM2902(?![BK]),"made by 3PEAK, simulated on the card from ti.com",https://www.digikey.com/en/products/detail/3peak/LM2902A-TR/22169043
+,MC34074DR2G,onsemi,14-SOIC,stalled,1900,200.64,0.406,,2,R5 22k R6 2.2k,"MC33072 / MC34072 (non-A suffix), VCC=±15 V",,https://www.digikey.com/en/products/detail/onsemi/MC34074DR2G/919078
+,,,,not a candidate: the card states no quiescent current,,,,,,,split of row 33: LM2904V|LM2902K,,
+,,,,"not a candidate: no in-stock 4-circuit part matching the card (LM2904, LM2902)",,,,,,,"LM2904 (legacy, non-V, non-B) and LM2902 quad",,
+,,,,not a candidate: no in-stock 4-circuit part matching the card (LM321),,,,,,,split of row 34: LM321(?!\d),,
+,,,,"not a candidate: no in-stock 4-circuit part matching the card (LM358, LM158, LM258)",,,,,,,"LM358 (TI legacy die, SLOS068 5.7); siblings LM324 (SLOS066 ",,
+,,,,not a candidate: supply span 10.0–36.0 V does not cover 3.25–3.35 V,,,,,,,LM741C / classic bipolar uA741C at ±15 V,,
+,,,,not a candidate: supply span 6.0–44.0 V does not cover 3.25–3.35 V,,,,,,,OP07C (ADI Table 2 / TI OP07C); OP07E sibling,,
+,,,,not a candidate: supply span 8.0–44.0 V does not cover 3.25–3.35 V,,,,,,,split of row 38: OP37(?!\d),,
+,,,,not a candidate: supply span 8.0–44.0 V does not cover 3.25–3.35 V,,,,,,,OP27A/E (Table 1); OP27G and OP37 siblings,,
+,,,,not a candidate: supply span 10.0–44.0 V does not cover 3.25–3.35 V,,,,,,,split of row 39: [NS][AE]5534|\b5534,,
+,,,,not a candidate: supply span 10.0–36.0 V does not cover 3.25–3.35 V,,,,,,,NE5532 (TI Rev K); NE5534 sibling,,
+,,,,not a candidate: supply span 10.0–36.0 V does not cover 3.25–3.35 V,,,,,,,split of row 40: (?<![0-9A-Z])RC4558,,
+,,,,not a candidate: supply span 8.0–36.0 V does not cover 3.25–3.35 V,,,,,,,NJM4558 (Nisshinbo/JRC); RC4558 (TI) sibling,,
+,,,,not a candidate: supply span 10.0–36.0 V does not cover 3.25–3.35 V,,,,,,,LM833-N (National origin); TI LM833 (SLOS481) sibling die,,
+,,,,not a candidate: supply span 5.0–36.0 V does not cover 3.25–3.35 V,,,,,,,LM4562,,
+,,,,not a candidate: supply span 4.5–42.0 V does not cover 3.25–3.35 V,,,,,,,split of row 43: TL0[78][124]H,,
+,,,,not a candidate: supply span 10.0–36.0 V does not cover 3.25–3.35 V,,,,,,,TL072C legacy die (section 5.8/5.9 at ±15 V); TL07xH new die,,
+,,,,not a candidate: supply span 7.0–36.0 V does not cover 3.25–3.35 V,,,,,,,split of row 44: LF41[12](?!\d),,
+,,,,not a candidate: supply span 7.0–36.0 V does not cover 3.25–3.35 V,,,,,,,"LF353 (TI SLOS012C, and National LF353-N); siblings LF347, L",,
+,,,,not a candidate: supply span 5.0–36.0 V does not cover 3.25–3.35 V,,,,,,,OPA134 / OPA2134 / OPA4134,,
+,,,,not a candidate: supply span 4.0–36.0 V does not cover 3.25–3.35 V,,,,,,,CA3140 (non-A) at VSUPPLY=±15 V; 5 V single-supply design-gu,,
+,,,,"not a candidate: no in-stock 4-circuit part matching the card (OPA333, OPA2333, OPA4333)",,,,,,,"OPA333 / OPA2333 (TI SBOS351E, Dec 2015)",,
+,,,,not a candidate: supply span 4.5–40.0 V does not cover 3.25–3.35 V,,,,,,,"OPA1611 / OPA1612 (TI SBOS450C, Aug 2014)",,
+,,,,not a candidate: supply span 4.5–42.0 V does not cover 3.25–3.35 V,,,,,,,"TLV9351 / TLV9352 / TLV9354 (TI SBOS994E, Jan 2022)",,
+,,,,"not a candidate: no in-stock 4-circuit part matching the card (SGM8551, SGM8552, SGM8554)",,,,,,,SGM8551,,
+,,,,not a candidate: supply span 4.0–36.0 V does not cover 3.25–3.35 V,,,,,,,NJM4556A,,
+,,,,not a candidate: supply span 4.5–40.0 V does not cover 3.25–3.35 V,,,,,,,OPA2156,,
+,,,,"not a candidate: no in-stock 4-circuit part matching the card (OPA2356, OPA4356, OPA356)",,,,,,,OPA2356,,
+,,,,"not a candidate: no in-stock 4-circuit part matching the card (OPA2375, OPA4375, OPA375)",,,,,,,OPA2375,,
+,,,,not a candidate: no in-stock 4-circuit part matching the card (MAX4238),,,,,,,MAX4238,,
+,,,,not a candidate: no in-stock 4-circuit part matching the card (MAX4239),,,,,,,MAX4239,,
+,,,,not a candidate: supply span 10.0–36.0 V does not cover 3.25–3.35 V,,,,,,,AD8676,,
+,,,,not a candidate: supply span 10.0–36.0 V does not cover 3.25–3.35 V,,,,,,,AD8675,,
+,,,,not a candidate: supply span 4.0–40.0 V does not cover 3.25–3.35 V,,,,,,,"OPA188 (TI SBOS642C, Jan 2020): 7.5 high-voltage table at ±4",,

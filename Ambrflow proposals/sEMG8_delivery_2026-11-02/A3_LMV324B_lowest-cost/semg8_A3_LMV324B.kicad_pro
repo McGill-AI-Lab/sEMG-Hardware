@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "filename": "semg8_A3_LMV324B.kicad_pro",
+    "version": 1
+  },
+  "sheets": [
+    [
+      "87b664f3-ab41-4cb5-92f5-d13cb52a416b",
+      "Root"
+    ],
+    [
+      "eccf87e9-4e20-4e56-8ffc-94ca018886cf",
+      "CH1"
+    ],
+    [
+      "9b5d351e-4de1-42cc-9dd6-d45120fb89ce",
+      "CH2"
+    ],
+    [
+      "5240cc91-d8a2-4d3a-92a9-8c4f475cc710",
+      "CH3"
+    ],
+    [
+      "1f8a49f4-1035-490b-a74b-e32b45893b9c",
+      "CH4"
+    ],
+    [
+      "6a1dc1d5-b93c-4241-8c79-e9ea0d568fc7",
+      "CH5"
+    ],
+    [
+      "6aea3007-67de-4ea3-bd9e-db1832363ba9",
+      "CH6"
+    ],
+    [
+      "983eab4a-f0e7-47ec-8601-82ff90e5b88a",
+      "CH7"
+    ],
+    [
+      "f60f3933-c603-4ecc-92fb-d64765c07701",
+      "CH8"
+    ]
+  ]
+}

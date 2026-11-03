@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "filename": "semg8_A1_TLV9004.kicad_pro",
+    "version": 1
+  },
+  "sheets": [
+    [
+      "856d6902-7a5c-4237-84a5-10050d8fab91",
+      "Root"
+    ],
+    [
+      "ca9a28de-b8be-4c76-8987-75aa1087bad1",
+      "CH1"
+    ],
+    [
+      "e63b5541-0e57-45f4-8af4-55dfd7e03d3a",
+      "CH2"
+    ],
+    [
+      "a32c1039-e7c3-4430-9ed5-bba003e574f6",
+      "CH3"
+    ],
+    [
+      "d213d6ba-5321-4547-a199-6b4922317570",
+      "CH4"
+    ],
+    [
+      "24f1d1cd-49de-4a78-b9df-a51dfe984fb8",
+      "CH5"
+    ],
+    [
+      "affe8ab4-2944-4a8c-aab8-dfcc906dfbee",
+      "CH6"
+    ],
+    [
+      "c7a051a1-4094-482d-b126-df995d31cb85",
+      "CH7"
+    ],
+    [
+      "6d3c1e58-f756-482b-a855-91ad95c1e4f2",
+      "CH8"
+    ]
+  ]
+}

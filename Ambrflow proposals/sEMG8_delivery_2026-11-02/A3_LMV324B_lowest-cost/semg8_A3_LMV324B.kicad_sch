@@ -1,0 +1,2744 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "87b664f3-ab41-4cb5-92f5-d13cb52a416b")
+	(paper "A2")
+	(title_block
+		(title "sEMG-8 board A3: LMV324B-SR front ends")
+		(date "2026-11-02")
+		(rev "A")
+		(comment 1 "Power, MCU, connectors: client's open-semg-8 (audit fixes 28 Oct)")
+		(comment 2 "Front end: ambrflow design loop, engine e735a0e, vref-0065")
+		(comment 3 "Licence CERN-OHL-S-2.0 · DigiKey BOM 2026-11-02"))
+	(lib_symbols
+		(symbol "Amplifier_Operational:TLV9001IDCK"
+			(pin_names (offset 0.127))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at 7.62 2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "TLV9001IDCK" (at 11.43 -2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+				(at 5.08 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9001.pdf"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "Low-power, Rail-to-Rail, 1MHz Operational Amplifier, SOT-353"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "op amp operational amplifier"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "SOT*353*SC*70*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "TLV9001IDCK_0_1"
+				(polyline
+					(pts (xy -2.54 5.08) (xy -2.54 -5.08) (xy 7.62 0) (xy -2.54 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background))))
+			(symbol "TLV9001IDCK_1_1"
+				(pin input line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 3.81)
+					(name "V-" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 3.81)
+					(name "V+" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Connector:Conn_01x01_Pin"
+			(pin_names (offset 1.016) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Conn_01x01_Pin" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_locked" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "connector" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(symbol "Conn_01x01_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(polyline
+					(pts (xy 1.27 0) (xy 0.8636 0))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names (offset 1.016) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Conn_01x02_Pin" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_locked" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "connector" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(polyline
+					(pts (xy 1.27 0) (xy 0.8636 0))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 -2.54) (xy 0.8636 -2.54))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Connector:Conn_01x08_Pin"
+			(pin_names (offset 1.016) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Conn_01x08_Pin" (at 0 -12.7 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Generic connector, single row, 01x08, script generated"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_locked" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "connector" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(symbol "Conn_01x08_Pin_1_1"
+				(rectangle
+					(start 0.8636 7.747)
+					(end 0 7.493)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start 0.8636 -7.493)
+					(end 0 -7.747)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start 0.8636 -10.033)
+					(end 0 -10.287)
+					(stroke (width 0.1524) (type default))
+					(fill (type outline)))
+				(polyline
+					(pts (xy 1.27 7.62) (xy 0.8636 7.62))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 5.08) (xy 0.8636 5.08))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 2.54) (xy 0.8636 2.54))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 0) (xy 0.8636 0))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 -2.54) (xy 0.8636 -2.54))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 -5.08) (xy 0.8636 -5.08))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 -7.62) (xy 0.8636 -7.62))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 -10.16) (xy 0.8636 -10.16))
+					(stroke (width 0.1524) (type default))
+					(fill (type none)))
+				(pin passive line
+					(at 5.08 7.62 180)
+					(length 3.81)
+					(name "Pin_1" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_2" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_3" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_4" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_5" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_6" (effects (font (size 1.27 1.27))))
+					(number "6" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 -7.62 180)
+					(length 3.81)
+					(name "Pin_7" (effects (font (size 1.27 1.27))))
+					(number "7" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 -10.16 180)
+					(length 3.81)
+					(name "Pin_8" (effects (font (size 1.27 1.27))))
+					(number "8" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:Battery"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "Battery" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0 1.524 90) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 1.524 90) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Multiple-cell battery"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Sim.Device" "V" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Sim.Type" "DC" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "batt voltage-source cell"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(symbol "Battery_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke (width 0) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start -2.286 -1.27)
+					(end 2.286 -1.524)
+					(stroke (width 0) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke (width 0) (type default))
+					(fill (type outline)))
+				(rectangle
+					(start -1.524 -2.032)
+					(end 1.524 -2.54)
+					(stroke (width 0) (type default))
+					(fill (type outline)))
+				(polyline (pts (xy 0 1.778) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 0) (xy 0 0.254)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 -0.508) (xy 0 -0.254)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 -1.016) (xy 0 -0.762)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline
+					(pts (xy 0.762 3.048) (xy 1.778 3.048))
+					(stroke (width 0.254) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 1.27 3.556) (xy 1.27 2.54))
+					(stroke (width 0.254) (type default))
+					(fill (type none))))
+			(symbol "Battery_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:C"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "C" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0.9652 -3.81 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "C_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "C_0_1"
+				(polyline
+					(pts (xy -2.032 0.762) (xy 2.032 0.762))
+					(stroke (width 0.508) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.032 -0.762) (xy 2.032 -0.762))
+					(stroke (width 0.508) (type default))
+					(fill (type none))))
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:R"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+			(property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at -1.778 0 90) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Resistor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "R res resistor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "R_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke (width 0.254) (type default))
+					(fill (type none))))
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "RF_Module:ESP32-S3-WROOM-1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at -12.7 26.67 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "ESP32-S3-WROOM-1" (at 12.7 26.67 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "RF_Module:ESP32-S3-WROOM-1"
+				(at 0 2.54 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "ESP32?S3?WROOM?1*"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(symbol "ESP32-S3-WROOM-1_0_0"
+				(rectangle
+					(start -12.7 25.4)
+					(end 12.7 -25.4)
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(text "PSRAM" (at 5.08 2.54 900) (effects (font (size 1.27 1.27)))))
+			(symbol "ESP32-S3-WROOM-1_0_1"
+				(polyline
+					(pts (xy 7.62 -1.27) (xy 6.35 -1.27) (xy 6.35 6.35) (xy 7.62 6.35))
+					(stroke (width 0) (type default))
+					(fill (type none))))
+			(symbol "ESP32-S3-WROOM-1_1_1"
+				(pin power_in line
+					(at 0 -27.94 90)
+					(length 2.54)
+					(name "GND" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 27.94 270)
+					(length 2.54)
+					(name "3V3" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -15.24 22.86 0)
+					(length 2.54)
+					(name "EN" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 7.62 0)
+					(length 2.54)
+					(name "IO4" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 5.08 0)
+					(length 2.54)
+					(name "IO5" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 2.54 0)
+					(length 2.54)
+					(name "IO6" (effects (font (size 1.27 1.27))))
+					(number "6" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "IO7" (effects (font (size 1.27 1.27))))
+					(number "7" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -20.32 0)
+					(length 2.54)
+					(name "IO15" (effects (font (size 1.27 1.27))))
+					(number "8" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -22.86 0)
+					(length 2.54)
+					(name "IO16" (effects (font (size 1.27 1.27))))
+					(number "9" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 17.78 180)
+					(length 2.54)
+					(name "IO17" (effects (font (size 1.27 1.27))))
+					(number "10" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 15.24 180)
+					(length 2.54)
+					(name "IO18" (effects (font (size 1.27 1.27))))
+					(number "11" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "IO8" (effects (font (size 1.27 1.27))))
+					(number "12" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 12.7 180)
+					(length 2.54)
+					(name "USB_D-" (effects (font (size 1.27 1.27))))
+					(number "13" (effects (font (size 1.27 1.27))))
+					(alternate "IO19" bidirectional line))
+				(pin bidirectional line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "USB_D+" (effects (font (size 1.27 1.27))))
+					(number "14" (effects (font (size 1.27 1.27))))
+					(alternate "IO20" bidirectional line))
+				(pin bidirectional line
+					(at -15.24 10.16 0)
+					(length 2.54)
+					(name "IO3" (effects (font (size 1.27 1.27))))
+					(number "15" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -17.78 180)
+					(length 2.54)
+					(name "IO46" (effects (font (size 1.27 1.27))))
+					(number "16" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -5.08 0)
+					(length 2.54)
+					(name "IO9" (effects (font (size 1.27 1.27))))
+					(number "17" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -7.62 0)
+					(length 2.54)
+					(name "IO10" (effects (font (size 1.27 1.27))))
+					(number "18" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -10.16 0)
+					(length 2.54)
+					(name "IO11" (effects (font (size 1.27 1.27))))
+					(number "19" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -12.7 0)
+					(length 2.54)
+					(name "IO12" (effects (font (size 1.27 1.27))))
+					(number "20" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -15.24 0)
+					(length 2.54)
+					(name "IO13" (effects (font (size 1.27 1.27))))
+					(number "21" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 -17.78 0)
+					(length 2.54)
+					(name "IO14" (effects (font (size 1.27 1.27))))
+					(number "22" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "IO21" (effects (font (size 1.27 1.27))))
+					(number "23" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -20.32 180)
+					(length 2.54)
+					(name "IO47" (effects (font (size 1.27 1.27))))
+					(number "24" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -22.86 180)
+					(length 2.54)
+					(name "IO48" (effects (font (size 1.27 1.27))))
+					(number "25" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 2.54)
+					(name "IO45" (effects (font (size 1.27 1.27))))
+					(number "26" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 17.78 0)
+					(length 2.54)
+					(name "IO0" (effects (font (size 1.27 1.27))))
+					(number "27" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "IO35" (effects (font (size 1.27 1.27))))
+					(number "28" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "IO36" (effects (font (size 1.27 1.27))))
+					(number "29" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "IO37" (effects (font (size 1.27 1.27))))
+					(number "30" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "IO38" (effects (font (size 1.27 1.27))))
+					(number "31" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "IO39" (effects (font (size 1.27 1.27))))
+					(number "32" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "IO40" (effects (font (size 1.27 1.27))))
+					(number "33" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -10.16 180)
+					(length 2.54)
+					(name "IO41" (effects (font (size 1.27 1.27))))
+					(number "34" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 2.54)
+					(name "IO42" (effects (font (size 1.27 1.27))))
+					(number "35" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 20.32 180)
+					(length 2.54)
+					(name "RXD0" (effects (font (size 1.27 1.27))))
+					(number "36" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 15.24 22.86 180)
+					(length 2.54)
+					(name "TXD0" (effects (font (size 1.27 1.27))))
+					(number "37" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 12.7 0)
+					(length 2.54)
+					(name "IO2" (effects (font (size 1.27 1.27))))
+					(number "38" (effects (font (size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -15.24 15.24 0)
+					(length 2.54)
+					(name "IO1" (effects (font (size 1.27 1.27))))
+					(number "39" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -27.94 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND" (effects (font (size 1.27 1.27))))
+					(number "40" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -27.94 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND" (effects (font (size 1.27 1.27))))
+					(number "41" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Regulator_Linear:LP2985-3.3"
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at -6.35 5.715 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "LP2985-3.3" (at 0 5.715 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp2985.pdf"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "LDO regulator linear  SOT-23-5"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "SOT?23*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "LP2985-3.3_0_1"
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 4.445)
+					(stroke (width 0.254) (type default))
+					(fill (type background))))
+			(symbol "LP2985-3.3_1_1"
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VIN" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "ON/~{OFF}" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "BP" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27)))))
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "VOUT" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Regulator_Linear:TLV75533PDBV"
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at -3.81 5.715 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "TLV75533PDBV" (at 0 5.715 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27) (italic yes))))
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+				(at 0 1.27 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "LDO Regulator Fixed Positive"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "SOT?23*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "TLV75533PDBV_0_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end 5.08 -5.08)
+					(stroke (width 0.254) (type default))
+					(fill (type background))))
+			(symbol "TLV75533PDBV_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27)))))
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27)))))
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers (hide yes))
+			(pin_names (offset 0) (hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG" (at 0 1.905 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Value" "PWR_FLAG" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "flag power" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27))))))
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts (xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none))))
+			(embedded_fonts no)))
+	(text "Power: battery, analog LDO U4 -> +3.3VA (front ends), digital LDO U7 -> +3.3V (ESP32-S3)"
+		(exclude_from_sim no)
+		(at 20.32 25.4 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "66010556-f75e-4523-810c-cc3027db4527"))
+	(text "Microcontroller: ESP32-S3-WROOM-1 (ADC1 on IO1, 2, 4 to 9), EN reset RC, programming header"
+		(exclude_from_sim no)
+		(at 20.32 92.68 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "87a5fefe-028e-4449-abc1-10fad9021492"))
+	(text "Electrodes: channel pairs E1 to E8 (pin 1 +, pin 2 -), reference electrode J1"
+		(exclude_from_sim no)
+		(at 20.32 185.68 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "cdb9990c-181b-442b-ab13-d0bf352248da"))
+	(text "Body reference: J1 held at VCC/2 = 1.65 V (Patchy's reference block, buffered by U8)"
+		(exclude_from_sim no)
+		(at 20.32 208.794 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "a9d7d3f6-52e3-4825-bf9f-d94ebd754cf2"))
+	(text "Front-end channels: sheet channel.kicad_sch, eight instances"
+		(exclude_from_sim no)
+		(at 330.2 25.4 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "e183684a-6889-4365-a8ef-ebd38e4b08c2"))
+	(text "Sections from the client's base design (open-semg-8), with the supply fixes of the 28 Oct audit: U4 feeds only +3.3VA, U7 only +3.3V, both always on; one ground."
+		(exclude_from_sim no)
+		(at 20.32 262.254 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "1be41c4e-eb1f-48e0-8079-b4ef3ab8f2a1"))
+	(text "Added: J2 programming header; the body-reference buffer (U8). Each channel's BPFOUT goes to an ESP32-S3 ADC1 pin (ATTEN3, 0 to 2.9 V): CH1 IO1, CH2 IO2, CH3 IO4, CH4 IO5, CH5 IO6, CH6 IO7, CH7 IO8, CH8 IO9 (IO3, a strapping pin, is skipped)."
+		(exclude_from_sim no)
+		(at 20.32 266.064 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "2c4d2316-36a2-4311-aa35-1072a9f87f7c"))
+	(text "Boot: hold J2 pin 4 (IO0) low at reset for download mode. The front ends were simulated by the design loop; the board-level sections were checked by netlist and ERC only."
+		(exclude_from_sim no)
+		(at 20.32 269.874 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "9c5cc754-606a-4661-88fb-8254bb709438"))
+	(symbol
+		(lib_id "Device:Battery")
+		(at 22.86 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11dfcde6-a3bb-4369-9a70-c779755f72a1")
+		(property "Reference" "BT1" (at 25.4 46.99 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "LiPo 3.7 V" (at 25.4 49.53 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+			(at 22.86 49.53 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 22.86 49.53 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), BT1; footprint: a JST PH battery connector (the base names none)"
+			(at 22.86 49.53 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "78524af8-58f0-4806-bb37-93b09deb6dd1"))
+		(pin "2" (uuid "ae95fe0b-4eb3-4fc2-89ab-f929a2d9df14"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "BT1") (unit 1)))))
+	(global_label "+3.7V"
+		(shape passive)
+		(at 22.86 44.45 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ed108dc2-6166-456e-a1a0-89dd24615297"))
+	(global_label "GND"
+		(shape passive)
+		(at 22.86 54.61 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "398b22ae-ba56-4513-9d7e-5b464635c4cc"))
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 46.99 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "e8a51bd7-57fa-4d76-b1da-5769ff3ac0ac")
+		(property "Reference" "#FLG01" (at 46.99 36.195 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "PWR_FLAG" (at 46.99 34.29 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 46.99 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 46.99 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d32222b4-b8d6-4523-ad43-c512be2cb7d8"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "#FLG01") (unit 1)))))
+	(global_label "+3.7V"
+		(shape passive)
+		(at 46.99 38.1 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "faf2bed1-da69-4f19-a1e9-2471fb4290bd"))
+	(symbol
+		(lib_id "Device:C")
+		(at 82.55 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b6f38cb-3cb0-4834-971e-4339d5728a06")
+		(property "Reference" "C43" (at 82.55 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 82.55 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 82.55 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 82.55 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT" (at 82.55 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 82.55 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 82.55 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C43"
+			(at 82.55 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c1939069-583d-47a9-b631-19431dd5a39c"))
+		(pin "2" (uuid "d0cafb05-d896-4506-8800-3b193cfd9a20"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C43") (unit 1)))))
+	(global_label "+3.7V"
+		(shape passive)
+		(at 78.74 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9e75743a-7a42-43fa-9178-995740258e0a"))
+	(global_label "GND"
+		(shape passive)
+		(at 86.36 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "4d078a14-2edf-4f42-a979-4ca3a9b9c0b4"))
+	(symbol
+		(lib_id "Device:C")
+		(at 118.11 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4bf9a0d2-071d-4fbe-9d77-af0e09f8c241")
+		(property "Reference" "C45" (at 118.11 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 118.11 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 118.11 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 118.11 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT" (at 118.11 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 118.11 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 118.11 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C45"
+			(at 118.11 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "a3086f1a-ff2f-4e0e-abe2-5ee71175a32d"))
+		(pin "2" (uuid "f2c5e966-254b-40ec-8ecf-c5f2bf92286c"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C45") (unit 1)))))
+	(global_label "+3.7V"
+		(shape passive)
+		(at 114.3 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "c93ff5af-0567-4ffd-bfe5-ea336e2fb089"))
+	(global_label "GND"
+		(shape passive)
+		(at 121.92 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "0399e01a-365f-49fc-a1a9-2e5cd830c7b5"))
+	(symbol
+		(lib_id "Regulator_Linear:LP2985-3.3")
+		(at 160.02 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a0bac482-4ee5-49a3-9fe4-3a04e97a09c9")
+		(property "Reference" "U4" (at 153.67 33.655 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "LP2985-3.3"
+			(at 160.02 33.655 0)
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 160.02 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lp2985.pdf?ts=1775471349499&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLP2985"
+			(at 160.02 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "LP2985-33DBVR" (at 160.02 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 160.02 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/LP2985-33DBVR/809759"
+			(at 160.02 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), U4; output moved to the analog rail +3.3VA, enable to the battery (audit 28 Oct 2026, P0/P1)"
+			(at 160.02 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "8b1f7fe5-5df4-4d32-aad5-da332b9fd14b"))
+		(pin "2" (uuid "9f08aa4d-01bb-4ceb-a7f0-44a46163d94a"))
+		(pin "3" (uuid "e361c638-57dd-4af4-bd7f-21c6e782b5c2"))
+		(pin "4" (uuid "2134be7a-a00e-4527-9cad-d0bbe58c148d"))
+		(pin "5" (uuid "071c32cc-5c09-4639-9d4e-511712e3a8b6"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "U4") (unit 1)))))
+	(global_label "+3.7V"
+		(shape passive)
+		(at 149.86 36.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "08eeea5a-0f63-450e-bddc-88d6a86a525c"))
+	(global_label "GND"
+		(shape passive)
+		(at 160.02 46.99 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "abd4df63-171d-4c9e-a6af-22e7d29ea0d9"))
+	(global_label "+3.7V"
+		(shape passive)
+		(at 149.86 39.37 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "5b882000-bc0b-486a-a19f-f10c7647ae11"))
+	(label "LDO_BP"
+		(at 170.18 39.37 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "28c282d9-6439-4ddd-a6be-61d3a8213b8c"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 170.18 36.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "03357bc4-943b-4223-b20b-33de6fa2dd54"))
+	(symbol
+		(lib_id "Device:C")
+		(at 203.2 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12396f28-132e-4a0a-a660-3988e1104238")
+		(property "Reference" "C42" (at 203.2 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10nF" (at 203.2 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 203.2 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 203.2 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X7R103K10NT" (at 203.2 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 203.2 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X7R103K10NT/13908937"
+			(at 203.2 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C42"
+			(at 203.2 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "948097cb-c092-4126-813c-a760c97f85a7"))
+		(pin "2" (uuid "cf061825-f05d-454b-8c24-05d81effe42a"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C42") (unit 1)))))
+	(label "LDO_BP"
+		(at 199.39 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "fa00ca05-27f3-4e2a-82b4-e5bb939de855"))
+	(global_label "GND"
+		(shape passive)
+		(at 207.01 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "e647513e-8db6-481b-98b5-6eca346b41de"))
+	(symbol
+		(lib_id "Device:C")
+		(at 240.03 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5adec445-0ef6-4b46-801b-a14752dda23c")
+		(property "Reference" "C44" (at 240.03 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "2.2uF" (at 240.03 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 240.03 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 240.03 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R225M10NT" (at 240.03 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 240.03 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R225M10NT/13909171"
+			(at 240.03 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C44; now U4's output capacitor"
+			(at 240.03 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "af4eb988-c476-4098-90d6-394543495171"))
+		(pin "2" (uuid "a55a8f34-8902-4a83-8b5f-84eaf37563b2"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C44") (unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 236.22 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "527cd61f-4968-46ab-92e5-d5c519b484f5"))
+	(global_label "GND"
+		(shape passive)
+		(at 243.84 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5c9ae746-284d-441f-8f3c-8d5fc7789d54"))
+	(symbol
+		(lib_id "Regulator_Linear:TLV75533PDBV")
+		(at 279.4 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3f70dc5-0561-46e5-a6f9-08b0a419a255")
+		(property "Reference" "U7" (at 275.59 33.655 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TLV75533PDBV"
+			(at 279.4 33.655 0)
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 279.4 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv755p"
+			(at 279.4 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "TLV75533PDBVR" (at 279.4 39.37 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 279.4 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/TLV75533PDBVR/9356541"
+			(at 279.4 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), U7; enable to the battery (audit 28 Oct 2026, P1)"
+			(at 279.4 39.37 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "64bfbf55-6e39-4aa4-aa10-891f06699816"))
+		(pin "2" (uuid "b96ec62f-d5fd-42d5-9747-e7f7c7cf11c0"))
+		(pin "3" (uuid "4a70ecd6-417e-440d-a6e8-1e61309125b5"))
+		(pin "4" (uuid "c42d5729-18a1-4c57-9668-c15cbd7e9c40"))
+		(pin "5" (uuid "51bc46dd-d142-4a51-bcd2-cd1756993cf8"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "U7") (unit 1)))))
+	(global_label "+3.7V"
+		(shape passive)
+		(at 271.78 36.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "114e450d-c030-485c-86e8-37ffc466cd5a"))
+	(global_label "GND"
+		(shape passive)
+		(at 279.4 46.99 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "f79b5ce6-8a68-4b87-9119-7b073208ff89"))
+	(global_label "+3.7V"
+		(shape passive)
+		(at 271.78 39.37 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "888fc0d9-d034-4a47-95f1-cc988ff56078"))
+	(no_connect (at 284.48 39.37) (uuid "384c57b3-aa92-4894-8576-082106ab67a5"))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 287.02 36.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b70a1a8b-3702-4061-b867-1ccc213c6d8f"))
+	(symbol
+		(lib_id "Device:C")
+		(at 33.02 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3127badc-6aa1-40c0-b5f6-ee6eb1647a25")
+		(property "Reference" "C64" (at 33.02 71.12 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0.1uF" (at 33.02 78.74 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 33.02 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 33.02 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 33.02 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 33.02 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 33.02 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C20 (renumbered: TI's core has a C20)"
+			(at 33.02 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "58efe311-8552-48fe-90a8-cb200c4129c0"))
+		(pin "2" (uuid "74a58242-77d3-4556-99a4-62639114effd"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C64") (unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 29.21 74.93 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "5ee8f776-9d91-4240-8a45-fb1ca2dc985f"))
+	(global_label "GND"
+		(shape passive)
+		(at 36.83 74.93 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "3efc82bd-09d3-4624-805a-603d61894d91"))
+	(symbol
+		(lib_id "Device:C")
+		(at 68.58 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a8e509c-ac20-430f-a356-6fff4a66f52c")
+		(property "Reference" "C21" (at 68.58 71.12 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10uF" (at 68.58 78.74 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 68.58 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/cx5r-KGM.pdf"
+			(at 68.58 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "0603ZD106MAT2A" (at 68.58 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 68.58 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kyocera-avx/0603ZD106MAT2A/3900648"
+			(at 68.58 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C21"
+			(at 68.58 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "5d384221-9960-4dbc-ae9b-40498e61b80e"))
+		(pin "2" (uuid "2a7ae799-50be-4946-9360-ebaf36079925"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C21") (unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 64.77 74.93 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "4dd4cbc4-68ce-4a21-ab6e-f3d49d9d7442"))
+	(global_label "GND"
+		(shape passive)
+		(at 72.39 74.93 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "faad47bd-5aa9-488d-abb7-bebae03a2a41"))
+	(symbol
+		(lib_id "Device:C")
+		(at 104.14 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26534841-fefd-424b-87df-cc300f00631f")
+		(property "Reference" "C46" (at 104.14 71.12 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "220uF" (at 104.14 78.74 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 104.14 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 104.14 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC32X5R227M6R3NT"
+			(at 104.14 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 104.14 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC32X5R227M6R3NT/12140455"
+			(at 104.14 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C46 (200 uF; 220 uF is the nearest stocked value)"
+			(at 104.14 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b36d3715-864f-4446-8dd5-7921f21dfea1"))
+		(pin "2" (uuid "d56fc72e-b509-4462-87cf-a46fce7bbf65"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C46") (unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 100.33 74.93 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "5a04ee7c-d5ce-4847-92f5-9a82695cc805"))
+	(global_label "GND"
+		(shape passive)
+		(at 107.95 74.93 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "42f4b22b-efd8-4113-93d5-7fe621a1a704"))
+	(symbol
+		(lib_id "Device:C")
+		(at 139.7 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60bb2098-dc97-4c73-8302-06b63147b170")
+		(property "Reference" "C47" (at 139.7 71.12 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "22uF" (at 139.7 78.74 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 139.7 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 139.7 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R226M6R3NT"
+			(at 139.7 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 139.7 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R226M6R3NT/13909373"
+			(at 139.7 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C47"
+			(at 139.7 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f910fc10-1630-4ec7-bfb9-cc920c95ae10"))
+		(pin "2" (uuid "666808d4-b1ff-4041-b8cb-1f4bf448cddf"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C47") (unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 135.89 74.93 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "bffda285-0f25-4b75-bb6c-7f1e058d8762"))
+	(global_label "GND"
+		(shape passive)
+		(at 143.51 74.93 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a0ca569b-25af-4f48-ac69-d2be068e9fb4"))
+	(symbol
+		(lib_id "Device:C")
+		(at 175.26 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a5d97dbe-e1c7-4928-8f08-99258fa6f351")
+		(property "Reference" "C48" (at 175.26 71.12 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "0.1uF" (at 175.26 78.74 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 175.26 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 175.26 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 175.26 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 175.26 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 175.26 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C48"
+			(at 175.26 74.93 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d34e0d50-53eb-48a7-8f1a-6387e9966b50"))
+		(pin "2" (uuid "06e752c4-8611-4528-b4cd-42150b97731b"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C48") (unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 171.45 74.93 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "2133bed7-931f-46d4-8dd4-d7529bb2ce4c"))
+	(global_label "GND"
+		(shape passive)
+		(at 179.07 74.93 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a556caa3-b80f-45d2-8a4d-3d1cf7656dd6"))
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 199.39 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "d77244a0-9a2c-4fd3-b1e1-128514d188e1")
+		(property "Reference" "#FLG02" (at 199.39 73.025 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "PWR_FLAG" (at 199.39 71.12 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "" (at 199.39 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 199.39 74.93 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "6baee486-b677-4215-a2e0-49394004de63"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "#FLG02") (unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 199.39 74.93 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9adbfccd-6811-423e-a313-06c1ba1155cb"))
+	(symbol
+		(lib_id "RF_Module:ESP32-S3-WROOM-1")
+		(at 44.45 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6305949-85a1-4afc-977b-dfa762204945")
+		(property "Reference" "U6" (at 31.75 113.03 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "ESP32-S3-WROOM-1" (at 57.15 113.03 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "RF_Module:ESP32-S3-WROOM-1"
+			(at 44.45 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+			(at 44.45 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "ESP32-S3-WROOM-1-N8"
+			(at 44.45 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Espressif Systems"
+			(at 44.45 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N8/15200089"
+			(at 44.45 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), U6"
+			(at 44.45 139.7 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "bb6bedc0-86c0-41fb-886e-7c8d2a093bee"))
+		(pin "2" (uuid "17e9f32b-9e91-4d02-b1dd-e79dc1f9bcf8"))
+		(pin "3" (uuid "2f960d8b-3a97-4b0d-bee4-95ec1a24e0db"))
+		(pin "4" (uuid "8acdf6d7-2c19-4846-bbd3-5551fe1430a7"))
+		(pin "5" (uuid "7ba5184b-eeea-43b9-ae3b-b9d28bbf7890"))
+		(pin "6" (uuid "33edee39-d194-4924-9fe0-f23e063bf210"))
+		(pin "7" (uuid "97dda223-300a-49e0-a586-c07b58e96b82"))
+		(pin "8" (uuid "9f5d3c0f-89a0-4474-90da-c419b815529b"))
+		(pin "9" (uuid "72edcb33-9fdf-475d-9a79-c1330850fade"))
+		(pin "10" (uuid "d9189767-194c-466d-b4d0-74602383c532"))
+		(pin "11" (uuid "2b62762f-befc-4f35-a3e3-fe6dda3730e0"))
+		(pin "12" (uuid "84a216cf-fb05-4dd2-8be5-8a2fff5f676a"))
+		(pin "13" (uuid "17c213ff-1a68-4c21-b971-87ec8c0cf6d3"))
+		(pin "14" (uuid "b1dcc82e-f43a-4abc-813f-c891599ca150"))
+		(pin "15" (uuid "21cc0a7c-b53d-4f3c-aab1-cff8a76e3410"))
+		(pin "16" (uuid "4b4b2d7f-cf1c-4e17-9cfc-963d97e1a8c2"))
+		(pin "17" (uuid "5e02d38e-db65-4baf-a82e-a78f0444501b"))
+		(pin "18" (uuid "09db6c99-e398-4eb3-af96-14e9b8b58edc"))
+		(pin "19" (uuid "c19ce496-2a7c-4588-9b2b-4786c2e0010c"))
+		(pin "20" (uuid "0ec886e3-cec4-4313-8053-0156708d0123"))
+		(pin "21" (uuid "963895f2-fae2-419c-b12f-771a2571f037"))
+		(pin "22" (uuid "1f56ead2-88e6-4e2a-866a-3744b98c2d28"))
+		(pin "23" (uuid "5f3a1923-11bc-4df7-b449-d3614bf1bda3"))
+		(pin "24" (uuid "8aa40af6-219a-4245-9c56-a6959a9bd5b8"))
+		(pin "25" (uuid "7ee1b1bf-9912-4fee-aaac-ca8eedce1bf4"))
+		(pin "26" (uuid "79958595-f70f-486c-b27b-9abc1ad3ea6a"))
+		(pin "27" (uuid "bf714904-cb5d-4e3b-9eb5-84841c6b3730"))
+		(pin "28" (uuid "660203ec-23ec-4c17-af09-b3481ab1ff95"))
+		(pin "29" (uuid "dbe467fe-8bed-4782-a687-6a9599e45cb1"))
+		(pin "30" (uuid "ce94af50-be3d-4e56-a50e-99d84e8b2f2b"))
+		(pin "31" (uuid "5b685d58-a469-4712-b2f3-4f87639a1b72"))
+		(pin "32" (uuid "0e698bf8-8431-4f0a-9e86-7fab0eec6594"))
+		(pin "33" (uuid "bbeaf4f3-08e9-44e7-9ede-85ec15ff467a"))
+		(pin "34" (uuid "79a608fa-441d-4e5a-bf5f-88a226a30eba"))
+		(pin "35" (uuid "8880637f-f560-413c-8ad8-b33fad49df6a"))
+		(pin "36" (uuid "be2a2591-56a2-412e-8030-c35212b2bbd5"))
+		(pin "37" (uuid "3ebb636d-5b47-4134-afb4-b5d4c5b41895"))
+		(pin "38" (uuid "bb073462-be6f-4b0b-bd9c-828cb0ceb64f"))
+		(pin "39" (uuid "ee817f94-429e-437c-a071-8488d5ac932b"))
+		(pin "40" (uuid "1fb8f2ea-3236-4cc2-89b4-051f48210c9b"))
+		(pin "41" (uuid "3ef0031c-5fbb-42a2-b6f5-e78c887dd061"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "U6") (unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 44.45 167.64 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "d67454f4-ebe3-4c1a-b77b-3859a786478c"))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 44.45 111.76 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "8d6ced77-adf1-4a4f-9daf-512cdf7502d6"))
+	(label "EN"
+		(at 29.21 116.84 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "6611f3df-99ca-43ed-8aa8-8be2929c78c7"))
+	(label "CH3_OUT"
+		(at 29.21 132.08 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "f924929a-418e-4804-859e-0aaadc56fae4"))
+	(label "CH4_OUT"
+		(at 29.21 134.62 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "c8755309-16c2-44b7-9182-98269e7e10c8"))
+	(label "CH5_OUT"
+		(at 29.21 137.16 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "419ab05e-c6e8-4705-96ba-da323d9cfabe"))
+	(label "CH6_OUT"
+		(at 29.21 139.7 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "bb380a0c-1f8b-4cf1-963f-80deb11cd304"))
+	(no_connect (at 29.21 160.02) (uuid "69fe4fd6-7997-4293-a397-a00fafc11156"))
+	(no_connect (at 29.21 162.56) (uuid "ed5ba54a-c687-454a-af09-29c936b0e078"))
+	(no_connect (at 59.69 121.92) (uuid "f0c9d386-93d7-4e57-ad46-8a5ff7528abe"))
+	(no_connect (at 59.69 124.46) (uuid "140e4d3d-507a-4705-a0d1-443fb42c50ce"))
+	(label "CH7_OUT"
+		(at 29.21 142.24 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "fc115cbd-346e-4632-b089-72281c195dc2"))
+	(label "USB_DM"
+		(at 59.69 127 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "464c6d35-c62a-4fc6-83fe-7907cf77b325"))
+	(label "USB_DP"
+		(at 59.69 129.54 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "8c7708bb-58cc-4bed-bfb3-c3f19cf031ac"))
+	(no_connect (at 29.21 129.54) (uuid "3bc5188a-498e-4fe7-bdd2-4b01d8898174"))
+	(no_connect (at 59.69 157.48) (uuid "9daece81-b3eb-4fff-910d-0fc102d61034"))
+	(label "CH8_OUT"
+		(at 29.21 144.78 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "39d8ce5e-a5b6-4e31-8a90-529e61adce6c"))
+	(no_connect (at 29.21 147.32) (uuid "a4231c5d-bbce-4560-ba2f-713645a510ba"))
+	(no_connect (at 29.21 149.86) (uuid "19db72f3-db20-4d32-a0b1-89c42e3ca0cd"))
+	(no_connect (at 29.21 152.4) (uuid "cd66366f-3b4b-4702-b5d1-3df3a55b49ba"))
+	(no_connect (at 29.21 154.94) (uuid "0df0dcf6-7607-48eb-a57e-9983de7abe5f"))
+	(no_connect (at 29.21 157.48) (uuid "ec9923b4-7777-4cc5-8a47-d02c5acdf6d0"))
+	(no_connect (at 59.69 132.08) (uuid "ece30a8a-2e4c-4f2b-a1c3-3dbb172ce5d4"))
+	(no_connect (at 59.69 160.02) (uuid "ae1a00d6-d72d-4ec9-9b02-c4a24b233571"))
+	(no_connect (at 59.69 162.56) (uuid "68f19fc4-debb-4ca9-af44-15d40f577f42"))
+	(no_connect (at 59.69 154.94) (uuid "af4683a7-5d8e-4f4d-8513-afff11bc1478"))
+	(label "BOOT"
+		(at 29.21 121.92 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "f6daea0e-6ef8-405c-8f60-76d15c6630be"))
+	(no_connect (at 59.69 134.62) (uuid "cfd44ece-10fc-46d5-86b4-0feb13cb744d"))
+	(no_connect (at 59.69 137.16) (uuid "5b568132-b073-47d2-9be4-c58fa883a9c0"))
+	(no_connect (at 59.69 139.7) (uuid "9b433352-a6d8-47d1-b3e1-69b6c47709cf"))
+	(no_connect (at 59.69 142.24) (uuid "1c1b989b-837a-44d0-aed5-1b64d5c9e1c1"))
+	(no_connect (at 59.69 144.78) (uuid "07577c32-52a0-41f1-a729-7bc9f917c19e"))
+	(no_connect (at 59.69 147.32) (uuid "d7978664-5f42-4d72-9367-d33e89841b68"))
+	(no_connect (at 59.69 149.86) (uuid "53af3cd1-d312-432b-b559-fab0ccd817c6"))
+	(no_connect (at 59.69 152.4) (uuid "fa060360-9cb1-4a1d-b126-5f5853719c2b"))
+	(label "U0RXD"
+		(at 59.69 119.38 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "944f6103-100b-4d66-963e-f2f7998a188d"))
+	(label "U0TXD"
+		(at 59.69 116.84 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5518e61f-cf87-4484-9faf-161779bee8e6"))
+	(label "CH2_OUT"
+		(at 29.21 127 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "3fb21d78-3e9d-49c8-a38d-7c7c1162216c"))
+	(label "CH1_OUT"
+		(at 29.21 124.46 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "e5758049-6911-4950-9326-9145d8c8879b"))
+	(global_label "GND"
+		(shape passive)
+		(at 44.45 167.64 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "beda3d27-1ef3-4f72-88e6-200119ca9a0c"))
+	(global_label "GND"
+		(shape passive)
+		(at 44.45 167.64 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "cf4e3236-bae3-43ea-acce-8236b97e0ffd"))
+	(symbol
+		(lib_id "Device:R")
+		(at 85.09 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cac5217a-67af-4d1b-8735-9874b1f5aebb")
+		(property "Reference" "R20" (at 85.09 101.6 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10k" (at 85.09 106.68 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 85.09 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 85.09 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1002CTD" (at 85.09 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 85.09 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1002CTD/13570470"
+			(at 85.09 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), R20"
+			(at 85.09 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "751ae11f-c352-441b-bb5f-2b5621e619f4"))
+		(pin "2" (uuid "18b438ca-8b6a-4796-ac0c-40cc521b5e27"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "R20") (unit 1)))))
+	(label "EN"
+		(at 81.28 104.14 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "3a268b3a-2c24-40b0-b603-7ffe6648a73e"))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 88.9 104.14 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "1f98b204-299b-408e-b6e2-44ea8bc01188"))
+	(symbol
+		(lib_id "Device:C")
+		(at 115.57 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53abb0d7-e878-490a-a909-1be48692ae68")
+		(property "Reference" "C49" (at 115.57 101.6 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1uF" (at 115.57 109.22 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 115.57 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 115.57 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R105M25NT"
+			(at 115.57 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 115.57 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R105M25NT/13908175"
+			(at 115.57 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), C49"
+			(at 115.57 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "2f199f89-0b25-4a0f-bafc-06434656427d"))
+		(pin "2" (uuid "ea314417-a4ee-4920-8b98-87c17bcd91f3"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C49") (unit 1)))))
+	(label "EN"
+		(at 111.76 105.41 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "7c27d085-bb83-4d27-a473-a32d0127c3c9"))
+	(global_label "GND"
+		(shape passive)
+		(at 119.38 105.41 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ba05a8ab-508e-43ac-869f-3f5f2b49d6eb"))
+	(symbol
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 138.43 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99da0638-0961-4db8-a4e4-11b755ac8b14")
+		(property "Reference" "J2" (at 138.43 100.33 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "PROG" (at 138.43 123.19 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 138.43 110.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 138.43 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "added: programming and debug header (the base leaves USB, UART and IO0 unconnected)"
+			(at 138.43 110.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "44cf97f1-7f1a-49ab-aecc-f529e3c43231"))
+		(pin "2" (uuid "a937dfb3-35a7-4f25-a9fe-e3524350a434"))
+		(pin "3" (uuid "4fff8eee-db36-4283-9e6e-e2cf4b4970ed"))
+		(pin "4" (uuid "83f1f396-a292-434e-97bc-92cd1e047c5f"))
+		(pin "5" (uuid "a0c41f4d-53ba-460c-af01-3d82e4f4d8e7"))
+		(pin "6" (uuid "5df3c77f-90d2-4361-aad1-7fafa842df46"))
+		(pin "7" (uuid "688d1e01-f7fc-4722-a5fd-974694528a30"))
+		(pin "8" (uuid "93e5f741-4462-4be2-8b2c-39955dc16528"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "J2") (unit 1)))))
+	(global_label "+3.3V"
+		(shape passive)
+		(at 143.51 102.87 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6c52cc22-5b5a-46dd-9f3f-9f9fd638a13c"))
+	(global_label "GND"
+		(shape passive)
+		(at 143.51 105.41 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "62629d6f-ba78-42b0-86ad-5abb05da4557"))
+	(label "EN"
+		(at 143.51 107.95 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "fc2d2434-e6a8-437c-98a0-1085ec6977df"))
+	(label "BOOT"
+		(at 143.51 110.49 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "579a164d-a530-409c-9aa2-c0eebf55fff4"))
+	(label "U0TXD"
+		(at 143.51 113.03 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d9634be2-987f-48df-b7ff-f1c11e338f30"))
+	(label "U0RXD"
+		(at 143.51 115.57 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "81110617-4698-4718-94c9-2d8d79e9abca"))
+	(label "USB_DM"
+		(at 143.51 118.11 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ba83357b-f57f-4bd8-bea0-06aa2b2f13bf"))
+	(label "USB_DP"
+		(at 143.51 120.65 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "65aab1e5-9c3a-434f-b615-5f308917caba"))
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 20.32 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ac7713b9-a9fa-4f96-8422-94249e0f7b30")
+		(property "Reference" "E1" (at 20.32 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Electrodes" (at 20.32 200.66 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 20.32 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 20.32 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), E1; pin 1 positive, pin 2 negative input as on the base"
+			(at 20.32 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "0c35d8e8-eb40-43ec-8290-f964f2e086ac"))
+		(pin "2" (uuid "77a2345d-fb3a-499d-99f5-5c011125148a"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "E1") (unit 1)))))
+	(label "CH1_INP"
+		(at 25.4 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6b02be72-0119-4414-a353-eadde12b1f34"))
+	(label "CH1_INN"
+		(at 25.4 198.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "bc8d3248-9dfc-4a33-8816-6e2b42748514"))
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 44.45 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f62eea13-71a6-4ba9-acbf-8fc466bd6a4d")
+		(property "Reference" "E2" (at 44.45 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Electrodes" (at 44.45 200.66 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 44.45 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 44.45 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), E2; pin 1 positive, pin 2 negative input as on the base"
+			(at 44.45 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "99a40c73-4845-4dd1-9316-1c2f4dfcabf6"))
+		(pin "2" (uuid "d5944da2-ed17-49a1-9fad-1640dfcd800a"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "E2") (unit 1)))))
+	(label "CH2_INP"
+		(at 49.53 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "05c6bed7-dd00-4561-b286-8a12af40358a"))
+	(label "CH2_INN"
+		(at 49.53 198.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "0ae10aef-1583-4ff9-a269-9fc58129ce9b"))
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 68.58 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b7117de-7a6e-408b-a609-a9232672a948")
+		(property "Reference" "E3" (at 68.58 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Electrodes" (at 68.58 200.66 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 68.58 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 68.58 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), E3; pin 1 positive, pin 2 negative input as on the base"
+			(at 68.58 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "6a412a4b-3ac2-48dd-98f9-ab5d235e7dd0"))
+		(pin "2" (uuid "1d1dd864-e1b9-4100-82cd-4409e2e24271"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "E3") (unit 1)))))
+	(label "CH3_INP"
+		(at 73.66 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "993fa77e-fa26-4260-92d1-3a72181a0ace"))
+	(label "CH3_INN"
+		(at 73.66 198.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "f3bfd151-4438-4ba6-8bcb-9afd854b21f1"))
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 92.71 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8c6b602-e621-4792-b1ca-bf7c85a9f376")
+		(property "Reference" "E4" (at 92.71 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Electrodes" (at 92.71 200.66 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 92.71 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 92.71 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), E4; pin 1 positive, pin 2 negative input as on the base"
+			(at 92.71 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d44e968c-14f5-4099-9f07-b7ef64959c8e"))
+		(pin "2" (uuid "7cb18780-4c0b-4942-ab2f-7c835d9e588f"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "E4") (unit 1)))))
+	(label "CH4_INP"
+		(at 97.79 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5ba46bd5-d3ab-4cc1-82d8-c730a74e0bf1"))
+	(label "CH4_INN"
+		(at 97.79 198.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "18fdd5ea-4672-4914-b1f3-524e5dc85092"))
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 116.84 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9dd9e26d-503f-4a05-9b03-12ca86014bed")
+		(property "Reference" "E5" (at 116.84 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Electrodes" (at 116.84 200.66 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 116.84 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 116.84 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), E5; pin 1 positive, pin 2 negative input as on the base"
+			(at 116.84 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f837ecb9-eac0-4cf4-849c-3dd6ebd1d045"))
+		(pin "2" (uuid "2d777f61-2c22-437b-880f-aa5a220adc8a"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "E5") (unit 1)))))
+	(label "CH5_INP"
+		(at 121.92 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "838215d0-01de-44de-860f-7edc83ef27c9"))
+	(label "CH5_INN"
+		(at 121.92 198.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "32402825-4fe3-48be-9041-4b99cb56c63a"))
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 140.97 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe15d5a3-e8a3-4d70-92e5-aea3557a4e46")
+		(property "Reference" "E6" (at 140.97 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Electrodes" (at 140.97 200.66 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 140.97 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 140.97 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), E6; pin 1 positive, pin 2 negative input as on the base"
+			(at 140.97 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "97ce9c0a-1865-41e2-9404-295ba4703d50"))
+		(pin "2" (uuid "e241a1a8-67fd-4e33-b3d5-481dcf0c9732"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "E6") (unit 1)))))
+	(label "CH6_INP"
+		(at 146.05 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "0b96243d-e1f9-4da9-ac9f-d17a3bf6a559"))
+	(label "CH6_INN"
+		(at 146.05 198.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "e30698c2-5dd8-4301-aae0-9a9a5bb6e0cc"))
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 165.1 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e00625a7-3e90-4b03-9908-e38208ab6460")
+		(property "Reference" "E7" (at 165.1 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Electrodes" (at 165.1 200.66 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 165.1 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 165.1 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), E7; pin 1 positive, pin 2 negative input as on the base"
+			(at 165.1 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "b8200937-898b-4aac-a793-9e19bf0c50a0"))
+		(pin "2" (uuid "065f1a59-4c37-4aef-a0f2-2f33cf4427fc"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "E7") (unit 1)))))
+	(label "CH7_INP"
+		(at 170.18 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6fb521e6-31d7-4013-a133-397a4fec9f00"))
+	(label "CH7_INN"
+		(at 170.18 198.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a51fae03-ec19-46f0-8e50-ce9b869ce0d2"))
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 189.23 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61a60ede-f9a4-4926-863e-985301682caa")
+		(property "Reference" "E8" (at 189.23 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Electrodes" (at 189.23 200.66 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 189.23 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 189.23 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), E8; pin 1 positive, pin 2 negative input as on the base"
+			(at 189.23 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1c151998-e8cb-44cf-8046-3f55e54c103a"))
+		(pin "2" (uuid "feda45f4-19a4-47b4-ad36-08facabf594f"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "E8") (unit 1)))))
+	(label "CH8_INP"
+		(at 194.31 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b8bddf13-d027-45d1-9c8c-0a26d607dad7"))
+	(label "CH8_INN"
+		(at 194.31 198.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d5be6c15-f855-463d-a8f1-babad801e098"))
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 213.36 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00118aaa-6a05-48ca-a051-e61dca45f538")
+		(property "Reference" "J1" (at 213.36 193.04 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "Reference Electrode" (at 213.36 198.12 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 213.36 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 213.36 195.58 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "base design open-semg-8.kicad_sch (McGill-AI-Lab/sEMG-Hardware), J1"
+			(at 213.36 195.58 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "4b9f7e62-9448-4fd2-ac49-598af7e95686"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "J1") (unit 1)))))
+	(label "BODY_REF"
+		(at 218.44 195.58 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "fd44c073-9c0c-45a7-a9da-dfd5c239c82e"))
+	(symbol
+		(lib_id "Device:R")
+		(at 34.29 219.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64278584-0eb2-4da4-a452-8a23dc628310")
+		(property "Reference" "R21" (at 34.29 217.17 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1M" (at 34.29 222.25 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 34.29 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 34.29 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1004CT" (at 34.29 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 34.29 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1004CT/13571119"
+			(at 34.29 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "added: Patchy reference block R1 (its own value)"
+			(at 34.29 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f5237cd8-c71b-4bbe-9209-ed4b0b3a51cf"))
+		(pin "2" (uuid "349cbca7-fe0e-4977-8dd7-9b1c92c6d4e2"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "R21") (unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 30.48 219.71 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "338df026-c37a-403c-916b-acdd47ca35b4"))
+	(label "REFMID"
+		(at 38.1 219.71 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "9ec7167f-5bdf-4fac-9034-a5aa6531a310"))
+	(symbol
+		(lib_id "Device:R")
+		(at 68.58 219.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "176f1620-6f81-4d01-a0da-79e2adbfda87")
+		(property "Reference" "R22" (at 68.58 217.17 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1M" (at 68.58 222.25 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 68.58 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 68.58 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1004CT" (at 68.58 219.71 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 68.58 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1004CT/13571119"
+			(at 68.58 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "added: Patchy reference block R2 (its own value)"
+			(at 68.58 219.71 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e7843200-8589-4afb-9592-21c970062126"))
+		(pin "2" (uuid "3869c4a5-c744-4279-8037-f02704610296"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "R22") (unit 1)))))
+	(label "REFMID"
+		(at 64.77 219.71 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "2bdb3a69-1e33-4af8-86e1-be3a6c58dd9b"))
+	(global_label "GND"
+		(shape passive)
+		(at 72.39 219.71 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "1b2528f1-187a-4258-8ab7-9c9764167b9c"))
+	(symbol
+		(lib_id "Device:C")
+		(at 102.87 220.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e5fdbac-120c-4a17-8c52-9486b2d308fa")
+		(property "Reference" "C60" (at 102.87 217.17 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 102.87 224.79 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 102.87 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 102.87 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 102.87 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 102.87 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 102.87 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "added: Patchy reference block C2"
+			(at 102.87 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "a3ae427f-07a7-4f6f-8605-b1692fdd619d"))
+		(pin "2" (uuid "d48dec56-91ea-47f4-8d14-49068414c66a"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C60") (unit 1)))))
+	(label "REFMID"
+		(at 99.06 220.98 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "70dfc9dc-e056-4a5b-867a-7fc7fe91181b"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 106.68 220.98 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "98fe73cf-ffa5-463c-80fe-482a3f068343"))
+	(symbol
+		(lib_id "Device:C")
+		(at 138.43 220.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be47d2a2-dbfa-42b3-9233-959a49ced694")
+		(property "Reference" "C61" (at 138.43 217.17 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "2.2uF" (at 138.43 224.79 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 138.43 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 138.43 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R225M10NT"
+			(at 138.43 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 138.43 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R225M10NT/13909171"
+			(at 138.43 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "added: Patchy reference block C3"
+			(at 138.43 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1963f7dd-85ad-481e-987c-2a6f354346ab"))
+		(pin "2" (uuid "28772b78-4b94-41b5-b414-fa8710071dd5"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C61") (unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 134.62 220.98 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "ecd1c94f-a4c1-4300-b818-f94faa68c526"))
+	(label "REFMID"
+		(at 142.24 220.98 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "48095837-1ab8-438a-b072-cdf39c3fdcd5"))
+	(symbol
+		(lib_id "Amplifier_Operational:TLV9001IDCK")
+		(at 176.53 237.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "36b52b8b-c61b-4f98-8fa0-ab3182c3829c")
+		(property "Reference" "U8" (at 184.15 234.95 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TLV9001IDCK" (at 187.96 240.03 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 176.53 237.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv9001"
+			(at 176.53 237.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "TLV9001IDCKR" (at 176.53 237.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 176.53 237.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/TLV9001IDCKR/9771968"
+			(at 176.53 237.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "added: buffer driving the reference electrode at VCC/2 (Patchy drives REF from its buffered mid-supply)"
+			(at 176.53 237.49 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d17263f5-c8be-49e8-a560-25fc03266b09"))
+		(pin "2" (uuid "19b13626-fc37-4ff7-8bd1-af209c85b4b4"))
+		(pin "3" (uuid "b4b36253-9612-42a6-85b9-f856b2efb453"))
+		(pin "4" (uuid "bb316ebb-16c2-4f00-9a0d-09eab999da0f"))
+		(pin "5" (uuid "0d995f81-9f0d-4633-8c16-b389384d2dbd"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "U8") (unit 1)))))
+	(label "REFMID"
+		(at 171.45 234.95 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "69135a52-2195-4dc0-9cec-5fd39e688a39"))
+	(global_label "GND"
+		(shape passive)
+		(at 176.53 245.11 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "feb03874-061c-4847-81de-8d2102b1d23d"))
+	(label "BODY_REF"
+		(at 171.45 240.03 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "c9b8b242-644e-437d-8755-ee038f2d7d8a"))
+	(label "BODY_REF"
+		(at 186.69 237.49 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6c9fe6f9-efbb-4239-b83f-3885f9f0fa3e"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 176.53 229.87 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a5aa2330-1e23-45cc-8293-ab6ec38c45be"))
+	(symbol
+		(lib_id "Device:C")
+		(at 220.98 220.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d339ac18-01c9-49e7-9319-13341601685d")
+		(property "Reference" "C62" (at 220.98 217.17 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 220.98 224.79 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 220.98 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 220.98 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 220.98 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 220.98 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 220.98 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "added: U8 bypass"
+			(at 220.98 220.98 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "27478424-2614-4d26-8c62-2b989c907a92"))
+		(pin "2" (uuid "02f07515-35aa-4972-9c14-bb6ded687015"))
+		(instances
+			(project "semg8_A3_LMV324B"
+				(path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (reference "C62") (unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 217.17 220.98 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8ac2405d-bd8c-408b-8268-279c8fc4c5b1"))
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 220.98 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ff405086-96aa-459c-ac6a-241ff7120f2c"))
+	(label "CH1_INP"
+		(at 341.63 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "205ab587-baca-4823-8631-2af9b20a2793"))
+	(label "CH1_INN"
+		(at 341.63 40.64 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "a7818970-f0ce-422b-bd73-c4703ea178cf"))
+	(label "CH1_OUT"
+		(at 367.03 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6893cf03-b390-43b9-86c5-62c93fc44b8d"))
+	(sheet
+		(at 341.63 35.56)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke (width 0.1524) (type solid))
+		(fill (color 255 255 225 1.0000))
+		(uuid "eccf87e9-4e20-4e56-8ffc-94ca018886cf")
+		(property "Sheetname" "CH1"
+			(at 341.63 34.86 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom)))
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 341.63 43.78 0)
+			(effects (font (size 1.27 1.27)) (justify left top)))
+		(pin "VINP" input
+			(at 341.63 38.1 180)
+			(uuid "e8726e16-514d-421f-9c4a-6d13faa0680d")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "VINN" input
+			(at 341.63 40.64 180)
+			(uuid "c0f72e97-fded-4ec1-b2a7-16ba3f75e4fe")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "BPFOUT" output
+			(at 367.03 38.1 0)
+			(uuid "66c4a7fc-30c2-4cf3-a8dc-9fdd5e45e578")
+			(effects (font (size 1.27 1.27)) (justify right)))
+		(instances (project "semg8_A3_LMV324B" (path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (page "2")))))
+	(label "CH2_INP"
+		(at 400.05 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8737234e-a6d9-4b99-bb46-2328988930c4"))
+	(label "CH2_INN"
+		(at 400.05 40.64 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "4f84eb8e-ca08-4f70-bed7-cd843c3b214e"))
+	(label "CH2_OUT"
+		(at 425.45 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "f2808aae-4b84-486a-b422-ed4a75923434"))
+	(sheet
+		(at 400.05 35.56)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke (width 0.1524) (type solid))
+		(fill (color 255 255 225 1.0000))
+		(uuid "9b5d351e-4de1-42cc-9dd6-d45120fb89ce")
+		(property "Sheetname" "CH2"
+			(at 400.05 34.86 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom)))
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 400.05 43.78 0)
+			(effects (font (size 1.27 1.27)) (justify left top)))
+		(pin "VINP" input
+			(at 400.05 38.1 180)
+			(uuid "95df6f2e-c227-473a-a558-ee0b6010b90a")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "VINN" input
+			(at 400.05 40.64 180)
+			(uuid "d5712a0b-8b1f-4e91-88c2-972ed695b333")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "BPFOUT" output
+			(at 425.45 38.1 0)
+			(uuid "dd500a63-0168-4ce9-b4de-631e9ad9dd03")
+			(effects (font (size 1.27 1.27)) (justify right)))
+		(instances (project "semg8_A3_LMV324B" (path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (page "3")))))
+	(label "CH3_INP"
+		(at 458.47 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8c55c7c2-56bf-4d24-8ae8-6668d5e1f5aa"))
+	(label "CH3_INN"
+		(at 458.47 40.64 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8b6d0714-9e61-439b-8593-dc0f27d67c70"))
+	(label "CH3_OUT"
+		(at 483.87 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "28e12133-6b42-4f92-8274-3e6556566034"))
+	(sheet
+		(at 458.47 35.56)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke (width 0.1524) (type solid))
+		(fill (color 255 255 225 1.0000))
+		(uuid "5240cc91-d8a2-4d3a-92a9-8c4f475cc710")
+		(property "Sheetname" "CH3"
+			(at 458.47 34.86 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom)))
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 458.47 43.78 0)
+			(effects (font (size 1.27 1.27)) (justify left top)))
+		(pin "VINP" input
+			(at 458.47 38.1 180)
+			(uuid "d282d2e9-cf8b-4b9e-adf9-b730383cae8d")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "VINN" input
+			(at 458.47 40.64 180)
+			(uuid "62177af3-ea2e-4c8e-8148-a1a23b2c1ec4")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "BPFOUT" output
+			(at 483.87 38.1 0)
+			(uuid "b7c520eb-cb32-4671-90d6-69f22a4ad704")
+			(effects (font (size 1.27 1.27)) (justify right)))
+		(instances (project "semg8_A3_LMV324B" (path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (page "4")))))
+	(label "CH4_INP"
+		(at 516.89 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "7a778f7c-f20a-4042-bee3-f4dad543165e"))
+	(label "CH4_INN"
+		(at 516.89 40.64 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "f8abcd14-09e6-4b7f-8d60-7a22fd99f800"))
+	(label "CH4_OUT"
+		(at 542.29 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d7000071-6c85-48ee-8eda-e29d35ab23e3"))
+	(sheet
+		(at 516.89 35.56)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke (width 0.1524) (type solid))
+		(fill (color 255 255 225 1.0000))
+		(uuid "1f8a49f4-1035-490b-a74b-e32b45893b9c")
+		(property "Sheetname" "CH4"
+			(at 516.89 34.86 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom)))
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 516.89 43.78 0)
+			(effects (font (size 1.27 1.27)) (justify left top)))
+		(pin "VINP" input
+			(at 516.89 38.1 180)
+			(uuid "69cf7fad-934b-49a4-b940-7f956df0e175")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "VINN" input
+			(at 516.89 40.64 180)
+			(uuid "bf9fd69c-e9a0-4790-933c-fdea1dc56cbf")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "BPFOUT" output
+			(at 542.29 38.1 0)
+			(uuid "ccea0a39-4d80-46b6-b860-6ef0ad5a0db4")
+			(effects (font (size 1.27 1.27)) (justify right)))
+		(instances (project "semg8_A3_LMV324B" (path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (page "5")))))
+	(label "CH5_INP"
+		(at 341.63 58.42 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "7c905a3a-5551-4b07-9e6f-599ca042d512"))
+	(label "CH5_INN"
+		(at 341.63 60.96 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "89e0b06d-3a53-4a4c-800a-5e649fd64a30"))
+	(label "CH5_OUT"
+		(at 367.03 58.42 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "cf707d50-b849-462d-9c65-dbe1423153ff"))
+	(sheet
+		(at 341.63 55.88)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke (width 0.1524) (type solid))
+		(fill (color 255 255 225 1.0000))
+		(uuid "6a1dc1d5-b93c-4241-8c79-e9ea0d568fc7")
+		(property "Sheetname" "CH5"
+			(at 341.63 55.18 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom)))
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 341.63 64.1 0)
+			(effects (font (size 1.27 1.27)) (justify left top)))
+		(pin "VINP" input
+			(at 341.63 58.42 180)
+			(uuid "f8f71f8e-924f-41d1-b23c-ac8e48129768")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "VINN" input
+			(at 341.63 60.96 180)
+			(uuid "57d8263d-34ca-4aef-99f6-d44fcb81f93c")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "BPFOUT" output
+			(at 367.03 58.42 0)
+			(uuid "8f9ba99a-8d4c-42e7-a608-843b69cbc27a")
+			(effects (font (size 1.27 1.27)) (justify right)))
+		(instances (project "semg8_A3_LMV324B" (path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (page "6")))))
+	(label "CH6_INP"
+		(at 400.05 58.42 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "fb67b022-76e1-4a21-bb90-6964ff2778de"))
+	(label "CH6_INN"
+		(at 400.05 60.96 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "700928fc-5ef1-47d5-a906-c9f7abb44785"))
+	(label "CH6_OUT"
+		(at 425.45 58.42 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "8476132d-90c2-4dce-9450-410940bd3074"))
+	(sheet
+		(at 400.05 55.88)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke (width 0.1524) (type solid))
+		(fill (color 255 255 225 1.0000))
+		(uuid "6aea3007-67de-4ea3-bd9e-db1832363ba9")
+		(property "Sheetname" "CH6"
+			(at 400.05 55.18 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom)))
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 400.05 64.1 0)
+			(effects (font (size 1.27 1.27)) (justify left top)))
+		(pin "VINP" input
+			(at 400.05 58.42 180)
+			(uuid "3363fe09-eb3f-46da-8123-2909dc96b3f6")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "VINN" input
+			(at 400.05 60.96 180)
+			(uuid "b92bc177-0acb-4157-a51b-761571eb4ced")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "BPFOUT" output
+			(at 425.45 58.42 0)
+			(uuid "80e087c4-b988-48ab-96c8-365e205ee4f5")
+			(effects (font (size 1.27 1.27)) (justify right)))
+		(instances (project "semg8_A3_LMV324B" (path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (page "7")))))
+	(label "CH7_INP"
+		(at 458.47 58.42 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "a369a831-bb04-4e1e-b3ca-e017d376fe64"))
+	(label "CH7_INN"
+		(at 458.47 60.96 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "647bfa09-f165-4787-ae33-3776c3eda1ce"))
+	(label "CH7_OUT"
+		(at 483.87 58.42 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "f6f14348-3d63-4cda-bc0d-142f43fb057c"))
+	(sheet
+		(at 458.47 55.88)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke (width 0.1524) (type solid))
+		(fill (color 255 255 225 1.0000))
+		(uuid "983eab4a-f0e7-47ec-8601-82ff90e5b88a")
+		(property "Sheetname" "CH7"
+			(at 458.47 55.18 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom)))
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 458.47 64.1 0)
+			(effects (font (size 1.27 1.27)) (justify left top)))
+		(pin "VINP" input
+			(at 458.47 58.42 180)
+			(uuid "34b71cb9-c66d-4005-945e-ce26c68d8a13")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "VINN" input
+			(at 458.47 60.96 180)
+			(uuid "fbf4f9df-5d36-41df-af6f-6686bd87f55e")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "BPFOUT" output
+			(at 483.87 58.42 0)
+			(uuid "6ca6d3f9-fb12-4aac-afe3-f89ecee7b32d")
+			(effects (font (size 1.27 1.27)) (justify right)))
+		(instances (project "semg8_A3_LMV324B" (path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (page "8")))))
+	(label "CH8_INP"
+		(at 516.89 58.42 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "24ecd684-71d3-4365-8b66-eaf1098f83ba"))
+	(label "CH8_INN"
+		(at 516.89 60.96 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "f08b2027-df97-4704-9e48-21a02c2f7c43"))
+	(label "CH8_OUT"
+		(at 542.29 58.42 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "3d74427f-284c-4c51-9487-4b580e74d335"))
+	(sheet
+		(at 516.89 55.88)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke (width 0.1524) (type solid))
+		(fill (color 255 255 225 1.0000))
+		(uuid "f60f3933-c603-4ecc-92fb-d64765c07701")
+		(property "Sheetname" "CH8"
+			(at 516.89 55.18 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom)))
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 516.89 64.1 0)
+			(effects (font (size 1.27 1.27)) (justify left top)))
+		(pin "VINP" input
+			(at 516.89 58.42 180)
+			(uuid "96b091e5-237f-4289-af87-348c6f0c369a")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "VINN" input
+			(at 516.89 60.96 180)
+			(uuid "852a4f7f-fa19-4b18-897b-1d5abfc56d28")
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(pin "BPFOUT" output
+			(at 542.29 58.42 0)
+			(uuid "0807502f-db11-48fd-ae86-0f7e1f1c0d12")
+			(effects (font (size 1.27 1.27)) (justify right)))
+		(instances (project "semg8_A3_LMV324B" (path "/87b664f3-ab41-4cb5-92f5-d13cb52a416b" (page "9")))))
+	(sheet_instances (path "/" (page "1")))
+	(embedded_fonts no)
+)

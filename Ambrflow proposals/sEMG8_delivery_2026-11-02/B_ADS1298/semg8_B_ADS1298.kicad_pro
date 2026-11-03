@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "filename": "semg8_B_ADS1298.kicad_pro",
+    "version": 1
+  },
+  "sheets": [
+    [
+      "f3162fb5-01a9-42a8-aa3d-02b8b119ba0f",
+      "Root"
+    ],
+    [
+      "f6e9f604-c663-4d64-b461-f4f266603cdd",
+      "ADS1298"
+    ]
+  ]
+}

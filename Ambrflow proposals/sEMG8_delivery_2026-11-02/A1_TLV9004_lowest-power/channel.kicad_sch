@@ -1,0 +1,2024 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "5ed64f00-b861-465e-9820-23bbba645895")
+	(paper "A3")
+	(title_block
+		(title "sEMG-8 front-end channel (one of eight)")
+		(date "2026-11-02")
+		(rev "A")
+		(comment 1 "ambrflow design loop, engine e735a0e; spec semg8-opamp 73a6d4ada293")
+		(comment 2 "From vref-0065: Muscle BioAmp Patchy v0.2 (CERN-OHL-S-2.0)")
+		(comment 3 "Footprints and MPNs: DigiKey BOM 2026-11-02"))
+	(lib_symbols
+		(symbol "Amplifier_Operational:LM324"
+			(pin_names (offset 0.127))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U" (at 0 5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "LM324" (at 0 -5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at -1.27 2.54 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+				(at 1.27 5.08 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_locked" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "quad opamp" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(symbol "LM324_1_1"
+				(polyline
+					(pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27))))))
+			(symbol "LM324_2_1"
+				(polyline
+					(pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "6" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "7" (effects (font (size 1.27 1.27))))))
+			(symbol "LM324_3_1"
+				(polyline
+					(pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "8" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "9" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "10" (effects (font (size 1.27 1.27))))))
+			(symbol "LM324_4_1"
+				(polyline
+					(pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+					(stroke (width 0.254) (type default))
+					(fill (type background)))
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+" (effects (font (size 1.27 1.27))))
+					(number "12" (effects (font (size 1.27 1.27)))))
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-" (effects (font (size 1.27 1.27))))
+					(number "13" (effects (font (size 1.27 1.27)))))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "14" (effects (font (size 1.27 1.27))))))
+			(symbol "LM324_5_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-" (effects (font (size 1.27 1.27))))
+					(number "11" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:C"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "C" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0.9652 -3.81 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "C_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "C_0_1"
+				(polyline
+					(pts (xy -2.032 0.762) (xy 2.032 0.762))
+					(stroke (width 0.508) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.032 -0.762) (xy 2.032 -0.762))
+					(stroke (width 0.508) (type default))
+					(fill (type none))))
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:C_Polarized"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "" (at 0.9652 -3.81 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "CP_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -1.778 2.286) (xy -0.762 2.286))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -1.27 2.794) (xy -1.27 1.778))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke (width 0) (type default))
+					(fill (type outline))))
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:R"
+			(pin_numbers (hide yes))
+			(pin_names (offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+			(property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at -1.778 0 90) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Datasheet" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "Description" "Resistor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "R res resistor" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "R_*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke (width 0.254) (type default))
+					(fill (type none))))
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Diode:BAT54S"
+			(pin_names (offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D" (at 2.54 -5.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Value" "BAT54S" (at -6.35 3.175 0) (effects (font (size 1.27 1.27)) (justify left)))
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 1.905 3.175 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27)) (justify left)))
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf"
+				(at -3.048 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
+				(at 0 0 0)
+				(hide yes)
+				(effects (font (size 1.27 1.27))))
+			(property "ki_keywords" "schottky diode" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(property "ki_fp_filters" "SOT?23*" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+			(symbol "BAT54S_0_1"
+				(polyline
+					(pts (xy -4.445 1.27) (xy -4.445 -1.27) (xy -2.54 0) (xy -4.445 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline (pts (xy -3.81 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline
+					(pts (xy -3.175 -1.27) (xy -3.175 -1.016))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.54 1.27) (xy -1.905 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.54 -1.27) (xy -3.175 -1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -2.54 -1.27) (xy -2.54 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy -1.905 1.27) (xy -1.905 1.016))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline (pts (xy -1.905 0) (xy 1.905 0)) (stroke (width 0) (type default)) (fill (type none)))
+				(circle (center 0 0) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline)))
+				(polyline (pts (xy 1.27 0) (xy 3.81 0)) (stroke (width 0) (type default)) (fill (type none)))
+				(polyline
+					(pts (xy 1.905 1.27) (xy 1.905 -1.27) (xy 3.81 0) (xy 1.905 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 3.175 -1.27) (xy 3.175 -1.016))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 3.81 1.27) (xy 4.445 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 3.81 -1.27) (xy 3.175 -1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 3.81 -1.27) (xy 3.81 1.27))
+					(stroke (width 0) (type default))
+					(fill (type none)))
+				(polyline
+					(pts (xy 4.445 1.27) (xy 4.445 1.016))
+					(stroke (width 0) (type default))
+					(fill (type none))))
+			(symbol "BAT54S_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "A" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "K" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 5.08)
+					(name "COM" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27))))))
+			(embedded_fonts no)))
+	(text "Input: RFI filter and clamps to the rails"
+		(exclude_from_sim no)
+		(at 20.32 25.4 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "3934f9db-6035-45a7-bec7-92fe95d9b3c9"))
+	(text "Instrumentation amplifier U1A / U1B: gain 1 + R8/R7 = 11; CMRR needs R5/R6 = R8/R7"
+		(exclude_from_sim no)
+		(at 20.32 60.47 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "85992d20-fabd-4621-b6ce-edc1fc50c24e"))
+	(text "Band-pass into the ADC, U1C: R3/C4 high-pass (4.0 Hz), R4/C5 low-pass (723 Hz), gain R4/R3 = 12.2"
+		(exclude_from_sim no)
+		(at 20.32 90.95 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "51700734-28c2-45b7-8e37-ba6a8e99af3d"))
+	(text "Mid-supply reference: R1/R2 divider (1.055 V), C2/C3 filter, U1D buffer"
+		(exclude_from_sim no)
+		(at 20.32 121.43 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "06c86c1a-fa44-4e35-bd00-5290b7c0ac1a"))
+	(text "Supply: U1 power pins and bypass"
+		(exclude_from_sim no)
+		(at 20.32 151.91 0)
+		(effects (font (size 2.0 2.0) (bold yes)) (justify left bottom))
+		(uuid "5b8f284e-7b5d-4137-91ed-d22974d5771d"))
+	(text "One sEMG channel, placed eight times on the root sheet (CH1 to CH8; references R1xx to R8xx by channel)."
+		(exclude_from_sim no)
+		(at 20.32 205.37 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "6ca894e2-c3fc-4c9d-b214-763e743ce61c"))
+	(text "Ports: VINP / VINN from the electrode pair, BPFOUT to an ESP32-S3 ADC1 pin. Supply +3.3VA (the LP2985 analog rail), GND."
+		(exclude_from_sim no)
+		(at 20.32 209.18 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "841141e0-85d4-4965-9b48-1c65a114a11d"))
+	(text "Simulated: gain 134 V/V at 50 to 100 Hz, 110 V/V at 500 Hz; BPFOUT rests at 1.055 V; CMRR >= 48.6 dB at every corner (test_limits.csv)."
+		(exclude_from_sim no)
+		(at 20.32 212.99 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "57a6696a-95f3-4061-9210-85b39b99e345"))
+	(text "U1 is KiCad's generic quad op-amp symbol (LM324 pinout, the same as the fitted part); the fitted part is the Value / MPN field."
+		(exclude_from_sim no)
+		(at 20.32 216.8 0)
+		(effects (font (size 1.5 1.5)) (justify left bottom))
+		(uuid "2af34f3a-3324-4c05-a666-0dfad57cffd6"))
+	(symbol
+		(lib_id "Device:C")
+		(at 33.02 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "561ec99b-b413-4f3d-8428-1faff2591fa2")
+		(property "Reference" "C101" (at 33.02 34.29 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1nF" (at 33.02 41.91 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 33.02 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 33.02 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X7R102K16NT" (at 33.02 38.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 33.02 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X7R102K16NT/13907540"
+			(at 33.02 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C1 · admission review"
+			(at 33.02 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f2ce4303-8bd4-4282-8ddc-c9fc417b7e5c"))
+		(pin "2" (uuid "cf35386c-1e67-427c-b762-49a6f2f66e23"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C101")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C201")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C301")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C401")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C501")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C601")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C701")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C801")
+					(unit 1)))))
+	(hierarchical_label "VINP"
+		(shape input)
+		(at 29.21 38.1 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "2e932bff-b346-43fd-b3f6-543b634e3d16"))
+	(hierarchical_label "VINN"
+		(shape input)
+		(at 36.83 38.1 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "de0ab702-8c22-40e0-b1d1-8f0f496d564e"))
+	(symbol
+		(lib_id "Diode:BAT54S")
+		(at 71.12 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1a7ce6c-4942-4898-b2ee-fc781d335ea1")
+		(property "Reference" "D102" (at 73.66 41.91 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "BAT54S" (at 64.77 33.655 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 71.12 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.gk-goodwork.com/static/upload/file/20260522/1779418034330301.pdf"
+			(at 71.12 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "BAT54S" (at 71.12 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "GOODWORK"
+			(at 71.12 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/goodwork/BAT54S/29292096"
+			(at 71.12 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, D2 · admission review"
+			(at 71.12 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "0d641753-aa37-4e92-bdd2-ece6490bb378"))
+		(pin "2" (uuid "a307aff4-ab5b-4142-9cc3-8fba44462e11"))
+		(pin "3" (uuid "44999ff1-ee61-4201-acdd-e688b77add73"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "D102")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "D202")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "D302")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "D402")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "D502")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "D602")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "D702")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "D802")
+					(unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 63.5 36.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "0e62d591-1229-43b1-8561-3f6b63638e45"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 78.74 36.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "498dc0f3-b0ef-4b39-9d28-3ab248ccb742"))
+	(hierarchical_label "VINN"
+		(shape input)
+		(at 71.12 41.91 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "7f2e4d58-8799-42a9-bd7f-4aef7f92d287"))
+	(symbol
+		(lib_id "Diode:BAT54S")
+		(at 114.3 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c541951f-fb40-41eb-a0c3-72e209fc9ce8")
+		(property "Reference" "D103" (at 116.84 41.91 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "BAT54S" (at 107.95 33.655 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 114.3 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.gk-goodwork.com/static/upload/file/20260522/1779418034330301.pdf"
+			(at 114.3 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "BAT54S" (at 114.3 36.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "GOODWORK"
+			(at 114.3 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/goodwork/BAT54S/29292096"
+			(at 114.3 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, D3 · admission review"
+			(at 114.3 36.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "37eb368e-1c2e-4414-a156-e381e9213422"))
+		(pin "2" (uuid "f687e13a-e3d2-4fc4-a926-b555a9fad65c"))
+		(pin "3" (uuid "b2b62da9-d5d3-4652-a838-6a6f9336baf5"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "D103")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "D203")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "D303")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "D403")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "D503")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "D603")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "D703")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "D803")
+					(unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 106.68 36.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "da3d3da8-4a30-4d72-9d61-d56683a6ab0d"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 121.92 36.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6fd7d46e-016a-4048-a3a9-f755e90818a3"))
+	(hierarchical_label "VINP"
+		(shape input)
+		(at 114.3 41.91 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "a2304cb5-0b7a-4248-9eef-25a0bc937fa5"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 36.83 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "39550a72-3011-43f0-8df9-8870b1a5a612")
+		(property "Reference" "U101" (at 36.83 71.12 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "TLV9004IPWR"
+			(at 36.83 81.28 0)
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 36.83 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv9004"
+			(at 36.83 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "TLV9004IPWR" (at 36.83 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 36.83 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/TLV9004IPWR/9674912"
+			(at 36.83 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 36.83 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "c3760580-0035-4638-94a5-d0f6583ae496"))
+		(pin "2" (uuid "06545a30-c348-4d3a-812e-ba550342e918"))
+		(pin "3" (uuid "d792c564-9fbe-4d8f-a3ea-6e0a5ab7dbcc"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "U101")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "U201")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "U301")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "U401")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "U501")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "U601")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "U701")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "U801")
+					(unit 1)))))
+	(label "INA1OUT"
+		(at 44.45 76.2 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "8b79ac98-f51e-4a63-8006-909c40290051"))
+	(label "INA1N"
+		(at 29.21 78.74 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "c2cf281d-9b93-4fb8-85e6-55d6e2cf0b53"))
+	(hierarchical_label "VINN"
+		(shape input)
+		(at 29.21 73.66 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "6cc11208-c4fd-4a10-b4f5-e03476763f57"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 80.01 76.2 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0319d1bf-c490-43d9-a2da-4c3e9f19f410")
+		(property "Reference" "U101" (at 80.01 71.12 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "TLV9004IPWR"
+			(at 80.01 81.28 0)
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 80.01 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv9004"
+			(at 80.01 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "TLV9004IPWR" (at 80.01 76.2 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 80.01 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/TLV9004IPWR/9674912"
+			(at 80.01 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 80.01 76.2 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "5" (uuid "579134b1-85be-4e93-b6f9-d6b0a8591af5"))
+		(pin "6" (uuid "a00a9ec1-5fa0-4191-8b0d-48b59e84b984"))
+		(pin "7" (uuid "33b1fe57-1435-41d3-b979-0a43594d5748"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "U101")
+					(unit 2))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "U201")
+					(unit 2))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "U301")
+					(unit 2))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "U401")
+					(unit 2))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "U501")
+					(unit 2))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "U601")
+					(unit 2))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "U701")
+					(unit 2))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "U801")
+					(unit 2)))))
+	(hierarchical_label "VINP"
+		(shape input)
+		(at 72.39 73.66 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "abb49c5d-3acc-4b72-8d75-ba5366585d00"))
+	(label "INA2N"
+		(at 72.39 78.74 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "b33956b7-e0d0-465d-ad93-316ae946de0d"))
+	(label "INAOUT"
+		(at 87.63 76.2 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "4a31aea6-1198-490d-bddb-847f8fea889c"))
+	(symbol
+		(lib_id "Device:R")
+		(at 116.84 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3376110b-3995-4c92-8956-3f1b5438339f")
+		(property "Reference" "R105" (at 116.84 68.58 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100k" (at 116.84 73.66 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 116.84 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 116.84 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1003CT" (at 116.84 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 116.84 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1003CT/13570745"
+			(at 116.84 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R5 · admission review"
+			(at 116.84 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7e364d14-f620-4c50-8320-03d12e19b8e4"))
+		(pin "2" (uuid "11cc72fa-5297-4624-a98c-7ec0d4756a02"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "R105")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "R205")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "R305")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "R405")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "R505")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "R605")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "R705")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "R805")
+					(unit 1)))))
+	(label "INA1N"
+		(at 113.03 71.12 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "406c925f-2787-467c-ab17-f5c331d1c5fc"))
+	(label "AMPREF"
+		(at 120.65 71.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "2f5d88f8-35cc-4f46-ab25-24d9f1bdbe87"))
+	(symbol
+		(lib_id "Device:R")
+		(at 152.4 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87ddb579-aec5-499d-b07f-312c052eb104")
+		(property "Reference" "R106" (at 152.4 68.58 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "10k" (at 152.4 73.66 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 152.4 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 152.4 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1002CTD" (at 152.4 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 152.4 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1002CTD/13570470"
+			(at 152.4 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R6 · admission review"
+			(at 152.4 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9d6ae1df-74ba-458d-91ba-f5eeaf37c58b"))
+		(pin "2" (uuid "aea83152-c22d-4ae7-9f19-7c2461fb00b2"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "R106")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "R206")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "R306")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "R406")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "R506")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "R606")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "R706")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "R806")
+					(unit 1)))))
+	(label "INA1OUT"
+		(at 148.59 71.12 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "97d84e57-7aaa-4f73-a8fc-1469c9735cd9"))
+	(label "INA1N"
+		(at 156.21 71.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "36792971-b16c-4a72-b243-91df36768bcf"))
+	(symbol
+		(lib_id "Device:R")
+		(at 186.69 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84deb06a-6e67-4b40-8858-59e9594b4f44")
+		(property "Reference" "R107" (at 186.69 68.58 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "22k" (at 186.69 73.66 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 186.69 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-yag/yag-rc0603fr1322kl-61162823.pdf"
+			(at 186.69 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RC0603FR-1322KL" (at 186.69 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Yageo America"
+			(at 186.69 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/RC0603FR-1322KL/29350972"
+			(at 186.69 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R7 · admission review"
+			(at 186.69 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "11357068-4d95-4f5c-87e3-13902709cef0"))
+		(pin "2" (uuid "afb8ee7a-3053-4391-bbb5-578ddce33b52"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "R107")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "R207")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "R307")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "R407")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "R507")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "R607")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "R707")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "R807")
+					(unit 1)))))
+	(label "INA2N"
+		(at 182.88 71.12 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "5b5e59de-7813-405e-bc51-c693ab317360"))
+	(label "INA1OUT"
+		(at 190.5 71.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a18b7b13-46e8-44cf-8e24-be58f6e402e8"))
+	(symbol
+		(lib_id "Device:R")
+		(at 222.25 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5beae373-5407-49ba-9c1a-10ad0d5bf9d9")
+		(property "Reference" "R108" (at 222.25 68.58 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "220k" (at 222.25 73.66 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 222.25 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 222.25 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F2203CT" (at 222.25 71.12 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 222.25 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F2203CT/13569921"
+			(at 222.25 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R8 · admission review"
+			(at 222.25 71.12 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9ea09c93-1e1a-4bc4-93d5-1c1f0776b135"))
+		(pin "2" (uuid "6b08430f-890b-4704-9354-b608093752e3"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "R108")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "R208")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "R308")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "R408")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "R508")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "R608")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "R708")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "R808")
+					(unit 1)))))
+	(label "INAOUT"
+		(at 218.44 71.12 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "2f6bb705-8f7c-4a96-8007-00e2ec15285b"))
+	(label "INA2N"
+		(at 226.06 71.12 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "68225393-7cc1-43e5-bd93-6b9b9f63727b"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 35.56 106.68 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "924f9e89-a7c8-46a0-aaf1-f0362f424a73")
+		(property "Reference" "U101" (at 35.56 101.6 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "TLV9004IPWR"
+			(at 35.56 111.76 0)
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 35.56 106.68 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv9004"
+			(at 35.56 106.68 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "TLV9004IPWR" (at 35.56 106.68 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 35.56 106.68 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/TLV9004IPWR/9674912"
+			(at 35.56 106.68 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 35.56 106.68 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "8" (uuid "d6043ae4-df02-4fc6-937c-d0d6a0331029"))
+		(pin "9" (uuid "b265df0c-e68a-437e-9521-e2ecd4b5759a"))
+		(pin "10" (uuid "a7feabbf-abb4-492e-a52e-146c7ebb076d"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "U101")
+					(unit 3))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "U201")
+					(unit 3))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "U301")
+					(unit 3))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "U401")
+					(unit 3))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "U501")
+					(unit 3))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "U601")
+					(unit 3))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "U701")
+					(unit 3))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "U801")
+					(unit 3)))))
+	(hierarchical_label "BPFOUT"
+		(shape output)
+		(at 43.18 106.68 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "6f6ec42c-72a3-4dc7-b531-89dc860f9de7"))
+	(label "BPFN"
+		(at 27.94 109.22 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "cde7e2a5-6384-4808-9d13-f6980050eac0"))
+	(label "AMPREF"
+		(at 27.94 104.14 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "612be747-6ae0-41e0-847c-e51db3ae40a5"))
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "398637ec-8fc0-47fa-b29d-11fb91379f94")
+		(property "Reference" "R103" (at 74.93 99.06 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "18k" (at 74.93 104.14 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 74.93 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1802CT" (at 74.93 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 74.93 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1802CT/13570211"
+			(at 74.93 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R3 · admission review"
+			(at 74.93 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "41a4b7c3-54d0-428a-ba65-63fe3ef44e7e"))
+		(pin "2" (uuid "8d7d3771-9d87-454e-b4cf-cda7afc6398c"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "R103")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "R203")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "R303")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "R403")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "R503")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "R603")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "R703")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "R803")
+					(unit 1)))))
+	(label "BPFIN"
+		(at 71.12 101.6 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "426d47ca-affc-432b-ac71-fd9671c95f8f"))
+	(label "INAOUT"
+		(at 78.74 101.6 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "09cfd819-41e5-45e0-b09a-9443b0860f4f"))
+	(symbol
+		(lib_id "Device:C")
+		(at 109.22 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ad04fb1-5c5c-425e-ba0f-8c5ef30aeaba")
+		(property "Reference" "C104" (at 109.22 99.06 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "2.2uF" (at 109.22 106.68 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 109.22 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 109.22 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R225M10NT"
+			(at 109.22 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 109.22 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R225M10NT/13909171"
+			(at 109.22 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C4 · admission review"
+			(at 109.22 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "64ada787-188f-4c88-a2c0-fbcba61a8316"))
+		(pin "2" (uuid "e863d199-19a7-4251-a797-e7c13c6dfe48"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C104")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C204")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C304")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C404")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C504")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C604")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C704")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C804")
+					(unit 1)))))
+	(label "BPFIN"
+		(at 105.41 102.87 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "33075754-26c6-42ae-9aa7-ed9bf5f6b96f"))
+	(label "BPFN"
+		(at 113.03 102.87 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "da3b4336-0269-494b-b251-1ce1534d1665"))
+	(symbol
+		(lib_id "Device:R")
+		(at 146.05 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58c9a0f6-76cd-4a89-afaf-e9fd63224f2c")
+		(property "Reference" "R104" (at 146.05 99.06 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "220k" (at 146.05 104.14 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 146.05 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 146.05 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F2203CT" (at 146.05 101.6 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 146.05 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F2203CT/13569921"
+			(at 146.05 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R4 · admission review"
+			(at 146.05 101.6 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d4414e4d-2566-49dd-91c3-4955e5bb987c"))
+		(pin "2" (uuid "f27d6957-8a81-4554-be9e-4b0f43cbc0ea"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "R104")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "R204")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "R304")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "R404")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "R504")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "R604")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "R704")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "R804")
+					(unit 1)))))
+	(hierarchical_label "BPFOUT"
+		(shape output)
+		(at 142.24 101.6 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "efe739b3-b716-4ce6-b5a1-1fac2268412d"))
+	(label "BPFN"
+		(at 149.86 101.6 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ed0b4079-2cdb-4288-9243-f493f5256c76"))
+	(symbol
+		(lib_id "Device:C")
+		(at 179.07 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0eedd4e0-bcb6-4a66-bfa9-3486a3988c7e")
+		(property "Reference" "C105" (at 179.07 99.06 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1nF" (at 179.07 106.68 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 179.07 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 179.07 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X7R102K16NT"
+			(at 179.07 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 179.07 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X7R102K16NT/13907540"
+			(at 179.07 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C5 · admission review"
+			(at 179.07 102.87 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7f4e142a-64dc-4ea5-b382-258f7cc46c46"))
+		(pin "2" (uuid "ab9f3be4-a8e0-4267-85f4-e314f07af561"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C105")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C205")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C305")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C405")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C505")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C605")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C705")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C805")
+					(unit 1)))))
+	(label "BPFN"
+		(at 175.26 102.87 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "1a3cb950-1626-40bf-97f4-14d91b30183e"))
+	(hierarchical_label "BPFOUT"
+		(shape output)
+		(at 182.88 102.87 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "ba577c9d-900f-4d26-a336-5c1120b85e79"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 35.56 137.16 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35f83d7a-dabd-4d38-8e50-657c8cd8a274")
+		(property "Reference" "U101" (at 35.56 132.08 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "TLV9004IPWR"
+			(at 35.56 142.24 0)
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 35.56 137.16 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv9004"
+			(at 35.56 137.16 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "TLV9004IPWR" (at 35.56 137.16 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 35.56 137.16 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/TLV9004IPWR/9674912"
+			(at 35.56 137.16 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 35.56 137.16 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "12" (uuid "b37be4a9-2c79-422b-9cf4-6ed7a83db279"))
+		(pin "13" (uuid "79fa00ae-3b9e-4c23-b412-4d503f7a6978"))
+		(pin "14" (uuid "8258f3bd-165b-4b57-ad86-8a6682cab4c5"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "U101")
+					(unit 4))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "U201")
+					(unit 4))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "U301")
+					(unit 4))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "U401")
+					(unit 4))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "U501")
+					(unit 4))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "U601")
+					(unit 4))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "U701")
+					(unit 4))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "U801")
+					(unit 4)))))
+	(label "REFDIV"
+		(at 27.94 134.62 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9b43a2e1-617e-4736-a616-6cdc0b911539"))
+	(label "AMPREF"
+		(at 27.94 139.7 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8537ce4a-25b1-4e37-a895-0ed10d2f6d64"))
+	(label "AMPREF"
+		(at 43.18 137.16 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "033d4cb7-7c09-4ff6-8b20-d0dcb885164a"))
+	(symbol
+		(lib_id "Device:R")
+		(at 73.66 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad373a02-5c10-454b-883d-365336dc787b")
+		(property "Reference" "R101" (at 73.66 129.54 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "1M" (at 73.66 134.62 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 73.66 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 73.66 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F1004CT" (at 73.66 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 73.66 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F1004CT/13571119"
+			(at 73.66 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R1 · admission review"
+			(at 73.66 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "186ef95c-a885-4b8b-a9e6-6eb90d692558"))
+		(pin "2" (uuid "52f70e68-c065-4ca7-b869-c0f0d551d092"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "R101")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "R201")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "R301")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "R401")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "R501")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "R601")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "R701")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "R801")
+					(unit 1)))))
+	(label "REFDIV"
+		(at 69.85 132.08 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "fdb05eb9-01d7-4a6a-be64-0f64d2923894"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 77.47 132.08 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "1f8e55ef-ed68-46ab-84e4-aaefc027e28e"))
+	(symbol
+		(lib_id "Device:R")
+		(at 109.22 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1e127cc-e52b-47a5-9a46-86695684b2b2")
+		(property "Reference" "R102" (at 109.22 129.54 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "470k" (at 109.22 134.62 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 109.22 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/RMSERIES-052225.pdf"
+			(at 109.22 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "RM06F4703CT" (at 109.22 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 109.22 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/RM06F4703CT/13568588"
+			(at 109.22 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, R2 · admission review"
+			(at 109.22 132.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "72ed11de-6c7c-4796-a628-795c3472906b"))
+		(pin "2" (uuid "f62ab759-2645-4a73-836f-452c666126e6"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "R102")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "R202")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "R302")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "R402")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "R502")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "R602")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "R702")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "R802")
+					(unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 105.41 132.08 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "99f01254-78ac-4a57-9dbf-adf3b866f634"))
+	(label "REFDIV"
+		(at 113.03 132.08 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "9c20bbee-86aa-4e84-8a68-5f85f6d22763"))
+	(symbol
+		(lib_id "Device:C")
+		(at 143.51 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d6c958e6-e575-459e-95b1-01f2497664c4")
+		(property "Reference" "C102" (at 143.51 129.54 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 143.51 137.16 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 143.51 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 143.51 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 143.51 133.35 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 143.51 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 143.51 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C2 · admission review"
+			(at 143.51 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "19c3596a-81c6-49fa-83f6-0a761af08481"))
+		(pin "2" (uuid "f460bbf2-9b09-489d-b0d0-6e84ad98dceb"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C102")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C202")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C302")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C402")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C502")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C602")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C702")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C802")
+					(unit 1)))))
+	(label "REFDIV"
+		(at 139.7 133.35 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "f357b49a-1052-4272-aa94-7dc3d84c5a26"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 147.32 133.35 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "9822b403-9972-414b-a97e-2784b2a692fd"))
+	(symbol
+		(lib_id "Device:C")
+		(at 179.07 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4aec69be-74c2-475d-970d-e598435388ef")
+		(property "Reference" "C103" (at 179.07 129.54 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "2.2uF" (at 179.07 137.16 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 179.07 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 179.07 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R225M10NT"
+			(at 179.07 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 179.07 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R225M10NT/13909171"
+			(at 179.07 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C3 · admission review"
+			(at 179.07 133.35 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "e77f2c6a-5dd9-454c-8911-2662e7217fda"))
+		(pin "2" (uuid "b0f8e0aa-b6ff-4f11-a950-7fa85da229ef"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C103")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C203")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C303")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C403")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C503")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C603")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C703")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C803")
+					(unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 175.26 133.35 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "699a57ec-b2e5-40be-b842-bdf5b0a3134c"))
+	(label "REFDIV"
+		(at 182.88 133.35 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "282f2dd5-4d64-4237-806a-942b06744e9e"))
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 22.86 180.34 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "599b88e9-04b9-41b1-968c-970632f6de46")
+		(property "Reference" "U101" (at 22.86 175.26 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "TLV9004IPWR"
+			(at 22.86 185.42 0)
+			(effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 22.86 180.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv9004"
+			(at 22.86 180.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "TLV9004IPWR" (at 22.86 180.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Texas Instruments"
+			(at 22.86 180.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/TLV9004IPWR/9674912"
+			(at 22.86 180.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, U1 · admission review"
+			(at 22.86 180.34 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "4" (uuid "594235de-4d5b-4f06-ac3e-2cf2632c8bbe"))
+		(pin "11" (uuid "42fd6514-71ad-4301-940b-6ff80cc02da4"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "U101")
+					(unit 5))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "U201")
+					(unit 5))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "U301")
+					(unit 5))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "U401")
+					(unit 5))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "U501")
+					(unit 5))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "U601")
+					(unit 5))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "U701")
+					(unit 5))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "U801")
+					(unit 5)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 20.32 172.72 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "f20d3a0d-0080-4f5d-8a64-9f5d2e12072b"))
+	(global_label "GND"
+		(shape passive)
+		(at 20.32 187.96 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "3c406ca7-2cae-43f6-953e-4f771cc3650d"))
+	(symbol
+		(lib_id "Device:C")
+		(at 57.15 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08aab2f1-82c5-41cd-acf4-cd0962b2e8bd")
+		(property "Reference" "C106" (at 57.15 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 57.15 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 57.15 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 57.15 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 57.15 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 57.15 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 57.15 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C6 · admission review"
+			(at 57.15 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9bcde64c-750b-4886-bade-44e805945b94"))
+		(pin "2" (uuid "6a255888-a567-47e9-8815-a4b07bc770cb"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C106")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C206")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C306")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C406")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C506")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C606")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C706")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C806")
+					(unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 53.34 163.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "1c7e3650-91f6-4b1b-a1fb-937329dbd4f4"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 60.96 163.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "4973cee5-d5fd-40ca-8986-89b10efdf4b5"))
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 96.52 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "469696a4-7c5a-4a08-9b42-cee1f868943e")
+		(property "Reference" "C107" (at 96.52 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "2.2uF" (at 96.52 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 96.52 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+			(at 96.52 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "GMC10X5R225M10NT"
+			(at 96.52 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 96.52 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R225M10NT/13909171"
+			(at 96.52 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C7 · admission review"
+			(at 96.52 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "75dc0390-afbc-46d9-a391-abdecb8df35d"))
+		(pin "2" (uuid "7503bb80-2727-4b2f-8b6a-0e562231c752"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C107")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C207")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C307")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C407")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C507")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C607")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C707")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C807")
+					(unit 1)))))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 92.71 163.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "b95bb914-f4d3-4a60-9ca5-48d15394f7ed"))
+	(global_label "GND"
+		(shape passive)
+		(at 100.33 163.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "4dff1285-5999-43a9-9619-c08da97a5031"))
+	(symbol
+		(lib_id "Device:C")
+		(at 130.81 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "336dabec-36af-4a56-bc22-6f188dec6918")
+		(property "Reference" "C108" (at 130.81 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 130.81 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 130.81 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 130.81 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 130.81 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 130.81 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 130.81 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C8 · admission review"
+			(at 130.81 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "38a31508-d2f8-4427-aad9-c3bfbb2ff4d4"))
+		(pin "2" (uuid "59408be4-a542-4ece-8cf0-da5dcc48dd2f"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C108")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C208")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C308")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C408")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C508")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C608")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C708")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C808")
+					(unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 127 163.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "2f0d4c2b-d443-41eb-b5b5-7e59b9d05629"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 134.62 163.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "02f271d7-6477-482d-a240-5e5ce398a3ea"))
+	(symbol
+		(lib_id "Device:C")
+		(at 166.37 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a99c3c2a-df1c-4abe-97e2-0119ec803bbb")
+		(property "Reference" "C109" (at 166.37 160.02 90) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 166.37 167.64 90) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 166.37 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.waldomemea.com/productfiles/mf-avx/avx-06035c104kat2a-44711349.pdf"
+			(at 166.37 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "MPN" "06035C104KAT2A" (at 166.37 163.83 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 166.37 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/wec/06035C104KAT2A/22285108"
+			(at 166.37 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Traces" "source: Upside Down Labs Muscle BioAmp Patchy v0.2, hardware/Muscle-BioAmp-Patchy.kicad_sch @ 1d258a1, C9 · admission review"
+			(at 166.37 163.83 0)
+			(effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "75af0235-d117-4f7d-8a77-024aa5979d6f"))
+		(pin "2" (uuid "04d5be1d-ab78-4e35-bd4b-9d25099dbabc"))
+		(instances
+			(project "semg8_A1_TLV9004"
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/ca9a28de-b8be-4c76-8987-75aa1087bad1"
+					(reference "C109")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/e63b5541-0e57-45f4-8af4-55dfd7e03d3a"
+					(reference "C209")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/a32c1039-e7c3-4430-9ed5-bba003e574f6"
+					(reference "C309")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/d213d6ba-5321-4547-a199-6b4922317570"
+					(reference "C409")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/24f1d1cd-49de-4a78-b9df-a51dfe984fb8"
+					(reference "C509")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/affe8ab4-2944-4a8c-aab8-dfcc906dfbee"
+					(reference "C609")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/c7a051a1-4094-482d-b126-df995d31cb85"
+					(reference "C709")
+					(unit 1))
+				(path "/856d6902-7a5c-4237-84a5-10050d8fab91/6d3c1e58-f756-482b-a855-91ad95c1e4f2"
+					(reference "C809")
+					(unit 1)))))
+	(global_label "GND"
+		(shape passive)
+		(at 162.56 163.83 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "fd0eadfb-1707-400b-86ef-af0bd6172e6d"))
+	(global_label "+3.3VA"
+		(shape passive)
+		(at 170.18 163.83 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a585aeae-e7eb-4702-b079-a7e67ed998fd"))
+	(embedded_fonts no)
+)
