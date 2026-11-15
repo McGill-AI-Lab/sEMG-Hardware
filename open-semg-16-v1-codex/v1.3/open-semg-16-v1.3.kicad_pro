@@ -467,7 +467,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "open-semg-16-v1.kicad_pro",
+    "filename": "open-semg-16-v1.3.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -634,8 +634,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "open-semg-16-v1.kicad_sch",
-        "name": "open-semg-16-v1",
+        "filename": "open-semg-16-v1.3.kicad_sch",
+        "name": "open-semg-16-v1.3",
         "uuid": "240ade95-63db-4882-95be-8d01c1806f6c"
       }
     ],
