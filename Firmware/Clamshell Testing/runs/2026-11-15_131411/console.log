@@ -1,0 +1,33 @@
+Run folder: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_131411
+Opening /dev/cu.usbserial-1140 at 2000000 baud …
+Connected: hardware on /dev/cu.usbserial-1140; firmware clamshell-suite-1.0; ADS1298 ID = 0x92
+
+[  1/4] P · Prerequisites & data integrity — 500 SPS · all 8 · test signal
+
+        ✕ FAIL  received 0 of 1500 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)   (run time 0.0 min)
+
+[  2/4] P · Prerequisites & data integrity — 2000 SPS · all 8 · test signal
+
+        ✕ FAIL  received 0 of 6000 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)   (run time 0.0 min)
+
+[  3/4] P · Prerequisites & data integrity — 4000 SPS · all 8 · test signal
+
+        ✕ FAIL  received 0 of 12000 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)   (run time 0.0 min)
+
+Three captures in a row returned no data; stopping the capture loop (see the FAIL reasons above).
+
+Captures finished in 0.0 min.
+
+Analysis
+────────
+  analysing P · Prerequisites & data integrity …
+
+Results
+───────
+  P  FAIL  Prerequisites & data integrity             0/3 captures trustworthy
+
+  Overall: FAIL
+  Report:  /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_131411/report.html
+  Summary: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_131411/summary.md
+
+Close the live window to exit.

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clamshell validation report</title><style>
+:root { color-scheme: light;
+  --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --line:#e1e0d9;
+  --good:#006300; --good-bg:#e3f3e3; --warn:#7a5200; --warn-bg:#fdf1d3; --bad:#b3261e; --bad-bg:#fbe4e2;
+  --info:#52514e; --info-bg:#efeeea; --accent:#2a78d6; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark;
+  --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --line:#2c2c2a;
+  --good:#5fd35f; --good-bg:#12301a; --warn:#fab219; --warn-bg:#352a0e; --bad:#f08a8a; --bad-bg:#3a1716;
+  --info:#c3c2b7; --info-bg:#262624; --accent:#5598e7; } }
+:root[data-theme="dark"] { color-scheme: dark;
+  --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --line:#2c2c2a;
+  --good:#5fd35f; --good-bg:#12301a; --warn:#fab219; --warn-bg:#352a0e; --bad:#f08a8a; --bad-bg:#3a1716;
+  --info:#c3c2b7; --info-bg:#262624; --accent:#5598e7; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--page); color:var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 80px; }
+h1 { font-size: 26px; margin: 0 0 4px; } h2 { font-size: 20px; margin: 0; }
+h3 { font-size: 15px; margin: 22px 0 8px; color: var(--ink2); }
+.meta { color: var(--ink2); font-size: 13px; }
+a { color: var(--accent); }
+.tiles { display:grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin: 22px 0; }
+.tile { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:12px 14px;
+  text-decoration:none; color:inherit; display:block; }
+.tile:hover { border-color: var(--muted); }
+.tile .id { font-weight:700; font-size: 18px; margin-right: 6px; }
+.tile .name { font-weight:600; }
+.tile .head { color:var(--ink2); font-size: 13px; margin-top: 6px; }
+.pill { display:inline-block; font-size:12px; font-weight:700; padding:1px 8px; border-radius:999px;
+  white-space:nowrap; }
+.pill.pass { color:var(--good); background:var(--good-bg); }
+.pill.warn { color:var(--warn); background:var(--warn-bg); }
+.pill.fail { color:var(--bad); background:var(--bad-bg); }
+.pill.info, .pill.skip { color:var(--info); background:var(--info-bg); }
+section.exp { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:20px;
+  margin: 18px 0; }
+.exp-head { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+.goal { margin: 10px 0 2px; } .method { color:var(--ink2); font-size: 13px; margin: 2px 0 0; }
+ul.findings { list-style:none; padding:0; margin: 14px 0 0; }
+ul.findings li { display:flex; gap:10px; align-items:baseline; padding: 4px 0; border-top:1px solid var(--line); }
+ul.findings li:first-child { border-top: 0; }
+figure { margin: 18px 0 0; } figure img { width:100%; height:auto; border-radius:8px; border:1px solid var(--line); }
+figcaption { color:var(--ink2); font-size:13px; margin-top: 4px; }
+.tablewrap { overflow-x:auto; margin-top: 6px; border:1px solid var(--line); border-radius: 8px; }
+table { border-collapse: collapse; width:100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+th, td { padding: 5px 9px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
+th { color:var(--ink2); font-weight:600; background:var(--page); position: sticky; top: 0; }
+td.wrap { white-space: normal; min-width: 260px; }
+.note { color:var(--muted); font-size: 12px; margin: 4px 0 0; }
+details { margin-top: 10px; } summary { cursor:pointer; color:var(--ink2); }
+.issues li { margin: 4px 0; }
+</style></head>
+<body><main>
+<h1>ADS1298 clamshell validation</h1>
+<div class="meta">2026-11-15_132124 · hardware on /dev/cu.usbserial-1140 · 3 captures
+ · generated 2026-11-15 13:21</div>
+<div class="tiles"><a class="tile" href="#exp-P"><div><span class="id">P</span><span class="name">Prerequisites &amp; data integrity</span></div><div style="margin-top:6px"><span class="pill fail">✕ FAIL</span></div><div class="head">0/3 captures trustworthy</div></a></div>
+<section class="exp"><h2>Things to look at</h2><ul class='issues'><li><span class="pill fail">✕ FAIL</span> <a href="#exp-P">P</a> — 3 of 3 captures in this run failed integrity checks.</li></ul></section>
+<section class="exp" id="exp-P"><div class="exp-head"><h2>P · Prerequisites &amp; data integrity</h2><span class="pill fail">✕ FAIL</span><span class="meta">clamshell_validation.md §1</span></div><p class="goal">Prove the data path is trustworthy before measuring noise: device ID, register readback, exact frame and DRDY counts, valid status words, no interleaved zeros, correct sample rate.</p><p class="method">All channels on the internal test signal (far from zero, so a stuck or zeroed sample is obvious). One capture per data rate, then repeated PWDN power cycles with a fresh configuration each time.</p><ul class="findings"><li><span class="pill pass">✓ PASS</span><span>ID register = 0x92 (expected 0x92)</span></li><li><span class="pill fail">✕ FAIL</span><span>3 of 3 captures in this run failed integrity checks.</span></li></ul><h3>Integrity of the prerequisite captures</h3><div class="tablewrap"><table><thead><tr><th>Capture</th><th>Frames</th><th>Missed</th><th>Bad status</th><th>Zero frames</th><th>Rate (SPS)</th><th>Rate error</th><th>Readback OK</th><th>Verdict</th></tr></thead><tbody></tbody></table></div><h3>Integrity of every capture in this run</h3><div class="tablewrap"><table><thead><tr><th>Exp</th><th>Capture</th><th>Frames</th><th>Missed</th><th>Bad status</th><th>Rate error</th><th>Problems</th><th>Verdict</th></tr></thead><tbody><tr><td>P</td><td>500 SPS · all 8 · test signal</td><td>0/1500</td><td>0</td><td>0</td><td>—</td><td class="wrap">received 0 of 1500 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)</td><td><span class="pill fail">✕ FAIL</span></td></tr><tr><td>P</td><td>2000 SPS · all 8 · test signal</td><td>0/6000</td><td>0</td><td>0</td><td>—</td><td class="wrap">received 0 of 6000 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)</td><td><span class="pill fail">✕ FAIL</span></td></tr><tr><td>P</td><td>4000 SPS · all 8 · test signal</td><td>0/12000</td><td>0</td><td>0</td><td>—</td><td class="wrap">received 0 of 12000 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)</td><td><span class="pill fail">✕ FAIL</span></td></tr></tbody></table></div><p class="note">A capture that fails here is still analysed, but its numbers are suspect.</p></section>
+<section class="exp"><h2>Run details</h2><div class="tablewrap"><table><tr><th>Run</th><td class='wrap'>2026-11-15_132124</td></tr><tr><th>Source</th><td class='wrap'>hardware on /dev/cu.usbserial-1140</td></tr><tr><th>Captures</th><td class='wrap'>3</td></tr><tr><th>Device ID</th><td class='wrap'>0x92</td></tr><tr><th>Firmware</th><td class='wrap'>clamshell-suite-1.0</td></tr><tr><th>Rates</th><td class='wrap'>500, 2000, 4000</td></tr><tr><th>Channels</th><td class='wrap'>1, 2, 3, 4, 5, 6, 7, 8</td></tr><tr><th>Channel plan</th><td class='wrap'>each, all</td></tr><tr><th>Capture length (s)</th><td class='wrap'>3.0</td></tr><tr><th>Mains (Hz)</th><td class='wrap'>50</td></tr><tr><th>Experiments</th><td class='wrap'>P</td></tr><tr><th>Registers after run</th><td class='wrap'>92 83 11 C0 00 05 05 05 05 05 05 05 05 00 00 00 00 00 00 00 0F 00 00 00 00 00</td></tr></table></div></section>
+</main></body></html>

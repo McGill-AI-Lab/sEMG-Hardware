@@ -1,0 +1,7 @@
+# Build output of PlatformIO
+firmware/.pio/
+# Raw capture data can be large; reports, summaries and figures are kept
+runs/*/captures/
+# Python caches and local environments
+__pycache__/
+.venv/

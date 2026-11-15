@@ -1,0 +1,32 @@
+Run folder: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_132946_sim
+Connected: simulator (faulty, 5× speed); firmware simulator; ADS1298 ID = 0x92
+
+[  1/4] P · Prerequisites & data integrity — 500 SPS · all 8 · test signal
+        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  0.1%  1/1500 frames        █████░░░░░░░░░░░░░░░░░░░░░░░░░ 17.1%  257/1500 frames        ██████████░░░░░░░░░░░░░░░░░░░░ 34.0%  510/1500 frames        ███████████████░░░░░░░░░░░░░░░ 51.1%  766/1500 frames        ████████████████████░░░░░░░░░░ 68.7%  1031/1500 frames        █████████████████████████░░░░░ 86.3%  1294/1500 frames        ██████████████████████████████ 100.0%  1500/1500 frames
+        ✕ FAIL  register readback mismatch: CH8SET: wrote 0x05, read 0x0D; 744 frames with an invalid status word (misaligned / zero frames) | 1500/1500 frames, missed 0, bad status 744, 501.50 SPS   (run time 0.0 min)
+
+[  2/4] P · Prerequisites & data integrity — 2000 SPS · all 8 · test signal
+        ████░░░░░░░░░░░░░░░░░░░░░░░░░░ 16.2%  974/6000 frames        █████████░░░░░░░░░░░░░░░░░░░░░ 33.0%  1979/6000 frames        ██████████████░░░░░░░░░░░░░░░░ 49.7%  2983/6000 frames        ███████████████████░░░░░░░░░░░ 66.5%  3987/6000 frames        ████████████████████████░░░░░░ 83.2%  4990/6000 frames        █████████████████████████████░ 99.9%  5993/6000 frames        ██████████████████████████████ 100.0%  6000/6000 frames
+        ✕ FAIL  register readback mismatch: CH8SET: wrote 0x05, read 0x0D; 3027 frames with an invalid status word (misaligned / zero frames) | 6000/6000 frames, missed 0, bad status 3027, 2006.00 SPS   (run time 0.0 min)
+
+[  3/4] P · Prerequisites & data integrity — 4000 SPS · all 8 · test signal
+        ████░░░░░░░░░░░░░░░░░░░░░░░░░░ 15.3%  1832/12000 frames        █████████░░░░░░░░░░░░░░░░░░░░░ 32.0%  3838/12000 frames        ██████████████░░░░░░░░░░░░░░░░ 48.7%  5845/12000 frames        ███████████████████░░░░░░░░░░░ 65.4%  7851/12000 frames        ████████████████████████░░░░░░ 82.2%  9862/12000 frames        █████████████████████████████░ 98.9%  11870/12000 frames        ██████████████████████████████ 100.0%  12000/12000 frames
+        ✕ FAIL  register readback mismatch: CH8SET: wrote 0x05, read 0x0D; 45 conversions missed (SPI/UART could not keep up); 6061 frames with an invalid status word (misalign | 12000/12000 frames, missed 45, bad status 6061, 4012.00 SPS   (run time 0.0 min)
+
+[  4/4] P · Prerequisites & data integrity — power cycle 1 · 500 SPS
+        █████░░░░░░░░░░░░░░░░░░░░░░░░░ 19.7%  197/1000 frames        █████████████░░░░░░░░░░░░░░░░░ 46.1%  461/1000 frames        █████████████████████░░░░░░░░░ 71.3%  713/1000 frames        █████████████████████████████░ 97.4%  974/1000 frames        ██████████████████████████████ 100.0%  1000/1000 frames
+        ✕ FAIL  register readback mismatch: CH8SET: wrote 0x05, read 0x0D; 507 frames with an invalid status word (misaligned / zero frames) | 1000/1000 frames, missed 0, bad status 507, 501.50 SPS   (run time 0.0 min)
+
+Captures finished in 0.0 min.
+
+Analysis
+────────
+  analysing P · Prerequisites & data integrity …
+
+Results
+───────
+  P  FAIL  Prerequisites & data integrity             0/4 captures trustworthy
+
+  Overall: FAIL
+  Report:  /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_132946_sim/report.html
+  Summary: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_132946_sim/summary.md

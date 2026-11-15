@@ -1,0 +1,188 @@
+{
+ "meta": {
+  "Run": "2026-11-15_132946_sim",
+  "Source": "simulator (faulty, 5\u00d7 speed)",
+  "Captures": 4,
+  "Device ID": "0x92",
+  "Firmware": "simulator",
+  "Rates": "500, 2000, 4000",
+  "Channels": "1, 2, 3, 4, 5, 6, 7, 8",
+  "Channel plan": "each, all",
+  "Capture length (s)": 3.0,
+  "Mains (Hz)": 50,
+  "Experiments": "P",
+  "Registers after run": "92 86 11 C0 00 00 05 05 05 05 05 05 05 05 00 00 00 00 00 00 00 00 00 00 00 00"
+ },
+ "experiments": [
+  {
+   "id": "P",
+   "name": "Prerequisites & data integrity",
+   "verdict": "FAIL",
+   "headline": "0/4 captures trustworthy",
+   "findings": [
+    {
+     "verdict": "PASS",
+     "text": "ID register = 0x92 (expected 0x92)"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "500 SPS \u00b7 all 8 \u00b7 test signal: register readback mismatch: CH8SET: wrote 0x05, read 0x0D"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "500 SPS \u00b7 all 8 \u00b7 test signal: 744 frames with an invalid status word (misaligned / zero frames)"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "2000 SPS \u00b7 all 8 \u00b7 test signal: register readback mismatch: CH8SET: wrote 0x05, read 0x0D"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "2000 SPS \u00b7 all 8 \u00b7 test signal: 3027 frames with an invalid status word (misaligned / zero frames)"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "4000 SPS \u00b7 all 8 \u00b7 test signal: register readback mismatch: CH8SET: wrote 0x05, read 0x0D"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "4000 SPS \u00b7 all 8 \u00b7 test signal: 45 conversions missed (SPI/UART could not keep up)"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "4000 SPS \u00b7 all 8 \u00b7 test signal: 6061 frames with an invalid status word (misaligned / zero frames)"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "power cycle 1 \u00b7 500 SPS: register readback mismatch: CH8SET: wrote 0x05, read 0x0D"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "power cycle 1 \u00b7 500 SPS: 507 frames with an invalid status word (misaligned / zero frames)"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "4 of 4 captures in this run failed integrity checks."
+    }
+   ],
+   "tables": [
+    {
+     "title": "Integrity of the prerequisite captures",
+     "columns": [
+      "Capture",
+      "Frames",
+      "Missed",
+      "Bad status",
+      "Zero frames",
+      "Rate (SPS)",
+      "Rate error",
+      "Readback OK",
+      "Verdict"
+     ],
+     "rows": [
+      [
+       "500 SPS \u00b7 all 8 \u00b7 test signal",
+       "1500/1500",
+       0,
+       744,
+       744,
+       "501.5",
+       "0.3 %",
+       "NO",
+       "FAIL"
+      ],
+      [
+       "2000 SPS \u00b7 all 8 \u00b7 test signal",
+       "6000/6000",
+       0,
+       3027,
+       3027,
+       "2006",
+       "0.3 %",
+       "NO",
+       "FAIL"
+      ],
+      [
+       "4000 SPS \u00b7 all 8 \u00b7 test signal",
+       "12000/12000",
+       45,
+       6061,
+       6061,
+       "4012",
+       "0.3 %",
+       "NO",
+       "FAIL"
+      ],
+      [
+       "power cycle 1 \u00b7 500 SPS",
+       "1000/1000",
+       0,
+       507,
+       507,
+       "501.5",
+       "0.3 %",
+       "NO",
+       "FAIL"
+      ]
+     ]
+    },
+    {
+     "title": "Integrity of every capture in this run",
+     "columns": [
+      "Exp",
+      "Capture",
+      "Frames",
+      "Missed",
+      "Bad status",
+      "Rate error",
+      "Problems",
+      "Verdict"
+     ],
+     "rows": [
+      [
+       "P",
+       "500 SPS \u00b7 all 8 \u00b7 test signal",
+       "1500/1500",
+       0,
+       744,
+       "0.3 %",
+       "register readback mismatch: CH8SET: wrote 0x05, read 0x0D; 744 frames with an invalid status word (misaligned / zero frames)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "2000 SPS \u00b7 all 8 \u00b7 test signal",
+       "6000/6000",
+       0,
+       3027,
+       "0.3 %",
+       "register readback mismatch: CH8SET: wrote 0x05, read 0x0D; 3027 frames with an invalid status word (misaligned / zero frames)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "4000 SPS \u00b7 all 8 \u00b7 test signal",
+       "12000/12000",
+       45,
+       6061,
+       "0.3 %",
+       "register readback mismatch: CH8SET: wrote 0x05, read 0x0D; 45 conversions missed (SPI/UART could not keep up); 6061 frames with an invalid status word (misaligned / zero frames)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "power cycle 1 \u00b7 500 SPS",
+       "1000/1000",
+       0,
+       507,
+       "0.3 %",
+       "register readback mismatch: CH8SET: wrote 0x05, read 0x0D; 507 frames with an invalid status word (misaligned / zero frames)",
+       "FAIL"
+      ]
+     ]
+    }
+   ],
+   "figures": []
+  }
+ ]
+}

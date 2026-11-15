@@ -1,0 +1,38 @@
+{
+ "id": 146,
+ "firmware": {
+  "fw": "simulator",
+  "heap": "300000",
+  "maxalloc": "200000",
+  "baud": "2000000"
+ },
+ "source": "simulator (clean, 5\u00d7 speed)",
+ "registers_after_run": [
+  146,
+  134,
+  1,
+  192,
+  0,
+  0,
+  20,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ]
+}

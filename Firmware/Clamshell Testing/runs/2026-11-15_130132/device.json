@@ -1,0 +1,24 @@
+{
+ "id": 146,
+ "firmware": {
+  "fw": "clamshell-suite-1.0",
+  "heap": "296260",
+  "maxalloc": "241652",
+  "baud": "2000000"
+ },
+ "source": "hardware on /dev/cu.usbserial-1140",
+ "registers_after_run": [
+  134,
+  1,
+  192,
+  0,
+  81,
+  81,
+  81,
+  81,
+  81,
+  81,
+  81,
+  81
+ ]
+}

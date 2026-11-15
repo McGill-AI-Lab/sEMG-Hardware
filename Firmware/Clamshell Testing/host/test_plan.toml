@@ -1,0 +1,194 @@
+# =============================================================================
+#  test_plan.toml  —  WHAT the clamshell suite runs
+# =============================================================================
+#
+#  This is the file you edit to choose, limit or repeat experiments. You never
+#  need to re-flash the ESP32 to change anything here.
+#
+#  FORMAT (TOML)
+#    [name]            starts a table (a group of settings)
+#    key = value       numbers, "text", true/false, [lists], { inline = tables }
+#    # ...             a comment
+#
+#  QUICK WAYS TO LIMIT A RUN (no editing needed, see README.md):
+#    python run_suite.py --only A,G            only these experiments
+#    python run_suite.py --skip F,I            everything except these
+#    python run_suite.py --rates 500           one data rate
+#    python run_suite.py --channels 1,2 --plan each
+#    python run_suite.py --seconds 3           shorter captures
+#    python run_suite.py --list                show the plan + time estimate, run nothing
+#
+#  Every experiment table below has   enabled = true/false   to switch it on or
+#  off permanently, and most accept   rates = [...]   and   channel_plan = [...]
+#  to override the [suite] defaults for that experiment only.
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+#  Global settings
+# -----------------------------------------------------------------------------
+[suite]
+port = "auto"                 # serial port, e.g. "/dev/cu.usbserial-1140" or "COM5"; "auto" = guess
+baud = 2000000                # must equal SERIAL_BAUD in firmware/src/main.cpp
+rates = [500, 2000, 4000]     # data rates (SPS) to iterate over. Allowed: 500, 1000, 2000, 4000, 8000
+channels = [1, 2, 3, 4, 5, 6, 7, 8]   # channels visited
+channel_plan = ["each", "all"]        # "each" = CH1 alone, CH2 alone, ... ; "all" = all listed channels together
+capture_seconds = 10          # length of each capture (>= 10 s gives 0.1 Hz resolution, stable RMS)
+discard_frames = 32           # frames dropped after START (sinc3 filter settling, section 1.3)
+vref = 2.4                    # reference voltage (CONFIG3 VREF_4V = 0)
+sclk_hz = 4000000             # SPI clock for reading frames (>= 864 kHz needed at 4 kSPS, section 1.2)
+mains_hz = 50                 # 50 (Europe/Asia) or 60 (North America): used to label spectral lines
+expected_id = 0x92            # ADS1298 ID register
+rate_tol_warn_pct = 1.0       # measured sample rate vs nominal: WARN above this error ...
+rate_tol_fail_pct = 3.0       # ... FAIL above this (internal oscillator tolerance)
+output_dir = "../runs"        # where run folders are created (relative to this file)
+live = true                   # open the live window (false = terminal only; same as --no-live)
+
+
+# -----------------------------------------------------------------------------
+#  Datasheet reference noise (optional but recommended)
+# -----------------------------------------------------------------------------
+#  Copy input-referred noise values (µVrms) from the "Noise Measurements" tables
+#  of YOUR datasheet revision (SBAS459, high-resolution mode, VREF = 2.4 V).
+#  Key = "G<gain>_<rate>". Without an entry, gain 6 falls back to an ESTIMATE
+#  scaled from the front-page "4 µVpp in 150 Hz bandwidth" figure.
+[reference.noise_uVrms]
+# G6_500  = 0.00     # <- replace 0.00 with the table value, then uncomment
+# G6_2000 = 0.00
+# G6_4000 = 0.00
+
+
+# =============================================================================
+#  EXPERIMENTS  (same letters as clamshell_validation.md)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+#  P · Prerequisites (section 1): ID, register readback, frame counts, status
+#  words, interleaved zeros, sample rate. Uses the test signal on all channels.
+# -----------------------------------------------------------------------------
+[P]
+enabled = true
+power_cycles = 3              # repeated PWDN power cycles (todo.md asks for 10 physical ones as well)
+cycle_seconds = 2             # capture length after each power cycle
+
+# -----------------------------------------------------------------------------
+#  A · Shorted-input noise floor (section 2) — the baseline
+# -----------------------------------------------------------------------------
+[A]
+enabled = true
+gain = 6
+warn_ratio = 1.5              # measured ÷ expected noise above this -> WARN
+fail_ratio = 3.0              # ... above this -> FAIL
+pp_rms_margin = 1.3           # WARN if pp/rms > 1.3 x what pure Gaussian noise gives for the same sample count
+
+# -----------------------------------------------------------------------------
+#  B · Noise spectrum (section 3) — analyses A's data, captures nothing
+# -----------------------------------------------------------------------------
+[B]
+enabled = true
+line_threshold_db = 10        # a spectral line must stick out this far above the local floor
+
+# -----------------------------------------------------------------------------
+#  C · Gain sweep (section 4)
+# -----------------------------------------------------------------------------
+[C]
+enabled = true
+gains = [1, 2, 3, 4, 6, 8, 12]
+channel_plan = ["all"]        # all channels together is enough here (7 gains x rates captures)
+# rates = [500]               # uncomment to sweep at one rate only
+
+# -----------------------------------------------------------------------------
+#  D · Data-rate sweep (section 5) — analyses A's data at every rate
+# -----------------------------------------------------------------------------
+[D]
+enabled = true
+line_threshold_db = 10
+
+# -----------------------------------------------------------------------------
+#  E · Multichannel correlation (section 6) — analyses A's "all" captures
+# -----------------------------------------------------------------------------
+[E]
+enabled = true
+warn_abs_r = 0.05             # largest off-diagonal |r| for PASS
+fail_abs_r = 0.20             # ... and for WARN (above = FAIL)
+highpass_hz = 1.0             # remove slow 1/f wander before correlating (0 = off)
+
+# -----------------------------------------------------------------------------
+#  F · Aggressor toggling (section 7)
+#  Each variant changes ONE thing vs the first (baseline) variant.
+#    sclk     = SPI clock in Hz            wifi = "off" | "ap" | "scan"
+#    load     = "idle" | "busy"            buffered = true -> hold data in ESP32 RAM, send after (USB quiet)
+#    seconds  = capture length             prompt = "text" -> wait for you to do something by hand first
+#  Variants whose SPI clock is too slow for the data rate are skipped automatically.
+# -----------------------------------------------------------------------------
+[F]
+enabled = true
+gain = 6
+warn_increase_pct = 20
+fail_increase_pct = 50
+pp_rms_margin = 1.3
+variants = [
+  { name = "baseline (WiFi off, idle, 4 MHz, streaming)" },
+  { name = "SPI 500 kHz", sclk = 500000 },   # too slow for 2 and 4 kSPS -> only run at 500 SPS
+  { name = "SPI 8 MHz", sclk = 8000000 },
+  { name = "CPU busy", load = "busy" },
+  { name = "WiFi access point (beacons)", wifi = "ap" },
+  { name = "WiFi scanning (continuous TX)", wifi = "scan" },
+  { name = "USB quiet (buffered in RAM)", buffered = true, seconds = 1 },
+  # Manual variants: the suite pauses and waits for Enter. Examples:
+  # { name = "laptop on battery", prompt = "Unplug the laptop charger, then press Enter." },
+  # { name = "battery pack supply", prompt = "Power the board from the battery pack, then press Enter." },
+]
+
+# -----------------------------------------------------------------------------
+#  G · Internal test signal (section 8)
+# -----------------------------------------------------------------------------
+[G]
+enabled = true
+gain = 6
+test_amp = 0                  # 0 -> ±1 mV (2 mV high-minus-low), 1 -> ±2 mV
+periods = 20                  # capture at least this many periods of the ~1.95 Hz square wave
+# expected_amplitude_mV = 2.0 # override the expected high-minus-low amplitude if needed
+amp_warn_pct = 5
+amp_fail_pct = 15
+period_warn_pct = 1
+period_fail_pct = 3
+gain_check = [1, 2, 4, 6, 12] # amplitude must not depend on gain (tests the "≈ 1/6 amplitude" problem)
+dc_levels = true              # DC test level at both amplitudes -> reference noise
+
+# -----------------------------------------------------------------------------
+#  H · Supply measurement MVDD (section 9)
+# -----------------------------------------------------------------------------
+[H]
+enabled = true
+avdd = 3.3                    # your analog supply (V)
+avss = 0.0                    # your negative analog supply (V); 0 for a single supply
+dvdd = 3.3                    # your digital supply (V)
+warn_pct = 3
+fail_pct = 10
+variants = [
+  { name = "WiFi off" },
+  { name = "WiFi scanning (TX)", wifi = "scan" },
+]
+
+# -----------------------------------------------------------------------------
+#  I · Temperature and long-term drift (section 10)
+#  The plan recommends 30–60 min from a cold start: set duration_s = 1800.
+# -----------------------------------------------------------------------------
+[I]
+enabled = true
+rate = 500
+duration_s = 120
+temp_channel = 1
+gain = 6                      # gain of the shorted channels (the temperature channel always uses gain 1)
+min_temp_span_C = 0.5         # fit offset drift only if the temperature changes at least this much
+
+# -----------------------------------------------------------------------------
+#  J · Shorting at the connector (section 11) — needs wiring by hand, so OFF
+# -----------------------------------------------------------------------------
+[J]
+enabled = false
+gain = 6
+series_resistance_ohm = 10000 # series resistor per input in your front end
+excess_factor = 2.0           # front-end excess noise above this × resistor thermal noise -> WARN
+prompt = "Short IN+ to IN- of every channel at the connector, tie them to the bias/RLD reference, then press Enter."

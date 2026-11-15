@@ -1,0 +1,186 @@
+Run folder: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_130132
+Opening /dev/cu.usbserial-1140 at 2000000 baud …
+Connected: hardware on /dev/cu.usbserial-1140; firmware clamshell-suite-1.0; ADS1298 ID = 0x92
+
+[  1/112] P · Prerequisites & data integrity — 500 SPS · all 8 · test signal
+
+        ✕ FAIL  no data   (run time 0.0 min)
+
+[  2/112] P · Prerequisites & data integrity — 2000 SPS · all 8 · test signal
+
+        ✕ FAIL  no data   (run time 0.0 min)
+
+[  3/112] P · Prerequisites & data integrity — 4000 SPS · all 8 · test signal
+
+        ✕ FAIL  no data   (run time 0.0 min)
+
+[  4/112] P · Prerequisites & data integrity — power cycle 1 · 500 SPS
+
+        ✕ FAIL  no data   (run time 0.1 min)
+
+[  5/112] A · Shorted-input noise floor — 500 SPS · CH1 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.1 min)
+
+[  6/112] A · Shorted-input noise floor — 500 SPS · CH2 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.1 min)
+
+[  7/112] A · Shorted-input noise floor — 500 SPS · CH3 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.1 min)
+
+[  8/112] A · Shorted-input noise floor — 500 SPS · CH4 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.1 min)
+
+[  9/112] A · Shorted-input noise floor — 500 SPS · CH5 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.1 min)
+
+[ 10/112] A · Shorted-input noise floor — 500 SPS · CH6 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.1 min)
+
+[ 11/112] A · Shorted-input noise floor — 500 SPS · CH7 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 12/112] A · Shorted-input noise floor — 500 SPS · CH8 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 13/112] A · Shorted-input noise floor — 500 SPS · all 8 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 14/112] A · Shorted-input noise floor — 2000 SPS · CH1 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 15/112] A · Shorted-input noise floor — 2000 SPS · CH2 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 16/112] A · Shorted-input noise floor — 2000 SPS · CH3 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 17/112] A · Shorted-input noise floor — 2000 SPS · CH4 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 18/112] A · Shorted-input noise floor — 2000 SPS · CH5 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 19/112] A · Shorted-input noise floor — 2000 SPS · CH6 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.2 min)
+
+[ 20/112] A · Shorted-input noise floor — 2000 SPS · CH7 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.3 min)
+
+[ 21/112] A · Shorted-input noise floor — 2000 SPS · CH8 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.3 min)
+
+[ 22/112] A · Shorted-input noise floor — 2000 SPS · all 8 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.3 min)
+
+[ 23/112] A · Shorted-input noise floor — 4000 SPS · CH1 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.3 min)
+
+[ 24/112] A · Shorted-input noise floor — 4000 SPS · CH2 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.3 min)
+
+[ 25/112] A · Shorted-input noise floor — 4000 SPS · CH3 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.3 min)
+
+[ 26/112] A · Shorted-input noise floor — 4000 SPS · CH4 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.3 min)
+
+[ 27/112] A · Shorted-input noise floor — 4000 SPS · CH5 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.3 min)
+
+[ 28/112] A · Shorted-input noise floor — 4000 SPS · CH6 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 29/112] A · Shorted-input noise floor — 4000 SPS · CH7 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 30/112] A · Shorted-input noise floor — 4000 SPS · CH8 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 31/112] A · Shorted-input noise floor — 4000 SPS · all 8 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 32/112] C · Gain sweep (PGA vs ADC noise) — 500 SPS · all 8 · G1 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 33/112] C · Gain sweep (PGA vs ADC noise) — 500 SPS · all 8 · G2 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 34/112] C · Gain sweep (PGA vs ADC noise) — 500 SPS · all 8 · G3 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 35/112] C · Gain sweep (PGA vs ADC noise) — 500 SPS · all 8 · G4 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 36/112] C · Gain sweep (PGA vs ADC noise) — 500 SPS · all 8 · G6 · shorted
+
+        ✕ FAIL  no data   (run time 0.4 min)
+
+[ 37/112] C · Gain sweep (PGA vs ADC noise) — 500 SPS · all 8 · G8 · shorted
+
+
+Stopped by Ctrl+C — analysing the captures taken so far.
+
+Captures finished in 0.5 min.
+
+Analysis
+────────
+  analysing A · Shorted-input noise floor …
+  analysing B · Noise spectrum (PSD) …
+  analysing C · Gain sweep (PGA vs ADC noise) …
+  analysing D · Data-rate sweep …
+  analysing E · Multichannel correlation …
+  analysing F · Aggressor toggling (ESP32, USB, SPI) …
+  analysing G · Internal test signal …
+  analysing H · Supply measurement (MVDD) …
+  analysing I · Temperature & long-term drift …
+  analysing P · Prerequisites & data integrity …
+
+Results
+───────
+  P  FAIL  Prerequisites & data integrity             0/36 captures trustworthy
+  A  SKIP  Shorted-input noise floor                  no data
+  B  SKIP  Noise spectrum (PSD)                       
+  C  SKIP  Gain sweep (PGA vs ADC noise)              
+  D  SKIP  Data-rate sweep                            
+  E  SKIP  Multichannel correlation                   
+  F  SKIP  Aggressor toggling (ESP32, USB, SPI)       
+  G  SKIP  Internal test signal                       
+  H  SKIP  Supply measurement (MVDD)                  
+  I  SKIP  Temperature & long-term drift              
+
+  Overall: FAIL
+  Report:  /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_130132/report.html
+  Summary: /Users/home/Documents/Projects/Hardware/sEMG-Hardware/Firmware/Clamshell Testing/runs/2026-11-15_130132/summary.md
+
+Close the live window to exit.

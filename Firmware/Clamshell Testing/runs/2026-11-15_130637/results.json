@@ -1,0 +1,97 @@
+{
+ "meta": {
+  "Run": "2026-11-15_130637",
+  "Source": "hardware on /dev/cu.usbserial-1140",
+  "Captures": 3,
+  "Device ID": "0x92",
+  "Firmware": "clamshell-suite-1.0",
+  "Rates": "500, 2000, 4000",
+  "Channels": "1, 2, 3, 4, 5, 6, 7, 8",
+  "Channel plan": "each, all",
+  "Capture length (s)": 3.0,
+  "Mains (Hz)": 50,
+  "Experiments": "P",
+  "Registers after run": "92 83 11 C0 00 05 05 05 05 05 05 05 05 00 00 00 00 00 00 00 0F 00 00 00 00 00"
+ },
+ "experiments": [
+  {
+   "id": "P",
+   "name": "Prerequisites & data integrity",
+   "verdict": "FAIL",
+   "headline": "0/3 captures trustworthy",
+   "findings": [
+    {
+     "verdict": "PASS",
+     "text": "ID register = 0x92 (expected 0x92)"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "3 of 3 captures in this run failed integrity checks."
+    }
+   ],
+   "tables": [
+    {
+     "title": "Integrity of the prerequisite captures",
+     "columns": [
+      "Capture",
+      "Frames",
+      "Missed",
+      "Bad status",
+      "Zero frames",
+      "Rate (SPS)",
+      "Rate error",
+      "Readback OK",
+      "Verdict"
+     ],
+     "rows": []
+    },
+    {
+     "title": "Integrity of every capture in this run",
+     "columns": [
+      "Exp",
+      "Capture",
+      "Frames",
+      "Missed",
+      "Bad status",
+      "Rate error",
+      "Problems",
+      "Verdict"
+     ],
+     "rows": [
+      [
+       "P",
+       "500 SPS \u00b7 all 8 \u00b7 test signal",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "2000 SPS \u00b7 all 8 \u00b7 test signal",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "4000 SPS \u00b7 all 8 \u00b7 test signal",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check DRDY wire, clock, PWDN)",
+       "FAIL"
+      ]
+     ]
+    }
+   ],
+   "figures": []
+  }
+ ]
+}

@@ -15,7 +15,9 @@ constexpr int PIN_START = 12;
 constexpr int PIN_PWDN  = 7;
 constexpr int PIN_RST   = 6;
 constexpr int PIN_DRDY  = 15;
-
+/*
+hello
+*/
 // ADS1298 frame size: 24-bit status + 8 x 24-bit channels
 constexpr int ADS_CHANNELS = 8;
 constexpr int ADS_FRAME_BYTES = 3 + ADS_CHANNELS * 3;

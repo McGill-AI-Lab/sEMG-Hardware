@@ -1,0 +1,169 @@
+{
+ "plan": {
+  "suite": {
+   "port": "auto",
+   "baud": 2000000,
+   "rates": [
+    500,
+    2000,
+    4000
+   ],
+   "channels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "channel_plan": [
+    "each",
+    "all"
+   ],
+   "capture_seconds": 3.0,
+   "discard_frames": 32,
+   "vref": 2.4,
+   "sclk_hz": 4000000,
+   "mains_hz": 50,
+   "expected_id": 146,
+   "rate_tol_warn_pct": 1.0,
+   "rate_tol_fail_pct": 3.0,
+   "output_dir": "../runs",
+   "live": true
+  },
+  "reference": {
+   "noise_uVrms": {}
+  },
+  "P": {
+   "enabled": true,
+   "power_cycles": 1,
+   "cycle_seconds": 2
+  },
+  "A": {
+   "enabled": true,
+   "gain": 6,
+   "warn_ratio": 1.5,
+   "fail_ratio": 3.0,
+   "pp_rms_margin": 1.3
+  },
+  "B": {
+   "enabled": true,
+   "line_threshold_db": 10
+  },
+  "C": {
+   "enabled": true,
+   "gains": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    12
+   ],
+   "channel_plan": [
+    "all"
+   ]
+  },
+  "D": {
+   "enabled": true,
+   "line_threshold_db": 10
+  },
+  "E": {
+   "enabled": true,
+   "warn_abs_r": 0.05,
+   "fail_abs_r": 0.2,
+   "highpass_hz": 1.0
+  },
+  "F": {
+   "enabled": true,
+   "gain": 6,
+   "warn_increase_pct": 20,
+   "fail_increase_pct": 50,
+   "pp_rms_margin": 1.3,
+   "variants": [
+    {
+     "name": "baseline (WiFi off, idle, 4 MHz, streaming)"
+    },
+    {
+     "name": "SPI 500 kHz",
+     "sclk": 500000
+    },
+    {
+     "name": "SPI 8 MHz",
+     "sclk": 8000000
+    },
+    {
+     "name": "CPU busy",
+     "load": "busy"
+    },
+    {
+     "name": "WiFi access point (beacons)",
+     "wifi": "ap"
+    },
+    {
+     "name": "WiFi scanning (continuous TX)",
+     "wifi": "scan"
+    },
+    {
+     "name": "USB quiet (buffered in RAM)",
+     "buffered": true,
+     "seconds": 1
+    }
+   ]
+  },
+  "G": {
+   "enabled": true,
+   "gain": 6,
+   "test_amp": 0,
+   "periods": 6,
+   "amp_warn_pct": 5,
+   "amp_fail_pct": 15,
+   "period_warn_pct": 1,
+   "period_fail_pct": 3,
+   "gain_check": [
+    1,
+    2,
+    4,
+    6,
+    12
+   ],
+   "dc_levels": true
+  },
+  "H": {
+   "enabled": true,
+   "avdd": 3.3,
+   "avss": 0.0,
+   "dvdd": 3.3,
+   "warn_pct": 3,
+   "fail_pct": 10,
+   "variants": [
+    {
+     "name": "WiFi off"
+    },
+    {
+     "name": "WiFi scanning (TX)",
+     "wifi": "scan"
+    }
+   ]
+  },
+  "I": {
+   "enabled": true,
+   "rate": 500,
+   "duration_s": 20,
+   "temp_channel": 1,
+   "gain": 6,
+   "min_temp_span_C": 0.5
+  },
+  "J": {
+   "enabled": false,
+   "gain": 6,
+   "series_resistance_ohm": 10000,
+   "excess_factor": 2.0,
+   "prompt": "Short IN+ to IN- of every channel at the connector, tie them to the bias/RLD reference, then press Enter."
+  }
+ },
+ "source": "simulator (faulty, 5\u00d7 speed)"
+}

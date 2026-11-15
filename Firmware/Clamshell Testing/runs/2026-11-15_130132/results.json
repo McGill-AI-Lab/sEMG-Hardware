@@ -1,0 +1,543 @@
+{
+ "meta": {
+  "Run": "2026-11-15_130132",
+  "Source": "hardware on /dev/cu.usbserial-1140",
+  "Captures": 36,
+  "Device ID": "0x92",
+  "Firmware": "clamshell-suite-1.0",
+  "Rates": "500, 2000, 4000",
+  "Channels": "1, 2, 3, 4, 5, 6, 7, 8",
+  "Channel plan": "each, all",
+  "Capture length (s)": 3.0,
+  "Mains (Hz)": 50,
+  "Experiments": "P, A, B, C, D, E, F, G, H, I",
+  "Registers after run": "86 01 C0 00 51 51 51 51 51 51 51 51"
+ },
+ "experiments": [
+  {
+   "id": "P",
+   "name": "Prerequisites & data integrity",
+   "verdict": "FAIL",
+   "headline": "0/36 captures trustworthy",
+   "findings": [
+    {
+     "verdict": "PASS",
+     "text": "ID register = 0x92 (expected 0x92)"
+    },
+    {
+     "verdict": "FAIL",
+     "text": "36 of 36 captures in this run failed integrity checks."
+    }
+   ],
+   "tables": [
+    {
+     "title": "Integrity of the prerequisite captures",
+     "columns": [
+      "Capture",
+      "Frames",
+      "Missed",
+      "Bad status",
+      "Zero frames",
+      "Rate (SPS)",
+      "Rate error",
+      "Readback OK",
+      "Verdict"
+     ],
+     "rows": []
+    },
+    {
+     "title": "Integrity of every capture in this run",
+     "columns": [
+      "Exp",
+      "Capture",
+      "Frames",
+      "Missed",
+      "Bad status",
+      "Rate error",
+      "Problems",
+      "Verdict"
+     ],
+     "rows": [
+      [
+       "A",
+       "4000 SPS \u00b7 CH7 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "4000 SPS \u00b7 all 8 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "power cycle 1 \u00b7 500 SPS",
+       "0/1000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 CH1 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 CH1 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "C",
+       "500 SPS \u00b7 all 8 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "2000 SPS \u00b7 all 8 \u00b7 test signal",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "4000 SPS \u00b7 CH6 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 CH7 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 all 8 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 CH7 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 all 8 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "4000 SPS \u00b7 CH1 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "C",
+       "500 SPS \u00b7 all 8 \u00b7 G1 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 CH6 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 CH6 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "500 SPS \u00b7 all 8 \u00b7 test signal",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 CH5 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 CH5 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "P",
+       "4000 SPS \u00b7 all 8 \u00b7 test signal",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "C",
+       "500 SPS \u00b7 all 8 \u00b7 G3 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "4000 SPS \u00b7 CH3 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "4000 SPS \u00b7 CH2 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 CH8 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "C",
+       "500 SPS \u00b7 all 8 \u00b7 G2 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 CH8 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 CH4 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 CH4 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "4000 SPS \u00b7 CH5 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 CH3 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 CH3 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "500 SPS \u00b7 CH2 \u00b7 G6 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "4000 SPS \u00b7 CH8 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "2000 SPS \u00b7 CH2 \u00b7 G6 \u00b7 shorted",
+       "0/6000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 6000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "A",
+       "4000 SPS \u00b7 CH4 \u00b7 G6 \u00b7 shorted",
+       "0/12000",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 12000 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ],
+      [
+       "C",
+       "500 SPS \u00b7 all 8 \u00b7 G4 \u00b7 shorted",
+       "0/1500",
+       0,
+       0,
+       "\u2014",
+       "received 0 of 1500 frames; DRDY timeout: conversions stopped (check START pin, clock, PWDN)",
+       "FAIL"
+      ]
+     ]
+    }
+   ],
+   "figures": []
+  },
+  {
+   "id": "A",
+   "name": "Shorted-input noise floor",
+   "verdict": "SKIP",
+   "headline": "no data",
+   "findings": [],
+   "tables": [],
+   "figures": []
+  },
+  {
+   "id": "B",
+   "name": "Noise spectrum (PSD)",
+   "verdict": "SKIP",
+   "headline": "",
+   "findings": [
+    {
+     "verdict": "SKIP",
+     "text": "No Experiment A data."
+    }
+   ],
+   "tables": [],
+   "figures": []
+  },
+  {
+   "id": "C",
+   "name": "Gain sweep (PGA vs ADC noise)",
+   "verdict": "SKIP",
+   "headline": "",
+   "findings": [
+    {
+     "verdict": "SKIP",
+     "text": "Not enough gain-sweep data."
+    }
+   ],
+   "tables": [],
+   "figures": []
+  },
+  {
+   "id": "D",
+   "name": "Data-rate sweep",
+   "verdict": "SKIP",
+   "headline": "",
+   "findings": [
+    {
+     "verdict": "SKIP",
+     "text": "Needs Experiment A at two or more data rates."
+    }
+   ],
+   "tables": [],
+   "figures": []
+  },
+  {
+   "id": "E",
+   "name": "Multichannel correlation",
+   "verdict": "SKIP",
+   "headline": "",
+   "findings": [
+    {
+     "verdict": "SKIP",
+     "text": "Needs an Experiment A capture with channel_plan 'all'."
+    }
+   ],
+   "tables": [],
+   "figures": []
+  },
+  {
+   "id": "F",
+   "name": "Aggressor toggling (ESP32, USB, SPI)",
+   "verdict": "SKIP",
+   "headline": "",
+   "findings": [
+    {
+     "verdict": "SKIP",
+     "text": "No captures."
+    }
+   ],
+   "tables": [],
+   "figures": []
+  },
+  {
+   "id": "G",
+   "name": "Internal test signal",
+   "verdict": "SKIP",
+   "headline": "",
+   "findings": [],
+   "tables": [],
+   "figures": []
+  },
+  {
+   "id": "H",
+   "name": "Supply measurement (MVDD)",
+   "verdict": "SKIP",
+   "headline": "",
+   "findings": [
+    {
+     "verdict": "SKIP",
+     "text": "No captures."
+    }
+   ],
+   "tables": [],
+   "figures": []
+  },
+  {
+   "id": "I",
+   "name": "Temperature & long-term drift",
+   "verdict": "SKIP",
+   "headline": "",
+   "findings": [
+    {
+     "verdict": "SKIP",
+     "text": "No capture."
+    }
+   ],
+   "tables": [],
+   "figures": []
+  }
+ ]
+}

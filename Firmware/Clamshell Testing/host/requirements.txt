@@ -1,0 +1,6 @@
+# Python packages for the clamshell suite (Python 3.11 or newer).
+# Install with:  python3 -m pip install -r requirements.txt
+numpy>=1.24        # arrays and statistics
+scipy>=1.10        # spectra (Welch), filters, fits
+matplotlib>=3.7    # live window and report charts
+pyserial>=3.5      # talking to the ESP32 over USB
