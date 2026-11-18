@@ -236,6 +236,7 @@ from the interface).
   exposes nickel, an allergen.
 
 ### 5.2 What the research says
+*(Summary. The paper-by-paper table with sizes, offsets, impedances and drift is in §5.10.)*
 - **Material differences on dry skin are modest, and studies disagree.**
   - A 2019 study rated dry Ag/AgCl about 3× better than the stainless steel common in wearables.
   - A 2024 *Scientific Reports* ECG study found stainless steel had the highest SNR at rest
@@ -344,6 +345,155 @@ I found no published measurement of dry-electrode mismatch. This is reasoning on
 - **Planning range:** ΔZ ≈ 20 kΩ to a few hundred kΩ at 60 Hz. **This must be measured** (§10.2).
 - **What reduces it:** equal spring force, more contact area, a few minutes of settling, and a
   consistent surface finish.
+
+### 5.9 Making electrodes in-house: cost and time (2026-11-18)
+Rough estimates for building electrodes ourselves in Montreal, using North American suppliers.
+*(est.)* marks my estimates; everything else comes from a listing in §15. Prices are USD.
+
+**Summary**
+
+| Route | Material per electrode | Hands-on time | All-in at 3,300 (excluding labour) |
+|---|---|---|---|
+| 316L from sheet, DIY | $0.01–0.05 | 3–5 min *(est.)* | **$0.20–0.50** |
+| 316L blanks, etched or stamped (outsourced) | cents | ≈ 0 | quote needed; probably lowest at volume |
+| Sintered Ag/AgCl, homemade | $0.85–2.00 | 3–5 min *(est.)* | **$1.50–3.20** |
+
+At 3–5 minutes each, labour dominates both routes: at $20/h it adds $1.00–1.70 per electrode.
+**316L sheet is the only homemade route that can stay near $1 all-in.**
+
+#### 316L from sheet
+Sheet gives a different part from the turned dome in §5.7: a **0.5–0.6 mm flat or pressed-dome
+disc with a welded lead or tab**. A dome pressed from sheet is a hollow cap.
+
+*Route 1, do it yourself (70–500 pieces):*
+1. **Buy sheet:** 316, 0.018–0.036" (0.46–0.91 mm), 12" × 12": $15.59 (Zoro) or $16.07 (Speedy
+   Metals). McMaster-Carr sells 0.02" 316 with a material certificate (2317K303), and Metal Supermarkets
+   lists 24 ga 316 (priced per store). One sheet gives over 1,000 Ø6–8 mm discs, so material is
+   ≈ $0.01–0.05 each.
+2. **Cut discs** with a jewelry disc cutter (6 and 8 mm sizes exist). Cutters are rated for soft
+   metals up to about 18–20 ga, so **stainless is at or past their limit**: test before buying many.
+3. **Press the dome** in a dapping block with a small shop press.
+4. **Attach the lead** by spot-welding a 316 wire or tab to the back *(est.)*. A capacitor-discharge
+   stud welder can put M3 studs on thin sheet but costs $2,700–5,800.
+5. **Deburr**, then **passivate** in a citric-acid batch.
+
+Tools, one-time: ≈ $500–1,500 (disc cutter, dapping block, small press, spot welder) *(est.)*.
+Labour: about 3–5 min per electrode → 165–275 h for 3,300.
+
+*Route 2, outsource the blanks (3,300 and up):*
+- **Photochemical etching** is priced per sheet area, with cheap optical tooling. An older figure is
+  about $0.15–0.20 per in² for steel up to 0.020", roughly cents per Ø8 mm disc. Suppliers:
+  Fotofab, Tech-Etch.
+- **SendCutSend** laser-cuts 316, but only 0.060" (1.5 mm) and thicker, with a minimum part of
+  0.25" × 0.375". Too thick to dome, but usable for a flat Ø10 mm disc.
+- **Forming domes at volume:** Montreal-area stampers include Tripar Inc., Laval Poinçon et Matrice
+  and Hyperforme. Stamping typically pays off only at about 10,000+ parts.
+
+#### Sintered Ag/AgCl, homemade
+**Recipe** (RSC Advances 2017): Ag and AgCl powder mixed 1:1, pressed into 2 mm pellets at 10 MPa with a
+silver wire embedded, sintered at **400 ± 10 °C under nitrogen**. A thesis used 380–430 °C for
+1–3 h in vacuum. Stay well below 455 °C, where AgCl melts.
+- **Force is small:** 10 MPa on a Ø6 mm die is about 283 N (29 kg). A proper pellet die matters
+  more than press size.
+
+**Materials per pellet.** Assumes a 50/50 mix by weight sintered to 80 % density (5.8 g/cm³), with
+Ag powder at $4.75/g (Thermo, 50 g) and AgCl at $7.31/g (Sigma, 100 g, 99 %):
+
+| Pellet | Mass | Ag | AgCl | Total |
+|---|---|---|---|---|
+| Ø6 × 2 mm | 0.33 g | $0.78 | $1.20 | ≈ $2.00 plus silver wire |
+| Ø4.5 × 1.5 mm | 0.14 g | $0.33 | $0.50 | ≈ $0.85 plus silver wire |
+
+Bulk silver powder (about $2/g wholesale) would roughly halve the silver part. Canadian Fisher prices
+are about 2× the US ones.
+
+**Equipment, one-time (≈ $2,000–4,000):**
+- muffle furnace: MTI KSL-1100X-S, $1,288;
+- 12-ton pellet press: MSE, $1,825. A cheaper arbor press would also work *(est.)*;
+- pellet die, 0.001 g scale and nitrogen: ≈ $300–800 *(est.)*.
+
+**Time:** about 3–5 min hands-on per pellet to weigh, fill, press, eject and fit the wire *(est.)*.
+Sintering runs in unattended batches of about 4–6 hours.
+
+| Quantity | Equipment share | + Materials | ≈ Total (excluding labour) |
+|---|---|---|---|
+| 70 | $29–57 | $0.85–2 | $30–60. Buying retail ($11–19) is cheaper |
+| 500 | $4–8 | $0.85–2 | $5–10 |
+| 3,300 | $0.60–1.20 | $0.85–2 | $1.50–3.20, plus 165–275 h |
+
+**Risks:**
+- batch-to-batch consistency of DC offset and drift: test every batch with the protocol;
+- breathing silver powder: wear a mask;
+- AgCl's sensitivity to light.
+
+**North American commercial makers for comparison:** BioMed Products (Fair Oaks, CA; offers custom
+shapes), In Vivo Metric (Healdsburg, CA), and Cortech Solutions (distributor). BESDATA and Greentek are in China.
+Quote status is tracked in `electrode-characteristics/quote_requests.md`.
+
+**When homemade Ag/AgCl makes sense:** only if our tests show clearly less motion artifact than 316L
+**and** the Greentek or BioMed quotes come back expensive.
+
+### 5.10 Literature review: stainless/316L, dry Ag/AgCl and sintered Ag/AgCl (2026-11-18)
+
+**How to read this table**
+- **NR** = not reported in what we could read.
+- **Evidence:** *Full text* = we read the paper's text. *Abstract* = abstract or a search summary of it only.
+  *Vendor* = a manufacturer's own specification.
+- **"Offset" and "drift" mean two different things** (see §4.3):
+  - **Offset** is the DC voltage between two electrodes of a pair.
+  - **Drift (polarization over time)** is how that voltage changes over minutes or hours.
+- **Impedance numbers are only comparable at the same frequency and settling time.** Most papers
+  report neither drift nor offset for dry electrodes on skin.
+
+#### A. Stainless steel (including 316 / 316L)
+
+| Material | Paper | Size | DC offset | Skin–electrode impedance | Polarization / drift over time | Other notes | Evidence |
+|---|---|---|---|---|---|---|---|
+| 316 stainless, bare and Ti-film-coated; vs gel Ag/AgCl | Rodrigues et al. 2020, *Materials* 13:2135 | Ø16 mm discs, 1.0 mm thick | NR | "Same order of magnitude" as the gel Ag/AgCl reference, which tended to about 10 kΩ at higher frequency (measured 10–1000 Hz) | NR (recordings only 10 s) | **sEMG**, biceps. Median SNR at 20 % effort: Ag/AgCl 19.2 dB vs Ti-coated stainless 18.3 dB (from a summary of the table; verify). The authors note stainless is common in consumer dry electrodes | Full text (partly) |
+| Stainless steel (plus platinum, silver, conductive polymer, fabrics) | *Sci. Rep.* 2024, "ECG signal quality in intermittent long-term dry electrode recordings with controlled motion artifacts" | NR | NR | Stainless had the **lowest impedance of the solid materials after 10 min** | NR | ECG. Stainless gave the **best SNR at rest**; platinum was best during movement, stainless second | Abstract |
+| Stainless steel (vs disposable wet electrodes) | "The electrical characteristics of some commercial ECG electrodes" (PubMed 621452) | NR | Wet electrodes: median 0.5–4 mV | Wet electrodes: median 1.5–3.25 kΩ | **100 nA DC through stainless → about 0.5 V of polarization in about 25 min** | Classic evidence that stainless polarizes badly under DC current | Abstract |
+| Stainless steel, silver, dry AgCl, polyurethane | EMBC 2017, "Performance assessment of dry electrodes for wearable long term cardiac rhythm monitoring: skin-electrode impedance spectroscopy" | NR | NR | **500 kΩ – 1 MΩ** across 1–100 Hz for all four dry types | NR | ECG. Conclusions favoured dry AgCl for trace quality | Abstract |
+| Stainless steel vs Ag/AgCl-plated polymer and others (6 dry types, 1 gel) | Popović Maneski et al. 2020, *Biomed. Eng./Biomed. Tech.* 65:405 | NR | Analysed ("junction potentials"); values NR | NR | NR | ECG, 30 s real-life recordings. Overall, dry Ag/AgCl about **3× better than stainless**, the material typical in wearables | Abstract |
+| Stainless steel (plus gold, carbon rubber, metallized textile) vs Ag/AgCl hydrogel | Kusche et al. 2019, arXiv 1910.05033 | Same contact area for all types (value NR) | NR | Dry impedance can reach hydrogel levels **or lower** with the right frequency, pressure and contact time; abstract gives no values | NR | Bioimpedance, not biopotential | Abstract |
+| Stainless-steel spring probes (with Au, Cu, BeCu) | Liao et al. 2011, *Sensors* 11:5819 (via Fu et al. 2020 review) | 17 spring probes | NR | NR (the review's table cell for this row repeats another paper's text) | NR | EEG. Correlation with wet electrodes 95.26 % (forehead), 91.47 % (top of head) | Review table |
+
+#### B. Dry Ag/AgCl (coated, plated, printed or chlorided; not sintered)
+
+| Material | Paper | Size | DC offset | Skin–electrode impedance | Polarization / drift over time | Other notes | Evidence |
+|---|---|---|---|---|---|---|---|
+| Ag/AgCl on 99.99 % Ag made three ways: bleach, electroplating, cured ink | Lee et al. 2022, *Front. Electron.* 2:700363 | Bullet shape on 10-gauge Ag wire; contact area NR | NR | Forearm, 3-electrode EIS (time after application NR). **~10 Hz:** bleach 6.2 MΩ, electroplated 6.5 MΩ, ink 4.0 MΩ (gel 0.15 MΩ). **~100 Hz:** 1.7 / 1.9 / 0.89 MΩ (gel 0.033 MΩ) | NR | ECG and EEG (ASSR). Correlation with wet ECG: 75.5 / 84.5 / 90.7 %. Ink performed best. 3 subjects. In 1 M saline the same electrodes were tens to hundreds of Ω, so skin dominates | Full text |
+| Dry Ag foil, partly chlorided; dry Ag/AgCl; vs gel Ag/AgCl | Gruetzmann et al. 2007, *Physiol. Meas.* 28:1375 | Ø2 cm, 0.3 mm silver foil | NR. The authors built a passive filter network to suppress slow offset fluctuations | Values only in a figure (axis up to 1,200 kΩ). **Dry Ag/AgCl had the highest impedance of all**: "the chloride isolates in dry condition." In 0.9 % NaCl, Ag/AgCl was lower than gel | NR numerically | ECG. Dry silver showed **less motion artifact** than gel electrodes, consistent with Searle & Kirkup 2000 | Full text |
+| One dry electrode (material NR in abstract) vs wet Ag/AgCl vs insulating | Searle & Kirkup 2000, *Physiol. Meas.* 21:271 | NR | NR | NR in abstract | Motion artifact: dry worse at the start of trials; by the end, dry was **8.2 dB lower than wet** | Interference on dry electrodes 40 dB lower than wet | Abstract |
+| *Reference, wet Ag/AgCl:* gel electrodes | Chi et al. 2010, *IEEE Rev. Biomed. Eng.* 3:106 | NR | — | Values in a table image (not extractable) | **1/f-like low-frequency drift of the Ag/AgCl offset** (half-cell mismatch) confirmed in 1-hour recordings | Wet Ag/AgCl was the only type noisier than its thermal-noise prediction at low frequency | Full text |
+
+#### C. Sintered Ag/AgCl
+
+| Material | Paper / source | Size | DC offset | Skin–electrode impedance | Polarization / drift over time | Other notes | Evidence |
+|---|---|---|---|---|---|---|---|
+| Reusable sintered Ag/AgCl (vs 5 other reusable types, 6 disposable Ag/AgCl, 9 gels) | Tallgren et al. 2005, *Clin. Neurophysiol.* 116:799 | NR | Values NR in abstract | NR | **Best DC stability** of all reusable types; others showed polarization, baseline drift and low-frequency noise | Slow-EEG (DC) recording, **with gel**. 7 of 9 gels contained enough chloride, "a prerequisite for DC stability" of Ag/AgCl. So the advantage depends on an electrolyte | Abstract |
+| Sintered Ag/AgCl discs EC-DC-AGD8 / AGD24 | Cortech Solutions product page; same figures in a Harvard Apparatus pellet datasheet | Ø8 × 1 mm and Ø24 × 1 mm | **180 µV** between a matched pair | NR | **25 µV/h** | Measured **in 0.9 % saline**, not on skin. Noise 1 µVpp (0.1–1 kHz) | Vendor |
+| BESDATA pre-wired sintered AgCl | Shenzhen Besdata Technology (MedicalExpo listing) | Disc or pillar (sizes NR) | **≤ 150 µV** | ≤ 25 Ω·cm² at 10 Hz (in electrolyte, not skin) | **≤ 25 µV/h** | Vendor, test conditions not stated | Vendor |
+| Sintered Ag/AgCl **used dry on skin** | — | — | — | — | — | **No published measurement found** of offset, drift or impedance | — |
+
+#### What this means for us
+1. **Nobody we found has measured DC offset or drift for 316L or sintered Ag/AgCl used dry on skin.**
+   Our protocol (§10, `electrode_testing_protocol.md` §3) would produce exactly that data. That is a
+   real gap, and could be part of the paper's contribution.
+2. **Sintered Ag/AgCl's famous figures (≈ 150–180 µV offset, 25 µV/h drift) are measured in saline.**
+   On dry skin the skin itself dominates (Lee 2022; Gruetzmann 2007), and Tallgren ties the DC stability
+   to a chloride electrolyte. Expect the dry advantage over 316L to be **smaller than the datasheets
+   suggest**, which is consistent with the mixed head-to-head results in §5.2.
+3. **Thin Ag/AgCl coatings used dry can be worse than bare metal.** The chloride layer insulates when
+   dry (Gruetzmann), and coated dry Ag/AgCl measured 4–6.5 MΩ at 10 Hz (Lee). Avoid coated or plated
+   Ag/AgCl for a dry, two-year product.
+4. **Stainless steel polarizes under DC current** (about 0.5 V after 25 min at 100 nA). Design
+   implications:
+   - **don't use DC lead-off current injection** (6–24 nA) on 316L electrodes;
+   - keep any DC current through them to picoamps (buffer bias current is fine, §9.4);
+   - prefer AC or firmware-based lead-off detection.
+5. **Dry impedance on skin is typically 0.5–6 MΩ at 10 Hz and falls with frequency, area and settling
+   time.** Large stainless discs (16 mm) can approach gel levels. This supports the 100 Hz impedance
+   spec in §3 and the active-electrode plan in §9.
 
 ---
 
@@ -763,6 +913,7 @@ Recorded so earlier statements in the chat don't cause confusion:
 | `electrode-characteristics/316L-dome-electrode/electrode_316L_dome.stl` | Mesh for 3D-printed fit checks |
 | `electrode-characteristics/316L-dome-electrode/electrode_316L_dome_drawing.pdf` / `.png` | Dimensioned drawing with material and finish notes |
 | `electrode-characteristics/0859-…`, `0871-…` | Placeholders for the current Mill-Max pins |
+| `electrode-characteristics/quote_requests.md` | Supplier quote tracker: who was contacted, how, status, and the request templates |
 | `3D-prints/README.md` and Fusion files | Sleeve sensor modules (bores for the current pins) |
 | `audits/ambrflow-v0-v1-20261028/AMBRFLOW_DETAILED_AUDIT.md` | Board audit: input filter values, RLD state, supply errors |
 | `audits/ambrflow-v0-v1-20261028/EVIDENCE/v1.connectivity.txt` | Netlist: RLD pins unconnected, E1–E16 connectors |
@@ -797,6 +948,44 @@ Recorded so earlier statements in the chat don't cause confusion:
 - Otto Frei fine silver wire — https://www.ottofrei.com/products/fine-silver-round-wire-half-hard-999-6-30-gauge-12in-harmony
 - Silver price (JM Bullion) — https://www.jmbullion.com/charts/silver-prices/
 - MIM tooling cost (vendor claim) — https://milwaukeeprec.com/metal-injection-molding-alternative.html
+
+**Literature review (§5.10)**
+- Lee et al. 2022, Characterization of Ag/AgCl dry electrodes, *Front. Electron.* — https://www.frontiersin.org/journals/electronics/articles/10.3389/felec.2021.700363/full
+- Gruetzmann et al. 2007, Novel dry electrodes for ECG monitoring, *Physiol. Meas.* — https://people.ece.cornell.edu/land/courses/ece5030/labs/s2014/Gruetzmann_PhysMea_2007.pdf
+- Chi, Jung, Cauwenberghs 2010, Dry-contact and noncontact biopotential electrodes, *IEEE RBME* — https://isn.ucsd.edu/pub/papers/rbme10.pdf
+- Searle & Kirkup 2000, Direct comparison of wet, dry and insulating electrodes — https://data.zhenzhi.com/details/1/906648898
+- Tallgren et al. 2005, Electrodes and gels for slow EEG potentials — https://data.zhenzhi.com/details/1/890708853
+- Popović Maneski et al. 2020, Properties of different types of dry electrodes — https://www.degruyterbrill.com/document/doi/10.1515/bmt-2019-0167
+- EMBC 2017, Dry electrodes for long-term cardiac rhythm monitoring, impedance spectroscopy — https://doi.org/10.1109/embc.2017.8037209
+- The electrical characteristics of some commercial ECG electrodes (PubMed 621452) — https://pubmed.ncbi.nlm.nih.gov/621452/
+- Fu et al. 2020, Dry electrodes for human bioelectrical signal monitoring (review) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7374322/
+- Harvard Apparatus Ag-AgCl electrode datasheet (180 µV, 25 µV/h in saline) — https://www.harvardapparatus.com/media/harvard/pdf/W3_7_313.pdf
+- Cortech EC-DC-AGD24 sintered disc — https://cortechsolutions.com/product/ec-dc-agd24/
+- BESDATA sintered AgCl (MedicalExpo) — https://www.medicalexpo.com/prod/shenzhen-besdata-technology/product-301554-1024332.html
+
+**In-house manufacturing (§5.9)**
+- Sintered Ag/AgCl recipe, 1:1, 10 MPa, 400 °C under N₂ (RSC Advances 2017) — https://pubs.rsc.org/en/content/articlehtml/2017/ra/c7ra05532c
+- Powder processing of sintered Ag/AgCl neural electrodes (SDSU thesis) — https://digitallibrary.sdsu.edu/islandora/object/sdsu:1507
+- Thermo Scientific silver powder, 50 g — https://thermofisher.com/order/catalog/product/041598.18
+- Sigma-Aldrich silver chloride 99 %, 227927 — https://sigmaaldrich.com/NZ/en/product/sigald/227927
+- Bulk silver powder price indicator — https://www.metal.com/en/prices/202112230002
+- MTI KSL-1100X-S muffle furnace — https://mtixtl.com/products/ksl-1100x-s-ul-ld
+- MSE 12-ton manual pellet press — https://www.msesupplies.com/products/lab-scale-12-ton-manual-hydraulic-pellet-press
+- Zoro 316 sheet, 0.018", 12" × 12" — https://www.zoro.com/zoro-select-ss-sheet-316-12-in-overall-w-78641212/i/G305848663/
+- Speedy Metals 20 ga 316 sheet — https://speedymetals.com/p-942-20ga-0036-316-stainless-steel-cold-rolled-annealed-2b-finish.aspx
+- McMaster-Carr stainless sheet — https://mcmaster.com/products/stainless-steel-sheet-stock
+- Metal Supermarkets 316 sheet — https://www.metalsupermarkets.com/product/stainless-steel-sheet-316/
+- Disc cutter ratings (Ganoksin) — https://www.ganoksin.com/best-disc-cutter-reviews/
+- IWT LYNX4 CD stud welder — https://weldingmart.com/products/iwt-lynx4-modular-5-16-capacity-capacitor-discharge-stud-welding-system-1-iwt500054m4
+- Pro Weld CD-212 stud welder — https://www.zoro.com/pro-weld-cd-212-stud-welder-capacitor-discharge-single-phase-14-ga-14-in-range-cd-212/i/G9986986
+- SendCutSend 316 limits — https://sendcutsend.com/stainless-steel-316
+- Photochemical machining costs — https://en.wikipedia.org/wiki/Photochemical_machining
+- Fotofab precision etching — https://fotofab.com/services/etching/precision-chemical-etching/
+- Stamping volume threshold (The Fabricator) — https://www.thefabricator.com/stampingjournal/article/stamping/ask-the-stamping-expert-how-do-metal-formers-stamp-the-unstampable
+- Tripar Inc. (Montreal) — https://axya.co/suppliers_directory/company/tripar-inc
+- Laval Poinçon et Matrice — https://axya.co/suppliers_directory/company/laval-poincon-et-matrice
+- Hyperforme — https://www.groupehyperforme.com/en/industrial-subcontracting/metal/metal-stamping-services/
+- In Vivo Metric — https://medicregister.com/In_Vivo_Metric/Supplier/sid12626.htm
 
 **Standards and safety**
 - Nickel release from stainless steels — https://pubmed.ncbi.nlm.nih.gov/9330816
